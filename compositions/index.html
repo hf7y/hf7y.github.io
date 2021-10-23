@@ -1,0 +1,178 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel=stylesheet href=/style.css>
+<header id=banner>
+	<a id=name href="/">Zachary Viet Pine</a>
+	<nav>
+		<span><a href="/bio">bio</a></span> 
+		<span><a href="/compositions">compositions</a></span> 
+		<span><a href="/sousaphone">sousaphone</a></span> 
+		<span><a href="/arrangements">arrangements</a></span> 
+		<span><a href="/string-band">string&nbsp;band</a></span> 
+		<span><a href="/cv">cv</a></span>
+	</nav>
+</header>
+<script>
+	window.onload = function () {
+	  var links = document.getElementsByClassName("audio");
+  	  for(i=0; i<links.length; i++) {
+  	  	links[i].onclick = function () {
+  	      document.getElementById("player").src = this.getAttribute('data-src');
+  	      document.getElementById("player").play();
+  	      document.getElementById("player").style.visibility = "visible";
+  	  	}
+  	  }
+    }
+</script>
+<h1>Compositions</h1>
+<table>
+  <tr>
+    <td class=year>2021</td>
+    <td><a href=#tresse>
+      <span class=title>Tresse<span>
+      <i>for</i> <span class=instrumentation>String Quartet and Wind Quartet</span>
+    </a></td>
+  </tr>
+  <tr>
+    <td class=year>2020</td>
+    <td><a href=#total_abstraction>
+      <span class=title>Total Abstraction<span>
+      <i>for</i> <span class=instrumentation>Vocal Octet</span>
+    </a></td>
+  </tr>
+  <tr>
+    <td class=year>2019</td>
+    <td><a href=#special_pleading>
+      <span class=title>Special Pleading<span>
+      <i>for</i> <span class=instrumentation>Trumpet and Electronics</span>
+    </a></td>
+  </tr>
+  <tr>
+    <td class=year>2019</td>
+    <td><a href=#astrocasper>
+      <span class=title>Astrocasper<span>
+      <i>for</i> <span class=instrumentation>String Quartet and Percussion</span>
+    </a></td>
+  </tr>
+  <tr>
+    <td class=year>2018</td>
+    <td><a href=#soke>
+      <span class=title>Soke<span>
+      <i>for</i> <span class=instrumentation>Piano and Percussion</span>
+    </a></td>
+  </tr>
+  <tr>
+    <td class=year>2018</td>
+    <td><a href=#iaia>
+      <span class=title>IA, IA<span>
+      <i>for</i> <span class=instrumentation>String Quartet</span>
+    </a></td>
+  </tr>
+  <tr>
+    <td class=year>2017</td>
+    <td><a href=#rortyfied>
+      <span class=title>Rortyfied<span>
+      <i>for</i> <span class=instrumentation>Fixed Media</span>
+    </a></td>
+  </tr>
+  <tr>
+    <td class=year>2016</td>
+    <td><a href=#bac>
+      <span class=title>Ba&#769;c<span>
+      <i>for</i> <span class=instrumentation>Fixed Media</span>
+    </a></td>
+  </tr>
+  <tr>
+    <td class=year>2015</td>
+    <td><a href=#piano_stuke>
+      <span class=title>Piano St&uuml;ke<span>
+      <i>for</i> <span class=instrumentation>Piano</span>
+    </a></td>
+  </tr>
+</table>
+<article>
+  <h2 id="tresse" class=title>Tresse</h1>
+  <p class=year>2021</p>
+  <p class=instrumentation>String Quartet and Wind Quartet</p>
+  <p class=performers>Ensemble LINEA</p>
+  <p class=locations>Strausbourg, FR</p>
+  <a class=score href="tresse.pdf">Score</a>
+  <a class=audio href="javascript:void(0);" data-src="tresse.mp3">Listen</a>
+  <p class=description>"Tresse" employs computer assisted notation. I used Lilypond's Scheme backend to produce infinitely varied permutations of musical motifs.</p>
+</article>
+<article>
+  <h2 id="total_abstraction" class=title>Total Abstraction</h1>
+  <p class=year>2020</p>
+  <p class=instrumentation>Vocal Octet</p>
+  <p class=performers>Erin Bender, Claire Demorest, Megan Ihnen, Kaitlin Sager, CJ Briggs, Chris Givens, Alex Herzog, Conrad Alleman</p>
+  <p class=locations>New Orleans, LA</p>
+  <a class=score href="total_abstraction.pdf">Score</a>
+  <p class=description>"Total Abstraction" is the central composition in my staged master's thesis, Siddhartha. Scheduled to premier in Spring 2020, due to the pandemic the performance was postponed indefinitely. This piece is organized around cells of repeated material. Held tones and spoken word are synchronized between various combinations of the eight singers. The text is taken from abstract expressionist painter Barnett Newman whose philosophy informs the subjectless nature of the composition.</p>
+</article>
+<article>
+  <h2 id="special_pleading" class=title>Special Pleading</h1>
+  <p class=year>2019</p>
+  <p class=instrumentation>Trumpet and Electronics</p>
+  <p class=performers>Andy Kozar</p>
+  <p class=locations>New Orleans, LA</p>
+  <a class=score href="special_pleading.pdf">Score</a>
+  <p class=description>For "Special Pleading," I developed a computer-assisted composition technique. Using PureData, I explored the quarter-tone pitch space. With a playful guess-and-check method, I searched for interval classes that intuitively sounded consonant. In performance, the solo trumpet constructs these harmonies by looping over itself several times.</p>
+</article>
+<article>
+  <h2 id="astrocasper" class=title>Astrocasper</h1>
+  <p class=year>2019</p>
+  <p class=instrumentation>String Quartet and Percussion</p>
+  <p class=performers>Mivos Quartet, Matthew Gold</p>
+  <p class=locations>Dublin, NH</p>
+  <a class=score href="astrocasper.pdf">Score</a>
+  <a class=audio href="javascript:void(0);" data-src="astrocasper.mp3">Listen</a>
+  <p class=description>I wrote <i>Astrocasper</i> for the Walden summer music festival in New Hampshire. "Casper" refers to the harmonies of Ravel's <i>Gaspard de la nuit</i>. First, I lull the audience into a noisy romantic daydream. Then I break the spell with theater and irreverent quotations of Radiohead and J-Dilla.</p>
+</article>
+<article>
+  <h2 id="soke" class=title>Soke</h1>
+  <p class=year>2018</p>
+  <p class=instrumentation>Piano and Percussion</p>
+  <p class=performers>Bent Duo</p>
+  <p class=locations>New Orleans, LA</p>
+  <a class=score href="soke.pdf">Score</a>
+  <a class=audio href="javascript:void(0);" data-src="soke.mp3">Listen</a>
+  <p class=description>"Soke" was my first composition to premier at Tulane. I followed a through-composed logic inspired by Toshio Hosokowa. I wrote measure to measure, letting each musical idea inspire the next. I aimed to construct a unified 'meta-instrument' between piano and percussion. Tremolos and small subdivisions are passed between instruments as they cooperate to express each gesture.</p>
+</article>
+<article>
+  <h2 id="iaia" class=title>IA, IA</h1>
+  <p class=year>2018</p>
+  <p class=instrumentation>String Quartet</p>
+  <p class=performers>Mivos Quartet</p>
+  <p class=locations>Dublin, NH</p>
+  <a class=score href="iaia.pdf">Score</a>
+  <a class=audio href="javascript:void(0);" data-src="iaia.mp3">Listen</a>
+  <p class=description>This is the first piece I wrote for the Walden summer festival. It is also the first piece I wrote while studying with Max Dulaney at Tulane. The violins take on the role of shimmering noise-makers, leaving room for the oft-neglected viola to sing from the middle of the pack. This felt like a profound democratic gesture at the time.</p>
+</article>
+<article>
+  <h2 id="rortyfied" class=title>Rortyfied</h1>
+  <p class=year>2017</p>
+  <p class=instrumentation>Fixed Media</p>
+  <p class=performers></p>
+  <p class=locations></p>
+  <a class=audio href="javascript:void(0);" data-src="rortyfied.mp3">Listen</a>
+  <p class=description>This is the second of my Orange County fixed media pieces. Three motifs interleave. The piece begins with a radio interview between philosopher Richard Rorty and Michael Krasney on KQED in 2006. Rorty's statements are juxtaposed with a field recording of a Dakota Access Pipeline protest in Chicago that I captured from a Facebook livestream. Synthesizer harmonies invoke pathos as these worldviews converge and diverge.</p>
+</article>
+<article>
+  <h2 id="bac" class=title>Ba&#769;c</h1>
+  <p class=year>2016</p>
+  <p class=instrumentation>Fixed Media</p>
+  <p class=performers></p>
+  <p class=locations></p>
+  <a class=audio href="javascript:void(0);" data-src="bac.mp3">Listen</a>
+  <p class=description>"Ba&#769;c" is one of the many Vietnamese familial pronouns. I wrote this piece while living in Orange County with my uncles. Their walled neighborhood sits within a grid of long straight boulevards. At night, I heard lone cars hum for minutes. I manipulate the cello sample to reflect that So-Cal tempo. </p>
+</article>
+<article>
+  <h2 id="piano_stuke" class=title>Piano St&uuml;ke</h1>
+  <p class=year>2015</p>
+  <p class=instrumentation>Piano</p>
+  <p class=performers>Nate Ben-Horin</p>
+  <p class=locations>Berkeley, CA</p>
+  <a class=score href="piano_stuke.pdf">Score</a>
+  <a class=audio href="javascript:void(0);" data-src="piano_stuke.mp3">Listen</a>
+  <p class=description>I wrote this piece for the end-of-semester Undergraduate Composers Club at Berkeley. I fondly remember working out the quirks of the notation with Nate at the pianos in the practice rooms.</p>
+</article>
+<audio id=player controls src=""></audio>
