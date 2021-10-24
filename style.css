@@ -2,6 +2,11 @@
 	display: flex;
 }
 
+#name { 
+	font-weight: bold;
+	color: black;
+}
+
 #player {
 	visibility: hidden;
 	position: sticky;
@@ -18,9 +23,14 @@ nav span {
 	padding-left: 0.5em;
 }
 
-#name { 
-	font-weight: bold;
-	color: D9D0DE;
+.composition {
+	padding-top: 2em;
+}
+
+.composition span {
+	padding-right: 1em;
+	font-style: italic;
+	font-size: 16px;
 }
 
 body {
@@ -29,8 +39,6 @@ body {
 	margin: 10% auto 0 auto;
 	padding: 0 1em;
 	overflow-y:scroll;
-	background-color: 0C1713;
-	color: D9D0DE;
 }
 
 td {
@@ -54,7 +62,9 @@ img {
 
 a {
 	text-decoration: none;
-	color: BC8DA0;
+}
+
+a:visited {
 }
 
 a:hover {

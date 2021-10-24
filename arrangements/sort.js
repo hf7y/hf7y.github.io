@@ -1,4 +1,4 @@
-function sort(columnClassName) {
+function sort(columnClassName, ascending) {
     var tbody = document.getElementsByTagName("tbody")[0];
     var rows = tbody.getElementsByTagName("tr");
 
@@ -22,7 +22,7 @@ function sort(columnClassName) {
                 nextValue = parseFloat(nextValue);
             }
 
-            if (value > nextValue) {
+            if (ascending ? value > nextValue : value < nextValue) {
                 tbody.insertBefore(nextRow, row);
                 unsorted = true;
             }
@@ -31,6 +31,6 @@ function sort(columnClassName) {
 };
 
 window.onload = function () {
-    sort('song');
-    sort('instrumentation');
+    sort('song', true);
+    sort('instrumentation', false);
 }

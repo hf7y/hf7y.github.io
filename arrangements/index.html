@@ -1,7 +1,11 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel=stylesheet href=/style.css>
-<header id=banner>
-	<a id=name href="/">Zachary Viet Pine</a>
+<html prefix="mo: http://purl.org/ontology/mo/">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel=stylesheet href=/style.css>
+</head>
+<body typeof="mo:MusicArtist">
+	<header id=banner>
+	<a typeof=MusicalArtist property=name id=name href="/">Zachary Viet Pine</a>
 	<nav>
 		<span><a href="/bio">bio</a></span> 
 		<span><a href="/compositions">compositions</a></span> 
@@ -11,7 +15,7 @@
 		<span><a href="/cv">cv</a></span>
 	</nav>
 </header>
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
   <head>
     <title>Arrangements</title>
@@ -23,85 +27,37 @@
       <thead>
         <tr>
           <th>
-            <a href="javascript:sort('song')">Song</a>
+            <a href="javascript:sort('song', true)">Song</a>
           </th>
           <th>
-            <a href="javascript:sort('artist')">Artist</a>
+            <a href="javascript:sort('artist', true)">Artist</a>
           </th>
           <th>
-            <a href="javascript:sort('instrumentation')">Instrumentation</a>
+            <a href="javascript:sort('instrumentation', false)">Instrumentation</a>
           </th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="song">Beggin’</td>
-          <td class="artist">Måneskin</td>
-          <td class="instrumentation">vn vc gtr</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/f74f62059cb4df4bacd702f1bda32cd7dcd2e7b4">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Dance Monkey</td>
-          <td class="artist">Tones &amp; I</td>
-          <td class="instrumentation">vn vc gtr</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/c181a3b415cce56b32cf9688df2c99ae01fa7a3b">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Levitating</td>
-          <td class="artist">Dua Lipa</td>
-          <td class="instrumentation">vn vc perc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/fa41c985b41ace548b5c69bc6586e054981c20e9">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Butter</td>
-          <td class="artist">BTS</td>
-          <td class="instrumentation">vn vc perc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/ffefe6276f5f99e67dc1091a3fb08ca06ec94971">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Follow You</td>
-          <td class="artist">Imagine Dragons </td>
-          <td class="instrumentation">vn vc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/a49f5be0866a0b3b3daef11780461544a5a04a94">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Colorado</td>
-          <td class="artist">Milky Chance</td>
-          <td class="instrumentation">vn vc gtr perc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/599a97e5e3bed85eb1a5945d73d603630ce3c713">score</a>
-          </td>
-        </tr>
-        <tr>
           <td class="song">Industry Baby</td>
           <td class="artist">Lil Nas X</td>
-          <td class="instrumentation">brass band</td>
+          <td class="instrumentation">Brass Band</td>
           <td>
             <a href="https://www.noteflight.com/scores/view/01decdee5641c0e106c3098ae59ed7f655a6a0bd">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">Ahesta Bero</td>
-          <td class="artist">Traditional Afghan</td>
-          <td class="instrumentation">vn vc perc</td>
+          <td class="song">I Miss You</td>
+          <td class="artist">Blink 182</td>
+          <td class="instrumentation">Brass Band</td>
           <td>
-            <a href="https://www.noteflight.com/scores/view/b5597a7b1f04b591adf69097858ebcb424e12fbd">score</a>
+            <a href="https://www.noteflight.com/scores/view/747985bb66ac4fa3987d640a26616d03dab8039a">score</a>
           </td>
         </tr>
         <tr>
           <td class="song">White Winter Hymnal</td>
           <td class="artist">Fleet Foxes</td>
-          <td class="instrumentation">folk band</td>
+          <td class="instrumentation">Folk Band</td>
           <td>
             <a href="https://www.noteflight.com/scores/view/b580cb72e88b86acefda8b5d2e06111b89fc30fa">score</a>
           </td>
@@ -109,127 +65,39 @@
         <tr>
           <td class="song">Snowqueen of Texas</td>
           <td class="artist">Mamas and the Papas, The</td>
-          <td class="instrumentation">folk band</td>
+          <td class="instrumentation">Folk Band</td>
           <td>
             <a href="https://www.noteflight.com/scores/view/2eeea53b8668ca4af93228c5e90c95ff483ccfd7">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">This Will Be</td>
-          <td class="artist">Natalie Cole</td>
-          <td class="instrumentation">vn vc gtr perc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/a97cd5f522b37d3cb3ae92a39c180d8a1df7b648">score</a>
-          </td>
-        </tr>
-        <tr>
           <td class="song">Fake Plastic Trees</td>
           <td class="artist">Radiohead</td>
-          <td class="instrumentation">folk band</td>
+          <td class="instrumentation">Folk Band</td>
           <td>
             <a href="https://www.noteflight.com/scores/view/1b7dea80bf9d95d51df64f30c6032a282e79dfd3">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">Blowin’ in the Wind</td>
+          <td class="song">Blowin&amp;rsquo; in the Wind</td>
           <td class="artist">Peter, Paul and Mary</td>
-          <td class="instrumentation">folk band</td>
+          <td class="instrumentation">Folk Band</td>
           <td>
             <a href="https://www.noteflight.com/scores/view/4e0cdf564b63c7a4a31a7db921fe5ee7b4a07a9e">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">Leave Before You Love Me</td>
-          <td class="artist">Marshmello</td>
-          <td class="instrumentation">vn vc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/9a815e15e6d880d01e1eed9a15ade7364691775d">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Todo de Ti</td>
-          <td class="artist">Rauw Alejandro</td>
-          <td class="instrumentation">vn vc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/637721144d4b7be25f22809622580bd14ab2b628">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Good 4 U</td>
-          <td class="artist">Olivia Rodrigo</td>
-          <td class="instrumentation">vn vc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/985972f6b6570f406032a4c50707fd487dab9943">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Deja Vu</td>
-          <td class="artist">Olivia Rodrigo</td>
-          <td class="instrumentation">vn vn va vc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/805ba02c0f75a377fdb0af2253e3b70f55b93b9b">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Industry Baby</td>
-          <td class="artist">Lil Nas X</td>
-          <td class="instrumentation">vn vn va vc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/af689f79ae31e117ebcf5359d50f7cd8fc9fe2d3">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Kiss Me More</td>
-          <td class="artist">Doja Cat</td>
-          <td class="instrumentation">vn vn va vc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/2816a42d308cac4b6683dc558bda92ca7ec2742f">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Rumors</td>
-          <td class="artist">Lizzo</td>
-          <td class="instrumentation">vn vn va vc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/f4b84eb1edd270e84dcda56a48c792e25c6a6fbc">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Bad Habits</td>
-          <td class="artist">Ed Sheeran</td>
-          <td class="instrumentation">vn vn va vc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/2c056f23917b8a13bd4f6899af7d1223f5a40130">score</a>
-          </td>
-        </tr>
-        <tr>
           <td class="song">All the Small Things</td>
           <td class="artist">Blink 182</td>
-          <td class="instrumentation">folk band</td>
+          <td class="instrumentation">Folk Band</td>
           <td>
             <a href="https://www.noteflight.com/scores/view/59136bb61c165270eceb0d03e636c806a30ee554">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">Resistance</td>
-          <td class="artist">Muse</td>
-          <td class="instrumentation">vn vc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/b4e3211fd33aba8fcdeda2f1bbb2425313015e2c">score</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="song">Sorry</td>
-          <td class="artist">Justin Bieber</td>
-          <td class="instrumentation">vn vn va vc</td>
-          <td>
-            <a href="https://www.noteflight.com/scores/view/e4e9d2ac0ce1ba99e53e405a8984a6e545b76182">score</a>
-          </td>
-        </tr>
-        <tr>
           <td class="song">Sunny Afternoon</td>
           <td class="artist">Kinks, The</td>
-          <td class="instrumentation">folk band</td>
+          <td class="instrumentation">Folk Band</td>
           <td>
             <a href="https://www.noteflight.com/scores/view/68f6848dfde92cefdaedeb100b71ea80da15f684">score</a>
           </td>
@@ -237,47 +105,183 @@
         <tr>
           <td class="song">There is a Light That Never Goes Out</td>
           <td class="artist">Smiths, The</td>
-          <td class="instrumentation">folk band</td>
+          <td class="instrumentation">Folk Band</td>
           <td>
             <a href="https://www.noteflight.com/scores/view/0d417648ffdb3568bffa1531715b430b49f02cd3">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">I’m Not My Season</td>
+          <td class="song">I&amp;rsquo;m Not My Season</td>
           <td class="artist">Fleet Foxes</td>
-          <td class="instrumentation">folk band</td>
+          <td class="instrumentation">Folk Band</td>
           <td>
             <a href="https://www.noteflight.com/scores/view/bd0f14b9b94dbc84c138672144d89ab9c8f1780b">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">I Miss You</td>
-          <td class="artist">Blink 182</td>
-          <td class="instrumentation">brass band</td>
+          <td class="song">Follow You</td>
+          <td class="artist">Imagine Dragons </td>
+          <td class="instrumentation">String Duo</td>
           <td>
-            <a href="https://www.noteflight.com/scores/view/747985bb66ac4fa3987d640a26616d03dab8039a">score</a>
+            <a href="https://www.noteflight.com/scores/view/a49f5be0866a0b3b3daef11780461544a5a04a94">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">Butter</td>
-          <td class="artist">BTS</td>
-          <td class="instrumentation">vn vn va vc</td>
+          <td class="song">Leave Before You Love Me</td>
+          <td class="artist">Marshmello</td>
+          <td class="instrumentation">String Duo</td>
           <td>
-            <a href="https://www.noteflight.com/scores/view/0cf1b39952c6fa3a20a2578ed0f49cbb8b2ead9d">score</a>
+            <a href="https://www.noteflight.com/scores/view/9a815e15e6d880d01e1eed9a15ade7364691775d">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">Stay</td>
-          <td class="artist">Kid LAROI</td>
-          <td class="instrumentation">vn vc</td>
+          <td class="song">Todo de Ti</td>
+          <td class="artist">Rauw Alejandro</td>
+          <td class="instrumentation">String Duo</td>
           <td>
-            <a href="https://www.noteflight.com/scores/view/7de8a0a089b6b0ce9fe0fbfc6cad00fa3bd397d4">score</a>
+            <a href="https://www.noteflight.com/scores/view/637721144d4b7be25f22809622580bd14ab2b628">score</a>
           </td>
         </tr>
         <tr>
           <td class="song">Good 4 U</td>
           <td class="artist">Olivia Rodrigo</td>
-          <td class="instrumentation">vn vn va vc</td>
+          <td class="instrumentation">String Duo</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/985972f6b6570f406032a4c50707fd487dab9943">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Resistance</td>
+          <td class="artist">Muse</td>
+          <td class="instrumentation">String Duo</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/b4e3211fd33aba8fcdeda2f1bbb2425313015e2c">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Stay</td>
+          <td class="artist">Kid LAROI</td>
+          <td class="instrumentation">String Duo</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/7de8a0a089b6b0ce9fe0fbfc6cad00fa3bd397d4">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Beggin&amp;rsquo;</td>
+          <td class="artist">M&amp;acirc;neskin</td>
+          <td class="instrumentation">String Duo, Guitar</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/f74f62059cb4df4bacd702f1bda32cd7dcd2e7b4">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Dance Monkey</td>
+          <td class="artist">Tones &amp; I</td>
+          <td class="instrumentation">String Duo, Guitar</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/c181a3b415cce56b32cf9688df2c99ae01fa7a3b">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Colorado</td>
+          <td class="artist">Milky Chance</td>
+          <td class="instrumentation">String Duo, Guitar, Percussion</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/599a97e5e3bed85eb1a5945d73d603630ce3c713">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">This Will Be</td>
+          <td class="artist">Natalie Cole</td>
+          <td class="instrumentation">String Duo, Guitar, Percussion</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/a97cd5f522b37d3cb3ae92a39c180d8a1df7b648">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Levitating</td>
+          <td class="artist">Dua Lipa</td>
+          <td class="instrumentation">String Duo, Percussion</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/fa41c985b41ace548b5c69bc6586e054981c20e9">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Butter</td>
+          <td class="artist">BTS</td>
+          <td class="instrumentation">String Duo, Percussion</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/ffefe6276f5f99e67dc1091a3fb08ca06ec94971">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Ahesta Bero</td>
+          <td class="artist">Traditional Afghan</td>
+          <td class="instrumentation">String Duo, Percussion</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/b5597a7b1f04b591adf69097858ebcb424e12fbd">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Deja Vu</td>
+          <td class="artist">Olivia Rodrigo</td>
+          <td class="instrumentation">String Quartet</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/805ba02c0f75a377fdb0af2253e3b70f55b93b9b">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Industry Baby</td>
+          <td class="artist">Lil Nas X</td>
+          <td class="instrumentation">String Quartet</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/af689f79ae31e117ebcf5359d50f7cd8fc9fe2d3">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Kiss Me More</td>
+          <td class="artist">Doja Cat</td>
+          <td class="instrumentation">String Quartet</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/2816a42d308cac4b6683dc558bda92ca7ec2742f">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Rumors</td>
+          <td class="artist">Lizzo</td>
+          <td class="instrumentation">String Quartet</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/f4b84eb1edd270e84dcda56a48c792e25c6a6fbc">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Bad Habits</td>
+          <td class="artist">Ed Sheeran</td>
+          <td class="instrumentation">String Quartet</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/2c056f23917b8a13bd4f6899af7d1223f5a40130">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Sorry</td>
+          <td class="artist">Justin Bieber</td>
+          <td class="instrumentation">String Quartet</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/e4e9d2ac0ce1ba99e53e405a8984a6e545b76182">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Butter</td>
+          <td class="artist">BTS</td>
+          <td class="instrumentation">String Quartet</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/0cf1b39952c6fa3a20a2578ed0f49cbb8b2ead9d">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Good 4 U</td>
+          <td class="artist">Olivia Rodrigo</td>
+          <td class="instrumentation">String Quartet</td>
           <td>
             <a href="https://www.noteflight.com/scores/view/8465e5195e29a5f3647655a534fac359b24c10b7">score</a>
           </td>
@@ -285,4 +289,6 @@
       </tbody>
     </table>
   </body>
+</html>
+</body>
 </html>

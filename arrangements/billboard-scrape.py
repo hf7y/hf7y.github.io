@@ -72,11 +72,11 @@ with document(title='Arrangements') as doc:
 		with thead():
 			with tr():
 				with th():
-					a("Song", href="javascript:sort('song')")
+					a("Song", href="javascript:sort('song', true)")
 				with th():
-					a("Artist", href="javascript:sort('artist')")
+					a("Artist", href="javascript:sort('artist', true)")
 				with th():
-					a("Instrumentation", href="javascript:sort('instrumentation')")
+					a("Instrumentation", href="javascript:sort('instrumentation', false)")
 		with tbody():
 			for entry in catalog:
 				with tr():
@@ -84,7 +84,7 @@ with document(title='Arrangements') as doc:
 					td(entry[1],_class="artist")
 					td(entry[3],_class="instrumentation")
 					with td():
-						a("score", href=entry[2])					
+						a("score", href=entry[2])
 
 f = open("index.html", "w")
 f.write(doc.render())
