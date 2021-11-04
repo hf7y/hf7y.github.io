@@ -88,3 +88,28 @@ with document(title='Arrangements') as doc:
 
 f = open("index.html", "w")
 f.write(doc.render())
+
+with document(title='Sousaphone') as doc:
+	script(type='text/javascript', src='sort.js')
+	h1('Sousaphone')
+	with table():
+		with thead():
+			with tr():
+				with th():
+					a("Song", href="javascript:sort('song', true)")
+				with th():
+					a("Artist", href="javascript:sort('artist', true)")
+				with th():
+					a("Instrumentation", href="javascript:sort('instrumentation', false)")
+		with tbody():
+			for entry in catalog:
+				if entry[3] == "brasses" or "tb" in entry[3]:
+					with tr():
+						td(entry[0],_class="song")
+						td(entry[1],_class="artist")
+						td(entry[3],_class="instrumentation")
+						with td():
+							a("score", href=entry[2])
+
+sousf = open("sousaphone.html", "w")
+sousf.write(doc.render())
