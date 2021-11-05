@@ -100,7 +100,7 @@ with document(title='Sousaphone') as doc:
 				with th():
 					a("Artist", href="javascript:sort('artist', true)")
 				with th():
-					a("Instrumentation", href="javascript:sort('instrumentation', false)")
+					a("Insts.", href="javascript:sort('instrumentation', false)")
 		with tbody():
 			for entry in catalog:
 				if entry[3] == "brasses" or "tb" in entry[3]:
@@ -111,5 +111,5 @@ with document(title='Sousaphone') as doc:
 						with td():
 							a("score", href=entry[2])
 
-sousf = open("sousaphone.html", "w")
+sousf = open("../sousaphone/index.html", "w")
 sousf.write(doc.render())
