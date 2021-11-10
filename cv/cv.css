@@ -1,28 +1,22 @@
-body {
+div {
+	display: grid;
+	grid-template-columns: 4em 12em auto;
+	padding-bottom: 1em;
+	column-gap: 1.5em;
 }
 
-thead {
+.year {
+	text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+	div span:nth-child(3) {
+		grid-column: 2;
+	}
+}
+
+div span:nth-child(4) {
 	display: none;
-}
-
-td:first-child {
-	min-width: 5em;
-}
-
-td:nth-child(4) {
-	display: none;
-}
-
-td {
-	padding-right: 2em;
-}
-
-tr {
-	line-height: 2em;
-}
-
-table {
-	margin-left: 2em;
 }
 
 h2 {

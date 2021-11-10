@@ -39,8 +39,12 @@ a:hover {
 	text-decoration: underline;
 }
 
+table {
+	width: auto;
+}
+
 td {
-	max-width: 10em;
+	max-width: 50%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -85,23 +89,6 @@ th {
 		object-fit: cover;
 	}
 
-
-
-
-
-
-
-
-
-
 td {
 	padding-right: 1em;
-}
-
-
-ol {
-	list-style-type: none;
-}
-ol span.year {
-	padding-right: 0.5em;
 }
