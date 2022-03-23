@@ -65,15 +65,6 @@ th {
 }
 
 
-#player {
-	visibility: hidden;
-	position: sticky;
-	bottom: 0;
-	width: 100%;
-}
-
-
-
 .metadata span {
 	display: block;
 }
