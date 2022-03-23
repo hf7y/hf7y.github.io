@@ -15,37 +15,87 @@
 		<span><a href="/cv">cv</a></span>
 	</nav>
 </header>
-	<ul>
-  <li>
-    <audio controls>
-      <source src="Cape Cod.mp3" type="audio/mpeg">
-    </audio>
-  </li>
-  <li>
-    <audio controls>
-      <source src="Hard Candy.mp3" type="audio/mpeg">
-    </audio>
-  </li>
-  <li>
-    <audio controls>
-      <source src="Sound of Silence.mp3" type="audio/mpeg">
-    </audio>
-  </li>
-  <li>
-    <audio controls>
-      <source src="Our Year.mp3" type="audio/mpeg">
-    </audio>
-  </li>
-  <li>
-    <audio controls>
-      <source src="Cape Cod 2.mp3" type="audio/mpeg">
-    </audio>
-  </li>
-  <li>
-    <audio controls>
-      <source src="Hard Candy 2.mp3" type="audio/mpeg">
-    </audio>
-  </li>
-</ul>
+	<audio controls id="player"></audio>
+<ol id="playlist"></ol>
+<script>
+  songs = [
+    ["Sunny Afternoon", "Sunny Afternoon.mp3"],
+    ["Autumn Almanac", "Autumn.mp3"],
+    ["Cape Cod Kwassa Kwassa", "Cape Cod.mp3"],
+    ["Hard Candy Christmas", "Hard Candy.mp3"], 
+    ["Sound of Silence", "Sound of Silence.mp3"],
+    ["This Will Be Our Year", "Our Year.mp3"],
+    ["Sunny Afternoon (Alternate)", "Sunny Afternoon 2.mp3"],
+    ["Autumn Almanac (Alternate)", "Autumn 2.mp3"],
+    ["Cape Cod Kwassa Kwassa (Alternate)", "Cape Cod 2.mp3"],
+    ["Hard Candy Christmas (Alternate)", "Hard Candy 2.mp3"]
+  ];
+
+  var player = document.getElementById("player");
+  var playlist = document.getElementById("playlist");
+  var active = null;
+
+  function changeSource (item) {
+    player.src = item.getAttribute("src");
+    player.play();
+  }
+
+  function activate (item) {
+    changeSource(item);
+    if (active !== null) { deactivate(active) };
+    item.setAttribute('class', "clicked");
+    item.onclick = function () { 
+      if (player.paused) { 
+        player.play();
+      } else {
+        player.pause();
+      }
+    };
+    active = item;
+  }
+
+  function deactivate (item) {
+    item.setAttribute('class', "unclicked");
+    item.onclick = function () { activate(this) };
+  }
+
+  for (i=0; i<songs.length; i++) {
+    var item = document.createElement("li");
+    item.setAttribute('name', songs[i][0]);
+    item.setAttribute('src', songs[i][1]);
+    item.setAttribute('class', "unclicked");
+    item.onclick = function() { activate(this) };
+    item.appendChild(document.createTextNode(songs[i][0]));
+    playlist.appendChild(item);    
+  }
+
+  player.addEventListener("ended", function ()
+    {
+      let next = active.nextElementSibling;
+      if (next !== null) {
+        activate(next);        
+      }
+    });
+
+  activate(document.getElementsByTagName("li")[0]);
+  player.pause();
+
+</script>
+
+<style>
+  .unclicked {
+    color: blue;
+  }
+  .unclicked:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .clicked {
+    color: black;
+    font-weight: bold;
+  }
+</style>
+
 </body>
 </html>
