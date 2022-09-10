@@ -82,3 +82,12 @@ th {
 td {
 	padding-right: 1em;
 }
+
+video {
+	max-width: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
