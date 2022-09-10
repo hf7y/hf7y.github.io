@@ -22,17 +22,17 @@
 <h2>Introduction</h2>
 
 <h2>Map Data</h2>
-<p>I performed a basic image search to find this map from the University of South Florida's archive titled &ldquo;Drainage Basin and Principal Streams of the Mississippi River System, 1888.&rdquo;</p>
+<p>I perform a basic image search to find this map from the University of South Florida's archive titled &ldquo;Drainage Basin and Principal Streams of the Mississippi River System, 1888.&rdquo;</p>
 <img src="usf-8069.gif"/>
 
-<p>Using a GUI image processing program, I removed extraneous information and touched up some gaps in the river courses. Finally, I reduced the image to grayscale and cropped it.</p>
+<p>Using a GUI image processing program, I remove extraneous information and touched up some gaps in the river courses. Finally, I reduce the image to grayscale and crop it.</p>
 
 <img src="watershed-extracted.gif"/>
 
-<p>Next I converted the raster image to plaintext I can use easily in PureData. The command line utility ImageMagick is perfect for this purpose.</p>
+<p>Next I convert the raster image to plaintext that I can use easily in PureData. The command line utility ImageMagick is perfect for this purpose.</p>
 <pre>convert watershed-extracted.gif txt:- > watershed-extracted.txt</pre>
 
-<p>The above command prints out each pixel's location and its hexadecimal color value. To clean up the data further, I remove the header row (tail), extraneous columns (cut), and all pixels with the background color (grep). Then I use regular expressions to make the syntax closer to what PureData would like to see (sed).</p>
+<p>The above command prints out each pixel's location and its hexadecimal color value. To clean up the data further, I remove the header row (<code>tail</code>), extraneous columns (<code>cut</code>), and all pixels with the background color (<code>grep</code>). Then I use regular expressions to make the syntax closer to what PureData would like to see (<code>sed</code>).</p>
 
 <pre>
 cat watershed-extracted.txt |\
@@ -60,7 +60,7 @@ sed 's/,/ /' > pixels-Y.txt
 ...
 </pre>
 
-<p>It is sorted first by Y-value (second column) and then by X-value. I can use this to traverse the image from left to right, top to bottom. This would have the effect of going from North to South. I want to go from the sides towards the center, converging on New Orleans. To do this, I sorted to the pixels by X-value first.</p>
+<p>It is sorted first by Y-value (second column) and then by X-value. I can use this to traverse the image from left to right, top to bottom. This would have the effect of going from North to South. For now, I want to go from West to East. To do this, I <code>sort</code> to the pixels by X-value.</p>
 
 <pre>sort -n pixels-Y.txt > pixels-X.txt</pre>
 
@@ -81,38 +81,38 @@ sed 's/,/ /' > pixels-Y.txt
 </pre>
 
 <h2>Sonification</h2>
-<p>First I load the pixel data into a [text define] object named "pixels."</p>
+<p>First I load the pixel data into a <code>[text define]</code> object named "pixels."</p>
 <img src="text-define.png"/>
-<p>This is the main process of the patch. It moves line-by-line through [text get pixels], formats the data, and sends it to a polyphonic synthesizer.</p>
+<p>This is the main process of the patch. It moves line-by-line through <code>[text get pixels]</code>, formats the data, and sends it to a polyphonic synthesizer.</p>
 <img src="mississippi-main.png"/>
 <h3>Traversing Map Data</h3>
-<p>Inside the [pd traverse] subpatch is a basic [line] patch with added processing to ensure I only [text get] each line number once.</p>
+<p>Inside the <code>[pd traverse]</code> subpatch is a basic <code>[line]</code> object with added processing. This ensures I only <code>[text get]</code> each line number once.</p>
 <img src="pd-traverse.png"/>
-<p>Inside [pd process-data], I [unpack] the line and send each variable to its own subpatch. This allows me to [pack] a list with the data to control [synth-voice~].</p>
+<p>Inside <code>[pd process-data]</code>, I <code>[unpack]</code> the line and send each variable to its own subpatch. This allows me to <code>[pack]</code> a list with the data to control <code>[synth-voice~]</code>.</p>
 <h3>Processing Map Data</h3>
 <img src="pd-process-data.png"/>
-<p>Each of the subpatches handle the variables roughly the same way. The range of pixel values (x, y, and rgb) are mapped to different variables inside the [synth-voice~] subpatch (balance, midi pitch, and volume). Variables defining the range of volumes and pitches are matters of taste. I adjusted the values by ear.</p>
+<p>Each of the subpatches handles the variables roughly the same way. The range of pixel values (x, y, and rgb) are mapped to different control inputs for the <code>[synth-voice~]</code> subpatch (balance, midi pitch, and volume). Variables defining the range of volumes and pitches are matters of taste. I adjusted the values by ear.</p>
 <img src="x2bal.png"/>
 <img src="y2midi.png"/>
 <img src="val2rms.png"/>
 <p>Note above that each subpatch receives a message sent from elsewhere in the patch. I handle this in the subpatch <code>[pd global-variables]</code>. The message <code>[calculate(</code> runs a process to traverse <code>[text get pixels]</code> and track the maximum values for each variable. Since this takes time, the values are made to persist in the patch between performances. That way, I can use <code>[broadcast(</code> to simply send the stored max values.</p>
 <img src="global-variables.png"/>
 <h3>Performing Map Data</h3>
-<p>Each output from <code>[pd process-data]</code> is list of pan, pitch and loudness values corresponding to a pixel's location and color. These lists are appended with an index number so <code>[clone]</code> can route them to different instances of <code>[synth-voice~]</code>.</p>
-<p>The <code>[synth-voice~]</code> subpatch generates a sine wave based on the midi pitch input. This sine wave is routed through an an envelope shaped by creation arguments $2 and $3 for attack and decay. Finally, trigonometric panning is applied using the balance input corresponding to the X position.</p>
+<p>Each output from <code>[pd process-data]</code> is list of pan, pitch and loudness values corresponding to a pixel's location and color. These lists are appended with an index number (up to 499) so <code>[clone]</code> can route them to the 500 different instances of <code>[synth-voice~]</code>.</p>
+<p>The <code>[synth-voice~]</code> subpatch generates a sine wave based on the midi pitch input. This sine wave is routed through an an envelope, shaped by creation arguments $2 and $3 for attack and decay. Finally, trigonometric panning is applied using the balance input derived from the X position.</p>
 <img src="synth-voice~.png"/>
 <h2>Result</h2>
-<p>Below is the audio output as the patch scans through the map data in 10 seconds. Each voice has a 15ms attack and 250ms decay.</p>
+<p>Below is the audio output as the patch scans through the map data in 10 seconds. Each voice has a 15 ms attack and 250 ms decay.</p>
 <audio controls>
 	<source src="10000ms.wav" type="audio/wav">
 </audio>
 
-<p>The contours of the watershed system become legible when I read through the file over 100 seconds. Here I've lengthened the decay time by a factor of 10 as well.</p>
+<p>The contours of the watershed system become legible when I read through the file over 100 seconds. Here, I've lengthened the decay time by a factor of 10 to 2500 ms.</p>
 <audio controls>
 	<source src="100000ms.wav" type="audio/wav">
 </audio>
 
-<p>To create a visual companion to the sound, I wrote a linux shell script. This utilizes the powerhouse ImageMagick <code>convert</code> command. I read the pixels-X.txt file line by line. Starting from the original watershed image, I color in the first pixel and save it to a result file. Each subsequent iteration of the while loop uses that previous result, thus progressively coloring in the map. By changing the destination filename based on the X value, I end up with 834 images, one for each column of the image.</p>
+<p>To create a visual companion to the sound, I run a linux shell script. This utilizes the powerhouse ImageMagick <code>convert</code> command. I read the pixels-X.txt file line by line. Starting from the original watershed image, I color in the first pixel and save it to a result file. Each subsequent iteration of the while loop uses that previous result, thus progressively coloring in the map. By changing the destination filename based on the X value, I end up with 834 frames, one for each column of the original image.</p>
 <pre>
 #!/bin/bash
 
@@ -127,9 +127,9 @@ while read -r line; do
 	cp ${a[0]}.gif target.gif
 done < ../pixels-X.txt
 </pre>
-<p>This script was incredibly inefficient, taking almost an hour to loop through the 30,000 pixels in the image. I'm sure there is a more efficient approach. Fortunately, I only need to run this once.</p>
+<p>This script is incredibly inefficient, taking almost an hour to loop through the 30,000 pixels in the image. I'm sure there is a more efficient approach. Fortunately, I only need to run this once.</p>
 
-<p>Next I used ffmpeg to convert an image sequence into a video. I made two sequence, each using all 834 images. I selected the framerate to make a 10 second and 100 second video corresponding to the above audios. First, however, I had to convert gifs to pngs ffmpeg could use.</p>
+<p>Next I use <code>ffmpeg</code> to convert an image sequence into a video. I made two sequence, each using all 834 images. I selecte the framerate to make a 10 and 100 second video companions for the above audio. First, however, I <code>convert</code> gifs to pngs that ffmpeg can use.</p>
 <pre>
 for f in *; do
 	convert $f ${%.gif}.png
@@ -139,7 +139,7 @@ ffmpeg -framerate 83.4 %03d.png -vcodec copy 10000ms-video.mp4
 ffmpeg -framerate 8.34 %03d.png -vcodec copy 100000ms-video.mp4
 </pre>
 
-<p>It was a simple matter to add the audio from earlier to the new videos.</p>
+<p>It is a simple matter to add the audio from earlier to the new videos.</p>
 <pre>
 ffmpeg -i ./frames/10000ms-video.mp4 -i 10000ms.wav 10000ms.mp4
 </pre>
