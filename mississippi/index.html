@@ -1,0 +1,160 @@
+<html prefix="mo: http://purl.org/ontology/mo/">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel=stylesheet href=/style.css>
+</head>
+<body typeof="mo:MusicArtist">
+	<header>
+	<a property=name href="/">Zachary Viet Pine</a>
+	<nav>
+		<span><a href="/bio">bio</a></span> 
+		<span><a href="/compositions">compositions</a></span> 
+		<span><a href="/sousaphone">sousaphone</a></span> 
+		<span><a href="/arrangements">arrangements</a></span> 
+		<span><a href="/band">string&nbsp;band</a></span> 
+		<span><a href="/cv">cv</a></span>
+	</nav>
+</header>
+	<h1>Mississippi River Sonification</h1>
+<video controls>
+	<source src="100000ms-neg.mp4"/>
+</video>
+<h2>Introduction</h2>
+
+<h2>Map Data</h2>
+<p>I performed a basic image search to find this map from the University of South Florida's archive titled &ldquo;Drainage Basin and Principal Streams of the Mississippi River System, 1888.&rdquo;</p>
+<img src="usf-8069.gif"/>
+
+<p>Using a GUI image processing program, I removed extraneous information and touched up some gaps in the river courses. Finally, I reduced the image to grayscale and cropped it.</p>
+
+<img src="watershed-extracted.gif"/>
+
+<p>Next I converted the raster image to plaintext I can use easily in PureData. The command line utility ImageMagick is perfect for this purpose.</p>
+<pre>convert watershed-extracted.gif txt:- > watershed-extracted.txt</pre>
+
+<p>The above command prints out each pixel's location and its hexadecimal color value. To clean up the data further, I remove the header row (tail), extraneous columns (cut), and all pixels with the background color (grep). Then I use regular expressions to make the syntax closer to what PureData would like to see (sed).</p>
+
+<pre>
+cat watershed-extracted.txt |\
+tail -n +2 |\
+grep -v \#F |\
+grep -v \#E |\
+cut -d ' ' -f 1,4 |\
+sed 's/: #/ 0x/' |\
+sed 's/,/ /' > pixels-Y.txt
+</pre>
+
+<p>The resulting data looks like this:</p>
+
+<pre>
+55 0 C4C4C4FF
+56 0 C4C4C4FF
+57 0 C4C4C4FF
+48 1 C4C4C4FF
+53 1 C4C4C4FF
+54 1 101010FF
+55 1 101010FF
+56 1 757575FF
+57 1 101010FF
+58 1 101010FF
+...
+</pre>
+
+<p>It is sorted first by Y-value (second column) and then by X-value. I can use this to traverse the image from left to right, top to bottom. This would have the effect of going from North to South. I want to go from the sides towards the center, converging on New Orleans. To do this, I sorted to the pixels by X-value first.</p>
+
+<pre>sort -n pixels-Y.txt > pixels-X.txt</pre>
+
+<p>The result is as expected.</p>
+
+<pre>
+0 127 C4C4C4FF
+0 128 757575FF
+0 129 757575FF
+0 130 757575FF
+0 131 757575FF
+0 132 757575FF
+0 133 C4C4C4FF
+1 125 C4C4C4FF
+1 126 757575FF
+1 127 757575FF
+...
+</pre>
+
+<h2>Sonification</h2>
+<p>First I load the pixel data into a [text define] object named "pixels."</p>
+<img src="text-define.png"/>
+<p>This is the main process of the patch. It moves line-by-line through [text get pixels], formats the data, and sends it to a polyphonic synthesizer.</p>
+<img src="mississippi-main.png"/>
+<h3>Traversing Map Data</h3>
+<p>Inside the [pd traverse] subpatch is a basic [line] patch with added processing to ensure I only [text get] each line number once.</p>
+<img src="pd-traverse.png"/>
+<p>Inside [pd process-data], I [unpack] the line and send each variable to its own subpatch. This allows me to [pack] a list with the data to control [synth-voice~].</p>
+<h3>Processing Map Data</h3>
+<img src="pd-process-data.png"/>
+<p>Each of the subpatches handle the variables roughly the same way. The range of pixel values (x, y, and rgb) are mapped to different variables inside the [synth-voice~] subpatch (balance, midi pitch, and volume). Variables defining the range of volumes and pitches are matters of taste. I adjusted the values by ear.</p>
+<img src="x2bal.png"/>
+<img src="y2midi.png"/>
+<img src="val2rms.png"/>
+<p>Note above that each subpatch receives a message sent from elsewhere in the patch. I handle this in the subpatch <code>[pd global-variables]</code>. The message <code>[calculate(</code> runs a process to traverse <code>[text get pixels]</code> and track the maximum values for each variable. Since this takes time, the values are made to persist in the patch between performances. That way, I can use <code>[broadcast(</code> to simply send the stored max values.</p>
+<img src="global-variables.png"/>
+<h3>Performing Map Data</h3>
+<p>Each output from <code>[pd process-data]</code> is list of pan, pitch and loudness values corresponding to a pixel's location and color. These lists are appended with an index number so <code>[clone]</code> can route them to different instances of <code>[synth-voice~]</code>.</p>
+<p>The <code>[synth-voice~]</code> subpatch generates a sine wave based on the midi pitch input. This sine wave is routed through an an envelope shaped by creation arguments $2 and $3 for attack and decay. Finally, trigonometric panning is applied using the balance input corresponding to the X position.</p>
+<img src="synth-voice~.png"/>
+<h2>Result</h2>
+<p>Below is the audio output as the patch scans through the map data in 10 seconds. Each voice has a 15ms attack and 250ms decay.</p>
+<audio controls>
+	<source src="10000ms.wav" type="audio/wav">
+</audio>
+
+<p>The contours of the watershed system become legible when I read through the file over 100 seconds. Here I've lengthened the decay time by a factor of 10 as well.</p>
+<audio controls>
+	<source src="100000ms.wav" type="audio/wav">
+</audio>
+
+<p>To create a visual companion to the sound, I wrote a linux shell script. This utilizes the powerhouse ImageMagick <code>convert</code> command. I read the pixels-X.txt file line by line. Starting from the original watershed image, I color in the first pixel and save it to a result file. Each subsequent iteration of the while loop uses that previous result, thus progressively coloring in the map. By changing the destination filename based on the X value, I end up with 834 images, one for each column of the image.</p>
+<pre>
+#!/bin/bash
+
+cp watershed-extracted.gif ./frames/target.gif
+
+cd frames
+while read -r line; do
+	a=($(echo $line))
+	echo $line
+	convert target.gif -fill red \
+	-draw "point ${a[0]},${a[1]}" ${a[0]}.gif
+	cp ${a[0]}.gif target.gif
+done < ../pixels-X.txt
+</pre>
+<p>This script was incredibly inefficient, taking almost an hour to loop through the 30,000 pixels in the image. I'm sure there is a more efficient approach. Fortunately, I only need to run this once.</p>
+
+<p>Next I used ffmpeg to convert an image sequence into a video. I made two sequence, each using all 834 images. I selected the framerate to make a 10 second and 100 second video corresponding to the above audios. First, however, I had to convert gifs to pngs ffmpeg could use.</p>
+<pre>
+for f in *; do
+	convert $f ${%.gif}.png
+done
+
+ffmpeg -framerate 83.4 %03d.png -vcodec copy 10000ms-video.mp4
+ffmpeg -framerate 8.34 %03d.png -vcodec copy 100000ms-video.mp4
+</pre>
+
+<p>It was a simple matter to add the audio from earlier to the new videos.</p>
+<pre>
+ffmpeg -i ./frames/10000ms-video.mp4 -i 10000ms.wav 10000ms.mp4
+</pre>
+<video controls>
+	<source src="10000ms.mp4"/>
+</video>
+
+<p>This will look better if the river is filled in with blue. To do this, I add a simple negate filter.
+<pre>
+ffmpeg -i ./frames/100000ms-video.mp4 -i 100000ms.wav 100000ms.mp4
+ffmpeg -i 100000ms.mp4 -vf negate 100000ms-neg.mp4
+</pre>
+<video controls>
+	<source src="100000ms-neg.mp4"/>
+</video>
+<!-- <img src="mississippi-pd.png"/> -->
+</body>
+</html>
