@@ -27,10 +27,7 @@
 </style>
 
 <h1>Mississippi River Sonification</h1>
-<video controls>
-	<source src="100000msR-neg.mp4"/>
-</video>
-<h2>Introduction</h2>
+<iframe width=100% height="693" src="https://www.youtube.com/embed/3iJ1La4uKQE" title="100000msR neg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2>Map Data</h2>
 <p>I perform a basic image search to find this map from the University of South Florida's archive titled &ldquo;Drainage Basin and Principal Streams of the Mississippi River System, 1888.&rdquo;</p>
@@ -154,18 +151,14 @@ ffmpeg -framerate 8.34 %03d.png -vcodec copy 100000ms-video.mp4
 <pre>
 ffmpeg -i ./frames/10000ms-video.mp4 -i 10000ms.wav 10000ms.mp4
 </pre>
-<video controls>
-	<source src="10000ms.mp4"/>
-</video>
+<iframe width=100% height="693" src="https://www.youtube.com/embed/hO2diIAjI40" title="10000ms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <p>This will look better if the river is filled in with blue. To do this, I add a simple negate filter.
 <pre>
 ffmpeg -i ./frames/100000ms-video.mp4 -i 100000ms.wav 100000ms.mp4
 ffmpeg -i 100000ms.mp4 -vf negate 100000ms-neg.mp4
 </pre>
-<video controls>
-	<source src="100000ms-neg.mp4"/>
-</video>
+<iframe width=100% height="693" src="https://www.youtube.com/embed/oA2w-QOROw8" title="100000ms neg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!-- <img src="./pd/mississippi-pd.png"/> -->
 </body>
 </html>
