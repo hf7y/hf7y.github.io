@@ -15,9 +15,20 @@
 		<span><a href="/cv">cv</a></span>
 	</nav>
 </header>
-	<h1>Mississippi River Sonification</h1>
+	<link rel="stylesheet" href="http://zach.audio/style.css">
+<style>
+	pre {
+		white-space: pre-wrap;
+		font-size: 0.6em;
+	}
+	code {
+		font-size: 0.6em;
+	}
+</style>
+
+<h1>Mississippi River Sonification</h1>
 <video controls>
-	<source src="100000ms-neg.mp4"/>
+	<source src="100000msR-neg.mp4"/>
 </video>
 <h2>Introduction</h2>
 
@@ -25,11 +36,11 @@
 <p>I perform a basic image search to find this map from the University of South Florida's archive titled &ldquo;Drainage Basin and Principal Streams of the Mississippi River System, 1888.&rdquo;</p>
 <img src="usf-8069.gif"/>
 
-<p>Using a GUI image processing program, I remove extraneous information and touched up some gaps in the river courses. Finally, I reduce the image to grayscale and crop it.</p>
+<p>Using a GUI image processing program, I remove extraneous information and touch up some gaps in the river courses. Finally, I reduce the image to grayscale and crop it.</p>
 
 <img src="watershed-extracted.gif"/>
 
-<p>Next I convert the raster image to plaintext that I can use easily in PureData. The command line utility ImageMagick is perfect for this purpose.</p>
+<p>Next I <code>convert</code> the raster image to plaintext that I can use easily in PureData. The command line utility ImageMagick is perfect for this purpose.</p>
 <pre>convert watershed-extracted.gif txt:- > watershed-extracted.txt</pre>
 
 <p>The above command prints out each pixel's location and its hexadecimal color value. To clean up the data further, I remove the header row (<code>tail</code>), extraneous columns (<code>cut</code>), and all pixels with the background color (<code>grep</code>). Then I use regular expressions to make the syntax closer to what PureData would like to see (<code>sed</code>).</p>
@@ -82,34 +93,34 @@ sed 's/,/ /' > pixels-Y.txt
 
 <h2>Sonification</h2>
 <p>First I load the pixel data into a <code>[text define]</code> object named "pixels."</p>
-<img src="text-define.png"/>
+<img src="./pd/text-define.png"/>
 <p>This is the main process of the patch. It moves line-by-line through <code>[text get pixels]</code>, formats the data, and sends it to a polyphonic synthesizer.</p>
-<img src="mississippi-main.png"/>
+<img src="./pd/mississippi-main.png"/>
 <h3>Traversing Map Data</h3>
 <p>Inside the <code>[pd traverse]</code> subpatch is a basic <code>[line]</code> object with added processing. This ensures I only <code>[text get]</code> each line number once.</p>
-<img src="pd-traverse.png"/>
+<img src="./pd/pd-traverse.png"/>
 <p>Inside <code>[pd process-data]</code>, I <code>[unpack]</code> the line and send each variable to its own subpatch. This allows me to <code>[pack]</code> a list with the data to control <code>[synth-voice~]</code>.</p>
 <h3>Processing Map Data</h3>
-<img src="pd-process-data.png"/>
+<img src="./pd/pd-process-data.png"/>
 <p>Each of the subpatches handles the variables roughly the same way. The range of pixel values (x, y, and rgb) are mapped to different control inputs for the <code>[synth-voice~]</code> subpatch (balance, midi pitch, and volume). Variables defining the range of volumes and pitches are matters of taste. I adjusted the values by ear.</p>
-<img src="x2bal.png"/>
-<img src="y2midi.png"/>
-<img src="val2rms.png"/>
+<img src="./pd/x2bal.png"/>
+<img src="./pd/y2midi.png"/>
+<img src="./pd/val2rms.png"/>
 <p>Note above that each subpatch receives a message sent from elsewhere in the patch. I handle this in the subpatch <code>[pd global-variables]</code>. The message <code>[calculate(</code> runs a process to traverse <code>[text get pixels]</code> and track the maximum values for each variable. Since this takes time, the values are made to persist in the patch between performances. That way, I can use <code>[broadcast(</code> to simply send the stored max values.</p>
-<img src="global-variables.png"/>
+<img src="./pd/global-variables.png"/>
 <h3>Performing Map Data</h3>
 <p>Each output from <code>[pd process-data]</code> is list of pan, pitch and loudness values corresponding to a pixel's location and color. These lists are appended with an index number (up to 499) so <code>[clone]</code> can route them to the 500 different instances of <code>[synth-voice~]</code>.</p>
 <p>The <code>[synth-voice~]</code> subpatch generates a sine wave based on the midi pitch input. This sine wave is routed through an an envelope, shaped by creation arguments $2 and $3 for attack and decay. Finally, trigonometric panning is applied using the balance input derived from the X position.</p>
-<img src="synth-voice~.png"/>
+<img src="./pd/synth-voice~.png"/>
 <h2>Result</h2>
 <p>Below is the audio output as the patch scans through the map data in 10 seconds. Each voice has a 15 ms attack and 250 ms decay.</p>
 <audio controls>
-	<source src="10000ms.wav" type="audio/wav">
+	<source src="./pd/10000ms.wav" type="audio/wav">
 </audio>
 
 <p>The contours of the watershed system become legible when I read through the file over 100 seconds. Here, I've lengthened the decay time by a factor of 10 to 2500 ms.</p>
 <audio controls>
-	<source src="100000ms.wav" type="audio/wav">
+	<source src="./pd/100000ms.wav" type="audio/wav">
 </audio>
 
 <p>To create a visual companion to the sound, I run a linux shell script. This utilizes the powerhouse ImageMagick <code>convert</code> command. I read the pixels-X.txt file line by line. Starting from the original watershed image, I color in the first pixel and save it to a result file. Each subsequent iteration of the while loop uses that previous result, thus progressively coloring in the map. By changing the destination filename based on the X value, I end up with 834 frames, one for each column of the original image.</p>
@@ -155,6 +166,6 @@ ffmpeg -i 100000ms.mp4 -vf negate 100000ms-neg.mp4
 <video controls>
 	<source src="100000ms-neg.mp4"/>
 </video>
-<!-- <img src="mississippi-pd.png"/> -->
+<!-- <img src="./pd/mississippi-pd.png"/> -->
 </body>
 </html>
