@@ -15,79 +15,154 @@
 		<span><a href="/cv">cv</a></span>
 	</nav>
 </header>
-	<audio controls id="player"></audio>
-<ol id="playlist"></ol>
-<script>
-  songs = [
-    ["Sunny Afternoon", "Sunny Afternoon.mp3"],
-    ["Autumn Almanac", "Autumn Almanac.mp3"],
-    ["Cape Cod Kwassa Kwassa", "Cape Cod Kwassa Kwassa.mp3"],
-    ["Hard Candy Christmas", "Hard Candy Christmas.mp3"], 
-    ["Sound of Silence", "Sound of Silence.mp3"],
-    ["This Will Be Our Year", "This Will Be Our Year.mp3"],
-  ];
-
-  var player = document.getElementById("player");
-  var playlist = document.getElementById("playlist");
-  var active = null;
-
-  function changeSource (item) {
-    player.src = item.getAttribute("src");
-    player.play();
-  }
-
-  function activate (item) {
-    changeSource(item);
-    if (active !== null) { deactivate(active) };
-    item.setAttribute('class', "clicked");
-    item.onclick = function () { 
-      if (player.paused) { 
+	<!DOCTYPE html>
+<html>
+  <head>
+    <title>String Band</title>
+    <style>
+      tr {
+        white-space: nowrap;
+      }
+      .credit {
+        display: inline-block;
+        font-style: italic;
+      }
+      .track {
+        color: blue;
+        text-decoration: underline;
+      }
+      .track:hover {
+        cursor: pointer;
+      }
+      </style>
+    <script src="/sort.js" type="text/javascript"></script>
+    <script>
+      function changeSource (item) {
+        var player = document.getElementById("player");
+        player.src = item.getAttribute("src");
         player.play();
-      } else {
-        player.pause();
       }
-    };
-    active = item;
-  }
-
-  function deactivate (item) {
-    item.setAttribute('class', "unclicked");
-    item.onclick = function () { activate(this) };
-  }
-
-  for (i=0; i<songs.length; i++) {
-    var item = document.createElement("li");
-    item.setAttribute('name', songs[i][0]);
-    item.setAttribute('src', songs[i][1]);
-    item.setAttribute('class', "unclicked");
-    item.onclick = function() { activate(this) };
-    item.appendChild(document.createTextNode(songs[i][0]));
-    playlist.appendChild(item);    
-  }
-
-  player.addEventListener("ended", function ()
-    {
-      let next = active.nextElementSibling;
-      if (next !== null) {
-        activate(next);        
-      }
-    });
-</script>
-
-<style>
-  .unclicked {
-    color: blue;
-  }
-  .unclicked:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-
-  .clicked {
-    color: black;
-    font-weight: bold;
-  }
-</style>
-
+    </script>
+  </head>
+  <body>
+    <h1>String Band</h1>
+    <p>
+      I direct rehearsals and arrange for a small community of amateur musicians based in New Orleans. This recent activity began in Summer 2020 as a way for a small group of friends to stay connected during the pandemic lockdowns. My work in this genre has became more formalized since I began holding regular rehearsals in Spring 2022 at the church where I work. Since that time, I've started collaborating with musicians from the intergenerational New Orleans community. I've also produced more notated arrangements to aid rehearsal directing.
+    </p>
+    <p>
+      I have been performing, composing and arranging for a guitar-based ensemble since my middle-school days circa 2007. From 2008 to 2011, I composed and performed with Jacob Hartranft, Matthew Lidell and Kevin Thomas as <i>Traveling Cadavers</i> in Rockville, MD. I spent my college years doing solo singer/songwriting. I occasionally facilliated songwriting circles, most successfully around 2014.
+    </p>
+    <h2>Notated Arrangements</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="song">
+            <a href="javascript:sort('song', true)">Song</a>
+          </th>
+          <th class="artist">
+            <a href="javascript:sort('artist', true)">Artist</a>
+          </th>
+          <th class="tempo">
+            <a href="javascript:sort('tempo', true)">Tempo</a>
+          </th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="song">Hysteric</td>
+          <td class="artist">Yeah Yeah Yeahs</td>
+          <td class="tempo">92</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/1bb651f66145c290565f71ff9f4322cce26ef783">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">1979</td>
+          <td class="artist">Smashing Pumpkins</td>
+          <td class="tempo">132</td> 
+          <td>
+            <a href="https://www.noteflight.com/scores/view/deb054c93da45627aa5e70c781a881b54fc7d1de">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Reason to Believe</td>
+          <td class="artist">Tim Hardin</td>
+          <td class="tempo">84</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/d89575fcf4c7f90eaa8965e51145e22debba693a">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">All I Have to Do Is Dream</td>
+          <td class="artist">Everly Brothers</td>
+          <td class="tempo">108</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/37e36b362f63ac8f02aaa30598b1ae42957ec758">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Dear God</td>
+          <td class="artist">XTC</td>
+          <td class="tempo">88</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/cb47d8012f179f83307de0bd81e4012aff617597">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Come and Get Your Love</td>
+          <td class="artist">Redbone</td>
+          <td class="tempo">104</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/8b12476089461c84c0020c1df48b838c37f7a28a">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Goodbye Stranger</td>
+          <td class="artist">Supertramp</td>
+          <td class="tempo">112</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/3ed2af5e26686a91ba1c4b83b9b0d7b00d68e9f0">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Sailor Song</td>
+          <td class="artist">Regina Spektor</td>
+          <td class="tempo">72</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/a024f26cf1ea40bf47392093ff579b7b0fbfd154">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Tiny Dancer</td>
+          <td class="artist">Elton John</td>
+          <td class="tempo">144</td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/d52bb6c9621da434f8b825ac98dbfbc2e5fefe4c">score</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Winter &lsquo;21 Session</h2>
+    <p>
+      <span class=credit>Chiara Azzaretti (voice)</span>,
+      <span class=credit>Brennan Brown (voice, guitar, bass)</span>,
+      <span class=credit>Alexander Herzog (voice)</span>,
+      <span class=credit>Zachary Pine (voice, guitar, bass)</span>,
+      <span class=credit>Phillip Raeisghasem (voice, drums)</span>,
+      <span class=credit>Kaitlin Sager (voice, guitalele)</span>,
+      <span class=credit>Olivia Simard (voice, guitar)</span>.
+    </p>
+    <audio controls id="player"></audio>
+    <ol id="playlist">
+      <li><span class=track class=unclicked onclick="changeSource(this)" src='winter21/Sunny Afternoon.mp3'>Sunny Afternoon</span></li>
+      <li><span class=track class=unclicked onclick="changeSource(this)" src='winter21/Autumn Almanac.mp3'>Autumn Almanac</span></li>
+      <li><span class=track class=unclicked onclick="changeSource(this)" src='winter21/Cape Cod Kwassa Kwassa.mp3'>Cape Cod Kwassa Kwassa</span></li>
+      <li><span class=track class=unclicked onclick="changeSource(this)" src='winter21/Hard Candy Christmas.mp3'>Hard Candy Christmas</span></li>
+      <li><span class=track class=unclicked onclick="changeSource(this)" src='winter21/Sound of Silence.mp3'>Sound of Silence</span></li>
+      <li><span class=track class=unclicked onclick="changeSource(this)" src='winter21/This Will Be Our Year.mp3'>This Will Be Our Year</span></li>
+    </ol>
+  </body>
+</html>
 </body>
 </html>

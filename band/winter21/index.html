@@ -1,0 +1,93 @@
+<html prefix="mo: http://purl.org/ontology/mo/">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel=stylesheet href=/style.css>
+</head>
+<body typeof="mo:MusicArtist">
+	<header>
+	<a property=name href="/">Zachary Viet Pine</a>
+	<nav>
+		<span><a href="/bio">bio</a></span> 
+		<span><a href="/compositions">compositions</a></span> 
+		<span><a href="/sousaphone">sousaphone</a></span> 
+		<span><a href="/arrangements">arrangements</a></span> 
+		<span><a href="/band">string&nbsp;band</a></span> 
+		<span><a href="/cv">cv</a></span>
+	</nav>
+</header>
+	<audio controls id="player"></audio>
+<ol id="playlist"></ol>
+<script>
+  songs = [
+    ["Sunny Afternoon", "Sunny Afternoon.mp3"],
+    ["Autumn Almanac", "Autumn Almanac.mp3"],
+    ["Cape Cod Kwassa Kwassa", "Cape Cod Kwassa Kwassa.mp3"],
+    ["Hard Candy Christmas", "Hard Candy Christmas.mp3"], 
+    ["Sound of Silence", "Sound of Silence.mp3"],
+    ["This Will Be Our Year", "This Will Be Our Year.mp3"],
+  ];
+
+  var player = document.getElementById("player");
+  var playlist = document.getElementById("playlist");
+  var active = null;
+
+  function changeSource (item) {
+    player.src = item.getAttribute("src");
+    player.play();
+  }
+
+  function activate (item) {
+    changeSource(item);
+    if (active !== null) { deactivate(active) };
+    item.setAttribute('class', "clicked");
+    item.onclick = function () { 
+      if (player.paused) { 
+        player.play();
+      } else {
+        player.pause();
+      }
+    };
+    active = item;
+  }
+
+  function deactivate (item) {
+    item.setAttribute('class', "unclicked");
+    item.onclick = function () { activate(this) };
+  }
+
+  for (i=0; i<songs.length; i++) {
+    var item = document.createElement("li");
+    item.setAttribute('name', songs[i][0]);
+    item.setAttribute('src', songs[i][1]);
+    item.setAttribute('class', "unclicked");
+    item.onclick = function() { activate(this) };
+    item.appendChild(document.createTextNode(songs[i][0]));
+    playlist.appendChild(item);    
+  }
+
+  player.addEventListener("ended", function ()
+    {
+      let next = active.nextElementSibling;
+      if (next !== null) {
+        activate(next);        
+      }
+    });
+</script>
+
+<style>
+  .unclicked {
+    color: blue;
+  }
+  .unclicked:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .clicked {
+    color: black;
+    font-weight: bold;
+  }
+</style>
+
+</body>
+</html>

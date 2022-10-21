@@ -19,6 +19,14 @@
 <html>
   <head>
     <title>Sousaphone</title>
+    <style>
+      tr {
+        white-space: nowrap;
+      }
+      .instrumentation {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <script src="sort.js" type="text/javascript"></script>
@@ -26,62 +34,882 @@
     <table>
       <thead>
         <tr>
-          <th>
+          <th class="song">
             <a href="javascript:sort('song', true)">Song</a>
           </th>
-          <th>
+          <th class="artist">
             <a href="javascript:sort('artist', true)">Artist</a>
           </th>
-          <th>
+          <th class="instrumentation">
             <a href="javascript:sort('instrumentation', false)">Insts.</a>
           </th>
+          <th class="genre">
+            <a href="javascript:sort('genre', false)">Genre</a>
+          </th>
+          <th class="tempo">
+            <a href="javascript:sort('tempo', false)">Tempo</a>
+          </th>
+          <th>Score</th>
         </tr>
       </thead>
       <tbody>
         <tr>
+          <td class="song">Electric Feel</td>
+          <td class="artist">MGMT</td>
+          <td class="instrumentation">tr tb</td>
+          <td class="genre">Rock</td>
+          <td class="tempo">104</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=MmZexg8sxyk">yt</a>
+          </td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/e7d80a089f310bb2970d217aac4a62d6b41e31d6">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">1999 Space Club</td>
+          <td class="artist">Arling and Cameron</td>
+          <td class="instrumentation">tr tb</td>
+          <td class="genre">Electronic</td>
+          <td class="tempo">84</td> 
+          <td>
+            <a href="https://www.youtube.com/watch?v=1gphb77R4x0">yt</a>
+          </td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/2420eb670bc5524346aaad58672f14900cd87c41">score</a>
+          </td>
+        </tr>
+        <tr>
           <td class="song">Industry Baby</td>
           <td class="artist">Lil Nas X</td>
           <td class="instrumentation">tr tb</td>
+          <td class="genre">Hip-hop</td>
+          <td class="tempo">75</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=UTHLKHL_whs">yt</a>
+          </td>
           <td>
             <a href="https://www.noteflight.com/scores/view/01decdee5641c0e106c3098ae59ed7f655a6a0bd">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">I Miss You</td>
-          <td class="artist">Blink 182</td>
-          <td class="instrumentation">brasses</td>
+          <td class="song">Poison</td>
+          <td class="artist">Bell Biv Devoe</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Hip-hop</td>
+          <td class="tempo">110</td>
           <td>
-            <a href="https://www.noteflight.com/scores/view/747985bb66ac4fa3987d640a26616d03dab8039a">score</a>
+            <a href="https://www.youtube.com/watch?v=YejxyaFyUHc">yt</a>
+          </td>
+          <td>
+            <a>score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">I Keep Forgettin</td>
-          <td class="artist">Michael McDonald</td>
-          <td class="instrumentation">tr tb</td>
+          <td class="song">Ms. Jackson</td>
+          <td class="artist">Outkast</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Hip-hop</td>
+          <td class="tempo">95</td>
           <td>
-            <a href="https://www.noteflight.com/scores/view/2bf75d6134060dfe6d5df98bcd785b873faf55c9">score</a>
+            <a href="https://www.youtube.com/watch?v=CSD2J8yaMmM">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">So Fresh, So Clean</td>
+          <td class="artist">Outkast</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Hip-hop</td>
+          <td class="tempo">82.5</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=-JfEJq56IwI">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Roses</td>
+          <td class="artist">Outkast</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Hip-hop</td>
+          <td class="tempo">107.5</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=_hEraGvcQe0">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Hey Ya!</td>
+          <td class="artist">Outkast</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">80</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=-7XnDlYY9qw">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Killing in the Name</td>
+          <td class="artist">Rage Against the Machine</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Hip-hop</td>
+          <td class="tempo">80</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=lQM63OEGYhU">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Runaway</td>
+          <td class="artist">Kanye West</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Hip-hop</td>
+          <td class="tempo">85</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=90V3gl8muj0">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Gold Digger</td>
+          <td class="artist">Kanye West</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Hip-hop</td>
+          <td class="tempo">92.5</td>
+          <td>
+            <a href="">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">All of the Lights</td>
+          <td class="artist">Kanye West</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Hip-hop</td>
+          <td class="tempo">70</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=HAfFfqiYLp0">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Flashing Lights</td>
+          <td class="artist">Kanye West</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Hip-hop</td>
+          <td class="tempo">90</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=ila-hAUXR5U">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Ignition (Remix)</td>
+          <td class="artist">R. Kelly</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Hip-hop</td>
+          
+          <td class="tempo">65</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=WP3W4lR80bA">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Apple Bottom Jeans (Low)</td>
+          <td class="artist">T Pain/td>
+          <td class="instrumentation"></td>
+          <td class="genre">Hip-hop</td>
+          <td class="tempo">127.5</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=Pm_h6FnF8HU">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Juicy Fruit</td>
+          <td class="artist">Mteme</td>
+          <td class="instrumentation">tr tb</td>
+          <td class="genre">Funk</td>
+          <td class="tempo">96</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=MucY5wRYByU">yt</a>
+          </td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/6fab27ab88716708a255f7cb2f18f4172f0435be">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Smooth Criminal</td>
+          <td class="artist">Michael Jackson</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">120</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=RCmuTH6T7fk">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Don't Stop 'til You Get Enough</td>
+          <td class="artist">Michael Jackson</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">120</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=yURRmWtbTbo">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Give it to Me Baby</td>
+          <td class="artist">Rick James</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">120</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=1dNIQVYGXbM">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Get Up Offa That Thing</td>
+          <td class="artist">James Brown</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">116</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=2ATmDmLAMWw">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">I'm Your Boogie Man</td>
+          <td class="artist">KC and the Sunshine Band</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">112</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=HT0wGSbASZE">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Just the Two of Us</td>
+          <td class="artist">Grover Washington, Jr.</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">96</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=PJ0u5c9EF1E">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Them Changes</td>
+          <td class="artist">Thundercat</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+                    <td class="tempo">80</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=BuzJ5NArvgw">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Chameleon</td>
+          <td class="artist">Herbie Hancock</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">92</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=WYRrIBqKsJ4">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Can't Stop</td>
+          <td class="artist">Red Hot Chili Peppers</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">90</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=l-E0nFErk3w">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Money</td>
+          <td class="artist">Pink Floyd</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">126</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=rwPM01cbQBc">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Brandy (You're a Fine Girl)</td>
+          <td class="artist">Looking Glass</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soul</td>
+          <td class="tempo">126</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=DVx8L7a3MuE">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Good Times</td>
+          <td class="artist">CHIC</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">112</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=51r5f5OdIY0">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Le Freak</td>
+          <td class="artist">CHIC</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">116</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=RAYQTfFh4xk">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">What a Fool Believes</td>
+          <td class="artist">Michael McDonald</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soul</td>
+          <td class="tempo">120</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=exnHAdopRxA">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Let It Happen</td>
+          <td class="artist">Tame Impala</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Disco</td>
+          <td class="tempo">126</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=pFptt7Cargc">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">The Less I Know the Better</td>
+          <td class="artist">Tame Impala</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">116</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=O2lzmpEs29M">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Burning Down the House</td>
+          <td class="artist">Talking Heads</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">104</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=qQoXbqxdhWM">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Footsteps in the Dark</td>
+          <td class="artist">The Isley Brothers</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">80</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=Dyq9zlYMw9g">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Baby Come Back</td>
+          <td class="artist">Player</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+          <td class="tempo">76</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=vLtmmFjxSoc">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Dancing in the Moonlight</td>
+          <td class="artist">King Harvest</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+          <td class="tempo">135</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=SebH8En9ZOY">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Move on Up</td>
+          <td class="artist">Curtis Mayfield</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+                    <td class="tempo">144</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=A9RMr9KuVZo">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Pusherman</td>
+          <td class="artist">Curtis Mayfield</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">126</td>
+          <td>
+            <a href="">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Breezin'</td>
+          <td class="artist">George Benson</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+                    <td class="tempo">80</td>
+          <td>
+            <a href="">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Hide & Seek (Ready Or Not Here I Come)</td>
+          <td class="artist">Chuck Mangione</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">108</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=pmMCk31k6S0">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">She's A Bad Mama Jama (She's Built, She's Stacked)</td>
+          <td class="artist">George Clinton</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Disco</td>
+          <td class="tempo">116</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=sRRtbEeokE8">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Signed, Sealed, Delivered (I'm Yours)</td>
+          <td class="artist">Stevie Wonder</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soul</td>
+          <td class="tempo">108</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=0BU4PMtMakA">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Sir Duke</td>
+          <td class="artist">Stevie Wonder</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">104</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=dLbWapxszbA">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Brick House</td>
+          <td class="artist">The Commodores</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Funk</td>
+          <td class="tempo">108</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=rrBx6mAWYPU">yt</a>
+          </td>
+          <td>
+            <a>score</a>
           </td>
         </tr>
         <tr>
           <td class="song">Candy</td>
           <td class="artist">Cameo</td>
           <td class="instrumentation">tr tb</td>
+          <td class="genre">Funk</td>
+          <td class="tempo">112</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=sn8KYD1Vco0">yt</a>
+          </td>
           <td>
             <a href="https://www.noteflight.com/scores/view/f4957c33e290fb41eb2b4ad8f810d8960b303d4f">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">Electric Feel</td>
-          <td class="artist">MGMT</td>
+          <td class="song">I Keep Forgettin</td>
+          <td class="artist">Michael McDonald</td>
           <td class="instrumentation">tr tb</td>
+          <td class="genre">Soul</td>
+          <td class="tempo">96</td>
           <td>
-            <a href="https://www.noteflight.com/scores/view/e7d80a089f310bb2970d217aac4a62d6b41e31d6">score</a>
+            <a href="https://www.youtube.com/watch?v=eYcDe4foLV8">yt</a>
+          </td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/2bf75d6134060dfe6d5df98bcd785b873faf55c9">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">What You Won't Do for Love</td>
+          <td class="artist">Bobby Caldwell</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soul</td>
+                    <td class="tempo">84</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=n9DmdAwUbxc">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Easy</td>
+          <td class="artist">Lionel Richie</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soul</td>
+                    <td class="tempo">66</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=rfNpHd1GaQA">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Love Train</td>
+          <td class="artist">The O'Jays</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soul</td>
+                    <td class="tempo">120</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=SsYOAIR4L_w">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Dreams</td>
+          <td class="artist">Fleetwood Mac</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+                    <td class="tempo">120</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=mrZRURcb1cM">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Smooth Operator</td>
+          <td class="artist">Sade</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+                    <td class="tempo">120</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=4TYv2PhG89A">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        <tr>
+          <td class="song">Modern Love</td>
+          <td class="artist">David Bowie</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+                    <td class="tempo">88</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=HivQqTtiHVw">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">My Girl</td>
+          <td class="artist">Smokey Robinson</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soul</td>
+          <td class="tempo">104</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=szbI1vu-cCc">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">I Can't Go for That (No Can Do)</td>
+          <td class="artist">Daryl Hall & John Oates</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soul</td>
+            <td class="tempo">110</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=DHg8HvDKDzI">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Blame It On the Boogie</td>
+          <td class="artist">Jackson 5</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Disco</td>
+          <td class="tempo">112</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=nqxVMLVe62U">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">I Want You Back</td>
+          <td class="artist">Jackson 5</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soul</td>
+          <td class="tempo">104</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=s3Q80mk7bxE">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Immigrant Song</td>
+          <td class="artist">Led Zepplin</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Rock</td>
+                    <td class="tempo">112</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=TRjH_gJbUqQ">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">The National Anthem</td>
+          <td class="artist">Radiohead</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Rock</td>
+          <td class="tempo">92</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=NfQD1QiQ9o4">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>     
+        <tr>
+          <td class="song">Exit Music (For A Film)</td>
+          <td class="artist">Radiohead</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Electronic</td>
+          <td class="tempo">60</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=Bf01riuiJWA">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">All I Need</td>
+          <td class="artist">Radiohead</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Electronic</td>
+          <td class="tempo">88</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=FM7ALFsOH4g">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>  
+        <tr>
+          <td class="song">Roxanne</td>
+          <td class="artist">The Police</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+          <td class="tempo">132</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=3T1c7GkzRQQ">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Just What I Needed</td>
+          <td class="artist">The Cars</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Punk</td>
+          <td class="tempo">132</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=gvy2yqUHLLg">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Once in a Lifetime</td>
+          <td class="artist">Talking Heads</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+          <td class="tempo">116</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=5IsSpAOD6K8">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">This Must Be the Place (Naive Melody)</td>
+          <td class="artist">Talking Heads</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+          <td class="tempo">114</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=o9gK2fOq4MY">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">All the Small Things</td>
+          <td class="artist">Blink-182</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Punk</td>
+          <td class="tempo">152</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=ahWmkV0mtvk">yt</a>
+          </td>
+          <td>
+            <a>score</a>
           </td>
         </tr>
         <tr>
           <td class="song">Fat Lip</td>
           <td class="artist">Sum 41</td>
           <td class="instrumentation">tr tb</td>
+          <td class="genre">Punk</td>
+          <td class="tempo">96</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=atjJVwok9ws">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
           <td>
             <a href="https://www.noteflight.com/scores/view/9a664f6eb5c78af7b4fc4d2dea7a633b062bd08f">score</a>
           </td>
@@ -90,24 +918,287 @@
           <td class="song">99 Luftballons</td>
           <td class="artist">Nena</td>
           <td class="instrumentation">tr tb</td>
+          <td class="genre">Punk</td>
+          <td class="tempo">96</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=TMSlTQmDLx4">yt</a>
+          </td>
           <td>
             <a href="https://www.noteflight.com/scores/view/b2dd5d4162e7f3c299d6df2393931b3c4ad4c6a0">score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">1999 Space Club</td>
-          <td class="artist">Arling and Cameron</td>
-          <td class="instrumentation">tr tb</td>
+          <td class="song">Heart of Glass</td>
+          <td class="artist">Blondie</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Disco</td>
+          <td class="tempo">116</td>
           <td>
-            <a href="https://www.noteflight.com/scores/view/2420eb670bc5524346aaad58672f14900cd87c41">score</a>
+            <a href="https://www.youtube.com/watch?v=WGU_4-5RaxU">yt</a>
+          </td>
+          <td>
+            <a>score</a>
           </td>
         </tr>
         <tr>
-          <td class="song">Juicy Fruit</td>
-          <td class="artist">Mteme</td>
-          <td class="instrumentation">tr tb</td>
+          <td class="song">Mr. Brightside</td>
+          <td class="artist">The Killers</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Punk</td>
+          <td class="tempo">148</td>
           <td>
-            <a href="https://www.noteflight.com/scores/view/6fab27ab88716708a255f7cb2f18f4172f0435be">score</a>
+            <a href="https://www.youtube.com/watch?v=UFKf08us2AI">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Come on Eileen</td>
+          <td class="artist">Dexys Midnight Runners</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+          <td class="tempo">112</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=HwVnX4ZgliY">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">I Miss You</td>
+          <td class="artist">Blink 182</td>
+          <td class="instrumentation">brasses</td>
+          <td class="genre">Rock</td>
+          <td class="tempo">108</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=s1tAYmMjLdY">yt</a>
+          </td>
+          <td>
+            <a href="https://www.noteflight.com/scores/view/747985bb66ac4fa3987d640a26616d03dab8039a">score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Teenage Dirtbag</td>
+          <td class="artist">Wheatus</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Rock</td>
+            <td class="tempo">94</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=IoJ2hYbVR3w">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">All Star</td>
+          <td class="artist">Smash Mouth</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Rock</td>
+          <td class="tempo">104</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=LYG7sMtb6u8">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">When You Were Young</td>
+          <td class="artist">The Killers</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Rock</td>
+          <td class="tempo">132</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=4H3ZgR0EESM">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Use Somebody</td>
+          <td class="artist">Kings of Leon</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Rock</td>
+          <td class="tempo">138</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=gnhXHvRoUd0">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Seven Nation Army</td>
+          <td class="artist">The White Stripes</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Rock</td>
+          <td class="tempo">126</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=RDuzszjrdcc">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>        
+        <tr>
+          <td class="song">Smells Like Teen Spirit</td>
+          <td class="artist">Nirvana</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Rock</td>
+            <td class="tempo">112</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=hTWKbfoikeg">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Don't Bring Me Down</td>
+          <td class="artist">ELO</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+          <td class="tempo">116</td>
+          <td>
+            <a href="">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Everybody Wants To Rule The World</td>
+          <td class="artist">Tears for Fears</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+          <td class="tempo">112</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=SFU1GeGFpzY">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Girls Just Want to Have Fun</td>
+          <td class="artist">Cyndi Lauper</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Disco</td>
+          <td class="tempo">120</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=jRr5EasAq84">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Dancing Queen</td>
+          <td class="artist">ABBA</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Disco</td>
+          <td class="tempo">100</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=xFrGuyw1V8s">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">The Final Countdown</td>
+          <td class="artist">Europe</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Rock</td>
+          <td class="tempo">116</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=w9km01hvP4w">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">You Should Be Dancing</td>
+          <td class="artist">Bee Gees</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Disco</td>
+          <td class="tempo">126</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=_JoZS6LgqYI">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        </tr>
+        <tr>
+          <td class="song">When Doves Cry</td>
+          <td class="artist">Prince</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+          <td class="tempo">126</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=UG3VcCAlUgE">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Shake It Off</td>
+          <td class="artist">Taylor Swift</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Soft</td>
+          <td class="tempo">160</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=nfWlot6h_JM">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Party Rock Anthem</td>
+          <td class="artist">LMFAO</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Electronic</td>
+          <td class="tempo">132.5</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=pGEbnB5d5uo">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Gangnam Style</td>
+          <td class="artist">Psy</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Electronic</td>
+          <td class="tempo">130</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=CVxMTl6cUSE">yt</a>
+          </td>
+          <td>
+            <a>score</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="song">Sorry</td>
+          <td class="artist">Justin Bieber</td>
+          <td class="instrumentation"></td>
+          <td class="genre">Electronic</td>
+          <td class="tempo">100</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=fRh_vgS2dFE">yt</a>
+          </td>
+          <td>
+            <a>score</a>
           </td>
         </tr>
       </tbody>
