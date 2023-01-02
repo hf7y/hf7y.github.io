@@ -1,18 +1,23 @@
-<html prefix="mo: http://purl.org/ontology/mo/">
+<html xmlns:mo="http://purl.org/ontology/mo/">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel=stylesheet href=/style.css>
 </head>
 <body typeof="mo:MusicArtist">
 	<header>
-	<a property=name href="/">Zachary Viet Pine</a>
+	<link rel=stylesheet href=/header.css>
+	<h1 property="name">
+		<a href="/">Zachary Viet Pine</a>
+	</h1>
 	<nav>
-		<span><a href="/bio">bio</a></span> 
-		<span><a href="/compositions">compositions</a></span> 
-		<span><a href="/sousaphone">sousaphone</a></span> 
-		<span><a href="/arrangements">arrangements</a></span> 
-		<span><a href="/band">string&nbsp;band</a></span> 
-		<span><a href="/cv">cv</a></span>
+		<ul>
+			<li><a href="/bio">bio</a></li> 
+			<li><a href="/compositions">compositions</a></li> 
+			<li><a href="/sousaphone">sousaphone</a></li> 
+			<li><a href="/arrangements">arrangements</a></li> 
+			<li><a href="/band">string band</a></li> 
+			<li><a href="/cv">cv</a></li>
+		</ul>
 	</nav>
 </header>
 	<!DOCTYPE html>
@@ -27,9 +32,9 @@
         display: none;
       }
     </style>
+    <script src="/sort.js" type="text/javascript"></script>
   </head>
   <body>
-    <script src="sort.js" type="text/javascript"></script>
     <h1>Sousaphone</h1>
     <table>
       <thead>
@@ -906,9 +911,6 @@
           <td class="tempo">96</td>
           <td>
             <a href="https://www.youtube.com/watch?v=atjJVwok9ws">yt</a>
-          </td>
-          <td>
-            <a>score</a>
           </td>
           <td>
             <a href="https://www.noteflight.com/scores/view/9a664f6eb5c78af7b4fc4d2dea7a633b062bd08f">score</a>

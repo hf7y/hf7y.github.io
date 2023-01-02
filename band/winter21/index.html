@@ -1,18 +1,23 @@
-<html prefix="mo: http://purl.org/ontology/mo/">
+<html xmlns:mo="http://purl.org/ontology/mo/">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel=stylesheet href=/style.css>
 </head>
 <body typeof="mo:MusicArtist">
 	<header>
-	<a property=name href="/">Zachary Viet Pine</a>
+	<link rel=stylesheet href=/header.css>
+	<h1 property="name">
+		<a href="/">Zachary Viet Pine</a>
+	</h1>
 	<nav>
-		<span><a href="/bio">bio</a></span> 
-		<span><a href="/compositions">compositions</a></span> 
-		<span><a href="/sousaphone">sousaphone</a></span> 
-		<span><a href="/arrangements">arrangements</a></span> 
-		<span><a href="/band">string&nbsp;band</a></span> 
-		<span><a href="/cv">cv</a></span>
+		<ul>
+			<li><a href="/bio">bio</a></li> 
+			<li><a href="/compositions">compositions</a></li> 
+			<li><a href="/sousaphone">sousaphone</a></li> 
+			<li><a href="/arrangements">arrangements</a></li> 
+			<li><a href="/band">string band</a></li> 
+			<li><a href="/cv">cv</a></li>
+		</ul>
 	</nav>
 </header>
 	<audio controls id="player"></audio>

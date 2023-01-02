@@ -1,32 +1,14 @@
 body {
-	max-width: 36em;
+	max-width: 8.5in;
 
-	margin: 10% auto 0 auto;
+	margin: 1in auto 1in auto;
 	padding: 0 1em;
 
 	line-height: 1.25em;
-	font-size: 22px;
+	font-size: 12pt;
 
 	overflow-y:scroll;
 }
-
-	body > header {
-		display: flex;
-	}
-
-		body > header *[property=name] { 
-			font-weight: bold;
-			color: currentColor;
-		}
-
-		body > header nav {
-			flex-grow: 1;
-			text-align: right;
-		}
-
-			nav span {
-				padding-left: 0.5em;
-			}
 
 a {
 	text-decoration: none;
@@ -40,7 +22,7 @@ a:hover {
 }
 
 table {
-	width: auto;
+	width: 100%;
 }
 
 td {
@@ -93,4 +75,3 @@ img {
 pre {
 	white-space: pre-wrap;
 }
-

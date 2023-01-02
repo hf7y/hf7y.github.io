@@ -1,0 +1,22 @@
+body>header {
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+}
+body>header * {
+	color: currentColor;
+	margin: 0;
+	display: inline-block;
+}
+body>header>h1 {
+	flex: 1 0 auto;
+	line-height: 125%;
+}
+body>header>nav {
+	flex: 0 1 auto;
+	text-align: right;
+	margin-right: -0.3em;
+}
+nav li:after {
+	content: "\00a0\00b7";
+}
