@@ -9,7 +9,7 @@ body>header * {
 	display: inline-block;
 }
 body>header>h1 {
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 	line-height: 125%;
 }
 body>header>nav {
