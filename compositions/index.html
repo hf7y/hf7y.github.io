@@ -20,7 +20,21 @@
 		</ul>
 	</nav>
 </header>
-	  <tr>
+	# <script>
+# 	window.onload = function () {
+# 	  var links = document.getElementsByClassName("audio");
+#   	  for(i=0; i<links.length; i++) {
+#   	  	links[i].onclick = function () {
+#   	      document.getElementById("player").src = this.getAttribute('data-src');
+#   	      document.getElementById("player").play();
+#   	      document.getElementById("player").style.visibility = "visible";
+#   	  	}
+#   	  }
+#     }
+# </script>
+<h1>Compositions</h1>
+<table>
+  <tr>
     <td>2023</td>
     <td><a href=#love_me>
       <span>Love Me (Long)<span>
@@ -223,6 +237,5 @@
   </p>
   <p property=description>I wrote this piece for the end-of-semester Undergraduate Composers Club at Berkeley. I fondly remember working out the quirks of the notation with Nate at the pianos in the practice rooms.</p>
 </section>
-<audio id=player controls src=""></audio>
 </body>
 </html>
