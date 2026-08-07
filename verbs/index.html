@@ -1,0 +1,70 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>verb release channel</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+ :root{--bg:#fbfbfa;--fg:#1a1a19;--mut:#6b6b66;--line:#e3e3df;
+       --ok:#1a7f37;--warn:#9a6700;--bad:#b3261e}
+ @media(prefers-color-scheme:dark){:root{--bg:#16161a;--fg:#ececea;--mut:#9a9a94;
+       --line:#2c2c31;--ok:#3fb950;--warn:#d29922;--bad:#f85149}}
+ body{background:var(--bg);color:var(--fg);font:16px/1.55 ui-sans-serif,system-ui,sans-serif;
+      margin:0;padding:2rem 1.25rem;display:flex;justify-content:center}
+ main{width:100%;max-width:46rem}
+ h1{font-size:1.05rem;font-weight:600;letter-spacing:.02em;text-transform:uppercase;
+    color:var(--mut);margin:0 0 1.25rem}
+ .verdict{font-size:2.3rem;font-weight:700;letter-spacing:-.02em;margin:0}
+ .ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+ .sub{color:var(--mut);margin:.35rem 0 1.75rem}
+ dl{display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.25rem;margin:0 0 2rem}
+ dt{color:var(--mut)}dd{margin:0;font-variant-numeric:tabular-nums}
+ table{border-collapse:collapse;width:100%;font-size:.9rem}
+ th,td{text-align:left;padding:.45rem .6rem;border-bottom:1px solid var(--line);
+       vertical-align:top}
+ th{color:var(--mut);font-weight:500}
+ .wrap{overflow-x:auto}
+ code{font-family:ui-monospace,monospace;font-size:.88em}
+ footer{color:var(--mut);font-size:.85rem;margin-top:2rem}
+ a{color:inherit}
+</style>
+<main>
+<h1>verb release channel</h1>
+<div id="app">loading&hellip;</div>
+<footer>
+  Machine-readable: <a href="status.json">status.json</a>.
+  Published by <code>realisateur/bin/publish-release-verdict.sh</code> on every
+  nightly run of <code>build-verbs</code>, whether or not a build is cut &mdash;
+  so &ldquo;nothing changed&rdquo; and &ldquo;main is broken&rdquo; never look alike.
+</footer>
+</main>
+<script>
+const H=(s)=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ago=(t)=>{const h=(Date.now()-new Date(t))/36e5;
+  return h<1?`${Math.round(h*60)} min ago`:h<48?`${Math.round(h)} h ago`:`${Math.round(h/24)} days ago`;};
+fetch("status.json?t="+Date.now()).then(r=>r.json()).then(d=>{
+  const known=["CUT","NO_CHANGE","BLOCKED","ERROR"];
+  const cls={CUT:"ok",NO_CHANGE:"ok",BLOCKED:"bad",ERROR:"bad"}[d.decision]||"bad";
+  const stale=(Date.now()-new Date(d.generated))/36e5>30;
+  let head=`<p class="verdict ${stale?"bad":cls}">${H(stale?"EMITTER SILENT":d.decision)}</p>`;
+  head+=`<p class="sub">${H(stale
+      ? "No verdict for over 30 h — the nightly run is not running."
+      : d.reason)}</p>`;
+  if(!known.includes(d.decision))
+    head+=`<p class="sub bad">Unrecognised decision — this page is older than the channel.</p>`;
+  if(d.blocked_streak>=3)
+    head+=`<p class="sub bad">Blocked ${d.blocked_streak} nights running — the fleet cannot receive a release.</p>`;
+  else if(d.blocked_streak>0)
+    head+=`<p class="sub warn">Blocked ${d.blocked_streak} night(s) running.</p>`;
+  const lc=d.last_cut;
+  head+=`<dl>
+    <dt>verdict written</dt><dd>${H(d.generated)} <span class="sub">(${ago(d.generated)})</span></dd>
+    <dt>last build cut</dt><dd>${lc?`<code>${H(lc.build_id)}</code> <span class="sub">(${ago(lc.at)})</span>`:"never"}</dd>
+    <dt>realisateur sha</dt><dd><code>${H(d.main_sha)}</code></dd>
+    <dt>CI run</dt><dd><code>${H(d.ci_run)}</code></dd>
+  </dl>`;
+  const rows=(d.history||[]).map(r=>`<tr><td>${H(r.at)}</td><td>${H(r.decision)}</td>
+      <td>${H(r.reason)}</td><td><code>${H(r.build_id||"")}</code></td></tr>`).join("");
+  document.getElementById("app").innerHTML=head+
+    `<div class="wrap"><table><tr><th>when</th><th>decision</th><th>why</th><th>build</th></tr>${rows}</table></div>`;
+}).catch(e=>{document.getElementById("app").innerHTML=
+  `<p class="verdict bad">UNREACHABLE</p><p class="sub">status.json could not be read: ${H(e)}. This is not "healthy".</p>`;});
+</script>
