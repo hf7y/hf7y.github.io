@@ -30,7 +30,7 @@
 <h1>verb release channel</h1>
 <div id="app">loading&hellip;</div>
 <footer>
-  Machine-readable: <a href="status.json">status.json</a>.
+  Machine-readable: <a href="https://hf7y.com/verbs/status.json">status.json</a>.
   Published by <code>realisateur/bin/publish-release-verdict.sh</code> on every
   nightly run of <code>build-verbs</code>, whether or not a build is cut &mdash;
   so &ldquo;nothing changed&rdquo; and &ldquo;main is broken&rdquo; never look alike.
@@ -40,7 +40,7 @@
 const H=(s)=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const ago=(t)=>{const h=(Date.now()-new Date(t))/36e5;
   return h<1?`${Math.round(h*60)} min ago`:h<48?`${Math.round(h)} h ago`:`${Math.round(h/24)} days ago`;};
-fetch("status.json?t="+Date.now()).then(r=>r.json()).then(d=>{
+fetch("https://hf7y.com/verbs/status.json?t="+Date.now()).then(r=>r.json()).then(d=>{
   const known=["CUT","NO_CHANGE","BLOCKED","ERROR"];
   const cls={CUT:"ok",NO_CHANGE:"ok",BLOCKED:"bad",ERROR:"bad"}[d.decision]||"bad";
   const stale=(Date.now()-new Date(d.generated))/36e5>30;
