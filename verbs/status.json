@@ -1,19 +1,22 @@
 {
-  "schema": 1,
-  "generated": "2026-08-07T04:07:39Z",
+  "schema": 2,
+  "generated": "2026-08-11T03:16:24Z",
+  "valid_until": "2026-08-12T07:16:24Z",
+  "cadence_hours": 24,
+  "grace_hours": 4,
   "decision": "CUT",
-  "reason": "seeded: this is the build the nightly run actually cut at 04:07Z. The gate and this endpoint did not exist yet, so no gate verdict was recorded for it.",
-  "main_sha": "c1e2f23",
-  "ci_run": "31146415539",
-  "build_id": "2026-08-07T040739Z",
+  "reason": "33 verb(s); 2 green, 0 red, 0 pending, 10 ungated, 0 blind",
+  "main_sha": "a8df50a",
+  "ci_run": "31454871689",
+  "build_id": "2026-08-11T031603Z",
   "blocked_streak": 0,
   "last_cut": {
-    "at": "2026-08-07T04:07:39Z",
+    "at": "2026-08-11T03:16:24Z",
     "decision": "CUT",
-    "reason": "seeded: this is the build the nightly run actually cut at 04:07Z. The gate and this endpoint did not exist yet, so no gate verdict was recorded for it.",
-    "main_sha": "c1e2f23",
-    "ci_run": "31146415539",
-    "build_id": "2026-08-07T040739Z"
+    "reason": "33 verb(s); 2 green, 0 red, 0 pending, 10 ungated, 0 blind",
+    "main_sha": "a8df50a",
+    "ci_run": "31454871689",
+    "build_id": "2026-08-11T031603Z"
   },
   "decisions_enum": [
     "CUT",
@@ -22,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-11T03:16:24Z",
+      "decision": "CUT",
+      "reason": "33 verb(s); 2 green, 0 red, 0 pending, 10 ungated, 0 blind",
+      "main_sha": "a8df50a",
+      "ci_run": "31454871689",
+      "build_id": "2026-08-11T031603Z"
+    },
     {
       "at": "2026-08-07T04:07:39Z",
       "decision": "CUT",

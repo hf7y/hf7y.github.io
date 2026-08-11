@@ -30,7 +30,7 @@
 <h1>verb release channel</h1>
 <div id="app">loading&hellip;</div>
 <footer>
-  Machine-readable: <a href="https://hf7y.com/verbs/status.json">status.json</a>.
+  Machine-readable: <a href="status.json">status.json</a>.
   Published by <code>realisateur/bin/publish-release-verdict.sh</code> on every
   nightly run of <code>build-verbs</code>, whether or not a build is cut &mdash;
   so &ldquo;nothing changed&rdquo; and &ldquo;main is broken&rdquo; never look alike.
@@ -40,13 +40,21 @@
 const H=(s)=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const ago=(t)=>{const h=(Date.now()-new Date(t))/36e5;
   return h<1?`${Math.round(h*60)} min ago`:h<48?`${Math.round(h)} h ago`:`${Math.round(h/24)} days ago`;};
-fetch("https://hf7y.com/verbs/status.json?t="+Date.now()).then(r=>r.json()).then(d=>{
+fetch("status.json?t="+Date.now()).then(r=>r.json()).then(d=>{
   const known=["CUT","NO_CHANGE","BLOCKED","ERROR"];
   const cls={CUT:"ok",NO_CHANGE:"ok",BLOCKED:"bad",ERROR:"bad"}[d.decision]||"bad";
-  const stale=(Date.now()-new Date(d.generated))/36e5>30;
+  // STALENESS IS THE DOCUMENT'S OWN CLAIM, not this page's guess. It used to
+  // be a hardcoded `> 30` here and a separate constant on every consumer, so
+  // a cadence change had to be found in three places. `valid_until` is
+  // written by the publisher from its own cadence; the 30 h fallback is only
+  // for a document published before schema 2.
+  const until=d.valid_until?new Date(d.valid_until):null;
+  const stale=until?Date.now()>until:(Date.now()-new Date(d.generated))/36e5>30;
   let head=`<p class="verdict ${stale?"bad":cls}">${H(stale?"EMITTER SILENT":d.decision)}</p>`;
   head+=`<p class="sub">${H(stale
-      ? "No verdict for over 30 h — the nightly run is not running."
+      ? `This verdict expired at ${d.valid_until||"(no expiry published)"} and no newer one `
+        + "has appeared. The nightly run is not running, or it is running and cannot publish. "
+        + "The decision below is the LAST one recorded, not tonight's — do not read it as current."
       : d.reason)}</p>`;
   if(!known.includes(d.decision))
     head+=`<p class="sub bad">Unrecognised decision — this page is older than the channel.</p>`;
@@ -57,6 +65,7 @@ fetch("https://hf7y.com/verbs/status.json?t="+Date.now()).then(r=>r.json()).then
   const lc=d.last_cut;
   head+=`<dl>
     <dt>verdict written</dt><dd>${H(d.generated)} <span class="sub">(${ago(d.generated)})</span></dd>
+    <dt>evidence until</dt><dd>${d.valid_until?`${H(d.valid_until)} <span class="sub">(${stale?"EXPIRED":"still valid"})</span>`:"<span class=\"sub\">not published (schema 1)</span>"}</dd>
     <dt>last build cut</dt><dd>${lc?`<code>${H(lc.build_id)}</code> <span class="sub">(${ago(lc.at)})</span>`:"never"}</dd>
     <dt>realisateur sha</dt><dd><code>${H(d.main_sha)}</code></dd>
     <dt>CI run</dt><dd><code>${H(d.ci_run)}</code></dd>
