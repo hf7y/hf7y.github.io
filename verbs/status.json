@@ -1,22 +1,22 @@
 {
   "schema": 2,
-  "generated": "2026-08-11T22:27:22Z",
-  "valid_until": "2026-08-13T02:27:22Z",
+  "generated": "2026-08-11T22:33:56Z",
+  "valid_until": "2026-08-13T02:33:56Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "ERROR",
-  "reason": "the run failed before the gate could decide",
+  "decision": "CUT",
+  "reason": "33 verb(s); 3 green, 0 red, 0 pending, 9 ungated, 0 blind",
   "main_sha": "eb13665",
-  "ci_run": "31542455325",
-  "build_id": null,
-  "blocked_streak": 1,
+  "ci_run": "31542893890",
+  "build_id": "2026-08-11T223333Z",
+  "blocked_streak": 0,
   "last_cut": {
-    "at": "2026-08-11T19:19:06Z",
+    "at": "2026-08-11T22:33:56Z",
     "decision": "CUT",
     "reason": "33 verb(s); 3 green, 0 red, 0 pending, 9 ungated, 0 blind",
-    "main_sha": "cc1a5fc",
-    "ci_run": "31527129296",
-    "build_id": "2026-08-11T191830Z"
+    "main_sha": "eb13665",
+    "ci_run": "31542893890",
+    "build_id": "2026-08-11T223333Z"
   },
   "decisions_enum": [
     "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-11T22:33:56Z",
+      "decision": "CUT",
+      "reason": "33 verb(s); 3 green, 0 red, 0 pending, 9 ungated, 0 blind",
+      "main_sha": "eb13665",
+      "ci_run": "31542893890",
+      "build_id": "2026-08-11T223333Z"
+    },
     {
       "at": "2026-08-11T22:27:22Z",
       "decision": "ERROR",
