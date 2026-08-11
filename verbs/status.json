@@ -1,15 +1,15 @@
 {
   "schema": 2,
-  "generated": "2026-08-11T20:24:09Z",
-  "valid_until": "2026-08-13T00:24:09Z",
+  "generated": "2026-08-11T20:26:22Z",
+  "valid_until": "2026-08-13T00:26:22Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "BLOCKED",
-  "reason": "checks had not concluded at cut time -- 2 green, 0 red, 1 pending, 9 ungated, 0 blind",
+  "decision": "NO_CHANGE",
+  "reason": "gate green, no project moved -- today's build is still current",
   "main_sha": "eb13665",
-  "ci_run": "31532676088",
+  "ci_run": "31532862163",
   "build_id": null,
-  "blocked_streak": 1,
+  "blocked_streak": 0,
   "last_cut": {
     "at": "2026-08-11T19:19:06Z",
     "decision": "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-11T20:26:22Z",
+      "decision": "NO_CHANGE",
+      "reason": "gate green, no project moved -- today's build is still current",
+      "main_sha": "eb13665",
+      "ci_run": "31532862163",
+      "build_id": null
+    },
     {
       "at": "2026-08-11T20:24:09Z",
       "decision": "BLOCKED",
