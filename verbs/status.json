@@ -1,22 +1,22 @@
 {
   "schema": 2,
-  "generated": "2026-08-13T03:37:53Z",
-  "valid_until": "2026-08-14T07:37:53Z",
+  "generated": "2026-08-14T03:35:04Z",
+  "valid_until": "2026-08-15T07:35:04Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "NO_CHANGE",
-  "reason": "gate green, no project moved -- today's build is still current",
+  "decision": "CUT",
+  "reason": "33 verb(s); 3 green, 0 red, 0 pending, 9 ungated, 0 blind",
   "main_sha": "6505491",
-  "ci_run": "31664450876",
-  "build_id": null,
+  "ci_run": "31767208685",
+  "build_id": "2026-08-14T033443Z",
   "blocked_streak": 0,
   "last_cut": {
-    "at": "2026-08-12T18:34:16Z",
+    "at": "2026-08-14T03:35:04Z",
     "decision": "CUT",
-    "reason": "33 verb(s); 4 green, 0 red, 0 pending, 8 ungated, 0 blind",
-    "main_sha": "bbf241c",
-    "ci_run": "31628215601",
-    "build_id": "2026-08-12T183347Z"
+    "reason": "33 verb(s); 3 green, 0 red, 0 pending, 9 ungated, 0 blind",
+    "main_sha": "6505491",
+    "ci_run": "31767208685",
+    "build_id": "2026-08-14T033443Z"
   },
   "decisions_enum": [
     "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-14T03:35:04Z",
+      "decision": "CUT",
+      "reason": "33 verb(s); 3 green, 0 red, 0 pending, 9 ungated, 0 blind",
+      "main_sha": "6505491",
+      "ci_run": "31767208685",
+      "build_id": "2026-08-14T033443Z"
+    },
     {
       "at": "2026-08-13T03:37:53Z",
       "decision": "NO_CHANGE",
