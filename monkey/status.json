@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-14T00:45:36Z",
-  "valid_until": "2026-08-15T04:45:36Z",
+  "generated": "2026-08-14T01:58:02Z",
+  "valid_until": "2026-08-15T05:58:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-12T183347Z",
@@ -279,8 +279,42 @@
         "0 */6 * * * PACED_MAX_PER_TICK=1 /home/groc-mangr/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
       "release_tick": "2026-08-13T05:04:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
-      "runs": [],
-      "last_run": null
+      "runs": [
+        {
+          "run_id": "groc-mangr-nightly-batch-1786671383",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-14T01:36:23+00:00",
+          "ended_at": "2026-08-14T01:40:21+00:00",
+          "elapsed_s": 241,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "closed issue #14 (README stale .claude/ paths + dead OCR/Grocy claims), pushed 2ba6559"
+        }
+      ],
+      "last_run": {
+        "run_id": "groc-mangr-nightly-batch-1786671383",
+        "job": "groc-mangr-nightly-batch",
+        "started_at": "2026-08-14T01:36:23+00:00",
+        "ended_at": "2026-08-14T01:40:21+00:00",
+        "elapsed_s": 241,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "closed issue #14 (README stale .claude/ paths + dead OCR/Grocy claims), pushed 2ba6559"
+      }
     },
     {
       "account": "nine-speakers",
@@ -300,6 +334,23 @@
       ],
       "release_tick": "2026-08-13T05:50:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "realisateur-nightly-batch-1786668603",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-14T00:50:03+00:00",
+          "ended_at": "2026-08-14T01:06:48+00:00",
+          "elapsed_s": 1007,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "realisateur-nightly-batch-1786661403",
           "job": "realisateur-nightly-batch",
@@ -367,41 +418,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Fixed & merged #204 (path-provenance-audit now sweeps retired-*/ symlinks instead of skipping them, PR #217, tests added); queue still has actionable items (#215, #187, #186, #182 among others)."
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1786589403",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-13T02:50:03+00:00",
-          "ended_at": "2026-08-13T02:57:42+00:00",
-          "elapsed_s": 459,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": null,
-          "issues_closed": null,
-          "prs_opened": null,
-          "prs_merged": null,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Closed #212 by landing #216 (consigne now reports NOT PUSHED when the vault clone is ahead of origin or has uncommitted paths, tested, merged, verified against real vault); #187 (six command files across 4 repos still tell agents to append to retired FOCUS.md/QUESTIONS.md) is real, scoped, and next -- realisateur's own nightly-batch.md:143/153 genuinely instruct appends, cloture.md:86 is a false-positive worth noting when closing that line item."
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1786661403",
+        "run_id": "realisateur-nightly-batch-1786668603",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-13T22:50:03+00:00",
-        "ended_at": "2026-08-13T23:01:12+00:00",
-        "elapsed_s": 672,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 0,
+        "started_at": "2026-08-14T00:50:03+00:00",
+        "ended_at": "2026-08-14T01:06:48+00:00",
+        "elapsed_s": 1007,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed hf7y/scheduler#170 (restamped scheduler's CLAUDE.md baseline via GitHub Contents API after its SSH deploy key proved read-only); fixed realisateur#236's ledger FLAG and moved it to draft since it's genuinely blocked on #110 (needs-human, third data point added); fixed realisateur#218's stale claim-drift + false-positive ledger FLAG, now all-green pending its own DECISION line. Sunset scoreboard (served-not-cloned) still 5/9 unmet and #207 has real pre-existing suite failures against curre"
+        "issues_closed": 1,
+        "prs_opened": 2,
+        "prs_merged": 1,
+        "verdict_computed": "FAILED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       }
     },
     {
