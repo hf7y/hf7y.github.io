@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-15T18:20:02Z",
-  "valid_until": "2026-08-16T22:20:02Z",
+  "generated": "2026-08-15T18:30:02Z",
+  "valid_until": "2026-08-16T22:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-14T033443Z",
@@ -270,8 +270,42 @@
         "12 */6 * * * PACED_MAX_PER_TICK=1 /home/gardien/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
       "release_tick": "2026-08-13T05:12:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
-      "runs": [],
-      "last_run": null
+      "runs": [
+        {
+          "run_id": "gardien-nightly-batch-1786817524",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-15T18:12:04+00:00",
+          "ended_at": "2026-08-15T18:20:52+00:00",
+          "elapsed_s": 530,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Fixed a real GitHygieneTest bug (missing git identity in sandbox, PR #39 merged), stress-tested the CLI against edge cases with no new bugs found, adopted issue #22's GitHub-comment-stamping convention; remaining backlog is bashified/garde-branch work or needs-decision items blocked on Zach."
+        }
+      ],
+      "last_run": {
+        "run_id": "gardien-nightly-batch-1786817524",
+        "job": "gardien-nightly-batch",
+        "started_at": "2026-08-15T18:12:04+00:00",
+        "ended_at": "2026-08-15T18:20:52+00:00",
+        "elapsed_s": 530,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Fixed a real GitHygieneTest bug (missing git identity in sandbox, PR #39 merged), stress-tested the CLI against edge cases with no new bugs found, adopted issue #22's GitHub-comment-stamping convention; remaining backlog is bashified/garde-branch work or needs-decision items blocked on Zach."
+      }
     },
     {
       "account": "groc-mangr",
@@ -840,14 +874,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-15T18:20:01Z",
+    "generated": "2026-08-15T18:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 15 hours, 51 minutes",
+    "uptime": "up 16 hours, 1 minute",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
