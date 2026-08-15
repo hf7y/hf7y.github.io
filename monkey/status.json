@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-15T13:00:02Z",
-  "valid_until": "2026-08-16T17:00:02Z",
+  "generated": "2026-08-15T13:10:03Z",
+  "valid_until": "2026-08-16T17:10:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-14T033443Z",
@@ -407,6 +407,23 @@
       "release_tick": "2026-08-13T05:50:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1786798203",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-15T12:50:03+00:00",
+          "ended_at": "2026-08-15T13:09:25+00:00",
+          "elapsed_s": 1165,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed & merged #315 (bootstrap now carries lib/selfdev-app-key.sh, closing #215's /etc/selfdev fallback-spelling gap); closed #215 with resolution comment. Queue still has actionable single-repo work (#305 generalize port-markdown-cost.sh, #115 promote defere.sh to payload) plus the served-not-cloned scoreboard (3/9 met)."
+        },
+        {
           "run_id": "realisateur-nightly-batch-1786791003",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-08-15T10:50:03+00:00",
@@ -473,41 +490,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Landed hf7y/realisateur#273 (bin/playbook verb on bashified, tested, DECISION-flagged for human merge since that branch has no CI) toward #244; commented walls on #244 and #271; queue still has actionable-but-riskier items (#215, #196) for the next run."
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1786740603",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-14T20:50:03+00:00",
-          "ended_at": "2026-08-14T20:58:06+00:00",
-          "elapsed_s": 485,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Fixed local ~/.local/bin shim drift (discipline was missing from PATH; ran install-shims.sh to sync post-#267/#268 merges). Fixed and merged #270: selfdev-gh-app.sh --check no longer flags the intentional 0640/selfdev host-wide key as a defect, closing #269. Queue still has actionable items (#264, #265, #244, #230, #228, #225, #260 needs a human decision)."
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1786791003",
+        "run_id": "realisateur-nightly-batch-1786798203",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-15T10:50:03+00:00",
-        "ended_at": "2026-08-15T10:57:53+00:00",
-        "elapsed_s": 472,
+        "started_at": "2026-08-15T12:50:03+00:00",
+        "ended_at": "2026-08-15T13:09:25+00:00",
+        "elapsed_s": 1165,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 1,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed+merged #314 (realisateur half of #306): claim-drift.sh's two --convention hints pointed at the .sh file instead of the installed shim, so BUILD-DISCIPLINE.md's literal never matched and silence-audit flagged an already-enforced rule as unenforced. Verified via claim-drift.test.sh (51/0) and a clean silence-audit --strict re-run, commented on #306 with the crt half still open (needs a crt checkout this session doesn't have), tree clean on main. Queue still has ~60 open issues, most blocked "
+        "claimed_reason": "Fixed & merged #315 (bootstrap now carries lib/selfdev-app-key.sh, closing #215's /etc/selfdev fallback-spelling gap); closed #215 with resolution comment. Queue still has actionable single-repo work (#305 generalize port-markdown-cost.sh, #115 promote defere.sh to payload) plus the served-not-cloned scoreboard (3/9 met)."
       }
     },
     {
@@ -806,14 +806,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-15T13:00:01Z",
+    "generated": "2026-08-15T13:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 10 hours, 31 minutes",
+    "uptime": "up 10 hours, 41 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
