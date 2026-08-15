@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-15T22:10:02Z",
-  "valid_until": "2026-08-17T02:10:02Z",
+  "generated": "2026-08-15T22:20:03Z",
+  "valid_until": "2026-08-17T02:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-14T033443Z",
@@ -25,6 +25,23 @@
       ],
       "release_tick": "2026-08-13T05:12:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1786831924",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-15T22:12:04+00:00",
+          "ended_at": "2026-08-15T22:18:24+00:00",
+          "elapsed_s": 383,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Delivered #42 survey (scheduler vs native scheduling, consigned to vault); deferred #35 after confirming the wall from this host too; remaining open issues (#36-38, #43-47) are all blocked on Zach's decisions, nothing actionable left."
+        },
         {
           "run_id": "bibliothecaire-research-1786824723",
           "job": "bibliothecaire-research",
@@ -92,41 +109,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Fixed #32 (gh-comment provenance stamping) via PR #33, merged to main; queue now empty."
-        },
-        {
-          "run_id": "bibliothecaire-research-1786637523",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-08-13T16:12:03+00:00",
-          "ended_at": "2026-08-13T16:20:37+00:00",
-          "elapsed_s": 517,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Landed + merged PR #31: bibintake systemd units are host-agnostic templates now, plus bin/package-standalone.sh for a no-clone-required install. Posted to issue #15. Remaining items on #15 (corpus transfer, monkey unit ownership, SMB-on-monkey policy, web publishing) need Zach or mandark access this account lacks -- nothing else actionable without him."
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1786824723",
+        "run_id": "bibliothecaire-research-1786831924",
         "job": "bibliothecaire-research",
-        "started_at": "2026-08-15T20:12:03+00:00",
-        "ended_at": "2026-08-15T20:24:32+00:00",
-        "elapsed_s": 751,
+        "started_at": "2026-08-15T22:12:04+00:00",
+        "ended_at": "2026-08-15T22:18:24+00:00",
+        "elapsed_s": 383,
         "rc": 0,
         "status": "done",
-        "commits_added": 29,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_opened": 0,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Merged bashified into main (PR #48), closed #40: man/cueille.1 now matches a real bin/cueille on main; 10 open, unclaimed issues remain"
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Delivered #42 survey (scheduler vs native scheduling, consigned to vault); deferred #35 after confirming the wall from this host too; remaining open issues (#36-38, #43-47) are all blocked on Zach's decisions, nothing actionable left."
       }
     },
     {
@@ -874,14 +874,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-15T22:10:02Z",
+    "generated": "2026-08-15T22:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 19 hours, 41 minutes",
+    "uptime": "up 19 hours, 51 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
