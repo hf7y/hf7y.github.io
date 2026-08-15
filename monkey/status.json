@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-15T22:30:02Z",
-  "valid_until": "2026-08-17T02:30:02Z",
+  "generated": "2026-08-15T22:40:02Z",
+  "valid_until": "2026-08-17T02:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-14T033443Z",
@@ -159,6 +159,23 @@
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1786833063",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-15T22:31:03+00:00",
+          "ended_at": "2026-08-15T22:38:30+00:00",
+          "elapsed_s": 449,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #57 (RUN_VANISHED landed, PR #66 merged); #59/#58/#56 remain actionable sensor-build work, #48 blocked on crontab tool permission (wall documented), #54/#53/#52 blocked on human/cross-repo"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1786825863",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-15T20:31:03+00:00",
@@ -225,41 +242,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "queue empty (0 open issues, verified via gh + next-issue.sh hf7y/ecosim); checked PRs (none open) and stray branches (all already merged into main under different SHAs) -- nothing actionable"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1786725064",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-14T16:31:04+00:00",
-          "ended_at": "2026-08-14T16:31:24+00:00",
-          "elapsed_s": 22,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Issue queue is empty (verified via gh issue list --repo hf7y/ecosim --state open, 2026-08-14); nothing actionable."
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1786825863",
+        "run_id": "ecosim-nightly-batch-1786833063",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-15T20:31:03+00:00",
-        "ended_at": "2026-08-15T20:34:44+00:00",
-        "elapsed_s": 224,
+        "started_at": "2026-08-15T22:31:03+00:00",
+        "ended_at": "2026-08-15T22:38:30+00:00",
+        "elapsed_s": 449,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Merged PR #65 (ecosim half of #49's sensor-tick fork); #48/#56/#57/#58/#59 remain actionable, un-blocked build work"
+        "claimed_reason": "Closed #57 (RUN_VANISHED landed, PR #66 merged); #59/#58/#56 remain actionable sensor-build work, #48 blocked on crontab tool permission (wall documented), #54/#53/#52 blocked on human/cross-repo"
       }
     },
     {
@@ -554,6 +554,23 @@
       "release_tick": "2026-08-13T05:21:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1786832463",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-15T22:21:03+00:00",
+          "ended_at": "2026-08-15T22:32:00+00:00",
+          "elapsed_s": 660,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Retired bin/scheduler-dev-cycle.sh (dead, no live caller) and its 4 exclusive test witnesses; closed #190 via merged PR #208 (720f8a6). Queue has plenty of actionable work left: #193 (BLOCKERS.md machinery retirement, in progress across several PRs), #192 (retire lib/sweep-loop-common.sh), #186/#187 (schedule registry gaps, FREEZE sunset), #55/#66/#80/#81 (roster/thermostat redesign), #119/#130/#147-149. #43 stays BLOCKED on mandark SSH access (re-probed, unchanged)."
+        },
+        {
           "run_id": "scheduler-paced-dev-1786825263",
           "job": "scheduler-paced-dev",
           "started_at": "2026-08-15T20:21:03+00:00",
@@ -620,41 +637,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Full-queue triage (all 15 open issues): every one is Zach-reserved (arming/roster edits per FREEZE/ROSTER's own headers), a deliberately-deferred design stub, blocked on cross-host/cross-account access I lack, or already exhaustively investigated by the 12:33Z run today (onekey/perproject cutover -- landmine fixed in #180, remaining work needs dispatch-critical rewiring correctly deferred). tests/run-all.sh: 54/54 green. No premise-expired issues to close, no safe mechanical fix found; opened 0,"
-        },
-        {
-          "run_id": "scheduler-paced-dev-1786738863",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-08-14T20:21:03+00:00",
-          "ended_at": "2026-08-14T20:26:17+00:00",
-          "elapsed_s": 316,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Fixed stale realisateur checkout (54 commits behind, stranded on already-merged branch) that had broken 'discipline' off PATH; reinstalled shims via install-shims.sh and notified senechal (hf7y/senechal#265). Closed #57 (crontab-blind dispatch reporting) with evidence that both halves it asked for already shipped and are live (glance_run_ledger source/BLIND disclosure + lib/run-ledger.sh append-only ledger with 22 real rows). #43 re-confirmed BLOCKED (no SSH to mandark from this account). #156/#"
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1786825263",
+        "run_id": "scheduler-paced-dev-1786832463",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-08-15T20:21:03+00:00",
-        "ended_at": "2026-08-15T20:35:01+00:00",
-        "elapsed_s": 840,
+        "started_at": "2026-08-15T22:21:03+00:00",
+        "ended_at": "2026-08-15T22:32:00+00:00",
+        "elapsed_s": 660,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 2,
-        "prs_merged": 2,
+        "prs_opened": 1,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #191 (GATE-ERROR-STREAK fix confirmed live on main). Fixed and merged #206 (deleted bin/blockers-freshness-check.sh, confirmed dead: BLOCKERS.md is a stub, check always exited 3/BLIND) and #207 (re-carried bin/usage-paced-runner.sh onto bashified, fixing the carry-drift CI failure #206 exposed) -- narrowed #193's remaining table to collect-feedback.sh/morning-report.sh/questions-lint.sh. tests/run-all.sh: 55/55 clean on main. Actionable next: #193's remaining three scripts need a witness "
+        "claimed_reason": "Retired bin/scheduler-dev-cycle.sh (dead, no live caller) and its 4 exclusive test witnesses; closed #190 via merged PR #208 (720f8a6). Queue has plenty of actionable work left: #193 (BLOCKERS.md machinery retirement, in progress across several PRs), #192 (retire lib/sweep-loop-common.sh), #186/#187 (schedule registry gaps, FREEZE sunset), #55/#66/#80/#81 (roster/thermostat redesign), #119/#130/#147-149. #43 stays BLOCKED on mandark SSH access (re-probed, unchanged)."
       }
     },
     {
@@ -874,14 +874,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-15T22:30:02Z",
+    "generated": "2026-08-15T22:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 20 hours, 1 minute",
+    "uptime": "up 20 hours, 11 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
