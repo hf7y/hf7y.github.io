@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-15T12:40:02Z",
-  "valid_until": "2026-08-16T16:40:02Z",
+  "generated": "2026-08-15T12:50:03Z",
+  "valid_until": "2026-08-16T16:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-14T033443Z",
@@ -655,6 +655,23 @@
       "release_tick": "2026-08-13T05:37:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "vim-arcade-nightly-batch-1786797423",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-15T12:37:03+00:00",
+          "ended_at": "2026-08-15T12:43:45+00:00",
+          "elapsed_s": 404,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 3,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #139/#141/#138 (1 built+shipped, 2 triaged/redirected), commented #143; #140/#131/#136/#137 remain actionable, #135/#144 blocked on Zach"
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1786768623",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-08-15T04:37:03+00:00",
@@ -721,41 +738,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "queue empty -- shipped #118 (selective dispatch), merged PR #124, no open issues remain"
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1786667823",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-08-14T00:37:03+00:00",
-          "ended_at": "2026-08-14T00:44:43+00:00",
-          "elapsed_s": 462,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 3,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Shipped+merged PR #123 (issue #109: last-commenter + agent-provenance line); closed #108 and #102 as expired (already resolved by prior #38/#73/#75/#72/#81/#84 work); #118 (selective dispatch) remains open and actionable next."
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1786768623",
+        "run_id": "vim-arcade-nightly-batch-1786797423",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-08-15T04:37:03+00:00",
-        "ended_at": "2026-08-15T04:40:16+00:00",
-        "elapsed_s": 196,
+        "started_at": "2026-08-15T12:37:03+00:00",
+        "ended_at": "2026-08-15T12:43:45+00:00",
+        "elapsed_s": 404,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 3,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #127 (README: documented --map, merged as PR #134). #131 remains open and actionable next run: bashify build-artifact proposal, fresh premise, draft PR already started."
+        "claimed_reason": "Closed #139/#141/#138 (1 built+shipped, 2 triaged/redirected), commented #143; #140/#131/#136/#137 remain actionable, #135/#144 blocked on Zach"
       }
     },
     {
@@ -806,14 +806,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-15T12:40:01Z",
+    "generated": "2026-08-15T12:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 10 hours, 11 minutes",
+    "uptime": "up 10 hours, 21 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
