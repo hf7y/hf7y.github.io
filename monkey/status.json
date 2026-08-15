@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-15T10:50:02Z",
-  "valid_until": "2026-08-16T14:50:02Z",
+  "generated": "2026-08-15T11:00:03Z",
+  "valid_until": "2026-08-16T15:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-14T033443Z",
@@ -407,6 +407,23 @@
       "release_tick": "2026-08-13T05:50:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1786791003",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-15T10:50:03+00:00",
+          "ended_at": "2026-08-15T10:57:53+00:00",
+          "elapsed_s": 472,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed+merged #314 (realisateur half of #306): claim-drift.sh's two --convention hints pointed at the .sh file instead of the installed shim, so BUILD-DISCIPLINE.md's literal never matched and silence-audit flagged an already-enforced rule as unenforced. Verified via claim-drift.test.sh (51/0) and a clean silence-audit --strict re-run, commented on #306 with the crt half still open (needs a crt checkout this session doesn't have), tree clean on main. Queue still has ~60 open issues, most blocked "
+        },
+        {
           "run_id": "realisateur-nightly-batch-1786769403",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-08-15T04:50:03+00:00",
@@ -473,41 +490,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Fixed local ~/.local/bin shim drift (discipline was missing from PATH; ran install-shims.sh to sync post-#267/#268 merges). Fixed and merged #270: selfdev-gh-app.sh --check no longer flags the intentional 0640/selfdev host-wide key as a defect, closing #269. Queue still has actionable items (#264, #265, #244, #230, #228, #225, #260 needs a human decision)."
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1786733403",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-14T18:50:03+00:00",
-          "ended_at": "2026-08-14T19:02:05+00:00",
-          "elapsed_s": 724,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 1,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Fixed stale FOCUS/QUESTIONS instructions from #187: realisateur nightly-batch.md park-by-default bullet (PR #261, merged) and chezz's contradictory intro (chezz#22, merged); filed senechal's stale-path fix as a ready-to-apply patch on senechal#261 (deploy key there is read-only by design). Closed #118 with evidence (focus-commit/check-project-busy are live for non-migrated repos, no-op for migrated ones). wtul and scheduler/ideate.md remain, tracked under #230 -- they need a #231-scale rewrite, "
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1786769403",
+        "run_id": "realisateur-nightly-batch-1786791003",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-15T04:50:03+00:00",
-        "ended_at": "2026-08-15T05:03:59+00:00",
-        "elapsed_s": 838,
-        "rc": 1,
+        "started_at": "2026-08-15T10:50:03+00:00",
+        "ended_at": "2026-08-15T10:57:53+00:00",
+        "elapsed_s": 472,
+        "rc": 0,
         "status": "done",
         "commits_added": 1,
-        "issues_opened": 9,
-        "issues_closed": 1,
+        "issues_opened": 0,
+        "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 1,
-        "verdict_computed": "FAILED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Fixed+merged #314 (realisateur half of #306): claim-drift.sh's two --convention hints pointed at the .sh file instead of the installed shim, so BUILD-DISCIPLINE.md's literal never matched and silence-audit flagged an already-enforced rule as unenforced. Verified via claim-drift.test.sh (51/0) and a clean silence-audit --strict re-run, commented on #306 with the crt half still open (needs a crt checkout this session doesn't have), tree clean on main. Queue still has ~60 open issues, most blocked "
       }
     },
     {
@@ -806,14 +806,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-15T10:50:02Z",
+    "generated": "2026-08-15T11:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 8 hours, 21 minutes",
+    "uptime": "up 8 hours, 31 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
