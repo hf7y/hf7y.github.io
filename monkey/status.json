@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-15T18:30:02Z",
-  "valid_until": "2026-08-16T22:30:02Z",
+  "generated": "2026-08-15T18:40:03Z",
+  "valid_until": "2026-08-16T22:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-14T033443Z",
@@ -554,6 +554,23 @@
       "release_tick": "2026-08-13T05:21:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1786818064",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-15T18:21:04+00:00",
+          "ended_at": "2026-08-15T18:30:43+00:00",
+          "elapsed_s": 581,
+          "rc": 1,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Merged #204 (deleted dead bin/blockers-append.sh, #193 progress); opened #205 (GATE-ERROR-STREAK log line for #191's rc=2-collapsed-into-HOLD gap, witnessed, CI green, DECISION line pending human call on threshold/channel). #190 (scheduler-dev-cycle.sh stale-branch retirement) scoped but not started -- next pickup."
+        },
+        {
           "run_id": "scheduler-paced-dev-1786810863",
           "job": "scheduler-paced-dev",
           "started_at": "2026-08-15T16:21:03+00:00",
@@ -620,41 +637,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #109: coined invoque (draft PR scheduler#167, updated its body), prepared+filed the paired veille retirement as a ready git-am patch (senechal#259, since scheduler holds only a read-only deploy key for senechal and cannot push a branch there). #43 stays correctly BLOCKED (no SSH path from monkey to mandark). Queue still has #55/#57/#66/#80 as real next picks; #57's ledger-based dispatch-count divergence check is a real gap but touches bin/scheduler, a dispatch-critical file requiring a wi"
-        },
-        {
-          "run_id": "scheduler-paced-dev-1786724464",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-08-14T16:21:04+00:00",
-          "ended_at": "2026-08-14T16:28:46+00:00",
-          "elapsed_s": 464,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Closed #86: shipped bin/consign-status.sh + witness (PR #182, merged/pushed to main) making the vault-duplicate queue countable; #43 confirmed still BLOCKED (no SSH path to mandark, re-probed earlier today); backlog (#57 pt.1, #109, #66/#147-149 thermostat redesign, #55/#119/#130 dispatch redesign, #100/#156 arm-or-park decisions) remains actionable for the next run."
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1786810863",
+        "run_id": "scheduler-paced-dev-1786818064",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-08-15T16:21:03+00:00",
-        "ended_at": "2026-08-15T16:28:14+00:00",
-        "elapsed_s": 434,
-        "rc": 0,
+        "started_at": "2026-08-15T18:21:04+00:00",
+        "ended_at": "2026-08-15T18:30:43+00:00",
+        "elapsed_s": 581,
+        "rc": 1,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 3,
-        "prs_opened": 1,
+        "issues_closed": 0,
+        "prs_opened": 2,
         "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "FAILED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #100/#156 (verified armed in file state), deleted bin/blockers-liveness-check.sh and closed #201 (PR #203 merged, corrected lint-replies.sh as live not dead), narrowed #193's remaining scope on the comment thread -- queue has actionable work left (#193's narrowed items, #192/#190/#191/#187/#186 etc.)"
+        "claimed_reason": "Merged #204 (deleted dead bin/blockers-append.sh, #193 progress); opened #205 (GATE-ERROR-STREAK log line for #191's rc=2-collapsed-into-HOLD gap, witnessed, CI green, DECISION line pending human call on threshold/channel). #190 (scheduler-dev-cycle.sh stale-branch retirement) scoped but not started -- next pickup."
       }
     },
     {
@@ -874,14 +874,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-15T18:30:02Z",
+    "generated": "2026-08-15T18:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 16 hours, 1 minute",
+    "uptime": "up 16 hours, 11 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
