@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-16T08:30:02Z",
-  "valid_until": "2026-08-17T12:30:02Z",
+  "generated": "2026-08-16T08:40:03Z",
+  "valid_until": "2026-08-17T12:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-16T071348Z",
@@ -163,6 +163,23 @@
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1786869063",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-16T08:31:03+00:00",
+          "ended_at": "2026-08-16T08:34:45+00:00",
+          "elapsed_s": 225,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #67 (provenance marker predicate, PR #70 merged); #56/#58/#59/#68/#69 remain actionable, non-human-blocked work"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1786833063",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-15T22:31:03+00:00",
@@ -229,31 +246,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed 2 premise-expired issues (#60, #55) and fixed+closed #51 (hermetic staleness selftest, PR #64 merged to main); remaining queue (#48/#49, #52, #56-59, #62) has real actionable work, #53/#54 are genuinely blocked on Zach"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1786761063",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-15T02:31:03+00:00",
-          "ended_at": "2026-08-15T02:33:17+00:00",
-          "elapsed_s": 137,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "queue empty (0 open issues, verified via gh + next-issue.sh hf7y/ecosim); checked PRs (none open) and stray branches (all already merged into main under different SHAs) -- nothing actionable"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1786833063",
+        "run_id": "ecosim-nightly-batch-1786869063",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-15T22:31:03+00:00",
-        "ended_at": "2026-08-15T22:38:30+00:00",
-        "elapsed_s": 449,
+        "started_at": "2026-08-16T08:31:03+00:00",
+        "ended_at": "2026-08-16T08:34:45+00:00",
+        "elapsed_s": 225,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -263,7 +263,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #57 (RUN_VANISHED landed, PR #66 merged); #59/#58/#56 remain actionable sensor-build work, #48 blocked on crontab tool permission (wall documented), #54/#53/#52 blocked on human/cross-repo"
+        "claimed_reason": "Closed #67 (provenance marker predicate, PR #70 merged); #56/#58/#59/#68/#69 remain actionable, non-human-blocked work"
       }
     },
     {
@@ -895,14 +895,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-16T08:30:01Z",
+    "generated": "2026-08-16T08:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 day, 6 hours, 1 minute",
+    "uptime": "up 1 day, 6 hours, 11 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
