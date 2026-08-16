@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-16T12:10:02Z",
-  "valid_until": "2026-08-17T16:10:02Z",
+  "generated": "2026-08-16T12:20:03Z",
+  "valid_until": "2026-08-17T16:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-16T071348Z",
@@ -321,6 +321,23 @@
       "release_tick": "2026-08-13T05:04:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1786881604",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-16T12:00:04+00:00",
+          "ended_at": "2026-08-16T12:10:47+00:00",
+          "elapsed_s": 645,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "closed #32, sent zaxon ticket 3f9181aa on #9 (check_zach_reply next tick before new work), #33/#34 genuinely checked with nothing actionable, #19/#20 still blocked on credentials/Zach's hands"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1786860004",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-08-16T06:00:04+00:00",
@@ -387,31 +404,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #13 (rhythm-period recommendation: dollar-quota trigger gated by confirmed-reachable window, ceiling fallback) with rejected alternatives written down. Queue still has #8 (Amazon cart spike, needs dexter access this account lacks), #9 (feedback-channel proof, needs live phone), #10 (DECISION, awaiting Zach) -- actionable but each blocked on access/human input this run doesn't have."
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1786674253",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-14T02:24:13+00:00",
-          "ended_at": "2026-08-14T02:27:21+00:00",
-          "elapsed_s": 190,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "closed #1 (verb_refuse/verb_record_cost backported to bashified branch, exit 7 now reachable); #8/#9 RANK1/RANK2 spikes and #10/#13 DECISIONs remain actionable in queue"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1786860004",
+        "run_id": "groc-mangr-nightly-batch-1786881604",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-16T06:00:04+00:00",
-        "ended_at": "2026-08-16T06:09:28+00:00",
-        "elapsed_s": 566,
+        "started_at": "2026-08-16T12:00:04+00:00",
+        "ended_at": "2026-08-16T12:10:47+00:00",
+        "elapsed_s": 645,
         "rc": 0,
         "status": "done",
         "commits_added": 2,
@@ -421,7 +421,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "landed #21 (order-rhythm module + tests + dry-run CLI, PR#35 merged); #9/#10/#19/#20 remain genuinely blocked on Zach/credentials"
+        "claimed_reason": "closed #32, sent zaxon ticket 3f9181aa on #9 (check_zach_reply next tick before new work), #33/#34 genuinely checked with nothing actionable, #19/#20 still blocked on credentials/Zach's hands"
       }
     },
     {
@@ -912,14 +912,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-16T12:10:02Z",
+    "generated": "2026-08-16T12:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 day, 9 hours, 41 minutes",
+    "uptime": "up 1 day, 9 hours, 51 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
