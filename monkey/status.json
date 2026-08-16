@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-16T14:30:02Z",
-  "valid_until": "2026-08-17T18:30:02Z",
+  "generated": "2026-08-16T14:40:02Z",
+  "valid_until": "2026-08-17T18:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-16T071348Z",
@@ -163,6 +163,23 @@
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1786890664",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-16T14:31:04+00:00",
+          "ended_at": "2026-08-16T14:38:24+00:00",
+          "elapsed_s": 443,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed PR #72 (SCHED constant collapse, #69); real unstarted work remains: #56 (port 6 legacy sensors), #58 (rotation weight-field symbol), #59 (BLIND-population monitor), #69 (helper-block + self-slicing dup candidates)"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1786883463",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-16T12:31:03+00:00",
@@ -229,31 +246,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Merged PR #65 (ecosim half of #49's sensor-tick fork); #48/#56/#57/#58/#59 remain actionable, un-blocked build work"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1786818664",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-15T18:31:04+00:00",
-          "ended_at": "2026-08-15T18:45:30+00:00",
-          "elapsed_s": 869,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Worked #49 fully (ecosim PR #65 ready+tested; realisateur half tested locally as bea70dc but blocked -- this account's realisateur deploy key is read-only, patch handed off in #49 comment); queue still has #56/#57/#58/#59/#62 as actionable ecosim-only sensor work for next run, none stale on triage"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1786883463",
+        "run_id": "ecosim-nightly-batch-1786890664",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-16T12:31:03+00:00",
-        "ended_at": "2026-08-16T12:54:36+00:00",
-        "elapsed_s": 1415,
+        "started_at": "2026-08-16T14:31:04+00:00",
+        "ended_at": "2026-08-16T14:38:24+00:00",
+        "elapsed_s": 443,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -263,7 +263,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Merged #71 (reap-prose #68, net -50, evidence posted, left open for Zach's call); #56/#58/#59/#69 remain open, valid, unblocked dev work"
+        "claimed_reason": "Landed PR #72 (SCHED constant collapse, #69); real unstarted work remains: #56 (port 6 legacy sensors), #58 (rotation weight-field symbol), #59 (BLIND-population monitor), #69 (helper-block + self-slicing dup candidates)"
       }
     },
     {
@@ -912,14 +912,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-16T14:30:01Z",
+    "generated": "2026-08-16T14:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 day, 12 hours, 1 minute",
+    "uptime": "up 1 day, 12 hours, 11 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
