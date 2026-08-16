@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-16T15:00:03Z",
-  "valid_until": "2026-08-17T19:00:03Z",
+  "generated": "2026-08-16T15:10:03Z",
+  "valid_until": "2026-08-17T19:10:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-16T071348Z",
@@ -445,6 +445,23 @@
       "release_tick": "2026-08-13T05:50:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1786891803",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-16T14:50:03+00:00",
+          "ended_at": "2026-08-16T15:01:22+00:00",
+          "elapsed_s": 681,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed & merged #351 (closes #333 help-text truncation, #347 home-scoped false-positive on gh-sign.sh in silence-audit.sh); found #326's milestone-pattern prose fails the markdown-cost ratio gate by construction and documented that wall on the issue rather than bypassing it; large backlog remains (served-not-cloned scoreboard now 3/9, several design-decision issues awaiting human calls)."
+        },
+        {
           "run_id": "realisateur-nightly-batch-1786870203",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-08-16T08:50:03+00:00",
@@ -511,41 +528,24 @@
           "verdict_computed": "FAILED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1786819803",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-15T18:50:03+00:00",
-          "ended_at": "2026-08-15T19:06:40+00:00",
-          "elapsed_s": 999,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Closed dangerous stale PR #273 (would have deleted CLAUDE.md/BUILD-DISCIPLINE.md/current bin/ toolchain, merge-base 16 days stale off the abandoned 'bashified' line); confirmed branch-protection restore for #316 is blocked by the permission classifier for unattended runs and recorded it on #125 for a human; deleted-branch cleanup for 3 merged PRs also hit the classifier wall, left undone; issue queue still has real unclaimed work (#278, #300/#305, #276, #272)."
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1786870203",
+        "run_id": "realisateur-nightly-batch-1786891803",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-16T08:50:03+00:00",
-        "ended_at": "2026-08-16T09:03:37+00:00",
-        "elapsed_s": 816,
+        "started_at": "2026-08-16T14:50:03+00:00",
+        "ended_at": "2026-08-16T15:01:22+00:00",
+        "elapsed_s": 681,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 3,
+        "issues_closed": 2,
+        "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed+merged #338 (consigne --vault-before-lock misparse, PR #348, 80/80 tests green); opened PR #349 carrying fixed consigne onto bashified (#329) and PR #350 re-carrying 4 of 5 drifted lint files onto bashified (#342), both flagged DECISION (no CI on that branch); surfaced new finding that bashified still ships main's deliberately-deactivated hygiene-lint.sh to 13 accounts. Queue still has untriaged actionable work (e.g. #347)."
+        "claimed_reason": "Fixed & merged #351 (closes #333 help-text truncation, #347 home-scoped false-positive on gh-sign.sh in silence-audit.sh); found #326's milestone-pattern prose fails the markdown-cost ratio gate by construction and documented that wall on the issue rather than bypassing it; large backlog remains (served-not-cloned scoreboard now 3/9, several design-decision issues awaiting human calls)."
       }
     },
     {
@@ -912,14 +912,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-16T15:00:02Z",
+    "generated": "2026-08-16T15:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 day, 12 hours, 31 minutes",
+    "uptime": "up 1 day, 12 hours, 41 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
