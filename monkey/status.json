@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-16T14:20:02Z",
-  "valid_until": "2026-08-17T18:20:02Z",
+  "generated": "2026-08-16T14:30:02Z",
+  "valid_until": "2026-08-17T18:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-16T071348Z",
@@ -558,6 +558,23 @@
       "release_tick": "2026-08-13T05:21:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1786890063",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-16T14:21:03+00:00",
+          "ended_at": "2026-08-16T14:28:55+00:00",
+          "elapsed_s": 474,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed+merged PR #217 (BLOCKERS.md doc/dead-code drift sweep, #193): fixed README/docs/feedback-tags.md stale sweep-pass descriptions and deleted morning-report.sh's permanently-dead Blockers block; corrected #193's own scoping (collect-feedback.sh isn't actually called by usage-paced-runner.sh, needs no witness pass). tests/run-all.sh 52/52 before and after. Commented on #193 and #210 with what's left: #193's bin/scheduler -b/blockers retirement is a real design decision; #210's broader link-no"
+        },
+        {
           "run_id": "scheduler-paced-dev-1786882862",
           "job": "scheduler-paced-dev",
           "started_at": "2026-08-16T12:21:02+00:00",
@@ -624,31 +641,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Retired bin/scheduler-dev-cycle.sh (dead, no live caller) and its 4 exclusive test witnesses; closed #190 via merged PR #208 (720f8a6). Queue has plenty of actionable work left: #193 (BLOCKERS.md machinery retirement, in progress across several PRs), #192 (retire lib/sweep-loop-common.sh), #186/#187 (schedule registry gaps, FREEZE sunset), #55/#66/#80/#81 (roster/thermostat redesign), #119/#130/#147-149. #43 stays BLOCKED on mandark SSH access (re-probed, unchanged)."
-        },
-        {
-          "run_id": "scheduler-paced-dev-1786825263",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-08-15T20:21:03+00:00",
-          "ended_at": "2026-08-15T20:35:01+00:00",
-          "elapsed_s": 840,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 2,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Closed #191 (GATE-ERROR-STREAK fix confirmed live on main). Fixed and merged #206 (deleted bin/blockers-freshness-check.sh, confirmed dead: BLOCKERS.md is a stub, check always exited 3/BLIND) and #207 (re-carried bin/usage-paced-runner.sh onto bashified, fixing the carry-drift CI failure #206 exposed) -- narrowed #193's remaining table to collect-feedback.sh/morning-report.sh/questions-lint.sh. tests/run-all.sh: 55/55 clean on main. Actionable next: #193's remaining three scripts need a witness "
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1786882862",
+        "run_id": "scheduler-paced-dev-1786890063",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-08-16T12:21:02+00:00",
-        "ended_at": "2026-08-16T12:26:54+00:00",
-        "elapsed_s": 355,
+        "started_at": "2026-08-16T14:21:03+00:00",
+        "ended_at": "2026-08-16T14:28:55+00:00",
+        "elapsed_s": 474,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -658,7 +658,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed+merged PR #216 (bin/scheduler: dropped dead BLOCKERS.md --section lookup in build_status_report, #193); commented on #193 narrowing remaining scope (bin/scheduler's -b/blockers-claude/digest surface is larger than the table showed; questions-lint.sh confirmed still-live via senechal's un-migrated ANSWER_CHANNEL). Re-verified #43 still blocked on no SSH path to mandark. Actionable work remains: #193's collect-feedback.sh/morning-report.sh (need witness-first per rule 4), #192/#210 duplicat"
+        "claimed_reason": "Landed+merged PR #217 (BLOCKERS.md doc/dead-code drift sweep, #193): fixed README/docs/feedback-tags.md stale sweep-pass descriptions and deleted morning-report.sh's permanently-dead Blockers block; corrected #193's own scoping (collect-feedback.sh isn't actually called by usage-paced-runner.sh, needs no witness pass). tests/run-all.sh 52/52 before and after. Commented on #193 and #210 with what's left: #193's bin/scheduler -b/blockers retirement is a real design decision; #210's broader link-no"
       }
     },
     {
@@ -912,14 +912,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-16T14:20:01Z",
+    "generated": "2026-08-16T14:30:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 day, 11 hours, 51 minutes",
+    "uptime": "up 1 day, 12 hours, 1 minute",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
