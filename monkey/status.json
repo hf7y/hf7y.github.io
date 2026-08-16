@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-16T17:10:02Z",
-  "valid_until": "2026-08-17T21:10:02Z",
+  "generated": "2026-08-16T17:20:03Z",
+  "valid_until": "2026-08-17T21:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-16T071348Z",
@@ -321,6 +321,23 @@
       "release_tick": "2026-08-13T05:04:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1786899843",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-16T17:04:03+00:00",
+          "ended_at": "2026-08-16T17:13:20+00:00",
+          "elapsed_s": 559,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #9 with a real, tested ingestion mechanism (not just a pasted reply); found and fixed a live crash bug along the way; #19/#20/#10 remain genuinely blocked on credentials/Zach, unchanged."
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1786881604",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-08-16T12:00:04+00:00",
@@ -387,31 +404,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "closed #8 (Amazon cart spike: PA-API/SP-API/add-to-cart-URL all dead-end, recommended path is dexter browser automation, blocked on missing dexter_groc-mangr_deploy key + Zach's Amazon 2FA); #9 has a new zaxon-down finding but needs Zach's phone to finish; #10 still waiting on Zach's reply"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1786674452",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-14T02:27:32+00:00",
-          "ended_at": "2026-08-14T02:29:29+00:00",
-          "elapsed_s": 119,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Closed #13 (rhythm-period recommendation: dollar-quota trigger gated by confirmed-reachable window, ceiling fallback) with rejected alternatives written down. Queue still has #8 (Amazon cart spike, needs dexter access this account lacks), #9 (feedback-channel proof, needs live phone), #10 (DECISION, awaiting Zach) -- actionable but each blocked on access/human input this run doesn't have."
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1786881604",
+        "run_id": "groc-mangr-nightly-batch-1786899843",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-16T12:00:04+00:00",
-        "ended_at": "2026-08-16T12:10:47+00:00",
-        "elapsed_s": 645,
+        "started_at": "2026-08-16T17:04:03+00:00",
+        "ended_at": "2026-08-16T17:13:20+00:00",
+        "elapsed_s": 559,
         "rc": 0,
         "status": "done",
         "commits_added": 2,
@@ -420,8 +420,8 @@
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "closed #32, sent zaxon ticket 3f9181aa on #9 (check_zach_reply next tick before new work), #33/#34 genuinely checked with nothing actionable, #19/#20 still blocked on credentials/Zach's hands"
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Closed #9 with a real, tested ingestion mechanism (not just a pasted reply); found and fixed a live crash bug along the way; #19/#20/#10 remain genuinely blocked on credentials/Zach, unchanged."
       }
     },
     {
@@ -558,6 +558,23 @@
       "release_tick": "2026-08-13T05:21:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1786899663",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-16T17:01:03+00:00",
+          "ended_at": "2026-08-16T17:18:37+00:00",
+          "elapsed_s": 1057,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #222 (merged PR #223): carry-drift-witness now checks a carried file's own sibling deps and diffs the PR's HEAD (not stale origin/main) against bashified on pull_request events; verified with a synthetic regression case. Along the way, carried lib/check-witness.sh onto bashified (pushed directly, closing a real gap freeze-check.sh's guarded source needed) and registered usage-gate.sh/sync-crontab.sh as two named, dated gaps blocked on #130's still-open spend decision, commented on #130 wi"
+        },
+        {
           "run_id": "scheduler-paced-dev-1786890063",
           "job": "scheduler-paced-dev",
           "started_at": "2026-08-16T14:21:03+00:00",
@@ -624,41 +641,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #209 (284-line prose reap, PR #212 + carry-fix PR #213); landed #210 progress (PR #214 fixing lint-replies.sh's truncating --help self-slice); #210 stays open with the ok()/bad() 51-file witness-helper consolidation scoped and documented as the next concrete step."
-        },
-        {
-          "run_id": "scheduler-paced-dev-1786832463",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-08-15T22:21:03+00:00",
-          "ended_at": "2026-08-15T22:32:00+00:00",
-          "elapsed_s": 660,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Retired bin/scheduler-dev-cycle.sh (dead, no live caller) and its 4 exclusive test witnesses; closed #190 via merged PR #208 (720f8a6). Queue has plenty of actionable work left: #193 (BLOCKERS.md machinery retirement, in progress across several PRs), #192 (retire lib/sweep-loop-common.sh), #186/#187 (schedule registry gaps, FREEZE sunset), #55/#66/#80/#81 (roster/thermostat redesign), #119/#130/#147-149. #43 stays BLOCKED on mandark SSH access (re-probed, unchanged)."
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1786890063",
+        "run_id": "scheduler-paced-dev-1786899663",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-08-16T14:21:03+00:00",
-        "ended_at": "2026-08-16T14:28:55+00:00",
-        "elapsed_s": 474,
+        "started_at": "2026-08-16T17:01:03+00:00",
+        "ended_at": "2026-08-16T17:18:37+00:00",
+        "elapsed_s": 1057,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 2,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed+merged PR #217 (BLOCKERS.md doc/dead-code drift sweep, #193): fixed README/docs/feedback-tags.md stale sweep-pass descriptions and deleted morning-report.sh's permanently-dead Blockers block; corrected #193's own scoping (collect-feedback.sh isn't actually called by usage-paced-runner.sh, needs no witness pass). tests/run-all.sh 52/52 before and after. Commented on #193 and #210 with what's left: #193's bin/scheduler -b/blockers retirement is a real design decision; #210's broader link-no"
+        "claimed_reason": "Closed #222 (merged PR #223): carry-drift-witness now checks a carried file's own sibling deps and diffs the PR's HEAD (not stale origin/main) against bashified on pull_request events; verified with a synthetic regression case. Along the way, carried lib/check-witness.sh onto bashified (pushed directly, closing a real gap freeze-check.sh's guarded source needed) and registered usage-gate.sh/sync-crontab.sh as two named, dated gaps blocked on #130's still-open spend decision, commented on #130 wi"
       }
     },
     {
@@ -875,6 +875,23 @@
       "release_tick": "2026-08-16T05:26:03Z rc=0 pin=2026-08-16T023854Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1786899964",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-08-16T17:06:04+00:00",
+          "ended_at": "2026-08-16T17:14:05+00:00",
+          "elapsed_s": 484,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #33: flush() now reports which sheet row a dedupe-drop matched (PR #42, merged); pytest 546/33 green"
+        },
+        {
           "run_id": "wtul-nightly-batch-1786744306",
           "job": "wtul-nightly-batch",
           "started_at": "2026-08-14T21:51:46+00:00",
@@ -893,33 +910,33 @@
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1786744306",
+        "run_id": "wtul-nightly-batch-1786899964",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-08-14T21:51:46+00:00",
-        "ended_at": "2026-08-14T21:52:29+00:00",
-        "elapsed_s": 45,
+        "started_at": "2026-08-16T17:06:04+00:00",
+        "ended_at": "2026-08-16T17:14:05+00:00",
+        "elapsed_s": 484,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 0,
-        "prs_merged": 0,
+        "prs_opened": 1,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Closed #36 (find_prior_rip mtime bug) \u2014 fix was already committed on main as d63243c; verified full suite green (541 passed/33 skipped/0 failed) and closed with resolution comment."
+        "claimed_reason": "Closed #33: flush() now reports which sheet row a dedupe-drop matched (PR #42, merged); pytest 546/33 green"
       }
     }
   ],
   "watcher": {
-    "generated": "2026-08-16T17:10:02Z",
+    "generated": "2026-08-16T17:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 day, 14 hours, 41 minutes",
+    "uptime": "up 1 day, 14 hours, 51 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
