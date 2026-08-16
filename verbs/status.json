@@ -1,22 +1,22 @@
 {
   "schema": 2,
-  "generated": "2026-08-15T02:30:27Z",
-  "valid_until": "2026-08-16T06:30:27Z",
+  "generated": "2026-08-16T02:39:25Z",
+  "valid_until": "2026-08-17T06:39:25Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "NO_CHANGE",
-  "reason": "gate green, no project moved -- today's build is still current",
+  "decision": "CUT",
+  "reason": "33 verb(s); 3 green, 0 red, 0 pending, 9 ungated, 0 blind",
   "main_sha": "23d2539",
-  "ci_run": "31859333884",
-  "build_id": null,
+  "ci_run": "31922355959",
+  "build_id": "2026-08-16T023854Z",
   "blocked_streak": 0,
   "last_cut": {
-    "at": "2026-08-14T03:35:04Z",
+    "at": "2026-08-16T02:39:25Z",
     "decision": "CUT",
     "reason": "33 verb(s); 3 green, 0 red, 0 pending, 9 ungated, 0 blind",
-    "main_sha": "6505491",
-    "ci_run": "31767208685",
-    "build_id": "2026-08-14T033443Z"
+    "main_sha": "23d2539",
+    "ci_run": "31922355959",
+    "build_id": "2026-08-16T023854Z"
   },
   "decisions_enum": [
     "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-16T02:39:25Z",
+      "decision": "CUT",
+      "reason": "33 verb(s); 3 green, 0 red, 0 pending, 9 ungated, 0 blind",
+      "main_sha": "23d2539",
+      "ci_run": "31922355959",
+      "build_id": "2026-08-16T023854Z"
+    },
     {
       "at": "2026-08-15T02:30:27Z",
       "decision": "NO_CHANGE",
