@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-17T16:20:03Z",
-  "valid_until": "2026-08-18T20:20:03Z",
+  "generated": "2026-08-17T16:40:03Z",
+  "valid_until": "2026-08-18T20:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-17T034517Z",
@@ -321,6 +321,23 @@
       "release_tick": "2026-08-13T05:04:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1786983843",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-17T16:24:03+00:00",
+          "ended_at": "2026-08-17T16:36:06+00:00",
+          "elapsed_s": 726,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Built+merged window-confirm mechanism for #27's reachability checkbox (PR #38); sent live ask_zach ticket 2f99c780 for Wed's window, next tick checks it first. #19/#20 reconfirmed blocked."
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1786899843",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-08-16T17:04:03+00:00",
@@ -387,41 +404,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Wired #11's estimator into the live store/API (#16, closed, pushed b1480e6, 52 tests passing); #9 and #10 re-verified genuinely blocked on Zach (zaxon/hermes-gateway down on dexter, no login to fix it; DECISION needs his own answer) -- nothing else actionable without guessing."
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1786674586",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-14T02:29:46+00:00",
-          "ended_at": "2026-08-14T02:34:30+00:00",
-          "elapsed_s": 286,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "closed #8 (Amazon cart spike: PA-API/SP-API/add-to-cart-URL all dead-end, recommended path is dexter browser automation, blocked on missing dexter_groc-mangr_deploy key + Zach's Amazon 2FA); #9 has a new zaxon-down finding but needs Zach's phone to finish; #10 still waiting on Zach's reply"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1786899843",
+        "run_id": "groc-mangr-nightly-batch-1786983843",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-16T17:04:03+00:00",
-        "ended_at": "2026-08-16T17:13:20+00:00",
-        "elapsed_s": 559,
+        "started_at": "2026-08-17T16:24:03+00:00",
+        "ended_at": "2026-08-17T16:36:06+00:00",
+        "elapsed_s": 726,
         "rc": 0,
         "status": "done",
         "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Closed #9 with a real, tested ingestion mechanism (not just a pasted reply); found and fixed a live crash bug along the way; #19/#20/#10 remain genuinely blocked on credentials/Zach, unchanged."
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Built+merged window-confirm mechanism for #27's reachability checkbox (PR #38); sent live ask_zach ticket 2f99c780 for Wed's window, next tick checks it first. #19/#20 reconfirmed blocked."
       }
     },
     {
@@ -903,6 +903,23 @@
       "release_tick": "2026-08-17T05:26:03Z rc=0 pin=2026-08-17T034517Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1786983963",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-08-17T16:26:03+00:00",
+          "ended_at": "2026-08-17T16:35:47+00:00",
+          "elapsed_s": 588,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #40 (reap prose): premise was stale, verified the real gap (4 dead file-pointers in LIVE-TEST-DEBRIEF), fixed and merged in #43, closed with accounting."
+        },
+        {
           "run_id": "wtul-nightly-batch-1786899964",
           "job": "wtul-nightly-batch",
           "started_at": "2026-08-16T17:06:04+00:00",
@@ -938,11 +955,11 @@
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1786899964",
+        "run_id": "wtul-nightly-batch-1786983963",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-08-16T17:06:04+00:00",
-        "ended_at": "2026-08-16T17:14:05+00:00",
-        "elapsed_s": 484,
+        "started_at": "2026-08-17T16:26:03+00:00",
+        "ended_at": "2026-08-17T16:35:47+00:00",
+        "elapsed_s": 588,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -952,19 +969,19 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Closed #33: flush() now reports which sheet row a dedupe-drop matched (PR #42, merged); pytest 546/33 green"
+        "claimed_reason": "Closed #40 (reap prose): premise was stale, verified the real gap (4 dead file-pointers in LIVE-TEST-DEBRIEF), fixed and merged in #43, closed with accounting."
       }
     }
   ],
   "watcher": {
-    "generated": "2026-08-17T16:20:02Z",
+    "generated": "2026-08-17T16:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 2 days, 13 hours, 51 minutes",
+    "uptime": "up 2 days, 14 hours, 11 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
