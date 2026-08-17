@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-17T13:10:02Z",
-  "valid_until": "2026-08-18T17:10:02Z",
+  "generated": "2026-08-17T13:20:03Z",
+  "valid_until": "2026-08-18T17:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-17T034517Z",
@@ -27,6 +27,23 @@
       ],
       "release_tick": "2026-08-13T05:12:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1786972324",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-17T13:12:04+00:00",
+          "ended_at": "2026-08-17T13:18:41+00:00",
+          "elapsed_s": 400,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Blocked on #38 (SMB->HTTP pivot) pending scanner-capability info and mandark git-push confirmation from Zach; filed crt heads-up (crt#46) and asked on #38. Queue has actionable, human-independent work waiting: #49 (reap 80 md lines) and #50 (dedupe mechanism, link don't copy)."
+        },
         {
           "run_id": "bibliothecaire-research-1786896723",
           "job": "bibliothecaire-research",
@@ -94,31 +111,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Merged bashified into main (PR #48), closed #40: man/cueille.1 now matches a real bin/cueille on main; 10 open, unclaimed issues remain"
-        },
-        {
-          "run_id": "bibliothecaire-research-1786738323",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-08-14T20:12:03+00:00",
-          "ended_at": "2026-08-14T20:18:15+00:00",
-          "elapsed_s": 375,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Answered and closed #34 (groc-mangr automation-burden claim) with 3 verified sources incl. one fully read; request queue and general open-issue queue both empty."
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1786896723",
+        "run_id": "bibliothecaire-research-1786972324",
         "job": "bibliothecaire-research",
-        "started_at": "2026-08-16T16:12:03+00:00",
-        "ended_at": "2026-08-16T16:14:09+00:00",
-        "elapsed_s": 129,
+        "started_at": "2026-08-17T13:12:04+00:00",
+        "ended_at": "2026-08-17T13:18:41+00:00",
+        "elapsed_s": 400,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -128,7 +128,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Deferred #37 (corpus relocation paused per Zach's 2026-08-15 comment on #15); #38 and others remain open and actionable for next run."
+        "claimed_reason": "Blocked on #38 (SMB->HTTP pivot) pending scanner-capability info and mandark git-push confirmation from Zach; filed crt heads-up (crt#46) and asked on #38. Queue has actionable, human-independent work waiting: #49 (reap 80 md lines) and #50 (dedupe mechanism, link don't copy)."
       }
     },
     {
@@ -162,6 +162,23 @@
       ],
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "ecosim-nightly-batch-1786972264",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-17T13:11:04+00:00",
+          "ended_at": "2026-08-17T13:18:56+00:00",
+          "elapsed_s": 474,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Merged PR #73 (fixed a fabricated vault citation + missing CI ratchet step first) and closed #74; #56/#58/#59/#69 remain actionable and unblocked for next run"
+        },
         {
           "run_id": "ecosim-nightly-batch-1786890664",
           "job": "ecosim-nightly-batch",
@@ -229,41 +246,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #57 (RUN_VANISHED landed, PR #66 merged); #59/#58/#56 remain actionable sensor-build work, #48 blocked on crontab tool permission (wall documented), #54/#53/#52 blocked on human/cross-repo"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1786825863",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-15T20:31:03+00:00",
-          "ended_at": "2026-08-15T20:34:44+00:00",
-          "elapsed_s": 224,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Merged PR #65 (ecosim half of #49's sensor-tick fork); #48/#56/#57/#58/#59 remain actionable, un-blocked build work"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1786890664",
+        "run_id": "ecosim-nightly-batch-1786972264",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-16T14:31:04+00:00",
-        "ended_at": "2026-08-16T14:38:24+00:00",
-        "elapsed_s": 443,
+        "started_at": "2026-08-17T13:11:04+00:00",
+        "ended_at": "2026-08-17T13:18:56+00:00",
+        "elapsed_s": 474,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 1,
+        "issues_closed": 1,
+        "prs_opened": 0,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed PR #72 (SCHED constant collapse, #69); real unstarted work remains: #56 (port 6 legacy sensors), #58 (rotation weight-field symbol), #59 (BLIND-population monitor), #69 (helper-block + self-slicing dup candidates)"
+        "claimed_reason": "Merged PR #73 (fixed a fabricated vault citation + missing CI ratchet step first) and closed #74; #56/#58/#59/#69 remain actionable and unblocked for next run"
       }
     },
     {
@@ -693,6 +693,23 @@
       "release_tick": "2026-08-13T05:11:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "sequestria-nightly-batch-1786972264",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-08-17T13:11:04+00:00",
+          "ended_at": "2026-08-17T13:17:19+00:00",
+          "elapsed_s": 378,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "closed #7 (built the real send counter), landed #9's first two outreach drafts via PR #19; #8/#6/#11 remain for a future pass"
+        },
+        {
           "run_id": "sequestria-nightly-batch-1786881604",
           "job": "sequestria-nightly-batch",
           "started_at": "2026-08-16T12:00:04+00:00",
@@ -745,11 +762,11 @@
         }
       ],
       "last_run": {
-        "run_id": "sequestria-nightly-batch-1786881604",
+        "run_id": "sequestria-nightly-batch-1786972264",
         "job": "sequestria-nightly-batch",
-        "started_at": "2026-08-16T12:00:04+00:00",
-        "ended_at": "2026-08-16T12:06:28+00:00",
-        "elapsed_s": 387,
+        "started_at": "2026-08-17T13:11:04+00:00",
+        "ended_at": "2026-08-17T13:17:19+00:00",
+        "elapsed_s": 378,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -759,7 +776,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "closed #16 (duplication sweep, PR #18 merged); #7/#8/#9 answered and buildable next pass"
+        "claimed_reason": "closed #7 (built the real send counter), landed #9's first two outreach drafts via PR #19; #8/#6/#11 remain for a future pass"
       }
     },
     {
@@ -940,14 +957,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-17T13:10:02Z",
+    "generated": "2026-08-17T13:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 2 days, 10 hours, 41 minutes",
+    "uptime": "up 2 days, 10 hours, 51 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
