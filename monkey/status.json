@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-17T16:40:03Z",
-  "valid_until": "2026-08-18T20:40:03Z",
+  "generated": "2026-08-17T16:50:03Z",
+  "valid_until": "2026-08-18T20:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-17T034517Z",
@@ -163,6 +163,23 @@
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1786984263",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-17T16:31:03+00:00",
+          "ended_at": "2026-08-17T16:48:18+00:00",
+          "elapsed_s": 1038,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed #58 (rotation weight-attribution, PR #75 merged); #56/#59/#69's remaining candidates and #52 (needs careful cross-repo work) are still open and actionable"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1786972264",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-17T13:11:04+00:00",
@@ -229,41 +246,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #67 (provenance marker predicate, PR #70 merged); #56/#58/#59/#68/#69 remain actionable, non-human-blocked work"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1786833063",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-15T22:31:03+00:00",
-          "ended_at": "2026-08-15T22:38:30+00:00",
-          "elapsed_s": 449,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Closed #57 (RUN_VANISHED landed, PR #66 merged); #59/#58/#56 remain actionable sensor-build work, #48 blocked on crontab tool permission (wall documented), #54/#53/#52 blocked on human/cross-repo"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1786972264",
+        "run_id": "ecosim-nightly-batch-1786984263",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-17T13:11:04+00:00",
-        "ended_at": "2026-08-17T13:18:56+00:00",
-        "elapsed_s": 474,
+        "started_at": "2026-08-17T16:31:03+00:00",
+        "ended_at": "2026-08-17T16:48:18+00:00",
+        "elapsed_s": 1038,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Merged PR #73 (fixed a fabricated vault citation + missing CI ratchet step first) and closed #74; #56/#58/#59/#69 remain actionable and unblocked for next run"
+        "claimed_reason": "Landed #58 (rotation weight-attribution, PR #75 merged); #56/#59/#69's remaining candidates and #52 (needs careful cross-repo work) are still open and actionable"
       }
     },
     {
@@ -445,6 +445,23 @@
       "release_tick": "2026-08-13T05:50:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1786984203",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-17T16:30:03+00:00",
+          "ended_at": "2026-08-17T16:49:10+00:00",
+          "elapsed_s": 1150,
+          "rc": 1,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed CI on PR #376 (own test's fragile grep anchor + prose-ratchet overage), pushed ddb09a1, re-anchored the stale claim, all checks green; filed hf7y/vim-arcade#174 completing #372's reap-prose plan and closed #372 as done. Actionable work remains: #301's org-migration walkthrough script, and the still-unfiled verbs/scheduler/senechal draft PRs #368 claims exist but don't."
+        },
+        {
           "run_id": "realisateur-nightly-batch-1786972204",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-08-17T13:10:04+00:00",
@@ -511,41 +528,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Fixed+merged #338 (consigne --vault-before-lock misparse, PR #348, 80/80 tests green); opened PR #349 carrying fixed consigne onto bashified (#329) and PR #350 re-carrying 4 of 5 drifted lint files onto bashified (#342), both flagged DECISION (no CI on that branch); surfaced new finding that bashified still ships main's deliberately-deactivated hygiene-lint.sh to 13 accounts. Queue still has untriaged actionable work (e.g. #347)."
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1786863003",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-16T06:50:03+00:00",
-          "ended_at": "2026-08-16T07:04:26+00:00",
-          "elapsed_s": 865,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 0,
-          "issues_opened": 1,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "FAILED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1786972204",
+        "run_id": "realisateur-nightly-batch-1786984203",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-17T13:10:04+00:00",
-        "ended_at": "2026-08-17T13:35:16+00:00",
-        "elapsed_s": 1515,
+        "started_at": "2026-08-17T16:30:03+00:00",
+        "ended_at": "2026-08-17T16:49:10+00:00",
+        "elapsed_s": 1150,
         "rc": 1,
         "status": "done",
         "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 2,
-        "prs_merged": 1,
+        "prs_opened": 0,
+        "prs_merged": 0,
         "verdict_computed": "FAILED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Fixed CI on PR #376 (own test's fragile grep anchor + prose-ratchet overage), pushed ddb09a1, re-anchored the stale claim, all checks green; filed hf7y/vim-arcade#174 completing #372's reap-prose plan and closed #372 as done. Actionable work remains: #301's org-migration walkthrough script, and the still-unfiled verbs/scheduler/senechal draft PRs #368 claims exist but don't."
       }
     },
     {
@@ -974,14 +974,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-17T16:40:02Z",
+    "generated": "2026-08-17T16:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 2 days, 14 hours, 11 minutes",
+    "uptime": "up 2 days, 14 hours, 21 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
