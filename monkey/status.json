@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-17T21:30:03Z",
-  "valid_until": "2026-08-19T01:30:03Z",
+  "generated": "2026-08-17T21:40:02Z",
+  "valid_until": "2026-08-19T01:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-17T034517Z",
@@ -163,6 +163,23 @@
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1787002264",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-17T21:31:04+00:00",
+          "ended_at": "2026-08-17T21:36:24+00:00",
+          "elapsed_s": 322,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #69 (PR #77 merged: fixed self-slicing --help anti-pattern in 4 scripts). Queue still has actionable unblocked work: #59 (BLIND-population monitor, buildable now), #56 (port 6 legacy sensors), #52 (draft PR to realisateur, per rule 6)."
+        },
+        {
           "run_id": "ecosim-nightly-batch-1786984263",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-17T16:31:03+00:00",
@@ -229,31 +246,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Merged #71 (reap-prose #68, net -50, evidence posted, left open for Zach's call); #56/#58/#59/#69 remain open, valid, unblocked dev work"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1786869063",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-16T08:31:03+00:00",
-          "ended_at": "2026-08-16T08:34:45+00:00",
-          "elapsed_s": 225,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Closed #67 (provenance marker predicate, PR #70 merged); #56/#58/#59/#68/#69 remain actionable, non-human-blocked work"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1786984263",
+        "run_id": "ecosim-nightly-batch-1787002264",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-17T16:31:03+00:00",
-        "ended_at": "2026-08-17T16:48:18+00:00",
-        "elapsed_s": 1038,
+        "started_at": "2026-08-17T21:31:04+00:00",
+        "ended_at": "2026-08-17T21:36:24+00:00",
+        "elapsed_s": 322,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -263,7 +263,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed #58 (rotation weight-attribution, PR #75 merged); #56/#59/#69's remaining candidates and #52 (needs careful cross-repo work) are still open and actionable"
+        "claimed_reason": "Closed #69 (PR #77 merged: fixed self-slicing --help anti-pattern in 4 scripts). Queue still has actionable unblocked work: #59 (BLIND-population monitor, buildable now), #56 (port 6 legacy sensors), #52 (draft PR to realisateur, per rule 6)."
       }
     },
     {
@@ -693,6 +693,23 @@
       "release_tick": "2026-08-13T05:11:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "sequestria-nightly-batch-1787002264",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-08-17T21:31:04+00:00",
+          "ended_at": "2026-08-17T21:38:14+00:00",
+          "elapsed_s": 433,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #8 (copy rewrite + asterisk mechanism, PR #21 merged); #9/#6/#11/#1 remain open, none closeable this pass"
+        },
+        {
           "run_id": "sequestria-nightly-batch-1786972264",
           "job": "sequestria-nightly-batch",
           "started_at": "2026-08-17T13:11:04+00:00",
@@ -762,11 +779,11 @@
         }
       ],
       "last_run": {
-        "run_id": "sequestria-nightly-batch-1786972264",
+        "run_id": "sequestria-nightly-batch-1787002264",
         "job": "sequestria-nightly-batch",
-        "started_at": "2026-08-17T13:11:04+00:00",
-        "ended_at": "2026-08-17T13:17:19+00:00",
-        "elapsed_s": 378,
+        "started_at": "2026-08-17T21:31:04+00:00",
+        "ended_at": "2026-08-17T21:38:14+00:00",
+        "elapsed_s": 433,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -776,7 +793,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "closed #7 (built the real send counter), landed #9's first two outreach drafts via PR #19; #8/#6/#11 remain for a future pass"
+        "claimed_reason": "Closed #8 (copy rewrite + asterisk mechanism, PR #21 merged); #9/#6/#11/#1 remain open, none closeable this pass"
       }
     },
     {
@@ -974,14 +991,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-17T21:30:02Z",
+    "generated": "2026-08-17T21:40:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 2 days, 19 hours, 1 minute",
+    "uptime": "up 2 days, 19 hours, 11 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
