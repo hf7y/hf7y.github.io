@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-17T23:30:02Z",
-  "valid_until": "2026-08-19T03:30:02Z",
+  "generated": "2026-08-17T23:40:03Z",
+  "valid_until": "2026-08-19T03:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-17T034517Z",
@@ -575,6 +575,23 @@
       "release_tick": "2026-08-13T05:21:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1787008864",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-17T23:21:04+00:00",
+          "ended_at": "2026-08-17T23:37:22+00:00",
+          "elapsed_s": 981,
+          "rc": 1,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 3,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed 3 stale issues (#66,#80,#226) after re-probing; landed 2 PRs (#236 merged: recovered a stranded ideate.md fix blocked by a git-push-to-main deny rule; #237 auto-merge armed: dropped tempo.sh's inert 'blocked' label per #229); posted evidence-based updates on #234 (bin/scheduler's focus/blockers/questions retirement duplicates #193, which is the more mature tracker) and #187 (live FREEZE/_paced.monkey.conf drift on crt/baudin/secretaire, needs a human arming call). Confirmed #229's gh-sign"
+        },
+        {
           "run_id": "scheduler-paced-dev-1786978864",
           "job": "scheduler-paced-dev",
           "started_at": "2026-08-17T15:01:04+00:00",
@@ -641,41 +658,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Landed+merged PR #216 (bin/scheduler: dropped dead BLOCKERS.md --section lookup in build_status_report, #193); commented on #193 narrowing remaining scope (bin/scheduler's -b/blockers-claude/digest surface is larger than the table showed; questions-lint.sh confirmed still-live via senechal's un-migrated ANSWER_CHANNEL). Re-verified #43 still blocked on no SSH path to mandark. Actionable work remains: #193's collect-feedback.sh/morning-report.sh (need witness-first per rule 4), #192/#210 duplicat"
-        },
-        {
-          "run_id": "scheduler-paced-dev-1786875663",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-08-16T10:21:03+00:00",
-          "ended_at": "2026-08-16T10:37:32+00:00",
-          "elapsed_s": 991,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Landed PR #215 (merged, tests/run-all.sh 52/52 both before+after): collapsed 51 duplicated ok()/bad() witness helpers into tests/lib/witness-common.sh per #210; premise-triaged 15 open issues (none stale to close), confirmed #187 (sunset schedule/FREEZE) is now unblocked and well-scoped for next run"
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1786978864",
+        "run_id": "scheduler-paced-dev-1787008864",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-08-17T15:01:04+00:00",
-        "ended_at": "2026-08-17T15:14:30+00:00",
-        "elapsed_s": 808,
+        "started_at": "2026-08-17T23:21:04+00:00",
+        "ended_at": "2026-08-17T23:37:22+00:00",
+        "elapsed_s": 981,
         "rc": 1,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": null,
-        "prs_opened": null,
-        "prs_merged": null,
+        "issues_closed": 3,
+        "prs_opened": 2,
+        "prs_merged": 1,
         "verdict_computed": "FAILED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Merged PR#232 and closed #233 (cross-repo standing rules for chezz/gardien/baudin/senechal); investigated #234's coordinator-file sunset, caught a real coupling bug before shipping (removing sync-crontab.sh's QUESTIONS/FOCUS symlink farm would leave bin/questions-lint.sh permanently BLIND since bin/scheduler's still-live cmd_ask/cmd_idea/cmd_questions_*/cmd_blockers_* machinery depends on it), reverted, and posted the real scope to #234. Landed one isolated fix (ideate.md stale FOCUS.md cross-re"
+        "claimed_reason": "Closed 3 stale issues (#66,#80,#226) after re-probing; landed 2 PRs (#236 merged: recovered a stranded ideate.md fix blocked by a git-push-to-main deny rule; #237 auto-merge armed: dropped tempo.sh's inert 'blocked' label per #229); posted evidence-based updates on #234 (bin/scheduler's focus/blockers/questions retirement duplicates #193, which is the more mature tracker) and #187 (live FREEZE/_paced.monkey.conf drift on crt/baudin/secretaire, needs a human arming call). Confirmed #229's gh-sign"
       }
     },
     {
@@ -1008,14 +1008,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-17T23:30:02Z",
+    "generated": "2026-08-17T23:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 2 days, 21 hours, 1 minute",
+    "uptime": "up 2 days, 21 hours, 11 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
