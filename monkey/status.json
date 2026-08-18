@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-18T12:40:03Z",
-  "valid_until": "2026-08-19T16:40:03Z",
+  "generated": "2026-08-18T12:50:02Z",
+  "valid_until": "2026-08-19T16:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -823,6 +823,23 @@
       "release_tick": "2026-08-13T05:37:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "vim-arcade-nightly-batch-1787056625",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-18T12:37:05+00:00",
+          "ended_at": "2026-08-18T12:48:04+00:00",
+          "elapsed_s": 661,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "closed #177 (shipped fix, merged PR #179) and #174 (premise expired by cfdc275); #173 remains open and actionable next run"
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1786984624",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-08-17T16:37:04+00:00",
@@ -889,41 +906,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed #140 (filed milestone-pattern proposal as hf7y/realisateur#326); remaining opens (#135 waiting on Zach, #136/#137 parked pending #135, #143 needs a checkout outside this repo) have no actionable vim-arcade work right now."
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1786826223",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-08-15T20:37:03+00:00",
-          "ended_at": "2026-08-15T20:39:00+00:00",
-          "elapsed_s": 120,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "closed #131 (bashified pyz carry, all 4 steps confirmed landed on origin/bashified); 5 open issues remain (#135-137,140,143) plus PR #142 sitting DIRTY (merge conflict) for next run"
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1786984624",
+        "run_id": "vim-arcade-nightly-batch-1787056625",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-08-17T16:37:04+00:00",
-        "ended_at": "2026-08-17T16:50:10+00:00",
-        "elapsed_s": 789,
+        "started_at": "2026-08-18T12:37:05+00:00",
+        "ended_at": "2026-08-18T12:48:04+00:00",
+        "elapsed_s": 661,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
-        "issues_opened": 1,
-        "issues_closed": 1,
+        "issues_opened": 0,
+        "issues_closed": 2,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #171 (first map build now backgrounds its fetch when a cache exists, PR #175 merged); #173 remains open and actionable for next run"
+        "claimed_reason": "closed #177 (shipped fix, merged PR #179) and #174 (premise expired by cfdc275); #173 remains open and actionable next run"
       }
     },
     {
@@ -1008,14 +1008,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-18T12:40:02Z",
+    "generated": "2026-08-18T12:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 3 days, 10 hours, 11 minutes",
+    "uptime": "up 3 days, 10 hours, 21 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
