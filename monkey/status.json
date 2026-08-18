@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-18T05:20:03Z",
-  "valid_until": "2026-08-19T09:20:03Z",
+  "generated": "2026-08-18T05:30:02Z",
+  "valid_until": "2026-08-19T09:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-17T034517Z",
@@ -934,7 +934,7 @@
         "26 5 * * * /home/wtul/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
         "6,26,46 * * * * PACED_MAX_PER_TICK=1 /home/wtul/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
-      "release_tick": "2026-08-17T05:26:03Z rc=0 pin=2026-08-17T034517Z 3 ok, 0 gap, 0 bad",
+      "release_tick": "2026-08-18T05:26:02Z rc=0 pin=2026-08-18T023327Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
           "run_id": "wtul-nightly-batch-1786983963",
@@ -1008,14 +1008,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-18T05:20:02Z",
+    "generated": "2026-08-18T05:30:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 3 days, 2 hours, 51 minutes",
+    "uptime": "up 3 days, 3 hours, 1 minute",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
