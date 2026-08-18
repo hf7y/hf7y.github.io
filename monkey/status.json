@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-18T15:50:02Z",
-  "valid_until": "2026-08-19T19:50:02Z",
+  "generated": "2026-08-18T16:00:03Z",
+  "valid_until": "2026-08-19T20:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -158,7 +158,8 @@
       "uid": 3001,
       "armed": true,
       "cron": [
-        "11,31,51 * * * * PACED_MAX_PER_TICK=1 /home/ecosim/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+        "11,31,51 * * * * PACED_MAX_PER_TICK=1 /home/ecosim/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)",
+        "7,37 * * * * ECOSIM_SENSOR_BIN=/usr/local/bin/sonde /home/ecosim/Documents/Projects/ecosim/bin/ecosim-sensor-tick.sh # ecosim:ecosim-sensor:TICK"
       ],
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
@@ -1042,14 +1043,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-18T15:50:01Z",
+    "generated": "2026-08-18T16:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 3 days, 13 hours, 21 minutes",
+    "uptime": "up 3 days, 13 hours, 31 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
