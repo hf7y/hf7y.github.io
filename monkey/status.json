@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-18T04:30:02Z",
-  "valid_until": "2026-08-19T08:30:02Z",
+  "generated": "2026-08-18T04:40:02Z",
+  "valid_until": "2026-08-19T08:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-17T034517Z",
@@ -462,6 +462,23 @@
       "release_tick": "2026-08-13T05:50:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1787026204",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-18T04:10:04+00:00",
+          "ended_at": "2026-08-18T04:37:17+00:00",
+          "elapsed_s": 1636,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-nightly-batch-1787014205",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-08-18T00:50:05+00:00",
@@ -528,41 +545,24 @@
           "verdict_computed": "FAILED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1786897203",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-16T16:20:03+00:00",
-          "ended_at": "2026-08-16T16:45:39+00:00",
-          "elapsed_s": 1539,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 3,
-          "issues_opened": 0,
-          "issues_closed": 2,
-          "prs_opened": 1,
-          "prs_merged": 3,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Rebased and landed #323 (claim-drift --auto convention) and #324 (SubagentStop hook provisioning), both stale/CI-red for a day: fixed merge conflicts against current main, trimmed new-file comments to clear the markdown-cost ratchet, added required NO-DECISION lines to PR bodies per the new body-grammar CI gate, all 54 suites green; both merged, closing #317 and #272. Left a progress comment on #288 noting item 1 of its ask is now answered by #323's convention text, items 2-3 still need a human "
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1787014205",
+        "run_id": "realisateur-nightly-batch-1787026204",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-18T00:50:05+00:00",
-        "ended_at": "2026-08-18T01:04:19+00:00",
-        "elapsed_s": 857,
+        "started_at": "2026-08-18T04:10:04+00:00",
+        "ended_at": "2026-08-18T04:37:17+00:00",
+        "elapsed_s": 1636,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 1,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Diagnosed PR #376's CI ownership-audit block (5-day-old hooks/ ownership conflict, git-blame-verified) and filed a DECISION comment rather than self-adjudicating; corrected 5-of-9 stale rows in #294's decision-inventory against re-probed repo state. Actionable next: build the self-merge detector #288 asks for (no decision needed), or #294's points 2/5 (machine-readable park/pause triggers, stale-claim checker)."
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       }
     },
     {
@@ -1008,14 +1008,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-18T04:30:02Z",
+    "generated": "2026-08-18T04:40:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 3 days, 2 hours, 1 minute",
+    "uptime": "up 3 days, 2 hours, 11 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
