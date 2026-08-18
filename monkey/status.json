@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-18T18:20:02Z",
-  "valid_until": "2026-08-19T22:20:02Z",
+  "generated": "2026-08-18T18:30:03Z",
+  "valid_until": "2026-08-19T22:30:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -164,6 +164,23 @@
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1787076664",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-18T18:11:04+00:00",
+          "ended_at": "2026-08-18T18:20:48+00:00",
+          "elapsed_s": 587,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed PR #78+#80 (issue #56) unblocking prior classifier wall; #56 has 4 sensors left to port, #59 is unstarted actionable build work"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1787063465",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-18T14:31:05+00:00",
@@ -230,41 +247,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Landed #58 (rotation weight-attribution, PR #75 merged); #56/#59/#69's remaining candidates and #52 (needs careful cross-repo work) are still open and actionable"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1786972264",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-17T13:11:04+00:00",
-          "ended_at": "2026-08-17T13:18:56+00:00",
-          "elapsed_s": 474,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Merged PR #73 (fixed a fabricated vault citation + missing CI ratchet step first) and closed #74; #56/#58/#59/#69 remain actionable and unblocked for next run"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1787063465",
+        "run_id": "ecosim-nightly-batch-1787076664",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-18T14:31:05+00:00",
-        "ended_at": "2026-08-18T14:44:53+00:00",
-        "elapsed_s": 832,
+        "started_at": "2026-08-18T18:11:04+00:00",
+        "ended_at": "2026-08-18T18:20:48+00:00",
+        "elapsed_s": 587,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_opened": 0,
+        "prs_merged": 2,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "PR #78 (staleness port) and PR #80 (accumulation non-port doc) are CI-green and mergeable but this session's classifier blocked gh pr merge and git push origin main -- need a merge. #56 also has unit/credential/dispatch-ref/simultaneity still to premise-check and possibly port."
+        "claimed_reason": "Landed PR #78+#80 (issue #56) unblocking prior classifier wall; #56 has 4 sensors left to port, #59 is unstarted actionable build work"
       }
     },
     {
@@ -356,6 +356,23 @@
       "release_tick": "2026-08-13T05:04:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1787076243",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-18T18:04:03+00:00",
+          "ended_at": "2026-08-18T18:20:55+00:00",
+          "elapsed_s": 1014,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #42 (order ledger) merged; ticket 2f99c780 still pending, #19/#20 still hard-blocked"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1787066644",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-08-18T15:24:04+00:00",
@@ -422,41 +439,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed #9 with a real, tested ingestion mechanism (not just a pasted reply); found and fixed a live crash bug along the way; #19/#20/#10 remain genuinely blocked on credentials/Zach, unchanged."
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1786881604",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-16T12:00:04+00:00",
-          "ended_at": "2026-08-16T12:10:47+00:00",
-          "elapsed_s": 645,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "closed #32, sent zaxon ticket 3f9181aa on #9 (check_zach_reply next tick before new work), #33/#34 genuinely checked with nothing actionable, #19/#20 still blocked on credentials/Zach's hands"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1787066644",
+        "run_id": "groc-mangr-nightly-batch-1787076243",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-18T15:24:04+00:00",
-        "ended_at": "2026-08-18T15:35:45+00:00",
-        "elapsed_s": 704,
+        "started_at": "2026-08-18T18:04:03+00:00",
+        "ended_at": "2026-08-18T18:20:55+00:00",
+        "elapsed_s": 1014,
         "rc": 0,
         "status": "done",
-        "commits_added": 3,
+        "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "PR #41 merged (parseHomeReply now handles sentence-shaped WhatsApp replies, not just bare tokens); ticket 2f99c780 still pending, #19/#20 still blocked on credentials this account lacks"
+        "claimed_reason": "PR #42 (order ledger) merged; ticket 2f99c780 still pending, #19/#20 still hard-blocked"
       }
     },
     {
@@ -1060,14 +1060,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-18T18:20:01Z",
+    "generated": "2026-08-18T18:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 3 days, 15 hours, 51 minutes",
+    "uptime": "up 3 days, 16 hours, 1 minute",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
