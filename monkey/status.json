@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-18T16:10:03Z",
-  "valid_until": "2026-08-19T20:10:03Z",
+  "generated": "2026-08-18T16:20:02Z",
+  "valid_until": "2026-08-19T20:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -27,6 +27,23 @@
       ],
       "release_tick": "2026-08-13T05:12:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1787069527",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-18T16:12:07+00:00",
+          "ended_at": "2026-08-18T16:15:03+00:00",
+          "elapsed_s": 178,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty of research requests; only open issues (43-47) are page-92 gallery questions blocked on Zach's own decision/witness."
+        },
         {
           "run_id": "bibliothecaire-research-1787026324",
           "job": "bibliothecaire-research",
@@ -94,41 +111,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Deferred #37 (corpus relocation paused per Zach's 2026-08-15 comment on #15); #38 and others remain open and actionable for next run."
-        },
-        {
-          "run_id": "bibliothecaire-research-1786889523",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-08-16T14:12:03+00:00",
-          "ended_at": "2026-08-16T14:18:06+00:00",
-          "elapsed_s": 365,
-          "rc": 1,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "FAILED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Landed #51 (merged): consulte now documents the DOI/catalogue coverage constraint at filing time, per #36's own recommendation. #36 itself is a policy decision (grant WebSearch/WebFetch vs declare non-DOI figures out of scope) that trades against this project's invent-nothing LOCK -- asked Zach on the issue, relabeled deferred so dispatch stops re-reading it. Queue still has actionable work, e.g. #37 (corpus relocation stalled on mandark)."
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1787026324",
+        "run_id": "bibliothecaire-research-1787069527",
         "job": "bibliothecaire-research",
-        "started_at": "2026-08-18T04:12:04+00:00",
-        "ended_at": "2026-08-18T04:15:05+00:00",
-        "elapsed_s": 184,
+        "started_at": "2026-08-18T16:12:07+00:00",
+        "ended_at": "2026-08-18T16:15:03+00:00",
+        "elapsed_s": 178,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Closed #50 (collapsed 3 duplicate ok/bad/check test helpers into test/report.sh, landed on main); no open request-labeled issues, remaining opens (43-47) block on Zach's own review of the gallery"
+        "claimed_reason": "Queue empty of research requests; only open issues (43-47) are page-92 gallery questions blocked on Zach's own decision/witness."
       }
     },
     {
@@ -1043,14 +1043,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-18T16:10:02Z",
+    "generated": "2026-08-18T16:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 3 days, 13 hours, 41 minutes",
+    "uptime": "up 3 days, 13 hours, 51 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
