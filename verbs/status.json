@@ -1,15 +1,15 @@
 {
   "schema": 2,
-  "generated": "2026-08-18T07:16:50Z",
-  "valid_until": "2026-08-19T11:16:50Z",
+  "generated": "2026-08-18T07:18:02Z",
+  "valid_until": "2026-08-19T11:18:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "decision": "ERROR",
   "reason": "the run failed before the gate could decide",
   "main_sha": "4776514",
-  "ci_run": "32110632809",
+  "ci_run": "32110722914",
   "build_id": null,
-  "blocked_streak": 2,
+  "blocked_streak": 3,
   "last_cut": {
     "at": "2026-08-18T02:34:01Z",
     "decision": "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-18T07:18:02Z",
+      "decision": "ERROR",
+      "reason": "the run failed before the gate could decide",
+      "main_sha": "4776514",
+      "ci_run": "32110722914",
+      "build_id": null
+    },
     {
       "at": "2026-08-18T07:16:50Z",
       "decision": "ERROR",
