@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-18T14:30:02Z",
-  "valid_until": "2026-08-19T18:30:02Z",
+  "generated": "2026-08-18T14:40:03Z",
+  "valid_until": "2026-08-19T18:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -710,6 +710,23 @@
       "release_tick": "2026-08-13T05:11:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "sequestria-nightly-batch-1787063465",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-08-18T14:31:05+00:00",
+          "ended_at": "2026-08-18T14:34:55+00:00",
+          "elapsed_s": 233,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Added 3rd honest outreach draft for #9 (CapturePoint CENLA); #6/#11 remain standing/human-judgment items, nothing new to close"
+        },
+        {
           "run_id": "sequestria-nightly-batch-1787026264",
           "job": "sequestria-nightly-batch",
           "started_at": "2026-08-18T04:11:04+00:00",
@@ -776,41 +793,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "closed #16 (duplication sweep, PR #18 merged); #7/#8/#9 answered and buildable next pass"
-        },
-        {
-          "run_id": "sequestria-nightly-batch-1786860004",
-          "job": "sequestria-nightly-batch",
-          "started_at": "2026-08-16T06:00:04+00:00",
-          "ended_at": "2026-08-16T06:03:51+00:00",
-          "elapsed_s": 230,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "closed #15 (PROCESS.md reap, -239 net lines), merged PR #17; #16/#7/#8/#9 remain real actionable work for the next pass"
         }
       ],
       "last_run": {
-        "run_id": "sequestria-nightly-batch-1787026264",
+        "run_id": "sequestria-nightly-batch-1787063465",
         "job": "sequestria-nightly-batch",
-        "started_at": "2026-08-18T04:11:04+00:00",
-        "ended_at": "2026-08-18T04:14:50+00:00",
-        "elapsed_s": 228,
+        "started_at": "2026-08-18T14:31:05+00:00",
+        "ended_at": "2026-08-18T14:34:55+00:00",
+        "elapsed_s": 233,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #1 (lib/verb.sh verb_refuse/exit-7 backport, pushed to origin/bashified 7d07c84); remaining open issues (#6 stability milestone, #9 outreach targets, #11 standing doc) are ongoing scope items, not tonight-sized, so real work remains."
+        "claimed_reason": "Added 3rd honest outreach draft for #9 (CapturePoint CENLA); #6/#11 remain standing/human-judgment items, nothing new to close"
       }
     },
     {
@@ -1008,14 +1008,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-18T14:30:02Z",
+    "generated": "2026-08-18T14:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 3 days, 12 hours, 1 minute",
+    "uptime": "up 3 days, 12 hours, 11 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
