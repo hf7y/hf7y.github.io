@@ -1,22 +1,22 @@
 {
   "schema": 2,
-  "generated": "2026-08-18T07:33:12Z",
-  "valid_until": "2026-08-19T11:33:12Z",
+  "generated": "2026-08-19T02:36:40Z",
+  "valid_until": "2026-08-20T06:36:40Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "decision": "CUT",
-  "reason": "18 verb(s); 3 green, 0 red, 0 pending, 4 ungated, 0 blind",
-  "main_sha": "4776514",
-  "ci_run": "32111899015",
-  "build_id": "2026-08-18T073253Z",
+  "reason": "19 verb(s); 4 green, 0 red, 0 pending, 3 ungated, 0 blind",
+  "main_sha": "ec17bdf",
+  "ci_run": "32209128578",
+  "build_id": "2026-08-19T023626Z",
   "blocked_streak": 0,
   "last_cut": {
-    "at": "2026-08-18T07:33:12Z",
+    "at": "2026-08-19T02:36:40Z",
     "decision": "CUT",
-    "reason": "18 verb(s); 3 green, 0 red, 0 pending, 4 ungated, 0 blind",
-    "main_sha": "4776514",
-    "ci_run": "32111899015",
-    "build_id": "2026-08-18T073253Z"
+    "reason": "19 verb(s); 4 green, 0 red, 0 pending, 3 ungated, 0 blind",
+    "main_sha": "ec17bdf",
+    "ci_run": "32209128578",
+    "build_id": "2026-08-19T023626Z"
   },
   "decisions_enum": [
     "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-19T02:36:40Z",
+      "decision": "CUT",
+      "reason": "19 verb(s); 4 green, 0 red, 0 pending, 3 ungated, 0 blind",
+      "main_sha": "ec17bdf",
+      "ci_run": "32209128578",
+      "build_id": "2026-08-19T023626Z"
+    },
     {
       "at": "2026-08-18T07:33:12Z",
       "decision": "CUT",
