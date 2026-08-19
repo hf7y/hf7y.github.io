@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-19T00:40:02Z",
-  "valid_until": "2026-08-20T04:40:02Z",
+  "generated": "2026-08-19T00:50:03Z",
+  "valid_until": "2026-08-20T04:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -164,6 +164,23 @@
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1787099463",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-19T00:31:03+00:00",
+          "ended_at": "2026-08-19T00:40:29+00:00",
+          "elapsed_s": 568,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #79 (bashified copy synced to main via PR #81) and #48 (clock+rotation both witnessed); #68/#62/#59/#56/#52 remain open and actionable, none human-blocked"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1787076664",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-18T18:11:04+00:00",
@@ -230,41 +247,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #69 (PR #77 merged: fixed self-slicing --help anti-pattern in 4 scripts). Queue still has actionable unblocked work: #59 (BLIND-population monitor, buildable now), #56 (port 6 legacy sensors), #52 (draft PR to realisateur, per rule 6)."
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1786984263",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-17T16:31:03+00:00",
-          "ended_at": "2026-08-17T16:48:18+00:00",
-          "elapsed_s": 1038,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Landed #58 (rotation weight-attribution, PR #75 merged); #56/#59/#69's remaining candidates and #52 (needs careful cross-repo work) are still open and actionable"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1787076664",
+        "run_id": "ecosim-nightly-batch-1787099463",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-18T18:11:04+00:00",
-        "ended_at": "2026-08-18T18:20:48+00:00",
-        "elapsed_s": 587,
+        "started_at": "2026-08-19T00:31:03+00:00",
+        "ended_at": "2026-08-19T00:40:29+00:00",
+        "elapsed_s": 568,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 2,
+        "issues_closed": 2,
+        "prs_opened": 1,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed PR #78+#80 (issue #56) unblocking prior classifier wall; #56 has 4 sensors left to port, #59 is unstarted actionable build work"
+        "claimed_reason": "Closed #79 (bashified copy synced to main via PR #81) and #48 (clock+rotation both witnessed); #68/#62/#59/#56/#52 remain open and actionable, none human-blocked"
       }
     },
     {
@@ -276,6 +276,23 @@
       ],
       "release_tick": "2026-08-13T05:12:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "gardien-nightly-batch-1787099523",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-19T00:32:03+00:00",
+          "ended_at": "2026-08-19T00:47:45+00:00",
+          "elapsed_s": 944,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Recovered and landed #21 (media STALE freshness check, from a salvage branch a prior run left uncommitted) and built+landed #13 (fauche now sees a build script exec'ing back into its clone via LEGACY_ROOT) on bashified; both closed with verified fixes. #32/#33 are next up, undecided-blocked issues left alone."
+        },
         {
           "run_id": "gardien-nightly-batch-1787081524",
           "job": "gardien-nightly-batch",
@@ -346,21 +363,21 @@
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1787081524",
+        "run_id": "gardien-nightly-batch-1787099523",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-08-18T19:32:04+00:00",
-        "ended_at": "2026-08-18T20:57:03+00:00",
-        "elapsed_s": 5103,
-        "rc": 1,
-        "status": "FAILED (ceiling: max turns reached)",
-        "commits_added": 39,
+        "started_at": "2026-08-19T00:32:03+00:00",
+        "ended_at": "2026-08-19T00:47:45+00:00",
+        "elapsed_s": 944,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 3,
-        "prs_opened": 2,
-        "prs_merged": 2,
-        "verdict_computed": "FAILED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "issues_closed": 2,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Recovered and landed #21 (media STALE freshness check, from a salvage branch a prior run left uncommitted) and built+landed #13 (fauche now sees a build script exec'ing back into its clone via LEGACY_ROOT) on bashified; both closed with verified fixes. #32/#33 are next up, undecided-blocked issues left alone."
       }
     },
     {
@@ -372,6 +389,23 @@
       ],
       "release_tick": "2026-08-13T05:04:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "groc-mangr-nightly-batch-1787099044",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-19T00:24:04+00:00",
+          "ended_at": "2026-08-19T00:45:42+00:00",
+          "elapsed_s": 1300,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #43 (Amazon checkout driver, rank-1) built+pushed, blocked merging on GH Actions billing + classifier hold on admin-override; asked Zach directly (ticket 837d1498), also 2f99c780 (window confirm) still pending"
+        },
         {
           "run_id": "groc-mangr-nightly-batch-1787076243",
           "job": "groc-mangr-nightly-batch",
@@ -439,41 +473,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Built+merged window-confirm mechanism for #27's reachability checkbox (PR #38); sent live ask_zach ticket 2f99c780 for Wed's window, next tick checks it first. #19/#20 reconfirmed blocked."
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1786899843",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-16T17:04:03+00:00",
-          "ended_at": "2026-08-16T17:13:20+00:00",
-          "elapsed_s": 559,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed #9 with a real, tested ingestion mechanism (not just a pasted reply); found and fixed a live crash bug along the way; #19/#20/#10 remain genuinely blocked on credentials/Zach, unchanged."
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1787076243",
+        "run_id": "groc-mangr-nightly-batch-1787099044",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-18T18:04:03+00:00",
-        "ended_at": "2026-08-18T18:20:55+00:00",
-        "elapsed_s": 1014,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 2,
+        "started_at": "2026-08-19T00:24:04+00:00",
+        "ended_at": "2026-08-19T00:45:42+00:00",
+        "elapsed_s": 1300,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_merged": 0,
+        "verdict_computed": "FAILED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "PR #42 (order ledger) merged; ticket 2f99c780 still pending, #19/#20 still hard-blocked"
+        "claimed_reason": "PR #43 (Amazon checkout driver, rank-1) built+pushed, blocked merging on GH Actions billing + classifier hold on admin-override; asked Zach directly (ticket 837d1498), also 2f99c780 (window confirm) still pending"
       }
     },
     {
@@ -1077,14 +1094,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-19T00:40:02Z",
+    "generated": "2026-08-19T00:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 3 days, 22 hours, 11 minutes",
+    "uptime": "up 3 days, 22 hours, 21 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
