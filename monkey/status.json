@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-20T14:50:02Z",
-  "valid_until": "2026-08-21T18:50:02Z",
+  "generated": "2026-08-20T15:00:03Z",
+  "valid_until": "2026-08-21T19:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -565,6 +565,23 @@
       "release_tick": "2026-08-13T05:50:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1787236204",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-20T14:30:04+00:00",
+          "ended_at": "2026-08-20T14:53:37+00:00",
+          "elapsed_s": 1415,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-nightly-batch-1787227803",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-08-20T12:10:03+00:00",
@@ -631,41 +648,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Merged #439 (no-worktree-lint check C: live git-worktree-list scan, closes #429) and #428 (ported 3 ecosim silence-audit checks + bashified carry, closes #421); #432 (propagation-set 4 misclassified verbs, needs new lint) is next and actionable"
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1787153404",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-19T15:30:04+00:00",
-          "ended_at": "2026-08-19T15:49:58+00:00",
-          "elapsed_s": 1196,
-          "rc": 1,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "FAILED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1787227803",
+        "run_id": "realisateur-nightly-batch-1787236204",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-20T12:10:03+00:00",
-        "ended_at": "2026-08-20T12:47:59+00:00",
-        "elapsed_s": 2278,
+        "started_at": "2026-08-20T14:30:04+00:00",
+        "ended_at": "2026-08-20T14:53:37+00:00",
+        "elapsed_s": 1415,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 3,
         "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 2,
-        "prs_merged": 1,
+        "issues_closed": 0,
+        "prs_opened": 1,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #434 (merged #448: fixed selfdev-release-tick --survey and ausculte's arming probe ssh'ing to self, verified live on monkey); opened #449 (dexter-service-deploy one-owner guard now checks session holder not distro name, DECISION pending Zach -- unverifiable against dexter from this sandbox); confirmed #376/#363 and #405 are already correctly in-flight/blocked; queue still has untriaged items (250, 186, 368, 301, 294, 171, 289, 412, 415) for the next run."
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       }
     },
     {
@@ -1230,14 +1230,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-20T14:50:02Z",
+    "generated": "2026-08-20T15:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 5 days, 12 hours, 21 minutes",
+    "uptime": "up 5 days, 12 hours, 31 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
