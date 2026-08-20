@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-20T17:10:02Z",
-  "valid_until": "2026-08-21T21:10:02Z",
+  "generated": "2026-08-20T17:20:02Z",
+  "valid_until": "2026-08-21T21:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -503,6 +503,23 @@
       "release_tick": "2026-08-13T05:13:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "nine-speakers-nightly-batch-1787245983",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-08-20T17:13:03+00:00",
+          "ended_at": "2026-08-20T17:16:46+00:00",
+          "elapsed_s": 226,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Third same-day pass confirms nothing actionable: billing block #16 and hardware-routing decision #6 both still unanswered (0 comments each), sim work stays parked per #7's standing decision, PR #14/#15 merges still blocked by the same GH billing failure and Claude Code merge-permission classifier as the prior two passes."
+        },
+        {
           "run_id": "nine-speakers-nightly-batch-1787227983",
           "job": "nine-speakers-nightly-batch",
           "started_at": "2026-08-20T12:13:03+00:00",
@@ -538,11 +555,11 @@
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1787227983",
+        "run_id": "nine-speakers-nightly-batch-1787245983",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-08-20T12:13:03+00:00",
-        "ended_at": "2026-08-20T12:15:58+00:00",
-        "elapsed_s": 178,
+        "started_at": "2026-08-20T17:13:03+00:00",
+        "ended_at": "2026-08-20T17:16:46+00:00",
+        "elapsed_s": 226,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -552,7 +569,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "All open issues re-checked, unchanged since the 07:08 report; both blockers (Actions billing #16, PR #15 merge-permission classifier) still stand and need a human, nothing else actionable"
+        "claimed_reason": "Third same-day pass confirms nothing actionable: billing block #16 and hardware-routing decision #6 both still unanswered (0 comments each), sim work stays parked per #7's standing decision, PR #14/#15 merges still blocked by the same GH billing failure and Claude Code merge-permission classifier as the prior two passes."
       }
     },
     {
@@ -1230,14 +1247,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-20T17:10:01Z",
+    "generated": "2026-08-20T17:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 5 days, 14 hours, 41 minutes",
+    "uptime": "up 5 days, 14 hours, 51 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
