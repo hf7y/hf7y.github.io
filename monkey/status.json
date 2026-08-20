@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-20T12:00:02Z",
-  "valid_until": "2026-08-21T16:00:02Z",
+  "generated": "2026-08-20T12:10:02Z",
+  "valid_until": "2026-08-21T16:10:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -772,8 +772,42 @@
         "0 */6 * * * PACED_MAX_PER_TICK=1 /home/secretaire/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
       "release_tick": "2026-08-13T05:55:03Z rc=1 pin=2026-08-12T183347Z 2 ok, 1 gap, 0 bad",
-      "runs": [],
-      "last_run": null
+      "runs": [
+        {
+          "run_id": "secretaire-nightly-batch-1787227203",
+          "job": "secretaire-nightly-batch",
+          "started_at": "2026-08-20T12:00:03+00:00",
+          "ended_at": "2026-08-20T12:00:57+00:00",
+          "elapsed_s": 56,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "de-animated; only open issue (#1) is a needs-human decision for Zach, not agent-actionable"
+        }
+      ],
+      "last_run": {
+        "run_id": "secretaire-nightly-batch-1787227203",
+        "job": "secretaire-nightly-batch",
+        "started_at": "2026-08-20T12:00:03+00:00",
+        "ended_at": "2026-08-20T12:00:57+00:00",
+        "elapsed_s": 56,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 0,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "de-animated; only open issue (#1) is a needs-human decision for Zach, not agent-actionable"
+      }
     },
     {
       "account": "senechal",
@@ -784,6 +818,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "senechal-nightly-batch-1787227203",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-20T12:00:03+00:00",
+          "ended_at": "2026-08-20T12:07:10+00:00",
+          "elapsed_s": 430,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Fixed a real regression (tools/lib/cli-guard.sh deleted as collateral damage in #356, breaking issue-debt.sh and vault.sh silently) and landed it as PR #370 with auto-merge armed; confirmed the whole backlog is otherwise blocked on the account-wide GitHub Actions billing wall (tracked in hf7y/sequestria#24) or on Zach's #369 architecture decision -- nothing else is pickable without him."
+        },
         {
           "run_id": "senechal-nightly-batch-1787184005",
           "job": "senechal-nightly-batch",
@@ -803,21 +854,21 @@
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1787184005",
+        "run_id": "senechal-nightly-batch-1787227203",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-08-20T00:00:05+00:00",
-        "ended_at": "2026-08-20T00:16:43+00:00",
-        "elapsed_s": 1001,
-        "rc": 1,
-        "status": "FAILED (ceiling: max turns reached)",
+        "started_at": "2026-08-20T12:00:03+00:00",
+        "ended_at": "2026-08-20T12:07:10+00:00",
+        "elapsed_s": 430,
+        "rc": 0,
+        "status": "done",
         "commits_added": 0,
-        "issues_opened": 1,
-        "issues_closed": 2,
-        "prs_opened": 2,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 1,
         "prs_merged": 0,
-        "verdict_computed": "FAILED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Fixed a real regression (tools/lib/cli-guard.sh deleted as collateral damage in #356, breaking issue-debt.sh and vault.sh silently) and landed it as PR #370 with auto-merge armed; confirmed the whole backlog is otherwise blocked on the account-wide GitHub Actions billing wall (tracked in hf7y/sequestria#24) or on Zach's #369 architecture decision -- nothing else is pickable without him."
       }
     },
     {
@@ -1162,14 +1213,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-20T12:00:01Z",
+    "generated": "2026-08-20T12:10:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 5 days, 9 hours, 31 minutes",
+    "uptime": "up 5 days, 9 hours, 41 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
