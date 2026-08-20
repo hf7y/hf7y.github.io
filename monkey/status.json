@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-20T15:20:02Z",
-  "valid_until": "2026-08-21T19:20:02Z",
+  "generated": "2026-08-20T15:30:02Z",
+  "valid_until": "2026-08-21T19:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -164,6 +164,23 @@
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1787238664",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-20T15:11:04+00:00",
+          "ended_at": "2026-08-20T15:23:22+00:00",
+          "elapsed_s": 741,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Ported dispatch_ref sensor (PR #84, blocked on same Actions billing wall as #82/#83, auto-merge armed); credential is the one remaining unported sensor in #56 and needs no human input to attempt next"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1787214664",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-20T08:31:04+00:00",
@@ -230,31 +247,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #79 (bashified copy synced to main via PR #81) and #48 (clock+rotation both witnessed); #68/#62/#59/#56/#52 remain open and actionable, none human-blocked"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1787076664",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-18T18:11:04+00:00",
-          "ended_at": "2026-08-18T18:20:48+00:00",
-          "elapsed_s": 587,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Landed PR #78+#80 (issue #56) unblocking prior classifier wall; #56 has 4 sensors left to port, #59 is unstarted actionable build work"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1787214664",
+        "run_id": "ecosim-nightly-batch-1787238664",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-20T08:31:04+00:00",
-        "ended_at": "2026-08-20T08:40:40+00:00",
-        "elapsed_s": 578,
+        "started_at": "2026-08-20T15:11:04+00:00",
+        "ended_at": "2026-08-20T15:23:22+00:00",
+        "elapsed_s": 741,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -264,7 +264,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Ported unit sensor (#56, PR #83 open, blocked on same GH Actions billing wall as PR #82); credential/dispatch-ref premise checks still need live network access this sandbox lacks"
+        "claimed_reason": "Ported dispatch_ref sensor (PR #84, blocked on same Actions billing wall as #82/#83, auto-merge armed); credential is the one remaining unported sensor in #56 and needs no human input to attempt next"
       }
     },
     {
@@ -1230,14 +1230,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-20T15:20:01Z",
+    "generated": "2026-08-20T15:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 5 days, 12 hours, 51 minutes",
+    "uptime": "up 5 days, 13 hours, 1 minute",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
