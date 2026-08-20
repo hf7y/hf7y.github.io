@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-20T00:00:02Z",
-  "valid_until": "2026-08-21T04:00:02Z",
+  "generated": "2026-08-20T00:10:02Z",
+  "valid_until": "2026-08-21T04:10:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -875,6 +875,23 @@
       "release_tick": "2026-08-13T05:37:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "vim-arcade-nightly-batch-1787183823",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-19T23:57:03+00:00",
+          "ended_at": "2026-08-20T00:04:02+00:00",
+          "elapsed_s": 422,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "PR #182 fixes #173's needs-owner predicate (tests green locally, 977/977) but is blocked on a GH Actions billing wall, not code; #181 is a DECISION issue waiting on Zach's sort-order call -- nothing else actionable."
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1787056625",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-08-18T12:37:05+00:00",
@@ -941,41 +958,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Merged #151 (reap prose, net -47 lines), filed #153 for the larger joue-rename debt found along the way; #152 (link-don't-copy) and #137 (git arc design) remain actionable"
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1786833423",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-08-15T22:37:03+00:00",
-          "ended_at": "2026-08-15T22:40:42+00:00",
-          "elapsed_s": 222,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed #140 (filed milestone-pattern proposal as hf7y/realisateur#326); remaining opens (#135 waiting on Zach, #136/#137 parked pending #135, #143 needs a checkout outside this repo) have no actionable vim-arcade work right now."
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1787056625",
+        "run_id": "vim-arcade-nightly-batch-1787183823",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-08-18T12:37:05+00:00",
-        "ended_at": "2026-08-18T12:48:04+00:00",
-        "elapsed_s": 661,
+        "started_at": "2026-08-19T23:57:03+00:00",
+        "ended_at": "2026-08-20T00:04:02+00:00",
+        "elapsed_s": 422,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 2,
+        "issues_closed": 1,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "closed #177 (shipped fix, merged PR #179) and #174 (premise expired by cfdc275); #173 remains open and actionable next run"
+        "claimed_verdict": "DONE",
+        "claimed_reason": "PR #182 fixes #173's needs-owner predicate (tests green locally, 977/977) but is blocked on a GH Actions billing wall, not code; #181 is a DECISION issue waiting on Zach's sort-order call -- nothing else actionable."
       }
     },
     {
@@ -1094,14 +1094,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-20T00:00:01Z",
+    "generated": "2026-08-20T00:10:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 4 days, 21 hours, 31 minutes",
+    "uptime": "up 4 days, 21 hours, 41 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
