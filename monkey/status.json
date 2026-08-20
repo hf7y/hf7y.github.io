@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-20T08:40:03Z",
-  "valid_until": "2026-08-21T12:40:03Z",
+  "generated": "2026-08-20T08:50:02Z",
+  "valid_until": "2026-08-21T12:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -164,6 +164,23 @@
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1787214664",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-20T08:31:04+00:00",
+          "ended_at": "2026-08-20T08:40:40+00:00",
+          "elapsed_s": 578,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Ported unit sensor (#56, PR #83 open, blocked on same GH Actions billing wall as PR #82); credential/dispatch-ref premise checks still need live network access this sandbox lacks"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1787190663",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-20T01:51:03+00:00",
@@ -230,41 +247,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Landed PR #78+#80 (issue #56) unblocking prior classifier wall; #56 has 4 sensors left to port, #59 is unstarted actionable build work"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1787063465",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-18T14:31:05+00:00",
-          "ended_at": "2026-08-18T14:44:53+00:00",
-          "elapsed_s": 832,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "PR #78 (staleness port) and PR #80 (accumulation non-port doc) are CI-green and mergeable but this session's classifier blocked gh pr merge and git push origin main -- need a merge. #56 also has unit/credential/dispatch-ref/simultaneity still to premise-check and possibly port."
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1787190663",
+        "run_id": "ecosim-nightly-batch-1787214664",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-20T01:51:03+00:00",
-        "ended_at": "2026-08-20T02:01:26+00:00",
-        "elapsed_s": 626,
-        "rc": 1,
+        "started_at": "2026-08-20T08:31:04+00:00",
+        "ended_at": "2026-08-20T08:40:40+00:00",
+        "elapsed_s": 578,
+        "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 0,
-        "verdict_computed": "FAILED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "ported simultaneity sensor (#56, PR #82 open, blocked on GH Actions billing wall, not code); unit/credential/dispatch-ref still need porting next run"
+        "claimed_reason": "Ported unit sensor (#56, PR #83 open, blocked on same GH Actions billing wall as PR #82); credential/dispatch-ref premise checks still need live network access this sandbox lacks"
       }
     },
     {
@@ -1162,14 +1162,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-20T08:40:02Z",
+    "generated": "2026-08-20T08:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 5 days, 6 hours, 11 minutes",
+    "uptime": "up 5 days, 6 hours, 21 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
