@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-20T05:10:02Z",
-  "valid_until": "2026-08-21T09:10:02Z",
+  "generated": "2026-08-20T05:20:03Z",
+  "valid_until": "2026-08-21T09:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -627,6 +627,23 @@
       "release_tick": "2026-08-13T05:21:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1787202064",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-20T05:01:04+00:00",
+          "ended_at": "2026-08-20T05:19:34+00:00",
+          "elapsed_s": 1113,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 3,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #246/#187 (retired schedule/FREEZE, PR #251, armed crt/secretaire, parked baudin to match its own standing pause) and #228 (added dcp-gate-site to ROSTER parked, PR #252); #55's fresh 'ditch the entire per repo skip over cron business, this is moot now' is next but needs real scoping before touching usage-paced-runner.sh's rotation core."
+        },
+        {
           "run_id": "scheduler-paced-dev-1787190064",
           "job": "scheduler-paced-dev",
           "started_at": "2026-08-20T01:41:04+00:00",
@@ -693,41 +710,24 @@
           "verdict_computed": "FAILED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-paced-dev-1787064062",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-08-18T14:41:02+00:00",
-          "ended_at": "2026-08-18T14:51:30+00:00",
-          "elapsed_s": 631,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 2,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Fixed bin/verdict.sh --help self-truncation (sed -n '2,50p' cutting off the classify exit-code table) via #241+#242, same pattern #214 already fixed elsewhere; commented progress on #210 (broader link-don't-copy sweep, still open). #210's remaining scope (retyped constants, vendored copies, docs restating commands) and #193's remaining scope (bin/scheduler's -b/blockers command, a real design decision) are actionable next steps not blocked on a human."
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1787190064",
+        "run_id": "scheduler-paced-dev-1787202064",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-08-20T01:41:04+00:00",
-        "ended_at": "2026-08-20T01:59:21+00:00",
-        "elapsed_s": 1100,
+        "started_at": "2026-08-20T05:01:04+00:00",
+        "ended_at": "2026-08-20T05:19:34+00:00",
+        "elapsed_s": 1113,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 1,
+        "issues_closed": 3,
+        "prs_opened": 2,
+        "prs_merged": 2,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed+merged PR #250 (bin/scheduler overview/glance/status silently showed empty instead of BLIND for FOCUS.md/QUESTIONS.md after #244 retired the local mirror; restored real gh-issues data for cmd_status's open-questions section). Triaged the full open-issue queue: #43 re-probed still BLOCKED (mandark unreachable, timeout not just host-key-fail now). Next actionable: #193/#234's last item (bin/scheduler's -b/blockers CLI retirement) and roster-target.sh's onekey/perproject gaps (sunset 2026-08-"
+        "claimed_reason": "Closed #246/#187 (retired schedule/FREEZE, PR #251, armed crt/secretaire, parked baudin to match its own standing pause) and #228 (added dcp-gate-site to ROSTER parked, PR #252); #55's fresh 'ditch the entire per repo skip over cron business, this is moot now' is next but needs real scoping before touching usage-paced-runner.sh's rotation core."
       }
     },
     {
@@ -1128,14 +1128,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-20T05:10:01Z",
+    "generated": "2026-08-20T05:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 5 days, 2 hours, 41 minutes",
+    "uptime": "up 5 days, 2 hours, 51 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
