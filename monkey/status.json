@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-20T06:50:02Z",
-  "valid_until": "2026-08-21T10:50:02Z",
+  "generated": "2026-08-20T07:00:03Z",
+  "valid_until": "2026-08-21T11:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -27,6 +27,23 @@
       ],
       "release_tick": "2026-08-13T05:12:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1787208724",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-20T06:52:04+00:00",
+          "ended_at": "2026-08-20T06:52:47+00:00",
+          "elapsed_s": 46,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty of actionable work: all open issues are in-progress, deferred, or needs-human (43-47 blocked on Zach's DECISION/parked)."
+        },
         {
           "run_id": "bibliothecaire-research-1787141524",
           "job": "bibliothecaire-research",
@@ -94,41 +111,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #49 (reap prose, net -80 lines, PR #53 merged); #50 (link don't copy) is next actionable, #43-47 blocked on Zach's own look/call"
-        },
-        {
-          "run_id": "bibliothecaire-research-1786972324",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-08-17T13:12:04+00:00",
-          "ended_at": "2026-08-17T13:18:41+00:00",
-          "elapsed_s": 400,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Blocked on #38 (SMB->HTTP pivot) pending scanner-capability info and mandark git-push confirmation from Zach; filed crt heads-up (crt#46) and asked on #38. Queue has actionable, human-independent work waiting: #49 (reap 80 md lines) and #50 (dedupe mechanism, link don't copy)."
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1787141524",
+        "run_id": "bibliothecaire-research-1787208724",
         "job": "bibliothecaire-research",
-        "started_at": "2026-08-19T12:12:04+00:00",
-        "ended_at": "2026-08-19T12:23:34+00:00",
-        "elapsed_s": 693,
-        "rc": 1,
+        "started_at": "2026-08-20T06:52:04+00:00",
+        "ended_at": "2026-08-20T06:52:47+00:00",
+        "elapsed_s": 46,
+        "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
+        "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "FAILED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "PR #55 (containerize bibintake, addresses #15) opened, tests green, blocked on repo-wide GH Actions billing failure + Zach's call on zaxon-hermes pointer/merge-now; queue's other open issues (43-47) are all DECISION-blocked"
+        "claimed_reason": "Queue empty of actionable work: all open issues are in-progress, deferred, or needs-human (43-47 blocked on Zach's DECISION/parked)."
       }
     },
     {
@@ -1128,14 +1128,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-20T06:50:02Z",
+    "generated": "2026-08-20T07:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 5 days, 4 hours, 21 minutes",
+    "uptime": "up 5 days, 4 hours, 31 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
