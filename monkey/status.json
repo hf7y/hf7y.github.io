@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-20T12:40:02Z",
-  "valid_until": "2026-08-21T16:40:02Z",
+  "generated": "2026-08-20T12:50:02Z",
+  "valid_until": "2026-08-21T16:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -565,6 +565,23 @@
       "release_tick": "2026-08-13T05:50:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1787227803",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-20T12:10:03+00:00",
+          "ended_at": "2026-08-20T12:47:59+00:00",
+          "elapsed_s": 2278,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #434 (merged #448: fixed selfdev-release-tick --survey and ausculte's arming probe ssh'ing to self, verified live on monkey); opened #449 (dexter-service-deploy one-owner guard now checks session holder not distro name, DECISION pending Zach -- unverifiable against dexter from this sandbox); confirmed #376/#363 and #405 are already correctly in-flight/blocked; queue still has untriaged items (250, 186, 368, 301, 294, 171, 289, 412, 415) for the next run."
+        },
+        {
           "run_id": "realisateur-nightly-batch-1787220603",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-08-20T10:10:03+00:00",
@@ -631,41 +648,24 @@
           "verdict_computed": "FAILED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1787141403",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-19T12:10:03+00:00",
-          "ended_at": "2026-08-19T12:39:46+00:00",
-          "elapsed_s": 1785,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 1,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Fixed #414 (thermostat-wiring's ledger/setpoint checks were permanently BLIND on a clone-free host): added a GitHub-API fallback mirroring dexter-service-deploy.sh's pattern, added offline test coverage (37/37 passing), merged as PR #422, closed #414. Queue still has actionable work: #363's PR #376 awaits a Zach DECISION, #415/#412 need action on mandark (not reachable from this host), #334/#406 are gated on #393's shared-runtime channel landing first."
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1787220603",
+        "run_id": "realisateur-nightly-batch-1787227803",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-20T10:10:03+00:00",
-        "ended_at": "2026-08-20T10:27:54+00:00",
-        "elapsed_s": 1073,
+        "started_at": "2026-08-20T12:10:03+00:00",
+        "ended_at": "2026-08-20T12:47:59+00:00",
+        "elapsed_s": 2278,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 2,
-        "prs_opened": 3,
-        "prs_merged": 3,
+        "issues_closed": 1,
+        "prs_opened": 2,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed and merged 2 issues (#444 silence-audit unwired false-positive on extensionless verb binaries, carried to bashified as #446; #406 ausculte's MCP handshake duplicate, now sharing zaxon_probe()). Closed #444 and #406. #363 and #425 investigated but blocked (#363 has an open PR #376 awaiting Zach's DECISION; #425 needs live dexter/WSL verification I have no SSH access to, so left it rather than guess at a safety-critical WhatsApp-session guard). #431/#433/#434/#436/#437 form a monkey-containm"
+        "claimed_reason": "Closed #434 (merged #448: fixed selfdev-release-tick --survey and ausculte's arming probe ssh'ing to self, verified live on monkey); opened #449 (dexter-service-deploy one-owner guard now checks session holder not distro name, DECISION pending Zach -- unverifiable against dexter from this sandbox); confirmed #376/#363 and #405 are already correctly in-flight/blocked; queue still has untriaged items (250, 186, 368, 301, 294, 171, 289, 412, 415) for the next run."
       }
     },
     {
@@ -1230,14 +1230,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-20T12:40:02Z",
+    "generated": "2026-08-20T12:50:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 5 days, 10 hours, 11 minutes",
+    "uptime": "up 5 days, 10 hours, 21 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
