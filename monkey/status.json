@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "host": "monkey",
-  "generated": "2026-08-20T00:10:02Z",
-  "valid_until": "2026-08-21T04:10:02Z",
+  "generated": "2026-08-20T00:20:02Z",
+  "valid_until": "2026-08-21T04:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": null,
@@ -749,8 +749,42 @@
         "0 */6 * * * PACED_MAX_PER_TICK=1 /home/senechal/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
       "release_tick": null,
-      "runs": [],
-      "last_run": null
+      "runs": [
+        {
+          "run_id": "senechal-nightly-batch-1787184005",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-20T00:00:05+00:00",
+          "ended_at": "2026-08-20T00:16:43+00:00",
+          "elapsed_s": 1001,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 0,
+          "issues_opened": 1,
+          "issues_closed": 2,
+          "prs_opened": 2,
+          "prs_merged": 0,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        }
+      ],
+      "last_run": {
+        "run_id": "senechal-nightly-batch-1787184005",
+        "job": "senechal-nightly-batch",
+        "started_at": "2026-08-20T00:00:05+00:00",
+        "ended_at": "2026-08-20T00:16:43+00:00",
+        "elapsed_s": 1001,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 0,
+        "issues_opened": 1,
+        "issues_closed": 2,
+        "prs_opened": 2,
+        "prs_merged": 0,
+        "verdict_computed": "FAILED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
+      }
     },
     {
       "account": "sequestria",
@@ -1094,14 +1128,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-20T00:10:01Z",
+    "generated": "2026-08-20T00:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 4 days, 21 hours, 41 minutes",
+    "uptime": "up 4 days, 21 hours, 51 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
