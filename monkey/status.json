@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-21T14:20:02Z",
-  "valid_until": "2026-08-22T18:20:02Z",
+  "generated": "2026-08-21T14:30:02Z",
+  "valid_until": "2026-08-22T18:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-21T024059Z",
@@ -717,7 +717,7 @@
       "uid": 3010,
       "armed": true,
       "cron": [
-        "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/realisateur/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+        "10,30,50 * * * * USAGE_RUSH_BEFORE_RESET_MIN=5760 PACED_MAX_PER_TICK=1 /home/realisateur/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
       "release_tick": "2026-08-13T05:50:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
@@ -1504,14 +1504,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-21T14:20:02Z",
+    "generated": "2026-08-21T14:30:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 6 days, 11 hours, 51 minutes",
+    "uptime": "up 6 days, 12 hours, 1 minute",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
