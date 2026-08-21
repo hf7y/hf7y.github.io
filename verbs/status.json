@@ -1,15 +1,15 @@
 {
   "schema": 2,
-  "generated": "2026-08-20T22:32:39Z",
-  "valid_until": "2026-08-22T02:32:39Z",
+  "generated": "2026-08-21T00:25:40Z",
+  "valid_until": "2026-08-22T04:25:40Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "CUT",
-  "reason": "21 verb(s); 4 green, 0 red, 0 pending, 4 ungated, 0 blind",
-  "main_sha": "bd4536f",
-  "ci_run": "32424646007",
-  "build_id": "2026-08-20T223218Z",
-  "blocked_streak": 0,
+  "decision": "BLOCKED",
+  "reason": "checks had not concluded at cut time -- 3 green, 0 red, 1 pending, 4 ungated, 0 blind",
+  "main_sha": "e43b490",
+  "ci_run": "32432551363",
+  "build_id": null,
+  "blocked_streak": 1,
   "last_cut": {
     "at": "2026-08-20T22:32:39Z",
     "decision": "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-21T00:25:40Z",
+      "decision": "BLOCKED",
+      "reason": "checks had not concluded at cut time -- 3 green, 0 red, 1 pending, 4 ungated, 0 blind",
+      "main_sha": "e43b490",
+      "ci_run": "32432551363",
+      "build_id": null
+    },
     {
       "at": "2026-08-20T22:32:39Z",
       "decision": "CUT",
