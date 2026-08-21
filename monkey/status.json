@@ -1,11 +1,11 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-21T00:50:02Z",
-  "valid_until": "2026-08-22T04:50:02Z",
+  "generated": "2026-08-21T01:00:03Z",
+  "valid_until": "2026-08-22T05:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "verb_build": "2026-08-21T002645Z",
+  "verb_build": "2026-08-21T005355Z",
   "accounts": [
     {
       "account": "baudin",
@@ -1480,14 +1480,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-21T00:50:02Z",
+    "generated": "2026-08-21T01:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 5 days, 22 hours, 21 minutes",
+    "uptime": "up 5 days, 22 hours, 31 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
