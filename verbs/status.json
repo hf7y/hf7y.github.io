@@ -1,15 +1,15 @@
 {
   "schema": 2,
-  "generated": "2026-08-21T02:41:14Z",
-  "valid_until": "2026-08-22T06:41:14Z",
+  "generated": "2026-08-22T02:24:35Z",
+  "valid_until": "2026-08-23T06:24:35Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "CUT",
-  "reason": "21 verb(s); 4 green, 0 red, 0 pending, 4 ungated, 0 blind",
-  "main_sha": "6d338e2",
-  "ci_run": "32440670317",
-  "build_id": "2026-08-21T024059Z",
-  "blocked_streak": 0,
+  "decision": "ERROR",
+  "reason": "the run failed before the gate could decide",
+  "main_sha": "5d664e6",
+  "ci_run": "32546142765",
+  "build_id": null,
+  "blocked_streak": 1,
   "last_cut": {
     "at": "2026-08-21T02:41:14Z",
     "decision": "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-22T02:24:35Z",
+      "decision": "ERROR",
+      "reason": "the run failed before the gate could decide",
+      "main_sha": "5d664e6",
+      "ci_run": "32546142765",
+      "build_id": null
+    },
     {
       "at": "2026-08-21T02:41:14Z",
       "decision": "CUT",
