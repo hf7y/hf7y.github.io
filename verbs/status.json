@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "generated": "2026-08-22T02:26:02Z",
-  "valid_until": "2026-08-23T06:26:02Z",
+  "generated": "2026-08-22T02:32:47Z",
+  "valid_until": "2026-08-23T06:32:47Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "CUT",
-  "reason": "18 verb(s); 5 green, 0 red, 0 pending, 3 ungated, 0 blind",
-  "main_sha": "5d664e6",
-  "ci_run": "32546198868",
-  "build_id": "2026-08-22T022547Z",
+  "decision": "NO_CHANGE",
+  "reason": "gate green, no project moved -- today's build is still current",
+  "main_sha": "eb1e205",
+  "ci_run": "32546505560",
+  "build_id": null,
   "blocked_streak": 0,
   "last_cut": {
     "at": "2026-08-22T02:26:02Z",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-22T02:32:47Z",
+      "decision": "NO_CHANGE",
+      "reason": "gate green, no project moved -- today's build is still current",
+      "main_sha": "eb1e205",
+      "ci_run": "32546505560",
+      "build_id": null
+    },
     {
       "at": "2026-08-22T02:26:02Z",
       "decision": "CUT",
