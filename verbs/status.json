@@ -1,15 +1,15 @@
 {
   "schema": 2,
-  "generated": "2026-08-22T02:32:47Z",
-  "valid_until": "2026-08-23T06:32:47Z",
+  "generated": "2026-08-22T06:29:14Z",
+  "valid_until": "2026-08-23T10:29:14Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "NO_CHANGE",
-  "reason": "gate green, no project moved -- today's build is still current",
+  "decision": "ERROR",
+  "reason": "the run failed before the gate could decide",
   "main_sha": "eb1e205",
-  "ci_run": "32546505560",
+  "ci_run": "32557073039",
   "build_id": null,
-  "blocked_streak": 0,
+  "blocked_streak": 1,
   "last_cut": {
     "at": "2026-08-22T02:26:02Z",
     "decision": "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-22T06:29:14Z",
+      "decision": "ERROR",
+      "reason": "the run failed before the gate could decide",
+      "main_sha": "eb1e205",
+      "ci_run": "32557073039",
+      "build_id": null
+    },
     {
       "at": "2026-08-22T02:32:47Z",
       "decision": "NO_CHANGE",
