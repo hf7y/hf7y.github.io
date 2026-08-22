@@ -1,15 +1,15 @@
 {
   "schema": 2,
-  "generated": "2026-08-22T06:29:14Z",
-  "valid_until": "2026-08-23T10:29:14Z",
+  "generated": "2026-08-22T06:36:27Z",
+  "valid_until": "2026-08-23T10:36:27Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "ERROR",
-  "reason": "the run failed before the gate could decide",
+  "decision": "BLOCKED",
+  "reason": "checks had not concluded at cut time -- 4 green, 0 red, 1 pending, 3 ungated, 0 blind",
   "main_sha": "eb1e205",
-  "ci_run": "32557073039",
+  "ci_run": "32557381264",
   "build_id": null,
-  "blocked_streak": 1,
+  "blocked_streak": 2,
   "last_cut": {
     "at": "2026-08-22T02:26:02Z",
     "decision": "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-22T06:36:27Z",
+      "decision": "BLOCKED",
+      "reason": "checks had not concluded at cut time -- 4 green, 0 red, 1 pending, 3 ungated, 0 blind",
+      "main_sha": "eb1e205",
+      "ci_run": "32557381264",
+      "build_id": null
+    },
     {
       "at": "2026-08-22T06:29:14Z",
       "decision": "ERROR",
