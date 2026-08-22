@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-22T22:30:02Z",
-  "valid_until": "2026-08-24T02:30:02Z",
+  "generated": "2026-08-22T22:40:03Z",
+  "valid_until": "2026-08-24T02:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-22T203911Z",
@@ -44,6 +44,23 @@
       ],
       "release_tick": "2026-08-13T05:12:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1787437924",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-22T22:32:04+00:00",
+          "ended_at": "2026-08-22T22:38:10+00:00",
+          "elapsed_s": 369,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty of actionable work: #43-46 are DECISION issues waiting on Zach; #56 (vault ref containment) investigated and deferred \u2014 needs root/cross-account access this session doesn't have."
+        },
         {
           "run_id": "bibliothecaire-research-1787407923",
           "job": "bibliothecaire-research",
@@ -111,41 +128,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Queue empty of actionable work: all open issues are in-progress, deferred, or needs-human (43-47 blocked on Zach's DECISION/parked)."
-        },
-        {
-          "run_id": "bibliothecaire-research-1787141524",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-08-19T12:12:04+00:00",
-          "ended_at": "2026-08-19T12:23:34+00:00",
-          "elapsed_s": 693,
-          "rc": 1,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "FAILED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "PR #55 (containerize bibintake, addresses #15) opened, tests green, blocked on repo-wide GH Actions billing failure + Zach's call on zaxon-hermes pointer/merge-now; queue's other open issues (43-47) are all DECISION-blocked"
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1787407923",
+        "run_id": "bibliothecaire-research-1787437924",
         "job": "bibliothecaire-research",
-        "started_at": "2026-08-22T14:12:03+00:00",
-        "ended_at": "2026-08-22T14:27:42+00:00",
-        "elapsed_s": 941,
+        "started_at": "2026-08-22T22:32:04+00:00",
+        "ended_at": "2026-08-22T22:38:10+00:00",
+        "elapsed_s": 369,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #57 (chezz analytic material sufficiency: decision-procedure proof + proven small case, consigned to vault, PR hf7y/chezz#47 opened for their own research lane); #56 (shared vault containment) remains open and actionable, not human-blocked -- fixed one bug it exposed (tracked .consigne.lock) but the core two-account ref-ownership fix is still undone."
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Queue empty of actionable work: #43-46 are DECISION issues waiting on Zach; #56 (vault ref containment) investigated and deferred \u2014 needs root/cross-account access this session doesn't have."
       },
       "containment": {
         "foreign_clones": [
@@ -232,6 +232,23 @@
       "release_tick": "2026-08-13T05:31:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1787437864",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-22T22:31:04+00:00",
+          "ended_at": "2026-08-22T22:36:23+00:00",
+          "elapsed_s": 321,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "closed #103 (settled ecosim's role with evidence: no live clock or verb on main, only migration-landed.sh reachable via CI); remaining 6 open issues are all blocked on a Zach decision or a still-unmet precondition (#62), re-verified today"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1787405463",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-22T13:31:03+00:00",
@@ -298,41 +315,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Ported unit sensor (#56, PR #83 open, blocked on same GH Actions billing wall as PR #82); credential/dispatch-ref premise checks still need live network access this sandbox lacks"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1787190663",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-20T01:51:03+00:00",
-          "ended_at": "2026-08-20T02:01:26+00:00",
-          "elapsed_s": 626,
-          "rc": 1,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "FAILED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "ported simultaneity sensor (#56, PR #82 open, blocked on GH Actions billing wall, not code); unit/credential/dispatch-ref still need porting next run"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1787405463",
+        "run_id": "ecosim-nightly-batch-1787437864",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-22T13:31:03+00:00",
-        "ended_at": "2026-08-22T13:40:02+00:00",
-        "elapsed_s": 541,
+        "started_at": "2026-08-22T22:31:04+00:00",
+        "ended_at": "2026-08-22T22:36:23+00:00",
+        "elapsed_s": 321,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_opened": 0,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed #87 (thermostat row wired to scheduler's thermostat-probe.sh, PR #105 merged); #103 (settle ecosim's instrumentation-vs-product role) is real, un-blocked investigative work still open for next run"
+        "claimed_verdict": "DONE",
+        "claimed_reason": "closed #103 (settled ecosim's role with evidence: no live clock or verb on main, only migration-landed.sh reachable via CI); remaining 6 open issues are all blocked on a Zach decision or a still-unmet precondition (#62), re-verified today"
       },
       "containment": {
         "foreign_clones": [
@@ -1186,6 +1186,23 @@
       "release_tick": "2026-08-13T05:11:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "sequestria-nightly-batch-1787437864",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-08-22T22:31:04+00:00",
+          "ended_at": "2026-08-22T22:36:47+00:00",
+          "elapsed_s": 346,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 1,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "No product diff tonight; found a real fence-compliant deploy path for #6 but hit a tool-permission wall creating the repo, filed #29 with the exact ask; #9 has no new target in two days, not re-searched a third time."
+        },
+        {
           "run_id": "sequestria-nightly-batch-1787389864",
           "job": "sequestria-nightly-batch",
           "started_at": "2026-08-22T09:11:04+00:00",
@@ -1252,41 +1269,24 @@
           "verdict_computed": "FAILED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "4th outreach draft landed via PR #23, blocked on GitHub Actions billing failure (#24, Zach's action); more actionable work remains (#6 non-account build, further #9 targets)"
-        },
-        {
-          "run_id": "sequestria-nightly-batch-1787099463",
-          "job": "sequestria-nightly-batch",
-          "started_at": "2026-08-19T00:31:03+00:00",
-          "ended_at": "2026-08-19T00:34:06+00:00",
-          "elapsed_s": 185,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed #11 (comment + close, per Standing Rule 5's own findings-go-in-the-issue instruction); #9/#6 have no same-pass mechanism left tonight without crossing a human-only line."
         }
       ],
       "last_run": {
-        "run_id": "sequestria-nightly-batch-1787389864",
+        "run_id": "sequestria-nightly-batch-1787437864",
         "job": "sequestria-nightly-batch",
-        "started_at": "2026-08-22T09:11:04+00:00",
-        "ended_at": "2026-08-22T09:16:59+00:00",
-        "elapsed_s": 357,
+        "started_at": "2026-08-22T22:31:04+00:00",
+        "ended_at": "2026-08-22T22:36:47+00:00",
+        "elapsed_s": 346,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
-        "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "commits_added": 0,
+        "issues_opened": 1,
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Closed #24 (billing wall genuinely resolved, evidenced by #23/#25 merging clean tonight), shipped PR #28 (Instagram ad PNG raster export) merged to main -- #9 and #6 remain, both correctly gated on Zach's own action (sends, account creation)."
+        "claimed_reason": "No product diff tonight; found a real fence-compliant deploy path for #6 but hit a tool-permission wall creating the repo, filed #29 with the exact ask; #9 has no new target in two days, not re-searched a third time."
       },
       "containment": {
         "foreign_clones": [
@@ -1572,14 +1572,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-22T22:30:01Z",
+    "generated": "2026-08-22T22:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 week, 20 hours, 1 minute",
+    "uptime": "up 1 week, 20 hours, 11 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
