@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-22T20:50:02Z",
-  "valid_until": "2026-08-24T00:50:02Z",
+  "generated": "2026-08-22T21:00:03Z",
+  "valid_until": "2026-08-24T01:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-22T203911Z",
@@ -496,6 +496,23 @@
       "release_tick": "2026-08-13T05:04:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1787431443",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-22T20:44:03+00:00",
+          "ended_at": "2026-08-22T20:56:37+00:00",
+          "elapsed_s": 757,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 6,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1787408644",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-08-22T14:24:04+00:00",
@@ -562,41 +579,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Both zaxon tickets (2f99c780 window-confirm, 837d1498 billing/admin-merge) still pending; billing wall reconfirmed via hard API annotation evidence; nothing new buildable tonight beyond last two ticks' work"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1787220243",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-20T10:04:03+00:00",
-          "ended_at": "2026-08-20T10:11:36+00:00",
-          "elapsed_s": 455,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Both zaxon tickets (window confirm, billing/admin-merge) still pending; fixed a real addToCart correctness gap in PR #43, pushed ef9976b, waiting on Zach"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1787408644",
+        "run_id": "groc-mangr-nightly-batch-1787431443",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-22T14:24:04+00:00",
-        "ended_at": "2026-08-22T14:34:13+00:00",
-        "elapsed_s": 611,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 2,
+        "started_at": "2026-08-22T20:44:03+00:00",
+        "ended_at": "2026-08-22T20:56:37+00:00",
+        "elapsed_s": 757,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 6,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 1,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "PR #49 merged (collapsed #34's --at= duplication), 130/130 tests; #19/#20 still hard-blocked, next window ticket 97927b92 pending for Mon 2026-08-24"
+        "verdict_computed": "WORKED-CUTOFF",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [
@@ -1572,14 +1572,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-22T20:50:01Z",
+    "generated": "2026-08-22T21:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 week, 18 hours, 21 minutes",
+    "uptime": "up 1 week, 18 hours, 31 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
