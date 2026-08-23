@@ -1,11 +1,11 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-23T05:50:02Z",
-  "valid_until": "2026-08-24T09:50:02Z",
+  "generated": "2026-08-23T06:00:03Z",
+  "valid_until": "2026-08-24T10:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "verb_build": "2026-08-22T203911Z",
+  "verb_build": "2026-08-23T024208Z",
   "accounts": [
     {
       "account": "baudin",
@@ -1073,6 +1073,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1787463783",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-23T05:43:03+00:00",
+          "ended_at": "2026-08-23T05:54:52+00:00",
+          "elapsed_s": 711,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #395 merged: test coverage for secret-plaintext-egress.sh + remote-health-keys.sh (35 assertions); surveyed remaining #348 remedy scripts, found no fifth kind (genuinely bespoke), 12 scripts still untested for next run"
+        },
+        {
           "run_id": "senechal-nightly-batch-1787456583",
           "job": "senechal-nightly-batch",
           "started_at": "2026-08-23T03:43:03+00:00",
@@ -1139,41 +1156,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "PR #391 merged: dexter-getty-tty1.sh generalized onto the shared systemd-mask-unit engine (now proven local+remote, #348 phase-4); #348 has real actionable next steps left (migrate more remedy scripts), #369/#387/mandark-reachability walls unchanged from earlier runs today"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1787413383",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-08-22T15:43:03+00:00",
-          "ended_at": "2026-08-22T15:57:28+00:00",
-          "elapsed_s": 868,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Built and merged #348's phase-4 falsification probe (PR #390): grub-kernel-param and systemd-mask-unit remedies collapse into remedies/lib/toggle-kinds.sh with zero escape hatches; filled a missing postfix test and fixed an unrelated $USER crash in lid-inhibit-honoured.sh. Main backlog (#369, door filings, #387 CI) still blocked on Zach/mandark reachability, unchanged across 3 runs today -- phase 4's actual collapse is the next unblocked, human-independent work."
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1787456583",
+        "run_id": "senechal-nightly-batch-1787463783",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-08-23T03:43:03+00:00",
-        "ended_at": "2026-08-23T03:58:51+00:00",
-        "elapsed_s": 951,
+        "started_at": "2026-08-23T05:43:03+00:00",
+        "ended_at": "2026-08-23T05:54:52+00:00",
+        "elapsed_s": 711,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Built and merged #348 phase-4's fourth timer-kind (smart-health.sh's SYSTEM unit, PR #394); ~19 remedy scripts still unconverted, no Zach decision needed to keep going."
+        "claimed_reason": "PR #395 merged: test coverage for secret-plaintext-egress.sh + remote-health-keys.sh (35 assertions); surveyed remaining #348 remedy scripts, found no fifth kind (genuinely bespoke), 12 scripts still untested for next run"
       },
       "containment": {
         "foreign_clones": [
@@ -1589,14 +1589,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-23T05:50:01Z",
+    "generated": "2026-08-23T06:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 week, 1 day, 3 hours, 21 minutes",
+    "uptime": "up 1 week, 1 day, 3 hours, 31 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
