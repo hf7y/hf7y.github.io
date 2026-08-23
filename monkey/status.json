@@ -1,18 +1,18 @@
 {
   "accounts": [],
-  "generated": "2026-08-23T06:40:01Z",
+  "generated": "2026-08-23T07:20:01Z",
   "host": "monkey",
   "watcher": {
-    "generated": "2026-08-23T06:40:01Z",
-    "verdict": "DEGRADED",
-    "why": "collector ran but returned no usable accounts array",
+    "generated": "2026-08-23T07:20:01Z",
+    "verdict": "DOWN",
+    "why": "VM running but sshd is silent (this is what a read-only root looks like)",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
-    "sshd": "answering",
+    "sshd": "silent",
     "uptime": null,
     "root_mount": null,
-    "guest_error": "collector ran but returned no usable accounts array",
+    "guest_error": "sshd is silent -- the collector could not be run",
     "accounts_from": "NOT COLLECTED -- the guest was unreachable, so accounts[] is empty rather than stale",
     "note": "Generated on dexter, the VM host, every 10 minutes. It can report monkey being down because it does not run on monkey. If watcher.generated is old, the WATCHER is broken -- not necessarily monkey."
   }
