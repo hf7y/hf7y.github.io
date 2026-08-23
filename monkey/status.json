@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-23T04:40:02Z",
-  "valid_until": "2026-08-24T08:40:02Z",
+  "generated": "2026-08-23T04:50:03Z",
+  "valid_until": "2026-08-24T08:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-22T203911Z",
@@ -756,6 +756,23 @@
       "release_tick": "2026-08-13T05:50:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1787459402",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-23T04:30:02+00:00",
+          "ended_at": "2026-08-23T04:41:52+00:00",
+          "elapsed_s": 712,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Confirmed ausculte rot/arming alerts real and traced to exact blockers (#544 stuck on senechal's own absorption backlog, #542 on scheduler#259); found #368's verbs/scheduler PR plan was unsound (verbs repo is generated-only, scheduler's 7 files are wired into realisateur's own bootstrap) and corrected it before opening a bad cross-repo PR; confirmed #545's sudo wall blocks --check too. Actionable next: separate selfdev-gh-app.sh's bootstrap/provisioning roles before any scheduler-block move, and"
+        },
+        {
           "run_id": "realisateur-nightly-batch-1787449808",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-08-23T01:50:08+00:00",
@@ -822,41 +839,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #334 (BLIND exit-code sweep verified complete); corrected #368's stale premise (only senechal's move happened, verbs/scheduler moves never started, ~2518+1440 lines remain); documented the sudo/crontab settings.json wall blocking #517/#518/#523-box2 on this account. Next: open the verbs and scheduler draft PRs for #368, or continue triaging #405/#250/#294/#171/#134."
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1787398204",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-22T11:30:04+00:00",
-          "ended_at": "2026-08-22T11:40:59+00:00",
-          "elapsed_s": 657,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1787449808",
+        "run_id": "realisateur-nightly-batch-1787459402",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-23T01:50:08+00:00",
-        "ended_at": "2026-08-23T02:09:43+00:00",
-        "elapsed_s": 1177,
+        "started_at": "2026-08-23T04:30:02+00:00",
+        "ended_at": "2026-08-23T04:41:52+00:00",
+        "elapsed_s": 712,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Merged PR #207 (enrole-selfdev.sh, 39 tests) after rebasing past the ownership-set.sh deletion (#514) and a stale prose-ratchet baseline; all other open-queue issues (#545,#544,#542,#520,#431,#412,#368,#294,#250,#171,#134) re-probed and confirmed blocked on Zach or cross-host access this account lacks, no new ground to cover."
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Confirmed ausculte rot/arming alerts real and traced to exact blockers (#544 stuck on senechal's own absorption backlog, #542 on scheduler#259); found #368's verbs/scheduler PR plan was unsound (verbs repo is generated-only, scheduler's 7 files are wired into realisateur's own bootstrap) and corrected it before opening a bad cross-repo PR; confirmed #545's sudo wall blocks --check too. Actionable next: separate selfdev-gh-app.sh's bootstrap/provisioning roles before any scheduler-block move, and"
       },
       "containment": {
         "foreign_clones": [
@@ -1589,14 +1589,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-23T04:40:01Z",
+    "generated": "2026-08-23T04:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 week, 1 day, 2 hours, 11 minutes",
+    "uptime": "up 1 week, 1 day, 2 hours, 21 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
