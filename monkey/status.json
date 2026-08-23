@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-23T00:10:02Z",
-  "valid_until": "2026-08-24T04:10:02Z",
+  "generated": "2026-08-23T00:20:02Z",
+  "valid_until": "2026-08-24T04:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-22T203911Z",
@@ -626,6 +626,23 @@
       "release_tick": "2026-08-13T05:13:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "nine-speakers-nightly-batch-1787443984",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-08-23T00:13:04+00:00",
+          "ended_at": "2026-08-23T00:15:48+00:00",
+          "elapsed_s": 167,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "5th consecutive dry pass -- #5/#6/#7 unchanged since 2026-08-19, fully blocked on Zach's #6 decision, no other unblocked backlog work exists"
+        },
+        {
           "run_id": "nine-speakers-nightly-batch-1787398383",
           "job": "nine-speakers-nightly-batch",
           "started_at": "2026-08-22T11:33:03+00:00",
@@ -695,11 +712,11 @@
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1787398383",
+        "run_id": "nine-speakers-nightly-batch-1787443984",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-08-22T11:33:03+00:00",
-        "ended_at": "2026-08-22T11:36:43+00:00",
-        "elapsed_s": 223,
+        "started_at": "2026-08-23T00:13:04+00:00",
+        "ended_at": "2026-08-23T00:15:48+00:00",
+        "elapsed_s": 167,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -709,7 +726,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Backlog is #5/#6/#7 only, all blocked on Zach's unanswered Focusrite DECISION (0 comments); #16 was already resolved by a human pass hours before this run; nothing actionable left to build without guessing at the blocked decision."
+        "claimed_reason": "5th consecutive dry pass -- #5/#6/#7 unchanged since 2026-08-19, fully blocked on Zach's #6 decision, no other unblocked backlog work exists"
       },
       "containment": {
         "foreign_clones": [
@@ -1572,14 +1589,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-23T00:10:01Z",
+    "generated": "2026-08-23T00:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 week, 21 hours, 41 minutes",
+    "uptime": "up 1 week, 21 hours, 51 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
