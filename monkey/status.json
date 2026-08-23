@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-23T17:30:03Z",
-  "valid_until": "2026-08-24T21:30:03Z",
+  "generated": "2026-08-23T17:40:02Z",
+  "valid_until": "2026-08-24T21:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-23T024208Z",
@@ -1073,6 +1073,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1787505784",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-23T17:23:04+00:00",
+          "ended_at": "2026-08-23T17:35:30+00:00",
+          "elapsed_s": 748,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "senechal-nightly-batch-1787463783",
           "job": "senechal-nightly-batch",
           "started_at": "2026-08-23T05:43:03+00:00",
@@ -1139,41 +1156,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Fixed+shipped PR #392 (auto-apply-remedies now sees lib/*.sh-only edits, not just top-level remedy edits), closed the loop on #348; backlog otherwise unchanged (mandark unreachable, #369/#387 still unanswered) but #348's phase-4 collapse across ~24 more remedy scripts is real, buildable, non-human-blocked work for the next run."
-        },
-        {
-          "run_id": "senechal-nightly-batch-1787425384",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-08-22T19:03:04+00:00",
-          "ended_at": "2026-08-22T19:14:01+00:00",
-          "elapsed_s": 660,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "PR #391 merged: dexter-getty-tty1.sh generalized onto the shared systemd-mask-unit engine (now proven local+remote, #348 phase-4); #348 has real actionable next steps left (migrate more remedy scripts), #369/#387/mandark-reachability walls unchanged from earlier runs today"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1787463783",
+        "run_id": "senechal-nightly-batch-1787505784",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-08-23T05:43:03+00:00",
-        "ended_at": "2026-08-23T05:54:52+00:00",
-        "elapsed_s": 711,
+        "started_at": "2026-08-23T17:23:04+00:00",
+        "ended_at": "2026-08-23T17:35:30+00:00",
+        "elapsed_s": 748,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "PR #395 merged: test coverage for secret-plaintext-egress.sh + remote-health-keys.sh (35 assertions); surveyed remaining #348 remedy scripts, found no fifth kind (genuinely bespoke), 12 scripts still untested for next run"
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [
@@ -1589,14 +1589,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-23T17:30:02Z",
+    "generated": "2026-08-23T17:40:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 27 minutes",
+    "uptime": "up 37 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
