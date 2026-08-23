@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-23T03:50:03Z",
-  "valid_until": "2026-08-24T07:50:03Z",
+  "generated": "2026-08-23T04:00:03Z",
+  "valid_until": "2026-08-24T08:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-22T203911Z",
@@ -1073,6 +1073,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1787456583",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-23T03:43:03+00:00",
+          "ended_at": "2026-08-23T03:58:51+00:00",
+          "elapsed_s": 951,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Built and merged #348 phase-4's fourth timer-kind (smart-health.sh's SYSTEM unit, PR #394); ~19 remedy scripts still unconverted, no Zach decision needed to keep going."
+        },
+        {
           "run_id": "senechal-nightly-batch-1787450584",
           "job": "senechal-nightly-batch",
           "started_at": "2026-08-23T02:03:04+00:00",
@@ -1139,41 +1156,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Built and merged #348's phase-4 falsification probe (PR #390): grub-kernel-param and systemd-mask-unit remedies collapse into remedies/lib/toggle-kinds.sh with zero escape hatches; filled a missing postfix test and fixed an unrelated $USER crash in lid-inhibit-honoured.sh. Main backlog (#369, door filings, #387 CI) still blocked on Zach/mandark reachability, unchanged across 3 runs today -- phase 4's actual collapse is the next unblocked, human-independent work."
-        },
-        {
-          "run_id": "senechal-nightly-batch-1787403784",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-08-22T13:03:04+00:00",
-          "ended_at": "2026-08-22T13:11:20+00:00",
-          "elapsed_s": 498,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Shipped PR #389 (config-prose-drift false-healed baseline bug, tested+merged); everything else remains blocked on #369 (Zach decision), CI App workflows permission (#387), and mandark reachability (SSH host key unverified, now also timing out)."
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1787450584",
+        "run_id": "senechal-nightly-batch-1787456583",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-08-23T02:03:04+00:00",
-        "ended_at": "2026-08-23T02:15:32+00:00",
-        "elapsed_s": 750,
+        "started_at": "2026-08-23T03:43:03+00:00",
+        "ended_at": "2026-08-23T03:58:51+00:00",
+        "elapsed_s": 951,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Shipped #348 phase-4's 3rd kind (systemd-user-timer, PR #393 merged, 0 escape hatches); #369+mandark still block the door-filing backlog; next concrete step is smart-health.sh's system-unit variant"
+        "claimed_reason": "Built and merged #348 phase-4's fourth timer-kind (smart-health.sh's SYSTEM unit, PR #394); ~19 remedy scripts still unconverted, no Zach decision needed to keep going."
       },
       "containment": {
         "foreign_clones": [
@@ -1589,14 +1589,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-23T03:50:02Z",
+    "generated": "2026-08-23T04:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 week, 1 day, 1 hour, 21 minutes",
+    "uptime": "up 1 week, 1 day, 1 hour, 31 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
