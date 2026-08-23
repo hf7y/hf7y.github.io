@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-23T17:20:02Z",
-  "valid_until": "2026-08-24T21:20:02Z",
+  "generated": "2026-08-23T17:30:03Z",
+  "valid_until": "2026-08-24T21:30:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-23T024208Z",
@@ -496,6 +496,23 @@
       "release_tick": "2026-08-13T05:04:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1787504693",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-23T17:04:53+00:00",
+          "ended_at": "2026-08-23T17:23:32+00:00",
+          "elapsed_s": 1122,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #52 (feedback-parse fix, reconciles #51) built+pushed, tests 143/143, blocked on dead self-hosted runner (root-caused: stale OAuth session, needs re-registration); asked Zach re-register vs admin-merge; #19/#20/window-ticket also pending on Zach"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1787450644",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-08-23T02:04:04+00:00",
@@ -562,41 +579,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "PR #48 merged (doorbell-ring delivery instruction, closing a gap in #10's answer); billing wall resolved via PR #46, #43/#44/#45 also merged; fresh window-confirm ask fired (97927b92) for Mon 2026-08-24; #19/#20 remain the only real blocker"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1787246643",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-20T17:24:03+00:00",
-          "ended_at": "2026-08-20T17:32:38+00:00",
-          "elapsed_s": 518,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Broke the stale-ticket loop: built confirmationStatus + --status (PR #45, 115/115 tests) and fired a fresh ask for the real Fri 8/21 window (ticket 0a03c99a) after finding the old ticket's window had passed unasked-about for days; next tick checks 0a03c99a and 837d1498 (billing wall, unchanged)."
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1787450644",
+        "run_id": "groc-mangr-nightly-batch-1787504693",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-23T02:04:04+00:00",
-        "ended_at": "2026-08-23T02:06:59+00:00",
-        "elapsed_s": 177,
+        "started_at": "2026-08-23T17:04:53+00:00",
+        "ended_at": "2026-08-23T17:23:32+00:00",
+        "elapsed_s": 1122,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fired the standing feedback nudge for real (ticket fb423552, pending); #19/#20 still hard-blocked on creds/hands"
+        "claimed_reason": "PR #52 (feedback-parse fix, reconciles #51) built+pushed, tests 143/143, blocked on dead self-hosted runner (root-caused: stale OAuth session, needs re-registration); asked Zach re-register vs admin-merge; #19/#20/window-ticket also pending on Zach"
       },
       "containment": {
         "foreign_clones": [
@@ -605,7 +605,9 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [],
+        "outside_home": [
+          "/var/backups/selfdev-gitconfig-20260821/groc-mangr.gitconfig"
+        ],
         "sudoers": []
       },
       "credentials": {
@@ -623,6 +625,23 @@
       ],
       "release_tick": "2026-08-13T05:13:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "nine-speakers-nightly-batch-1787505184",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-08-23T17:13:04+00:00",
+          "ended_at": "2026-08-23T17:24:24+00:00",
+          "elapsed_s": 682,
+          "rc": 1,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 1,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "6-week block on #6 lifted; shipped hardware/HARDWARE.md + test_rig_7ch.pd advancing #5, filed #19, closed #6 -- remaining work needs a human (push permission denied, #19 needs Zach, rest of #5 needs physical presence)"
+        },
         {
           "run_id": "nine-speakers-nightly-batch-1787443984",
           "job": "nine-speakers-nightly-batch",
@@ -690,41 +709,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "All open issues re-checked, unchanged since the 07:08 report; both blockers (Actions billing #16, PR #15 merge-permission classifier) still stand and need a human, nothing else actionable"
-        },
-        {
-          "run_id": "nine-speakers-nightly-batch-1787208784",
-          "job": "nine-speakers-nightly-batch",
-          "started_at": "2026-08-20T06:53:04+00:00",
-          "ended_at": "2026-08-20T07:09:16+00:00",
-          "elapsed_s": 975,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 1,
-          "issues_closed": 2,
-          "prs_opened": 2,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Backlog fully triaged (closed #2, #11; PRs #14/#15 open for #10/#1); milestone correctly blocked on Zach's #6 decision; both PRs blocked on external issues (GH Actions billing #16, merge-permission classifier) not actionable by an agent right now"
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1787443984",
+        "run_id": "nine-speakers-nightly-batch-1787505184",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-08-23T00:13:04+00:00",
-        "ended_at": "2026-08-23T00:15:48+00:00",
-        "elapsed_s": 167,
-        "rc": 0,
+        "started_at": "2026-08-23T17:13:04+00:00",
+        "ended_at": "2026-08-23T17:24:24+00:00",
+        "elapsed_s": 682,
+        "rc": 1,
         "status": "done",
-        "commits_added": 0,
-        "issues_opened": 0,
-        "issues_closed": 0,
+        "commits_added": 2,
+        "issues_opened": 1,
+        "issues_closed": 1,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "verdict_computed": "FAILED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "5th consecutive dry pass -- #5/#6/#7 unchanged since 2026-08-19, fully blocked on Zach's #6 decision, no other unblocked backlog work exists"
+        "claimed_reason": "6-week block on #6 lifted; shipped hardware/HARDWARE.md + test_rig_7ch.pd advancing #5, filed #19, closed #6 -- remaining work needs a human (push permission denied, #19 needs Zach, rest of #5 needs physical presence)"
       },
       "containment": {
         "foreign_clones": [
@@ -753,6 +755,23 @@
       ],
       "release_tick": "2026-08-13T05:50:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "realisateur-nightly-batch-1787504636",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-23T17:03:56+00:00",
+          "ended_at": "2026-08-23T17:24:07+00:00",
+          "elapsed_s": 1213,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "realisateur-nightly-batch-1787459402",
           "job": "realisateur-nightly-batch",
@@ -820,41 +839,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Diagnosed & fixed the #533/#532 root cause (salvage.sh duplicating branches for already-pushed PR branches) via draft PR hf7y/scheduler#272 + issue #273 asking their self-dev to merge; closed #533 and #532 in this repo. #368/#294/#250/#134/#412/#420/#518/#171 remain open, actionable next tick."
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1787406602",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-22T13:50:02+00:00",
-          "ended_at": "2026-08-22T13:59:58+00:00",
-          "elapsed_s": 598,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Closed #334 (BLIND exit-code sweep verified complete); corrected #368's stale premise (only senechal's move happened, verbs/scheduler moves never started, ~2518+1440 lines remain); documented the sudo/crontab settings.json wall blocking #517/#518/#523-box2 on this account. Next: open the verbs and scheduler draft PRs for #368, or continue triaging #405/#250/#294/#171/#134."
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1787459402",
+        "run_id": "realisateur-nightly-batch-1787504636",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-23T04:30:02+00:00",
-        "ended_at": "2026-08-23T04:41:52+00:00",
-        "elapsed_s": 712,
+        "started_at": "2026-08-23T17:03:56+00:00",
+        "ended_at": "2026-08-23T17:24:07+00:00",
+        "elapsed_s": 1213,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Confirmed ausculte rot/arming alerts real and traced to exact blockers (#544 stuck on senechal's own absorption backlog, #542 on scheduler#259); found #368's verbs/scheduler PR plan was unsound (verbs repo is generated-only, scheduler's 7 files are wired into realisateur's own bootstrap) and corrected it before opening a bad cross-repo PR; confirmed #545's sudo wall blocks --check too. Actionable next: separate selfdev-gh-app.sh's bootstrap/provisioning roles before any scheduler-block move, and"
+        "issues_closed": 1,
+        "prs_opened": 2,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [
@@ -883,6 +885,23 @@
       ],
       "release_tick": "2026-08-13T05:21:02Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
+        {
+          "run_id": "scheduler-paced-dev-1787505664",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-23T17:21:04+00:00",
+          "ended_at": "2026-08-23T17:29:25+00:00",
+          "elapsed_s": 504,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed+merged PR #277 (#275 fix): scheduler's 16% no-verdict rate traced to agents ending turns on 'I'll check later' promises; append_verdict_closeout() now warns against it, witnessed+tested 57/57; commented #275 narrowing scope to gardien-only remainder (walled off by cross-account containment); re-triaged #43/#148/#259 -- all confirmed still correctly blocked, no new ground"
+        },
         {
           "run_id": "scheduler-paced-dev-1787457663",
           "job": "scheduler-paced-dev",
@@ -950,41 +969,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Landed PR #269 (validate_cron dedup, #210); confirmed #43's mandark cron-unregister half already done via _runner.mandark.conf, remaining rm still walled off by SSH; re-confirmed #81/#225/#259 cross-account sudo walls unchanged. Actionable next: #238 prose reap (bin/lib/tests header comments, ~6600 lines to 75% target) or #264's re-derivation of the 19-script reachability claim."
-        },
-        {
-          "run_id": "scheduler-paced-dev-1787396463",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-08-22T11:01:03+00:00",
-          "ended_at": "2026-08-22T11:11:57+00:00",
-          "elapsed_s": 657,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Closed #257 (PR #268, merged): salvage.sh now files an issue naming the branch when it salvages, tested + green + merged; corrected #259's wrong root-cause diagnosis with a falsifying grep (append_verdict_closeout and run_record_closeout are independent) and named the real wall (no sudo/ssh to crt/chezz/baudin from this account); #43 re-confirmed still blocked on mandark SSH access. Actionable work remains: #238 prose reap, #186 conf registration, #234/#193 coordinator-file sunset."
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1787457663",
+        "run_id": "scheduler-paced-dev-1787505664",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-08-23T04:01:03+00:00",
-        "ended_at": "2026-08-23T04:06:56+00:00",
-        "elapsed_s": 356,
+        "started_at": "2026-08-23T17:21:04+00:00",
+        "ended_at": "2026-08-23T17:29:25+00:00",
+        "elapsed_s": 504,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 0,
-        "prs_merged": 0,
+        "issues_closed": 0,
+        "prs_opened": 1,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #186 (registration gap premise expired -- all 15 self-dev accounts now have complete schedule/*.conf); confirmed #43/#225/#259/#275(B) still walled on cross-account SSH/sudo access unchanged; confirmed #255/#193/#210/#234 remaining pieces need Zach's design call, not mechanical work; #238 prose reap and #264 script re-derivation remain actionable without external blockers."
+        "claimed_reason": "Landed+merged PR #277 (#275 fix): scheduler's 16% no-verdict rate traced to agents ending turns on 'I'll check later' promises; append_verdict_closeout() now warns against it, witnessed+tested 57/57; commented #275 narrowing scope to gardien-only remainder (walled off by cross-account containment); re-triaged #43/#148/#259 -- all confirmed still correctly blocked, no new ground"
       },
       "containment": {
         "foreign_clones": [],
@@ -1331,6 +1333,23 @@
       "release_tick": "2026-08-13T05:37:03Z rc=0 pin=2026-08-12T183347Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "vim-arcade-nightly-batch-1787505424",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-23T17:17:04+00:00",
+          "ended_at": "2026-08-23T17:22:40+00:00",
+          "elapsed_s": 338,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1787383024",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-08-22T07:17:04+00:00",
@@ -1397,41 +1416,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #171 (first map build now backgrounds its fetch when a cache exists, PR #175 merged); #173 remains open and actionable for next run"
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1786928147",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-08-17T00:55:47+00:00",
-          "ended_at": "2026-08-17T01:05:57+00:00",
-          "elapsed_s": 613,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "issue #152 resolved (PR #170 merged, collapsed 2 real duplicates); open-issue queue is now empty"
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1787383024",
+        "run_id": "vim-arcade-nightly-batch-1787505424",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-08-22T07:17:04+00:00",
-        "ended_at": "2026-08-22T07:23:53+00:00",
-        "elapsed_s": 412,
+        "started_at": "2026-08-23T17:17:04+00:00",
+        "ended_at": "2026-08-23T17:22:40+00:00",
+        "elapsed_s": 338,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Closed #187 (reaped 13 prose lines over the ratchet, re-accepted at 2963, merged PR #188); only #181 remains open and it's a DECISION issue waiting on Zach's call on sort order"
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [
@@ -1587,14 +1589,14 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-23T17:20:01Z",
+    "generated": "2026-08-23T17:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 17 minutes",
+    "uptime": "up 27 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
