@@ -1,9 +1,9 @@
 {
   "accounts": [],
-  "generated": "2026-08-23T06:20:01Z",
+  "generated": "2026-08-23T06:50:01Z",
   "host": "monkey",
   "watcher": {
-    "generated": "2026-08-23T06:20:01Z",
+    "generated": "2026-08-23T06:50:01Z",
     "verdict": "DEGRADED",
     "why": "collector ran but returned no usable accounts array",
     "vm_state": "running",
