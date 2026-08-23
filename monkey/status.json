@@ -1,9 +1,9 @@
 {
   "accounts": [],
-  "generated": "2026-08-23T12:20:02Z",
+  "generated": "2026-08-23T12:30:01Z",
   "host": "monkey",
   "watcher": {
-    "generated": "2026-08-23T12:20:02Z",
+    "generated": "2026-08-23T12:30:01Z",
     "verdict": "DOWN",
     "why": "VM running but sshd is silent (this is what a read-only root looks like)",
     "vm_state": "running",
