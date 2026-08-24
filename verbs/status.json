@@ -1,22 +1,22 @@
 {
   "schema": 2,
-  "generated": "2026-08-24T03:28:26Z",
-  "valid_until": "2026-08-25T07:28:26Z",
+  "generated": "2026-08-24T03:30:42Z",
+  "valid_until": "2026-08-25T07:30:42Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "BLOCKED",
-  "reason": "checks had not concluded at cut time -- 4 green, 0 red, 1 pending, 3 ungated, 0 blind",
+  "decision": "CUT",
+  "reason": "19 verb(s); 5 green, 0 red, 0 pending, 3 ungated, 0 blind",
   "main_sha": "42cfcab",
-  "ci_run": "32686517353",
-  "build_id": null,
-  "blocked_streak": 2,
+  "ci_run": "32686638346",
+  "build_id": "2026-08-24T033024Z",
+  "blocked_streak": 0,
   "last_cut": {
-    "at": "2026-08-23T02:42:29Z",
+    "at": "2026-08-24T03:30:42Z",
     "decision": "CUT",
-    "reason": "19 verb(s); 3 green, 0 red, 0 pending, 5 ungated, 0 blind",
-    "main_sha": "c7e8994",
-    "ci_run": "32613483408",
-    "build_id": "2026-08-23T024208Z"
+    "reason": "19 verb(s); 5 green, 0 red, 0 pending, 3 ungated, 0 blind",
+    "main_sha": "42cfcab",
+    "ci_run": "32686638346",
+    "build_id": "2026-08-24T033024Z"
   },
   "decisions_enum": [
     "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-24T03:30:42Z",
+      "decision": "CUT",
+      "reason": "19 verb(s); 5 green, 0 red, 0 pending, 3 ungated, 0 blind",
+      "main_sha": "42cfcab",
+      "ci_run": "32686638346",
+      "build_id": "2026-08-24T033024Z"
+    },
     {
       "at": "2026-08-24T03:28:26Z",
       "decision": "BLOCKED",
