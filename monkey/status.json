@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-24T17:40:03Z",
-  "valid_until": "2026-08-25T21:40:03Z",
+  "generated": "2026-08-24T17:50:03Z",
+  "valid_until": "2026-08-25T21:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -22,9 +22,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/baudin.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -173,7 +171,7 @@
           "/srv/ecosystem1-vault/.git/objects/80/7af83e078fa1da5d3b21d1e84deb91477d20f3",
           "/srv/ecosystem1-vault/.git/objects/c5",
           "/srv/ecosystem1-vault/.git/objects/c5/ee5289eca0bdc2b9687772b5afc1909d3ea295",
-          "... and 111 more"
+          "... and 110 more"
         ],
         "sudoers": []
       },
@@ -234,9 +232,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/chezz.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -260,9 +256,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/crt.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -395,9 +389,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/ecosim.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -525,9 +517,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/gardien.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -655,9 +645,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/groc-mangr.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -785,9 +773,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/nine-speakers.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -915,9 +901,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/realisateur.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -1046,8 +1030,7 @@
           "/srv/ecosystem1-vault/.git/objects/pack/pack-ee445ef0eb870c0f9df5fd1f3a1bd820cdbd8bf7.pack",
           "/srv/ecosystem1-vault/.git/objects/pack/pack-ee445ef0eb870c0f9df5fd1f3a1bd820cdbd8bf7.rev",
           "/srv/ecosystem1-vault/.git/logs/refs/remotes/origin/main",
-          "/srv/ecosystem1-vault/.git/logs/refs/remotes/origin/prose-sink-finding",
-          "/var/backups/selfdev-gitconfig-20260821/scheduler.gitconfig"
+          "/srv/ecosystem1-vault/.git/logs/refs/remotes/origin/prose-sink-finding"
         ],
         "sudoers": []
       },
@@ -1106,9 +1089,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/secretaire.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -1236,9 +1217,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/senechal.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -1366,9 +1345,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/sequestria.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -1496,9 +1473,7 @@
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/vim-arcade.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -1630,9 +1605,7 @@
             "origin": "https://github.com/hf7y/senechal.git"
           }
         ],
-        "outside_home": [
-          "/var/backups/selfdev-gitconfig-20260821/wtul.gitconfig"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "credentials": {
@@ -1643,17 +1616,17 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-24T17:40:03Z",
+    "generated": "2026-08-24T17:50:03Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-24T18:10:03Z",
+    "valid_until": "2026-08-24T18:20:03Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 day, 37 minutes",
+    "uptime": "up 1 day, 47 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
