@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "service": "zaxon",
+  "host": "dexter",
+  "generated": "2026-08-25T22:16:28Z",
+  "valid_until": "2026-08-25T23:46:28Z",
+  "cadence_minutes": 60,
+  "verdict": "UNANSWERED",
+  "why": "18 question(s) sent in 24h, none answered; 18.0h of the single slot went to tickets that expired",
+  "relay": {
+    "answers": true,
+    "url": "http://127.0.0.1:8643/mcp",
+    "ms": 3
+  },
+  "containers": [
+    {
+      "name": "zaxon-watcher",
+      "state": "running",
+      "status": "Up 2 hours"
+    },
+    {
+      "name": "zaxon-relay",
+      "state": "running",
+      "status": "Up 2 hours (healthy)"
+    },
+    {
+      "name": "zaxon-whisper",
+      "state": "running",
+      "status": "Up 2 hours (healthy)"
+    },
+    {
+      "name": "zaxon-gateway",
+      "state": "running",
+      "status": "Up 2 hours"
+    }
+  ],
+  "ledger": {
+    "readable": true,
+    "path": "/srv/zaxon/data/zaxon_relay/tickets.db",
+    "ttl_hours": 1.0,
+    "window_hours": 24,
+    "totals": {
+      "failed": 2,
+      "answered": 15,
+      "stale": 86
+    },
+    "window": {
+      "stale": 18
+    },
+    "window_sent": 18,
+    "stale_slot_hours": 18.0,
+    "queued": 0,
+    "slot": null,
+    "last_answered_at": "2026-08-23T02:07:23Z",
+    "senders": [
+      {
+        "from": "ausculte-cadence",
+        "sent": 16,
+        "answered": 0,
+        "stale": 16,
+        "failed": 0
+      },
+      {
+        "from": "test",
+        "sent": 1,
+        "answered": 0,
+        "stale": 1,
+        "failed": 0
+      },
+      {
+        "from": "apms-nightly-test",
+        "sent": 1,
+        "answered": 0,
+        "stale": 1,
+        "failed": 0
+      }
+    ],
+    "recent": [
+      {
+        "id": "6063168c",
+        "from": "ausculte-cadence",
+        "status": "stale",
+        "created_at": "2026-08-25T20:37:54Z",
+        "answered_at": null,
+        "question": "ausculte: fleet DOWN twice. 3 of 14 account(s) stopped without saying why: crt: no-verdict: ran with no verdict writte"
+      },
+      {
+        "id": "7f845854",
+        "from": "ausculte-cadence",
+        "status": "stale",
+        "created_at": "2026-08-25T20:37:53Z",
+        "answered_at": null,
+        "question": "ausculte: rot DOWN twice.   scheduler        #43    answered 2026-08-24     1d  mandark->monkey teardown, phase 1: f"
+      },
+      {
+        "id": "a8aefe09",
+        "from": "ausculte-cadence",
+        "status": "stale",
+        "created_at": "2026-08-25T20:37:50Z",
+        "answered_at": null,
+        "question": "ausculte: propagation DOWN twice. the channel is BLOCKED (1 run(s) running); nothing has propagated since 2026-08-24T03:30:4"
+      },
+      {
+        "id": "bfd06f56",
+        "from": "apms-nightly-test",
+        "status": "stale",
+        "created_at": "2026-08-25T19:23:33Z",
+        "answered_at": null,
+        "question": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      {
+        "id": "b3965be5",
+        "from": "test",
+        "status": "stale",
+        "created_at": "2026-08-25T19:23:23Z",
+        "answered_at": null,
+        "question": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      {
+        "id": "9f513344",
+        "from": "ausculte-cadence",
+        "status": "stale",
+        "created_at": "2026-08-25T16:37:59Z",
+        "answered_at": null,
+        "question": "ausculte: fleet DOWN twice. 3 of 14 account(s) stopped without saying why: crt: no-verdict: ran with no verdict writte"
+      },
+      {
+        "id": "34d5602d",
+        "from": "ausculte-cadence",
+        "status": "stale",
+        "created_at": "2026-08-25T16:37:57Z",
+        "answered_at": null,
+        "question": "ausculte: rot DOWN twice.   scheduler        #43    answered 2026-08-24     1d  mandark->monkey teardown, phase 1: f"
+      },
+      {
+        "id": "0f50e7bc",
+        "from": "ausculte-cadence",
+        "status": "stale",
+        "created_at": "2026-08-25T16:37:54Z",
+        "answered_at": null,
+        "question": "ausculte: propagation DOWN twice. the channel is BLOCKED (1 run(s) running); nothing has propagated since 2026-08-24T03:30:4"
+      },
+      {
+        "id": "d6e1acc3",
+        "from": "ausculte-cadence",
+        "status": "stale",
+        "created_at": "2026-08-25T12:37:57Z",
+        "answered_at": null,
+        "question": "ausculte: fleet DOWN twice. 2 of 14 account(s) stopped without saying why: crt: no-verdict: ran with no verdict writte"
+      },
+      {
+        "id": "a4a2692e",
+        "from": "ausculte-cadence",
+        "status": "stale",
+        "created_at": "2026-08-25T12:37:55Z",
+        "answered_at": null,
+        "question": "ausculte: rot DOWN twice.   scheduler        #43    answered 2026-08-24     1d  mandark->monkey teardown, phase 1: f"
+      },
+      {
+        "id": "adfde76b",
+        "from": "ausculte-cadence",
+        "status": "stale",
+        "created_at": "2026-08-25T12:37:52Z",
+        "answered_at": null,
+        "question": "ausculte: propagation DOWN twice. the channel is BLOCKED (1 run(s) running); nothing has propagated since 2026-08-24T03:30:4"
+      },
+      {
+        "id": "88b7f578",
+        "from": "ausculte-cadence",
+        "status": "stale",
+        "created_at": "2026-08-25T08:37:55Z",
+        "answered_at": null,
+        "question": "ausculte: fleet DOWN twice. 2 of 14 account(s) stopped without saying why: crt: no-verdict: ran with no verdict writte"
+      }
+    ]
+  }
+}
