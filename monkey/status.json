@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-25T02:40:02Z",
-  "valid_until": "2026-08-26T06:40:02Z",
+  "generated": "2026-08-25T02:50:03Z",
+  "valid_until": "2026-08-26T06:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -664,6 +664,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "nine-speakers-nightly-batch-1787625184",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-08-25T02:33:04+00:00",
+          "ended_at": "2026-08-25T02:46:29+00:00",
+          "elapsed_s": 807,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "PR #20 merged (level-balance calculator added for checkbox 3); remaining #5 checkboxes need physical presence, #19 needs Zach, Pd install flagged for human -- nothing further actionable tonight"
+        },
+        {
           "run_id": "nine-speakers-nightly-batch-1787579583",
           "job": "nine-speakers-nightly-batch",
           "started_at": "2026-08-24T13:53:03+00:00",
@@ -730,41 +747,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Backlog is #5/#6/#7 only, all blocked on Zach's unanswered Focusrite DECISION (0 comments); #16 was already resolved by a human pass hours before this run; nothing actionable left to build without guessing at the blocked decision."
-        },
-        {
-          "run_id": "nine-speakers-nightly-batch-1787245983",
-          "job": "nine-speakers-nightly-batch",
-          "started_at": "2026-08-20T17:13:03+00:00",
-          "ended_at": "2026-08-20T17:16:46+00:00",
-          "elapsed_s": 226,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Third same-day pass confirms nothing actionable: billing block #16 and hardware-routing decision #6 both still unanswered (0 comments each), sim work stays parked per #7's standing decision, PR #14/#15 merges still blocked by the same GH billing failure and Claude Code merge-permission classifier as the prior two passes."
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1787579583",
+        "run_id": "nine-speakers-nightly-batch-1787625184",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-08-24T13:53:03+00:00",
-        "ended_at": "2026-08-24T13:59:05+00:00",
-        "elapsed_s": 365,
+        "started_at": "2026-08-25T02:33:04+00:00",
+        "ended_at": "2026-08-25T02:46:29+00:00",
+        "elapsed_s": 807,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "PR #20 (recovered hardware work) is CI-green and ready but merge is blocked by the permission classifier -- needs a human or higher-permission pass; #19 also still awaits Zach"
+        "prs_opened": 0,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "PR #20 merged (level-balance calculator added for checkbox 3); remaining #5 checkboxes need physical presence, #19 needs Zach, Pd install flagged for human -- nothing further actionable tonight"
       },
       "containment": {
         "foreign_clones": [
@@ -1236,6 +1236,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "sequestria-nightly-batch-1787625064",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-08-25T02:31:04+00:00",
+          "ended_at": "2026-08-25T02:43:28+00:00",
+          "elapsed_s": 747,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Fixed a real cross-repo bug (consulte silently failing on gh-sign hosts, hf7y/bibliothecaire#65/#66) and used the fix to file a real #9 research request (#67); all three sequestria issues remain correctly gated on Zach (#29 deploy, #9 sends, #6 milestone) with sharper findings recorded, not restated."
+        },
+        {
           "run_id": "sequestria-nightly-batch-1787579478",
           "job": "sequestria-nightly-batch",
           "started_at": "2026-08-24T13:51:18+00:00",
@@ -1302,31 +1319,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed #24 (billing wall genuinely resolved, evidenced by #23/#25 merging clean tonight), shipped PR #28 (Instagram ad PNG raster export) merged to main -- #9 and #6 remain, both correctly gated on Zach's own action (sends, account creation)."
-        },
-        {
-          "run_id": "sequestria-nightly-batch-1787220663",
-          "job": "sequestria-nightly-batch",
-          "started_at": "2026-08-20T10:11:03+00:00",
-          "ended_at": "2026-08-20T10:15:33+00:00",
-          "elapsed_s": 273,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Queue is 3 issues (#24 billing, #9 outreach, #6 milestone), all re-verified tonight and genuinely blocked on Zach's own action (GitHub Actions billing account, 5th outreach target search exhausted last night, storefront/checkout need an account under his identity); confirmed no SVG rasterizer available (rsvg-convert/cairosvg/GdkPixbuf gir all absent, no sudo) so the ad PNG export stays blocked too -- no new mechanism found, nothing invented."
         }
       ],
       "last_run": {
-        "run_id": "sequestria-nightly-batch-1787579478",
+        "run_id": "sequestria-nightly-batch-1787625064",
         "job": "sequestria-nightly-batch",
-        "started_at": "2026-08-24T13:51:18+00:00",
-        "ended_at": "2026-08-24T13:56:59+00:00",
-        "elapsed_s": 344,
+        "started_at": "2026-08-25T02:31:04+00:00",
+        "ended_at": "2026-08-25T02:43:28+00:00",
+        "elapsed_s": 747,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1336,7 +1336,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "3 open issues (#29,#9,#6) all correctly gated on Zach; re-verified each independently tonight (repo-create wall, DAC-target search via new sources, draft link-rot, deploy alternative evaluated as identity call not built), commented #29/#9 with findings, no commits \u2014 nothing in scope was actually buildable"
+        "claimed_reason": "Fixed a real cross-repo bug (consulte silently failing on gh-sign hosts, hf7y/bibliothecaire#65/#66) and used the fix to file a real #9 research request (#67); all three sequestria issues remain correctly gated on Zach (#29 deploy, #9 sends, #6 milestone) with sharper findings recorded, not restated."
       },
       "containment": {
         "foreign_clones": [
@@ -1616,17 +1616,17 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-25T02:40:01Z",
+    "generated": "2026-08-25T02:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-25T03:10:01Z",
+    "valid_until": "2026-08-25T03:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
-    "uptime": "up 1 day, 9 hours, 37 minutes",
+    "uptime": "up 1 day, 9 hours, 47 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
