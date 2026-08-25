@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-25T16:30:02Z",
-  "valid_until": "2026-08-26T20:30:02Z",
+  "generated": "2026-08-25T16:40:04Z",
+  "valid_until": "2026-08-26T20:40:04Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -275,8 +275,42 @@
       "armed": false,
       "cron": [],
       "release_tick": null,
-      "runs": [],
-      "last_run": null,
+      "runs": [
+        {
+          "run_id": "crt-nightly-batch-1787675215",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-08-25T16:26:55+00:00",
+          "ended_at": "2026-08-25T16:33:42+00:00",
+          "elapsed_s": 410,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #64: deleted 19 dangling script-path sentences across 12 files, merged via PR #68; defere --scan --all exits 0"
+        }
+      ],
+      "last_run": {
+        "run_id": "crt-nightly-batch-1787675215",
+        "job": "crt-nightly-batch",
+        "started_at": "2026-08-25T16:26:55+00:00",
+        "ended_at": "2026-08-25T16:33:42+00:00",
+        "elapsed_s": 410,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Closed #64: deleted 19 dangling script-path sentences across 12 files, merged via PR #68; defere --scan --all exits 0"
+      },
       "containment": {
         "foreign_clones": [
           {
@@ -1644,10 +1678,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-25T16:30:01Z",
+    "generated": "2026-08-25T16:40:04Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-25T17:00:01Z",
+    "valid_until": "2026-08-25T17:10:04Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1655,7 +1689,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 23 hours, 27 minutes",
+    "uptime": "up 1 day, 23 hours, 37 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
