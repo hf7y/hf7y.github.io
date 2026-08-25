@@ -1,15 +1,15 @@
 {
   "schema": 2,
-  "generated": "2026-08-24T03:30:42Z",
-  "valid_until": "2026-08-25T07:30:42Z",
+  "generated": "2026-08-25T02:35:47Z",
+  "valid_until": "2026-08-26T06:35:47Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "CUT",
-  "reason": "19 verb(s); 5 green, 0 red, 0 pending, 3 ungated, 0 blind",
-  "main_sha": "42cfcab",
-  "ci_run": "32686638346",
-  "build_id": "2026-08-24T033024Z",
-  "blocked_streak": 0,
+  "decision": "BLOCKED",
+  "reason": "a project's default branch is RED -- 4 green, 1 red, 0 pending, 3 ungated, 0 blind",
+  "main_sha": "83b92fb",
+  "ci_run": "32801963739",
+  "build_id": null,
+  "blocked_streak": 1,
   "last_cut": {
     "at": "2026-08-24T03:30:42Z",
     "decision": "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-25T02:35:47Z",
+      "decision": "BLOCKED",
+      "reason": "a project's default branch is RED -- 4 green, 1 red, 0 pending, 3 ungated, 0 blind",
+      "main_sha": "83b92fb",
+      "ci_run": "32801963739",
+      "build_id": null
+    },
     {
       "at": "2026-08-24T03:30:42Z",
       "decision": "CUT",
