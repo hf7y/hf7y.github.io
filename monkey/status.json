@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-25T16:40:04Z",
-  "valid_until": "2026-08-26T20:40:04Z",
+  "generated": "2026-08-25T16:50:03Z",
+  "valid_until": "2026-08-26T20:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -23,6 +23,38 @@
           },
           {
             "path": "/home/abletim/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "apms",
+      "uid": 3016,
+      "armed": false,
+      "cron": [],
+      "release_tick": null,
+      "runs": [],
+      "last_run": null,
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/apms/Documents/Projects/apms",
+            "origin": "https://github.com/hf7y/apms-2173.git"
+          },
+          {
+            "path": "/home/apms/Documents/Projects/realisateur",
+            "origin": "https://github.com/hf7y/realisateur.git"
+          },
+          {
+            "path": "/home/apms/Documents/Projects/scheduler",
             "origin": "https://github.com/hf7y/scheduler.git"
           }
         ],
@@ -1678,10 +1710,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-25T16:40:04Z",
+    "generated": "2026-08-25T16:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-25T17:10:04Z",
+    "valid_until": "2026-08-25T17:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1689,7 +1721,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 23 hours, 37 minutes",
+    "uptime": "up 1 day, 23 hours, 47 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
