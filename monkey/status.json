@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-25T22:10:02Z",
-  "valid_until": "2026-08-27T02:10:02Z",
+  "generated": "2026-08-25T22:20:02Z",
+  "valid_until": "2026-08-27T02:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -1920,10 +1920,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-25T22:10:01Z",
+    "generated": "2026-08-25T22:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-25T22:40:01Z",
+    "valid_until": "2026-08-25T22:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1931,7 +1931,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 5 hours, 7 minutes",
+    "uptime": "up 2 days, 5 hours, 17 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
