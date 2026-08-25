@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-25T04:20:02Z",
-  "valid_until": "2026-08-26T08:20:02Z",
+  "generated": "2026-08-25T04:30:02Z",
+  "valid_until": "2026-08-26T08:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -408,6 +408,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1787631124",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-25T04:12:04+00:00",
+          "ended_at": "2026-08-25T04:26:27+00:00",
+          "elapsed_s": 866,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed+merged negative-keep_snapshots validation gap (PR #75); filed shared-/tmp cross-tenant contamination near-miss as realisateur#620; all 9 gardien backlog issues re-confirmed genuinely blocked (host access or Zach's decision), none closeable tonight."
+        },
+        {
           "run_id": "gardien-nightly-batch-1787613124",
           "job": "gardien-nightly-batch",
           "started_at": "2026-08-24T23:12:04+00:00",
@@ -474,31 +491,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "gardien-nightly-batch-1787437924",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-08-22T22:32:04+00:00",
-          "ended_at": "2026-08-22T22:41:09+00:00",
-          "elapsed_s": 547,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Continuation: confirmed PR #65 (3 stress-test bug fixes) merged+CI green, updated the report to cover it, found+fixed+merged a 4th real bug (PR #66: quarantine dest-collision from ':' sanitization silently overwrote one of two colliding files, losing its content) with a repro'd pre/post-fix test, 227/227 green; all remaining open issues (#6, #8, #23, #25, #26, #29, #30, #31) are blocked on Zach's decision or another repo's self-dev, no state change since the last check."
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1787613124",
+        "run_id": "gardien-nightly-batch-1787631124",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-08-24T23:12:04+00:00",
-        "ended_at": "2026-08-24T23:24:15+00:00",
-        "elapsed_s": 733,
+        "started_at": "2026-08-25T04:12:04+00:00",
+        "ended_at": "2026-08-25T04:26:27+00:00",
+        "elapsed_s": 866,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -507,8 +507,8 @@
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Found+fixed a real ~1-in-6 flaky --verify-restore failure (write_git_hygiene_snapshot leaked its mtime bump into restored copies), merged as PR #74; remaining open issues are all blocked on real host access or a human decision."
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Fixed+merged negative-keep_snapshots validation gap (PR #75); filed shared-/tmp cross-tenant contamination near-miss as realisateur#620; all 9 gardien backlog issues re-confirmed genuinely blocked (host access or Zach's decision), none closeable tonight."
       },
       "containment": {
         "foreign_clones": [
@@ -1616,10 +1616,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-25T04:20:01Z",
+    "generated": "2026-08-25T04:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-25T04:50:01Z",
+    "valid_until": "2026-08-25T05:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1627,7 +1627,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 11 hours, 17 minutes",
+    "uptime": "up 1 day, 11 hours, 27 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
