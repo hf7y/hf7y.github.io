@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-25T17:50:02Z",
-  "valid_until": "2026-08-26T21:50:02Z",
+  "generated": "2026-08-25T18:00:04Z",
+  "valid_until": "2026-08-26T22:00:04Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -79,8 +79,42 @@
         "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/apms/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
       "release_tick": null,
-      "runs": [],
-      "last_run": null,
+      "runs": [
+        {
+          "run_id": "apms-nightly-batch-1787680129",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-08-25T17:48:49+00:00",
+          "ended_at": "2026-08-25T17:56:59+00:00",
+          "elapsed_s": 493,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #13 (postmortem-via-zaxon, PR #39 merged): built+tested zaxon.py MCP client and postmortem.py three-question loop. #28 stays open, correctly blocked on the Box pipeline which still doesn't exist."
+        }
+      ],
+      "last_run": {
+        "run_id": "apms-nightly-batch-1787680129",
+        "job": "apms-nightly-batch",
+        "started_at": "2026-08-25T17:48:49+00:00",
+        "ended_at": "2026-08-25T17:56:59+00:00",
+        "elapsed_s": 493,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Closed #13 (postmortem-via-zaxon, PR #39 merged): built+tested zaxon.py MCP client and postmortem.py three-question loop. #28 stays open, correctly blocked on the Box pipeline which still doesn't exist."
+      },
       "containment": {
         "foreign_clones": [
           {
@@ -1750,10 +1784,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-25T17:50:01Z",
+    "generated": "2026-08-25T18:00:04Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-25T18:20:01Z",
+    "valid_until": "2026-08-25T18:30:04Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1761,7 +1795,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 47 minutes",
+    "uptime": "up 2 days, 57 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
