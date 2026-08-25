@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-25T12:40:02Z",
-  "valid_until": "2026-08-26T16:40:02Z",
+  "generated": "2026-08-25T12:50:03Z",
+  "valid_until": "2026-08-26T16:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -1364,6 +1364,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "vim-arcade-nightly-batch-1787661425",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-25T12:37:05+00:00",
+          "ended_at": "2026-08-25T12:49:14+00:00",
+          "elapsed_s": 732,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed and merged #189 (map header stale-cache bug); #190, #191, #193 remain open and actionable"
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1787613424",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-08-24T23:17:04+00:00",
@@ -1430,31 +1447,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed #187 (reaped 13 prose lines over the ratchet, re-accepted at 2963, merged PR #188); only #181 remains open and it's a DECISION issue waiting on Zach's call on sort order"
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1787183823",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-08-19T23:57:03+00:00",
-          "ended_at": "2026-08-20T00:04:02+00:00",
-          "elapsed_s": 422,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "PR #182 fixes #173's needs-owner predicate (tests green locally, 977/977) but is blocked on a GH Actions billing wall, not code; #181 is a DECISION issue waiting on Zach's sort-order call -- nothing else actionable."
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1787613424",
+        "run_id": "vim-arcade-nightly-batch-1787661425",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-08-24T23:17:04+00:00",
-        "ended_at": "2026-08-24T23:23:10+00:00",
-        "elapsed_s": 369,
+        "started_at": "2026-08-25T12:37:05+00:00",
+        "ended_at": "2026-08-25T12:49:14+00:00",
+        "elapsed_s": 732,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1464,7 +1464,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #194 (defere --scan --all now exits 0, PR #197 merged); #189/#190/#191/#193 remain open and actionable for next run"
+        "claimed_reason": "Fixed and merged #189 (map header stale-cache bug); #190, #191, #193 remain open and actionable"
       },
       "containment": {
         "foreign_clones": [
@@ -1616,10 +1616,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-25T12:40:01Z",
+    "generated": "2026-08-25T12:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-25T13:10:01Z",
+    "valid_until": "2026-08-25T13:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1627,7 +1627,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 19 hours, 37 minutes",
+    "uptime": "up 1 day, 19 hours, 47 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
