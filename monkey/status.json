@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-25T14:30:02Z",
-  "valid_until": "2026-08-26T18:30:02Z",
+  "generated": "2026-08-25T14:40:03Z",
+  "valid_until": "2026-08-26T18:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -276,6 +276,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1787668265",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-25T14:31:05+00:00",
+          "ended_at": "2026-08-25T14:31:55+00:00",
+          "elapsed_s": 53,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Both open issues (97, 91) are unresolved BLOCKED-ON-HUMAN asks for secrets/host access only Zach can grant; re-verified premises still hold (no ECOSYSTEM_ISSUES_TOKEN secret set, migration-landed.sh unchanged); nothing actionable."
+        },
+        {
           "run_id": "ecosim-nightly-batch-1787613064",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-24T23:11:04+00:00",
@@ -342,41 +359,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "closed #62 (milestone-issue convention confirmed but realisateur declined a mechanical reader, and the migration it measured is finished) via PR #106, merged; all 5 remaining open issues (#97, #91, #68, #54, #53) are NO-DECISION/DECISION items blocked on Zach, no human reply since asked"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1787437864",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-22T22:31:04+00:00",
-          "ended_at": "2026-08-22T22:36:23+00:00",
-          "elapsed_s": 321,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "closed #103 (settled ecosim's role with evidence: no live clock or verb on main, only migration-landed.sh reachable via CI); remaining 6 open issues are all blocked on a Zach decision or a still-unmet precondition (#62), re-verified today"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1787613064",
+        "run_id": "ecosim-nightly-batch-1787668265",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-24T23:11:04+00:00",
-        "ended_at": "2026-08-24T23:19:31+00:00",
-        "elapsed_s": 509,
+        "started_at": "2026-08-25T14:31:05+00:00",
+        "ended_at": "2026-08-25T14:31:55+00:00",
+        "elapsed_s": 53,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Closed #54 via merged PR #108 (cron_log sensor, monitors rsyslog cron logging per host); remaining #97/#91 are still BLOCKED WAITING ON A HUMAN (estate token / root-capable reader on monkey), no non-agent-stamped reply yet."
+        "claimed_reason": "Both open issues (97, 91) are unresolved BLOCKED-ON-HUMAN asks for secrets/host access only Zach can grant; re-verified premises still hold (no ECOSYSTEM_ISSUES_TOKEN secret set, migration-landed.sh unchanged); nothing actionable."
       },
       "containment": {
         "foreign_clones": [
@@ -407,6 +407,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "gardien-nightly-batch-1787668325",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-25T14:32:05+00:00",
+          "ended_at": "2026-08-25T14:39:28+00:00",
+          "elapsed_s": 446,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Fixed+merged PR #76 (media_audit.project_dirs/media_dirs now reject non-string/empty entries, closing the same TypeError/silent-cwd-scan gap #75 closed for keep_snapshots); 236/236 tests green on main. All 9 open issues re-confirmed still genuinely blocked (host SSH access, basheur#8/#9 unmerged, Zach decisions on #26/#31/#30/#29) -- no movement since the 04:25 pass, nothing actionable left to pick up without external action."
+        },
         {
           "run_id": "gardien-nightly-batch-1787631124",
           "job": "gardien-nightly-batch",
@@ -474,31 +491,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Landed the --verify-restore exclude-pattern bug fix (merged pre-existing PR #69 after finding it duplicated my own #71, which I closed), filed hf7y/gardien#72 for a host-wide dead self-hosted-CI-runner outage that blocks every future PR's required check; remaining 9 open issues are all blocked on real host/data access I don't have or another party's own decision."
-        },
-        {
-          "run_id": "gardien-nightly-batch-1787460723",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-08-23T04:52:03+00:00",
-          "ended_at": "2026-08-23T05:05:23+00:00",
-          "elapsed_s": 803,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 3,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1787631124",
+        "run_id": "gardien-nightly-batch-1787668325",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-08-25T04:12:04+00:00",
-        "ended_at": "2026-08-25T04:26:27+00:00",
-        "elapsed_s": 866,
+        "started_at": "2026-08-25T14:32:05+00:00",
+        "ended_at": "2026-08-25T14:39:28+00:00",
+        "elapsed_s": 446,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -507,8 +507,8 @@
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed+merged negative-keep_snapshots validation gap (PR #75); filed shared-/tmp cross-tenant contamination near-miss as realisateur#620; all 9 gardien backlog issues re-confirmed genuinely blocked (host access or Zach's decision), none closeable tonight."
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Fixed+merged PR #76 (media_audit.project_dirs/media_dirs now reject non-string/empty entries, closing the same TypeError/silent-cwd-scan gap #75 closed for keep_snapshots); 236/236 tests green on main. All 9 open issues re-confirmed still genuinely blocked (host SSH access, basheur#8/#9 unmerged, Zach decisions on #26/#31/#30/#29) -- no movement since the 04:25 pass, nothing actionable left to pick up without external action."
       },
       "containment": {
         "foreign_clones": [
@@ -792,6 +792,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1787668206",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-25T14:30:06+00:00",
+          "ended_at": "2026-08-25T14:32:44+00:00",
+          "elapsed_s": 161,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-nightly-batch-1787631005",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-08-25T04:10:05+00:00",
@@ -858,39 +875,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1787580606",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-24T14:10:06+00:00",
-          "ended_at": "2026-08-24T14:26:56+00:00",
-          "elapsed_s": 1014,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 2,
-          "issues_closed": 2,
-          "prs_opened": 3,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1787631005",
+        "run_id": "realisateur-nightly-batch-1787668206",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-25T04:10:05+00:00",
-        "ended_at": "2026-08-25T04:36:02+00:00",
-        "elapsed_s": 1559,
+        "started_at": "2026-08-25T14:30:06+00:00",
+        "ended_at": "2026-08-25T14:32:44+00:00",
+        "elapsed_s": 161,
         "rc": 0,
         "status": "done",
-        "commits_added": 3,
-        "issues_opened": 1,
-        "issues_closed": 4,
-        "prs_opened": 1,
-        "prs_merged": 2,
-        "verdict_computed": "WORKED",
+        "commits_added": 0,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -919,6 +919,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "scheduler-paced-dev-1787667667",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-25T14:21:07+00:00",
+          "ended_at": "2026-08-25T14:36:32+00:00",
+          "elapsed_s": 928,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed PR #287 (regression test disproving #259's stated cause, run_record_closeout is unconditional); commented #43 (blocked: no ssh/sudo route to mandark, scheduler-side unregistration already done) and #259 (real cause was ROSTER-vs-conf drift, fixed by #282) with concrete evidence; #148/#149/#255 confirmed still correctly blocked on Zach decisions; #281 (dispatch has no CPU/mem containment) is the next well-scoped actionable item."
+        },
         {
           "run_id": "scheduler-paced-dev-1787631664",
           "job": "scheduler-paced-dev",
@@ -986,41 +1003,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #193 by landing+merging PR #278 (retired bin/scheduler's dead -b/blockers CLI surface, BLOCKERS.md long gone); updated #234 with narrowed remaining scope (cmd_focus/cmd_questions_* need their own pass). Pushed directly-mergeable PR to origin/main (1315222) per standing push permission. Actionable work remains: #234's cmd_focus/cmd_questions_* retirement, #264's dead-code reap, #210's two decision-gated duplication items, #275/#259 blocked on cross-account access (re-confirmed this run, no"
-        },
-        {
-          "run_id": "scheduler-paced-dev-1787505664",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-08-23T17:21:04+00:00",
-          "ended_at": "2026-08-23T17:29:25+00:00",
-          "elapsed_s": 504,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Landed+merged PR #277 (#275 fix): scheduler's 16% no-verdict rate traced to agents ending turns on 'I'll check later' promises; append_verdict_closeout() now warns against it, witnessed+tested 57/57; commented #275 narrowing scope to gardien-only remainder (walled off by cross-account containment); re-triaged #43/#148/#259 -- all confirmed still correctly blocked, no new ground"
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1787631664",
+        "run_id": "scheduler-paced-dev-1787667667",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-08-25T04:21:04+00:00",
-        "ended_at": "2026-08-25T04:38:35+00:00",
-        "elapsed_s": 1054,
+        "started_at": "2026-08-25T14:21:07+00:00",
+        "ended_at": "2026-08-25T14:36:32+00:00",
+        "elapsed_s": 928,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 2,
-        "prs_merged": 2,
+        "prs_opened": 1,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed #282's usage-paced-runner.sh half: account mode now reads schedule/ROSTER (roster_state_for/participant_enabled) before _paced*.conf's enabled column, fixing live crt/secretaire drift where both were armed in conf but parked in ROSTER; PR #285 (main) + carry #286 (bashified) merged, tests/paced-roster-authority-witness.sh added, all 57 witnesses green. #282 stays open, narrowed to freeze-check.sh's EXEMPT half -- found a real semantic wall (ROSTER live != freeze-exempt; wiring it that way"
+        "claimed_reason": "Landed PR #287 (regression test disproving #259's stated cause, run_record_closeout is unconditional); commented #43 (blocked: no ssh/sudo route to mandark, scheduler-side unregistration already done) and #259 (real cause was ROSTER-vs-conf drift, fixed by #282) with concrete evidence; #148/#149/#255 confirmed still correctly blocked on Zach decisions; #281 (dispatch has no CPU/mem containment) is the next well-scoped actionable item."
       },
       "containment": {
         "foreign_clones": [],
@@ -1108,6 +1108,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1787667785",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-25T14:23:05+00:00",
+          "ended_at": "2026-08-25T14:36:48+00:00",
+          "elapsed_s": 827,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Absorbed #424 into #420 (draft, still needs Zach); merged #425 dropping tools/appimage-integrate.sh (#410's one unblocked drop item); #410's remaining content/split items are real, unblocked, buildable next"
+        },
+        {
           "run_id": "senechal-nightly-batch-1787631784",
           "job": "senechal-nightly-batch",
           "started_at": "2026-08-25T04:23:04+00:00",
@@ -1174,31 +1191,14 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1787505784",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-08-23T17:23:04+00:00",
-          "ended_at": "2026-08-23T17:35:30+00:00",
-          "elapsed_s": 748,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1787631784",
+        "run_id": "senechal-nightly-batch-1787667785",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-08-25T04:23:04+00:00",
-        "ended_at": "2026-08-25T04:44:24+00:00",
-        "elapsed_s": 1283,
+        "started_at": "2026-08-25T14:23:05+00:00",
+        "ended_at": "2026-08-25T14:36:48+00:00",
+        "elapsed_s": 827,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1208,7 +1208,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Merged #408 (tools/boundary.py fleet/taste registries, PR #421); closed #408; #410/#409/#412 remain real unblocked work, #420 still needs Zach's review"
+        "claimed_reason": "Absorbed #424 into #420 (draft, still needs Zach); merged #425 dropping tools/appimage-integrate.sh (#410's one unblocked drop item); #410's remaining content/split items are real, unblocked, buildable next"
       },
       "containment": {
         "foreign_clones": [
@@ -1492,6 +1492,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1787667964",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-08-25T14:26:04+00:00",
+          "ended_at": "2026-08-25T14:33:50+00:00",
+          "elapsed_s": 469,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "wtul-nightly-batch-1787513164",
           "job": "wtul-nightly-batch",
           "started_at": "2026-08-23T19:26:04+00:00",
@@ -1558,31 +1575,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #10 (track_index) via merged #62; queue still has actionable non-blocked work (#12 airplay.py, #13 backfill) plus several needs-decision/hardware-blocked issues"
-        },
-        {
-          "run_id": "wtul-nightly-batch-1787443564",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-08-23T00:06:04+00:00",
-          "ended_at": "2026-08-23T00:21:26+00:00",
-          "elapsed_s": 925,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 1,
-          "issues_opened": 1,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1787513164",
+        "run_id": "wtul-nightly-batch-1787667964",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-08-23T19:26:04+00:00",
-        "ended_at": "2026-08-23T19:37:56+00:00",
-        "elapsed_s": 715,
+        "started_at": "2026-08-25T14:26:04+00:00",
+        "ended_at": "2026-08-25T14:33:50+00:00",
+        "elapsed_s": 469,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1591,8 +1591,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "verified #64 (better than my draft) is the real fix for #56 and dropped my duplicate; merge is blocked only by the monkey-wtul self-hosted runner being offline (host-wide, 12 runners down), which needs sudo I categorically don't have - documented on the PR for whoever has host access"
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [
@@ -1616,10 +1616,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-25T14:30:01Z",
+    "generated": "2026-08-25T14:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-25T15:00:01Z",
+    "valid_until": "2026-08-25T15:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1627,7 +1627,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 21 hours, 27 minutes",
+    "uptime": "up 1 day, 21 hours, 37 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
