@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-25T17:40:04Z",
-  "valid_until": "2026-08-26T21:40:04Z",
+  "generated": "2026-08-25T17:50:02Z",
+  "valid_until": "2026-08-26T21:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -15,8 +15,42 @@
         "17,37,57 * * * * PACED_MAX_PER_TICK=1 /home/abletim/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
       "release_tick": null,
-      "runs": [],
-      "last_run": null,
+      "runs": [
+        {
+          "run_id": "abletim-nightly-batch-1787679246",
+          "job": "abletim-nightly-batch",
+          "started_at": "2026-08-25T17:34:06+00:00",
+          "ended_at": "2026-08-25T17:41:29+00:00",
+          "elapsed_s": 445,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #11: vendored a course-free .als track-name guard (naming/names.py, lib+CLI) from apms, merged via PR #13, tested against synthetic cases and the GrimeSweepers fixture."
+        }
+      ],
+      "last_run": {
+        "run_id": "abletim-nightly-batch-1787679246",
+        "job": "abletim-nightly-batch",
+        "started_at": "2026-08-25T17:34:06+00:00",
+        "ended_at": "2026-08-25T17:41:29+00:00",
+        "elapsed_s": 445,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Closed #11: vendored a course-free .als track-name guard (naming/names.py, lib+CLI) from apms, merged via PR #13, tested against synthetic cases and the GrimeSweepers fixture."
+      },
       "containment": {
         "foreign_clones": [
           {
@@ -40,8 +74,10 @@
     {
       "account": "apms",
       "uid": 3016,
-      "armed": false,
-      "cron": [],
+      "armed": true,
+      "cron": [
+        "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/apms/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
       "release_tick": null,
       "runs": [],
       "last_run": null,
@@ -1714,10 +1750,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-25T17:40:04Z",
+    "generated": "2026-08-25T17:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-25T18:10:04Z",
+    "valid_until": "2026-08-25T18:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1725,7 +1761,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 37 minutes",
+    "uptime": "up 2 days, 47 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
