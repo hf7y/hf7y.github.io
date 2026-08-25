@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-25T22:30:02Z",
-  "valid_until": "2026-08-27T02:30:02Z",
+  "generated": "2026-08-25T22:40:02Z",
+  "valid_until": "2026-08-27T02:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -1668,6 +1668,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "vim-arcade-nightly-batch-1787696661",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-25T22:24:21+00:00",
+          "ended_at": "2026-08-25T22:30:54+00:00",
+          "elapsed_s": 396,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed #191 (missing scheduler PATH symlink, host env fix, closed); #190 and #193 remain open and actionable, untouched this run (one-issue-per-run)."
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1787661425",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-08-25T12:37:05+00:00",
@@ -1734,41 +1751,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1787383024",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-08-22T07:17:04+00:00",
-          "ended_at": "2026-08-22T07:23:53+00:00",
-          "elapsed_s": 412,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed #187 (reaped 13 prose lines over the ratchet, re-accepted at 2963, merged PR #188); only #181 remains open and it's a DECISION issue waiting on Zach's call on sort order"
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1787661425",
+        "run_id": "vim-arcade-nightly-batch-1787696661",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-08-25T12:37:05+00:00",
-        "ended_at": "2026-08-25T12:49:14+00:00",
-        "elapsed_s": 732,
+        "started_at": "2026-08-25T22:24:21+00:00",
+        "ended_at": "2026-08-25T22:30:54+00:00",
+        "elapsed_s": 396,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_opened": 0,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed and merged #189 (map header stale-cache bug); #190, #191, #193 remain open and actionable"
+        "claimed_reason": "Fixed #191 (missing scheduler PATH symlink, host env fix, closed); #190 and #193 remain open and actionable, untouched this run (one-issue-per-run)."
       },
       "containment": {
         "foreign_clones": [
@@ -1920,10 +1920,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-25T22:30:01Z",
+    "generated": "2026-08-25T22:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-25T23:00:01Z",
+    "valid_until": "2026-08-25T23:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1931,7 +1931,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 5 hours, 27 minutes",
+    "uptime": "up 2 days, 5 hours, 37 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
