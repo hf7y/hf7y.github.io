@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-26T01:40:02Z",
-  "valid_until": "2026-08-27T05:40:02Z",
+  "generated": "2026-08-26T01:50:02Z",
+  "valid_until": "2026-08-27T05:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -213,8 +213,42 @@
       "armed": false,
       "cron": [],
       "release_tick": null,
-      "runs": [],
-      "last_run": null,
+      "runs": [
+        {
+          "run_id": "baudin-nightly-batch-1787707412",
+          "job": "baudin-nightly-batch",
+          "started_at": "2026-08-26T01:23:32+00:00",
+          "ended_at": "2026-08-26T01:42:18+00:00",
+          "elapsed_s": 1129,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 32,
+          "issues_opened": 0,
+          "issues_closed": 3,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Fixed 20-day stale-branch bug (clones repointed master->main), landed #43 (missing gh-comment stamp wrapper, closed #33), closed 2 stale printer issues resolved elsewhere (#36/#41); credential gap (#7) reconfirmed, still blocked on Zach, nothing else actionable"
+        }
+      ],
+      "last_run": {
+        "run_id": "baudin-nightly-batch-1787707412",
+        "job": "baudin-nightly-batch",
+        "started_at": "2026-08-26T01:23:32+00:00",
+        "ended_at": "2026-08-26T01:42:18+00:00",
+        "elapsed_s": 1129,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 32,
+        "issues_opened": 0,
+        "issues_closed": 3,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Fixed 20-day stale-branch bug (clones repointed master->main), landed #43 (missing gh-comment stamp wrapper, closed #33), closed 2 stale printer issues resolved elsewhere (#36/#41); credential gap (#7) reconfirmed, still blocked on Zach, nothing else actionable"
+      },
       "containment": {
         "foreign_clones": [
           {
@@ -1920,10 +1954,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-26T01:40:02Z",
+    "generated": "2026-08-26T01:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-26T02:10:02Z",
+    "valid_until": "2026-08-26T02:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1931,7 +1965,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 hours, 10 minutes",
+    "uptime": "up 2 hours, 20 minutes",
     "root_mount": "rw",
     "guest_error": null,
     "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
