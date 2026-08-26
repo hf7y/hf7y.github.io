@@ -1,15 +1,15 @@
 {
   "schema": 2,
-  "generated": "2026-08-25T02:35:47Z",
-  "valid_until": "2026-08-26T06:35:47Z",
+  "generated": "2026-08-26T02:44:07Z",
+  "valid_until": "2026-08-27T06:44:07Z",
   "cadence_hours": 24,
   "grace_hours": 4,
-  "decision": "BLOCKED",
-  "reason": "a project's default branch is RED -- 4 green, 1 red, 0 pending, 3 ungated, 0 blind",
+  "decision": "ERROR",
+  "reason": "the run failed before the gate could decide",
   "main_sha": "83b92fb",
-  "ci_run": "32801963739",
+  "ci_run": "32923787578",
   "build_id": null,
-  "blocked_streak": 1,
+  "blocked_streak": 2,
   "last_cut": {
     "at": "2026-08-24T03:30:42Z",
     "decision": "CUT",
@@ -25,6 +25,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-26T02:44:07Z",
+      "decision": "ERROR",
+      "reason": "the run failed before the gate could decide",
+      "main_sha": "83b92fb",
+      "ci_run": "32923787578",
+      "build_id": null
+    },
     {
       "at": "2026-08-25T02:35:47Z",
       "decision": "BLOCKED",
