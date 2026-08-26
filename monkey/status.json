@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-26T17:50:02Z",
-  "valid_until": "2026-08-27T21:50:02Z",
+  "generated": "2026-08-26T18:00:05Z",
+  "valid_until": "2026-08-27T22:00:05Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-24T033024Z",
@@ -1956,10 +1956,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-26T17:50:01Z",
+    "generated": "2026-08-26T18:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-26T18:20:01Z",
+    "valid_until": "2026-08-26T18:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1967,7 +1967,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 18 hours, 20 minutes",
+    "uptime": "up 18 hours, 30 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
