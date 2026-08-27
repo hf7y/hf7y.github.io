@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-27T09:50:02Z",
-  "valid_until": "2026-08-28T13:50:02Z",
+  "generated": "2026-08-27T10:00:04Z",
+  "valid_until": "2026-08-28T14:00:04Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-26T210102Z",
@@ -876,6 +876,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1787823576",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-27T09:39:36+00:00",
+          "ended_at": "2026-08-27T09:56:47+00:00",
+          "elapsed_s": 1034,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #97 merged: install-cron.sh + tick.sh give the ordering loop its own clock; check_zach_reply('fc9be547') is real outstanding work"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1787822739",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-08-27T09:25:39+00:00",
@@ -942,41 +959,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "PR #52 (feedback-parse fix, reconciles #51) built+pushed, tests 143/143, blocked on dead self-hosted runner (root-caused: stale OAuth session, needs re-registration); asked Zach re-register vs admin-merge; #19/#20/window-ticket also pending on Zach"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1787450644",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-23T02:04:04+00:00",
-          "ended_at": "2026-08-23T02:06:59+00:00",
-          "elapsed_s": 177,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Fired the standing feedback nudge for real (ticket fb423552, pending); #19/#20 still hard-blocked on creds/hands"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1787822739",
+        "run_id": "groc-mangr-nightly-batch-1787823576",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-27T09:25:39+00:00",
-        "ended_at": "2026-08-27T09:37:47+00:00",
-        "elapsed_s": 731,
+        "started_at": "2026-08-27T09:39:36+00:00",
+        "ended_at": "2026-08-27T09:56:47+00:00",
+        "elapsed_s": 1034,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed #93 (place-order.js now reads Grocy's actual shopping list instead of recomputing), closed #61 (expired premise), merged as PR #96, 283/283 tests; #71's crontab installer is the next concrete step for the milestone."
+        "claimed_reason": "PR #97 merged: install-cron.sh + tick.sh give the ordering loop its own clock; check_zach_reply('fc9be547') is real outstanding work"
       },
       "containment": {
         "foreign_clones": [
@@ -1956,10 +1956,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-27T09:50:02Z",
+    "generated": "2026-08-27T10:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-27T10:20:02Z",
+    "valid_until": "2026-08-27T10:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -1967,7 +1967,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 10 hours, 20 minutes",
+    "uptime": "up 1 day, 10 hours, 30 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
