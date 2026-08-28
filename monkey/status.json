@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-28T00:00:02Z",
-  "valid_until": "2026-08-29T04:00:02Z",
+  "generated": "2026-08-28T00:10:03Z",
+  "valid_until": "2026-08-29T04:10:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -782,6 +782,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1787874870",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-27T23:54:30+00:00",
+          "ended_at": "2026-08-28T00:06:29+00:00",
+          "elapsed_s": 721,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed 2 real config-validation gaps (media_audit.video_extensions/project_scan_max_bytes silently misread, quarantine_dir raw TypeError) via PRs #77/#78, both merged to main (240/240 tests green); rest of backlog (#6,#23,#25,#26,#29,#30,#31,#70) still blocked on external PRs/host access/Zach's decision -- next run can keep sweeping gardien.py's other config-reading call sites (e.g. ssh port/user/identity_file types) for the same class of gap."
+        },
+        {
           "run_id": "gardien-nightly-batch-1787668325",
           "job": "gardien-nightly-batch",
           "started_at": "2026-08-25T14:32:05+00:00",
@@ -848,41 +865,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #72 (CI runner outage resolved), labelled #8 answered, commented on #70 (bibliothecaire#37 already covers item 2, items 1/3/4 need real mandark access this sandbox lacks); found+fixed a real deployed_code_status bug (checkout ahead of upstream misreported as stale), merged as PR #73, main 230/230 green. Remaining issues all blocked on real-host access or another repo's decision; more of gardien.py (build_rsync_cmd, restore_snapshot, main() CLI parsing, media-audit ranking) is still unaudi"
-        },
-        {
-          "run_id": "gardien-nightly-batch-1787505124",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-08-23T17:12:04+00:00",
-          "ended_at": "2026-08-23T17:42:29+00:00",
-          "elapsed_s": 1827,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 1,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Landed the --verify-restore exclude-pattern bug fix (merged pre-existing PR #69 after finding it duplicated my own #71, which I closed), filed hf7y/gardien#72 for a host-wide dead self-hosted-CI-runner outage that blocks every future PR's required check; remaining 9 open issues are all blocked on real host/data access I don't have or another party's own decision."
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1787668325",
+        "run_id": "gardien-nightly-batch-1787874870",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-08-25T14:32:05+00:00",
-        "ended_at": "2026-08-25T14:39:28+00:00",
-        "elapsed_s": 446,
+        "started_at": "2026-08-27T23:54:30+00:00",
+        "ended_at": "2026-08-28T00:06:29+00:00",
+        "elapsed_s": 721,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_opened": 2,
+        "prs_merged": 2,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Fixed+merged PR #76 (media_audit.project_dirs/media_dirs now reject non-string/empty entries, closing the same TypeError/silent-cwd-scan gap #75 closed for keep_snapshots); 236/236 tests green on main. All 9 open issues re-confirmed still genuinely blocked (host SSH access, basheur#8/#9 unmerged, Zach decisions on #26/#31/#30/#29) -- no movement since the 04:25 pass, nothing actionable left to pick up without external action."
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Fixed 2 real config-validation gaps (media_audit.video_extensions/project_scan_max_bytes silently misread, quarantine_dir raw TypeError) via PRs #77/#78, both merged to main (240/240 tests green); rest of backlog (#6,#23,#25,#26,#29,#30,#31,#70) still blocked on external PRs/host access/Zach's decision -- next run can keep sweeping gardien.py's other config-reading call sites (e.g. ssh port/user/identity_file types) for the same class of gap."
       },
       "containment": {
         "foreign_clones": [
@@ -1991,10 +1991,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-28T00:00:02Z",
+    "generated": "2026-08-28T00:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T00:30:02Z",
+    "valid_until": "2026-08-28T00:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2002,7 +2002,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 30 minutes",
+    "uptime": "up 2 days, 40 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
