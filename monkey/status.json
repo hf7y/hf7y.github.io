@@ -1,12 +1,12 @@
 {
   "accounts": [],
-  "generated": "2026-08-28T06:00:01Z",
+  "generated": "2026-08-28T06:10:02Z",
   "host": "monkey",
   "watcher": {
-    "generated": "2026-08-28T06:00:01Z",
+    "generated": "2026-08-28T06:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T06:30:01Z",
+    "valid_until": "2026-08-28T06:40:02Z",
     "verdict": "DEGRADED",
     "why": "sshd sent its banner but the session stalled -- no answer in 60s",
     "vm_state": "running",
