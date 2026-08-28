@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-28T20:50:03Z",
-  "valid_until": "2026-08-30T00:50:03Z",
+  "generated": "2026-08-28T21:00:03Z",
+  "valid_until": "2026-08-30T01:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -413,6 +413,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "bibliothecaire-research-1787950325",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-28T20:52:05+00:00",
+          "ended_at": "2026-08-28T20:52:48+00:00",
+          "elapsed_s": 46,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "queue empty of actionable work: only open issue (#71) is needs-human, awaiting Zach's accept/reject on price-as-signal theme, 30d default-after"
+        },
+        {
           "run_id": "bibliothecaire-research-1787944331",
           "job": "bibliothecaire-research",
           "started_at": "2026-08-28T19:12:11+00:00",
@@ -479,41 +496,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Merged PR #65 (fixed prose-ratchet CI failure) and closed issue #66; #69 (validate/merge #68) and #70 (4 answered decisions) remain actionable, unblocked"
-        },
-        {
-          "run_id": "bibliothecaire-research-1787871126",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-08-27T22:52:06+00:00",
-          "ended_at": "2026-08-27T22:54:53+00:00",
-          "elapsed_s": 169,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Answered issue #67 (5th LA DAC org): out of scope for cueille's catalogue backends (no DOI/author/title handle), tied to open #36 WebSearch-grant decision; delivered honest 'could not look' and closed. Request queue now empty; #69 and #66 remain open (non-research, self-dev) for a future pass."
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1787944331",
+        "run_id": "bibliothecaire-research-1787950325",
         "job": "bibliothecaire-research",
-        "started_at": "2026-08-28T19:12:11+00:00",
-        "ended_at": "2026-08-28T19:17:45+00:00",
-        "elapsed_s": 337,
+        "started_at": "2026-08-28T20:52:05+00:00",
+        "ended_at": "2026-08-28T20:52:48+00:00",
+        "elapsed_s": 46,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Merged stranded draft PR #74 (works.json slice of quotes data model); no open request-queue issues remain, only open non-deferred issue is #71 which needs-human (DECISION already posed 2026-08-27, default-after 30d) \u2014 nothing actionable until Zach answers."
+        "claimed_reason": "queue empty of actionable work: only open issue (#71) is needs-human, awaiting Zach's accept/reject on price-as-signal theme, 30d default-after"
       },
       "containment": {
         "foreign_clones": [
@@ -1133,6 +1133,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1787949849",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-28T20:44:09+00:00",
+          "ended_at": "2026-08-28T20:57:57+00:00",
+          "elapsed_s": 830,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #117 merged (#89 leading-burn signal); #82 tile-instability root-caused; #59/#87/#88/#106 blocked or awaiting Zach, all reconfirmed"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1787945051",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-08-28T19:24:11+00:00",
@@ -1199,41 +1216,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1787879050",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-28T01:04:10+00:00",
-          "ended_at": "2026-08-28T01:14:46+00:00",
-          "elapsed_s": 639,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 3,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1787945051",
+        "run_id": "groc-mangr-nightly-batch-1787949849",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-28T19:24:11+00:00",
-        "ended_at": "2026-08-28T19:41:33+00:00",
-        "elapsed_s": 1045,
+        "started_at": "2026-08-28T20:44:09+00:00",
+        "ended_at": "2026-08-28T20:57:57+00:00",
+        "elapsed_s": 830,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 3,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 0,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Landed prior run's ebb1227 (found already superseded on main via #111/#109), then re-ran test+prose against main's tip via draft PR #116 as #115 owed once monkey came back online -- both passed clean, posted results, closed #115 and #116."
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "PR #117 merged (#89 leading-burn signal); #82 tile-instability root-caused; #59/#87/#88/#106 blocked or awaiting Zach, all reconfirmed"
       },
       "containment": {
         "foreign_clones": [
@@ -2215,10 +2215,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-28T20:50:02Z",
+    "generated": "2026-08-28T21:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T21:20:02Z",
+    "valid_until": "2026-08-28T21:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2226,7 +2226,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 16 hours, 10 minutes",
+    "uptime": "up 2 days, 16 hours, 20 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
