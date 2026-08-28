@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-28T22:50:03Z",
-  "valid_until": "2026-08-30T02:50:03Z",
+  "generated": "2026-08-28T23:00:03Z",
+  "valid_until": "2026-08-30T03:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -149,6 +149,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1787957406",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-08-28T22:50:06+00:00",
+          "ended_at": "2026-08-28T22:54:28+00:00",
+          "elapsed_s": 265,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #59: bullets.py --post now reads the live Canvas topic (not the local ledger.yml render), sendoff.py carries the finding count non-blocking beside the link; PR #63 merged to main."
+        },
+        {
           "run_id": "apms-nightly-batch-1787952604",
           "job": "apms-nightly-batch",
           "started_at": "2026-08-28T21:30:04+00:00",
@@ -215,41 +232,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed #43: zaxon.ask() gated behind ZAXON_LIVE=1, merged in PR #44 to main; #41/#28 remain open for a future run"
-        },
-        {
-          "run_id": "apms-nightly-batch-1787685638",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-08-25T19:20:38+00:00",
-          "ended_at": "2026-08-25T19:25:24+00:00",
-          "elapsed_s": 289,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed hf7y/apms-2173#40: zaxon.py now speaks crt's queued ask_zach contract (options, length guard, queued/stale handling); merged via PR #42. #28 stays open, re-verified blocked (no Box pipeline). #41 (adopt abletim's names.py) is queue-actionable but untouched tonight."
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1787952604",
+        "run_id": "apms-nightly-batch-1787957406",
         "job": "apms-nightly-batch",
-        "started_at": "2026-08-28T21:30:04+00:00",
-        "ended_at": "2026-08-28T21:34:56+00:00",
-        "elapsed_s": 295,
+        "started_at": "2026-08-28T22:50:06+00:00",
+        "ended_at": "2026-08-28T22:54:28+00:00",
+        "elapsed_s": 265,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 3,
-        "prs_opened": 0,
-        "prs_merged": 0,
+        "issues_closed": 1,
+        "prs_opened": 2,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Closed all 3 open issues (48,49,50) as premise-expired -- their invisibility complaint against session.py was already fixed by 5a138e7 hours before they were filed, verified live; queue is now empty."
+        "claimed_reason": "Closed #59: bullets.py --post now reads the live Canvas topic (not the local ledger.yml render), sendoff.py carries the finding count non-blocking beside the link; PR #63 merged to main."
       },
       "containment": {
         "foreign_clones": [
@@ -1184,6 +1184,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1787957048",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-28T22:44:08+00:00",
+          "ended_at": "2026-08-28T22:50:37+00:00",
+          "elapsed_s": 391,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1787953446",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-08-28T21:44:06+00:00",
@@ -1250,41 +1267,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1787887448",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-28T03:24:08+00:00",
-          "ended_at": "2026-08-28T03:38:03+00:00",
-          "elapsed_s": 838,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 4,
-          "issues_opened": 1,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Live cron ticks exposed a real cold-start matching bug (fixed, PR #107, cart now reaches $30.78 within band); #106 (Nuts naming) needs Zach"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1787953446",
+        "run_id": "groc-mangr-nightly-batch-1787957048",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-28T21:44:06+00:00",
-        "ended_at": "2026-08-28T21:51:50+00:00",
-        "elapsed_s": 467,
+        "started_at": "2026-08-28T22:44:08+00:00",
+        "ended_at": "2026-08-28T22:50:37+00:00",
+        "elapsed_s": 391,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "PR #118 merged (#89 favourite-score measurement); milestone's real blockers (window confirmation, #106 Nuts) remain waiting on Zach"
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [
@@ -2266,10 +2266,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-28T22:50:02Z",
+    "generated": "2026-08-28T23:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T23:20:02Z",
+    "valid_until": "2026-08-28T23:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2277,7 +2277,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 18 hours, 10 minutes",
+    "uptime": "up 2 days, 18 hours, 20 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
