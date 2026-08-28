@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-28T23:10:02Z",
-  "valid_until": "2026-08-30T03:10:02Z",
+  "generated": "2026-08-28T23:20:02Z",
+  "valid_until": "2026-08-30T03:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -1072,6 +1072,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1787958726",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-28T23:12:06+00:00",
+          "ended_at": "2026-08-28T23:18:58+00:00",
+          "elapsed_s": 415,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #89 (CLAUDE.md/.claude/commands audit -- both already lean, no dead pointers, 8166 bytes unchanged); found and fixed 3 dead .claude/FOCUS.md pointers found during the same sweep, merged as PR #90 (e93beab); all 9 remaining open issues + PR #59 blocked on Zach's review or real mandark/dexter access."
+        },
+        {
           "run_id": "gardien-nightly-batch-1787953926",
           "job": "gardien-nightly-batch",
           "started_at": "2026-08-28T21:52:06+00:00",
@@ -1138,41 +1155,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Fixed+merged PR #83 (ssh.host/user/identity_file/port config validation, 243->249 tests), refreshed PR #59 twice tonight after its own merge and again after #83's merge; swept remaining config-validation surface and found no more gaps. Everything else stays blocked on real mandark/dexter access, basheur's self-dev, or Zach's PR #59 review."
-        },
-        {
-          "run_id": "gardien-nightly-batch-1787889125",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-08-28T03:52:05+00:00",
-          "ended_at": "2026-08-28T03:59:51+00:00",
-          "elapsed_s": 469,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Refreshed and unblocked PR #59 (bashified-becomes-main) against both main and bashified tips, fixed a stale python tests.yml that would've broken CI post-merge; PR is green/mergeable, waiting on Zach's DECISION. Backlog otherwise unchanged (#6 waits on basheur's self-dev, #23/#25/#29/#30/#31/#70 wait on real host access this sandbox lacks)."
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1787953926",
+        "run_id": "gardien-nightly-batch-1787958726",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-08-28T21:52:06+00:00",
-        "ended_at": "2026-08-28T22:10:20+00:00",
-        "elapsed_s": 1097,
+        "started_at": "2026-08-28T23:12:06+00:00",
+        "ended_at": "2026-08-28T23:18:58+00:00",
+        "elapsed_s": 415,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 2,
-        "prs_merged": 2,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Merged PR #87 (media-quarantine id/category validation) and PR #88 (unquarantine manifest missing-path validation), refreshed PR #59 twice; #23 got its first comment naming the mandark-access wall. Six other durable issues re-confirmed unchanged, no new decisions -- next run should re-check for Zach comments and keep sweeping for more raw-exception gaps."
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Closed #89 (CLAUDE.md/.claude/commands audit -- both already lean, no dead pointers, 8166 bytes unchanged); found and fixed 3 dead .claude/FOCUS.md pointers found during the same sweep, merged as PR #90 (e93beab); all 9 remaining open issues + PR #59 blocked on Zach's review or real mandark/dexter access."
       },
       "containment": {
         "foreign_clones": [
@@ -2283,10 +2283,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-28T23:10:01Z",
+    "generated": "2026-08-28T23:20:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T23:40:01Z",
+    "valid_until": "2026-08-28T23:50:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2294,7 +2294,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 18 hours, 30 minutes",
+    "uptime": "up 2 days, 18 hours, 40 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
