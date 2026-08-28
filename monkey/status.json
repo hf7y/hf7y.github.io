@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-28T02:20:02Z",
-  "valid_until": "2026-08-29T06:20:02Z",
+  "generated": "2026-08-28T02:30:02Z",
+  "valid_until": "2026-08-29T06:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -1884,6 +1884,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1787883967",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-08-28T02:26:07+00:00",
+          "ended_at": "2026-08-28T02:28:54+00:00",
+          "elapsed_s": 171,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Merged #95 (CLAUDE.md focus-commit drift fix, verified premise first) and closed #96; pytest 692 passed/9 skipped/0 failed"
+        },
+        {
           "run_id": "wtul-nightly-batch-1787871968",
           "job": "wtul-nightly-batch",
           "started_at": "2026-08-27T23:06:08+00:00",
@@ -1950,41 +1967,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "verified #64 (better than my draft) is the real fix for #56 and dropped my duplicate; merge is blocked only by the monkey-wtul self-hosted runner being offline (host-wide, 12 runners down), which needs sudo I categorically don't have - documented on the PR for whoever has host access"
-        },
-        {
-          "run_id": "wtul-nightly-batch-1787504763",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-08-23T17:06:03+00:00",
-          "ended_at": "2026-08-23T17:16:33+00:00",
-          "elapsed_s": 632,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1787871968",
+        "run_id": "wtul-nightly-batch-1787883967",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-08-27T23:06:08+00:00",
-        "ended_at": "2026-08-27T23:14:14+00:00",
-        "elapsed_s": 488,
+        "started_at": "2026-08-28T02:26:07+00:00",
+        "ended_at": "2026-08-28T02:28:54+00:00",
+        "elapsed_s": 171,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 1,
+        "prs_opened": 0,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Closed #66 (GCAL_KEY moved to Script Properties), merged as PR #94/eb5124c; rest of open queue (#84,#81,#78,#74,#53,#37,#19,#9) is blocked on a human decision, hardware absent from this VM, or not yet due."
+        "claimed_reason": "Merged #95 (CLAUDE.md focus-commit drift fix, verified premise first) and closed #96; pytest 692 passed/9 skipped/0 failed"
       },
       "containment": {
         "foreign_clones": [
@@ -2008,10 +2008,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-28T02:20:01Z",
+    "generated": "2026-08-28T02:30:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T02:50:01Z",
+    "valid_until": "2026-08-28T03:00:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2019,7 +2019,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 2 hours, 50 minutes",
+    "uptime": "up 2 days, 3 hours, 0 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
