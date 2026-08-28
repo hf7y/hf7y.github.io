@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-28T21:40:03Z",
-  "valid_until": "2026-08-30T01:40:03Z",
+  "generated": "2026-08-28T21:50:02Z",
+  "valid_until": "2026-08-30T01:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -16,6 +16,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "abletim-nightly-batch-1787953025",
+          "job": "abletim-nightly-batch",
+          "started_at": "2026-08-28T21:37:05+00:00",
+          "ended_at": "2026-08-28T21:47:08+00:00",
+          "elapsed_s": 606,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Landed+merged #23 (region-mixdown --cut-regions on #2); rest of queue blocked from this env (#18 needs human, #6 parked, #5 needs dexter which is unreachable here, #2's remaining items need a real fixture this spike doesn't have)"
+        },
         {
           "run_id": "abletim-nightly-batch-1787944627",
           "job": "abletim-nightly-batch",
@@ -83,41 +100,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed #15: DEFAULT-AFTER action already executed via PR #16, remaining census-scope question answered by evidence (option 3); rest of queue is blocked on a human (#18 M4L/Ableton session, #5 dexter-side ssh trust) or correctly parked (#6)."
-        },
-        {
-          "run_id": "abletim-nightly-batch-1787685217",
-          "job": "abletim-nightly-batch",
-          "started_at": "2026-08-25T19:13:37+00:00",
-          "ended_at": "2026-08-25T19:24:13+00:00",
-          "elapsed_s": 639,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 1,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Answered Zach's ask on #4 with exact M4L run-through steps (PR #17, merged, prose-ratchet-clean); closed #4 per his request and opened #18 to carry the human-present session forward. One closed, one opened -- debt rule satisfied."
         }
       ],
       "last_run": {
-        "run_id": "abletim-nightly-batch-1787944627",
+        "run_id": "abletim-nightly-batch-1787953025",
         "job": "abletim-nightly-batch",
-        "started_at": "2026-08-28T19:17:07+00:00",
-        "ended_at": "2026-08-28T19:27:45+00:00",
-        "elapsed_s": 641,
+        "started_at": "2026-08-28T21:37:05+00:00",
+        "ended_at": "2026-08-28T21:47:08+00:00",
+        "elapsed_s": 606,
         "rc": 0,
         "status": "done",
-        "commits_added": 3,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Landed the prior run's stuck PR #21 (rebased, reaped 48 prose lines to clear the ratchet gate, verified tests, merged); queue's remaining items all need either a human (M4L, dexter access) or a design call from Zach (region-mixdown) that can't be verified without real ffmpeg/media."
+        "claimed_reason": "Landed+merged #23 (region-mixdown --cut-regions on #2); rest of queue blocked from this env (#18 needs human, #6 parked, #5 needs dexter which is unreachable here, #2's remaining items need a real fixture this spike doesn't have)"
       },
       "containment": {
         "foreign_clones": [
@@ -786,6 +786,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1787952969",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-08-28T21:36:09+00:00",
+          "ended_at": "2026-08-28T21:42:12+00:00",
+          "elapsed_s": 365,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Issue #33 (structured CSV/JSON export, no DB connector) resolved and shipped as PR #83 against master; left open/unmerged per CLAUDE.md's 'never merge your own work' (see issue #80's live incident about exactly this), also fixed human-decisions.md Q9 and ROADMAP.md which still said OPEN after #33 was decided; writing-lint passes, no new issues opened"
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1787950567",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-08-28T20:56:07+00:00",
@@ -838,11 +855,11 @@
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1787950567",
+        "run_id": "dcp-gate-site-nightly-batch-1787952969",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-08-28T20:56:07+00:00",
-        "ended_at": "2026-08-28T21:00:26+00:00",
-        "elapsed_s": 262,
+        "started_at": "2026-08-28T21:36:09+00:00",
+        "ended_at": "2026-08-28T21:42:12+00:00",
+        "elapsed_s": 365,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -851,8 +868,8 @@
         "prs_opened": 1,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Opened PR #82 for #23 (outreach draft generator, tested, lint-clean, not merged per repo rule); #8/#16/#74/#75 still ready for an agent"
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Issue #33 (structured CSV/JSON export, no DB connector) resolved and shipped as PR #83 against master; left open/unmerged per CLAUDE.md's 'never merge your own work' (see issue #80's live incident about exactly this), also fixed human-decisions.md Q9 and ROADMAP.md which still said OPEN after #33 was decided; writing-lint passes, no new issues opened"
       },
       "containment": {
         "foreign_clones": [
@@ -2232,10 +2249,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-28T21:40:02Z",
+    "generated": "2026-08-28T21:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T22:10:02Z",
+    "valid_until": "2026-08-28T22:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2243,7 +2260,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 17 hours, 0 minutes",
+    "uptime": "up 2 days, 17 hours, 10 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
