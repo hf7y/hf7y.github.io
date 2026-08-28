@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-28T02:10:02Z",
-  "valid_until": "2026-08-29T06:10:02Z",
+  "generated": "2026-08-28T02:20:02Z",
+  "valid_until": "2026-08-29T06:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -328,6 +328,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "bibliothecaire-research-1787883125",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-28T02:12:05+00:00",
+          "ended_at": "2026-08-28T02:17:57+00:00",
+          "elapsed_s": 354,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Merged PR #65 (fixed prose-ratchet CI failure) and closed issue #66; #69 (validate/merge #68) and #70 (4 answered decisions) remain actionable, unblocked"
+        },
+        {
           "run_id": "bibliothecaire-research-1787871126",
           "job": "bibliothecaire-research",
           "started_at": "2026-08-27T22:52:06+00:00",
@@ -394,41 +411,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #43/#45/#46 (already decided, no build needed). Built and shipped #44's IIIF scan-matching (glane iiif, PR hf7y/bibliothecaire#62, 10/18 books matched to real archive.org page-92 scans); merge is blocked only on the self-hosted CI runner (monkey-bibliothecaire) being offline, not on review or code -- next run should check gh pr checks 62 and merge/close #44 once it's green."
-        },
-        {
-          "run_id": "bibliothecaire-research-1787460723",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-08-23T04:52:03+00:00",
-          "ended_at": "2026-08-23T04:52:51+00:00",
-          "elapsed_s": 50,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Queue empty of actionable work: only open issues are #43-46, all needs-human DECISION items awaiting Zach's judgment call."
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1787871126",
+        "run_id": "bibliothecaire-research-1787883125",
         "job": "bibliothecaire-research",
-        "started_at": "2026-08-27T22:52:06+00:00",
-        "ended_at": "2026-08-27T22:54:53+00:00",
-        "elapsed_s": 169,
+        "started_at": "2026-08-28T02:12:05+00:00",
+        "ended_at": "2026-08-28T02:17:57+00:00",
+        "elapsed_s": 354,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 1,
         "prs_opened": 0,
-        "prs_merged": 0,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Answered issue #67 (5th LA DAC org): out of scope for cueille's catalogue backends (no DOI/author/title handle), tied to open #36 WebSearch-grant decision; delivered honest 'could not look' and closed. Request queue now empty; #69 and #66 remain open (non-research, self-dev) for a future pass."
+        "claimed_reason": "Merged PR #65 (fixed prose-ratchet CI failure) and closed issue #66; #69 (validate/merge #68) and #70 (4 answered decisions) remain actionable, unblocked"
       },
       "containment": {
         "foreign_clones": [
@@ -2008,10 +2008,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-28T02:10:01Z",
+    "generated": "2026-08-28T02:20:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T02:40:01Z",
+    "valid_until": "2026-08-28T02:50:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2019,7 +2019,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 2 hours, 40 minutes",
+    "uptime": "up 2 days, 2 hours, 50 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
