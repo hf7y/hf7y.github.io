@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-27T23:50:02Z",
-  "valid_until": "2026-08-29T03:50:02Z",
+  "generated": "2026-08-28T00:00:02Z",
+  "valid_until": "2026-08-29T04:00:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -650,6 +650,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1787874667",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-27T23:51:07+00:00",
+          "ended_at": "2026-08-27T23:55:15+00:00",
+          "elapsed_s": 250,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "queue has only #97 and #91, both NO-DECISION blocked on Zach (secret grant / host root access); re-verified premises still hold, nothing actionable"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1787668265",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-25T14:31:05+00:00",
@@ -716,31 +733,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed #68 (2nd independent reap-prose pass confirms nothing further clears the protection bar); the 4 remaining open issues (#53, #54, #91, #97) all re-verified as genuinely blocked on a Zach decision or grant -- no secret set for #97, no root-capable reader reachable for #91, #53/#54 explicitly need his call."
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1787460663",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-23T04:51:03+00:00",
-          "ended_at": "2026-08-23T04:59:43+00:00",
-          "elapsed_s": 522,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "closed #62 (milestone-issue convention confirmed but realisateur declined a mechanical reader, and the migration it measured is finished) via PR #106, merged; all 5 remaining open issues (#97, #91, #68, #54, #53) are NO-DECISION/DECISION items blocked on Zach, no human reply since asked"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1787668265",
+        "run_id": "ecosim-nightly-batch-1787874667",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-25T14:31:05+00:00",
-        "ended_at": "2026-08-25T14:31:55+00:00",
-        "elapsed_s": 53,
+        "started_at": "2026-08-27T23:51:07+00:00",
+        "ended_at": "2026-08-27T23:55:15+00:00",
+        "elapsed_s": 250,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -750,7 +750,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Both open issues (97, 91) are unresolved BLOCKED-ON-HUMAN asks for secrets/host access only Zach can grant; re-verified premises still hold (no ECOSYSTEM_ISSUES_TOKEN secret set, migration-landed.sh unchanged); nothing actionable."
+        "claimed_reason": "queue has only #97 and #91, both NO-DECISION blocked on Zach (secret grant / host root access); re-verified premises still hold, nothing actionable"
       },
       "containment": {
         "foreign_clones": [
@@ -1991,10 +1991,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-27T23:50:01Z",
+    "generated": "2026-08-28T00:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T00:20:01Z",
+    "valid_until": "2026-08-28T00:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2002,7 +2002,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 20 minutes",
+    "uptime": "up 2 days, 30 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
