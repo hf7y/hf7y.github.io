@@ -1,12 +1,12 @@
 {
   "accounts": [],
-  "generated": "2026-08-28T10:30:01Z",
+  "generated": "2026-08-28T10:40:02Z",
   "host": "monkey",
   "watcher": {
-    "generated": "2026-08-28T10:30:01Z",
+    "generated": "2026-08-28T10:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T11:00:01Z",
+    "valid_until": "2026-08-28T11:10:02Z",
     "verdict": "DOWN",
     "why": "VM running but sshd is silent",
     "vm_state": "running",
