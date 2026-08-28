@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-28T03:40:05Z",
-  "valid_until": "2026-08-29T07:40:05Z",
+  "generated": "2026-08-28T03:50:02Z",
+  "valid_until": "2026-08-29T07:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -589,6 +589,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1787887814",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-08-28T03:30:14+00:00",
+          "ended_at": "2026-08-28T03:43:06+00:00",
+          "elapsed_s": 775,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "closed crt#93 (hf7y/crt#97 merged): ask_zach/revise_zach_question return refusals as data instead of raising into MCP's generic error wrapper"
+        },
+        {
           "run_id": "crt-nightly-batch-1787884214",
           "job": "crt-nightly-batch",
           "started_at": "2026-08-28T02:30:14+00:00",
@@ -655,31 +672,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Queue re-checked: #48 blocked on Zach's inline-comment decision, #15 blocked on needs-host #16 -- both re-triaged 2h ago, nothing changed, nothing actionable"
-        },
-        {
-          "run_id": "crt-nightly-batch-1787682638",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-08-25T18:30:38+00:00",
-          "ended_at": "2026-08-25T18:58:10+00:00",
-          "elapsed_s": 1655,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed crt#67: built+merged Zaxon question queue (PR #70, b05d151), full suite green, dexter pull/restart still needs a human (ssh dexter fails host-key verification from this runner)"
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1787884214",
+        "run_id": "crt-nightly-batch-1787887814",
         "job": "crt-nightly-batch",
-        "started_at": "2026-08-28T02:30:14+00:00",
-        "ended_at": "2026-08-28T02:39:21+00:00",
-        "elapsed_s": 550,
+        "started_at": "2026-08-28T03:30:14+00:00",
+        "ended_at": "2026-08-28T03:43:06+00:00",
+        "elapsed_s": 775,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -688,8 +688,8 @@
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "DONE",
+        "claimed_reason": "closed crt#93 (hf7y/crt#97 merged): ask_zach/revise_zach_question return refusals as data instead of raising into MCP's generic error wrapper"
       },
       "containment": {
         "foreign_clones": [
@@ -2059,10 +2059,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-28T03:40:02Z",
+    "generated": "2026-08-28T03:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T04:10:02Z",
+    "valid_until": "2026-08-28T04:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2070,7 +2070,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 4 hours, 10 minutes",
+    "uptime": "up 2 days, 4 hours, 20 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
