@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-28T00:40:02Z",
-  "valid_until": "2026-08-29T04:40:02Z",
+  "generated": "2026-08-28T00:50:03Z",
+  "valid_until": "2026-08-29T04:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -1483,6 +1483,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1787876639",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-28T00:23:59+00:00",
+          "ended_at": "2026-08-28T00:40:47+00:00",
+          "elapsed_s": 1010,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 1,
+          "issues_closed": 2,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed absorb-notices.py's crontab dedup key (composite host+account+tag), absorbed #428/#430, fixed a live prose-ratchet CI failure on the same branch, pushed PR #420 green; real backlog remains (#396, #410 remainder, #409, #412, #439) and #420/#451 wait on Zach's own decisions."
+        },
+        {
           "run_id": "senechal-nightly-batch-1787871789",
           "job": "senechal-nightly-batch",
           "started_at": "2026-08-27T23:03:09+00:00",
@@ -1549,41 +1566,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Landed #419 (absorb-notices.py routes fleet filings to registry/, resolving #369); absorbed the 19 waiting door filings for real as draft PR #420; #408 (merge the two fleet/taste registries) is real, buildable, non-trivial work left for next run."
-        },
-        {
-          "run_id": "senechal-nightly-batch-1787580184",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-08-24T14:03:04+00:00",
-          "ended_at": "2026-08-24T14:22:19+00:00",
-          "elapsed_s": 1158,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 1,
-          "issues_closed": 2,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Fixed+merged #415 (installe verb installs were failing UNDECLARED: missing door + broken prose-not-typed notify-senechal call, both fixed); closed #404 (already resolved by prior PR #413). Actionable work remains: #408 (merge two fleet/taste boundary registries -- also the cause of the pre-existing, unrelated 'suites' CI failure on main), #409-412, #405, #407, #387."
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1787871789",
+        "run_id": "senechal-nightly-batch-1787876639",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-08-27T23:03:09+00:00",
-        "ended_at": "2026-08-27T23:25:46+00:00",
-        "elapsed_s": 1360,
-        "rc": 1,
-        "status": "FAILED (ceiling: max turns reached)",
+        "started_at": "2026-08-28T00:23:59+00:00",
+        "ended_at": "2026-08-28T00:40:47+00:00",
+        "elapsed_s": 1010,
+        "rc": 0,
+        "status": "done",
         "commits_added": 0,
         "issues_opened": 1,
-        "issues_closed": 10,
+        "issues_closed": 2,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED-CUTOFF",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Fixed absorb-notices.py's crontab dedup key (composite host+account+tag), absorbed #428/#430, fixed a live prose-ratchet CI failure on the same branch, pushed PR #420 green; real backlog remains (#396, #410 remainder, #409, #412, #439) and #420/#451 wait on Zach's own decisions."
       },
       "containment": {
         "foreign_clones": [
@@ -1991,10 +1991,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-28T00:40:01Z",
+    "generated": "2026-08-28T00:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T01:10:01Z",
+    "valid_until": "2026-08-28T01:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2002,7 +2002,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 1 hour, 10 minutes",
+    "uptime": "up 2 days, 1 hour, 20 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
