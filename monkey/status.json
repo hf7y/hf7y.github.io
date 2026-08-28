@@ -1,12 +1,12 @@
 {
   "accounts": [],
-  "generated": "2026-08-28T15:00:01Z",
+  "generated": "2026-08-28T15:10:01Z",
   "host": "monkey",
   "watcher": {
-    "generated": "2026-08-28T15:00:01Z",
+    "generated": "2026-08-28T15:10:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-28T15:30:01Z",
+    "valid_until": "2026-08-28T15:40:01Z",
     "verdict": "DOWN",
     "why": "VM is saved",
     "vm_state": "saved",
