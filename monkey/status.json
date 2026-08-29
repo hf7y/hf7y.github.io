@@ -1,24 +1,2338 @@
 {
-  "accounts": [],
-  "generated": "2026-08-29T02:00:01Z",
+  "schema": 2,
   "host": "monkey",
+  "generated": "2026-08-29T02:10:03Z",
+  "valid_until": "2026-08-30T06:10:03Z",
+  "cadence_hours": 24,
+  "grace_hours": 4,
+  "verb_build": "2026-08-27T114014Z",
+  "accounts": [
+    {
+      "account": "abletim",
+      "uid": 3015,
+      "armed": true,
+      "cron": [
+        "17,37,57 * * * * PACED_MAX_PER_TICK=1 /home/abletim/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "abletim-nightly-batch-1787963827",
+          "job": "abletim-nightly-batch",
+          "started_at": "2026-08-29T00:37:07+00:00",
+          "ended_at": "2026-08-29T00:38:32+00:00",
+          "elapsed_s": 88,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Audited CLAUDE.md + .claude/commands (issue #24): all mechanisms verified live, nothing dead to cut, closed with findings."
+        },
+        {
+          "run_id": "abletim-nightly-batch-1787953025",
+          "job": "abletim-nightly-batch",
+          "started_at": "2026-08-28T21:37:05+00:00",
+          "ended_at": "2026-08-28T21:47:08+00:00",
+          "elapsed_s": 606,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Landed+merged #23 (region-mixdown --cut-regions on #2); rest of queue blocked from this env (#18 needs human, #6 parked, #5 needs dexter which is unreachable here, #2's remaining items need a real fixture this spike doesn't have)"
+        },
+        {
+          "run_id": "abletim-nightly-batch-1787944627",
+          "job": "abletim-nightly-batch",
+          "started_at": "2026-08-28T19:17:07+00:00",
+          "ended_at": "2026-08-28T19:27:45+00:00",
+          "elapsed_s": 641,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Landed the prior run's stuck PR #21 (rebased, reaped 48 prose lines to clear the ratchet gate, verified tests, merged); queue's remaining items all need either a human (M4L, dexter access) or a design call from Zach (region-mixdown) that can't be verified without real ffmpeg/media."
+        },
+        {
+          "run_id": "abletim-nightly-batch-1787893024",
+          "job": "abletim-nightly-batch",
+          "started_at": "2026-08-28T04:57:04+00:00",
+          "ended_at": "2026-08-28T05:13:40+00:00",
+          "elapsed_s": 1169,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": null,
+          "prs_opened": null,
+          "prs_merged": null,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "abletim-nightly-batch-1787884625",
+          "job": "abletim-nightly-batch",
+          "started_at": "2026-08-28T02:37:05+00:00",
+          "ended_at": "2026-08-28T02:39:08+00:00",
+          "elapsed_s": 126,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Validated and merged draft PR #19 (focus-commit drift fix), closed issue #20; remaining open issues (#18 needs-human, #5 needs dexter ssh access unreachable from here, #6 parked, #2 large milestone) are not actionable tonight"
+        }
+      ],
+      "last_run": {
+        "run_id": "abletim-nightly-batch-1787963827",
+        "job": "abletim-nightly-batch",
+        "started_at": "2026-08-29T00:37:07+00:00",
+        "ended_at": "2026-08-29T00:38:32+00:00",
+        "elapsed_s": 88,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 0,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Audited CLAUDE.md + .claude/commands (issue #24): all mechanisms verified live, nothing dead to cut, closed with findings."
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/abletim/Documents/Projects/realisateur",
+            "origin": "https://github.com/hf7y/realisateur.git"
+          },
+          {
+            "path": "/home/abletim/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "apms",
+      "uid": 3016,
+      "armed": true,
+      "cron": [
+        "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/apms/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "apms-nightly-batch-1787967006",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-08-29T01:30:06+00:00",
+          "ended_at": "2026-08-29T01:34:22+00:00",
+          "elapsed_s": 259,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Built #67's new_announcement exemption in canvas.py, merged as PR #71, closed #67 with landing comment; remaining open issues need Zach (needs-human) or live Canvas/relay access this run's credentials don't have"
+        },
+        {
+          "run_id": "apms-nightly-batch-1787957406",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-08-28T22:50:06+00:00",
+          "ended_at": "2026-08-28T22:54:28+00:00",
+          "elapsed_s": 265,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #59: bullets.py --post now reads the live Canvas topic (not the local ledger.yml render), sendoff.py carries the finding count non-blocking beside the link; PR #63 merged to main."
+        },
+        {
+          "run_id": "apms-nightly-batch-1787952604",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-08-28T21:30:04+00:00",
+          "ended_at": "2026-08-28T21:34:56+00:00",
+          "elapsed_s": 295,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 3,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed all 3 open issues (48,49,50) as premise-expired -- their invisibility complaint against session.py was already fixed by 5a138e7 hours before they were filed, verified live; queue is now empty."
+        },
+        {
+          "run_id": "apms-nightly-batch-1787896231",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-08-28T05:50:31+00:00",
+          "ended_at": "2026-08-28T19:16:17+00:00",
+          "elapsed_s": 48349,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty: #45 closed by a concurrent run (PR #46 merged), #28 closed tonight as premise-expired -- the landed Box design (#46) is a bare shared-folder link with no submission-time code hook, so there was nothing left for a warn-vs-fail naming policy to attach to, and the decorative-pattern bug it also named was already fixed by #47."
+        },
+        {
+          "run_id": "apms-nightly-batch-1787884205",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-08-28T02:30:05+00:00",
+          "ended_at": "2026-08-28T02:35:06+00:00",
+          "elapsed_s": 303,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 1,
+          "issues_closed": 1,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #41: vendored abletim's generic name guard (naming_guard.py), rewrote names.py as a thin course-pattern wrapper calling it, dropped course.yml's match_on, updated README:70; merged via PR #47, verified against synthetic .als fixtures. #28 stays correctly deferred (no Box pipeline yet)."
+        }
+      ],
+      "last_run": {
+        "run_id": "apms-nightly-batch-1787967006",
+        "job": "apms-nightly-batch",
+        "started_at": "2026-08-29T01:30:06+00:00",
+        "ended_at": "2026-08-29T01:34:22+00:00",
+        "elapsed_s": 259,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Built #67's new_announcement exemption in canvas.py, merged as PR #71, closed #67 with landing comment; remaining open issues need Zach (needs-human) or live Canvas/relay access this run's credentials don't have"
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/apms/Documents/Projects/apms",
+            "origin": "https://github.com/hf7y/apms-2173.git"
+          },
+          {
+            "path": "/home/apms/Documents/Projects/realisateur",
+            "origin": "https://github.com/hf7y/realisateur.git"
+          },
+          {
+            "path": "/home/apms/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "baudin",
+      "uid": 3005,
+      "armed": true,
+      "cron": [
+        "18,38,58 * * * * PACED_MAX_PER_TICK=1 /home/baudin/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "baudin-nightly-batch-1787966288",
+          "job": "baudin-nightly-batch",
+          "started_at": "2026-08-29T01:18:08+00:00",
+          "ended_at": "2026-08-29T01:24:21+00:00",
+          "elapsed_s": 376,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "every live-touching issue blocked on #7 (no ha_token on baudin@monkey); repo-only checks clean, no bug found; posted one research finding on #14"
+        },
+        {
+          "run_id": "baudin-nightly-batch-1787963888",
+          "job": "baudin-nightly-batch",
+          "started_at": "2026-08-29T00:38:08+00:00",
+          "ended_at": "2026-08-29T00:46:50+00:00",
+          "elapsed_s": 525,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Kitchen taper (#19) built + merged (PR #60); #7 (no HA token on baudin@monkey) still blocks deploy/verify for #17/#19/#22/#30 and every other live-instance task"
+        },
+        {
+          "run_id": "baudin-nightly-batch-1787959086",
+          "job": "baudin-nightly-batch",
+          "started_at": "2026-08-28T23:18:06+00:00",
+          "ended_at": "2026-08-28T23:24:23+00:00",
+          "elapsed_s": 382,
+          "rc": 1,
+          "status": "FAILED",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "baudin-nightly-batch-1787955488",
+          "job": "baudin-nightly-batch",
+          "started_at": "2026-08-28T22:18:08+00:00",
+          "ended_at": "2026-08-28T22:28:35+00:00",
+          "elapsed_s": 629,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "New #18 finding posted (measured-palette gate dead since launch, needs recalibration not a code fix); queue otherwise fully triaged and blocked on #7 (no ha_token on baudin@monkey) or human/physical-presence steps -- nothing safely closeable tonight"
+        },
+        {
+          "run_id": "baudin-nightly-batch-1787950685",
+          "job": "baudin-nightly-batch",
+          "started_at": "2026-08-28T20:58:05+00:00",
+          "ended_at": "2026-08-28T21:05:46+00:00",
+          "elapsed_s": 463,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Shipped #56 (.selfdev-secrets, merged a46e0eb) declaring baudin's 5 runtime credentials for setup-selfdev-project.sh per realisateur#480; everything else in the queue needs ha_token (#7, still absent) or a human decision (#29/#13/#14/#18) -- nothing else actionable tonight."
+        }
+      ],
+      "last_run": {
+        "run_id": "baudin-nightly-batch-1787966288",
+        "job": "baudin-nightly-batch",
+        "started_at": "2026-08-29T01:18:08+00:00",
+        "ended_at": "2026-08-29T01:24:21+00:00",
+        "elapsed_s": 376,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 0,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "every live-touching issue blocked on #7 (no ha_token on baudin@monkey); repo-only checks clean, no bug found; posted one research finding on #14"
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/baudin/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "bibliothecaire",
+      "uid": 3002,
+      "armed": true,
+      "cron": [
+        "12,32,52 * * * * PACED_MAX_PER_TICK=1 /home/bibliothecaire/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "bibliothecaire-research-1787963526",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-29T00:32:06+00:00",
+          "ended_at": "2026-08-29T00:32:28+00:00",
+          "elapsed_s": 24,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty: only 4 open issues, all labeled deferred/durable; no eligible request or actionable issue to claim."
+        },
+        {
+          "run_id": "bibliothecaire-research-1787955126",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-28T22:12:06+00:00",
+          "ended_at": "2026-08-28T22:22:23+00:00",
+          "elapsed_s": 619,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Delivered #71 (price-as-signal theme, 7 quotes re-derived after payload loss), merged as #75; queue now empty"
+        },
+        {
+          "run_id": "bibliothecaire-research-1787950325",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-28T20:52:05+00:00",
+          "ended_at": "2026-08-28T20:52:48+00:00",
+          "elapsed_s": 46,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "queue empty of actionable work: only open issue (#71) is needs-human, awaiting Zach's accept/reject on price-as-signal theme, 30d default-after"
+        },
+        {
+          "run_id": "bibliothecaire-research-1787944331",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-28T19:12:11+00:00",
+          "ended_at": "2026-08-28T19:17:45+00:00",
+          "elapsed_s": 337,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Merged stranded draft PR #74 (works.json slice of quotes data model); no open request-queue issues remain, only open non-deferred issue is #71 which needs-human (DECISION already posed 2026-08-27, default-after 30d) \u2014 nothing actionable until Zach answers."
+        },
+        {
+          "run_id": "bibliothecaire-research-1787891525",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-08-28T04:32:05+00:00",
+          "ended_at": "2026-08-28T04:46:08+00:00",
+          "elapsed_s": 845,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 3,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #36 + #70; landed #72/#73 (merged) and draft #74 for #35/#38/#37; remaining opens (#35,#37,#38,#56,#71) all genuinely blocked on Zach/root, nothing actionable left"
+        }
+      ],
+      "last_run": {
+        "run_id": "bibliothecaire-research-1787963526",
+        "job": "bibliothecaire-research",
+        "started_at": "2026-08-29T00:32:06+00:00",
+        "ended_at": "2026-08-29T00:32:28+00:00",
+        "elapsed_s": 24,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 0,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Queue empty: only 4 open issues, all labeled deferred/durable; no eligible request or actionable issue to claim."
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/bibliothecaire/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [
+          "/srv/ecosystem1-vault/.git/refs/heads/main",
+          "/srv/ecosystem1-vault/.git/refs/remotes/origin/main",
+          "/srv/ecosystem1-vault/.git/HEAD",
+          "/srv/ecosystem1-vault/.git/ORIG_HEAD",
+          "/srv/ecosystem1-vault/.git/objects/62",
+          "/srv/ecosystem1-vault/.git/objects/62/544ddabe2e405949406d02ad52d10f0c6cb650",
+          "/srv/ecosystem1-vault/.git/objects/a8",
+          "/srv/ecosystem1-vault/.git/objects/a8/e88b7f34b5e9296e80897d2a0093cfda62195e",
+          "/srv/ecosystem1-vault/.git/objects/bc",
+          "/srv/ecosystem1-vault/.git/objects/bc/642c67f605b91ad7c0b3a1815702b935e3ebda",
+          "/srv/ecosystem1-vault/.git/objects/47",
+          "/srv/ecosystem1-vault/.git/objects/47/f7696b4530db4a6ded6bd48778019809b8d3a3",
+          "/srv/ecosystem1-vault/.git/objects/e4",
+          "/srv/ecosystem1-vault/.git/objects/e4/ba6ef6bd8ddd6b71fca50e6a3d6617a4cdaedb",
+          "/srv/ecosystem1-vault/.git/objects/ef",
+          "/srv/ecosystem1-vault/.git/objects/ef/2a356ea57fc25dcacf380117cd9fa0ba78ed4d",
+          "/srv/ecosystem1-vault/.git/objects/80",
+          "/srv/ecosystem1-vault/.git/objects/80/7af83e078fa1da5d3b21d1e84deb91477d20f3",
+          "/srv/ecosystem1-vault/.git/objects/c5",
+          "/srv/ecosystem1-vault/.git/objects/c5/ee5289eca0bdc2b9687772b5afc1909d3ea295",
+          "... and 110 more"
+        ],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "chezz",
+      "uid": 3003,
+      "armed": true,
+      "cron": [
+        "7,27,47 * * * * PACED_MAX_PER_TICK=1 /home/chezz/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "chezz-nightly-batch-1787968027",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-08-29T01:47:07+00:00",
+          "ended_at": "2026-08-29T02:03:54+00:00",
+          "elapsed_s": 1009,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Fixed a live false-positive in the answer-channel stamp regex (gh-sign.sh's account@host format wasn't recognized), landed via PR #71; re-verified full backlog/decision-rot -- everything else open is genuinely blocked on a human or credential already named in its issue."
+        },
+        {
+          "run_id": "chezz-nightly-batch-1787960840",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-08-28T23:47:20+00:00",
+          "ended_at": "2026-08-29T00:06:12+00:00",
+          "elapsed_s": 1135,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #69 (prose audit, PR #70 merged); #68 investigated and tagged question; #53/#54/#66/#15/#67 all re-checked, still genuinely blocked on human/external walls already documented -- nothing actionable left this tick"
+        },
+        {
+          "run_id": "chezz-nightly-batch-1787954827",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-08-28T22:07:07+00:00",
+          "ended_at": "2026-08-28T22:23:33+00:00",
+          "elapsed_s": 989,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 1,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Bug/feature backlog fully triaged (nothing new); #35 closed; scheduler ask fixed cross-repo (scheduler#335/#336, now that repo's call). Remaining open issues (#61,#53,#54,#15) are each blocked on a named human/credential action, and #66 awaits Zach's answer -- nothing left chezz can pick up unattended right now"
+        },
+        {
+          "run_id": "chezz-nightly-batch-1787947636",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-08-28T20:07:16+00:00",
+          "ended_at": "2026-08-28T20:36:00+00:00",
+          "elapsed_s": 1727,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 4,
+          "prs_opened": 3,
+          "prs_merged": 3,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "chezz-nightly-batch-1787893628",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-08-28T05:07:08+00:00",
+          "ended_at": "2026-08-28T05:36:03+00:00",
+          "elapsed_s": 1737,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 3,
+          "prs_opened": 3,
+          "prs_merged": 3,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "3 issues closed (#56/#48 reviewed+merged other-project PRs, #9 stale infra gaps re-measured resolved), #54's actual worker-floor fix landed (PR #59) with dmesg-access caveat noted; remaining 7 open issues all genuinely blocked on a human call (#53 WRITE_TOKEN, #54 dmesg confirmation, #30 money call, #32 API key, #15/#11/#35 no fork to resolve tonight)"
+        }
+      ],
+      "last_run": {
+        "run_id": "chezz-nightly-batch-1787968027",
+        "job": "chezz-nightly-batch",
+        "started_at": "2026-08-29T01:47:07+00:00",
+        "ended_at": "2026-08-29T02:03:54+00:00",
+        "elapsed_s": 1009,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Fixed a live false-positive in the answer-channel stamp regex (gh-sign.sh's account@host format wasn't recognized), landed via PR #71; re-verified full backlog/decision-rot -- everything else open is genuinely blocked on a human or credential already named in its issue."
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/chezz/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "crt",
+      "uid": 3006,
+      "armed": true,
+      "cron": [
+        "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/crt/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "crt-nightly-batch-1787968211",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-08-29T01:50:11+00:00",
+          "ended_at": "2026-08-29T02:03:23+00:00",
+          "elapsed_s": 794,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "closed crt#109 via PR #111 (merged e16d53e): fixed two dead prose pointers in CLAUDE.md/nightly-batch.md, verified all others live"
+        },
+        {
+          "run_id": "crt-nightly-batch-1787964614",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-08-29T00:50:14+00:00",
+          "ended_at": "2026-08-29T01:03:50+00:00",
+          "elapsed_s": 819,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 7,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "crt-nightly-batch-1787956218",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-08-28T22:30:18+00:00",
+          "ended_at": "2026-08-28T22:48:30+00:00",
+          "elapsed_s": 1095,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "crt-nightly-batch-1787952610",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-08-28T21:30:10+00:00",
+          "ended_at": "2026-08-28T21:38:37+00:00",
+          "elapsed_s": 510,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "crt-nightly-batch-1787949016",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-08-28T20:30:16+00:00",
+          "ended_at": "2026-08-28T20:44:20+00:00",
+          "elapsed_s": 846,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        }
+      ],
+      "last_run": {
+        "run_id": "crt-nightly-batch-1787968211",
+        "job": "crt-nightly-batch",
+        "started_at": "2026-08-29T01:50:11+00:00",
+        "ended_at": "2026-08-29T02:03:23+00:00",
+        "elapsed_s": 794,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "closed crt#109 via PR #111 (merged e16d53e): fixed two dead prose pointers in CLAUDE.md/nightly-batch.md, verified all others live"
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/crt/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "dcp-gate-site",
+      "uid": 3017,
+      "armed": true,
+      "cron": [
+        "56 5 * * * /home/dcp-gate-site/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
+        "16,36,56 * * * * PACED_MAX_PER_TICK=1 /home/dcp-gate-site/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "dcp-gate-site-nightly-batch-1787968572",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-08-29T01:56:12+00:00",
+          "ended_at": "2026-08-29T02:05:53+00:00",
+          "elapsed_s": 584,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #42 (libdcp verify catalogue) via PR #88; 6 more agent-actionable issues remain routed (#8, #16, #34, #74, #75, #80)."
+        },
+        {
+          "run_id": "dcp-gate-site-nightly-batch-1787966171",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-08-29T01:16:11+00:00",
+          "ended_at": "2026-08-29T01:22:53+00:00",
+          "elapsed_s": 405,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed PR #87 for #86 (agent-facing prose audit); left issue open per no-self-merge rule; 7 other ready issues remain (#16, #34, #42, #74, #75, #80, #8-blocked-on-decision)"
+        },
+        {
+          "run_id": "dcp-gate-site-nightly-batch-1787957770",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-08-28T22:56:10+00:00",
+          "ended_at": "2026-08-28T23:00:51+00:00",
+          "elapsed_s": 284,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "PR #85 opened for #41 (FilmFreeway/CineSend competitor writeup, lint-clean); left unmerged per CLAUDE.md's no-self-merge rule, issue #41 left open with status comment pending human merge"
+        },
+        {
+          "run_id": "dcp-gate-site-nightly-batch-1787952969",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-08-28T21:36:09+00:00",
+          "ended_at": "2026-08-28T21:42:12+00:00",
+          "elapsed_s": 365,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Issue #33 (structured CSV/JSON export, no DB connector) resolved and shipped as PR #83 against master; left open/unmerged per CLAUDE.md's 'never merge your own work' (see issue #80's live incident about exactly this), also fixed human-decisions.md Q9 and ROADMAP.md which still said OPEN after #33 was decided; writing-lint passes, no new issues opened"
+        },
+        {
+          "run_id": "dcp-gate-site-nightly-batch-1787950567",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-08-28T20:56:07+00:00",
+          "ended_at": "2026-08-28T21:00:26+00:00",
+          "elapsed_s": 262,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Opened PR #82 for #23 (outreach draft generator, tested, lint-clean, not merged per repo rule); #8/#16/#74/#75 still ready for an agent"
+        }
+      ],
+      "last_run": {
+        "run_id": "dcp-gate-site-nightly-batch-1787968572",
+        "job": "dcp-gate-site-nightly-batch",
+        "started_at": "2026-08-29T01:56:12+00:00",
+        "ended_at": "2026-08-29T02:05:53+00:00",
+        "elapsed_s": 584,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 0,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Closed #42 (libdcp verify catalogue) via PR #88; 6 more agent-actionable issues remain routed (#8, #16, #34, #74, #75, #80)."
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/dcp-gate-site/Documents/Projects/realisateur",
+            "origin": "https://github.com/hf7y/realisateur.git"
+          },
+          {
+            "path": "/home/dcp-gate-site/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          },
+          {
+            "path": "/home/dcp-gate-site/Documents/Projects/senechal",
+            "origin": "https://github.com/hf7y/senechal.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "ecosim",
+      "uid": 3001,
+      "armed": true,
+      "cron": [
+        "11,31,51 * * * * PACED_MAX_PER_TICK=1 /home/ecosim/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)",
+        "7,37 * * * * ECOSIM_SENSOR_BIN=/usr/local/bin/sonde /home/ecosim/Documents/Projects/ecosim/bin/ecosim-sensor-tick.sh # ecosim:ecosim-sensor:TICK"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "ecosim-nightly-batch-1787963468",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-29T00:31:08+00:00",
+          "ended_at": "2026-08-29T00:38:52+00:00",
+          "elapsed_s": 467,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #115 (dead claim-drift pointer fixed, PR #116 merged); remaining #97 and #113 are human-blocked/tracker-only, nothing actionable"
+        },
+        {
+          "run_id": "ecosim-nightly-batch-1787952665",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-28T21:31:05+00:00",
+          "ended_at": "2026-08-28T21:35:52+00:00",
+          "elapsed_s": 290,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #91 (retired clones/creds rows in migration-landed.sh, PR #114 merged); only remaining open issues are #97 (blocked on Zach's gh secret set \u2014 verified still unset) and #113 (milestone tracker blocked on #97), both human-only"
+        },
+        {
+          "run_id": "ecosim-nightly-batch-1787944325",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-28T19:12:05+00:00",
+          "ended_at": "2026-08-28T19:15:10+00:00",
+          "elapsed_s": 188,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "queue has only #111/#97/#91; all three blocked on human (secret grant, host root, and a Bash permission rule for gh issue writes this session's classifier denies) -- no actionable work left"
+        },
+        {
+          "run_id": "ecosim-nightly-batch-1787892666",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-28T04:51:06+00:00",
+          "ended_at": "2026-08-28T04:54:45+00:00",
+          "elapsed_s": 221,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "queue is #111/#97/#91, all chained on the same fix; gh issue edit AND gh issue comment both denied by this session's own tool-approval classifier (reason: 'Blocked by classifier') -- identical wall the 2026-08-28T02:40:17Z run hit; needs a human to grant Bash permission for gh issue write or answer the DECISION asks directly"
+        },
+        {
+          "run_id": "ecosim-nightly-batch-1787884267",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-28T02:31:07+00:00",
+          "ended_at": "2026-08-28T02:40:49+00:00",
+          "elapsed_s": 584,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "merged PR#109, closed #110; #91/#97/#111 all blocked on human (secret/host grant, and a session write-wall on editing #91/#97 bodies)"
+        }
+      ],
+      "last_run": {
+        "run_id": "ecosim-nightly-batch-1787963468",
+        "job": "ecosim-nightly-batch",
+        "started_at": "2026-08-29T00:31:08+00:00",
+        "ended_at": "2026-08-29T00:38:52+00:00",
+        "elapsed_s": 467,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Closed #115 (dead claim-drift pointer fixed, PR #116 merged); remaining #97 and #113 are human-blocked/tracker-only, nothing actionable"
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/ecosim/Documents/Projects/realisateur",
+            "origin": "https://github.com/hf7y/realisateur.git"
+          },
+          {
+            "path": "/home/ecosim/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "gardien",
+      "uid": 3004,
+      "armed": true,
+      "cron": [
+        "12,32,52 * * * * PACED_MAX_PER_TICK=1 /home/gardien/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "gardien-nightly-batch-1787965926",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-29T01:12:06+00:00",
+          "ended_at": "2026-08-29T01:20:57+00:00",
+          "elapsed_s": 533,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 1,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Found+fixed+closed #91 (crash in --media-unquarantine on a non-dict manifest entry) via PR #92, merged 749138e; remaining 9 open issues all re-confirmed genuinely blocked on real host access, Zach's review, or another repo's self-dev."
+        },
+        {
+          "run_id": "gardien-nightly-batch-1787958726",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-28T23:12:06+00:00",
+          "ended_at": "2026-08-28T23:18:58+00:00",
+          "elapsed_s": 415,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #89 (CLAUDE.md/.claude/commands audit -- both already lean, no dead pointers, 8166 bytes unchanged); found and fixed 3 dead .claude/FOCUS.md pointers found during the same sweep, merged as PR #90 (e93beab); all 9 remaining open issues + PR #59 blocked on Zach's review or real mandark/dexter access."
+        },
+        {
+          "run_id": "gardien-nightly-batch-1787953926",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-28T21:52:06+00:00",
+          "ended_at": "2026-08-28T22:10:20+00:00",
+          "elapsed_s": 1097,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Merged PR #87 (media-quarantine id/category validation) and PR #88 (unquarantine manifest missing-path validation), refreshed PR #59 twice; #23 got its first comment naming the mandark-access wall. Six other durable issues re-confirmed unchanged, no new decisions -- next run should re-check for Zach comments and keep sweeping for more raw-exception gaps."
+        },
+        {
+          "run_id": "gardien-nightly-batch-1787949126",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-28T20:32:06+00:00",
+          "ended_at": "2026-08-28T20:43:30+00:00",
+          "elapsed_s": 687,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "gardien-nightly-batch-1787944332",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-28T19:12:12+00:00",
+          "ended_at": "2026-08-28T19:21:30+00:00",
+          "elapsed_s": 561,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "PR #85 (host-name type validation) merged to main, PR #59 refreshed a third time and stays green/waiting on Zach; remaining backlog is genuinely blocked on real host access, another repo's self-dev, or Zach's own review"
+        }
+      ],
+      "last_run": {
+        "run_id": "gardien-nightly-batch-1787965926",
+        "job": "gardien-nightly-batch",
+        "started_at": "2026-08-29T01:12:06+00:00",
+        "ended_at": "2026-08-29T01:20:57+00:00",
+        "elapsed_s": 533,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 1,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Found+fixed+closed #91 (crash in --media-unquarantine on a non-dict manifest entry) via PR #92, merged 749138e; remaining 9 open issues all re-confirmed genuinely blocked on real host access, Zach's review, or another repo's self-dev."
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/gardien/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "groc-mangr",
+      "uid": 3007,
+      "armed": true,
+      "cron": [
+        "4,24,44 * * * * PACED_MAX_PER_TICK=1 /home/groc-mangr/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)",
+        "0 */4 * * * /home/groc-mangr/Documents/Projects/groc-mangr/scripts/tick.sh >> /home/groc-mangr/.local/state/groc-mangr/tick.log 2>&1 # groc-mangr:tick"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "groc-mangr-nightly-batch-1787967846",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-29T01:44:06+00:00",
+          "ended_at": "2026-08-29T01:58:24+00:00",
+          "elapsed_s": 861,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #122 merged (search-terms burger guard, live #82 fix); asked Zach re #106 (ticket 4a9a4325, pending); milestone still waits on Zach's window confirm + Nuts answer"
+        },
+        {
+          "run_id": "groc-mangr-nightly-batch-1787964248",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-29T00:44:08+00:00",
+          "ended_at": "2026-08-29T01:01:17+00:00",
+          "elapsed_s": 1032,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #121 merged (live cold-start fix, Frozen Berry Mix mix/blend synonym); #120 closed (prose audit, nothing to cut); milestone still waits on Zach's window confirmation and #106's naming call"
+        },
+        {
+          "run_id": "groc-mangr-nightly-batch-1787957048",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-28T22:44:08+00:00",
+          "ended_at": "2026-08-28T22:50:37+00:00",
+          "elapsed_s": 391,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "groc-mangr-nightly-batch-1787953446",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-28T21:44:06+00:00",
+          "ended_at": "2026-08-28T21:51:50+00:00",
+          "elapsed_s": 467,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #118 merged (#89 favourite-score measurement); milestone's real blockers (window confirmation, #106 Nuts) remain waiting on Zach"
+        },
+        {
+          "run_id": "groc-mangr-nightly-batch-1787949849",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-28T20:44:09+00:00",
+          "ended_at": "2026-08-28T20:57:57+00:00",
+          "elapsed_s": 830,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #117 merged (#89 leading-burn signal); #82 tile-instability root-caused; #59/#87/#88/#106 blocked or awaiting Zach, all reconfirmed"
+        }
+      ],
+      "last_run": {
+        "run_id": "groc-mangr-nightly-batch-1787967846",
+        "job": "groc-mangr-nightly-batch",
+        "started_at": "2026-08-29T01:44:06+00:00",
+        "ended_at": "2026-08-29T01:58:24+00:00",
+        "elapsed_s": 861,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "PR #122 merged (search-terms burger guard, live #82 fix); asked Zach re #106 (ticket 4a9a4325, pending); milestone still waits on Zach's window confirm + Nuts answer"
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/groc-mangr/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "nine-speakers",
+      "uid": 3008,
+      "armed": true,
+      "cron": [
+        "13,33,53 * * * * PACED_MAX_PER_TICK=1 /home/nine-speakers/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "nine-speakers-nightly-batch-1787964786",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-08-29T00:53:06+00:00",
+          "ended_at": "2026-08-29T01:05:02+00:00",
+          "elapsed_s": 718,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 1,
+          "issues_closed": 1,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Networked-horizon software is stress-tested and complete (supervisor merged, #30); #31 filed asking whether to provision real hardware next -- actionable follow-up once that's answered, plus #7 stays a standing backlog."
+        },
+        {
+          "run_id": "nine-speakers-nightly-batch-1787956384",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-08-28T22:33:04+00:00",
+          "ended_at": "2026-08-28T22:41:30+00:00",
+          "elapsed_s": 509,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "shipped registry.py+endpoint_cli.py (PR #27, merged) closing #5's 'runnable process' gap; next buildable piece is a multi-endpoint process supervisor, checkboxes 1/3/5 still need physical presence"
+        },
+        {
+          "run_id": "nine-speakers-nightly-batch-1787896385",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-08-28T05:53:05+00:00",
+          "ended_at": "2026-08-28T19:22:16+00:00",
+          "elapsed_s": 48554,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #26 merged (endpoint_process.py, real UDP socket over network_endpoint.py's protocol); #5's checkbox-1 gap has an actionable next piece (a runnable daemon/CLI wrapper) still buildable without physical hardware"
+        },
+        {
+          "run_id": "nine-speakers-nightly-batch-1787884385",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-08-28T02:33:05+00:00",
+          "ended_at": "2026-08-28T02:52:55+00:00",
+          "elapsed_s": 1193,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Shipped network_endpoint.py (PR #24) for #5's networked horizon; more physical-independent hardware work remains before checkboxes 1/3/5 need physical presence"
+        },
+        {
+          "run_id": "nine-speakers-nightly-batch-1787873588",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-08-27T23:33:08+00:00",
+          "ended_at": "2026-08-27T23:45:10+00:00",
+          "elapsed_s": 725,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Acted on #19's standing decision (channel_map.py, PR #21 merged); #5's remaining checkboxes all need physical room/mic/Zach, #7 stays parked -- nothing actionable left tonight"
+        }
+      ],
+      "last_run": {
+        "run_id": "nine-speakers-nightly-batch-1787964786",
+        "job": "nine-speakers-nightly-batch",
+        "started_at": "2026-08-29T00:53:06+00:00",
+        "ended_at": "2026-08-29T01:05:02+00:00",
+        "elapsed_s": 718,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 2,
+        "issues_opened": 1,
+        "issues_closed": 1,
+        "prs_opened": 2,
+        "prs_merged": 2,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Networked-horizon software is stress-tested and complete (supervisor merged, #30); #31 filed asking whether to provision real hardware next -- actionable follow-up once that's answered, plus #7 stays a standing backlog."
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/nine-speakers/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "realisateur",
+      "uid": 3010,
+      "armed": true,
+      "cron": [
+        "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/realisateur/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "realisateur-nightly-batch-1787964635",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-29T00:50:35+00:00",
+          "ended_at": "2026-08-29T01:30:25+00:00",
+          "elapsed_s": 2393,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "realisateur-nightly-batch-1787957412",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-28T22:50:12+00:00",
+          "ended_at": "2026-08-28T23:24:26+00:00",
+          "elapsed_s": 2057,
+          "rc": 1,
+          "status": "FAILED",
+          "commits_added": 2,
+          "issues_opened": 3,
+          "issues_closed": 4,
+          "prs_opened": 1,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "realisateur-nightly-batch-1787953814",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-28T21:50:14+00:00",
+          "ended_at": "2026-08-28T22:22:33+00:00",
+          "elapsed_s": 1941,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "realisateur-nightly-batch-1787950212",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-28T20:50:12+00:00",
+          "ended_at": "2026-08-28T21:13:40+00:00",
+          "elapsed_s": 1410,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Shipped hf7y/realisateur#711: Stop residue gate (dirty-tree/unpushed-branch/open-PR check) wired alongside SubagentStop, merged to main; #681 stays open for its unfiled-finding half (deliberately not attempted, no decidable pattern yet) and #708 (SessionStart build-pin context, which #681 says should land after this) is next up."
+        },
+        {
+          "run_id": "realisateur-nightly-batch-1787946620",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-08-28T19:50:20+00:00",
+          "ended_at": "2026-08-28T20:24:46+00:00",
+          "elapsed_s": 2068,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 2,
+          "issues_closed": 2,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #705 (unsettled label override in answered.jq, merged PR #709) and #700 (stale-paths.sh survey tool, merged PR #710, verified live against musc-2300 and realisateur); queue still has actionable agent work (#698, #696, #672, #673, #671, #650, #620, #663, #651, #695, #704, #681, #602, #517)."
+        }
+      ],
+      "last_run": {
+        "run_id": "realisateur-nightly-batch-1787964635",
+        "job": "realisateur-nightly-batch",
+        "started_at": "2026-08-29T00:50:35+00:00",
+        "ended_at": "2026-08-29T01:30:25+00:00",
+        "elapsed_s": 2393,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 2,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 2,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED-CUTOFF",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/realisateur/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "scheduler",
+      "uid": 3011,
+      "armed": true,
+      "cron": [
+        "1,21,41 * * * * PACED_MAX_PER_TICK=1 /home/scheduler/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "scheduler-paced-dev-1787966473",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-29T01:21:13+00:00",
+          "ended_at": "2026-08-29T01:39:55+00:00",
+          "elapsed_s": 1125,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "scheduler-paced-dev-1787964077",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-29T00:41:17+00:00",
+          "ended_at": "2026-08-29T01:00:07+00:00",
+          "elapsed_s": 1133,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 0,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "scheduler-paced-dev-1787880074",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-28T01:21:14+00:00",
+          "ended_at": "2026-08-28T01:42:03+00:00",
+          "elapsed_s": 1252,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 1,
+          "issues_opened": 1,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "scheduler-paced-dev-1787871679",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-27T23:01:19+00:00",
+          "ended_at": "2026-08-27T23:18:50+00:00",
+          "elapsed_s": 1054,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "wtul.conf: fixed 3 stale brief pointers + stale header (#316,#317 closed, merged PR #319); root-caused a real CI bug (census_ref misses tracked symlinks, was falsely taxing every scheduler PR ~82 lines) and fixed+tested it upstream in hf7y/etalon#14 (draft, #15 asks its self-dev to merge). #313 (validate/merge #312, the provisioning-block PR) is next and real: its suites check is currently red on carry-drift-witness for bin/usage-paced-runner.sh, one of the three dispatch-critical files -- needs"
+        },
+        {
+          "run_id": "scheduler-paced-dev-1787667667",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-25T14:21:07+00:00",
+          "ended_at": "2026-08-25T14:36:32+00:00",
+          "elapsed_s": 928,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed PR #287 (regression test disproving #259's stated cause, run_record_closeout is unconditional); commented #43 (blocked: no ssh/sudo route to mandark, scheduler-side unregistration already done) and #259 (real cause was ROSTER-vs-conf drift, fixed by #282) with concrete evidence; #148/#149/#255 confirmed still correctly blocked on Zach decisions; #281 (dispatch has no CPU/mem containment) is the next well-scoped actionable item."
+        }
+      ],
+      "last_run": {
+        "run_id": "scheduler-paced-dev-1787966473",
+        "job": "scheduler-paced-dev",
+        "started_at": "2026-08-29T01:21:13+00:00",
+        "ended_at": "2026-08-29T01:39:55+00:00",
+        "elapsed_s": 1125,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 1,
+        "prs_merged": 0,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
+      },
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [
+          "/srv/ecosystem1-vault/.git/refs/remotes/origin/prose-sink-finding",
+          "/srv/ecosystem1-vault/.git/objects/pack/pack-ee445ef0eb870c0f9df5fd1f3a1bd820cdbd8bf7.idx",
+          "/srv/ecosystem1-vault/.git/objects/pack/pack-ee445ef0eb870c0f9df5fd1f3a1bd820cdbd8bf7.pack",
+          "/srv/ecosystem1-vault/.git/objects/pack/pack-ee445ef0eb870c0f9df5fd1f3a1bd820cdbd8bf7.rev",
+          "/srv/ecosystem1-vault/.git/logs/refs/remotes/origin/main",
+          "/srv/ecosystem1-vault/.git/logs/refs/remotes/origin/prose-sink-finding"
+        ],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "secretaire",
+      "uid": 3012,
+      "armed": true,
+      "cron": [
+        "15,35,55 * * * * PACED_MAX_PER_TICK=1 /home/secretaire/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "secretaire-nightly-batch-1787967307",
+          "job": "secretaire-nightly-batch",
+          "started_at": "2026-08-29T01:35:07+00:00",
+          "ended_at": "2026-08-29T01:37:53+00:00",
+          "elapsed_s": 169,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "README fixed, #1 closed via PR #6 (merged); #3/#4/#5 remain open in queue for next run"
+        },
+        {
+          "run_id": "secretaire-nightly-batch-1787227203",
+          "job": "secretaire-nightly-batch",
+          "started_at": "2026-08-20T12:00:03+00:00",
+          "ended_at": "2026-08-20T12:00:57+00:00",
+          "elapsed_s": 56,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "de-animated; only open issue (#1) is a needs-human decision for Zach, not agent-actionable"
+        }
+      ],
+      "last_run": {
+        "run_id": "secretaire-nightly-batch-1787967307",
+        "job": "secretaire-nightly-batch",
+        "started_at": "2026-08-29T01:35:07+00:00",
+        "ended_at": "2026-08-29T01:37:53+00:00",
+        "elapsed_s": 169,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "README fixed, #1 closed via PR #6 (merged); #3/#4/#5 remain open in queue for next run"
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/secretaire/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "senechal",
+      "uid": 3014,
+      "armed": true,
+      "cron": [
+        "3,23,43 * * * * PACED_MAX_PER_TICK=1 /home/senechal/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "senechal-nightly-batch-1787967792",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-29T01:43:12+00:00",
+          "ended_at": "2026-08-29T02:00:16+00:00",
+          "elapsed_s": 1027,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 3,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed #511 (claude door for #508, checks green, merge classifier-blocked this session) and merged #510 (step3/#451); rebased #441 twice into #513 and proved via etalon source that its prose bill can't be paid by rebase alone -- needs a human call on #451; large issue queue remains untouched (#497, #490, #345, #439, etc)."
+        },
+        {
+          "run_id": "senechal-nightly-batch-1787964195",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-29T00:43:15+00:00",
+          "ended_at": "2026-08-29T01:06:07+00:00",
+          "elapsed_s": 1374,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "senechal-nightly-batch-1787956991",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-28T22:43:11+00:00",
+          "ended_at": "2026-08-28T23:01:40+00:00",
+          "elapsed_s": 1111,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 0,
+          "issues_opened": 1,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "senechal-nightly-batch-1787953391",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-28T21:43:11+00:00",
+          "ended_at": "2026-08-28T22:07:43+00:00",
+          "elapsed_s": 1475,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "senechal-nightly-batch-1787949790",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-08-28T20:43:10+00:00",
+          "ended_at": "2026-08-28T21:18:46+00:00",
+          "elapsed_s": 2139,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 2,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        }
+      ],
+      "last_run": {
+        "run_id": "senechal-nightly-batch-1787967792",
+        "job": "senechal-nightly-batch",
+        "started_at": "2026-08-29T01:43:12+00:00",
+        "ended_at": "2026-08-29T02:00:16+00:00",
+        "elapsed_s": 1027,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 0,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 3,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Landed #511 (claude door for #508, checks green, merge classifier-blocked this session) and merged #510 (step3/#451); rebased #441 twice into #513 and proved via etalon source that its prose bill can't be paid by rebase alone -- needs a human call on #451; large issue queue remains untouched (#497, #490, #345, #439, etc)."
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/senechal/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "sequestria",
+      "uid": 3009,
+      "armed": true,
+      "cron": [
+        "11,31,51 * * * * PACED_MAX_PER_TICK=1 /home/sequestria/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "sequestria-nightly-batch-1787963468",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-08-29T00:31:08+00:00",
+          "ended_at": "2026-08-29T00:33:18+00:00",
+          "elapsed_s": 133,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "closed #37 (prose audit, verified clean, 3926 bytes unchanged); #29/#9/#6 all still gated on Zach's own action, nothing new to build"
+        },
+        {
+          "run_id": "sequestria-nightly-batch-1787953865",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-08-28T21:51:05+00:00",
+          "ended_at": "2026-08-28T21:57:42+00:00",
+          "elapsed_s": 400,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "All 3 open issues (#29, #9, #6) genuinely gated on Zach's own actions (Netlify login, sending drafted emails); verified/sharpened #29's rewritten build plan and posted findings, no other actionable work in queue."
+        },
+        {
+          "run_id": "sequestria-nightly-batch-1787896266",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-08-28T05:51:06+00:00",
+          "ended_at": "2026-08-28T19:24:19+00:00",
+          "elapsed_s": 48795,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Shipped Netlify Blobs persistence for waitlist signups (PR #36, merged); all 3 open issues (#29 Netlify login, #9 sends, #6 milestone) remain genuinely gated on Zach's own action, nothing else actionable tonight"
+        },
+        {
+          "run_id": "sequestria-nightly-batch-1787884266",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-08-28T02:31:06+00:00",
+          "ended_at": "2026-08-28T02:44:26+00:00",
+          "elapsed_s": 803,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 3,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Landed PRs #32 and #33 (fixed #32's prose-ratchet failure first) plus outreach PR #30, closing issue #34. No open PRs remain. The 3 remaining open issues (#6, #9, #29) are all human-blocked, not actionable tonight."
+        },
+        {
+          "run_id": "sequestria-nightly-batch-1787872265",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-08-27T23:11:05+00:00",
+          "ended_at": "2026-08-27T23:27:56+00:00",
+          "elapsed_s": 1013,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        }
+      ],
+      "last_run": {
+        "run_id": "sequestria-nightly-batch-1787963468",
+        "job": "sequestria-nightly-batch",
+        "started_at": "2026-08-29T00:31:08+00:00",
+        "ended_at": "2026-08-29T00:33:18+00:00",
+        "elapsed_s": 133,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 0,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "closed #37 (prose audit, verified clean, 3926 bytes unchanged); #29/#9/#6 all still gated on Zach's own action, nothing new to build"
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/sequestria/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "vim-arcade",
+      "uid": 3000,
+      "armed": true,
+      "cron": [
+        "17,37,57 * * * * PACED_MAX_PER_TICK=1 /home/vim-arcade/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "vim-arcade-nightly-batch-1787965026",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-29T00:57:06+00:00",
+          "ended_at": "2026-08-29T01:03:55+00:00",
+          "elapsed_s": 412,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #211 (audited CLAUDE.md + .claude/commands, all named mechanisms verified live, cut one dead post-mortem block, PR #212 merged); #207 (ssh into monkey + spawn agent, pause/worktree self-dev) remains open and unblocked for next run"
+        },
+        {
+          "run_id": "vim-arcade-nightly-batch-1787953025",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-28T21:37:05+00:00",
+          "ended_at": "2026-08-28T21:52:10+00:00",
+          "elapsed_s": 907,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Shipped #210 (map filtered to the sweep roster, closes #208) and closed the stale #204/#203 pair; #207 is still open and actionable for the next run."
+        },
+        {
+          "run_id": "vim-arcade-nightly-batch-1787944627",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-28T19:17:07+00:00",
+          "ended_at": "2026-08-28T19:25:33+00:00",
+          "elapsed_s": 509,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #190 (needs_owner_count now honors an owner reply, PR #209 merged); #204/#207/#208 remain open and actionable next run"
+        },
+        {
+          "run_id": "vim-arcade-nightly-batch-1787884626",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-28T02:37:06+00:00",
+          "ended_at": "2026-08-28T02:50:38+00:00",
+          "elapsed_s": 816,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Merged #205 (closes #193: issue panel now expands over the map, exits to map on submit); #190's needs-Zach headline count is real and still open for next run; #204 blocked on merge permission for #203, commented and left open"
+        },
+        {
+          "run_id": "vim-arcade-nightly-batch-1787871426",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-27T22:57:06+00:00",
+          "ended_at": "2026-08-27T23:10:42+00:00",
+          "elapsed_s": 819,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 1,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed #199 (persist failed gh-action drafts, PR #202) and merged/closed the #200/#201 companion pair; #193 (issue panel too small) and #190 (needs-Zach map count is label-only, ignores real replies -- confirmed still-live bug) remain open and actionable."
+        }
+      ],
+      "last_run": {
+        "run_id": "vim-arcade-nightly-batch-1787965026",
+        "job": "vim-arcade-nightly-batch",
+        "started_at": "2026-08-29T00:57:06+00:00",
+        "ended_at": "2026-08-29T01:03:55+00:00",
+        "elapsed_s": 412,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Closed #211 (audited CLAUDE.md + .claude/commands, all named mechanisms verified live, cut one dead post-mortem block, PR #212 merged); #207 (ssh into monkey + spawn agent, pause/worktree self-dev) remains open and unblocked for next run"
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/vim-arcade/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    },
+    {
+      "account": "wtul",
+      "uid": 3013,
+      "armed": true,
+      "cron": [
+        "6,26,46 * * * * PACED_MAX_PER_TICK=1 /home/wtul/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
+      "release_tick": null,
+      "runs": [
+        {
+          "run_id": "wtul-nightly-batch-1787967966",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-08-29T01:46:06+00:00",
+          "ended_at": "2026-08-29T01:55:26+00:00",
+          "elapsed_s": 562,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #103 (agent-facing prose audit) via PR #104: deduped duplicate backlog prose across CLAUDE.md/.claude/commands, fixed a dead push-permission pointer found live (git push origin main is account-wide hard-denied), verified every other mechanism named still exists. Rest of the open queue (#99, #81, #78, #74, #53, #37, #19) is decision- or hardware-gated, unchanged from 2026-08-28's triage."
+        },
+        {
+          "run_id": "wtul-nightly-batch-1787964368",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-08-29T00:46:08+00:00",
+          "ended_at": "2026-08-29T00:51:41+00:00",
+          "elapsed_s": 336,
+          "rc": 1,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "wtul-nightly-batch-1787955965",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-08-28T22:26:05+00:00",
+          "ended_at": "2026-08-28T22:34:21+00:00",
+          "elapsed_s": 499,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Merged PR #102 (#84 photo-capture -> Netlify function) and closed #84; remaining 6 open issues confirmed genuinely non-actionable (decision-gated, hardware-gated, or human-only)."
+        },
+        {
+          "run_id": "wtul-nightly-batch-1787952368",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-08-28T21:26:08+00:00",
+          "ended_at": "2026-08-28T21:34:05+00:00",
+          "elapsed_s": 479,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "wtul-nightly-batch-1787946367",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-08-28T19:46:07+00:00",
+          "ended_at": "2026-08-28T20:09:46+00:00",
+          "elapsed_s": 1421,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Landed #100 (cdparanoia retry cap + partial-rip marking) via PR #101, merged and closed; #99 left for Zach's decision"
+        }
+      ],
+      "last_run": {
+        "run_id": "wtul-nightly-batch-1787967966",
+        "job": "wtul-nightly-batch",
+        "started_at": "2026-08-29T01:46:06+00:00",
+        "ended_at": "2026-08-29T01:55:26+00:00",
+        "elapsed_s": 562,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Closed #103 (agent-facing prose audit) via PR #104: deduped duplicate backlog prose across CLAUDE.md/.claude/commands, fixed a dead push-permission pointer found live (git push origin main is account-wide hard-denied), verified every other mechanism named still exists. Rest of the open queue (#99, #81, #78, #74, #53, #37, #19) is decision- or hardware-gated, unchanged from 2026-08-28's triage."
+      },
+      "containment": {
+        "foreign_clones": [
+          {
+            "path": "/home/wtul/Documents/Projects/scheduler",
+            "origin": "https://github.com/hf7y/scheduler.git"
+          },
+          {
+            "path": "/home/wtul/Documents/Projects/senechal",
+            "origin": "https://github.com/hf7y/senechal.git"
+          }
+        ],
+        "outside_home": [],
+        "sudoers": []
+      },
+      "credentials": {
+        "app_key": "0o640",
+        "claude_token": "0o640",
+        "claude_settings": "0o600"
+      }
+    }
+  ],
   "watcher": {
-    "generated": "2026-08-29T02:00:01Z",
+    "generated": "2026-08-29T02:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-29T02:30:01Z",
-    "verdict": "DEGRADED",
-    "why": "sshd sent its banner but the session stalled -- no answer in 60s",
+    "valid_until": "2026-08-29T02:40:02Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
     "disk": "C:\\\\VirtualBox VMs\\\\monkey\\\\monkey.vdi",
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 21 hours, 21 minutes",
+    "uptime": "up 2 days, 21 hours, 30 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
-    "guest_error": "sshd sent its banner but the session stalled -- no answer in 60s",
-    "accounts_from": "NOT COLLECTED -- the guest was unreachable, so accounts[] is empty rather than stale",
+    "guest_error": null,
+    "accounts_from": "bin/monkey-status-collect.py, run as root on monkey -- live probes of each account's crontab and scheduler ledger",
     "note": "Generated on dexter, the VM host, every 10 minutes. It can report monkey being down because it does not run on monkey. If watcher.generated is old, the WATCHER is broken -- not necessarily monkey."
   }
 }
