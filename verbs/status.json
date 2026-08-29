@@ -1,23 +1,23 @@
 {
   "schema": 3,
-  "generated": "2026-08-28T13:05:04Z",
-  "valid_until": "2026-08-29T17:05:04Z",
+  "generated": "2026-08-29T08:00:09Z",
+  "valid_until": "2026-08-30T12:00:09Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "cut_interval_days": 30,
   "decision": "CUT",
-  "reason": "18 verb(s) cut",
-  "main_sha": "eb50e09",
-  "ci_run": "33173746081",
-  "build_id": "2026-08-28T130454Z",
+  "reason": "17 verb(s) cut",
+  "main_sha": "fd02f76",
+  "ci_run": "33242091590",
+  "build_id": "2026-08-29T080004Z",
   "blocked_streak": 0,
   "last_cut": {
-    "at": "2026-08-28T13:05:04Z",
+    "at": "2026-08-29T08:00:09Z",
     "decision": "CUT",
-    "reason": "18 verb(s) cut",
-    "main_sha": "eb50e09",
-    "ci_run": "33173746081",
-    "build_id": "2026-08-28T130454Z"
+    "reason": "17 verb(s) cut",
+    "main_sha": "fd02f76",
+    "ci_run": "33242091590",
+    "build_id": "2026-08-29T080004Z"
   },
   "decisions_enum": [
     "CUT",
@@ -26,6 +26,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-08-29T08:00:09Z",
+      "decision": "CUT",
+      "reason": "17 verb(s) cut",
+      "main_sha": "fd02f76",
+      "ci_run": "33242091590",
+      "build_id": "2026-08-29T080004Z"
+    },
     {
       "at": "2026-08-28T13:05:04Z",
       "decision": "CUT",
