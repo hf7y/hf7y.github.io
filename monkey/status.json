@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-29T02:50:02Z",
-  "valid_until": "2026-08-30T06:50:02Z",
+  "generated": "2026-08-29T03:00:02Z",
+  "valid_until": "2026-08-30T07:00:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -820,6 +820,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1787970971",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-08-29T02:36:11+00:00",
+          "ended_at": "2026-08-29T02:52:53+00:00",
+          "elapsed_s": 1005,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Landed #75's research pass: docs/writing-lint.md PR #89 (unmerged), musc-2300#50, bibliothecaire#76 filed. Found and fixed a wrong-account PR-body mixup from a stale /tmp file before it landed. A backlog of 8 green, mergeable PRs (#81-89) is real actionable work but gh pr merge was refused outright by this session's action classifier even on a single PR, independent of CLAUDE.md/standing-rules text -- needs a human to either merge them or grant the permission."
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1787968572",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-08-29T01:56:12+00:00",
@@ -886,41 +903,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Issue #33 (structured CSV/JSON export, no DB connector) resolved and shipped as PR #83 against master; left open/unmerged per CLAUDE.md's 'never merge your own work' (see issue #80's live incident about exactly this), also fixed human-decisions.md Q9 and ROADMAP.md which still said OPEN after #33 was decided; writing-lint passes, no new issues opened"
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1787950567",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-08-28T20:56:07+00:00",
-          "ended_at": "2026-08-28T21:00:26+00:00",
-          "elapsed_s": 262,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Opened PR #82 for #23 (outreach draft generator, tested, lint-clean, not merged per repo rule); #8/#16/#74/#75 still ready for an agent"
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1787968572",
+        "run_id": "dcp-gate-site-nightly-batch-1787970971",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-08-29T01:56:12+00:00",
-        "ended_at": "2026-08-29T02:05:53+00:00",
-        "elapsed_s": 584,
+        "started_at": "2026-08-29T02:36:11+00:00",
+        "ended_at": "2026-08-29T02:52:53+00:00",
+        "elapsed_s": 1005,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 0,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #42 (libdcp verify catalogue) via PR #88; 6 more agent-actionable issues remain routed (#8, #16, #34, #74, #75, #80)."
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Landed #75's research pass: docs/writing-lint.md PR #89 (unmerged), musc-2300#50, bibliothecaire#76 filed. Found and fixed a wrong-account PR-body mixup from a stale /tmp file before it landed. A backlog of 8 green, mergeable PRs (#81-89) is real actionable work but gh pr merge was refused outright by this session's action classifier even on a single PR, independent of CLAUDE.md/standing-rules text -- needs a human to either merge them or grant the permission."
       },
       "containment": {
         "foreign_clones": [
@@ -1937,6 +1937,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "sequestria-nightly-batch-1787971865",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-08-29T02:51:05+00:00",
+          "ended_at": "2026-08-29T02:53:36+00:00",
+          "elapsed_s": 153,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "3 open issues (#29 Netlify login, #9 email sends, #6 ad buy) all re-verified still gated on Zach-only actions; zero state change since last night; no public/ diff to commit"
+        },
+        {
           "run_id": "sequestria-nightly-batch-1787963468",
           "job": "sequestria-nightly-batch",
           "started_at": "2026-08-29T00:31:08+00:00",
@@ -2003,41 +2020,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Landed PRs #32 and #33 (fixed #32's prose-ratchet failure first) plus outreach PR #30, closing issue #34. No open PRs remain. The 3 remaining open issues (#6, #9, #29) are all human-blocked, not actionable tonight."
-        },
-        {
-          "run_id": "sequestria-nightly-batch-1787872265",
-          "job": "sequestria-nightly-batch",
-          "started_at": "2026-08-27T23:11:05+00:00",
-          "ended_at": "2026-08-27T23:27:56+00:00",
-          "elapsed_s": 1013,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "sequestria-nightly-batch-1787963468",
+        "run_id": "sequestria-nightly-batch-1787971865",
         "job": "sequestria-nightly-batch",
-        "started_at": "2026-08-29T00:31:08+00:00",
-        "ended_at": "2026-08-29T00:33:18+00:00",
-        "elapsed_s": 133,
+        "started_at": "2026-08-29T02:51:05+00:00",
+        "ended_at": "2026-08-29T02:53:36+00:00",
+        "elapsed_s": 153,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "closed #37 (prose audit, verified clean, 3926 bytes unchanged); #29/#9/#6 all still gated on Zach's own action, nothing new to build"
+        "claimed_reason": "3 open issues (#29 Netlify login, #9 email sends, #6 ad buy) all re-verified still gated on Zach-only actions; zero state change since last night; no public/ diff to commit"
       },
       "containment": {
         "foreign_clones": [
@@ -2317,10 +2317,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-29T02:50:01Z",
+    "generated": "2026-08-29T03:00:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-29T03:20:01Z",
+    "valid_until": "2026-08-29T03:30:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2328,7 +2328,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 22 hours, 10 minutes",
+    "uptime": "up 2 days, 22 hours, 20 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
