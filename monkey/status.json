@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-29T06:10:02Z",
-  "valid_until": "2026-08-30T10:10:02Z",
+  "generated": "2026-08-29T06:20:02Z",
+  "valid_until": "2026-08-30T10:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-28T130454Z",
@@ -1035,6 +1035,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1787983925",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-08-29T06:12:05+00:00",
+          "ended_at": "2026-08-29T06:19:22+00:00",
+          "elapsed_s": 440,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 1,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed a third explicit-JSON-null config crash (min_free_gb, PR #102, merged); filed+fixed+closed #101; backlog's other 8 issues remain genuinely blocked on real host access or Zach's own decision, but the explicit-null pattern across gardien.py's remaining config knobs is worth one more targeted sweep next run."
+        },
+        {
           "run_id": "gardien-nightly-batch-1787979126",
           "job": "gardien-nightly-batch",
           "started_at": "2026-08-29T04:52:06+00:00",
@@ -1101,31 +1118,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Found+fixed+closed #91 (crash in --media-unquarantine on a non-dict manifest entry) via PR #92, merged 749138e; remaining 9 open issues all re-confirmed genuinely blocked on real host access, Zach's review, or another repo's self-dev."
-        },
-        {
-          "run_id": "gardien-nightly-batch-1787958726",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-08-28T23:12:06+00:00",
-          "ended_at": "2026-08-28T23:18:58+00:00",
-          "elapsed_s": 415,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed #89 (CLAUDE.md/.claude/commands audit -- both already lean, no dead pointers, 8166 bytes unchanged); found and fixed 3 dead .claude/FOCUS.md pointers found during the same sweep, merged as PR #90 (e93beab); all 9 remaining open issues + PR #59 blocked on Zach's review or real mandark/dexter access."
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1787979126",
+        "run_id": "gardien-nightly-batch-1787983925",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-08-29T04:52:06+00:00",
-        "ended_at": "2026-08-29T05:10:46+00:00",
-        "elapsed_s": 1123,
+        "started_at": "2026-08-29T06:12:05+00:00",
+        "ended_at": "2026-08-29T06:19:22+00:00",
+        "elapsed_s": 440,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1135,7 +1135,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed and merged PR #100 (explicit-null keep_snapshots/max_snapshot_age_days bugs, #99, closed); all 8 remaining open issues re-confirmed genuinely blocked on real mandark/dexter access or Zach's own PR #59 decision -- next actionable step is another angle-varied code sweep (concurrency/race conditions, CLI arg parsing) since tonight's logic-bug angle found real bugs on the first pass after the crash-shape angle went dry."
+        "claimed_reason": "Fixed a third explicit-JSON-null config crash (min_free_gb, PR #102, merged); filed+fixed+closed #101; backlog's other 8 issues remain genuinely blocked on real host access or Zach's own decision, but the explicit-null pattern across gardien.py's remaining config knobs is worth one more targeted sweep next run."
       },
       "containment": {
         "foreign_clones": [],
@@ -1158,6 +1158,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "groc-mangr-nightly-batch-1787983447",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-29T06:04:07+00:00",
+          "ended_at": "2026-08-29T06:12:57+00:00",
+          "elapsed_s": 532,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "landed PR #126 (merged, main): fixed a real bug in #82's ASIN-anchor mechanism -- a wrong cold-start match could get permanently written to Grocy before an order even confirmed; anchoring now waits until after a successful purchase. #82 stays open (its named residual risk is unchanged); #91/#89/#59/#87/#88/#106 all have named next steps for a future run."
+        },
         {
           "run_id": "groc-mangr-nightly-batch-1787979849",
           "job": "groc-mangr-nightly-batch",
@@ -1225,31 +1242,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "PR #122 merged (search-terms burger guard, live #82 fix); asked Zach re #106 (ticket 4a9a4325, pending); milestone still waits on Zach's window confirm + Nuts answer"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1787964248",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-29T00:44:08+00:00",
-          "ended_at": "2026-08-29T01:01:17+00:00",
-          "elapsed_s": 1032,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "PR #121 merged (live cold-start fix, Frozen Berry Mix mix/blend synonym); #120 closed (prose audit, nothing to cut); milestone still waits on Zach's window confirmation and #106's naming call"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1787979849",
+        "run_id": "groc-mangr-nightly-batch-1787983447",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-29T05:04:09+00:00",
-        "ended_at": "2026-08-29T05:18:20+00:00",
-        "elapsed_s": 854,
+        "started_at": "2026-08-29T06:04:07+00:00",
+        "ended_at": "2026-08-29T06:12:57+00:00",
+        "elapsed_s": 532,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1259,7 +1259,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "PR #125 merged (zaxon inbox drain, #87); check_zach_reply('3df6762c') and confirm-window --status are next tick's first moves"
+        "claimed_reason": "landed PR #126 (merged, main): fixed a real bug in #82's ASIN-anchor mechanism -- a wrong cold-start match could get permanently written to Grocy before an order even confirmed; anchoring now waits until after a successful purchase. #82 stays open (its named residual risk is unchanged); #91/#89/#59/#87/#88/#106 all have named next steps for a future run."
       },
       "containment": {
         "foreign_clones": [],
@@ -2236,10 +2236,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-29T06:10:02Z",
+    "generated": "2026-08-29T06:20:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-29T06:40:02Z",
+    "valid_until": "2026-08-29T06:50:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2247,7 +2247,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 3 days, 1 hour, 30 minutes",
+    "uptime": "up 3 days, 1 hour, 40 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
