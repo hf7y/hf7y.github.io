@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-29T03:50:02Z",
-  "valid_until": "2026-08-30T07:50:02Z",
+  "generated": "2026-08-29T04:00:03Z",
+  "valid_until": "2026-08-30T08:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -1218,6 +1218,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1787975046",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-08-29T03:44:06+00:00",
+          "ended_at": "2026-08-29T03:53:49+00:00",
+          "elapsed_s": 586,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #124 merged (medas tier assignment, #89 part 3); milestone #27's only real blocker remains Zach's window confirmation, next tick polls ticket 9014e05c and Monday's window"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1787971447",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-08-29T02:44:07+00:00",
@@ -1284,31 +1301,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1787953446",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-28T21:44:06+00:00",
-          "ended_at": "2026-08-28T21:51:50+00:00",
-          "elapsed_s": 467,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "PR #118 merged (#89 favourite-score measurement); milestone's real blockers (window confirmation, #106 Nuts) remain waiting on Zach"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1787971447",
+        "run_id": "groc-mangr-nightly-batch-1787975046",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-08-29T02:44:07+00:00",
-        "ended_at": "2026-08-29T03:03:01+00:00",
-        "elapsed_s": 1136,
+        "started_at": "2026-08-29T03:44:06+00:00",
+        "ended_at": "2026-08-29T03:53:49+00:00",
+        "elapsed_s": 586,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1318,7 +1318,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "PR #123 merged (#82 tile-selection generalization, live-verified); #106 ticket re-asked (9014e05c), Monday's window still not yet knowable -- both are next tick's first moves"
+        "claimed_reason": "PR #124 merged (medas tier assignment, #89 part 3); milestone #27's only real blocker remains Zach's window confirmation, next tick polls ticket 9014e05c and Monday's window"
       },
       "containment": {
         "foreign_clones": [
@@ -1602,6 +1602,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1787974873",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-29T03:41:13+00:00",
+          "ended_at": "2026-08-29T03:58:14+00:00",
+          "elapsed_s": 1024,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "scheduler-paced-dev-1787972475",
           "job": "scheduler-paced-dev",
           "started_at": "2026-08-29T03:01:15+00:00",
@@ -1668,34 +1685,17 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-paced-dev-1787880074",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-08-28T01:21:14+00:00",
-          "ended_at": "2026-08-28T01:42:03+00:00",
-          "elapsed_s": 1252,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 1,
-          "issues_opened": 1,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1787972475",
+        "run_id": "scheduler-paced-dev-1787974873",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-08-29T03:01:15+00:00",
-        "ended_at": "2026-08-29T03:16:49+00:00",
-        "elapsed_s": 937,
+        "started_at": "2026-08-29T03:41:13+00:00",
+        "ended_at": "2026-08-29T03:58:14+00:00",
+        "elapsed_s": 1024,
         "rc": 1,
         "status": "FAILED (ceiling: max turns reached)",
-        "commits_added": 1,
+        "commits_added": 3,
         "issues_opened": 0,
         "issues_closed": 1,
         "prs_opened": 1,
@@ -2317,10 +2317,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-29T03:50:01Z",
+    "generated": "2026-08-29T04:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-29T04:20:01Z",
+    "valid_until": "2026-08-29T04:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2328,7 +2328,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 23 hours, 10 minutes",
+    "uptime": "up 2 days, 23 hours, 20 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
