@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-29T06:30:02Z",
-  "valid_until": "2026-08-30T10:30:02Z",
+  "generated": "2026-08-29T06:40:03Z",
+  "valid_until": "2026-08-30T10:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-28T130454Z",
@@ -140,6 +140,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1787985006",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-08-29T06:30:06+00:00",
+          "ended_at": "2026-08-29T06:34:02+00:00",
+          "elapsed_s": 239,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed apms-2173#54: crt#100 (edit-in-place, merged 2026-08-29T03:15Z) already answers the relay questions and collapses apms's weekly tickets onto one message with no apms-side change needed"
+        },
+        {
           "run_id": "apms-nightly-batch-1787973004",
           "job": "apms-nightly-batch",
           "started_at": "2026-08-29T03:10:04+00:00",
@@ -206,41 +223,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed all 3 open issues (48,49,50) as premise-expired -- their invisibility complaint against session.py was already fixed by 5a138e7 hours before they were filed, verified live; queue is now empty."
-        },
-        {
-          "run_id": "apms-nightly-batch-1787896231",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-08-28T05:50:31+00:00",
-          "ended_at": "2026-08-28T19:16:17+00:00",
-          "elapsed_s": 48349,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 2,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Queue empty: #45 closed by a concurrent run (PR #46 merged), #28 closed tonight as premise-expired -- the landed Box design (#46) is a bare shared-folder link with no submission-time code hook, so there was nothing left for a warn-vs-fail naming policy to attach to, and the decorative-pattern bug it also named was already fixed by #47."
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1787973004",
+        "run_id": "apms-nightly-batch-1787985006",
         "job": "apms-nightly-batch",
-        "started_at": "2026-08-29T03:10:04+00:00",
-        "ended_at": "2026-08-29T03:14:56+00:00",
-        "elapsed_s": 295,
+        "started_at": "2026-08-29T06:30:06+00:00",
+        "ended_at": "2026-08-29T06:34:02+00:00",
+        "elapsed_s": 239,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_opened": 0,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Built attendance.py (#62), merged via PR #72, closed #62; #55's probe confirmed structurally blocked (no canvas.token in this account, by design per scheduler ROSTER) and documented on the issue"
+        "claimed_reason": "Closed apms-2173#54: crt#100 (edit-in-place, merged 2026-08-29T03:15Z) already answers the relay questions and collapses apms's weekly tickets onto one message with no apms-side change needed"
       },
       "containment": {
         "foreign_clones": [
@@ -783,6 +783,23 @@
       "release_tick": "2026-08-29T05:56:03Z rc=1 pin=2026-08-28T130454Z 2 ok, 1 gap, 0 bad",
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1787985372",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-08-29T06:36:12+00:00",
+          "ended_at": "2026-08-29T06:39:53+00:00",
+          "elapsed_s": 224,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1787980575",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-08-29T05:16:15+00:00",
@@ -849,31 +866,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Landed #75's research pass: docs/writing-lint.md PR #89 (unmerged), musc-2300#50, bibliothecaire#76 filed. Found and fixed a wrong-account PR-body mixup from a stale /tmp file before it landed. A backlog of 8 green, mergeable PRs (#81-89) is real actionable work but gh pr merge was refused outright by this session's action classifier even on a single PR, independent of CLAUDE.md/standing-rules text -- needs a human to either merge them or grant the permission."
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1787968572",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-08-29T01:56:12+00:00",
-          "ended_at": "2026-08-29T02:05:53+00:00",
-          "elapsed_s": 584,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Closed #42 (libdcp verify catalogue) via PR #88; 6 more agent-actionable issues remain routed (#8, #16, #34, #74, #75, #80)."
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1787980575",
+        "run_id": "dcp-gate-site-nightly-batch-1787985372",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-08-29T05:16:15+00:00",
-        "ended_at": "2026-08-29T05:22:02+00:00",
-        "elapsed_s": 350,
+        "started_at": "2026-08-29T06:36:12+00:00",
+        "ended_at": "2026-08-29T06:39:53+00:00",
+        "elapsed_s": 224,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -882,8 +882,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Reviewed+verified PR #90 (0 new lint findings, imports sound) and marked it ready for review per #91; merge itself is blocked by the session's auto-mode classifier (tried gh pr merge and gh api PUT .../merge, both denied) -- needs a human or a permission grant, recorded on #91. Checked the other 5 ready issues (#8 blocked on an unresolved business decision, #16's R&D is already done and its remaining SEO-content half conflicts with #74's concurrent site-reduction directive, #34 explicitly stays "
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [
@@ -1528,6 +1528,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1787984477",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-29T06:21:17+00:00",
+          "ended_at": "2026-08-29T06:37:59+00:00",
+          "elapsed_s": 1004,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "scheduler-paced-dev-1787982072",
           "job": "scheduler-paced-dev",
           "started_at": "2026-08-29T05:41:12+00:00",
@@ -1594,41 +1611,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-paced-dev-1787972475",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-08-29T03:01:15+00:00",
-          "ended_at": "2026-08-29T03:16:49+00:00",
-          "elapsed_s": 937,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1787982072",
+        "run_id": "scheduler-paced-dev-1787984477",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-08-29T05:41:12+00:00",
-        "ended_at": "2026-08-29T05:56:47+00:00",
-        "elapsed_s": 938,
-        "rc": 0,
-        "status": "done",
+        "started_at": "2026-08-29T06:21:17+00:00",
+        "ended_at": "2026-08-29T06:37:59+00:00",
+        "elapsed_s": 1004,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 1,
         "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed PR #346 (carried usage-paced-runner.sh onto bashified, pushed 4 previously-unpushed local trim commits, trimmed remaining 13 prose-ratchet lines to net zero) -- both CI checks are green and it is mergeable, but gh pr merge/git push origin main were both refused by this session's own permission classifier, and gh then locked out entirely (even read-only calls) after repeated merge attempts; next run should retry merging #346 (should not need code changes) then resume issue-queue triage."
+        "prs_merged": 1,
+        "verdict_computed": "WORKED-CUTOFF",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2236,10 +2236,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-29T06:30:01Z",
+    "generated": "2026-08-29T06:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-29T07:00:01Z",
+    "valid_until": "2026-08-29T07:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2247,7 +2247,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 3 days, 1 hour, 50 minutes",
+    "uptime": "up 3 days, 2 hours, 0 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
