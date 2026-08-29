@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-29T05:40:02Z",
-  "valid_until": "2026-08-30T09:40:02Z",
+  "generated": "2026-08-29T05:50:03Z",
+  "valid_until": "2026-08-30T09:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-27T114014Z",
@@ -268,6 +268,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "baudin-nightly-batch-1787981886",
+          "job": "baudin-nightly-batch",
+          "started_at": "2026-08-29T05:38:06+00:00",
+          "ended_at": "2026-08-29T05:45:13+00:00",
+          "elapsed_s": 429,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Shipped #18 phase 5 (dip cue, PR #64 merged); re-checked all 11 open issues end-to-end -- every remaining item is blocked on #7 (no HA token on baudin@monkey) or a pending human decision/credential, nothing else buildable without live access tonight."
+        },
+        {
           "run_id": "baudin-nightly-batch-1787978289",
           "job": "baudin-nightly-batch",
           "started_at": "2026-08-29T04:38:09+00:00",
@@ -334,41 +351,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "every live-touching issue blocked on #7 (no ha_token on baudin@monkey); repo-only checks clean, no bug found; posted one research finding on #14"
-        },
-        {
-          "run_id": "baudin-nightly-batch-1787963888",
-          "job": "baudin-nightly-batch",
-          "started_at": "2026-08-29T00:38:08+00:00",
-          "ended_at": "2026-08-29T00:46:50+00:00",
-          "elapsed_s": 525,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Kitchen taper (#19) built + merged (PR #60); #7 (no HA token on baudin@monkey) still blocks deploy/verify for #17/#19/#22/#30 and every other live-instance task"
         }
       ],
       "last_run": {
-        "run_id": "baudin-nightly-batch-1787978289",
+        "run_id": "baudin-nightly-batch-1787981886",
         "job": "baudin-nightly-batch",
-        "started_at": "2026-08-29T04:38:09+00:00",
-        "ended_at": "2026-08-29T04:53:46+00:00",
-        "elapsed_s": 939,
+        "started_at": "2026-08-29T05:38:06+00:00",
+        "ended_at": "2026-08-29T05:45:13+00:00",
+        "elapsed_s": 429,
         "rc": 0,
         "status": "done",
-        "commits_added": 4,
+        "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Merged #63 (fixed a live-breaking brace bug in circadian_red_ramp's bri template + shipped #18 phase 3 decay-duration scaling); #7 (no HA token on baudin@monkey) still blocks every deploy/verify step in the queue, reconfirmed via ha-probe.sh"
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Shipped #18 phase 5 (dip cue, PR #64 merged); re-checked all 11 open issues end-to-end -- every remaining item is blocked on #7 (no HA token on baudin@monkey) or a pending human decision/credential, nothing else buildable without live access tonight."
       },
       "containment": {
         "foreign_clones": [],
@@ -1282,6 +1282,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "nine-speakers-nightly-batch-1787981584",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-08-29T05:33:04+00:00",
+          "ended_at": "2026-08-29T05:40:46+00:00",
+          "elapsed_s": 465,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "supervisor restart-logging shipped (PR #33); #31 (hardware-vs-software) still needs a human answer, and checkbox 2 needs a human-run puredata install -- actionable work remains, just not nightly-pass-solvable"
+        },
+        {
           "run_id": "nine-speakers-nightly-batch-1787973185",
           "job": "nine-speakers-nightly-batch",
           "started_at": "2026-08-29T03:13:05+00:00",
@@ -1348,31 +1365,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "PR #26 merged (endpoint_process.py, real UDP socket over network_endpoint.py's protocol); #5's checkbox-1 gap has an actionable next piece (a runnable daemon/CLI wrapper) still buildable without physical hardware"
-        },
-        {
-          "run_id": "nine-speakers-nightly-batch-1787884385",
-          "job": "nine-speakers-nightly-batch",
-          "started_at": "2026-08-28T02:33:05+00:00",
-          "ended_at": "2026-08-28T02:52:55+00:00",
-          "elapsed_s": 1193,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Shipped network_endpoint.py (PR #24) for #5's networked horizon; more physical-independent hardware work remains before checkboxes 1/3/5 need physical presence"
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1787973185",
+        "run_id": "nine-speakers-nightly-batch-1787981584",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-08-29T03:13:05+00:00",
-        "ended_at": "2026-08-29T03:25:06+00:00",
-        "elapsed_s": 723,
+        "started_at": "2026-08-29T05:33:04+00:00",
+        "ended_at": "2026-08-29T05:40:46+00:00",
+        "elapsed_s": 465,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1381,8 +1381,8 @@
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Fixed the one concrete gap (supervisor crash-loop backoff, PR #32 merged) the last pass's own stress test left open, verified+deleted 4 stale branches and surfaced a genuine cross-project-contamination finding on a 5th (left alone, informational); #31's hardware-vs-software fork is still the only real open question and needs a human, not another nightly pass, and checkboxes 1/3/5 still need physical presence."
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "supervisor restart-logging shipped (PR #33); #31 (hardware-vs-software) still needs a human answer, and checkbox 2 needs a human-run puredata install -- actionable work remains, just not nightly-pass-solvable"
       },
       "containment": {
         "foreign_clones": [],
@@ -2236,10 +2236,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-29T05:40:02Z",
+    "generated": "2026-08-29T05:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-29T06:10:02Z",
+    "valid_until": "2026-08-29T06:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2247,7 +2247,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 3 days, 1 hour, 0 minutes",
+    "uptime": "up 3 days, 1 hour, 10 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
