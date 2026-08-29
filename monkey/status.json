@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-08-29T10:10:02Z",
-  "valid_until": "2026-08-30T14:10:02Z",
+  "generated": "2026-08-29T10:20:02Z",
+  "valid_until": "2026-08-30T14:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-28T130454Z",
@@ -1282,6 +1282,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "nine-speakers-nightly-batch-1787998385",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-08-29T10:13:05+00:00",
+          "ended_at": "2026-08-29T10:19:04+00:00",
+          "elapsed_s": 361,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Shipped PR #35 (malformed-UDP-packet crash fix on the networked-horizon endpoint stack); #31 (hardware-provisioning judgment call) still open/unanswered, and adversarial-input review of the rest of hardware/ is still worth a future pass"
+        },
+        {
           "run_id": "nine-speakers-nightly-batch-1787989985",
           "job": "nine-speakers-nightly-batch",
           "started_at": "2026-08-29T07:53:05+00:00",
@@ -1348,31 +1365,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Networked-horizon software is stress-tested and complete (supervisor merged, #30); #31 filed asking whether to provision real hardware next -- actionable follow-up once that's answered, plus #7 stays a standing backlog."
-        },
-        {
-          "run_id": "nine-speakers-nightly-batch-1787956384",
-          "job": "nine-speakers-nightly-batch",
-          "started_at": "2026-08-28T22:33:04+00:00",
-          "ended_at": "2026-08-28T22:41:30+00:00",
-          "elapsed_s": 509,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "shipped registry.py+endpoint_cli.py (PR #27, merged) closing #5's 'runnable process' gap; next buildable piece is a multi-endpoint process supervisor, checkboxes 1/3/5 still need physical presence"
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1787989985",
+        "run_id": "nine-speakers-nightly-batch-1787998385",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-08-29T07:53:05+00:00",
-        "ended_at": "2026-08-29T07:59:32+00:00",
-        "elapsed_s": 389,
+        "started_at": "2026-08-29T10:13:05+00:00",
+        "ended_at": "2026-08-29T10:19:04+00:00",
+        "elapsed_s": 361,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1381,8 +1381,8 @@
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "PR #34 merged (misaddressed-play console bug fix); #31 hardware decision and Pd install remain the only open, human-gated items"
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Shipped PR #35 (malformed-UDP-packet crash fix on the networked-horizon endpoint stack); #31 (hardware-provisioning judgment call) still open/unanswered, and adversarial-input review of the rest of hardware/ is still worth a future pass"
       },
       "containment": {
         "foreign_clones": [],
@@ -1528,6 +1528,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1787997672",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-08-29T10:01:12+00:00",
+          "ended_at": "2026-08-29T10:16:08+00:00",
+          "elapsed_s": 898,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #296: cut dose's 25-subcommand passthrough table on bashified (PR #354, merged); pushed to origin/bashified per standing push permission. Queue has more actionable work (#291 dose --arm/--park, #292 --sprint, #148/#149 design stubs)."
+        },
+        {
           "run_id": "scheduler-paced-dev-1787995272",
           "job": "scheduler-paced-dev",
           "started_at": "2026-08-29T09:21:12+00:00",
@@ -1594,41 +1611,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-paced-dev-1787984477",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-08-29T06:21:17+00:00",
-          "ended_at": "2026-08-29T06:37:59+00:00",
-          "elapsed_s": 1004,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1787995272",
+        "run_id": "scheduler-paced-dev-1787997672",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-08-29T09:21:12+00:00",
-        "ended_at": "2026-08-29T09:35:05+00:00",
-        "elapsed_s": 836,
+        "started_at": "2026-08-29T10:01:12+00:00",
+        "ended_at": "2026-08-29T10:16:08+00:00",
+        "elapsed_s": 898,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 3,
+        "issues_closed": 1,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #259 (fleet-sensor blind spot, verified live via hf7y.com/monkey/status.json -- symptom gone) and #225 (thermostat witness: want_min tracking confirmed via public status.json run timestamps, no sudo needed). Landed+merged PR #353 for #338 (agent-prose audit): removed dead 'claim-drift --convention' pointer from ideate.md, verified every other named mechanism still resolves. 3 closed, 0 opened. Queue has real remaining work: #149 (BLOCKED verdict + answer registry, durable, Zach-decided, p"
+        "claimed_reason": "Closed #296: cut dose's 25-subcommand passthrough table on bashified (PR #354, merged); pushed to origin/bashified per standing push permission. Queue has more actionable work (#291 dose --arm/--park, #292 --sprint, #148/#149 design stubs)."
       },
       "containment": {
         "foreign_clones": [],
@@ -2253,10 +2253,10 @@
     }
   ],
   "watcher": {
-    "generated": "2026-08-29T10:10:01Z",
+    "generated": "2026-08-29T10:20:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-08-29T10:40:01Z",
+    "valid_until": "2026-08-29T10:50:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2264,7 +2264,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 3 days, 5 hours, 30 minutes",
+    "uptime": "up 3 days, 5 hours, 40 minutes",
     "clock_drift_hours": 0.0,
     "root_mount": "rw",
     "guest_error": null,
