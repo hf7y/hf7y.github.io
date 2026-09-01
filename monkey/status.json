@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-01T18:50:02Z",
-  "valid_until": "2026-09-02T22:50:02Z",
+  "generated": "2026-09-01T19:00:02Z",
+  "valid_until": "2026-09-02T23:00:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -148,6 +148,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1788288605",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-01T13:50:05-05:00",
+          "ended_at": "2026-09-01T13:52:55-05:00",
+          "elapsed_s": 173,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Re-verified repo (ledger.py, bullets.py clean; tree clean; no open PRs); all 6 open issues are either time-gated DEFAULT-AFTER decisions not yet due (#70,#75,#78,#79,#80) or credential-blocked (#55, wall unchanged from last night: no canvas.token, no CANVAS_TOKEN in this account by design) -- nothing actionable without Zach or elapsed time"
+        },
+        {
           "run_id": "apms-nightly-batch-1788241461",
           "job": "apms-nightly-batch",
           "started_at": "2026-09-01T00:44:21-05:00",
@@ -214,41 +231,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Landed #52 (delayed_post_at auto-publish via schedule_topic exemption), PR #73 merged, issue closed; queue's remaining 6 issues are all needs-human/blocked (5 awaiting DECISION or already-answered-pending-triage, 1 credential-blocked)."
-        },
-        {
-          "run_id": "apms-nightly-batch-1787985006",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-08-29T06:30:06+00:00",
-          "ended_at": "2026-08-29T06:34:02+00:00",
-          "elapsed_s": 239,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed apms-2173#54: crt#100 (edit-in-place, merged 2026-08-29T03:15Z) already answers the relay questions and collapses apms's weekly tickets onto one message with no apms-side change needed"
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788241461",
+        "run_id": "apms-nightly-batch-1788288605",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-01T00:44:21-05:00",
-        "ended_at": "2026-09-01T00:56:13-05:00",
-        "elapsed_s": 715,
+        "started_at": "2026-09-01T13:50:05-05:00",
+        "ended_at": "2026-09-01T13:52:55-05:00",
+        "elapsed_s": 173,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
-        "issues_opened": 1,
-        "issues_closed": 2,
-        "prs_opened": 2,
-        "prs_merged": 2,
-        "verdict_computed": "WORKED",
+        "commits_added": 0,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Built and merged #57 (standup.parse into DUE/PRIVATE) and #53 (done.py mechanical+judgement scaffold); filed follow-up #80; remaining open issues are all needs-human decisions or credential-blocked (#55), tree clean"
+        "claimed_reason": "Re-verified repo (ledger.py, bullets.py clean; tree clean; no open PRs); all 6 open issues are either time-gated DEFAULT-AFTER decisions not yet due (#70,#75,#78,#79,#80) or credential-blocked (#55, wall unchanged from last night: no canvas.token, no CANVAS_TOKEN in this account by design) -- nothing actionable without Zach or elapsed time"
       },
       "containment": {
         "foreign_clones": [],
@@ -535,6 +535,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788288427",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-01T13:47:07-05:00",
+          "ended_at": "2026-09-01T13:51:05-05:00",
+          "elapsed_s": 241,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Re-verified all 6 open issues (#15,#53,#54,#66,#67,#68); each is unchanged since last check and genuinely blocked on a human decision, external credential, or another repo's mechanism -- nothing to build tonight, no code touched."
+        },
+        {
           "run_id": "chezz-nightly-batch-1788241480",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-01T00:44:40-05:00",
@@ -601,41 +618,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "8th pass tonight, verified-quiet: no new answers, no tracker drift, #67 still blocked on GitHub's own cron (now 1h47m late), all else waiting on Zach or credentials"
-        },
-        {
-          "run_id": "chezz-nightly-batch-1787995628",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-08-29T09:27:08+00:00",
-          "ended_at": "2026-08-29T09:31:50+00:00",
-          "elapsed_s": 284,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Seventh pass tonight: re-verified from primary sources, nothing new -- all open issues (#15,#66,#53,#54,#68) genuinely blocked on Zach or credentials, #67's fix is landed and only awaits an actual scheduled-run observation, bug/feature tracker (16 reports) fully triaged with nothing actionable."
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788241480",
+        "run_id": "chezz-nightly-batch-1788288427",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-01T00:44:40-05:00",
-        "ended_at": "2026-09-01T00:50:12-05:00",
-        "elapsed_s": 335,
+        "started_at": "2026-09-01T13:47:07-05:00",
+        "ended_at": "2026-09-01T13:51:05-05:00",
+        "elapsed_s": 241,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Full backlog sweep (7 open GH issues + 9 bug + 7 feature tracker reports): everything actionable is blocked on Zach's judgment or missing credentials except #31, which was verified genuinely resolved and closed; posted tonight's sweep-status (16/0/0/16), no code changes needed."
+        "claimed_reason": "Re-verified all 6 open issues (#15,#53,#54,#66,#67,#68); each is unchanged since last check and genuinely blocked on a human decision, external credential, or another repo's mechanism -- nothing to build tonight, no code touched."
       },
       "containment": {
         "foreign_clones": [],
@@ -663,6 +663,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "crt-nightly-batch-1788287411",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-01T13:30:11-05:00",
+          "ended_at": "2026-09-01T13:51:51-05:00",
+          "elapsed_s": 1303,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Landed hf7y/crt#124 (SESSION-STATE.md/HANDOFF.md dexter-era reap, prose ratchets lowered); rest of queue blocked (dexter SSH access, Zach credential/decision, or fresh no-default drops)"
+        },
         {
           "run_id": "crt-nightly-batch-1788235706",
           "job": "crt-nightly-batch",
@@ -730,31 +747,14 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "landed crt#95 relay-side interim (PR #114 merged), labeled it needs-host for the remaining hermes-agent-side fix; #48 (prose reap) and #105's check-only half remain actionable in the queue"
-        },
-        {
-          "run_id": "crt-nightly-batch-1787995812",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-08-29T09:30:12+00:00",
-          "ended_at": "2026-08-29T09:39:30+00:00",
-          "elapsed_s": 560,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Merged wtul's draft PR#88 (zaxon_client.py ZAXON_URL override) after rebasing off stale main to clear the prose-ratchet flag and dropping the redundant comment block; issue queue (105/101/95/48/15) all re-confirmed blocked on dexter/potato ssh access, same wall 3 earlier runs tonight already hit -- no new ground to cover there without a credential only Zach can provision."
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788235706",
+        "run_id": "crt-nightly-batch-1788287411",
         "job": "crt-nightly-batch",
-        "started_at": "2026-08-31T23:08:26-05:00",
-        "ended_at": "2026-08-31T23:18:02-05:00",
-        "elapsed_s": 579,
+        "started_at": "2026-09-01T13:30:11-05:00",
+        "ended_at": "2026-09-01T13:51:51-05:00",
+        "elapsed_s": 1303,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -763,8 +763,8 @@
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed a real prose-ratchet unit mismatch (#121, merged) and corrected #48's tracked gap (11191, not 8409); #105/#101 still blocked on a missing dexter credential (Zach's call), #15 sequenced behind #16 (needs-host)."
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Landed hf7y/crt#124 (SESSION-STATE.md/HANDOFF.md dexter-era reap, prose ratchets lowered); rest of queue blocked (dexter SSH access, Zach credential/decision, or fresh no-default drops)"
       },
       "containment": {
         "foreign_clones": [],
@@ -1183,6 +1183,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788288248",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-01T13:44:08-05:00",
+          "ended_at": "2026-09-01T13:53:49-05:00",
+          "elapsed_s": 584,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "zaxon/CDP/dexter/mandark all confirmed down + ssh-keygen classifier-blocked; found #136 is now live-blocking place-order every tick, documented on #136/#27, filed #88's HA-box senechal registration -- resumes once any channel reopens"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788285848",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-01T13:04:08-05:00",
@@ -1249,31 +1266,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "PR #134 merged (#89 Power/Secondary split); milestone #27's self-heal re-verified live, ticket e19f8193 queued on Zach's reply"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788002648",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-08-29T11:24:08+00:00",
-          "ended_at": "2026-08-29T11:45:33+00:00",
-          "elapsed_s": 1288,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 2,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "store write-lock race fixed (PR #132/#133, merged); milestone #27 waits on ticket 4cd90007's reply"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788285848",
+        "run_id": "groc-mangr-nightly-batch-1788288248",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-01T13:04:08-05:00",
-        "ended_at": "2026-09-01T13:13:17-05:00",
-        "elapsed_s": 552,
+        "started_at": "2026-09-01T13:44:08-05:00",
+        "ended_at": "2026-09-01T13:53:49-05:00",
+        "elapsed_s": 584,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1283,7 +1283,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "zaxon/CDP/ssh(dexter,mandark) all confirmed down again tonight; audited tick.sh's real closure by running it under strace and posted 3 concrete container-design gotchas to #145 (NAT-relative addresses, state-in-clone, dead dirty-checkout guard) -- actual build still needs docker+dexter access this account lacks"
+        "claimed_reason": "zaxon/CDP/dexter/mandark all confirmed down + ssh-keygen classifier-blocked; found #136 is now live-blocking place-order every tick, documented on #136/#27, filed #88's HA-box senechal registration -- resumes once any channel reopens"
       },
       "containment": {
         "foreign_clones": [],
@@ -1441,6 +1441,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1788288644",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-09-01T13:50:44-05:00",
+          "ended_at": "2026-09-01T13:55:04-05:00",
+          "elapsed_s": 262,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-nightly-batch-1788048610",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-08-30T00:10:10+00:00",
@@ -1507,41 +1524,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Fixed a real mechanism bug: bin/lib/handoffs.tsv's 9 monkey-watch rows pointed at dead PR senechal#441 (closed unmerged, superseded twice); retargeted to the live #522 and merged hf7y/realisateur#732 -- reprise --check now reports them correctly instead of OWED-forever against a PR that can never merge. Triaged all 10 open issues: most are genuinely blocked (root/sudo denied by this session's own settings for #620/#695/#728's fleet sweep, dexter SSH denied for #663, GitHub org creation needs Zac"
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1787998211",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-08-29T10:10:11+00:00",
-          "ended_at": "2026-08-29T11:05:08+00:00",
-          "elapsed_s": 3300,
-          "rc": 1,
-          "status": "done",
-          "commits_added": 3,
-          "issues_opened": 0,
-          "issues_closed": 2,
-          "prs_opened": 1,
-          "prs_merged": 5,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Merged 5 PRs (#731 handoff pause, #674 estate-owner rebase+fixes, #730 repose pause/resume, #726 host-tools clock, #718 fleet-freeze causes), closed #673/#704/#517; hf7y/verbs#7+realisateur#694 (monthly-cut) ready but cross-repo merge blocked by permission classifier -- needs human; #728/#620 confirmed still blocked on root/sudo"
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1788048610",
+        "run_id": "realisateur-nightly-batch-1788288644",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-08-30T00:10:10+00:00",
-        "ended_at": "2026-08-30T00:21:55+00:00",
-        "elapsed_s": 707,
+        "started_at": "2026-09-01T13:50:44-05:00",
+        "ended_at": "2026-09-01T13:55:04-05:00",
+        "elapsed_s": 262,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Fixed ausculte's hosts row to read monkey-watch's published verdict instead of BLIND (realisateur#737, merged, issue #735 closed); remaining 10 open issues are each genuinely blocked -- on a human DECISION (#602/#650 deploy-credential pairing, #672/#671 v2 sequencing, #577 provisioning-block call, #695 vkv unit naming), on another repo's own gate (#651 on hf7y/senechal#521), or on root/sudo access this session's own permission layer denies (#728, #620, #663's dexter ssh -- reconfirmed denied thi"
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -1699,6 +1699,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "secretaire-nightly-batch-1788288907",
+          "job": "secretaire-nightly-batch",
+          "started_at": "2026-09-01T13:55:07-05:00",
+          "ended_at": "2026-09-01T13:57:04-05:00",
+          "elapsed_s": 119,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "only open issue (#3) still blocked on Zach filling ACCOUNTS.md, unchanged since 2026-08-30; all tests green, tree clean, no PRs pending"
+        },
+        {
           "run_id": "secretaire-nightly-batch-1788241493",
           "job": "secretaire-nightly-batch",
           "started_at": "2026-09-01T00:44:53-05:00",
@@ -1765,41 +1782,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "closed #5 (printing ownership vendored, PR #8 merged); #3 blocked on Zach's own mailbox inventory (vault ACCOUNTS.md still empty), answered the credential-location half only"
-        },
-        {
-          "run_id": "secretaire-nightly-batch-1787979312",
-          "job": "secretaire-nightly-batch",
-          "started_at": "2026-08-29T04:55:12+00:00",
-          "ended_at": "2026-08-29T05:10:38+00:00",
-          "elapsed_s": 931,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "closed #4 (writing-lint canonicalized in secretaire, draft PRs+validation issues open in musc-2300#51/52 and dcp-gate-site#90/91); #3 (email) and #5 (printing) remain open and actionable"
         }
       ],
       "last_run": {
-        "run_id": "secretaire-nightly-batch-1788241493",
+        "run_id": "secretaire-nightly-batch-1788288907",
         "job": "secretaire-nightly-batch",
-        "started_at": "2026-09-01T00:44:53-05:00",
-        "ended_at": "2026-09-01T00:46:52-05:00",
-        "elapsed_s": 121,
+        "started_at": "2026-09-01T13:55:07-05:00",
+        "ended_at": "2026-09-01T13:57:04-05:00",
+        "elapsed_s": 119,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "closed stale #10 (fix already merged in #11/#12/#13, verified guards green); only #3 remains, blocked on Zach filling ACCOUNTS.md"
+        "claimed_reason": "only open issue (#3) still blocked on Zach filling ACCOUNTS.md, unchanged since 2026-08-30; all tests green, tree clean, no PRs pending"
       },
       "containment": {
         "foreign_clones": [],
@@ -1957,6 +1957,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "sequestria-nightly-batch-1788288665",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-09-01T13:51:05-05:00",
+          "ended_at": "2026-09-01T13:53:01-05:00",
+          "elapsed_s": 118,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "re-verified #29/#9/#6, same 3 Zach-gated blockers (Netlify login, outreach sends, ad buy), 15/15 tests pass, site renders and waitlist round-trips clean, no new zero-cost gap found on a fresh read of app.js/functions/server/index.html/marketing assets"
+        },
+        {
           "run_id": "sequestria-nightly-batch-1788240635",
           "job": "sequestria-nightly-batch",
           "started_at": "2026-09-01T00:30:35-05:00",
@@ -2023,41 +2040,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Shipped og:image/twitter:image (PR #38, merged 04bb08f); #29/#9/#6 remain genuinely blocked on Zach's own account/money actions, fifth confirmation today."
-        },
-        {
-          "run_id": "sequestria-nightly-batch-1787988665",
-          "job": "sequestria-nightly-batch",
-          "started_at": "2026-08-29T07:31:05+00:00",
-          "ended_at": "2026-08-29T07:33:21+00:00",
-          "elapsed_s": 139,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "All 3 open issues (#29, #9, #6) re-confirmed blocked on Zach-only actions (Netlify login, outreach sends, paid ad buy); site+tests+form verified working; no diff to commit, 4th identical confirmation today."
         }
       ],
       "last_run": {
-        "run_id": "sequestria-nightly-batch-1788240635",
+        "run_id": "sequestria-nightly-batch-1788288665",
         "job": "sequestria-nightly-batch",
-        "started_at": "2026-09-01T00:30:35-05:00",
-        "ended_at": "2026-09-01T00:34:41-05:00",
-        "elapsed_s": 249,
+        "started_at": "2026-09-01T13:51:05-05:00",
+        "ended_at": "2026-09-01T13:53:01-05:00",
+        "elapsed_s": 118,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "npm test coverage gap fixed and merged (PR #44); all 3 open issues re-verified still gated on Zach's own action (Netlify login, outreach sends, ad buy) -- nothing else actionable tonight"
+        "claimed_reason": "re-verified #29/#9/#6, same 3 Zach-gated blockers (Netlify login, outreach sends, ad buy), 15/15 tests pass, site renders and waitlist round-trips clean, no new zero-cost gap found on a fresh read of app.js/functions/server/index.html/marketing assets"
       },
       "containment": {
         "foreign_clones": [],
@@ -2085,6 +2085,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "vim-arcade-nightly-batch-1788289024",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-09-01T13:57:04-05:00",
+          "ended_at": "2026-09-01T14:00:12-05:00",
+          "elapsed_s": 191,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "PR #214 merged (issue #77 closed via Closes-keyword); only remaining open issue #207 is blocked on root access per realisateur#728, reverified locally (sudo denied, no session-marker wiring present) -- nothing actionable without a human running the apply step"
+        },
         {
           "run_id": "vim-arcade-nightly-batch-1788238544",
           "job": "vim-arcade-nightly-batch",
@@ -2152,41 +2169,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "vim-arcade#207: root cause found and fixed cross-repo (realisateur#729 draft PR + #728 issue restores/wires session-marker.sh so self-dev actually defers to a live interactive session); vim-arcade#207 stays open until that PR merges and is applied to live accounts -- actionable follow-up, not blocked on a human."
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1787965026",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-08-29T00:57:06+00:00",
-          "ended_at": "2026-08-29T01:03:55+00:00",
-          "elapsed_s": 412,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Closed #211 (audited CLAUDE.md + .claude/commands, all named mechanisms verified live, cut one dead post-mortem block, PR #212 merged); #207 (ssh into monkey + spawn agent, pause/worktree self-dev) remains open and unblocked for next run"
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1788238544",
+        "run_id": "vim-arcade-nightly-batch-1788289024",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-08-31T23:55:44-05:00",
-        "ended_at": "2026-09-01T00:10:22-05:00",
-        "elapsed_s": 881,
-        "rc": 1,
-        "status": "FAILED (ceiling: max turns reached)",
-        "commits_added": 5,
+        "started_at": "2026-09-01T13:57:04-05:00",
+        "ended_at": "2026-09-01T14:00:12-05:00",
+        "elapsed_s": 191,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 0,
-        "verdict_computed": "WORKED-CUTOFF",
+        "issues_closed": 1,
+        "prs_opened": 0,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "only open issue #207 blocked on realisateur#728 (root-only --apply step), no new action available this run"
+        "claimed_reason": "PR #214 merged (issue #77 closed via Closes-keyword); only remaining open issue #207 is blocked on root access per realisateur#728, reverified locally (sudo denied, no session-marker wiring present) -- nothing actionable without a human running the apply step"
       },
       "containment": {
         "foreign_clones": [],
@@ -2195,7 +2195,20 @@
       },
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
-        "clones": []
+        "clones": [
+          {
+            "path": "/home/vim-arcade/Documents/Projects/vim-arcade",
+            "local_identity": null,
+            "count": 8,
+            "commits": [
+              "c01f312 hf7y <dangerpine@gmail.com> 2026-08-28T19:23:37+00:00",
+              "77a3d0d hf7y <dangerpine@gmail.com> 2026-08-28T19:19:37+00:00",
+              "abd5cf5 hf7y <dangerpine@gmail.com> 2026-08-23T17:20:01+00:00",
+              "209e9ae hf7y <dangerpine@gmail.com> 2026-08-05T18:11:46+00:00",
+              "2a76014 hf7y <dangerpine@gmail.com> 2026-08-05T14:32:30+00:00"
+            ]
+          }
+        ]
       },
       "credentials": {
         "app_key": "0o640",
@@ -2336,10 +2349,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-01T18:50:01Z",
+    "generated": "2026-09-01T19:00:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-01T19:20:01Z",
+    "valid_until": "2026-09-01T19:30:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2347,7 +2360,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 23 hours, 39 minutes",
+    "uptime": "up 23 hours, 49 minutes",
     "clock_drift_hours": null,
     "root_mount": "rw",
     "guest_error": null,
