@@ -1,8 +1,8 @@
 {
   "schema": 2,
   "host": "monkey",
-  "generated": "2026-09-01T02:10:02Z",
-  "valid_until": "2026-09-02T06:10:02Z",
+  "generated": "2026-09-01T02:20:03Z",
+  "valid_until": "2026-09-02T06:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-08-29T080004Z",
@@ -892,12 +892,7 @@
         "claimed_reason": "Reviewed+verified PR #90 (writing-lint canonical copy) in a fresh clone -- 0 findings/47 files, PASS, run.py untouched -- posted findings on #90 and #91; merge itself blocked by this session's auto-mode permission classifier (tried gh pr merge and gh api PUT .../merge, both denied) even though PR reports MERGEABLE, so it needs a human or a differently-permissioned run. Other 3 ready issues all hit real walls: #8 needs Zach's product-claim decision before any copy, #34's remaining work needs dcpo"
       },
       "containment": {
-        "foreign_clones": [
-          {
-            "path": "/home/dcp-gate-site/Documents/Projects/senechal",
-            "origin": "https://github.com/hf7y/senechal.git"
-          }
-        ],
+        "foreign_clones": [],
         "outside_home": [],
         "sudoers": []
       },
@@ -2261,12 +2256,7 @@
         "claimed_reason": "Backlog fully gated on Zach's decision/hardware/creds; recovered a stranded run report, labeled #19 needs-decision, flagged 3 gates orphaned by #21's closure via comment (debt rule blocked new issues)."
       },
       "containment": {
-        "foreign_clones": [
-          {
-            "path": "/home/wtul/Documents/Projects/senechal",
-            "origin": "https://github.com/hf7y/senechal.git"
-          }
-        ],
+        "foreign_clones": [],
         "outside_home": [],
         "sudoers": []
       },
@@ -2280,10 +2270,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-01T02:10:01Z",
+    "generated": "2026-09-01T02:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-01T02:40:01Z",
+    "valid_until": "2026-09-01T02:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2291,7 +2281,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 hours, 59 minutes",
+    "uptime": "up 7 hours, 9 minutes",
     "clock_drift_hours": null,
     "root_mount": "rw",
     "guest_error": null,
