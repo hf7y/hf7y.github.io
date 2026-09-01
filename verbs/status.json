@@ -1,15 +1,15 @@
 {
   "schema": 3,
-  "generated": "2026-09-01T03:08:05Z",
-  "valid_until": "2026-09-02T07:08:05Z",
+  "generated": "2026-09-01T06:25:19Z",
+  "valid_until": "2026-09-02T10:25:19Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "cut_interval_days": 30,
-  "decision": "CUT",
-  "reason": "17 verb(s) cut",
-  "main_sha": "51b5f91",
-  "ci_run": "33462382621",
-  "build_id": "2026-09-01T030800Z",
+  "decision": "NO_CHANGE",
+  "reason": "payload changed, waiting on the cut interval (last cut 0d ago, interval is 30d)",
+  "main_sha": "1d498ea",
+  "ci_run": "33477457817",
+  "build_id": null,
   "blocked_streak": 0,
   "last_cut": {
     "at": "2026-09-01T03:08:05Z",
@@ -26,6 +26,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-09-01T06:25:19Z",
+      "decision": "NO_CHANGE",
+      "reason": "payload changed, waiting on the cut interval (last cut 0d ago, interval is 30d)",
+      "main_sha": "1d498ea",
+      "ci_run": "33477457817",
+      "build_id": null
+    },
     {
       "at": "2026-09-01T03:08:05Z",
       "decision": "CUT",
