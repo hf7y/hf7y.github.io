@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-01T05:50:02Z",
-  "valid_until": "2026-09-02T09:50:02Z",
+  "generated": "2026-09-01T06:00:03Z",
+  "valid_until": "2026-09-02T10:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -144,6 +144,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1788241461",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-01T00:44:21-05:00",
+          "ended_at": "2026-09-01T00:56:13-05:00",
+          "elapsed_s": 715,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 1,
+          "issues_closed": 2,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Built and merged #57 (standup.parse into DUE/PRIVATE) and #53 (done.py mechanical+judgement scaffold); filed follow-up #80; remaining open issues are all needs-human decisions or credential-blocked (#55), tree clean"
+        },
+        {
           "run_id": "apms-nightly-batch-1788048606",
           "job": "apms-nightly-batch",
           "started_at": "2026-08-30T00:10:06+00:00",
@@ -210,41 +227,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed apms-2173#54: crt#100 (edit-in-place, merged 2026-08-29T03:15Z) already answers the relay questions and collapses apms's weekly tickets onto one message with no apms-side change needed"
-        },
-        {
-          "run_id": "apms-nightly-batch-1787973004",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-08-29T03:10:04+00:00",
-          "ended_at": "2026-08-29T03:14:56+00:00",
-          "elapsed_s": 295,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Built attendance.py (#62), merged via PR #72, closed #62; #55's probe confirmed structurally blocked (no canvas.token in this account, by design per scheduler ROSTER) and documented on the issue"
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788048606",
+        "run_id": "apms-nightly-batch-1788241461",
         "job": "apms-nightly-batch",
-        "started_at": "2026-08-30T00:10:06+00:00",
-        "ended_at": "2026-08-30T00:15:56+00:00",
-        "elapsed_s": 352,
+        "started_at": "2026-09-01T00:44:21-05:00",
+        "ended_at": "2026-09-01T00:56:13-05:00",
+        "elapsed_s": 715,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 2,
         "issues_opened": 1,
-        "issues_closed": 1,
-        "prs_opened": 1,
-        "prs_merged": 1,
+        "issues_closed": 2,
+        "prs_opened": 2,
+        "prs_merged": 2,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Built #58's cross-training rotation behind a flag defaulting off, opened PR #76, merged to main, closed #58; filed #75 for the two remaining open sub-questions (debt rule kept 1:1)."
+        "claimed_reason": "Built and merged #57 (standup.parse into DUE/PRIVATE) and #53 (done.py mechanical+judgement scaffold); filed follow-up #80; remaining open issues are all needs-human decisions or credential-blocked (#55), tree clean"
       },
       "containment": {
         "foreign_clones": [],
@@ -509,20 +509,7 @@
       },
       "identity": {
         "declared": "bibliothecaire@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/bibliothecaire/Documents/Projects/bibliothecaire",
-            "local_identity": null,
-            "count": 5,
-            "commits": [
-              "f4a306a hf7y <dangerpine@gmail.com> 2026-08-28T04:40:42+00:00",
-              "5dcfb11 hf7y <dangerpine@gmail.com> 2026-08-28T04:39:41+00:00",
-              "05fc4fa hf7y <dangerpine@gmail.com> 2026-08-28T04:38:22+00:00",
-              "581e3eb hf7y <dangerpine@gmail.com> 2026-08-25T01:17:01+00:00",
-              "0b531b5 hf7y <dangerpine@gmail.com> 2026-08-23T17:25:03+00:00"
-            ]
-          }
-        ]
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -539,6 +526,23 @@
       "cron": [],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "chezz-nightly-batch-1788241480",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-01T00:44:40-05:00",
+          "ended_at": "2026-09-01T00:50:12-05:00",
+          "elapsed_s": 335,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Full backlog sweep (7 open GH issues + 9 bug + 7 feature tracker reports): everything actionable is blocked on Zach's judgment or missing credentials except #31, which was verified genuinely resolved and closed; posted tonight's sweep-status (16/0/0/16), no code changes needed."
+        },
         {
           "run_id": "chezz-nightly-batch-1788031626",
           "job": "chezz-nightly-batch",
@@ -606,41 +610,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Seventh pass tonight: re-verified from primary sources, nothing new -- all open issues (#15,#66,#53,#54,#68) genuinely blocked on Zach or credentials, #67's fix is landed and only awaits an actual scheduled-run observation, bug/feature tracker (16 reports) fully triaged with nothing actionable."
-        },
-        {
-          "run_id": "chezz-nightly-batch-1787990827",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-08-29T08:07:07+00:00",
-          "ended_at": "2026-08-29T08:11:13+00:00",
-          "elapsed_s": 248,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Sixth pass: everything in scope blocked on Zach's answer (#15/#66/#68/#53) or a credential this account lacks (#54/#53), or the 09:00 UTC scheduled run not having fired yet (#67); nothing to gain by continuing tonight."
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788031626",
+        "run_id": "chezz-nightly-batch-1788241480",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-08-29T19:27:06+00:00",
-        "ended_at": "2026-08-29T19:29:15+00:00",
-        "elapsed_s": 132,
+        "started_at": "2026-09-01T00:44:40-05:00",
+        "ended_at": "2026-09-01T00:50:12-05:00",
+        "elapsed_s": 335,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 1,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Tenth pass tonight: everything re-verified unchanged (check-answers, decision-rot, tracker, PRs, agent.yml runs) \u2014 all open items genuinely blocked on Zach or on GitHub's own cron firing the next agent.yml run to observe #75's fix."
+        "claimed_reason": "Full backlog sweep (7 open GH issues + 9 bug + 7 feature tracker reports): everything actionable is blocked on Zach's judgment or missing credentials except #31, which was verified genuinely resolved and closed; posted tonight's sweep-status (16/0/0/16), no code changes needed."
       },
       "containment": {
         "foreign_clones": [],
@@ -649,17 +636,7 @@
       },
       "identity": {
         "declared": "chezz@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/chezz/Documents/Projects/chezz",
-            "local_identity": null,
-            "count": 2,
-            "commits": [
-              "ca6fb2c hf7y <dangerpine@gmail.com> 2026-07-30T12:46:23-05:00",
-              "2cb961f Zach <dangerpine@gmail.com> 2026-07-30T03:58:23-05:00"
-            ]
-          }
-        ]
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -1044,19 +1021,7 @@
       },
       "identity": {
         "declared": "ecosim@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/ecosim/Documents/Projects/ecosim",
-            "local_identity": null,
-            "count": 4,
-            "commits": [
-              "e1ce2a6 hf7y <dangerpine@gmail.com> 2026-08-20T08:38:15+00:00",
-              "c36ca2a hf7y <dangerpine@gmail.com> 2026-08-18T14:43:24+00:00",
-              "4fb1214 hf7y <dangerpine@gmail.com> 2026-08-18T14:42:27+00:00",
-              "ef0ba83 hf7y <dangerpine@gmail.com> 2026-08-18T14:40:38+00:00"
-            ]
-          }
-        ]
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -1566,28 +1531,7 @@
       },
       "identity": {
         "declared": "realisateur@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/realisateur/Documents/Projects/realisateur",
-            "local_identity": null,
-            "count": 361,
-            "commits": [
-              "b49b481 hf7y <dangerpine@gmail.com> 2026-08-22T06:53:32+00:00",
-              "f096e9f hf7y <dangerpine@gmail.com> 2026-08-22T06:53:07+00:00",
-              "4eac6fd hf7y <dangerpine@gmail.com> 2026-08-22T04:20:02+00:00",
-              "60a3b57 hf7y <dangerpine@gmail.com> 2026-08-22T01:49:35+00:00",
-              "ea2beb1 hf7y <dangerpine@gmail.com> 2026-08-22T01:42:19+00:00"
-            ]
-          },
-          {
-            "path": "/home/realisateur/Documents/Projects/scheduler",
-            "local_identity": null,
-            "count": 1,
-            "commits": [
-              "8ee448e hf7y <dangerpine@gmail.com> 2026-08-11T17:15:46+00:00"
-            ]
-          }
-        ]
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -1714,20 +1658,7 @@
       },
       "identity": {
         "declared": "scheduler@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/scheduler/Documents/Projects/scheduler",
-            "local_identity": null,
-            "count": 6,
-            "commits": [
-              "c3f533c hf7y <dangerpine@gmail.com> 2026-08-29T11:51:22+00:00",
-              "f7ea65a hf7y <dangerpine@gmail.com> 2026-08-29T11:01:05+00:00",
-              "cadd782 hf7y <dangerpine@gmail.com> 2026-08-29T10:56:25+00:00",
-              "aba60d3 hf7y <dangerpine@gmail.com> 2026-08-29T05:48:32+00:00",
-              "28f177b hf7y <dangerpine@gmail.com> 2026-08-29T04:31:35+00:00"
-            ]
-          }
-        ]
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -2108,17 +2039,7 @@
       },
       "identity": {
         "declared": "sequestria@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/sequestria/Documents/Projects/sequestria",
-            "local_identity": null,
-            "count": 2,
-            "commits": [
-              "1a56db5 hf7y <dangerpine@gmail.com> 2026-08-30T00:13:45+00:00",
-              "546c05e hf7y <dangerpine@gmail.com> 2026-08-29T09:58:50+00:00"
-            ]
-          }
-        ]
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -2245,28 +2166,7 @@
       },
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/vim-arcade/Documents/Projects/scheduler",
-            "local_identity": null,
-            "count": 2,
-            "commits": [
-              "ec23714 hf7y <dangerpine@gmail.com> 2026-08-11T14:19:15+00:00",
-              "a478801 hf7y <dangerpine@gmail.com> 2026-08-05T18:45:59+00:00"
-            ]
-          },
-          {
-            "path": "/home/vim-arcade/Documents/Projects/vim-arcade",
-            "local_identity": null,
-            "count": 4,
-            "commits": [
-              "85b3c6f hf7y <dangerpine@gmail.com> 2026-08-15T18:42:12+00:00",
-              "9c64f11 hf7y <dangerpine@gmail.com> 2026-08-15T16:40:22+00:00",
-              "a4dd33e hf7y <dangerpine@gmail.com> 2026-08-15T12:42:16+00:00",
-              "fe5ccd6 hf7y <dangerpine@gmail.com> 2026-08-13T06:39:29+00:00"
-            ]
-          }
-        ]
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -2405,10 +2305,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-01T05:50:01Z",
+    "generated": "2026-09-01T06:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-01T06:20:01Z",
+    "valid_until": "2026-09-01T06:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2416,7 +2316,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 10 hours, 39 minutes",
+    "uptime": "up 10 hours, 49 minutes",
     "clock_drift_hours": null,
     "root_mount": "rw",
     "guest_error": null,
