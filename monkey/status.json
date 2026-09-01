@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-01T21:00:02Z",
-  "valid_until": "2026-09-03T01:00:02Z",
+  "generated": "2026-09-01T21:10:03Z",
+  "valid_until": "2026-09-03T01:10:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -277,6 +277,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "baudin-nightly-batch-1788296289",
+          "job": "baudin-nightly-batch",
+          "started_at": "2026-09-01T15:58:09-05:00",
+          "ended_at": "2026-09-01T16:08:38-05:00",
+          "elapsed_s": 632,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "landed #74 (offline selftest for night_fade_*/kitchen_taper, verified against #63/#73 bug shapes), commented on #17/#18/#19; rest of the open backlog is genuinely blocked on #7 (no HA token, decided/durable) or already flagged for @hf7y's judgment (#29/#13/#14)"
+        },
+        {
           "run_id": "baudin-nightly-batch-1788291489",
           "job": "baudin-nightly-batch",
           "started_at": "2026-09-01T14:38:09-05:00",
@@ -343,41 +360,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "reconfirmed #7 credential wall firsthand + all 11 open issues; filled ghost-behavior.sh's offline test gap; nothing else actionable without a human decision or the HA token"
-        },
-        {
-          "run_id": "baudin-nightly-batch-1788001087",
-          "job": "baudin-nightly-batch",
-          "started_at": "2026-08-29T10:58:07+00:00",
-          "ended_at": "2026-08-29T11:08:49+00:00",
-          "elapsed_s": 645,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Fixed one repo-only bug (#30's stale wiring-blocker header, PR #65 merged); everything else is genuinely blocked on #7 (no creds on this account) or a human/vendor decision (#13/#14/#29/#42)"
         }
       ],
       "last_run": {
-        "run_id": "baudin-nightly-batch-1788291489",
+        "run_id": "baudin-nightly-batch-1788296289",
         "job": "baudin-nightly-batch",
-        "started_at": "2026-09-01T14:38:09-05:00",
-        "ended_at": "2026-09-01T14:48:02-05:00",
-        "elapsed_s": 596,
+        "started_at": "2026-09-01T15:58:09-05:00",
+        "ended_at": "2026-09-01T16:08:38-05:00",
+        "elapsed_s": 632,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Landed #73 (real floor_bulbs off-vs-dimmest-red bug in undeployed night_fade decays), commented on #17; re-audited the rest of the open backlog and confirmed it's genuinely blocked -- #7 (no HA token on baudin@monkey, a decided human-placement wall per realisateur#289) gates nearly everything else, the rest needs Zach's own decisions or physical/human steps (webcam calibration, router 2FA, printer IP, Midea account). No new issues opened, none to close."
+        "claimed_reason": "landed #74 (offline selftest for night_fade_*/kitchen_taper, verified against #63/#73 bug shapes), commented on #17/#18/#19; rest of the open backlog is genuinely blocked on #7 (no HA token, decided/durable) or already flagged for @hf7y's judgment (#29/#13/#14)"
       },
       "containment": {
         "foreign_clones": [],
@@ -794,6 +794,23 @@
       "release_tick": "2026-09-01T10:56:02Z rc=0 pin=2026-09-01T030800Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1788296173",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-01T15:56:13-05:00",
+          "ended_at": "2026-09-01T16:00:20-05:00",
+          "elapsed_s": 250,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "All 6 ready-for-agent issues already exhausted by earlier runs today; re-verified the CI-workflow-push wall myself (still blocked, GitHub App lacks workflows permission) and confirmed self-merge stays off-limits per CLAUDE.md:58 (unchanged, #95 unmerged) -- nothing actionable left for an agent seat tonight, all remaining work needs a human to merge PRs or grant App permissions."
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1788291375",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-09-01T14:36:15-05:00",
@@ -860,31 +877,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Reviewed+verified PR #90 (writing-lint canonical copy) in a fresh clone -- 0 findings/47 files, PASS, run.py untouched -- posted findings on #90 and #91; merge itself blocked by this session's auto-mode permission classifier (tried gh pr merge and gh api PUT .../merge, both denied) even though PR reports MERGEABLE, so it needs a human or a differently-permissioned run. Other 3 ready issues all hit real walls: #8 needs Zach's product-claim decision before any copy, #34's remaining work needs dcpo"
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788003370",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-08-29T11:36:10+00:00",
-          "ended_at": "2026-08-29T11:38:03+00:00",
-          "elapsed_s": 116,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788291375",
+        "run_id": "dcp-gate-site-nightly-batch-1788296173",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-01T14:36:15-05:00",
-        "ended_at": "2026-09-01T14:48:02-05:00",
-        "elapsed_s": 710,
+        "started_at": "2026-09-01T15:56:13-05:00",
+        "ended_at": "2026-09-01T16:00:20-05:00",
+        "elapsed_s": 250,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -894,7 +894,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Fixed the real #81/#90 header conflict (pushed to agent/port-writing-lint-checks, verified 0 findings + selftest pass) and filed genuine cross-repo research (hf7y/bibliothecaire#81, 4 real sourced quotes) closing #8's flagged gap; the 6 ready issues (#8,#34,#74,#80,#91,#96) are otherwise all confirmed still blocked tonight on the same walls (gh pr merge denied by auto-mode classifier, GitHub App lacks workflows permission, dcpomatic2 not installed, or a founder-only call) -- nothing else actiona"
+        "claimed_reason": "All 6 ready-for-agent issues already exhausted by earlier runs today; re-verified the CI-workflow-push wall myself (still blocked, GitHub App lacks workflows permission) and confirmed self-merge stays off-limits per CLAUDE.md:58 (unchanged, #95 unmerged) -- nothing actionable left for an agent seat tonight, all remaining work needs a human to merge PRs or grant App permissions."
       },
       "containment": {
         "foreign_clones": [],
@@ -2349,10 +2349,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-01T21:00:02Z",
+    "generated": "2026-09-01T21:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-01T21:30:02Z",
+    "valid_until": "2026-09-01T21:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2360,7 +2360,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 1 hour, 49 minutes",
+    "uptime": "up 1 day, 1 hour, 59 minutes",
     "clock_drift_hours": null,
     "root_mount": "rw",
     "guest_error": null,
