@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-01T05:10:02Z",
-  "valid_until": "2026-09-02T09:10:02Z",
+  "generated": "2026-09-01T05:20:03Z",
+  "valid_until": "2026-09-02T09:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1860,7 +1860,11 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "queue has only #3, open; confirmed today ACCOUNTS.md is still unfilled (Zach-only data) and no non-guessing shortcut exists \u2014 tried a system-config scan, correctly refused by the permission classifier as personal-data reach; nothing else actionable, no debt opened"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "secretaire@selfdev.invalid",
         "clones": []
@@ -2417,10 +2421,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-01T05:10:01Z",
+    "generated": "2026-09-01T05:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-01T05:40:01Z",
+    "valid_until": "2026-09-01T05:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2428,7 +2432,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 9 hours, 59 minutes",
+    "uptime": "up 10 hours, 9 minutes",
     "clock_drift_hours": null,
     "root_mount": "rw",
     "guest_error": null,
