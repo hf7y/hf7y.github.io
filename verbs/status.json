@@ -1,23 +1,23 @@
 {
   "schema": 3,
-  "generated": "2026-08-29T08:00:09Z",
-  "valid_until": "2026-08-30T12:00:09Z",
+  "generated": "2026-09-01T03:08:05Z",
+  "valid_until": "2026-09-02T07:08:05Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "cut_interval_days": 30,
   "decision": "CUT",
   "reason": "17 verb(s) cut",
-  "main_sha": "fd02f76",
-  "ci_run": "33242091590",
-  "build_id": "2026-08-29T080004Z",
+  "main_sha": "51b5f91",
+  "ci_run": "33462382621",
+  "build_id": "2026-09-01T030800Z",
   "blocked_streak": 0,
   "last_cut": {
-    "at": "2026-08-29T08:00:09Z",
+    "at": "2026-09-01T03:08:05Z",
     "decision": "CUT",
     "reason": "17 verb(s) cut",
-    "main_sha": "fd02f76",
-    "ci_run": "33242091590",
-    "build_id": "2026-08-29T080004Z"
+    "main_sha": "51b5f91",
+    "ci_run": "33462382621",
+    "build_id": "2026-09-01T030800Z"
   },
   "decisions_enum": [
     "CUT",
@@ -26,6 +26,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-09-01T03:08:05Z",
+      "decision": "CUT",
+      "reason": "17 verb(s) cut",
+      "main_sha": "51b5f91",
+      "ci_run": "33462382621",
+      "build_id": "2026-09-01T030800Z"
+    },
     {
       "at": "2026-08-29T08:00:09Z",
       "decision": "CUT",
