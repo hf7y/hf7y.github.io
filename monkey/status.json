@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-01T21:20:02Z",
-  "valid_until": "2026-09-03T01:20:02Z",
+  "generated": "2026-09-01T21:30:03Z",
+  "valid_until": "2026-09-03T01:30:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1053,6 +1053,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1788297126",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-09-01T16:12:06-05:00",
+          "ended_at": "2026-09-01T16:30:08-05:00",
+          "elapsed_s": 1085,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 2,
+          "issues_closed": 2,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed+merged 2 real bugs found by continued gardien.py audit (#130 zlib.error crash in media-audit, #132 missing BatchMode=yes on the backup's own rsync-ssh transport, both with regression tests, 295 tests green); 7 backlog issues re-confirmed genuinely blocked on real mandark/dexter host access this sandbox lacks (ssh mandark: host key failure, ssh dexter: connection refused) or on Zach's own decision (#26); next run should keep auditing gardien.py/bashified for correctness bugs, the one channe"
+        },
+        {
           "run_id": "gardien-nightly-batch-1788291125",
           "job": "gardien-nightly-batch",
           "started_at": "2026-09-01T14:32:05-05:00",
@@ -1119,31 +1136,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Ninth run: filed+fixed+merged 2 real logic bugs (#113 latest_snapshot picking a stray dir as --link-dest baseline, #115 rsync missing -H dropping source hardlinks); all 8 backlog issues re-confirmed blocked on Zach/real-host access; next run should try a fresh sweep angle (media-audit ranking/selection logic, git-hygiene freshness sensing, argparse mutual-exclusion) since crash-shape and config-null sweeps are now dry but logic-bug sweeps keep finding real gaps."
-        },
-        {
-          "run_id": "gardien-nightly-batch-1788025927",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-08-29T17:52:07+00:00",
-          "ended_at": "2026-08-29T17:59:57+00:00",
-          "elapsed_s": 473,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 1,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Fixed+merged PR #112 (raw IsADirectoryError on --media-quarantine --report / --media-unquarantine manifest paths, #111); backlog's 8 open issues all still blocked on real mandark/dexter access or Zach's own PR #59 decision, but manual filesystem-call tracing (not generic sweeps) has found a real bug on all 8 runs today -- worth one more careful pass next run."
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1788291125",
+        "run_id": "gardien-nightly-batch-1788297126",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-09-01T14:32:05-05:00",
-        "ended_at": "2026-09-01T14:55:58-05:00",
-        "elapsed_s": 1435,
+        "started_at": "2026-09-01T16:12:06-05:00",
+        "ended_at": "2026-09-01T16:30:08-05:00",
+        "elapsed_s": 1085,
         "rc": 0,
         "status": "done",
         "commits_added": 2,
@@ -1152,8 +1152,8 @@
         "prs_opened": 2,
         "prs_merged": 2,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Found+fixed+merged 2 real bugs (host-name raid_root escape #126, prose-ratchet unit rebase #128, plus a media-audit gzip EOFError crash); all 8 open issues re-confirmed genuinely blocked on Zach's decision or real mandark/dexter SSH access, none actionable tonight."
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Fixed+merged 2 real bugs found by continued gardien.py audit (#130 zlib.error crash in media-audit, #132 missing BatchMode=yes on the backup's own rsync-ssh transport, both with regression tests, 295 tests green); 7 backlog issues re-confirmed genuinely blocked on real mandark/dexter host access this sandbox lacks (ssh mandark: host key failure, ssh dexter: connection refused) or on Zach's own decision (#26); next run should keep auditing gardien.py/bashified for correctness bugs, the one channe"
       },
       "containment": {
         "foreign_clones": [],
@@ -2349,10 +2349,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-01T21:20:02Z",
+    "generated": "2026-09-01T21:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-01T21:50:02Z",
+    "valid_until": "2026-09-01T22:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2360,7 +2360,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 2 hours, 9 minutes",
+    "uptime": "up 1 day, 2 hours, 19 minutes",
     "clock_drift_hours": null,
     "root_mount": "rw",
     "guest_error": null,
