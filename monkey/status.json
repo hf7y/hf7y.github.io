@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-01T05:00:02Z",
-  "valid_until": "2026-09-02T09:00:02Z",
+  "generated": "2026-09-01T05:10:02Z",
+  "valid_until": "2026-09-02T09:10:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -509,29 +509,7 @@
       },
       "containment": {
         "foreign_clones": [],
-        "outside_home": [
-          "/srv/ecosystem1-vault/vim-arcade",
-          "/srv/ecosystem1-vault/vim-arcade/UNDESIGNED-ARCS.md",
-          "/srv/ecosystem1-vault/.consigne.lock",
-          "/srv/ecosystem1-vault/.gitignore",
-          "/srv/ecosystem1-vault/.git/config",
-          "/srv/ecosystem1-vault/.git/objects/be",
-          "/srv/ecosystem1-vault/.git/objects/be/3eec713ad79396a804c979e1815be9473d602f",
-          "/srv/ecosystem1-vault/.git/objects/94",
-          "/srv/ecosystem1-vault/.git/objects/94/e0fa8f339a6c6ddea1ca513934a60352851cb5",
-          "/srv/ecosystem1-vault/.git/objects/c5",
-          "/srv/ecosystem1-vault/.git/objects/c5/ee5289eca0bdc2b9687772b5afc1909d3ea295",
-          "/srv/ecosystem1-vault/.git/objects/4b",
-          "/srv/ecosystem1-vault/.git/objects/4b/e1a29bd6082830050ab5c9208d5edf33f42708",
-          "/srv/ecosystem1-vault/.git/objects/ef",
-          "/srv/ecosystem1-vault/.git/objects/ef/2a356ea57fc25dcacf380117cd9fa0ba78ed4d",
-          "/srv/ecosystem1-vault/.git/objects/40",
-          "/srv/ecosystem1-vault/.git/objects/40/463367aa59c8623ed309963f54c2cb7b3c5711",
-          "/srv/ecosystem1-vault/.git/objects/e4",
-          "/srv/ecosystem1-vault/.git/objects/e4/ba6ef6bd8ddd6b71fca50e6a3d6617a4cdaedb",
-          "/srv/ecosystem1-vault/.git/objects/62",
-          "... and 104 more"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "identity": {
@@ -539,9 +517,15 @@
         "clones": [
           {
             "path": "/home/bibliothecaire/Documents/Projects/bibliothecaire",
-            "local_identity": "dangerpine@gmail.com",
-            "count": 0,
-            "commits": []
+            "local_identity": null,
+            "count": 10,
+            "commits": [
+              "6c62464 hf7y <dangerpine@gmail.com> 2026-08-28T04:42:02+00:00",
+              "f4a306a hf7y <dangerpine@gmail.com> 2026-08-28T04:40:42+00:00",
+              "5dcfb11 hf7y <dangerpine@gmail.com> 2026-08-28T04:39:41+00:00",
+              "05fc4fa hf7y <dangerpine@gmail.com> 2026-08-28T04:38:22+00:00",
+              "581e3eb hf7y <dangerpine@gmail.com> 2026-08-25T01:17:01+00:00"
+            ]
           }
         ]
       },
@@ -802,10 +786,7 @@
       },
       "containment": {
         "foreign_clones": [],
-        "outside_home": [
-          "/srv/ecosystem1-vault/crt/.claude/SESSION-STATE-20260829.md",
-          "/srv/ecosystem1-vault/crt/HANDOFF-20260829.md"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "identity": {
@@ -959,6 +940,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1788238535",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-08-31T23:55:35-05:00",
+          "ended_at": "2026-09-01T00:03:25-05:00",
+          "elapsed_s": 472,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "All 3 open issues (#97, #113, #118) are blocked on human/infra action: #97 needs a gh secret paste, #113 chains off #97, #118's container migration needs root (no docker on monkey, no sudo) and a hosting/redesign call only Zach can make -- confirmed with concrete probes (docker absent, sudo denied, ssh dexter refused) and posted to #118."
+        },
+        {
           "run_id": "ecosim-nightly-batch-1788048667",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-08-30T00:11:07+00:00",
@@ -1025,31 +1023,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "queue re-checked: #97 blocked on human gh secret set (confirmed still unset), #113 milestone status already accurate as of today's earlier run; nothing buildable left"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1787975466",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-08-29T03:51:06+00:00",
-          "ended_at": "2026-08-29T04:00:27+00:00",
-          "elapsed_s": 565,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "only open issues are #97 (blocked on Zach's gh secret set) and #113 (milestone tracker gated on #97); verified #91's fix landed clean via gate re-run + full test pass, nothing else actionable"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1788048667",
+        "run_id": "ecosim-nightly-batch-1788238535",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-08-30T00:11:07+00:00",
-        "ended_at": "2026-08-30T00:21:49+00:00",
-        "elapsed_s": 644,
+        "started_at": "2026-08-31T23:55:35-05:00",
+        "ended_at": "2026-09-01T00:03:25-05:00",
+        "elapsed_s": 472,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1058,8 +1039,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "DONE",
+        "claimed_reason": "All 3 open issues (#97, #113, #118) are blocked on human/infra action: #97 needs a gh secret paste, #113 chains off #97, #118's container migration needs root (no docker on monkey, no sudo) and a hosting/redesign call only Zach can make -- confirmed with concrete probes (docker absent, sudo denied, ssh dexter refused) and posted to #118."
       },
       "containment": {
         "foreign_clones": [],
@@ -1071,9 +1052,15 @@
         "clones": [
           {
             "path": "/home/ecosim/Documents/Projects/ecosim",
-            "local_identity": "dangerpine@gmail.com",
-            "count": 0,
-            "commits": []
+            "local_identity": null,
+            "count": 9,
+            "commits": [
+              "407c8bd hf7y <dangerpine@gmail.com> 2026-08-20T15:21:10+00:00",
+              "e1ce2a6 hf7y <dangerpine@gmail.com> 2026-08-20T08:38:15+00:00",
+              "c36ca2a hf7y <dangerpine@gmail.com> 2026-08-18T14:43:24+00:00",
+              "4fb1214 hf7y <dangerpine@gmail.com> 2026-08-18T14:42:27+00:00",
+              "ef0ba83 hf7y <dangerpine@gmail.com> 2026-08-18T14:40:38+00:00"
+            ]
           }
         ]
       },
@@ -1334,9 +1321,13 @@
         "clones": [
           {
             "path": "/home/groc-mangr/Documents/Projects/groc-mangr",
-            "local_identity": "dangerpine@gmail.com",
-            "count": 0,
-            "commits": []
+            "local_identity": null,
+            "count": 3,
+            "commits": [
+              "00e3e77 hf7y <dangerpine@gmail.com> 2026-08-29T08:25:57+00:00",
+              "e219ce7 hf7y <dangerpine@gmail.com> 2026-08-29T07:07:03+00:00",
+              "61d3e33 hf7y <dangerpine@gmail.com> 2026-08-28T04:10:57+00:00"
+            ]
           }
         ]
       },
@@ -1591,11 +1582,11 @@
         "sudoers": []
       },
       "identity": {
-        "declared": "ci@realisateur.invalid",
+        "declared": "realisateur@selfdev.invalid",
         "clones": [
           {
             "path": "/home/realisateur/Documents/Projects/realisateur",
-            "local_identity": "realisateur@selfdev.invalid",
+            "local_identity": null,
             "count": 364,
             "commits": [
               "9d7945e hf7y <dangerpine@gmail.com> 2026-08-22T07:06:03+00:00",
@@ -1607,9 +1598,11 @@
           },
           {
             "path": "/home/realisateur/Documents/Projects/scheduler",
-            "local_identity": "dangerpine@gmail.com",
-            "count": 0,
-            "commits": []
+            "local_identity": null,
+            "count": 1,
+            "commits": [
+              "8ee448e hf7y <dangerpine@gmail.com> 2026-08-11T17:15:46+00:00"
+            ]
           }
         ]
       },
@@ -1733,14 +1726,7 @@
       },
       "containment": {
         "foreign_clones": [],
-        "outside_home": [
-          "/srv/ecosystem1-vault/.git/refs/remotes/origin/prose-sink-finding",
-          "/srv/ecosystem1-vault/.git/objects/pack/pack-ee445ef0eb870c0f9df5fd1f3a1bd820cdbd8bf7.rev",
-          "/srv/ecosystem1-vault/.git/objects/pack/pack-ee445ef0eb870c0f9df5fd1f3a1bd820cdbd8bf7.pack",
-          "/srv/ecosystem1-vault/.git/objects/pack/pack-ee445ef0eb870c0f9df5fd1f3a1bd820cdbd8bf7.idx",
-          "/srv/ecosystem1-vault/.git/logs/refs/remotes/origin/main",
-          "/srv/ecosystem1-vault/.git/logs/refs/remotes/origin/prose-sink-finding"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "identity": {
@@ -1748,9 +1734,11 @@
         "clones": [
           {
             "path": "/home/scheduler/Documents/Projects/scheduler",
-            "local_identity": "dangerpine@gmail.com",
-            "count": 0,
-            "commits": []
+            "local_identity": null,
+            "count": 1,
+            "commits": [
+              "da96731 hf7y <dangerpine@gmail.com> 2026-08-29T02:25:01+00:00"
+            ]
           }
         ]
       },
@@ -1872,11 +1860,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "queue has only #3, open; confirmed today ACCOUNTS.md is still unfilled (Zach-only data) and no non-guessing shortcut exists \u2014 tried a system-config scan, correctly refused by the permission classifier as personal-data reach; nothing else actionable, no debt opened"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "secretaire@selfdev.invalid",
         "clones": []
@@ -2005,7 +1989,7 @@
         "sudoers": []
       },
       "identity": {
-        "declared": "test@example.com",
+        "declared": "senechal@selfdev.invalid",
         "clones": []
       },
       "credentials": {
@@ -2133,14 +2117,7 @@
       },
       "identity": {
         "declared": "sequestria@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/sequestria/Documents/Projects/sequestria",
-            "local_identity": "dangerpine@gmail.com",
-            "count": 0,
-            "commits": []
-          }
-        ]
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -2157,6 +2134,23 @@
       "cron": [],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "vim-arcade-nightly-batch-1788238544",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-08-31T23:55:44-05:00",
+          "ended_at": "2026-09-01T00:10:22-05:00",
+          "elapsed_s": 881,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 5,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "only open issue #207 blocked on realisateur#728 (root-only --apply step), no new action available this run"
+        },
         {
           "run_id": "vim-arcade-nightly-batch-1788049025",
           "job": "vim-arcade-nightly-batch",
@@ -2224,39 +2218,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #211 (audited CLAUDE.md + .claude/commands, all named mechanisms verified live, cut one dead post-mortem block, PR #212 merged); #207 (ssh into monkey + spawn agent, pause/worktree self-dev) remains open and unblocked for next run"
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1787953025",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-08-28T21:37:05+00:00",
-          "ended_at": "2026-08-28T21:52:10+00:00",
-          "elapsed_s": 907,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 2,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Shipped #210 (map filtered to the sweep roster, closes #208) and closed the stale #204/#203 pair; #207 is still open and actionable for the next run."
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1788049025",
+        "run_id": "vim-arcade-nightly-batch-1788238544",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-08-30T00:17:05+00:00",
-        "ended_at": "2026-08-30T00:18:11+00:00",
-        "elapsed_s": 69,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 0,
+        "started_at": "2026-08-31T23:55:44-05:00",
+        "ended_at": "2026-09-01T00:10:22-05:00",
+        "elapsed_s": 881,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 5,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "verdict_computed": "WORKED-CUTOFF",
         "claimed_verdict": "DONE",
         "claimed_reason": "only open issue #207 blocked on realisateur#728 (root-only --apply step), no new action available this run"
       },
@@ -2270,15 +2247,23 @@
         "clones": [
           {
             "path": "/home/vim-arcade/Documents/Projects/scheduler",
-            "local_identity": "dangerpine@gmail.com",
-            "count": 0,
-            "commits": []
+            "local_identity": null,
+            "count": 2,
+            "commits": [
+              "ec23714 hf7y <dangerpine@gmail.com> 2026-08-11T14:19:15+00:00",
+              "a478801 hf7y <dangerpine@gmail.com> 2026-08-05T18:45:59+00:00"
+            ]
           },
           {
             "path": "/home/vim-arcade/Documents/Projects/vim-arcade",
-            "local_identity": "dangerpine@gmail.com",
-            "count": 0,
-            "commits": []
+            "local_identity": null,
+            "count": 4,
+            "commits": [
+              "85b3c6f hf7y <dangerpine@gmail.com> 2026-08-15T18:42:12+00:00",
+              "9c64f11 hf7y <dangerpine@gmail.com> 2026-08-15T16:40:22+00:00",
+              "a4dd33e hf7y <dangerpine@gmail.com> 2026-08-15T12:42:16+00:00",
+              "fe5ccd6 hf7y <dangerpine@gmail.com> 2026-08-13T06:39:29+00:00"
+            ]
           }
         ]
       },
@@ -2297,6 +2282,23 @@
       "cron": [],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "wtul-nightly-batch-1788238556",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-08-31T23:55:56-05:00",
+          "ended_at": "2026-09-01T00:06:15-05:00",
+          "elapsed_s": 621,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "queue fully re-triaged, no actionable non-hardware/non-Zach work found; fixed a real mistriage on #19 (label wrongly re-added 2026-08-30 over a decision Zach already made 2026-08-14)"
+        },
         {
           "run_id": "wtul-nightly-batch-1788048369",
           "job": "wtul-nightly-batch",
@@ -2364,31 +2366,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Seventh run today: branch audit (fetch --prune + individually checked 11 dangling branches) found all dead pointers to already-landed/migrated work; backlog unchanged, all 7 open issues still gated on Zach's decision, hardware, or credentials this host lacks."
-        },
-        {
-          "run_id": "wtul-nightly-batch-1787993167",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-08-29T08:46:07+00:00",
-          "ended_at": "2026-08-29T09:00:16+00:00",
-          "elapsed_s": 852,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "PR #106 merged (70464bf): fixed a real bug (test_serve.py's edit-tag tests depended on ~/Music/mixes, not hardware), added missing pytest CI; rest of the queue still genuinely blocked on #99/#37/#74/#53/#19"
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788048369",
+        "run_id": "wtul-nightly-batch-1788238556",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-08-30T00:06:09+00:00",
-        "ended_at": "2026-08-30T00:12:50+00:00",
-        "elapsed_s": 403,
+        "started_at": "2026-08-31T23:55:56-05:00",
+        "ended_at": "2026-09-01T00:06:15-05:00",
+        "elapsed_s": 621,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2398,7 +2383,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Backlog fully gated on Zach's decision/hardware/creds; recovered a stranded run report, labeled #19 needs-decision, flagged 3 gates orphaned by #21's closure via comment (debt rule blocked new issues)."
+        "claimed_reason": "queue fully re-triaged, no actionable non-hardware/non-Zach work found; fixed a real mistriage on #19 (label wrongly re-added 2026-08-30 over a decision Zach already made 2026-08-14)"
       },
       "containment": {
         "foreign_clones": [],
@@ -2410,9 +2395,15 @@
         "clones": [
           {
             "path": "/home/wtul/Documents/Projects/wtul",
-            "local_identity": "dangerpine@gmail.com",
-            "count": 0,
-            "commits": []
+            "local_identity": null,
+            "count": 6,
+            "commits": [
+              "1f87715 hf7y <dangerpine@gmail.com> 2026-08-29T19:32:16+00:00",
+              "45445e5 hf7y <dangerpine@gmail.com> 2026-08-28T20:05:27+00:00",
+              "483f795 hf7y <dangerpine@gmail.com> 2026-08-28T20:03:39+00:00",
+              "78d7856 hf7y <dangerpine@gmail.com> 2026-08-28T19:58:56+00:00",
+              "b9aa1a3 hf7y <dangerpine@gmail.com> 2026-08-28T03:56:59+00:00"
+            ]
           }
         ]
       },
@@ -2426,10 +2417,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-01T05:00:02Z",
+    "generated": "2026-09-01T05:10:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-01T05:30:02Z",
+    "valid_until": "2026-09-01T05:40:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2437,7 +2428,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 9 hours, 49 minutes",
+    "uptime": "up 9 hours, 59 minutes",
     "clock_drift_hours": null,
     "root_mount": "rw",
     "guest_error": null,
