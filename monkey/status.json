@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-01T05:40:02Z",
-  "valid_until": "2026-09-02T09:40:02Z",
+  "generated": "2026-09-01T05:50:02Z",
+  "valid_until": "2026-09-02T09:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -16,6 +16,23 @@
       "cron": [],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "abletim-nightly-batch-1788240645",
+          "job": "abletim-nightly-batch",
+          "started_at": "2026-09-01T00:30:45-05:00",
+          "ended_at": "2026-09-01T00:43:09-05:00",
+          "elapsed_s": 747,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "real-media run landed for #2 (offline path declared winner); #5 blocked on SSH creds, not DNS; #18/#6/#28 unchanged, all genuinely blocked or parked"
+        },
         {
           "run_id": "abletim-nightly-batch-1787997425",
           "job": "abletim-nightly-batch",
@@ -83,41 +100,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Landed+merged hf7y/abletim#25: warped-clip beat->file-seconds mapping via WarpMarker interpolation, verified against real fixture data (test_warp.py, 13/13). #2's offline spike still has tempo-automation mapping and a real-media run open (no real fixture to verify tempo-automation math against, left for a session that can risk it carefully); #5 blocked -- dexter-lan/mandark-lan don't resolve from this host (monkey), needs a session run on dexter itself."
-        },
-        {
-          "run_id": "abletim-nightly-batch-1787963827",
-          "job": "abletim-nightly-batch",
-          "started_at": "2026-08-29T00:37:07+00:00",
-          "ended_at": "2026-08-29T00:38:32+00:00",
-          "elapsed_s": 88,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Audited CLAUDE.md + .claude/commands (issue #24): all mechanisms verified live, nothing dead to cut, closed with findings."
         }
       ],
       "last_run": {
-        "run_id": "abletim-nightly-batch-1787997425",
+        "run_id": "abletim-nightly-batch-1788240645",
         "job": "abletim-nightly-batch",
-        "started_at": "2026-08-29T09:57:05+00:00",
-        "ended_at": "2026-08-29T10:00:58+00:00",
-        "elapsed_s": 236,
+        "started_at": "2026-09-01T00:30:45-05:00",
+        "ended_at": "2026-09-01T00:43:09-05:00",
+        "elapsed_s": 747,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "IMPOSSIBLE",
-        "claimed_reason": "All 4 open issues genuinely blocked tonight: #2/offline-spike needs a machine with both ffmpeg and real media (tried apt-get download without root, dependency closure ~47 libs, dead end); #5 needs to run ON dexter (DNS still unresolvable from this host, re-confirmed); #18 needs a human-present session; #6 correctly parked pending #2. No code gap left to close."
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "real-media run landed for #2 (offline path declared winner); #5 blocked on SSH creds, not DNS; #18/#6/#28 unchanged, all genuinely blocked or parked"
       },
       "containment": {
         "foreign_clones": [],
@@ -513,13 +513,13 @@
           {
             "path": "/home/bibliothecaire/Documents/Projects/bibliothecaire",
             "local_identity": null,
-            "count": 10,
+            "count": 5,
             "commits": [
-              "6c62464 hf7y <dangerpine@gmail.com> 2026-08-28T04:42:02+00:00",
               "f4a306a hf7y <dangerpine@gmail.com> 2026-08-28T04:40:42+00:00",
               "5dcfb11 hf7y <dangerpine@gmail.com> 2026-08-28T04:39:41+00:00",
               "05fc4fa hf7y <dangerpine@gmail.com> 2026-08-28T04:38:22+00:00",
-              "581e3eb hf7y <dangerpine@gmail.com> 2026-08-25T01:17:01+00:00"
+              "581e3eb hf7y <dangerpine@gmail.com> 2026-08-25T01:17:01+00:00",
+              "0b531b5 hf7y <dangerpine@gmail.com> 2026-08-23T17:25:03+00:00"
             ]
           }
         ]
@@ -1048,9 +1048,8 @@
           {
             "path": "/home/ecosim/Documents/Projects/ecosim",
             "local_identity": null,
-            "count": 9,
+            "count": 4,
             "commits": [
-              "407c8bd hf7y <dangerpine@gmail.com> 2026-08-20T15:21:10+00:00",
               "e1ce2a6 hf7y <dangerpine@gmail.com> 2026-08-20T08:38:15+00:00",
               "c36ca2a hf7y <dangerpine@gmail.com> 2026-08-18T14:43:24+00:00",
               "4fb1214 hf7y <dangerpine@gmail.com> 2026-08-18T14:42:27+00:00",
@@ -1313,18 +1312,7 @@
       },
       "identity": {
         "declared": "groc-mangr@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/groc-mangr/Documents/Projects/groc-mangr",
-            "local_identity": null,
-            "count": 3,
-            "commits": [
-              "00e3e77 hf7y <dangerpine@gmail.com> 2026-08-29T08:25:57+00:00",
-              "e219ce7 hf7y <dangerpine@gmail.com> 2026-08-29T07:07:03+00:00",
-              "61d3e33 hf7y <dangerpine@gmail.com> 2026-08-28T04:10:57+00:00"
-            ]
-          }
-        ]
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -1341,6 +1329,23 @@
       "cron": [],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "nine-speakers-nightly-batch-1788240625",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-09-01T00:30:25-05:00",
+          "ended_at": "2026-09-01T00:43:43-05:00",
+          "elapsed_s": 800,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "PR #43 merged: fixed supervisor exponential-backoff self-reset bug (measured wait time as health instead of process lifespan); full suite + sim clean; #31 hardware-provisioning decision still open/unanswered, remaining #5 checkboxes need physical presence"
+        },
         {
           "run_id": "nine-speakers-nightly-batch-1788057186",
           "job": "nine-speakers-nightly-batch",
@@ -1408,31 +1413,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Shipped PR #35 (malformed-UDP-packet crash fix on the networked-horizon endpoint stack); #31 (hardware-provisioning judgment call) still open/unanswered, and adversarial-input review of the rest of hardware/ is still worth a future pass"
-        },
-        {
-          "run_id": "nine-speakers-nightly-batch-1787989985",
-          "job": "nine-speakers-nightly-batch",
-          "started_at": "2026-08-29T07:53:05+00:00",
-          "ended_at": "2026-08-29T07:59:32+00:00",
-          "elapsed_s": 389,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "PR #34 merged (misaddressed-play console bug fix); #31 hardware decision and Pd install remain the only open, human-gated items"
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1788057186",
+        "run_id": "nine-speakers-nightly-batch-1788240625",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-08-30T02:33:06+00:00",
-        "ended_at": "2026-08-30T02:40:31+00:00",
-        "elapsed_s": 448,
+        "started_at": "2026-09-01T00:30:25-05:00",
+        "ended_at": "2026-09-01T00:43:43-05:00",
+        "elapsed_s": 800,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1441,8 +1429,8 @@
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "#31 (hardware vs. software) still open/unanswered 24h+; shipped PR #38 (level_balance.format_report crash fix) tonight, but the fresh-functional-read seam is now thin -- next pass should re-check #31 first"
+        "claimed_verdict": "DONE",
+        "claimed_reason": "PR #43 merged: fixed supervisor exponential-backoff self-reset bug (measured wait time as health instead of process lifespan); full suite + sim clean; #31 hardware-provisioning decision still open/unanswered, remaining #5 checkboxes need physical presence"
       },
       "containment": {
         "foreign_clones": [],
@@ -1582,13 +1570,13 @@
           {
             "path": "/home/realisateur/Documents/Projects/realisateur",
             "local_identity": null,
-            "count": 364,
+            "count": 361,
             "commits": [
-              "9d7945e hf7y <dangerpine@gmail.com> 2026-08-22T07:06:03+00:00",
               "b49b481 hf7y <dangerpine@gmail.com> 2026-08-22T06:53:32+00:00",
               "f096e9f hf7y <dangerpine@gmail.com> 2026-08-22T06:53:07+00:00",
               "4eac6fd hf7y <dangerpine@gmail.com> 2026-08-22T04:20:02+00:00",
-              "60a3b57 hf7y <dangerpine@gmail.com> 2026-08-22T01:49:35+00:00"
+              "60a3b57 hf7y <dangerpine@gmail.com> 2026-08-22T01:49:35+00:00",
+              "ea2beb1 hf7y <dangerpine@gmail.com> 2026-08-22T01:42:19+00:00"
             ]
           },
           {
@@ -1730,9 +1718,13 @@
           {
             "path": "/home/scheduler/Documents/Projects/scheduler",
             "local_identity": null,
-            "count": 1,
+            "count": 6,
             "commits": [
-              "da96731 hf7y <dangerpine@gmail.com> 2026-08-29T02:25:01+00:00"
+              "c3f533c hf7y <dangerpine@gmail.com> 2026-08-29T11:51:22+00:00",
+              "f7ea65a hf7y <dangerpine@gmail.com> 2026-08-29T11:01:05+00:00",
+              "cadd782 hf7y <dangerpine@gmail.com> 2026-08-29T10:56:25+00:00",
+              "aba60d3 hf7y <dangerpine@gmail.com> 2026-08-29T05:48:32+00:00",
+              "28f177b hf7y <dangerpine@gmail.com> 2026-08-29T04:31:35+00:00"
             ]
           }
         ]
@@ -1752,6 +1744,23 @@
       "cron": [],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "secretaire-nightly-batch-1788241493",
+          "job": "secretaire-nightly-batch",
+          "started_at": "2026-09-01T00:44:53-05:00",
+          "ended_at": "2026-09-01T00:46:52-05:00",
+          "elapsed_s": 121,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "closed stale #10 (fix already merged in #11/#12/#13, verified guards green); only #3 remains, blocked on Zach filling ACCOUNTS.md"
+        },
         {
           "run_id": "secretaire-nightly-batch-1788048908",
           "job": "secretaire-nightly-batch",
@@ -1819,41 +1828,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "closed #4 (writing-lint canonicalized in secretaire, draft PRs+validation issues open in musc-2300#51/52 and dcp-gate-site#90/91); #3 (email) and #5 (printing) remain open and actionable"
-        },
-        {
-          "run_id": "secretaire-nightly-batch-1787967307",
-          "job": "secretaire-nightly-batch",
-          "started_at": "2026-08-29T01:35:07+00:00",
-          "ended_at": "2026-08-29T01:37:53+00:00",
-          "elapsed_s": 169,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "README fixed, #1 closed via PR #6 (merged); #3/#4/#5 remain open in queue for next run"
         }
       ],
       "last_run": {
-        "run_id": "secretaire-nightly-batch-1788048908",
+        "run_id": "secretaire-nightly-batch-1788241493",
         "job": "secretaire-nightly-batch",
-        "started_at": "2026-08-30T00:15:08+00:00",
-        "ended_at": "2026-08-30T00:18:36+00:00",
-        "elapsed_s": 210,
+        "started_at": "2026-09-01T00:44:53-05:00",
+        "ended_at": "2026-09-01T00:46:52-05:00",
+        "elapsed_s": 121,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 1,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "queue has only #3, open; confirmed today ACCOUNTS.md is still unfilled (Zach-only data) and no non-guessing shortcut exists \u2014 tried a system-config scan, correctly refused by the permission classifier as personal-data reach; nothing else actionable, no debt opened"
+        "claimed_reason": "closed stale #10 (fix already merged in #11/#12/#13, verified guards green); only #3 remains, blocked on Zach filling ACCOUNTS.md"
       },
       "containment": {
         "foreign_clones": [],
@@ -2401,20 +2393,7 @@
       },
       "identity": {
         "declared": "wtul@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/wtul/Documents/Projects/wtul",
-            "local_identity": null,
-            "count": 6,
-            "commits": [
-              "1f87715 hf7y <dangerpine@gmail.com> 2026-08-29T19:32:16+00:00",
-              "45445e5 hf7y <dangerpine@gmail.com> 2026-08-28T20:05:27+00:00",
-              "483f795 hf7y <dangerpine@gmail.com> 2026-08-28T20:03:39+00:00",
-              "78d7856 hf7y <dangerpine@gmail.com> 2026-08-28T19:58:56+00:00",
-              "b9aa1a3 hf7y <dangerpine@gmail.com> 2026-08-28T03:56:59+00:00"
-            ]
-          }
-        ]
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -2426,10 +2405,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-01T05:40:01Z",
+    "generated": "2026-09-01T05:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-01T06:10:01Z",
+    "valid_until": "2026-09-01T06:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2437,7 +2416,7 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 10 hours, 29 minutes",
+    "uptime": "up 10 hours, 39 minutes",
     "clock_drift_hours": null,
     "root_mount": "rw",
     "guest_error": null,
