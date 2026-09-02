@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T05:30:02Z",
-  "valid_until": "2026-09-03T09:30:02Z",
+  "generated": "2026-09-02T05:40:03Z",
+  "valid_until": "2026-09-03T09:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1183,6 +1183,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788326649",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-02T00:24:09-05:00",
+          "ended_at": "2026-09-02T00:36:14-05:00",
+          "elapsed_s": 728,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788311048",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-01T20:04:08-05:00",
@@ -1249,41 +1266,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "all four external deps (dexter/mandark/CDP/zaxon) reconfirmed down independently; queue swept, nothing actionable without them"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788290648",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-01T14:24:08-05:00",
-          "ended_at": "2026-09-01T14:29:36-05:00",
-          "elapsed_s": 331,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "all four external deps (dexter/mandark ssh, groc-browser CDP, zaxon) reconfirmed down; classifier reconfirmed blocking local ssh-keygen for #136; every open issue re-checked, nothing newly actionable since the 18:53Z run 35min ago"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788311048",
+        "run_id": "groc-mangr-nightly-batch-1788326649",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-01T20:04:08-05:00",
-        "ended_at": "2026-09-01T20:09:06-05:00",
-        "elapsed_s": 300,
+        "started_at": "2026-09-02T00:24:09-05:00",
+        "ended_at": "2026-09-02T00:36:14-05:00",
+        "elapsed_s": 728,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 3,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "dexter ssh refused, mandark ssh denied, zaxon/CDP (10.0.2.2:8643/9222) timeout, classifier denies ssh-keygen for #136's key -- reconfirmed fresh, all open issues traced to these same externals"
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2359,10 +2359,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T05:30:02Z",
+    "generated": "2026-09-02T05:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T06:00:02Z",
+    "valid_until": "2026-09-02T06:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2370,11 +2370,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 10 hours, 19 minutes",
+    "uptime": "up 1 day, 10 hours, 29 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T05:30:02Z"
+      "sampled_at": "2026-09-02T05:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
