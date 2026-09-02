@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T01:50:02Z",
-  "valid_until": "2026-09-03T05:50:02Z",
+  "generated": "2026-09-02T02:00:03Z",
+  "valid_until": "2026-09-03T06:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -794,6 +794,23 @@
       "release_tick": "2026-09-01T10:56:02Z rc=0 pin=2026-09-01T030800Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1788312973",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-01T20:36:13-05:00",
+          "ended_at": "2026-09-01T20:51:05-05:00",
+          "elapsed_s": 895,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "18 open PRs verified/deconflicted (3 clusters confirmed non-conflicting, PR #90 independently re-tested); real work landed only as comments (#91,#96,#80) because gh pr merge was denied outright by this session's tool classifier and no Netlify token exists here -- both are hard walls for a human/differently-permissioned run, not decisions"
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1788306973",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-09-01T18:56:13-05:00",
@@ -860,41 +877,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Fixed the real #81/#90 header conflict (pushed to agent/port-writing-lint-checks, verified 0 findings + selftest pass) and filed genuine cross-repo research (hf7y/bibliothecaire#81, 4 real sourced quotes) closing #8's flagged gap; the 6 ready issues (#8,#34,#74,#80,#91,#96) are otherwise all confirmed still blocked tonight on the same walls (gh pr merge denied by auto-mode classifier, GitHub App lacks workflows permission, dcpomatic2 not installed, or a founder-only call) -- nothing else actiona"
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788286574",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-01T13:16:14-05:00",
-          "ended_at": "2026-09-01T13:27:09-05:00",
-          "elapsed_s": 657,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "9 reviewed conflict-free PRs ready to land, but gh pr merge is denied outright by this session's classifier (tested on 2, distinct from the known workflows-permission wall) and self-approve is blocked by shared-account authorship; recorded on #96/#91/#80, nothing else actionable from this seat tonight"
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788306973",
+        "run_id": "dcp-gate-site-nightly-batch-1788312973",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-01T18:56:13-05:00",
-        "ended_at": "2026-09-01T19:16:26-05:00",
-        "elapsed_s": 1215,
+        "started_at": "2026-09-01T20:36:13-05:00",
+        "ended_at": "2026-09-01T20:51:05-05:00",
+        "elapsed_s": 895,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 2,
+        "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "PR #99 (writing-lint CI, verified running) + PR #100 (#34 beta-verified-against copy) opened; #90 reviewed and endorsed; #96/#91/#80's auto-merge step all hit the same harness-classifier wall on PR-merge/branch-protection/repo-settings mutations (named exactly, not routed around); #74 confirmed correctly blocked on #73/PR #81; #8 is a genuine founder decision already asked"
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "18 open PRs verified/deconflicted (3 clusters confirmed non-conflicting, PR #90 independently re-tested); real work landed only as comments (#91,#96,#80) because gh pr merge was denied outright by this session's tool classifier and no Netlify token exists here -- both are hard walls for a human/differently-permissioned run, not decisions"
       },
       "containment": {
         "foreign_clones": [],
@@ -1570,6 +1570,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1788313272",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-09-01T20:41:12-05:00",
+          "ended_at": "2026-09-01T20:57:27-05:00",
+          "elapsed_s": 978,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "scheduler-paced-dev-1788310873",
           "job": "scheduler-paced-dev",
           "started_at": "2026-09-01T20:01:13-05:00",
@@ -1636,41 +1653,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Landed PR #465 (docs/priority-weight.md doc-accuracy fix, #238 reap: 9273->9262 prose lines), merged clean; #238 backlog remains actionable (6,524 lines to target, sync-crontab.sh next candidate)."
-        },
-        {
-          "run_id": "scheduler-paced-dev-1788298874",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-09-01T16:41:14-05:00",
-          "ended_at": "2026-09-01T17:01:21-05:00",
-          "elapsed_s": 1210,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 2,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1788310873",
+        "run_id": "scheduler-paced-dev-1788313272",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-09-01T20:01:13-05:00",
-        "ended_at": "2026-09-01T20:13:00-05:00",
-        "elapsed_s": 709,
+        "started_at": "2026-09-01T20:41:12-05:00",
+        "ended_at": "2026-09-01T20:57:27-05:00",
+        "elapsed_s": 978,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed PR #469 (merged f6d5fd9): enrole-selfdev.sh recognizes CLAUDE.md as the live brief location fleet-wide (surveyed all 18 repos, none has FOCUS.md any more), fixed baudin.conf/crt.conf's stale brief-location and branch preconditions, net -5 prose lines. Closed #468. Verified #454/#458's crontab-write wall still holds (crontab -l itself denied by this session's tool permissions) -- unchanged from prior BLOCKED report, nothing new to add. #238 prose-reap has more actionable targets next run ("
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -1957,6 +1957,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "sequestria-nightly-batch-1788313864",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-09-01T20:51:04-05:00",
+          "ended_at": "2026-09-01T20:56:53-05:00",
+          "elapsed_s": 352,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Fixed client/server waitlist-dedup casing bug (#46, merged); re-verified #29/#9's blockers (Netlify login, outreach sends) unchanged and still gated on Zach's own action; nothing else actionable tonight."
+        },
+        {
           "run_id": "sequestria-nightly-batch-1788305464",
           "job": "sequestria-nightly-batch",
           "started_at": "2026-09-01T18:31:04-05:00",
@@ -2023,31 +2040,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "npm test coverage gap fixed and merged (PR #44); all 3 open issues re-verified still gated on Zach's own action (Netlify login, outreach sends, ad buy) -- nothing else actionable tonight"
-        },
-        {
-          "run_id": "sequestria-nightly-batch-1788048666",
-          "job": "sequestria-nightly-batch",
-          "started_at": "2026-08-30T00:11:06+00:00",
-          "ended_at": "2026-08-30T00:18:39+00:00",
-          "elapsed_s": 456,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Fixed local/prod waitlist-dedup parity bug (PR #40, merged); #29/#9/#6 remain genuinely Zach-gated, 7th confirmation today"
         }
       ],
       "last_run": {
-        "run_id": "sequestria-nightly-batch-1788305464",
+        "run_id": "sequestria-nightly-batch-1788313864",
         "job": "sequestria-nightly-batch",
-        "started_at": "2026-09-01T18:31:04-05:00",
-        "ended_at": "2026-09-01T18:39:58-05:00",
-        "elapsed_s": 537,
+        "started_at": "2026-09-01T20:51:04-05:00",
+        "ended_at": "2026-09-01T20:56:53-05:00",
+        "elapsed_s": 352,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -2057,7 +2057,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Fixed a real og:image/twitter:image absolute-URL bug from PR #38 (PR #45, merged); still blocked only on Zach's Netlify login (#29) and outreach sends (#9), unchanged tonight."
+        "claimed_reason": "Fixed client/server waitlist-dedup casing bug (#46, merged); re-verified #29/#9's blockers (Netlify login, outreach sends) unchanged and still gated on Zach's own action; nothing else actionable tonight."
       },
       "containment": {
         "foreign_clones": [],
@@ -2349,10 +2349,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T01:50:01Z",
+    "generated": "2026-09-02T02:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T02:20:01Z",
+    "valid_until": "2026-09-02T02:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2360,11 +2360,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 6 hours, 39 minutes",
+    "uptime": "up 1 day, 6 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T01:50:01Z"
+      "sampled_at": "2026-09-02T02:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
