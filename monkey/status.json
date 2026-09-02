@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T05:50:02Z",
-  "valid_until": "2026-09-03T09:50:02Z",
+  "generated": "2026-09-02T06:00:03Z",
+  "valid_until": "2026-09-03T10:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -406,6 +406,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "bibliothecaire-research-1788328324",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-02T00:52:04-05:00",
+          "ended_at": "2026-09-02T00:52:27-05:00",
+          "elapsed_s": 25,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Request queue empty; remaining open issues (#35,#37,#38,#56) are all labeled deferred/durable, blocked on human action."
+        },
+        {
           "run_id": "bibliothecaire-research-1788322325",
           "job": "bibliothecaire-research",
           "started_at": "2026-09-01T23:12:05-05:00",
@@ -472,31 +489,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Request queue empty (no request-labeled or non-deferred open issues); the 4 open issues are already deferred/blocked on human decision (#38) or root access I lack (#35, #37), and #56's audit tool is outside my reach (permission-denied)."
-        },
-        {
-          "run_id": "bibliothecaire-research-1788298324",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-09-01T16:32:04-05:00",
-          "ended_at": "2026-09-01T16:32:28-05:00",
-          "elapsed_s": 27,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Queue empty: only deferred/durable issues open (#35,#37,#38,#56), no eligible request or non-deferred issue to work"
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1788322325",
+        "run_id": "bibliothecaire-research-1788328324",
         "job": "bibliothecaire-research",
-        "started_at": "2026-09-01T23:12:05-05:00",
-        "ended_at": "2026-09-01T23:12:37-05:00",
-        "elapsed_s": 34,
+        "started_at": "2026-09-02T00:52:04-05:00",
+        "ended_at": "2026-09-02T00:52:27-05:00",
+        "elapsed_s": 25,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -506,7 +506,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Request queue empty: no open 'request' issues, no other open issues besides 4 already-deferred/durable infra items."
+        "claimed_reason": "Request queue empty; remaining open issues (#35,#37,#38,#56) are all labeled deferred/durable, blocked on human action."
       },
       "containment": {
         "foreign_clones": [],
@@ -1838,6 +1838,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788326601",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-02T00:23:21-05:00",
+          "ended_at": "2026-09-02T00:52:32-05:00",
+          "elapsed_s": 1754,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "senechal-nightly-batch-1788321796",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-01T23:03:16-05:00",
@@ -1904,41 +1921,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788307398",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-01T19:03:18-05:00",
-          "ended_at": "2026-09-01T19:30:47-05:00",
-          "elapsed_s": 1651,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 3,
-          "prs_opened": 2,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788321796",
+        "run_id": "senechal-nightly-batch-1788326601",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-01T23:03:16-05:00",
-        "ended_at": "2026-09-01T23:19:47-05:00",
-        "elapsed_s": 993,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 1,
+        "started_at": "2026-09-02T00:23:21-05:00",
+        "ended_at": "2026-09-02T00:52:32-05:00",
+        "elapsed_s": 1754,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Re-verified full suite green (108 unittest, 199 alerting, 57 suites, 7 contract); ran mandated absorb-and-pr (nothing pending); fixed and merged PR #585 lowering the issue-debt ratchet 39->27 per estate-health's WARN. Every other open issue is genuinely blocked on a human: GitHub App workflows-scope grant (#536, #581), SSH to monkey/dexter (#551 deploy step, #442, #489), a Windows credential on dexter (#439), or is oversized cross-repo design work already filed and explicitly deferred/decayable "
+        "prs_merged": 0,
+        "verdict_computed": "WORKED-CUTOFF",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2359,10 +2359,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T05:50:01Z",
+    "generated": "2026-09-02T06:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T06:20:01Z",
+    "valid_until": "2026-09-02T06:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2370,11 +2370,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 10 hours, 39 minutes",
+    "uptime": "up 1 day, 10 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T05:50:01Z"
+      "sampled_at": "2026-09-02T06:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
