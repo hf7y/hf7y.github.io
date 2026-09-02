@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T05:10:02Z",
-  "valid_until": "2026-09-03T09:10:02Z",
+  "generated": "2026-09-02T05:20:03Z",
+  "valid_until": "2026-09-03T09:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1679,8 +1679,17 @@
         "sudoers": []
       },
       "identity": {
-        "declared": "scheduler@selfdev.invalid",
-        "clones": []
+        "declared": "ci@realisateur.invalid",
+        "clones": [
+          {
+            "path": "/home/scheduler/Documents/Projects/scheduler",
+            "local_identity": null,
+            "count": 1,
+            "commits": [
+              "68c0bea scheduler <scheduler@selfdev.invalid> 2026-08-29T02:25:01+00:00"
+            ]
+          }
+        ]
       },
       "credentials": {
         "app_key": "0o640",
@@ -2350,10 +2359,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T05:10:01Z",
+    "generated": "2026-09-02T05:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T05:40:01Z",
+    "valid_until": "2026-09-02T05:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2361,11 +2370,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 9 hours, 59 minutes",
+    "uptime": "up 1 day, 10 hours, 9 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T05:10:01Z"
+      "sampled_at": "2026-09-02T05:20:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
