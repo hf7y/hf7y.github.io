@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T08:50:02Z",
-  "valid_until": "2026-09-03T12:50:02Z",
+  "generated": "2026-09-02T09:00:03Z",
+  "valid_until": "2026-09-03T13:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1114,6 +1114,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1788337925",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-09-02T03:32:05-05:00",
+          "ended_at": "2026-09-02T03:55:54-05:00",
+          "elapsed_s": 1432,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 3,
+          "issues_closed": 2,
+          "prs_opened": 3,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "landed #148/#150 (fauche script relative-rm-rf, garde media run --all-pending dropping named sets); backlog #25/29/30/31/70/23 still genuinely blocked on real mandark/dexter access this sandbox lacks, #26 blocked on Zach's own merge/delete call"
+        },
+        {
           "run_id": "gardien-nightly-batch-1788333126",
           "job": "gardien-nightly-batch",
           "started_at": "2026-09-02T02:12:06-05:00",
@@ -1180,41 +1197,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Re-verified main (302 unittest) + bashified (full suites.yml set) both green; re-confirmed all 7 backlog issues (#23,25,26,29,30,31,70) still genuinely blocked on real mandark/dexter host access this sandbox lacks (ssh mandark: host key verification failed, ssh dexter: connection refused, no garde.json/gardien.json anywhere on this filesystem) or on Zach's own branch-merge call (#26), unchanged from every run today; did a fresh line-by-line audit of gardien.py (media quarantine/unquarantine, git"
-        },
-        {
-          "run_id": "gardien-nightly-batch-1788312724",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-09-01T20:32:04-05:00",
-          "ended_at": "2026-09-01T20:49:43-05:00",
-          "elapsed_s": 1062,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 4,
-          "issues_opened": 1,
-          "issues_closed": 2,
-          "prs_opened": 1,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Merged stray PR #138 (video_extensions fix) and landed a new fix (#139/#140, verify-restore scratch-dir leak on failure); 6 backlog items still genuinely blocked on real mandark/dexter SSH access this sandbox lacks."
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1788333126",
+        "run_id": "gardien-nightly-batch-1788337925",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-09-02T02:12:06-05:00",
-        "ended_at": "2026-09-02T02:18:10-05:00",
-        "elapsed_s": 367,
+        "started_at": "2026-09-02T03:32:05-05:00",
+        "ended_at": "2026-09-02T03:55:54-05:00",
+        "elapsed_s": 1432,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
-        "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Backlog re-confirmed fully blocked (6 issues on real mandark/dexter access this sandbox lacks, #26/#81 on Zach's own calls); both branches' test suites green with no regressions; extensive gardien.py + bashified lib/media.sh+manifest.sh bug sweep (incl. trace-module coverage check, zero uncovered lines) found no new real bug tonight, unlike prior nights."
+        "issues_opened": 3,
+        "issues_closed": 2,
+        "prs_opened": 3,
+        "prs_merged": 2,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "landed #148/#150 (fauche script relative-rm-rf, garde media run --all-pending dropping named sets); backlog #25/29/30/31/70/23 still genuinely blocked on real mandark/dexter access this sandbox lacks, #26 blocked on Zach's own merge/delete call"
       },
       "containment": {
         "foreign_clones": [],
@@ -1997,7 +1997,7 @@
         "sudoers": []
       },
       "identity": {
-        "declared": "senechal@selfdev.invalid",
+        "declared": "test@example.com",
         "clones": []
       },
       "credentials": {
@@ -2397,10 +2397,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T08:50:01Z",
+    "generated": "2026-09-02T09:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T09:20:01Z",
+    "valid_until": "2026-09-02T09:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2408,11 +2408,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 13 hours, 39 minutes",
+    "uptime": "up 1 day, 13 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T08:50:01Z"
+      "sampled_at": "2026-09-02T09:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
