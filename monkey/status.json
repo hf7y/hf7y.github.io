@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T09:40:02Z",
-  "valid_until": "2026-09-03T13:40:02Z",
+  "generated": "2026-09-02T09:50:02Z",
+  "valid_until": "2026-09-03T13:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -338,6 +338,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "baudin-nightly-batch-1788341890",
+          "job": "baudin-nightly-batch",
+          "started_at": "2026-09-02T04:38:10-05:00",
+          "ended_at": "2026-09-02T04:41:58-05:00",
+          "elapsed_s": 230,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Re-verified: no HA token still (ha-probe.sh, .session-handoff missing), selftest-automations.py + build-circadian.py --check both clean, all 6 non-#7 open issues (#17/18/19/22/30/68) already fully built and blocked only on #7 deploy or a Zach-only decision (#14/21/29/42/13); nothing actionable to build tonight"
+        },
+        {
           "run_id": "baudin-nightly-batch-1788337089",
           "job": "baudin-nightly-batch",
           "started_at": "2026-09-02T03:18:09-05:00",
@@ -404,31 +421,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "baudin-nightly-batch-1788317889",
-          "job": "baudin-nightly-batch",
-          "started_at": "2026-09-01T21:58:09-05:00",
-          "ended_at": "2026-09-01T22:01:18-05:00",
-          "elapsed_s": 192,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Backlog fully triaged: every open issue's buildable work is landed (main at 09fd259), remaining scope on all 10 open issues is genuinely human-only (no ha_token on baudin@monkey, #7, reconfirmed via ha-probe.sh; #7's mechanism question already answered BOUNDARY not omission in realisateur#480 -- no auto-provisioning to build; #13 needs Zach's 2FA enrollment + router creds only on his workstation; #14/#29 need vendor credentials only Zach can mint, #29's HACS install already defaulted-in; #22 nee"
         }
       ],
       "last_run": {
-        "run_id": "baudin-nightly-batch-1788337089",
+        "run_id": "baudin-nightly-batch-1788341890",
         "job": "baudin-nightly-batch",
-        "started_at": "2026-09-02T03:18:09-05:00",
-        "ended_at": "2026-09-02T03:20:36-05:00",
-        "elapsed_s": 149,
+        "started_at": "2026-09-02T04:38:10-05:00",
+        "ended_at": "2026-09-02T04:41:58-05:00",
+        "elapsed_s": 230,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -438,7 +438,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Every open issue is blocked on the #7 credential wall (no ha_token on baudin@monkey) or a recorded human decision (#29 Midea account, #22/#14 physical/model facts); all git-only work (night_fade hold+decay, kitchen_taper, circadian rules 1-3, dexter sshd probe, selftest coverage) is already built, tested green, and merged, waiting on deploy. Cross-repo scheduler#476 (fixing the #29 comment-spam bug) merged tonight. Tree clean, CI green, nothing new actionable."
+        "claimed_reason": "Re-verified: no HA token still (ha-probe.sh, .session-handoff missing), selftest-automations.py + build-circadian.py --check both clean, all 6 non-#7 open issues (#17/18/19/22/30/68) already fully built and blocked only on #7 deploy or a Zach-only decision (#14/21/29/42/13); nothing actionable to build tonight"
       },
       "containment": {
         "foreign_clones": [],
@@ -1889,6 +1889,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788340995",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-02T04:23:15-05:00",
+          "ended_at": "2026-09-02T04:46:26-05:00",
+          "elapsed_s": 1394,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "senechal-nightly-batch-1788338596",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-02T03:43:16-05:00",
@@ -1955,41 +1972,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788326601",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-02T00:23:21-05:00",
-          "ended_at": "2026-09-02T00:52:32-05:00",
-          "elapsed_s": 1754,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788338596",
+        "run_id": "senechal-nightly-batch-1788340995",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-02T03:43:16-05:00",
-        "ended_at": "2026-09-02T04:01:19-05:00",
-        "elapsed_s": 1086,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 2,
+        "started_at": "2026-09-02T04:23:15-05:00",
+        "ended_at": "2026-09-02T04:46:26-05:00",
+        "elapsed_s": 1394,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 2,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed PR #587's two failing checks (registry/boundary.json missing bin/ausculte + man/ausculte.1 entries, prose ratchet +22 overshoot) by cherry-picking the prior cut-off run's own uncommitted salvage fix, verified full local suite + prose census clean, merged #587 (ausculte now ships on main, closes the third of #405's four verbs). Also ran the standing tools/absorb-and-pr.sh pass, opened and merged #589 absorbing #588's crontab door filing, closing it. Backlog has real remaining work (#405's l"
+        "prs_merged": 0,
+        "verdict_computed": "WORKED-CUTOFF",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2276,6 +2276,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788342366",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-02T04:46:06-05:00",
+          "ended_at": "2026-09-02T04:49:35-05:00",
+          "elapsed_s": 211,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "5th consecutive pass today confirms empty, fully-blocked queue (7 open issues, all hardware/session/decision-gated); found 5 more dead salvage/* branches (19 total), cleanup still correctly withheld pending live confirmation; pytest 842/9/0 clean, no repo changes needed"
+        },
+        {
           "run_id": "wtul-nightly-batch-1788337566",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-02T03:26:06-05:00",
@@ -2342,31 +2359,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Sixth independent pass today confirms all 7 open issues genuinely blocked (Zach decision on #99, hardware/access on #110/#53/#74/#37, file-only #81, human-only #78 piece); no commits/issues/PRs changed, report appended."
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788318366",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-01T22:06:06-05:00",
-          "ended_at": "2026-09-01T22:08:26-05:00",
-          "elapsed_s": 142,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "5th independent verification today: all 7 open issues still genuinely blocked (decision/hardware/access/dated-tripwire), pytest 842/9/0 green, PR #105 unchanged, no stranded branches -- nothing actionable"
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788337566",
+        "run_id": "wtul-nightly-batch-1788342366",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-02T03:26:06-05:00",
-        "ended_at": "2026-09-02T03:28:42-05:00",
-        "elapsed_s": 159,
+        "started_at": "2026-09-02T04:46:06-05:00",
+        "ended_at": "2026-09-02T04:49:35-05:00",
+        "elapsed_s": 211,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2376,7 +2376,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "third confirmation today: all 7 open issues remain genuinely gated (needs-decision, hardware, or date tripwire), nothing actionable"
+        "claimed_reason": "5th consecutive pass today confirms empty, fully-blocked queue (7 open issues, all hardware/session/decision-gated); found 5 more dead salvage/* branches (19 total), cleanup still correctly withheld pending live confirmation; pytest 842/9/0 clean, no repo changes needed"
       },
       "containment": {
         "foreign_clones": [],
@@ -2397,10 +2397,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T09:40:01Z",
+    "generated": "2026-09-02T09:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T10:10:01Z",
+    "valid_until": "2026-09-02T10:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2408,11 +2408,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 14 hours, 29 minutes",
+    "uptime": "up 1 day, 14 hours, 39 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T09:40:01Z"
+      "sampled_at": "2026-09-02T09:50:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
