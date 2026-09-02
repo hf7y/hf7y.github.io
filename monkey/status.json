@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T04:20:03Z",
-  "valid_until": "2026-09-03T08:20:03Z",
+  "generated": "2026-09-02T04:30:02Z",
+  "valid_until": "2026-09-03T08:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1312,6 +1312,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "nine-speakers-nightly-batch-1788322385",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-09-01T23:13:05-05:00",
+          "ended_at": "2026-09-01T23:22:51-05:00",
+          "elapsed_s": 589,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #48 merged: endpoint_cli sync no longer raw-tracebacks on timeout; #31 (hardware-provisioning decision) still open/unanswered 3+ days, more hardware/sim modules remain unread for fresh defects"
+        },
+        {
           "run_id": "nine-speakers-nightly-batch-1788312784",
           "job": "nine-speakers-nightly-batch",
           "started_at": "2026-09-01T20:33:04-05:00",
@@ -1378,31 +1395,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "shipped PR #44 (sync CLI command); #31 hardware-provisioning decision still open/unanswered, more software-side defect-hunting on hardware/ remains actionable"
-        },
-        {
-          "run_id": "nine-speakers-nightly-batch-1788240625",
-          "job": "nine-speakers-nightly-batch",
-          "started_at": "2026-09-01T00:30:25-05:00",
-          "ended_at": "2026-09-01T00:43:43-05:00",
-          "elapsed_s": 800,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "PR #43 merged: fixed supervisor exponential-backoff self-reset bug (measured wait time as health instead of process lifespan); full suite + sim clean; #31 hardware-provisioning decision still open/unanswered, remaining #5 checkboxes need physical presence"
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1788312784",
+        "run_id": "nine-speakers-nightly-batch-1788322385",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-09-01T20:33:04-05:00",
-        "ended_at": "2026-09-01T20:42:09-05:00",
-        "elapsed_s": 547,
+        "started_at": "2026-09-01T23:13:05-05:00",
+        "ended_at": "2026-09-01T23:22:51-05:00",
+        "elapsed_s": 589,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1411,8 +1411,8 @@
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "PR #47 merged: endpoint_cli's serve/play/sync no longer raw-traceback on a malformed/stale registry file (found+fixed+tested, 182 tests green, sim clean); #5's checkboxes 1/2/3/5 still blocked on real hardware/room/mic/Zach, #31 still awaiting Zach's provision-vs-iterate call with no new comment"
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "PR #48 merged: endpoint_cli sync no longer raw-tracebacks on timeout; #31 (hardware-provisioning decision) still open/unanswered 3+ days, more hardware/sim modules remain unread for fresh defects"
       },
       "containment": {
         "foreign_clones": [],
@@ -1571,6 +1571,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1788322871",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-09-01T23:21:11-05:00",
+          "ended_at": "2026-09-01T23:26:51-05:00",
+          "elapsed_s": 343,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "scheduler-paced-dev-1788320472",
           "job": "scheduler-paced-dev",
           "started_at": "2026-09-01T22:41:12-05:00",
@@ -1637,39 +1654,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-paced-dev-1788310873",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-09-01T20:01:13-05:00",
-          "ended_at": "2026-09-01T20:13:00-05:00",
-          "elapsed_s": 709,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Landed PR #469 (merged f6d5fd9): enrole-selfdev.sh recognizes CLAUDE.md as the live brief location fleet-wide (surveyed all 18 repos, none has FOCUS.md any more), fixed baudin.conf/crt.conf's stale brief-location and branch preconditions, net -5 prose lines. Closed #468. Verified #454/#458's crontab-write wall still holds (crontab -l itself denied by this session's tool permissions) -- unchanged from prior BLOCKED report, nothing new to add. #238 prose-reap has more actionable targets next run ("
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1788320472",
+        "run_id": "scheduler-paced-dev-1788322871",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-09-01T22:41:12-05:00",
-        "ended_at": "2026-09-01T22:57:52-05:00",
-        "elapsed_s": 1003,
+        "started_at": "2026-09-01T23:21:11-05:00",
+        "ended_at": "2026-09-01T23:26:51-05:00",
+        "elapsed_s": 343,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
+        "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -1958,6 +1958,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "sequestria-nightly-batch-1788322265",
+          "job": "sequestria-nightly-batch",
+          "started_at": "2026-09-01T23:11:05-05:00",
+          "ended_at": "2026-09-01T23:25:47-05:00",
+          "elapsed_s": 885,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "shipped waitlist race-condition fix (PR #47, merged); #29/#9/#6 all remain genuinely gated on Zach's own action (Netlify login, outreach sends, ad buy), re-verified unchanged"
+        },
+        {
           "run_id": "sequestria-nightly-batch-1788313864",
           "job": "sequestria-nightly-batch",
           "started_at": "2026-09-01T20:51:04-05:00",
@@ -2024,31 +2041,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "re-verified #29/#9/#6, same 3 Zach-gated blockers (Netlify login, outreach sends, ad buy), 15/15 tests pass, site renders and waitlist round-trips clean, no new zero-cost gap found on a fresh read of app.js/functions/server/index.html/marketing assets"
-        },
-        {
-          "run_id": "sequestria-nightly-batch-1788240635",
-          "job": "sequestria-nightly-batch",
-          "started_at": "2026-09-01T00:30:35-05:00",
-          "ended_at": "2026-09-01T00:34:41-05:00",
-          "elapsed_s": 249,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "npm test coverage gap fixed and merged (PR #44); all 3 open issues re-verified still gated on Zach's own action (Netlify login, outreach sends, ad buy) -- nothing else actionable tonight"
         }
       ],
       "last_run": {
-        "run_id": "sequestria-nightly-batch-1788313864",
+        "run_id": "sequestria-nightly-batch-1788322265",
         "job": "sequestria-nightly-batch",
-        "started_at": "2026-09-01T20:51:04-05:00",
-        "ended_at": "2026-09-01T20:56:53-05:00",
-        "elapsed_s": 352,
+        "started_at": "2026-09-01T23:11:05-05:00",
+        "ended_at": "2026-09-01T23:25:47-05:00",
+        "elapsed_s": 885,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -2058,7 +2058,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Fixed client/server waitlist-dedup casing bug (#46, merged); re-verified #29/#9's blockers (Netlify login, outreach sends) unchanged and still gated on Zach's own action; nothing else actionable tonight."
+        "claimed_reason": "shipped waitlist race-condition fix (PR #47, merged); #29/#9/#6 all remain genuinely gated on Zach's own action (Netlify login, outreach sends, ad buy), re-verified unchanged"
       },
       "containment": {
         "foreign_clones": [],
@@ -2229,6 +2229,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788323167",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-01T23:26:07-05:00",
+          "ended_at": "2026-09-01T23:27:29-05:00",
+          "elapsed_s": 84,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Sixth independent pass today confirms all 7 open issues genuinely blocked (Zach decision on #99, hardware/access on #110/#53/#74/#37, file-only #81, human-only #78 piece); no commits/issues/PRs changed, report appended."
+        },
+        {
           "run_id": "wtul-nightly-batch-1788318366",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-01T22:06:06-05:00",
@@ -2295,31 +2312,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Queue fully triaged: prior runs today already built/merged PR #109, closed #19, opened #110; verified pytest 842/9/0 clean, re-checked all other open issues (#99,#81,#78,#74,#53,#37) for new decisions, none \u2014 all still genuinely blocked on Zach or hardware; no code changed this run."
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788299167",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-01T16:46:07-05:00",
-          "ended_at": "2026-09-01T16:49:02-05:00",
-          "elapsed_s": 177,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 1,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed #19 (PR #109 already merged CLI fix: readline editing, separated input line, echo control); split remaining real-hardware verification gate into new #110 since #21's closure had orphaned it. Debt rule balanced (1 closed, 1 opened). No repo changes needed; pytest 842 passed/9 skipped."
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788318366",
+        "run_id": "wtul-nightly-batch-1788323167",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-01T22:06:06-05:00",
-        "ended_at": "2026-09-01T22:08:26-05:00",
-        "elapsed_s": 142,
+        "started_at": "2026-09-01T23:26:07-05:00",
+        "ended_at": "2026-09-01T23:27:29-05:00",
+        "elapsed_s": 84,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2329,7 +2329,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "5th independent verification today: all 7 open issues still genuinely blocked (decision/hardware/access/dated-tripwire), pytest 842/9/0 green, PR #105 unchanged, no stranded branches -- nothing actionable"
+        "claimed_reason": "Sixth independent pass today confirms all 7 open issues genuinely blocked (Zach decision on #99, hardware/access on #110/#53/#74/#37, file-only #81, human-only #78 piece); no commits/issues/PRs changed, report appended."
       },
       "containment": {
         "foreign_clones": [],
@@ -2350,10 +2350,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T04:20:02Z",
+    "generated": "2026-09-02T04:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T04:50:02Z",
+    "valid_until": "2026-09-02T05:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2361,11 +2361,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 9 hours, 9 minutes",
+    "uptime": "up 1 day, 9 hours, 19 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T04:20:02Z"
+      "sampled_at": "2026-09-02T04:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
