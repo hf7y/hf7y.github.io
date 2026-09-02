@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T08:40:02Z",
-  "valid_until": "2026-09-03T12:40:02Z",
+  "generated": "2026-09-02T08:50:02Z",
+  "valid_until": "2026-09-03T12:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1631,6 +1631,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1788337274",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-09-02T03:21:14-05:00",
+          "ended_at": "2026-09-02T03:46:09-05:00",
+          "elapsed_s": 1497,
+          "rc": 1,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed #480 (guard-readonly-clone.sh wired into land-selfdev.sh) closing #321; opened realisateur draft PR #911 + issue #912 for the ANSWER CONTRACT lib (#395, still open pending that repo's merge); backlog has more premise-triage and actionable issues left (#471, #350, #364, #349, etc.)"
+        },
+        {
           "run_id": "scheduler-paced-dev-1788334876",
           "job": "scheduler-paced-dev",
           "started_at": "2026-09-02T02:41:16-05:00",
@@ -1697,41 +1714,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "All 6 ready issues (#8,#34,#74,#80,#91,#96) re-verified against fully-documented walls (merge classifier, missing Netlify/dcpomatic2 creds, founder decision); re-tested gh pr merge myself, same classifier block as every prior night. Nothing actionable without human action."
-        },
-        {
-          "run_id": "scheduler-paced-dev-1788325272",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-09-02T00:01:12-05:00",
-          "ended_at": "2026-09-02T00:25:21-05:00",
-          "elapsed_s": 1452,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Fixed hf7y/scheduler#321 in hf7y/realisateur (owning repo): draft PR #901 adds guard-readonly-clone.sh (a pre-commit hook refusing local commits into read-only infra clones, tested, propagation-classified), issue #902 asks realisateur's self-dev to validate/land it; closed hf7y/scheduler#426 (parked-fleet incident it reported already resolved, all 18 ROSTER rows live). Queue still has plenty of open, actionable work (#471, #395, #318's tempo.sh site, #350, etc.)."
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1788334876",
+        "run_id": "scheduler-paced-dev-1788337274",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-09-02T02:41:16-05:00",
-        "ended_at": "2026-09-02T02:58:34-05:00",
-        "elapsed_s": 1040,
+        "started_at": "2026-09-02T03:21:14-05:00",
+        "ended_at": "2026-09-02T03:46:09-05:00",
+        "elapsed_s": 1497,
         "rc": 1,
-        "status": "FAILED (ceiling: max turns reached)",
-        "commits_added": 2,
+        "status": "done",
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 1,
+        "prs_opened": 2,
         "prs_merged": 2,
         "verdict_computed": "WORKED-CUTOFF",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Landed #480 (guard-readonly-clone.sh wired into land-selfdev.sh) closing #321; opened realisateur draft PR #911 + issue #912 for the ANSWER CONTRACT lib (#395, still open pending that repo's merge); backlog has more premise-triage and actionable issues left (#471, #350, #364, #349, etc.)"
       },
       "containment": {
         "foreign_clones": [],
@@ -2397,10 +2397,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T08:40:01Z",
+    "generated": "2026-09-02T08:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T09:10:01Z",
+    "valid_until": "2026-09-02T09:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2408,11 +2408,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 13 hours, 29 minutes",
+    "uptime": "up 1 day, 13 hours, 39 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T08:40:01Z"
+      "sampled_at": "2026-09-02T08:50:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
