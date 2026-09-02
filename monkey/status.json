@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T09:20:02Z",
-  "valid_until": "2026-09-03T13:20:02Z",
+  "generated": "2026-09-02T09:30:03Z",
+  "valid_until": "2026-09-03T13:30:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -2147,6 +2147,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "vim-arcade-nightly-batch-1788340628",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-09-02T04:17:08-05:00",
+          "ended_at": "2026-09-02T04:21:54-05:00",
+          "elapsed_s": 288,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #217 (merge_guard.py premise expired -- superseded by merge_safety.py/commit 1b98499, PR #35, which resolved issue #10 more completely); only remaining open issue #207 is blocked on a human running dresse --host --apply / selfdev-hooks-provision.sh --apply as root, tracked in hf7y/realisateur#728."
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1788328625",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-09-02T00:57:05-05:00",
@@ -2213,41 +2230,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "DONE",
           "claimed_reason": "only open issue #207 blocked on realisateur#728 (root-only --apply step), no new action available this run"
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1788049025",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-08-30T00:17:05+00:00",
-          "ended_at": "2026-08-30T00:18:11+00:00",
-          "elapsed_s": 69,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "only open issue #207 blocked on realisateur#728 (root-only --apply step), no new action available this run"
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1788328625",
+        "run_id": "vim-arcade-nightly-batch-1788340628",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-09-02T00:57:05-05:00",
-        "ended_at": "2026-09-02T01:03:48-05:00",
-        "elapsed_s": 406,
+        "started_at": "2026-09-02T04:17:08-05:00",
+        "ended_at": "2026-09-02T04:21:54-05:00",
+        "elapsed_s": 288,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 1,
         "prs_opened": 0,
-        "prs_merged": 1,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Closed #216 (merged PR #215, fixed CLAUDE.md push-permission text + prose-ratchet failure); only remaining open issue #207 is blocked on a human running dresse --host --apply as root (hf7y/realisateur#728)."
+        "claimed_reason": "Closed #217 (merge_guard.py premise expired -- superseded by merge_safety.py/commit 1b98499, PR #35, which resolved issue #10 more completely); only remaining open issue #207 is blocked on a human running dresse --host --apply / selfdev-hooks-provision.sh --apply as root, tracked in hf7y/realisateur#728."
       },
       "containment": {
         "foreign_clones": [],
@@ -2397,10 +2397,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T09:20:02Z",
+    "generated": "2026-09-02T09:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T09:50:02Z",
+    "valid_until": "2026-09-02T10:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2408,11 +2408,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 14 hours, 9 minutes",
+    "uptime": "up 1 day, 14 hours, 19 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T09:20:02Z"
+      "sampled_at": "2026-09-02T09:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
