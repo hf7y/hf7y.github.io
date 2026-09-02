@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T11:30:02Z",
-  "valid_until": "2026-09-03T15:30:02Z",
+  "generated": "2026-09-02T11:40:02Z",
+  "valid_until": "2026-09-03T15:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -209,6 +209,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1788348606",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-02T06:30:06-05:00",
+          "ended_at": "2026-09-02T06:34:43-05:00",
+          "elapsed_s": 280,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Fixed standup.py DASH false-positive on compound-word hyphens (fx-chains/sound-design), pushed to main; all 6 open issues are blocked on Zach's decision (DEFAULT-AFTER not yet reached) or on the scheduled account's deliberate lack of a Canvas token (#55) -- nothing else actionable."
+        },
+        {
           "run_id": "apms-nightly-batch-1788336606",
           "job": "apms-nightly-batch",
           "started_at": "2026-09-02T03:10:06-05:00",
@@ -275,41 +292,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "All 6 open issues (#55,#70,#75,#78,#79,#80) gated on hf7y/Zach decisions, admin credentials, or unelapsed DEFAULT-AFTER timers; re-verified ledger.py/bullets.py clean and confirmed the known canvas.token credential wall, no new work surfaced"
-        },
-        {
-          "run_id": "apms-nightly-batch-1788288605",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-01T13:50:05-05:00",
-          "ended_at": "2026-09-01T13:52:55-05:00",
-          "elapsed_s": 173,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Re-verified repo (ledger.py, bullets.py clean; tree clean; no open PRs); all 6 open issues are either time-gated DEFAULT-AFTER decisions not yet due (#70,#75,#78,#79,#80) or credential-blocked (#55, wall unchanged from last night: no canvas.token, no CANVAS_TOKEN in this account by design) -- nothing actionable without Zach or elapsed time"
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788336606",
+        "run_id": "apms-nightly-batch-1788348606",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-02T03:10:06-05:00",
-        "ended_at": "2026-09-02T03:13:53-05:00",
-        "elapsed_s": 230,
+        "started_at": "2026-09-02T06:30:06-05:00",
+        "ended_at": "2026-09-02T06:34:43-05:00",
+        "elapsed_s": 280,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Fixed 2 real bugs (standup.py dangling semicolon leaking into DUE bullets; done.py judge() not enforcing its own no-silent-missing-downgrade invariant), committed+pushed to main; all 6 open issues remain genuinely blocked (5 within DEFAULT-AFTER windows awaiting Zach, #55 needs a credential only Zach can place)."
+        "claimed_reason": "Fixed standup.py DASH false-positive on compound-word hyphens (fx-chains/sound-design), pushed to main; all 6 open issues are blocked on Zach's decision (DEFAULT-AFTER not yet reached) or on the scheduled account's deliberate lack of a Canvas token (#55) -- nothing else actionable."
       },
       "containment": {
         "foreign_clones": [],
@@ -2397,10 +2397,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T11:30:01Z",
+    "generated": "2026-09-02T11:40:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T12:00:01Z",
+    "valid_until": "2026-09-02T12:10:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2408,11 +2408,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 16 hours, 19 minutes",
+    "uptime": "up 1 day, 16 hours, 29 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T11:30:01Z"
+      "sampled_at": "2026-09-02T11:40:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
