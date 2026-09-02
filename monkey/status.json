@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T17:50:02Z",
-  "valid_until": "2026-09-03T21:50:02Z",
+  "generated": "2026-09-02T18:00:03Z",
+  "valid_until": "2026-09-03T22:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -665,6 +665,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788371226",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-02T12:47:06-05:00",
+          "ended_at": "2026-09-02T12:51:03-05:00",
+          "elapsed_s": 239,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Backlog genuinely drained: re-verified all 16 open tracker reports and GH issues #15/#53/#66/#67/#68 -- all blocked on human decisions (Netlify vs Apps-Script-proxy fork, Chezz Classic scope, prose-gate policy) or missing credentials (NETLIFY_AUTH_TOKEN, Apps Script API toggle, GEMINI_API_KEY), same walls as the last several nights, re-confirmed via env/clasp/netlify checks tonight -- nothing new to build; tree clean, no open PRs, CI green."
+        },
+        {
           "run_id": "chezz-nightly-batch-1788365226",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-02T11:07:06-05:00",
@@ -731,31 +748,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "All 5 open issues re-verified as genuinely blocked on human/external input (no new secrets, no netlify CLI, no new hf7y comments); bug tracker has no new reports; no unmerged branches carry unlanded actionable work; tree clean, nothing to build tonight."
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788341225",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-02T04:27:05-05:00",
-          "ended_at": "2026-09-02T04:31:26-05:00",
-          "elapsed_s": 264,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Nothing actionable: all 5 open issues are human/credential-blocked (#66 no-comment question, #53 Google Apps Script perm, #15 \u00a71 Netlify token) or NO-DECISION notes awaiting Zach's policy call (#67 CI-wedge already mitigated by #73, #68 prose-ratchet required-check decision); bug/feature tracker has no new reports since 2026-08-09/07-29, all prior-triaged; tree clean, main green (gate/preflight/playwright all pass on latest merge #80)."
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788365226",
+        "run_id": "chezz-nightly-batch-1788371226",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-02T11:07:06-05:00",
-        "ended_at": "2026-09-02T11:16:13-05:00",
-        "elapsed_s": 550,
+        "started_at": "2026-09-02T12:47:06-05:00",
+        "ended_at": "2026-09-02T12:51:03-05:00",
+        "elapsed_s": 239,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -765,7 +765,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "All 5 open issues (#15,#53,#66,#67,#68) confirmed blocked on Zach's input, re-verified today; tracker backlog clean, no new reports since 08-09; tree clean, CI green, nothing actionable to build"
+        "claimed_reason": "Backlog genuinely drained: re-verified all 16 open tracker reports and GH issues #15/#53/#66/#67/#68 -- all blocked on human decisions (Netlify vs Apps-Script-proxy fork, Chezz Classic scope, prose-gate policy) or missing credentials (NETLIFY_AUTH_TOKEN, Apps Script API toggle, GEMINI_API_KEY), same walls as the last several nights, re-confirmed via env/clasp/netlify checks tonight -- nothing new to build; tree clean, no open PRs, CI green."
       },
       "containment": {
         "foreign_clones": [],
@@ -793,6 +793,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "crt-nightly-batch-1788371411",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-02T12:50:11-05:00",
+          "ended_at": "2026-09-02T12:55:26-05:00",
+          "elapsed_s": 318,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Backlog checked: only open issue (#128, gitignore *secret* vs .selfdev-secrets) is a NO-DECISION finding explicitly deferred until crt has a .selfdev-secrets file to declare (none exists); full test suite re-run clean (ALL GREEN, 49+13+20+ tests); tree clean, nothing to build."
+        },
         {
           "run_id": "crt-nightly-batch-1788366611",
           "job": "crt-nightly-batch",
@@ -860,31 +877,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Filtered issue queue empty (all open issues needs-host/needs-human); no open PRs, stale branches already properly closed as superseded; full test suite green, tree clean."
-        },
-        {
-          "run_id": "crt-nightly-batch-1788346208",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-02T05:50:08-05:00",
-          "ended_at": "2026-09-02T05:55:31-05:00",
-          "elapsed_s": 326,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "queue empty (all open issues needs-host/needs-human), suite green, tree clean"
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788366611",
+        "run_id": "crt-nightly-batch-1788371411",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-02T11:30:11-05:00",
-        "ended_at": "2026-09-02T11:34:41-05:00",
-        "elapsed_s": 273,
+        "started_at": "2026-09-02T12:50:11-05:00",
+        "ended_at": "2026-09-02T12:55:26-05:00",
+        "elapsed_s": 318,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -894,7 +894,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "backlog queue (open, non needs-host/needs-human) is empty; test suite ALL GREEN; tree clean; no open PRs"
+        "claimed_reason": "Backlog checked: only open issue (#128, gitignore *secret* vs .selfdev-secrets) is a NO-DECISION finding explicitly deferred until crt has a .selfdev-secrets file to declare (none exists); full test suite re-run clean (ALL GREEN, 49+13+20+ tests); tree clean, nothing to build."
       },
       "containment": {
         "foreign_clones": [],
@@ -1054,6 +1054,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1788371464",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-09-02T12:51:04-05:00",
+          "ended_at": "2026-09-02T12:56:30-05:00",
+          "elapsed_s": 328,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "ecosim-nightly-batch-1788363066",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-09-02T10:31:06-05:00",
@@ -1120,31 +1137,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "queue has only #97/#113/#118, all blocked on Zach-only actions (gh secret set, crontab edit); re-verified today, nothing actionable"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1788329466",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-09-02T01:11:06-05:00",
-          "ended_at": "2026-09-02T01:20:05-05:00",
-          "elapsed_s": 541,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed #120 (validated+merged PR #119, prose-ratchet fix); remaining #97/#113/#118 all confirmed still blocked on Zach-only actions (secret paste, crontab edit, milestone call)"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1788363066",
+        "run_id": "ecosim-nightly-batch-1788371464",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-09-02T10:31:06-05:00",
-        "ended_at": "2026-09-02T10:32:49-05:00",
-        "elapsed_s": 106,
+        "started_at": "2026-09-02T12:51:04-05:00",
+        "ended_at": "2026-09-02T12:56:30-05:00",
+        "elapsed_s": 328,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1153,8 +1153,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "queue triaged: #97/#113/#118 all confirmed still blocked on Zach-only actions (gh secret set, crontab edit) via fresh checks (empty gh secret list, crontab denied); nothing actionable, no new comments needed since findings unchanged from last run"
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2466,10 +2466,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T17:50:02Z",
+    "generated": "2026-09-02T18:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T18:20:02Z",
+    "valid_until": "2026-09-02T18:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2477,11 +2477,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 22 hours, 39 minutes",
+    "uptime": "up 1 day, 22 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T17:50:02Z"
+      "sampled_at": "2026-09-02T18:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
