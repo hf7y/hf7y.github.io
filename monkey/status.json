@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T09:50:02Z",
-  "valid_until": "2026-09-03T13:50:02Z",
+  "generated": "2026-09-02T10:00:03Z",
+  "valid_until": "2026-09-03T14:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -725,6 +725,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1788342611",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-02T04:50:11-05:00",
+          "ended_at": "2026-09-02T04:55:33-05:00",
+          "elapsed_s": 324,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "crt-nightly-batch-1788337811",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-02T03:30:11-05:00",
@@ -791,31 +808,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "crt#48: fixed the needs-human mechanism itself (unsettled label override + DECISION/DEFAULT-AFTER grammar), so the stalled reap decision now properly brakes actionable and stops being re-derived nightly; actionable queue is empty"
-        },
-        {
-          "run_id": "crt-nightly-batch-1788317410",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-01T21:50:10-05:00",
-          "ended_at": "2026-09-01T21:57:37-05:00",
-          "elapsed_s": 451,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788337811",
+        "run_id": "crt-nightly-batch-1788342611",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-02T03:30:11-05:00",
-        "ended_at": "2026-09-02T03:31:17-05:00",
-        "elapsed_s": 68,
+        "started_at": "2026-09-02T04:50:11-05:00",
+        "ended_at": "2026-09-02T04:55:33-05:00",
+        "elapsed_s": 324,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -824,8 +824,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "all open issues are needs-host/needs-human; nothing actionable in dev scope, tree clean"
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2397,10 +2397,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T09:50:01Z",
+    "generated": "2026-09-02T10:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T10:20:01Z",
+    "valid_until": "2026-09-02T10:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2408,11 +2408,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 14 hours, 39 minutes",
+    "uptime": "up 1 day, 14 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T09:50:01Z"
+      "sampled_at": "2026-09-02T10:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
