@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T15:20:02Z",
-  "valid_until": "2026-09-03T19:20:02Z",
+  "generated": "2026-09-02T15:30:03Z",
+  "valid_until": "2026-09-03T19:30:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1425,6 +1425,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "nine-speakers-nightly-batch-1788361989",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-09-02T10:13:09-05:00",
+          "ended_at": "2026-09-02T10:27:42-05:00",
+          "elapsed_s": 876,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "#58 fixed+closed (flaky supervisor backoff tests, PR #63 merged); everything else open (#59-62, #5, #7) genuinely waits on Zach's hardware/decision, nothing else buildable in software tonight"
+        },
+        {
           "run_id": "nine-speakers-nightly-batch-1788355984",
           "job": "nine-speakers-nightly-batch",
           "started_at": "2026-09-02T08:33:04-05:00",
@@ -1491,41 +1508,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "landed PR #49 (sync raw-traceback on unexpected reply) and PR #50 (supervisor raw-traceback on bad registry); #31 hardware-provisioning decision still open unanswered, checkbox 2 (puredata install) still blocked at the permission layer -- both need a human, not another nightly pass"
-        },
-        {
-          "run_id": "nine-speakers-nightly-batch-1788322385",
-          "job": "nine-speakers-nightly-batch",
-          "started_at": "2026-09-01T23:13:05-05:00",
-          "ended_at": "2026-09-01T23:22:51-05:00",
-          "elapsed_s": 589,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "PR #48 merged: endpoint_cli sync no longer raw-tracebacks on timeout; #31 (hardware-provisioning decision) still open/unanswered 3+ days, more hardware/sim modules remain unread for fresh defects"
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1788355984",
+        "run_id": "nine-speakers-nightly-batch-1788361989",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-09-02T08:33:04-05:00",
-        "ended_at": "2026-09-02T08:46:40-05:00",
-        "elapsed_s": 819,
+        "started_at": "2026-09-02T10:13:09-05:00",
+        "ended_at": "2026-09-02T10:27:42-05:00",
+        "elapsed_s": 876,
         "rc": 0,
         "status": "done",
-        "commits_added": 3,
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 3,
-        "prs_merged": 3,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Landed 3 PRs (#54/#55/#56) fixing raw-traceback bugs in hardware CLI tooling (level_balance measurements/patch/out I/O, endpoint_cli play on unreachable hosts); swept all 4 hardware CLIs, no more found; #5's remaining checkboxes and #31 both need real hardware/Zach, nothing else actionable"
+        "claimed_reason": "#58 fixed+closed (flaky supervisor backoff tests, PR #63 merged); everything else open (#59-62, #5, #7) genuinely waits on Zach's hardware/decision, nothing else buildable in software tonight"
       },
       "containment": {
         "foreign_clones": [],
@@ -2449,10 +2449,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T15:20:01Z",
+    "generated": "2026-09-02T15:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T15:50:01Z",
+    "valid_until": "2026-09-02T16:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2460,11 +2460,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 20 hours, 9 minutes",
+    "uptime": "up 1 day, 20 hours, 19 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T15:20:01Z"
+      "sampled_at": "2026-09-02T15:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
