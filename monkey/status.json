@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T02:20:02Z",
-  "valid_until": "2026-09-03T06:20:02Z",
+  "generated": "2026-09-02T02:30:03Z",
+  "valid_until": "2026-09-03T06:30:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -794,6 +794,23 @@
       "release_tick": "2026-09-01T10:56:02Z rc=0 pin=2026-09-01T030800Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1788315374",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-01T21:16:14-05:00",
+          "ended_at": "2026-09-01T21:24:11-05:00",
+          "elapsed_s": 479,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "5 PRs (#97,#98,#99,#100,#90) reviewed clean and safe to merge but gh pr merge/gh api merge/gh issue comment all returned 'requires approval'/classifier-denied with no approver available this session -- landing blocked, not the work"
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1788312973",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-09-01T20:36:13-05:00",
@@ -860,31 +877,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "All 6 ready-for-agent issues already exhausted by earlier runs today; re-verified the CI-workflow-push wall myself (still blocked, GitHub App lacks workflows permission) and confirmed self-merge stays off-limits per CLAUDE.md:58 (unchanged, #95 unmerged) -- nothing actionable left for an agent seat tonight, all remaining work needs a human to merge PRs or grant App permissions."
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788291375",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-01T14:36:15-05:00",
-          "ended_at": "2026-09-01T14:48:02-05:00",
-          "elapsed_s": 710,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Fixed the real #81/#90 header conflict (pushed to agent/port-writing-lint-checks, verified 0 findings + selftest pass) and filed genuine cross-repo research (hf7y/bibliothecaire#81, 4 real sourced quotes) closing #8's flagged gap; the 6 ready issues (#8,#34,#74,#80,#91,#96) are otherwise all confirmed still blocked tonight on the same walls (gh pr merge denied by auto-mode classifier, GitHub App lacks workflows permission, dcpomatic2 not installed, or a founder-only call) -- nothing else actiona"
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788312973",
+        "run_id": "dcp-gate-site-nightly-batch-1788315374",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-01T20:36:13-05:00",
-        "ended_at": "2026-09-01T20:51:05-05:00",
-        "elapsed_s": 895,
+        "started_at": "2026-09-01T21:16:14-05:00",
+        "ended_at": "2026-09-01T21:24:11-05:00",
+        "elapsed_s": 479,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -894,7 +894,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "18 open PRs verified/deconflicted (3 clusters confirmed non-conflicting, PR #90 independently re-tested); real work landed only as comments (#91,#96,#80) because gh pr merge was denied outright by this session's tool classifier and no Netlify token exists here -- both are hard walls for a human/differently-permissioned run, not decisions"
+        "claimed_reason": "5 PRs (#97,#98,#99,#100,#90) reviewed clean and safe to merge but gh pr merge/gh api merge/gh issue comment all returned 'requires approval'/classifier-denied with no approver available this session -- landing blocked, not the work"
       },
       "containment": {
         "foreign_clones": [],
@@ -1828,6 +1828,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788314597",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-01T21:03:17-05:00",
+          "ended_at": "2026-09-01T21:21:48-05:00",
+          "elapsed_s": 1114,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Merged PR #582 (registry absorb) and PR #583 (test/*-test.sh dedup, closing #440); verified full test suite (108 unittest, 199 test-alerting, 57-suite sweep, 7 contract) green throughout; confirmed all 7 stale salvage branches are superseded by already-merged work (branch deletion blocked by classifier, left in place); confirmed #442/#536/#581/#551 remain correctly blocked on human-only actions (dexter SSH, GitHub App workflows permission). Actionable work remains: #483 (deployed-tree self-ID fo"
+        },
+        {
           "run_id": "senechal-nightly-batch-1788310996",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-01T20:03:16-05:00",
@@ -1894,41 +1911,24 @@
           "verdict_computed": "FAILED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788297799",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-01T16:23:19-05:00",
-          "ended_at": "2026-09-01T16:43:31-05:00",
-          "elapsed_s": 1214,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 4,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788310996",
+        "run_id": "senechal-nightly-batch-1788314597",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-01T20:03:16-05:00",
-        "ended_at": "2026-09-01T20:25:08-05:00",
-        "elapsed_s": 1315,
-        "rc": 1,
-        "status": "FAILED (ceiling: max turns reached)",
-        "commits_added": 1,
-        "issues_opened": 1,
-        "issues_closed": 3,
-        "prs_opened": 3,
+        "started_at": "2026-09-01T21:03:17-05:00",
+        "ended_at": "2026-09-01T21:21:48-05:00",
+        "elapsed_s": 1114,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 2,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 1,
         "prs_merged": 2,
-        "verdict_computed": "WORKED-CUTOFF",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Merged PR #582 (registry absorb) and PR #583 (test/*-test.sh dedup, closing #440); verified full test suite (108 unittest, 199 test-alerting, 57-suite sweep, 7 contract) green throughout; confirmed all 7 stale salvage branches are superseded by already-merged work (branch deletion blocked by classifier, left in place); confirmed #442/#536/#581/#551 remain correctly blocked on human-only actions (dexter SSH, GitHub App workflows permission). Actionable work remains: #483 (deployed-tree self-ID fo"
       },
       "containment": {
         "foreign_clones": [],
@@ -2349,10 +2349,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T02:20:02Z",
+    "generated": "2026-09-02T02:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T02:50:02Z",
+    "valid_until": "2026-09-02T03:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2360,11 +2360,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 7 hours, 9 minutes",
+    "uptime": "up 1 day, 7 hours, 19 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T02:20:02Z"
+      "sampled_at": "2026-09-02T02:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
