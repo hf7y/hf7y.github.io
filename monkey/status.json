@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T00:50:03Z",
-  "valid_until": "2026-09-03T04:50:03Z",
+  "generated": "2026-09-02T01:00:03Z",
+  "valid_until": "2026-09-03T05:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -406,6 +406,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "bibliothecaire-research-1788310324",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-01T19:52:04-05:00",
+          "ended_at": "2026-09-01T19:52:41-05:00",
+          "elapsed_s": 40,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Request queue empty; only open issues are #56/#38/#37/#35, all deferred pending Zach's decision or root on mandark."
+        },
+        {
           "run_id": "bibliothecaire-research-1788304325",
           "job": "bibliothecaire-research",
           "started_at": "2026-09-01T18:12:05-05:00",
@@ -472,31 +489,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed #80 (superseded by realisateur#857); landed the unblocked half of that issue as realisateur#867 (draft PR, carries.tsv row for bin/consigne) + realisateur#868 (asking their self-dev to merge). Request queue empty."
-        },
-        {
-          "run_id": "bibliothecaire-research-1788031924",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-08-29T19:32:04+00:00",
-          "ended_at": "2026-08-29T19:32:31+00:00",
-          "elapsed_s": 29,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "queue empty: only deferred issues open (#35,#37,#38,#56), no request or eligible non-deferred issues"
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1788304325",
+        "run_id": "bibliothecaire-research-1788310324",
         "job": "bibliothecaire-research",
-        "started_at": "2026-09-01T18:12:05-05:00",
-        "ended_at": "2026-09-01T18:16:39-05:00",
-        "elapsed_s": 277,
+        "started_at": "2026-09-01T19:52:04-05:00",
+        "ended_at": "2026-09-01T19:52:41-05:00",
+        "elapsed_s": 40,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -506,7 +506,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Request queue empty (no request-labeled or non-deferred open issues); the 4 open issues are already deferred/blocked on human decision (#38) or root access I lack (#35, #37), and #56's audit tool is outside my reach (permission-denied)."
+        "claimed_reason": "Request queue empty; only open issues are #56/#38/#37/#35, all deferred pending Zach's decision or root on mandark."
       },
       "containment": {
         "foreign_clones": [],
@@ -2349,10 +2349,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T00:50:02Z",
+    "generated": "2026-09-02T01:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T01:20:02Z",
+    "valid_until": "2026-09-02T01:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2360,11 +2360,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 5 hours, 39 minutes",
+    "uptime": "up 1 day, 5 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T00:50:02Z"
+      "sampled_at": "2026-09-02T01:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
