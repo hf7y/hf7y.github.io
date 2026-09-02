@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T15:50:02Z",
-  "valid_until": "2026-09-03T19:50:02Z",
+  "generated": "2026-09-02T16:00:03Z",
+  "valid_until": "2026-09-03T20:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -907,6 +907,23 @@
       "release_tick": "2026-09-02T10:56:02Z rc=0 pin=2026-09-01T030800Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1788363375",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-02T10:36:15-05:00",
+          "ended_at": "2026-09-02T10:51:54-05:00",
+          "elapsed_s": 942,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "All 18 open agent-actionable PRs are already built and verified (re-confirmed #90); every remaining action -- merging, branch-protection API mutation, pushing a GitHub Actions workflow, or the NOFF drive/dcpomatic tooling -- is blocked by this session's classifier, GitHub App scope, or unavailable hardware, confirmed again tonight and recorded on #91/#80. Nothing actionable from this seat right now."
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1788360974",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-09-02T09:56:14-05:00",
@@ -973,31 +990,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "All 6 agent-ready issues (#8,#34,#74,#80,#91,#96) re-verified tonight: #8 is deliberately deferred (no build), #74 explicitly waits on #73 landing first, and #34/#80/#91/#96's remaining steps all require either gh pr merge (re-tested, still denied by the harness classifier), Netlify/DNS credentials this seat lacks, or real DCP tooling not present in this sandbox. Every other actionable issue already has an IN-FLIGHT PR. Posted one new verified finding to #96: the head.dcpgateway.com noindex gap "
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788344175",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-02T05:16:15-05:00",
-          "ended_at": "2026-09-02T05:23:59-05:00",
-          "elapsed_s": 467,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Filed real bibliothecaire#85 research (3 verified NN/g sources) advancing #74; every other ready issue (#8,#34,#80,#91,#96) re-confirmed blocked on human-only walls (gh pr merge/repo-admin classifier block, missing Netlify/dcpomatic2 credentials, founder decisions) with no new mechanism to try"
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788360974",
+        "run_id": "dcp-gate-site-nightly-batch-1788363375",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-02T09:56:14-05:00",
-        "ended_at": "2026-09-02T10:08:41-05:00",
-        "elapsed_s": 750,
+        "started_at": "2026-09-02T10:36:15-05:00",
+        "ended_at": "2026-09-02T10:51:54-05:00",
+        "elapsed_s": 942,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1006,8 +1006,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "18 PRs verified/documented ready (esp #99, #90); this session's auto-mode classifier blocks all merge/approve and any push to master/stable -- needs Zach or a merge-permitted session to land them"
+        "claimed_verdict": "DONE",
+        "claimed_reason": "All 18 open agent-actionable PRs are already built and verified (re-confirmed #90); every remaining action -- merging, branch-protection API mutation, pushing a GitHub Actions workflow, or the NOFF drive/dcpomatic tooling -- is blocked by this session's classifier, GitHub App scope, or unavailable hardware, confirmed again tonight and recorded on #91/#80. Nothing actionable from this seat right now."
       },
       "containment": {
         "foreign_clones": [],
@@ -2449,10 +2449,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T15:50:01Z",
+    "generated": "2026-09-02T16:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T16:20:01Z",
+    "valid_until": "2026-09-02T16:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2460,11 +2460,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 20 hours, 39 minutes",
+    "uptime": "up 1 day, 20 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T15:50:01Z"
+      "sampled_at": "2026-09-02T16:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
