@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T13:40:02Z",
-  "valid_until": "2026-09-03T17:40:02Z",
+  "generated": "2026-09-02T13:50:03Z",
+  "valid_until": "2026-09-03T17:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -139,11 +139,12 @@
     {
       "account": "american-cycle",
       "uid": 3018,
-      "armed": false,
-      "dispatch_line": false,
-      "roster_state": "parked",
+      "armed": true,
+      "dispatch_line": true,
+      "roster_state": "live",
       "cron": [
-        "21 5 * * * /home/american-cycle/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK"
+        "21 5 * * * /home/american-cycle/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
+        "1,21,41 * * * * PACED_MAX_PER_TICK=1 /home/american-cycle/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
       "release_tick": "2026-09-02T10:21:04Z rc=1 pin=2026-09-01T030800Z 2 ok, 1 gap, 0 bad",
       "runs": [
@@ -338,6 +339,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "baudin-nightly-batch-1788356294",
+          "job": "baudin-nightly-batch",
+          "started_at": "2026-09-02T08:38:14-05:00",
+          "ended_at": "2026-09-02T08:41:16-05:00",
+          "elapsed_s": 186,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Full triage of all 12 open issues + re-ran build-circadian.py --check, selftest-automations.py, YAML parse -- all green, no new bugs found; every remaining item is either blocked on #7 (no HA token on baudin@monkey, confirmed absent again tonight) or is a live human decision/action (Midea account #29, ARRIS 2FA #13, physical calibration #18/#22). Nothing actionable tonight; tree clean, 0 issues opened/closed."
+        },
+        {
           "run_id": "baudin-nightly-batch-1788351496",
           "job": "baudin-nightly-batch",
           "started_at": "2026-09-02T07:18:16-05:00",
@@ -404,31 +422,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Every open issue is blocked on the #7 credential wall (no ha_token on baudin@monkey) or a recorded human decision (#29 Midea account, #22/#14 physical/model facts); all git-only work (night_fade hold+decay, kitchen_taper, circadian rules 1-3, dexter sshd probe, selftest coverage) is already built, tested green, and merged, waiting on deploy. Cross-repo scheduler#476 (fixing the #29 comment-spam bug) merged tonight. Tree clean, CI green, nothing new actionable."
-        },
-        {
-          "run_id": "baudin-nightly-batch-1788331088",
-          "job": "baudin-nightly-batch",
-          "started_at": "2026-09-02T01:38:08-05:00",
-          "ended_at": "2026-09-02T01:58:48-05:00",
-          "elapsed_s": 1242,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Found+fixed apply_decision_defaults' infinite duplicate-comment loop (scheduler#476/#477, tests 80/80); rest of backlog chains to decided wall #7 or a human decision"
         }
       ],
       "last_run": {
-        "run_id": "baudin-nightly-batch-1788351496",
+        "run_id": "baudin-nightly-batch-1788356294",
         "job": "baudin-nightly-batch",
-        "started_at": "2026-09-02T07:18:16-05:00",
-        "ended_at": "2026-09-02T07:22:41-05:00",
-        "elapsed_s": 268,
+        "started_at": "2026-09-02T08:38:14-05:00",
+        "ended_at": "2026-09-02T08:41:16-05:00",
+        "elapsed_s": 186,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -438,7 +439,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "All 12 open issues re-triaged; every buildable piece already landed (tests/selftest green), remainder genuinely blocked on #7 (no HA token on baudin@monkey, reconfirmed absent tonight) or a human-only credential/decision (Midea account #29, OctoPrint key #14, 2FA+router #13); confirmed scheduler#476 merged, closing a duplicate-comment loop on #14"
+        "claimed_reason": "Full triage of all 12 open issues + re-ran build-circadian.py --check, selftest-automations.py, YAML parse -- all green, no new bugs found; every remaining item is either blocked on #7 (no HA token on baudin@monkey, confirmed absent again tonight) or is a live human decision/action (Midea account #29, ARRIS 2FA #13, physical calibration #18/#22). Nothing actionable tonight; tree clean, 0 issues opened/closed."
       },
       "containment": {
         "foreign_clones": [],
@@ -1114,6 +1115,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1788355926",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-09-02T08:32:06-05:00",
+          "ended_at": "2026-09-02T08:44:29-05:00",
+          "elapsed_s": 746,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 1,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Fixed and merged #156 (garde/fauche silently ran the wrong subcommand when a global flag preceded it, e.g. garde --summon media triage foo refused with 'list never spends'); closed #155; backlog's 6 remaining items still blocked on real mandark/dexter access this sandbox can't reach."
+        },
+        {
           "run_id": "gardien-nightly-batch-1788347526",
           "job": "gardien-nightly-batch",
           "started_at": "2026-09-02T06:12:06-05:00",
@@ -1180,41 +1198,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Backlog re-confirmed fully blocked (6 issues on real mandark/dexter access this sandbox lacks, #26/#81 on Zach's own calls); both branches' test suites green with no regressions; extensive gardien.py + bashified lib/media.sh+manifest.sh bug sweep (incl. trace-module coverage check, zero uncovered lines) found no new real bug tonight, unlike prior nights."
-        },
-        {
-          "run_id": "gardien-nightly-batch-1788328326",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-09-02T00:52:06-05:00",
-          "ended_at": "2026-09-02T01:08:07-05:00",
-          "elapsed_s": 964,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 1,
-          "issues_closed": 2,
-          "prs_opened": 1,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Landed #143 (CLAUDE.md push-permission fix, trimmed to clear the prose ratchet) and #145/#146 (media-quarantine corrupted-copy error now reports manifest location, 2 new tests); backlog's remaining 7 issues are all blocked on real mandark/dexter SSH access this sandbox doesn't have or on Zach's own branch-merge call (#26), re-confirmed tonight."
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1788347526",
+        "run_id": "gardien-nightly-batch-1788355926",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-09-02T06:12:06-05:00",
-        "ended_at": "2026-09-02T06:17:19-05:00",
-        "elapsed_s": 316,
+        "started_at": "2026-09-02T08:32:06-05:00",
+        "ended_at": "2026-09-02T08:44:29-05:00",
+        "elapsed_s": 746,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
-        "issues_opened": 0,
+        "issues_opened": 1,
         "issues_closed": 1,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "Merged and closed #153/#154 (systemd install.sh missing unit files, left unmerged by a prior run). Re-verified main (306 tests) and bashified (220 assertions incl. new systemd-install-test.sh) both green. Re-confirmed the 6 remaining backlog items (#25,29,30,31,70,23) are still blocked on real mandark/dexter ssh access this sandbox structurally lacks (host-key failure / connection refused, no garde.json anywhere), and #26's branch-merge is still Zach's own unanswered call. No new bug found in ga"
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Fixed and merged #156 (garde/fauche silently ran the wrong subcommand when a global flag preceded it, e.g. garde --summon media triage foo refused with 'list never spends'); closed #155; backlog's 6 remaining items still blocked on real mandark/dexter access this sandbox can't reach."
       },
       "containment": {
         "foreign_clones": [],
@@ -1373,6 +1374,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "nine-speakers-nightly-batch-1788355984",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-09-02T08:33:04-05:00",
+          "ended_at": "2026-09-02T08:46:40-05:00",
+          "elapsed_s": 819,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 3,
+          "prs_merged": 3,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Landed 3 PRs (#54/#55/#56) fixing raw-traceback bugs in hardware CLI tooling (level_balance measurements/patch/out I/O, endpoint_cli play on unreachable hosts); swept all 4 hardware CLIs, no more found; #5's remaining checkboxes and #31 both need real hardware/Zach, nothing else actionable"
+        },
+        {
           "run_id": "nine-speakers-nightly-batch-1788347584",
           "job": "nine-speakers-nightly-batch",
           "started_at": "2026-09-02T06:13:04-05:00",
@@ -1439,41 +1457,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "PR #48 merged: endpoint_cli sync no longer raw-tracebacks on timeout; #31 (hardware-provisioning decision) still open/unanswered 3+ days, more hardware/sim modules remain unread for fresh defects"
-        },
-        {
-          "run_id": "nine-speakers-nightly-batch-1788312784",
-          "job": "nine-speakers-nightly-batch",
-          "started_at": "2026-09-01T20:33:04-05:00",
-          "ended_at": "2026-09-01T20:42:09-05:00",
-          "elapsed_s": 547,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "PR #47 merged: endpoint_cli's serve/play/sync no longer raw-traceback on a malformed/stale registry file (found+fixed+tested, 182 tests green, sim clean); #5's checkboxes 1/2/3/5 still blocked on real hardware/room/mic/Zach, #31 still awaiting Zach's provision-vs-iterate call with no new comment"
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1788347584",
+        "run_id": "nine-speakers-nightly-batch-1788355984",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-09-02T06:13:04-05:00",
-        "ended_at": "2026-09-02T06:20:32-05:00",
-        "elapsed_s": 451,
+        "started_at": "2026-09-02T08:33:04-05:00",
+        "ended_at": "2026-09-02T08:46:40-05:00",
+        "elapsed_s": 819,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 3,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 2,
-        "prs_merged": 2,
+        "prs_opened": 3,
+        "prs_merged": 3,
         "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "PR #52 (registry.load_registry raw-traceback fix) + PR #53 (pd_lint missing-file raw-traceback fix) merged; 190 tests pass, sim clean, tree clean; #31 (hardware-vs-software judgment call) still open and unanswered, no new actionable work found this pass"
+        "claimed_reason": "Landed 3 PRs (#54/#55/#56) fixing raw-traceback bugs in hardware CLI tooling (level_balance measurements/patch/out I/O, endpoint_cli play on unreachable hosts); swept all 4 hardware CLIs, no more found; #5's remaining checkboxes and #31 both need real hardware/Zach, nothing else actionable"
       },
       "containment": {
         "foreign_clones": [],
@@ -1889,6 +1890,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788355399",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-02T08:23:19-05:00",
+          "ended_at": "2026-09-02T08:46:29-05:00",
+          "elapsed_s": 1393,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 1,
+          "issues_closed": 2,
+          "prs_opened": 3,
+          "prs_merged": 3,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "senechal-nightly-batch-1788353003",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-02T07:43:23-05:00",
@@ -1955,39 +1973,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Fixed and merged PR #590 (lance verb) by resolving the prose-ratchet check via reflowing wrapped CONTRACT.md/GAPS.md prose; closed #405 (all four verb suites now ship); filed #591 documenting 13 stale salvage branches needing a triage pass; backlog still has actionable open issues (#581, #536, #489, #442, etc.) for the next run."
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788340995",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-02T04:23:15-05:00",
-          "ended_at": "2026-09-02T04:46:26-05:00",
-          "elapsed_s": 1394,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788353003",
+        "run_id": "senechal-nightly-batch-1788355399",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-02T07:43:23-05:00",
-        "ended_at": "2026-09-02T08:02:22-05:00",
-        "elapsed_s": 1142,
-        "rc": 1,
-        "status": "FAILED (ceiling: max turns reached)",
-        "commits_added": 2,
-        "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED-CUTOFF",
+        "started_at": "2026-09-02T08:23:19-05:00",
+        "ended_at": "2026-09-02T08:46:29-05:00",
+        "elapsed_s": 1393,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 3,
+        "issues_opened": 1,
+        "issues_closed": 2,
+        "prs_opened": 3,
+        "prs_merged": 3,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2397,10 +2398,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T13:40:01Z",
+    "generated": "2026-09-02T13:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T14:10:01Z",
+    "valid_until": "2026-09-02T14:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2408,11 +2409,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 18 hours, 29 minutes",
+    "uptime": "up 1 day, 18 hours, 39 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T13:40:01Z"
+      "sampled_at": "2026-09-02T13:50:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
