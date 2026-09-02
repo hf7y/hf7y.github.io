@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T22:30:03Z",
-  "valid_until": "2026-09-04T02:30:03Z",
+  "generated": "2026-09-02T22:40:03Z",
+  "valid_until": "2026-09-04T02:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -536,6 +536,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "bibliothecaire-research-1788388324",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-02T17:32:04-05:00",
+          "ended_at": "2026-09-02T17:32:28-05:00",
+          "elapsed_s": 26,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty: no open request-labeled issues; all 4 open issues are labeled deferred (waiting on human/infra decisions)."
+        },
+        {
           "run_id": "bibliothecaire-research-1788382324",
           "job": "bibliothecaire-research",
           "started_at": "2026-09-02T15:52:04-05:00",
@@ -602,31 +619,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Queue empty: no open request-labeled issues, and remaining open issues (35,37,38,56) are all deferred/durable."
-        },
-        {
-          "run_id": "bibliothecaire-research-1788357124",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-09-02T08:52:04-05:00",
-          "ended_at": "2026-09-02T08:52:46-05:00",
-          "elapsed_s": 45,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Queue empty: 4 open issues (#35,#37,#38,#56) all deferred/durable, none eligible; no in-progress orphans"
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1788382324",
+        "run_id": "bibliothecaire-research-1788388324",
         "job": "bibliothecaire-research",
-        "started_at": "2026-09-02T15:52:04-05:00",
-        "ended_at": "2026-09-02T15:52:29-05:00",
-        "elapsed_s": 27,
+        "started_at": "2026-09-02T17:32:04-05:00",
+        "ended_at": "2026-09-02T17:32:28-05:00",
+        "elapsed_s": 26,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -636,7 +636,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "queue empty: all open issues (35,37,38,56) are labeled deferred, no eligible request or issue to work"
+        "claimed_reason": "Queue empty: no open request-labeled issues; all 4 open issues are labeled deferred (waiting on human/infra decisions)."
       },
       "containment": {
         "foreign_clones": [],
@@ -1054,6 +1054,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1788388265",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-09-02T17:31:05-05:00",
+          "ended_at": "2026-09-02T17:32:27-05:00",
+          "elapsed_s": 84,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "3 open issues (#97, #113, #118), all confirmed blocked on human-only actions (gh secret set, crontab edit); re-verified, no state change, nothing actionable"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1788379864",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-09-02T15:11:04-05:00",
@@ -1120,31 +1137,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "queue re-verified: #97/#113/#118 all confirmed still blocked on Zach (secret paste, crontab edit); no actionable work"
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1788346264",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-09-02T05:51:04-05:00",
-          "ended_at": "2026-09-02T05:52:32-05:00",
-          "elapsed_s": 90,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "queue's only 3 open issues (#97, #113, #118) all re-verified blocked on human action: unset ECOSYSTEM_ISSUES_TOKEN secret, denied crontab edit, no root/docker for container path"
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1788379864",
+        "run_id": "ecosim-nightly-batch-1788388265",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-09-02T15:11:04-05:00",
-        "ended_at": "2026-09-02T15:16:07-05:00",
-        "elapsed_s": 305,
+        "started_at": "2026-09-02T17:31:05-05:00",
+        "ended_at": "2026-09-02T17:32:27-05:00",
+        "elapsed_s": 84,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1154,7 +1154,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "3 open issues (#118 crontab edit, #97 gh secret set, #113 milestone gated on #97) all re-verified blocked on Zach-only actions; re-ran migration-gate live and confirmed nothing changed except ci-free's title claim is now stale (fixed by #98), noted on #97"
+        "claimed_reason": "3 open issues (#97, #113, #118), all confirmed blocked on human-only actions (gh secret set, crontab edit); re-verified, no state change, nothing actionable"
       },
       "containment": {
         "foreign_clones": [],
@@ -1700,6 +1700,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1788387672",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-09-02T17:21:12-05:00",
+          "ended_at": "2026-09-02T17:31:37-05:00",
+          "elapsed_s": 628,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed #502 (bin/freeze-check.sh) and #503 (lib/run-record.sh), reaping incident-narrative prose per #238 -- ratchet 8509->8469, no logic changed, all witnesses green; #238 stays open with usage-gate.sh/tempo.sh/collect-feedback.sh evaluated and passed over as load-bearing rather than narrative-heavy, next candidates still needed"
+        },
+        {
           "run_id": "scheduler-paced-dev-1788385272",
           "job": "scheduler-paced-dev",
           "started_at": "2026-09-02T16:41:12-05:00",
@@ -1766,41 +1783,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-paced-dev-1788375674",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-09-02T14:01:14-05:00",
-          "ended_at": "2026-09-02T14:13:39-05:00",
-          "elapsed_s": 748,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Merged #496 (fixed #493, closed): stripped state-timestamp prose from every schedule/ROSTER row block, kept rationale. Corrected #495's false 'zero readers' premise with grep evidence (enrole-selfdev.sh and build-services-view.sh both still read/write BATCH_* fields) before it could cause a destructive edit. Next: schedule/_batch.conf/_sweep.conf's stale sync-crontab.sh header + the genuinely-dead BATCH_BASE_TIME/SWEEP_TICK_* fields inside those two files specifically, or the #238 reap."
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1788385272",
+        "run_id": "scheduler-paced-dev-1788387672",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-09-02T16:41:12-05:00",
-        "ended_at": "2026-09-02T16:52:44-05:00",
-        "elapsed_s": 695,
+        "started_at": "2026-09-02T17:21:12-05:00",
+        "ended_at": "2026-09-02T17:31:37-05:00",
+        "elapsed_s": 628,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 2,
-        "prs_opened": 1,
-        "prs_merged": 1,
+        "issues_closed": 0,
+        "prs_opened": 2,
+        "prs_merged": 2,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed #501 (merged): reaped 753 prose lines from docs/feedback-tags.md and docs/scheduler-cli.md for #238, re-accepted .prose-ratchet at 8509. Closed #429 and #431 as superseded by #432's container-based roster design. #238 reap continues (5,771 lines to target); #432's dexter cutover is genuinely blocked on infra I don't have access to (no ssh to dexter, container not deployed, realisateur#840 unmerged)."
+        "claimed_reason": "Landed #502 (bin/freeze-check.sh) and #503 (lib/run-record.sh), reaping incident-narrative prose per #238 -- ratchet 8509->8469, no logic changed, all witnesses green; #238 stays open with usage-gate.sh/tempo.sh/collect-feedback.sh evaluated and passed over as load-bearing rather than narrative-heavy, next candidates still needed"
       },
       "containment": {
         "foreign_clones": [],
@@ -2466,10 +2466,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T22:30:02Z",
+    "generated": "2026-09-02T22:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T23:00:02Z",
+    "valid_until": "2026-09-02T23:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2477,11 +2477,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 3 hours, 19 minutes",
+    "uptime": "up 2 days, 3 hours, 29 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T22:30:02Z"
+      "sampled_at": "2026-09-02T22:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
