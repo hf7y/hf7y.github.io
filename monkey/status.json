@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T20:00:03Z",
-  "valid_until": "2026-09-04T00:00:03Z",
+  "generated": "2026-09-02T20:10:03Z",
+  "valid_until": "2026-09-04T00:10:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -149,6 +149,23 @@
       "release_tick": "2026-09-02T10:21:04Z rc=1 pin=2026-09-01T030800Z 2 ok, 1 gap, 0 bad",
       "runs": [
         {
+          "run_id": "american-cycle-nightly-batch-1788378116",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-02T14:41:56-05:00",
+          "ended_at": "2026-09-02T15:07:38-05:00",
+          "elapsed_s": 1544,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Wired #78's ruling (bills place lean counters in matching districts, merged as #119, CI green); closed #78, unblocked #111 and flagged #84 with measured before/after data; backlog of ~55 open issues remains actionable."
+        },
+        {
           "run_id": "american-cycle-nightly-batch-1788375719",
           "job": "american-cycle-nightly-batch",
           "started_at": "2026-09-02T14:01:59-05:00",
@@ -215,31 +232,14 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788361303",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-02T10:01:43-05:00",
-          "ended_at": "2026-09-02T10:17:25-05:00",
-          "elapsed_s": 945,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Landed the D7 wave-reversal measurement (PR #104, closes #97, comment posted on #84) and finished a stranded draft PR #99 (harness endedShare, rebased onto main, checks green, merged); tree clean on main. Backlog still has substantial actionable work (#101 off-cycle party switch, #96, #103, and the needs-human items)."
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1788375719",
+        "run_id": "american-cycle-nightly-batch-1788378116",
         "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-02T14:01:59-05:00",
-        "ended_at": "2026-09-02T14:16:06-05:00",
-        "elapsed_s": 850,
+        "started_at": "2026-09-02T14:41:56-05:00",
+        "ended_at": "2026-09-02T15:07:38-05:00",
+        "elapsed_s": 1544,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -249,7 +249,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Built and merged #115 (milestone-arming label reconciler: pure planner + 12 unit tests + scheduled/milestone-triggered workflow, PR #118); 59 open issues remain, most playtest/answered and actionable next run."
+        "claimed_reason": "Wired #78's ruling (bills place lean counters in matching districts, merged as #119, CI green); closed #78, unblocked #111 and flagged #84 with measured before/after data; backlog of ~55 open issues remains actionable."
       },
       "containment": {
         "foreign_clones": [],
@@ -1958,6 +1958,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788378200",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-02T14:43:20-05:00",
+          "ended_at": "2026-09-02T15:05:24-05:00",
+          "elapsed_s": 1327,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "senechal-nightly-batch-1788372201",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-02T13:03:21-05:00",
@@ -2024,41 +2041,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788353003",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-02T07:43:23-05:00",
-          "ended_at": "2026-09-02T08:02:22-05:00",
-          "elapsed_s": 1142,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788372201",
+        "run_id": "senechal-nightly-batch-1788378200",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-02T13:03:21-05:00",
-        "ended_at": "2026-09-02T13:13:37-05:00",
-        "elapsed_s": 618,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 1,
+        "started_at": "2026-09-02T14:43:20-05:00",
+        "ended_at": "2026-09-02T15:05:24-05:00",
+        "elapsed_s": 1327,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Re-verified full test suite (108+199+59+7, all green); absorbed #611's door filing into registry/senechal-registry.json via PR #612 (merged, closed #611); re-ran estate-health.sh, which resynced #345 to drop the now-resolved issue-debt and #611-backstop findings. Remaining backlog (#483/#536/#581 GH App workflow-permission gap, #551/#489/#558 SSH access this account lacks, #396/#410/#348/#460/#344 design decisions only Zach can make, #422/#435 hardware) is genuinely blocked on a human, each with"
+        "prs_merged": 0,
+        "verdict_computed": "WORKED-CUTOFF",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2466,10 +2466,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T20:00:02Z",
+    "generated": "2026-09-02T20:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T20:30:02Z",
+    "valid_until": "2026-09-02T20:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2477,11 +2477,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 49 minutes",
+    "uptime": "up 2 days, 59 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T20:00:02Z"
+      "sampled_at": "2026-09-02T20:10:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
