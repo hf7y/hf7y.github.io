@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T17:00:02Z",
-  "valid_until": "2026-09-03T21:00:02Z",
+  "generated": "2026-09-02T17:10:03Z",
+  "valid_until": "2026-09-03T21:10:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -924,6 +924,23 @@
       "release_tick": "2026-09-02T10:56:02Z rc=0 pin=2026-09-01T030800Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1788368174",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-02T11:56:14-05:00",
+          "ended_at": "2026-09-02T12:00:54-05:00",
+          "elapsed_s": 283,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "Verified #8's shipped accessibilityPromise doesn't overclaim vs landed research (no code change needed); re-confirmed via a fresh gh pr merge attempt (on #99, denied by the auto-mode classifier, identical wall #90/#96/#91 hit all night) that every buildable item left in the backlog (18 open PRs, all reviewed/green, several already fixed for real bugs) is blocked on either merge permission or Netlify/DNS credentials this session lacks -- named precisely on #96/#91/#80."
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1788363375",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-09-02T10:36:15-05:00",
@@ -990,31 +1007,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Fixed real gap (dcpgateway-head.netlify.app missing noindex, #96) and pushed to PR #95; every other agent-ready issue (#8,#34,#74,#80,#91,#96) re-verified tonight and genuinely blocked on human-only actions (PR merge, Netlify/dexter credentials, founder decisions) already named precisely in their threads"
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788348974",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-02T06:36:14-05:00",
-          "ended_at": "2026-09-02T06:44:49-05:00",
-          "elapsed_s": 517,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "All 6 agent-ready issues (#8,#34,#74,#80,#91,#96) re-verified tonight: #8 is deliberately deferred (no build), #74 explicitly waits on #73 landing first, and #34/#80/#91/#96's remaining steps all require either gh pr merge (re-tested, still denied by the harness classifier), Netlify/DNS credentials this seat lacks, or real DCP tooling not present in this sandbox. Every other actionable issue already has an IN-FLIGHT PR. Posted one new verified finding to #96: the head.dcpgateway.com noindex gap "
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788363375",
+        "run_id": "dcp-gate-site-nightly-batch-1788368174",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-02T10:36:15-05:00",
-        "ended_at": "2026-09-02T10:51:54-05:00",
-        "elapsed_s": 942,
+        "started_at": "2026-09-02T11:56:14-05:00",
+        "ended_at": "2026-09-02T12:00:54-05:00",
+        "elapsed_s": 283,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1023,8 +1023,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "All 18 open agent-actionable PRs are already built and verified (re-confirmed #90); every remaining action -- merging, branch-protection API mutation, pushing a GitHub Actions workflow, or the NOFF drive/dcpomatic tooling -- is blocked by this session's classifier, GitHub App scope, or unavailable hardware, confirmed again tonight and recorded on #91/#80. Nothing actionable from this seat right now."
+        "claimed_verdict": "BLOCKED",
+        "claimed_reason": "Verified #8's shipped accessibilityPromise doesn't overclaim vs landed research (no code change needed); re-confirmed via a fresh gh pr merge attempt (on #99, denied by the auto-mode classifier, identical wall #90/#96/#91 hit all night) that every buildable item left in the backlog (18 open PRs, all reviewed/green, several already fixed for real bugs) is blocked on either merge permission or Netlify/DNS credentials this session lacks -- named precisely on #96/#91/#80."
       },
       "containment": {
         "foreign_clones": [],
@@ -1183,6 +1183,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1788367924",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-09-02T11:52:04-05:00",
+          "ended_at": "2026-09-02T12:06:12-05:00",
+          "elapsed_s": 852,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 1,
+          "issues_closed": 1,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Found+fixed+landed #158 (gardien-pull-run.sh symlink-attack-shaped /tmp path -> mktemp) on both main (PR #159) and bashified (PR #160); 6 backlog items still genuinely blocked on real mandark/dexter access this sandbox lacks."
+        },
+        {
           "run_id": "gardien-nightly-batch-1788364326",
           "job": "gardien-nightly-batch",
           "started_at": "2026-09-02T10:52:06-05:00",
@@ -1249,41 +1266,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "Merged and closed #153/#154 (systemd install.sh missing unit files, left unmerged by a prior run). Re-verified main (306 tests) and bashified (220 assertions incl. new systemd-install-test.sh) both green. Re-confirmed the 6 remaining backlog items (#25,29,30,31,70,23) are still blocked on real mandark/dexter ssh access this sandbox structurally lacks (host-key failure / connection refused, no garde.json anywhere), and #26's branch-merge is still Zach's own unanswered call. No new bug found in ga"
-        },
-        {
-          "run_id": "gardien-nightly-batch-1788342726",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-09-02T04:52:06-05:00",
-          "ended_at": "2026-09-02T05:13:55-05:00",
-          "elapsed_s": 1311,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 1,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1788364326",
+        "run_id": "gardien-nightly-batch-1788367924",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-09-02T10:52:06-05:00",
-        "ended_at": "2026-09-02T11:06:42-05:00",
-        "elapsed_s": 879,
+        "started_at": "2026-09-02T11:52:04-05:00",
+        "ended_at": "2026-09-02T12:06:12-05:00",
+        "elapsed_s": 852,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
-        "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 1,
+        "commits_added": 3,
+        "issues_opened": 1,
+        "issues_closed": 1,
+        "prs_opened": 2,
+        "prs_merged": 2,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Backlog's 6 items still blocked on real host/data access (unchanged wall); found+fixed+merged a real bug via cross-branch diffing (main's bin/ecosystem-archive.sh still carried the dead mount guard bashified fixed in #151/#152 -- backported as PR #157/0adf2ba); both suites re-verified green (306 unittest, 219 bashified assertions); sweep pattern still has unaudited ground (README/CONTRACT/GAPS docs, remaining systemd divergence tied to #26's still-open decision) for the next run to pick up."
+        "claimed_reason": "Found+fixed+landed #158 (gardien-pull-run.sh symlink-attack-shaped /tmp path -> mktemp) on both main (PR #159) and bashified (PR #160); 6 backlog items still genuinely blocked on real mandark/dexter access this sandbox lacks."
       },
       "containment": {
         "foreign_clones": [],
@@ -1958,6 +1958,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788367401",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-02T11:43:21-05:00",
+          "ended_at": "2026-09-02T12:00:33-05:00",
+          "elapsed_s": 1035,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #485 (claim-issue.py wiring confirmed end to end) and mechanically absorbed+closed #608 (PR #609); lowered the issue-debt ratchet 20->19 (PR #610). Swept the remaining 19 open issues: every one is either a fresh (today/yesterday) human-blocked wall already named on its own thread (GitHub App lacks workflows scope for #536/#581/#409's bashified push; no SSH reachability to mandark/dexter for #489/#551's deploy step), a design call explicitly left for Zach (#396, #458, #483's network-depend"
+        },
+        {
           "run_id": "senechal-nightly-batch-1788359000",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-02T09:23:20-05:00",
@@ -2024,41 +2041,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788346998",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-02T06:03:18-05:00",
-          "ended_at": "2026-09-02T06:21:26-05:00",
-          "elapsed_s": 1091,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Triaged #591's 13 stranded salvage branches (12 confirmed superseded, 1 real leftover cherry-picked, fixed for the prose ratchet, tested and merged as #592); closed #591; ran absorb-and-pr.sh (nothing pending). Remaining backlog is either blocked on a human/SSH/App-permission wall (documented per-issue) or genuine design work (#483 build-id/SHA comparison for the verb build, #485 issue-claiming to prevent duplicate agent work) for a next pass."
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788359000",
+        "run_id": "senechal-nightly-batch-1788367401",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-02T09:23:20-05:00",
-        "ended_at": "2026-09-02T09:41:57-05:00",
-        "elapsed_s": 1120,
+        "started_at": "2026-09-02T11:43:21-05:00",
+        "ended_at": "2026-09-02T12:00:33-05:00",
+        "elapsed_s": 1035,
         "rc": 0,
         "status": "done",
         "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 2,
-        "prs_opened": 1,
+        "prs_opened": 2,
         "prs_merged": 2,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "Merged #604 and #607 (registry absorbs, closing #605/#606); shipped hf7y/scheduler#485 draft PR + #486 wiring claim-issue.py into orient (senechal#485); verified #409's release-risk is now resolved and push is a clean fast-forward but this session's own harness classifier refuses the branch push; #536/#581 remain blocked on the App's missing workflows scope, tried twice already, not retried a third time"
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Closed #485 (claim-issue.py wiring confirmed end to end) and mechanically absorbed+closed #608 (PR #609); lowered the issue-debt ratchet 20->19 (PR #610). Swept the remaining 19 open issues: every one is either a fresh (today/yesterday) human-blocked wall already named on its own thread (GitHub App lacks workflows scope for #536/#581/#409's bashified push; no SSH reachability to mandark/dexter for #489/#551's deploy step), a design call explicitly left for Zach (#396, #458, #483's network-depend"
       },
       "containment": {
         "foreign_clones": [],
@@ -2466,10 +2466,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T17:00:01Z",
+    "generated": "2026-09-02T17:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T17:30:01Z",
+    "valid_until": "2026-09-02T17:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2477,11 +2477,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 21 hours, 49 minutes",
+    "uptime": "up 1 day, 21 hours, 59 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T17:00:01Z"
+      "sampled_at": "2026-09-02T17:10:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
