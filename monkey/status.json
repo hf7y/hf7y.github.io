@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T14:30:02Z",
-  "valid_until": "2026-09-03T18:30:02Z",
+  "generated": "2026-09-02T14:40:02Z",
+  "valid_until": "2026-09-03T18:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -890,6 +890,23 @@
       "release_tick": "2026-09-02T10:56:02Z rc=0 pin=2026-09-01T030800Z 3 ok, 0 gap, 0 bad",
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1788358575",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-02T09:16:15-05:00",
+          "ended_at": "2026-09-02T09:32:06-05:00",
+          "elapsed_s": 954,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "18 PRs reviewed/fixed (CSV-formula-injection in #83, overclaim false-positive in #78, unsourced figure in #79, price/email-safety verified in #77/#82) but none merged -- gh pr merge is denied by this session's own permission classifier, not a GitHub-side block; also no Netlify credentials to verify/complete the #80 stable repoint. Actionable: a human or higher-permission session needs to merge the reviewed-clean backlog (#90, #97, #99, #83, #78, #79, #88, #77, #82 content-verified) and complete "
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1788353775",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-09-02T07:56:15-05:00",
@@ -956,31 +973,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Re-verified all 6 ready-for-agent issues (#8,#34,#74,#80,#91,#96); each is genuinely blocked on human-only action (self-merge banned by this repo's CLAUDE.md + independently classifier-blocked, missing Netlify/DNS creds, missing GitHub App workflows permission, missing dcpomatic2 tooling, missing repo-admin branch-protection API) -- confirmed fresh tonight (apt-cache empty for dcpomatic, no netlify env/binary, gh api branch-protection PUT denied by classifier), no new mechanism found, no code ch"
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788334573",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-02T02:36:13-05:00",
-          "ended_at": "2026-09-02T02:40:38-05:00",
-          "elapsed_s": 267,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "All 6 agent-actionable issues (#8,#34,#74,#80,#91,#96) independently re-verified tonight: substance already built/reviewed by recent runs, every remaining step is blocked on gh pr merge denied by the harness classifier, missing Netlify credentials, a founder decision, or physical dexter/NOFF access -- none of which changed since the last check. No new mechanism found to unblock any of them; nothing routed around."
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788353775",
+        "run_id": "dcp-gate-site-nightly-batch-1788358575",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-02T07:56:15-05:00",
-        "ended_at": "2026-09-02T08:01:16-05:00",
-        "elapsed_s": 304,
+        "started_at": "2026-09-02T09:16:15-05:00",
+        "ended_at": "2026-09-02T09:32:06-05:00",
+        "elapsed_s": 954,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -989,8 +989,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Fixed real gap (dcpgateway-head.netlify.app missing noindex, #96) and pushed to PR #95; every other agent-ready issue (#8,#34,#74,#80,#91,#96) re-verified tonight and genuinely blocked on human-only actions (PR merge, Netlify/dexter credentials, founder decisions) already named precisely in their threads"
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "18 PRs reviewed/fixed (CSV-formula-injection in #83, overclaim false-positive in #78, unsourced figure in #79, price/email-safety verified in #77/#82) but none merged -- gh pr merge is denied by this session's own permission classifier, not a GitHub-side block; also no Netlify credentials to verify/complete the #80 stable repoint. Actionable: a human or higher-permission session needs to merge the reviewed-clean backlog (#90, #97, #99, #83, #78, #79, #88, #77, #82 content-verified) and complete "
       },
       "containment": {
         "foreign_clones": [],
@@ -2432,10 +2432,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T14:30:01Z",
+    "generated": "2026-09-02T14:40:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T15:00:01Z",
+    "valid_until": "2026-09-02T15:10:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2443,11 +2443,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 19 hours, 19 minutes",
+    "uptime": "up 1 day, 19 hours, 29 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T14:30:01Z"
+      "sampled_at": "2026-09-02T14:40:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
