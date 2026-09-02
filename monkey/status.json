@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T04:30:02Z",
-  "valid_until": "2026-09-03T08:30:02Z",
+  "generated": "2026-09-02T04:40:02Z",
+  "valid_until": "2026-09-03T08:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1441,6 +1441,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1788322228",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-09-01T23:10:28-05:00",
+          "ended_at": "2026-09-01T23:33:05-05:00",
+          "elapsed_s": 1360,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 5,
+          "issues_closed": 2,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed and merged #889 (monkey-watch stops dumping payload to unrotated cron log, #850) and #890 (gh --delivers emits repo-relative paths, closes #851); queue still has ~40 open issues untriaged (#844, #847, #800, #825, #791, #783, #771, #754, #672, #663, #650, #602, #577, etc.)."
+        },
+        {
           "run_id": "realisateur-nightly-batch-1788317426",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-09-01T21:50:26-05:00",
@@ -1507,41 +1524,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Closed #752 (verified already-built), #738 (deleted dead milestone-label convention, PR #875 merged), #805 (built+shipped clocksource early-warning for monkey-watch.sh, PR #876 merged); large backlog remains (852, 850, 837, 791, 790, 783, 771, 746, 741, 740, 728, 671, 663, 650, 800, 801, 602, 577, etc.)."
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1788304230",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-09-01T18:10:30-05:00",
-          "ended_at": "2026-09-01T18:26:21-05:00",
-          "elapsed_s": 953,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 2,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1788317426",
+        "run_id": "realisateur-nightly-batch-1788322228",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-09-01T21:50:26-05:00",
-        "ended_at": "2026-09-01T22:11:59-05:00",
-        "elapsed_s": 1297,
+        "started_at": "2026-09-01T23:10:28-05:00",
+        "ended_at": "2026-09-01T23:33:05-05:00",
+        "elapsed_s": 1360,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
-        "issues_opened": 0,
-        "issues_closed": 0,
+        "commits_added": 2,
+        "issues_opened": 5,
+        "issues_closed": 2,
         "prs_opened": 2,
-        "prs_merged": 0,
+        "prs_merged": 2,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Landed and merged #889 (monkey-watch stops dumping payload to unrotated cron log, #850) and #890 (gh --delivers emits repo-relative paths, closes #851); queue still has ~40 open issues untriaged (#844, #847, #800, #825, #791, #783, #771, #754, #672, #663, #650, #602, #577, etc.)."
       },
       "containment": {
         "foreign_clones": [],
@@ -2350,10 +2350,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T04:30:02Z",
+    "generated": "2026-09-02T04:40:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T05:00:02Z",
+    "valid_until": "2026-09-02T05:10:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2361,11 +2361,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 9 hours, 19 minutes",
+    "uptime": "up 1 day, 9 hours, 29 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T04:30:02Z"
+      "sampled_at": "2026-09-02T04:40:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
