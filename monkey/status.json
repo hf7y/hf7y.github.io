@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T12:10:02Z",
-  "valid_until": "2026-09-03T16:10:02Z",
+  "generated": "2026-09-02T12:20:02Z",
+  "valid_until": "2026-09-03T16:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -467,6 +467,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "bibliothecaire-research-1788351124",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-02T07:12:04-05:00",
+          "ended_at": "2026-09-02T07:12:30-05:00",
+          "elapsed_s": 29,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty: only open issues are deferred/durable (#56, #38, #37, #35); nothing actionable this tick."
+        },
+        {
           "run_id": "bibliothecaire-research-1788345127",
           "job": "bibliothecaire-research",
           "started_at": "2026-09-02T05:32:07-05:00",
@@ -533,41 +550,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Request queue empty; remaining open issues (#35,#37,#38,#56) are all labeled deferred/durable, blocked on human action."
-        },
-        {
-          "run_id": "bibliothecaire-research-1788322325",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-09-01T23:12:05-05:00",
-          "ended_at": "2026-09-01T23:12:37-05:00",
-          "elapsed_s": 34,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Request queue empty: no open 'request' issues, no other open issues besides 4 already-deferred/durable infra items."
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1788345127",
+        "run_id": "bibliothecaire-research-1788351124",
         "job": "bibliothecaire-research",
-        "started_at": "2026-09-02T05:32:07-05:00",
-        "ended_at": "2026-09-02T05:37:29-05:00",
-        "elapsed_s": 325,
+        "started_at": "2026-09-02T07:12:04-05:00",
+        "ended_at": "2026-09-02T07:12:30-05:00",
+        "elapsed_s": 29,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Closed #85: verified 3 NN/g web-usability sources, opened web-usability theme, landed 5 quotes via PR #86; request queue now empty"
+        "claimed_reason": "Queue empty: only open issues are deferred/durable (#56, #38, #37, #35); nothing actionable this tick."
       },
       "containment": {
         "foreign_clones": [],
@@ -725,6 +725,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1788351010",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-02T07:10:10-05:00",
+          "ended_at": "2026-09-02T07:15:21-05:00",
+          "elapsed_s": 315,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Filtered issue queue empty (all open issues needs-host/needs-human); no open PRs, stale branches already properly closed as superseded; full test suite green, tree clean."
+        },
+        {
           "run_id": "crt-nightly-batch-1788346208",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-02T05:50:08-05:00",
@@ -791,31 +808,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "found+fixed a real DST bug in zaxon-status-collect.py (crt#126, landed via #127, merged 76662bf); actionable backlog (excluding needs-host/needs-human) is empty"
-        },
-        {
-          "run_id": "crt-nightly-batch-1788327010",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-02T00:30:10-05:00",
-          "ended_at": "2026-09-02T00:40:15-05:00",
-          "elapsed_s": 608,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "retargeted #48 to the fired default (~4700) and updated the title; found+flagged the real blocker (two 08-29 vault deposits never pushed, and this session's write scope to /srv/ecosystem1-vault denied by the classifier) -- nothing else actionable until that's resolved by a human or wider permission"
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788346208",
+        "run_id": "crt-nightly-batch-1788351010",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-02T05:50:08-05:00",
-        "ended_at": "2026-09-02T05:55:31-05:00",
-        "elapsed_s": 326,
+        "started_at": "2026-09-02T07:10:10-05:00",
+        "ended_at": "2026-09-02T07:15:21-05:00",
+        "elapsed_s": 315,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -825,7 +825,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "queue empty (all open issues needs-host/needs-human), suite green, tree clean"
+        "claimed_reason": "Filtered issue queue empty (all open issues needs-host/needs-human); no open PRs, stale branches already properly closed as superseded; full test suite green, tree clean."
       },
       "containment": {
         "foreign_clones": [],
@@ -1244,6 +1244,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788350650",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-02T07:04:10-05:00",
+          "ended_at": "2026-09-02T07:10:33-05:00",
+          "elapsed_s": 386,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "all four external deps (zaxon, groc-browser CDP, dexter ssh, mandark ssh) reconfirmed down fresh; #136's key needs a human's hands on two machines"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788345848",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-02T05:44:08-05:00",
@@ -1310,31 +1327,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "landed PR #147 (prose-ratchet census fix, merged); all four external deps (zaxon/CDP/dexter/mandark) still down, unchanged from last night's sweep, nothing else actionable"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788326649",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-02T00:24:09-05:00",
-          "ended_at": "2026-09-02T00:36:14-05:00",
-          "elapsed_s": 728,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 3,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788345848",
+        "run_id": "groc-mangr-nightly-batch-1788350650",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-02T05:44:08-05:00",
-        "ended_at": "2026-09-02T05:49:58-05:00",
-        "elapsed_s": 352,
+        "started_at": "2026-09-02T07:04:10-05:00",
+        "ended_at": "2026-09-02T07:10:33-05:00",
+        "elapsed_s": 386,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1343,8 +1343,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "all four external deps (zaxon/CDP/dexter/mandark) re-confirmed down; #136's ssh-keygen wall doesn't clear on retry; full queue swept, nothing actionable without dexter/zaxon hands"
+        "claimed_verdict": "BLOCKED",
+        "claimed_reason": "all four external deps (zaxon, groc-browser CDP, dexter ssh, mandark ssh) reconfirmed down fresh; #136's key needs a human's hands on two machines"
       },
       "containment": {
         "foreign_clones": [],
@@ -2397,10 +2397,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T12:10:01Z",
+    "generated": "2026-09-02T12:20:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T12:40:01Z",
+    "valid_until": "2026-09-02T12:50:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2408,11 +2408,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 16 hours, 59 minutes",
+    "uptime": "up 1 day, 17 hours, 9 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T12:10:01Z"
+      "sampled_at": "2026-09-02T12:20:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
