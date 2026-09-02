@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-02T02:50:02Z",
-  "valid_until": "2026-09-03T06:50:02Z",
+  "generated": "2026-09-02T03:00:02Z",
+  "valid_until": "2026-09-03T07:00:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -535,6 +535,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788317226",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-01T21:47:06-05:00",
+          "ended_at": "2026-09-01T21:56:41-05:00",
+          "elapsed_s": 577,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Landed the parked bishop-pair-bonus eval patch (PR #78, verified w/ working browser + 179/179 tests, merged) after confirming the other stray branch (2026-08-16 difficulty-theory dump) is stale and should stay unmerged; all 5 open issues re-checked and remain genuinely blocked on human credentials/decisions (#15, #53, #66, #68) or nothing-to-test-yet (#67)."
+        },
+        {
           "run_id": "chezz-nightly-batch-1788311226",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-01T20:07:06-05:00",
@@ -601,41 +618,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed #54 (dmesg-verified: 0 soft lockups across a full npm run check on monkey, config already documents the fix); pushed Code.gs's WRITE_TOKEN gate to Apps Script HEAD on #53 (partial, live @9 still un-gated, retried clasp run and confirmed still human-blocked); #67/#68/#15/#66 re-checked, no new hf7y comments since last run, all genuinely blocked on human decisions or credentials, nothing else actionable."
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788288427",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-01T13:47:07-05:00",
-          "ended_at": "2026-09-01T13:51:05-05:00",
-          "elapsed_s": 241,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Re-verified all 6 open issues (#15,#53,#54,#66,#67,#68); each is unchanged since last check and genuinely blocked on a human decision, external credential, or another repo's mechanism -- nothing to build tonight, no code touched."
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788311226",
+        "run_id": "chezz-nightly-batch-1788317226",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-01T20:07:06-05:00",
-        "ended_at": "2026-09-01T20:10:25-05:00",
-        "elapsed_s": 201,
+        "started_at": "2026-09-01T21:47:06-05:00",
+        "ended_at": "2026-09-01T21:56:41-05:00",
+        "elapsed_s": 577,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "All 5 open issues (#15,#53,#66,#67,#68) genuinely blocked on human decision or credential, each with exact walls already named; re-verified rather than re-derived. Nothing built, nothing to close, tree clean."
+        "claimed_reason": "Landed the parked bishop-pair-bonus eval patch (PR #78, verified w/ working browser + 179/179 tests, merged) after confirming the other stray branch (2026-08-16 difficulty-theory dump) is stale and should stay unmerged; all 5 open issues re-checked and remain genuinely blocked on human credentials/decisions (#15, #53, #66, #68) or nothing-to-test-yet (#67)."
       },
       "containment": {
         "foreign_clones": [],
@@ -663,6 +663,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "crt-nightly-batch-1788317410",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-01T21:50:10-05:00",
+          "ended_at": "2026-09-01T21:57:37-05:00",
+          "elapsed_s": 451,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "crt-nightly-batch-1788312610",
           "job": "crt-nightly-batch",
@@ -730,31 +747,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "issue 48: checked every remaining candidate doc against #51's zero-code-reader bar, none clear it without either cutting live-cited design docs or Zach's still-open inline-comments-vs-docs-code-opens call; issues 122/123 are Zach-authored NO-DECISION wants explicitly marked block/no-default, correctly left untouched"
-        },
-        {
-          "run_id": "crt-nightly-batch-1788293410",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-01T15:10:10-05:00",
-          "ended_at": "2026-09-01T15:16:49-05:00",
-          "elapsed_s": 401,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Labeled #101/#105/#15 needs-host (3 runs confirmed no dev-box credential reaches dexter/potato, stops repeat re-derivation); verified .prose-ratchet still matches live hf7y/etalon@main unit 3 (caught and reverted a bad rebase against a stale local guard copy first); #48 is at its documented arithmetic floor pending Zach's inline-comment decision, #122/#123 explicitly declare DEFAULT-AFTER 0d block (wait for a dedicated batch) -- nothing else in the needs-host/needs-human-filtered queue is action"
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788312610",
+        "run_id": "crt-nightly-batch-1788317410",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-01T20:30:10-05:00",
-        "ended_at": "2026-09-01T20:35:40-05:00",
-        "elapsed_s": 333,
+        "started_at": "2026-09-01T21:50:10-05:00",
+        "ended_at": "2026-09-01T21:57:37-05:00",
+        "elapsed_s": 451,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -763,8 +763,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Queue (needs-host/needs-human excluded) had #122 and #48. #122's dev-side work already merged tonight (crt-book-blurb.py, PR #125) before this run started; labeled it needs-host since only a physical scanner attach remains. #48 (prose ratchet) hit the same documented wall three runs in a row (last at 21:45Z, ~1hr before this run) -- gap to target needs Zach to pick between cutting inline code comments, cutting docs scripts open, or re-scoping the census tool; nothing new to check without re-deci"
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2350,10 +2350,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-02T02:50:01Z",
+    "generated": "2026-09-02T03:00:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-02T03:20:01Z",
+    "valid_until": "2026-09-02T03:30:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2361,11 +2361,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 7 hours, 39 minutes",
+    "uptime": "up 1 day, 7 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-02T02:50:01Z"
+      "sampled_at": "2026-09-02T03:00:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
