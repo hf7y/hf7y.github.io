@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-03T09:50:02Z",
-  "valid_until": "2026-09-04T13:50:02Z",
+  "generated": "2026-09-03T10:00:03Z",
+  "valid_until": "2026-09-04T14:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -2229,6 +2229,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "vim-arcade-nightly-batch-1788429425",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-09-03T04:57:05-05:00",
+          "ended_at": "2026-09-03T04:58:20-05:00",
+          "elapsed_s": 78,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "only open issue (#207) re-verified still blocked on human root access (realisateur#728 open); nothing actionable"
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1788386223",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-09-02T16:57:03-05:00",
@@ -2295,31 +2312,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Closed #216 (merged PR #215, fixed CLAUDE.md push-permission text + prose-ratchet failure); only remaining open issue #207 is blocked on a human running dresse --host --apply as root (hf7y/realisateur#728)."
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1788311825",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-09-01T20:17:05-05:00",
-          "ended_at": "2026-09-01T20:22:25-05:00",
-          "elapsed_s": 322,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Only open issue (#207) confirmed still blocked on human root access to apply realisateur#729's merged hook wiring; nothing else actionable"
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1788386223",
+        "run_id": "vim-arcade-nightly-batch-1788429425",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-09-02T16:57:03-05:00",
-        "ended_at": "2026-09-02T16:58:46-05:00",
-        "elapsed_s": 106,
+        "started_at": "2026-09-03T04:57:05-05:00",
+        "ended_at": "2026-09-03T04:58:20-05:00",
+        "elapsed_s": 78,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2329,7 +2329,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "only open issue (#207) confirmed still blocked on human root access (realisateur#728 open, no session-marker.sh wiring in settings.json, sudo denied by harness) -- re-verified 2026-09-02, no change since last comment"
+        "claimed_reason": "only open issue (#207) re-verified still blocked on human root access (realisateur#728 open); nothing actionable"
       },
       "containment": {
         "foreign_clones": [],
@@ -2479,10 +2479,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-03T09:50:02Z",
+    "generated": "2026-09-03T10:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-03T10:20:02Z",
+    "valid_until": "2026-09-03T10:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2490,11 +2490,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 14 hours, 39 minutes",
+    "uptime": "up 2 days, 14 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-03T09:50:02Z"
+      "sampled_at": "2026-09-03T10:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
