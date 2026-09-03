@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-03T01:40:02Z",
-  "valid_until": "2026-09-04T05:40:02Z",
+  "generated": "2026-09-03T01:50:03Z",
+  "valid_until": "2026-09-04T05:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1183,6 +1183,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1788399125",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-09-02T20:32:05-05:00",
+          "ended_at": "2026-09-02T20:40:40-05:00",
+          "elapsed_s": 517,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 80,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Continued a truncated run: re-verified full bashified+contract suites green (274 assertions), stress-tested all 10 shipped garde --json subcommands (jq-missing PATH, empty manifest) with no bugs found, confirmed the 4 remaining --json subcommands are genuinely out of reach (basheur absent from sandbox; ecosystem-archive's happy path can't be tested without bypassing its own removable-drive mount guard) and closed #164; re-confirmed the 7 remaining open issues (#23,25,26,29,30,31,70) are all stil"
+        },
+        {
           "run_id": "gardien-nightly-batch-1788394325",
           "job": "gardien-nightly-batch",
           "started_at": "2026-09-02T19:12:05-05:00",
@@ -1249,41 +1266,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "gardien-nightly-batch-1788379925",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-09-02T15:12:05-05:00",
-          "ended_at": "2026-09-02T15:31:12-05:00",
-          "elapsed_s": 1150,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 1,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Fixed+merged PR #163 (prose-ratchet failure blocking #162's merge); found+fixed fauche --json no-op bug (#164, PR #165 merged to bashified); 6 backlog items still blocked on real host access"
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1788394325",
+        "run_id": "gardien-nightly-batch-1788399125",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-09-02T19:12:05-05:00",
-        "ended_at": "2026-09-02T19:28:40-05:00",
-        "elapsed_s": 997,
-        "rc": 1,
-        "status": "FAILED (ceiling: max turns reached)",
+        "started_at": "2026-09-02T20:32:05-05:00",
+        "ended_at": "2026-09-02T20:40:40-05:00",
+        "elapsed_s": 517,
+        "rc": 0,
+        "status": "done",
         "commits_added": 80,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 2,
-        "prs_merged": 2,
-        "verdict_computed": "WORKED-CUTOFF",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "issues_closed": 1,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Continued a truncated run: re-verified full bashified+contract suites green (274 assertions), stress-tested all 10 shipped garde --json subcommands (jq-missing PATH, empty manifest) with no bugs found, confirmed the 4 remaining --json subcommands are genuinely out of reach (basheur absent from sandbox; ecosystem-archive's happy path can't be tested without bypassing its own removable-drive mount guard) and closed #164; re-confirmed the 7 remaining open issues (#23,25,26,29,30,31,70) are all stil"
       },
       "containment": {
         "foreign_clones": [],
@@ -1809,7 +1809,20 @@
       },
       "identity": {
         "declared": "scheduler@selfdev.invalid",
-        "clones": []
+        "clones": [
+          {
+            "path": "/home/scheduler/Documents/Projects/scheduler",
+            "local_identity": null,
+            "count": 6,
+            "commits": [
+              "d446c69 test <test@example.com> 2026-09-02T09:30:34-05:00",
+              "3299541 scheduler self-dev <ci@realisateur.invalid> 2026-09-02T02:56:26-05:00",
+              "4c9b97a scheduler self-dev <ci@realisateur.invalid> 2026-09-02T02:19:29-05:00",
+              "fb8330c scheduler self-dev <ci@realisateur.invalid> 2026-09-02T02:14:32-05:00",
+              "15687c6 baudin (self-dev) <baudin@selfdev.invalid> 2026-09-02T01:54:11-05:00"
+            ]
+          }
+        ]
       },
       "credentials": {
         "app_key": "0o640",
@@ -2466,10 +2479,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-03T01:40:01Z",
+    "generated": "2026-09-03T01:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-03T02:10:01Z",
+    "valid_until": "2026-09-03T02:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2477,11 +2490,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 6 hours, 29 minutes",
+    "uptime": "up 2 days, 6 hours, 39 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-03T01:40:01Z"
+      "sampled_at": "2026-09-03T01:50:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
