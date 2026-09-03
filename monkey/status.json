@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-03T10:50:02Z",
-  "valid_until": "2026-09-04T14:50:02Z",
+  "generated": "2026-09-03T11:00:02Z",
+  "valid_until": "2026-09-04T15:00:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -921,7 +921,7 @@
         "56 5 * * * /home/dcp-gate-site/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
         "16,36,56 * * * * PACED_MAX_PER_TICK=1 /home/dcp-gate-site/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
-      "release_tick": "2026-09-02T10:56:02Z rc=0 pin=2026-09-01T030800Z 3 ok, 0 gap, 0 bad",
+      "release_tick": "2026-09-03T10:56:02Z rc=1 pin=2026-09-01T030800Z 2 ok, 0 gap, 1 bad",
       "runs": [
         {
           "run_id": "dcp-gate-site-nightly-batch-1788377774",
@@ -2466,10 +2466,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-03T10:50:01Z",
+    "generated": "2026-09-03T11:00:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-03T11:20:01Z",
+    "valid_until": "2026-09-03T11:30:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2477,11 +2477,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 15 hours, 39 minutes",
+    "uptime": "up 2 days, 15 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-03T10:50:01Z"
+      "sampled_at": "2026-09-03T11:00:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
