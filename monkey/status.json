@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-03T10:10:02Z",
-  "valid_until": "2026-09-04T14:10:02Z",
+  "generated": "2026-09-03T10:20:02Z",
+  "valid_until": "2026-09-04T14:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -278,6 +278,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1788430205",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-03T05:10:05-05:00",
+          "ended_at": "2026-09-03T05:12:59-05:00",
+          "elapsed_s": 177,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Closed #78 (CI/branch-protection gap resolved by already-merged #85: runner online, prose check green on main); labeled #55 durable (confirmed still blocked, no canvas.token/CANVAS_TOKEN); remaining open issues #70/#75/#79 are DECISION items awaiting Zach with DEFAULT-AFTER windows not yet due, nothing else actionable."
+        },
+        {
           "run_id": "apms-nightly-batch-1788395406",
           "job": "apms-nightly-batch",
           "started_at": "2026-09-02T19:30:06-05:00",
@@ -344,41 +361,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Fixed standup.py DASH false-positive on compound-word hyphens (fx-chains/sound-design), pushed to main; all 6 open issues are blocked on Zach's decision (DEFAULT-AFTER not yet reached) or on the scheduled account's deliberate lack of a Canvas token (#55) -- nothing else actionable."
-        },
-        {
-          "run_id": "apms-nightly-batch-1788336606",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-02T03:10:06-05:00",
-          "ended_at": "2026-09-02T03:13:53-05:00",
-          "elapsed_s": 230,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Fixed 2 real bugs (standup.py dangling semicolon leaking into DUE bullets; done.py judge() not enforcing its own no-silent-missing-downgrade invariant), committed+pushed to main; all 6 open issues remain genuinely blocked (5 within DEFAULT-AFTER windows awaiting Zach, #55 needs a credential only Zach can place)."
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788395406",
+        "run_id": "apms-nightly-batch-1788430205",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-02T19:30:06-05:00",
-        "ended_at": "2026-09-02T19:31:17-05:00",
-        "elapsed_s": 73,
+        "started_at": "2026-09-03T05:10:05-05:00",
+        "ended_at": "2026-09-03T05:12:59-05:00",
+        "elapsed_s": 177,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 1,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "verdict_computed": "WORKED",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Re-verified clean tree, bullets/ledger sweeps clean, no open PRs; all 5 open issues (79,78,75,70,55) are needs-human decisions with future DEFAULT-AFTER dates or blocked on missing canvas.token -- nothing actionable this run."
+        "claimed_reason": "Closed #78 (CI/branch-protection gap resolved by already-merged #85: runner online, prose check green on main); labeled #55 durable (confirmed still blocked, no canvas.token/CANVAS_TOKEN); remaining open issues #70/#75/#79 are DECISION items awaiting Zach with DEFAULT-AFTER windows not yet due, nothing else actionable."
       },
       "containment": {
         "foreign_clones": [],
@@ -536,6 +536,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "bibliothecaire-research-1788430325",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-03T05:12:05-05:00",
+          "ended_at": "2026-09-03T05:12:32-05:00",
+          "elapsed_s": 29,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty: only 4 open issues, all labeled deferred (blocked waiting on human/infra decisions); no request-labeled or eligible general issues to work."
+        },
+        {
           "run_id": "bibliothecaire-research-1788400325",
           "job": "bibliothecaire-research",
           "started_at": "2026-09-02T20:52:05-05:00",
@@ -602,31 +619,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "queue empty: all open issues (35,37,38,56) are labeled deferred, no eligible request or issue to work"
-        },
-        {
-          "run_id": "bibliothecaire-research-1788376326",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-09-02T14:12:06-05:00",
-          "ended_at": "2026-09-02T14:12:31-05:00",
-          "elapsed_s": 28,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Queue empty: no open request-labeled issues, and remaining open issues are all deferred/durable (blocked on human/external action)."
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1788400325",
+        "run_id": "bibliothecaire-research-1788430325",
         "job": "bibliothecaire-research",
-        "started_at": "2026-09-02T20:52:05-05:00",
-        "ended_at": "2026-09-02T20:52:30-05:00",
-        "elapsed_s": 27,
+        "started_at": "2026-09-03T05:12:05-05:00",
+        "ended_at": "2026-09-03T05:12:32-05:00",
+        "elapsed_s": 29,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -636,7 +636,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Queue empty: only open issues are labeled deferred/durable (#56, #38, #37, #35); no eligible request or actionable issue to claim."
+        "claimed_reason": "Queue empty: only 4 open issues, all labeled deferred (blocked waiting on human/infra decisions); no request-labeled or eligible general issues to work."
       },
       "containment": {
         "foreign_clones": [],
@@ -1183,6 +1183,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1788430326",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-09-03T05:12:06-05:00",
+          "ended_at": "2026-09-03T05:18:46-05:00",
+          "elapsed_s": 402,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "21st run: both suites re-verified green, 6-item backlog re-confirmed blocked on real host/data access, deep sweep of verb.sh/manifest.sh + 4 newest --json commits found no new bug tonight (net 0/0) -- idle-night sweep pattern remains actionable next run."
+        },
+        {
           "run_id": "gardien-nightly-batch-1788405126",
           "job": "gardien-nightly-batch",
           "started_at": "2026-09-02T22:12:06-05:00",
@@ -1249,41 +1266,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Landed garde backup --json (PR #170, merged to bashified) continuing #164; re-confirmed #23/25/29/30/31/70 still blocked on the same real-host SSH wall and #26 unchanged awaiting Zach; #164 remains open with coverage/ecosystem-archive/media run|triage|dedup|remote/install/uninstall still to do."
-        },
-        {
-          "run_id": "gardien-nightly-batch-1788387125",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-09-02T17:12:05-05:00",
-          "ended_at": "2026-09-02T17:21:02-05:00",
-          "elapsed_s": 540,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 74,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "PR #169 merged: garde add/exclude --json (issue #164), tested + green; 6 of ~13 garde subcommands now emit real JSON, rest need more design (coverage/backup/ecosystem-archive wrap other tools, media run/triage/dedup are mutating)"
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1788405126",
+        "run_id": "gardien-nightly-batch-1788430326",
         "job": "gardien-nightly-batch",
-        "started_at": "2026-09-02T22:12:06-05:00",
-        "ended_at": "2026-09-02T22:35:21-05:00",
-        "elapsed_s": 1398,
+        "started_at": "2026-09-03T05:12:06-05:00",
+        "ended_at": "2026-09-03T05:18:46-05:00",
+        "elapsed_s": 402,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Merged #173 (systemd units.sh dedup, #41); re-swept idle backlog, found+fixed one real bug; 6 items still blocked on Zach/real-host access, #26 unchanged"
+        "claimed_reason": "21st run: both suites re-verified green, 6-item backlog re-confirmed blocked on real host/data access, deep sweep of verb.sh/manifest.sh + 4 newest --json commits found no new bug tonight (net 0/0) -- idle-night sweep pattern remains actionable next run."
       },
       "containment": {
         "foreign_clones": [],
@@ -2479,10 +2479,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-03T10:10:01Z",
+    "generated": "2026-09-03T10:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-03T10:40:01Z",
+    "valid_until": "2026-09-03T10:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2490,11 +2490,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 14 hours, 59 minutes",
+    "uptime": "up 2 days, 15 hours, 9 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-03T10:10:01Z"
+      "sampled_at": "2026-09-03T10:20:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
