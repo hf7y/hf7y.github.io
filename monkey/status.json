@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-03T13:30:02Z",
-  "valid_until": "2026-09-04T17:30:02Z",
+  "generated": "2026-09-03T13:40:02Z",
+  "valid_until": "2026-09-04T17:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -536,6 +536,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "bibliothecaire-research-1788442325",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-03T08:32:05-05:00",
+          "ended_at": "2026-09-03T08:32:34-05:00",
+          "elapsed_s": 31,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty: no open request-labeled issues; remaining open issues are all deferred/durable, nothing actionable."
+        },
+        {
           "run_id": "bibliothecaire-research-1788430325",
           "job": "bibliothecaire-research",
           "started_at": "2026-09-03T05:12:05-05:00",
@@ -602,31 +619,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Queue empty: no open request-labeled issues; all 4 open issues are labeled deferred (waiting on human/infra decisions)."
-        },
-        {
-          "run_id": "bibliothecaire-research-1788382324",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-09-02T15:52:04-05:00",
-          "ended_at": "2026-09-02T15:52:29-05:00",
-          "elapsed_s": 27,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "queue empty: all open issues (35,37,38,56) are labeled deferred, no eligible request or issue to work"
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1788430325",
+        "run_id": "bibliothecaire-research-1788442325",
         "job": "bibliothecaire-research",
-        "started_at": "2026-09-03T05:12:05-05:00",
-        "ended_at": "2026-09-03T05:12:32-05:00",
-        "elapsed_s": 29,
+        "started_at": "2026-09-03T08:32:05-05:00",
+        "ended_at": "2026-09-03T08:32:34-05:00",
+        "elapsed_s": 31,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -636,7 +636,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Queue empty: only 4 open issues, all labeled deferred (blocked waiting on human/infra decisions); no request-labeled or eligible general issues to work."
+        "claimed_reason": "Queue empty: no open request-labeled issues; remaining open issues are all deferred/durable, nothing actionable."
       },
       "containment": {
         "foreign_clones": [],
@@ -1700,6 +1700,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1788441674",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-09-03T08:21:14-05:00",
+          "ended_at": "2026-09-03T08:38:12-05:00",
+          "elapsed_s": 1020,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "scheduler-paced-dev-1788439273",
           "job": "scheduler-paced-dev",
           "started_at": "2026-09-03T07:41:13-05:00",
@@ -1766,41 +1783,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Landed 3 stranded PRs (#474,#475,#498), resolving #498's merge conflicts by hand; closed #281 (verified done by #475); opened #512 (branch protection now wrongly requires 'prose / prose', blocked from self-fixing by sandbox permission); landed #513 (#210 ledger-path dedup). Full premise-triage done on the 26-issue backlog (agent-verified) -- everything else still valid, several (#347,#349,#339) look ready to pick up next."
-        },
-        {
-          "run_id": "scheduler-paced-dev-1788393672",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-09-02T19:01:12-05:00",
-          "ended_at": "2026-09-02T19:21:11-05:00",
-          "elapsed_s": 1201,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 4,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 4,
-          "prs_merged": 4,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Landed 4 PRs (#508-#511) reaping incident-narrative prose from lib/deadman-switch.sh, lib/paced-conf.sh, lib/run-ledger.sh, bin/tempo.sh for #238 (10953->8368 lines, 5630 still to cut); next candidates bin/rotation-lint.sh and a careful pass on bin/verdict.sh are named in the issue thread."
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1788439273",
+        "run_id": "scheduler-paced-dev-1788441674",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-09-03T07:41:13-05:00",
-        "ended_at": "2026-09-03T07:53:52-05:00",
-        "elapsed_s": 762,
+        "started_at": "2026-09-03T08:21:14-05:00",
+        "ended_at": "2026-09-03T08:38:12-05:00",
+        "elapsed_s": 1020,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
-        "issues_opened": 1,
-        "issues_closed": 1,
+        "issues_opened": 0,
+        "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Closed #210 (merged PR #516: collapsed interchange-probe.sh/thermostat-probe.sh's duplicate blind() into lib/blind-witness.sh, fixed a witness fixture gap that let #513's ledger-path source line go unexercised); filed #517 for the similarly-shaped selfdev-*.sh counter duplication found along the way (needs a format decision, not a mechanical merge). #512 (branch protection drift) re-confirmed still blocked on the same admin-only PATCH wall. Queue still has plenty of open, actionable items (#517,"
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2466,10 +2466,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-03T13:30:01Z",
+    "generated": "2026-09-03T13:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-03T14:00:01Z",
+    "valid_until": "2026-09-03T14:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2477,11 +2477,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 18 hours, 19 minutes",
+    "uptime": "up 2 days, 18 hours, 29 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-03T13:30:01Z"
+      "sampled_at": "2026-09-03T13:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
