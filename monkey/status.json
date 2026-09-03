@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-03T15:10:02Z",
-  "valid_until": "2026-09-04T19:10:02Z",
+  "generated": "2026-09-03T15:20:03Z",
+  "valid_until": "2026-09-04T19:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1285,7 +1285,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "gardien@selfdev.invalid",
         "clones": []
@@ -1696,6 +1700,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1788447673",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-09-03T10:01:13-05:00",
+          "ended_at": "2026-09-03T10:19:48-05:00",
+          "elapsed_s": 1118,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed #519 (merged): 6/8 selfdev-*.sh scripts collapsed into lib/provision-witness.sh, closed #517 naming the 2 deliberately-left-duplicated scripts and why; reconfirmed #512's branch-protection PATCH is still refused by the same permission wall as before (not re-filed, already tracked with the exact wall). Queue still has real work (#360, #359, #350-chain, #339, etc.)."
+        },
+        {
           "run_id": "scheduler-paced-dev-1788441674",
           "job": "scheduler-paced-dev",
           "started_at": "2026-09-03T08:21:14-05:00",
@@ -1762,41 +1783,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Fixed setup-selfdev-project.test.sh's env-dependent false FAIL (bare *scheduler* substring matched this account's own /home/scheduler path), opened PR #514 with all checks green, ready for merge; re-confirmed #512's branch-protection PATCH is still blocked by the sandbox classifier (unchanged wall, needs a human); triaged 20 open backlog issues (432,428,364,360,359,358,355,350,349,348,347,339,337,318,310,307,306,305,304,264) against current code -- all premises still hold, nothing dead to close,"
-        },
-        {
-          "run_id": "scheduler-paced-dev-1788399672",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-09-02T20:41:12-05:00",
-          "ended_at": "2026-09-02T21:20:42-05:00",
-          "elapsed_s": 2373,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 4,
-          "issues_opened": 1,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 4,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Landed 3 stranded PRs (#474,#475,#498), resolving #498's merge conflicts by hand; closed #281 (verified done by #475); opened #512 (branch protection now wrongly requires 'prose / prose', blocked from self-fixing by sandbox permission); landed #513 (#210 ledger-path dedup). Full premise-triage done on the 26-issue backlog (agent-verified) -- everything else still valid, several (#347,#349,#339) look ready to pick up next."
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1788441674",
+        "run_id": "scheduler-paced-dev-1788447673",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-09-03T08:21:14-05:00",
-        "ended_at": "2026-09-03T08:38:12-05:00",
-        "elapsed_s": 1020,
-        "rc": 0,
-        "status": "done",
+        "started_at": "2026-09-03T10:01:13-05:00",
+        "ended_at": "2026-09-03T10:19:48-05:00",
+        "elapsed_s": 1118,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 1,
         "prs_opened": 1,
-        "prs_merged": 0,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "prs_merged": 1,
+        "verdict_computed": "WORKED-CUTOFF",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Landed #519 (merged): 6/8 selfdev-*.sh scripts collapsed into lib/provision-witness.sh, closed #517 naming the 2 deliberately-left-duplicated scripts and why; reconfirmed #512's branch-protection PATCH is still refused by the same permission wall as before (not re-filed, already tracked with the exact wall). Queue still has real work (#360, #359, #350-chain, #339, etc.)."
       },
       "containment": {
         "foreign_clones": [],
@@ -2341,6 +2345,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788447967",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-03T10:06:07-05:00",
+          "ended_at": "2026-09-03T10:12:08-05:00",
+          "elapsed_s": 364,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "All open issues (#99, #105, #74, #53, #37, #110) terminate in Zach's decision on #99 (reap 115-148 legitimate docstring lines vs raise the prose-ratchet floor); re-verified fpcalc/dexter-SSH/cmake/pip walls fresh, all unchanged, pytest 854/9/0 clean"
+        },
+        {
           "run_id": "wtul-nightly-batch-1788441967",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-03T08:26:07-05:00",
@@ -2407,41 +2428,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "13th pass today: queue unchanged (7 open issues, all gated on #99 needs-decision or dexter/#37 access), pytest 842/9/0 clean, no commits/branches/issues this pass; appended to report."
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788386767",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-02T17:06:07-05:00",
-          "ended_at": "2026-09-02T17:08:17-05:00",
-          "elapsed_s": 132,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Twelfth pass today, independently reverified fresh: queue unchanged (7 open issues), PRs #105/#111 still blocked only on #99's human decision, hardware walls (#37/#74/#53) unchanged, pytest 842/9/0 clean. Nothing actionable."
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788441967",
+        "run_id": "wtul-nightly-batch-1788447967",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-03T08:26:07-05:00",
-        "ended_at": "2026-09-03T08:42:19-05:00",
-        "elapsed_s": 975,
+        "started_at": "2026-09-03T10:06:07-05:00",
+        "ended_at": "2026-09-03T10:12:08-05:00",
+        "elapsed_s": 364,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Merged PR #111 (fingerprint index for #74) after correcting a misdiagnosis 15 prior passes repeated: its prose-check failure was its own +15-line branch overage, unrelated to #99. Investigated #105's own +115 overage the same way, found it's non-duplicative engineering docs (not boilerplate) and left it for review rather than gutting it. Corrected #99's own mechanics (--accept re-bases cleanly across the unit bump, no hand-edit needed) and confirmed neither #99 outcome unblocks #105. Next run: c"
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "BLOCKED",
+        "claimed_reason": "All open issues (#99, #105, #74, #53, #37, #110) terminate in Zach's decision on #99 (reap 115-148 legitimate docstring lines vs raise the prose-ratchet floor); re-verified fpcalc/dexter-SSH/cmake/pip walls fresh, all unchanged, pytest 854/9/0 clean"
       },
       "containment": {
         "foreign_clones": [],
@@ -2462,10 +2466,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-03T15:10:02Z",
+    "generated": "2026-09-03T15:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-03T15:40:02Z",
+    "valid_until": "2026-09-03T15:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2473,11 +2477,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 19 hours, 59 minutes",
+    "uptime": "up 2 days, 20 hours, 9 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-03T15:10:02Z"
+      "sampled_at": "2026-09-03T15:20:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
