@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-03T18:30:02Z",
-  "valid_until": "2026-09-04T22:30:02Z",
+  "generated": "2026-09-03T18:40:03Z",
+  "valid_until": "2026-09-04T22:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -139,9 +139,9 @@
     {
       "account": "american-cycle",
       "uid": 3018,
-      "armed": true,
+      "armed": false,
       "dispatch_line": true,
-      "roster_state": "live",
+      "roster_state": "parked",
       "cron": [
         "21 5 * * * /home/american-cycle/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
         "1,21,41 * * * * PACED_MAX_PER_TICK=1 /home/american-cycle/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -1174,9 +1174,9 @@
     {
       "account": "gardien",
       "uid": 3004,
-      "armed": true,
+      "armed": false,
       "dispatch_line": true,
-      "roster_state": "live",
+      "roster_state": "parked",
       "cron": [
         "12,32,52 * * * * PACED_MAX_PER_TICK=1 /home/gardien/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -2466,10 +2466,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-03T18:30:01Z",
+    "generated": "2026-09-03T18:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-03T19:00:01Z",
+    "valid_until": "2026-09-03T19:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2477,11 +2477,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 2 days, 23 hours, 19 minutes",
+    "uptime": "up 2 days, 23 hours, 29 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-03T18:30:01Z"
+      "sampled_at": "2026-09-03T18:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
