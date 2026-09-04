@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-04T01:10:03Z",
-  "valid_until": "2026-09-05T05:10:03Z",
+  "generated": "2026-09-04T01:20:02Z",
+  "valid_until": "2026-09-05T05:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -536,6 +536,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "bibliothecaire-research-1788484325",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-03T20:12:05-05:00",
+          "ended_at": "2026-09-03T20:12:29-05:00",
+          "elapsed_s": 26,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "queue empty: no open request-labeled issues; remaining open issues (35,37,38,56) are all deferred"
+        },
+        {
           "run_id": "bibliothecaire-research-1788478326",
           "job": "bibliothecaire-research",
           "started_at": "2026-09-03T18:32:06-05:00",
@@ -602,31 +619,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Queue empty: only open issues are labeled deferred/durable (#56, #38, #37, #35); no eligible request or actionable issue to claim."
-        },
-        {
-          "run_id": "bibliothecaire-research-1788394325",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-09-02T19:12:05-05:00",
-          "ended_at": "2026-09-02T19:12:26-05:00",
-          "elapsed_s": 24,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "queue empty: no open request-labeled issues, and all other open issues are labeled deferred"
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1788478326",
+        "run_id": "bibliothecaire-research-1788484325",
         "job": "bibliothecaire-research",
-        "started_at": "2026-09-03T18:32:06-05:00",
-        "ended_at": "2026-09-03T18:32:32-05:00",
-        "elapsed_s": 28,
+        "started_at": "2026-09-03T20:12:05-05:00",
+        "ended_at": "2026-09-03T20:12:29-05:00",
+        "elapsed_s": 26,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -636,7 +636,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Request queue empty; only open issues are deferred/durable (#56,#38,#37,#35)."
+        "claimed_reason": "queue empty: no open request-labeled issues; remaining open issues (35,37,38,56) are all deferred"
       },
       "containment": {
         "foreign_clones": [],
@@ -794,6 +794,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1788484217",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-03T20:10:17-05:00",
+          "ended_at": "2026-09-03T20:19:13-05:00",
+          "elapsed_s": 539,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "Merged PR#150 (tests.yml CI + mandark whisper cleanup), closed #144; rest of the queue (#149,#147,#146,#145,#131) is blocked on dexter access (tailscaled down, sudo to start it refused) or a human decision (bashified branch), #128 is deliberately deferred"
+        },
+        {
           "run_id": "crt-nightly-batch-1788479419",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-03T18:50:19-05:00",
@@ -860,41 +877,24 @@
           "verdict_computed": "FAILED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1788390609",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-02T18:10:09-05:00",
-          "ended_at": "2026-09-02T18:15:41-05:00",
-          "elapsed_s": 335,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Re-verified full offline test suite green (ALL GREEN); actionable backlog is empty -- only open non-excluded issue is #128, a NO-DECISION latent-trap notice that explicitly defers action until crt adds its first .selfdev-secrets (none exists); all other open issues are needs-host/needs-human. Tree clean, no open PRs."
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788479419",
+        "run_id": "crt-nightly-batch-1788484217",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-03T18:50:19-05:00",
-        "ended_at": "2026-09-03T19:12:03-05:00",
-        "elapsed_s": 1306,
+        "started_at": "2026-09-03T20:10:17-05:00",
+        "ended_at": "2026-09-03T20:19:13-05:00",
+        "elapsed_s": 539,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 0,
+        "issues_closed": 1,
+        "prs_opened": 0,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "BLOCKED",
+        "claimed_reason": "Merged PR#150 (tests.yml CI + mandark whisper cleanup), closed #144; rest of the queue (#149,#147,#146,#145,#131) is blocked on dexter access (tailscaled down, sudo to start it refused) or a human decision (bashified branch), #128 is deliberately deferred"
       },
       "containment": {
         "foreign_clones": [],
@@ -2343,6 +2343,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788483969",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-03T20:06:09-05:00",
+          "ended_at": "2026-09-03T20:11:13-05:00",
+          "elapsed_s": 307,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "Fourth pass today, fresh session: re-verified pytest (854 passed), re-probed dexter SSH and fpcalc (both still walled), re-read all 7 open issues + PR #105 for a human reply (none) -- everything terminates on #99's reap-vs-raise-floor call, unchanged from the third pass."
+        },
+        {
           "run_id": "wtul-nightly-batch-1788447967",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-03T10:06:07-05:00",
@@ -2409,31 +2426,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "14th same-day pass: queue unchanged (needs-decision #99 blocks #105/#111, dexter/fpcalc wall blocks #74/#53), nothing new to build"
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788391567",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-02T18:26:07-05:00",
-          "ended_at": "2026-09-02T18:27:42-05:00",
-          "elapsed_s": 98,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "13th pass today: queue unchanged (7 open issues, all gated on #99 needs-decision or dexter/#37 access), pytest 842/9/0 clean, no commits/branches/issues this pass; appended to report."
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788447967",
+        "run_id": "wtul-nightly-batch-1788483969",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-03T10:06:07-05:00",
-        "ended_at": "2026-09-03T10:12:08-05:00",
-        "elapsed_s": 364,
+        "started_at": "2026-09-03T20:06:09-05:00",
+        "ended_at": "2026-09-03T20:11:13-05:00",
+        "elapsed_s": 307,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2443,13 +2443,9 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "All open issues (#99, #105, #74, #53, #37, #110) terminate in Zach's decision on #99 (reap 115-148 legitimate docstring lines vs raise the prose-ratchet floor); re-verified fpcalc/dexter-SSH/cmake/pip walls fresh, all unchanged, pytest 854/9/0 clean"
+        "claimed_reason": "Fourth pass today, fresh session: re-verified pytest (854 passed), re-probed dexter SSH and fpcalc (both still walled), re-read all 7 open issues + PR #105 for a human reply (none) -- everything terminates on #99's reap-vs-raise-floor call, unchanged from the third pass."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "wtul@selfdev.invalid",
         "clones": []
@@ -2464,10 +2460,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-04T01:10:02Z",
+    "generated": "2026-09-04T01:20:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-04T01:40:02Z",
+    "valid_until": "2026-09-04T01:50:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2475,11 +2471,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 3 days, 5 hours, 59 minutes",
+    "uptime": "up 3 days, 6 hours, 9 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-04T01:10:02Z"
+      "sampled_at": "2026-09-04T01:20:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
