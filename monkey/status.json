@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-04T04:00:02Z",
-  "valid_until": "2026-09-05T08:00:02Z",
+  "generated": "2026-09-04T04:10:02Z",
+  "valid_until": "2026-09-05T08:10:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1698,6 +1698,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1788493276",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-09-03T22:41:16-05:00",
+          "ended_at": "2026-09-03T23:07:02-05:00",
+          "elapsed_s": 1549,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "scheduler-paced-dev-1788490877",
           "job": "scheduler-paced-dev",
           "started_at": "2026-09-03T22:01:17-05:00",
@@ -1764,41 +1781,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Landed #519 (merged): 6/8 selfdev-*.sh scripts collapsed into lib/provision-witness.sh, closed #517 naming the 2 deliberately-left-duplicated scripts and why; reconfirmed #512's branch-protection PATCH is still refused by the same permission wall as before (not re-filed, already tracked with the exact wall). Queue still has real work (#360, #359, #350-chain, #339, etc.)."
-        },
-        {
-          "run_id": "scheduler-paced-dev-1788441674",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-09-03T08:21:14-05:00",
-          "ended_at": "2026-09-03T08:38:12-05:00",
-          "elapsed_s": 1020,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1788490877",
+        "run_id": "scheduler-paced-dev-1788493276",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-09-03T22:01:17-05:00",
-        "ended_at": "2026-09-03T22:19:17-05:00",
-        "elapsed_s": 1083,
+        "started_at": "2026-09-03T22:41:16-05:00",
+        "ended_at": "2026-09-03T23:07:02-05:00",
+        "elapsed_s": 1549,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 2,
-        "prs_opened": 0,
-        "prs_merged": 3,
+        "issues_closed": 0,
+        "prs_opened": 1,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Milestone triage of hf7y/scheduler's v2/v3/regulation milestones: merged PR #543 (milestone-gate dispatch predicate, verified tests locally per the heart-file rule), #514 (test false-FAIL fix), #536 (vaporwave account registration); closed PR #518 as superseded by already-merged #519; closed issue #541 (ruling now executed) and #535 (auto-closed via #536). Re-confirmed #512 (branch-protection prose/prose drift) is still genuinely blocked on the same admin PATCH permission wall. Remaining v2/v3/r"
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2464,10 +2464,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-04T04:00:01Z",
+    "generated": "2026-09-04T04:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-04T04:30:01Z",
+    "valid_until": "2026-09-04T04:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2475,11 +2475,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 3 days, 8 hours, 49 minutes",
+    "uptime": "up 3 days, 8 hours, 59 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-04T04:00:01Z"
+      "sampled_at": "2026-09-04T04:10:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
