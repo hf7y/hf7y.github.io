@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-04T21:40:02Z",
-  "valid_until": "2026-09-06T01:40:02Z",
+  "generated": "2026-09-04T21:50:02Z",
+  "valid_until": "2026-09-06T01:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -788,6 +788,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1788557421",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-04T16:30:21-05:00",
+          "ended_at": "2026-09-04T16:44:02-05:00",
+          "elapsed_s": 824,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Confirmed main green (tests + CI); re-probed dexter (SSH refused, tailscale probe itself blocked) and confirmed #131/#145/#146/#147 all transitively wall on that same dexter-access gap -- labeled needs-host on all four so future runs don't re-derive it; re-tried #149's branch deletions (blocked by the same classifier wall as last run) and read the bashified branch (313 files, -304011 lines, a full architectural pivot, 15 days idle) to confirm its 'land or retire' call is genuinely Zach's, not a "
+        },
+        {
           "run_id": "crt-nightly-batch-1788502220",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-04T01:10:20-05:00",
@@ -854,41 +871,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "Priced hf7y/crt#131's Zaxon-to-secretaire move: Actions minutes are negligible (~30/mo, measured) and secretaire's self-hosted runner is already online, so both cited costs are zero; the one real remaining cost is a ghcr pull credential for dexter, which needs dexter host access this dev seat doesn't have (ssh dexter: connection refused, port 22). Issue 128 correctly stays open per its own DEFAULT-AFTER 30d clause (not due). No other issue in the actionable queue."
-        },
-        {
-          "run_id": "crt-nightly-batch-1788400213",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-02T20:50:13-05:00",
-          "ended_at": "2026-09-02T21:18:41-05:00",
-          "elapsed_s": 1710,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 6,
-          "issues_opened": 0,
-          "issues_closed": 2,
-          "prs_opened": 2,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Landed the crt#129/#130 salvaged claim+addressing fix (PR#135) and built+merged crt#132's local-whisper fallback (PR#136); closed 129/130, labeled 132 needs-host (code shipped, potato deploy needs ssh access unavailable here); remaining queue (131, 128) is explicitly 'not yet' per Zach's own comments, nothing else actionable."
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788502220",
+        "run_id": "crt-nightly-batch-1788557421",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-04T01:10:20-05:00",
-        "ended_at": "2026-09-04T01:26:06-05:00",
-        "elapsed_s": 949,
+        "started_at": "2026-09-04T16:30:21-05:00",
+        "ended_at": "2026-09-04T16:44:02-05:00",
+        "elapsed_s": 824,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Fixed & merged #151 (gitignore *secret* swallowing .selfdev-secrets, closes #128); everything else open (#149 branch cleanup, #145/146/147 containerized-brain chain, #131 Zaxon move) is blocked on dexter/tailscale host access or a human decision, confirmed by reproducing the exact walls this run."
+        "claimed_reason": "Confirmed main green (tests + CI); re-probed dexter (SSH refused, tailscale probe itself blocked) and confirmed #131/#145/#146/#147 all transitively wall on that same dexter-access gap -- labeled needs-host on all four so future runs don't re-derive it; re-tried #149's branch deletions (blocked by the same classifier wall as last run) and read the bashified branch (313 files, -304011 lines, a full architectural pivot, 15 days idle) to confirm its 'land or retire' call is genuinely Zach's, not a "
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2447,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-04T21:40:01Z",
+    "generated": "2026-09-04T21:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-04T22:10:01Z",
+    "valid_until": "2026-09-04T22:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2458,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 2 hours, 29 minutes",
+    "uptime": "up 4 days, 2 hours, 39 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-04T21:40:01Z"
+      "sampled_at": "2026-09-04T21:50:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
