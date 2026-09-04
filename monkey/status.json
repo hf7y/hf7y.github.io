@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-04T18:50:03Z",
-  "valid_until": "2026-09-05T22:50:03Z",
+  "generated": "2026-09-04T19:00:02Z",
+  "valid_until": "2026-09-05T23:00:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1302,6 +1302,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788547450",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-04T13:44:10-05:00",
+          "ended_at": "2026-09-04T13:51:48-05:00",
+          "elapsed_s": 461,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "zaxon question slot saturated (10 asked/24h, none answered) -- window confirm and Nuts substitution both self-healing but refused; re-verified identical to prior BLOCKED, nothing newly actionable"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788539050",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-04T11:24:10-05:00",
@@ -1368,31 +1385,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788524649",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-04T07:24:09-05:00",
-          "ended_at": "2026-09-04T07:31:20-05:00",
-          "elapsed_s": 433,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Re-verified 394/394 tests + live server smoke clean; reviewed entire open milestone (#27,#59,#87,#88,#106) end to end -- every remaining item is genuinely blocked on a pending Zach reply (self-healing) or access this account lacks (dexter ssh, HA box hands-on, hermes-agent source), all already named on their own threads; re-fired the one stale ask (#106, ticket a555dbf0) that needed it. No code gap found tonight, nothing to build."
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788539050",
+        "run_id": "groc-mangr-nightly-batch-1788547450",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-04T11:24:10-05:00",
-        "ended_at": "2026-09-04T11:38:08-05:00",
-        "elapsed_s": 841,
+        "started_at": "2026-09-04T13:44:10-05:00",
+        "ended_at": "2026-09-04T13:51:48-05:00",
+        "elapsed_s": 461,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1402,7 +1402,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "zaxon's shared reply slot is saturated (10 asked/24h, none answered) -- window confirm and Nuts substitution both wait on Zach's phone, not code; full re-verify found no new mechanism gap"
+        "claimed_reason": "zaxon question slot saturated (10 asked/24h, none answered) -- window confirm and Nuts substitution both self-healing but refused; re-verified identical to prior BLOCKED, nothing newly actionable"
       },
       "containment": {
         "foreign_clones": [],
@@ -2443,10 +2443,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-04T18:50:02Z",
+    "generated": "2026-09-04T19:00:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-04T19:20:02Z",
+    "valid_until": "2026-09-04T19:30:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2454,11 +2454,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 3 days, 23 hours, 39 minutes",
+    "uptime": "up 3 days, 23 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-04T18:50:02Z"
+      "sampled_at": "2026-09-04T19:00:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
