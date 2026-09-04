@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-04T07:50:22Z",
-  "valid_until": "2026-09-05T11:50:22Z",
+  "generated": "2026-09-04T08:00:03Z",
+  "valid_until": "2026-09-05T12:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -276,6 +276,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1788508207",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-04T02:50:07-05:00",
+          "ended_at": "2026-09-04T02:53:41-05:00",
+          "elapsed_s": 217,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Orient + re-verify only: all 5 open issues (86,79,75,70,55) are blocked on a human decision window not yet expired, a missing canvas.token in this scheduled checkout, or a real class session (next 2026-09-14) that hasn't happened; reconfirmed canvas.token absence and the no-recording state via probes and posted findings as comments on #86 and #55; no code changes needed, all .py files compile clean, tree stays clean."
+        },
+        {
           "run_id": "apms-nightly-batch-1788472206",
           "job": "apms-nightly-batch",
           "started_at": "2026-09-03T16:50:06-05:00",
@@ -342,31 +359,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Built and merged postmortem.py's 4th standup question (print-only next-week PLAN, #84, closes #80); remaining backlog is 4 timed DECISION issues for @hf7y not yet at their DEFAULT-AFTER, plus #55 already documented blocked on a missing Canvas credential."
-        },
-        {
-          "run_id": "apms-nightly-batch-1788360606",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-02T09:50:06-05:00",
-          "ended_at": "2026-09-02T09:51:50-05:00",
-          "elapsed_s": 107,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "All 6 open issues blocked on Zach decision (unexpired DEFAULT-AFTER) or missing canvas credential (#55, re-verified); nothing actionable, tree clean"
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788472206",
+        "run_id": "apms-nightly-batch-1788508207",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-03T16:50:06-05:00",
-        "ended_at": "2026-09-03T16:52:04-05:00",
-        "elapsed_s": 120,
+        "started_at": "2026-09-04T02:50:07-05:00",
+        "ended_at": "2026-09-04T02:53:41-05:00",
+        "elapsed_s": 217,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -376,7 +376,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Orient + re-verify only: all 4 open issues are needs-human/durable blockers with unexpired DEFAULT-AFTER windows or missing credentials (#55, prior-confirmed); bullets.py sweep and module imports pass clean, no open PRs, no actionable work found."
+        "claimed_reason": "Orient + re-verify only: all 5 open issues (86,79,75,70,55) are blocked on a human decision window not yet expired, a missing canvas.token in this scheduled checkout, or a real class session (next 2026-09-14) that hasn't happened; reconfirmed canvas.token absence and the no-recording state via probes and posted findings as comments on #86 and #55; no code changes needed, all .py files compile clean, tree stays clean."
       },
       "containment": {
         "foreign_clones": [],
@@ -2443,22 +2443,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-04T07:50:01Z",
+    "generated": "2026-09-04T08:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-04T08:20:01Z",
-    "verdict": "DOWN",
-    "why": "VM is poweroff",
-    "vm_state": "poweroff",
-    "disk": "",
-    "disk_home": "unknown",
+    "valid_until": "2026-09-04T08:30:02Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 3 days, 12 hours, 39 minutes",
+    "uptime": "up 3 days, 12 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-04T07:50:01Z"
+      "sampled_at": "2026-09-04T08:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
