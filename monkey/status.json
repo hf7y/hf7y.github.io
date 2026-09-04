@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-04T03:40:02Z",
-  "valid_until": "2026-09-05T07:40:02Z",
+  "generated": "2026-09-04T03:50:03Z",
+  "valid_until": "2026-09-05T07:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1440,6 +1440,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "nine-speakers-nightly-batch-1788492792",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-09-03T22:33:12-05:00",
+          "ended_at": "2026-09-03T22:42:08-05:00",
+          "elapsed_s": 539,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Milestone #64's buildable sub-items are exhausted (both landed in prior runs) and its remainder needs Zach+hardware; #60/#62 are needs-human with DEFAULT-AFTER not yet due; #7 stays parked. Found+fixed one live bug via stress-testing instead: nine_speakers/sim.py's --viz-delay raw-tracebacked on a negative value (time.sleep(negative) -> uncaught ValueError mid-run); PR #73 merged clean, suite 219/219, sim smoke clean, prose +0. This continues the repo's existing raw-traceback hardening sweep (#4"
+        },
+        {
           "run_id": "nine-speakers-nightly-batch-1788485590",
           "job": "nine-speakers-nightly-batch",
           "started_at": "2026-09-03T20:33:10-05:00",
@@ -1506,31 +1523,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Re-verified 214 tests + CI green; fresh full review of nine_speakers/ core sim modules found no new defect; posted findings to #5; all remaining open issues (#60/#62/#64/#59/#7) correctly wait on Zach with real hardware or his own decision timers."
-        },
-        {
-          "run_id": "nine-speakers-nightly-batch-1788395587",
-          "job": "nine-speakers-nightly-batch",
-          "started_at": "2026-09-02T19:33:07-05:00",
-          "ended_at": "2026-09-02T19:52:50-05:00",
-          "elapsed_s": 1186,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 2,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Fixed ca_model.py's permanent-excitation-floor bug (PR #69) and provision.sh's missing-rsync-on-Pi-OS-Lite gap (PR #70, closes both of #64's cheap pre-flight items); all remaining open issues (#64 hardware run, #62/#60 needs-human decisions, #59 projector design, #7 parked) correctly wait on Zach with physical hardware in hand."
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1788485590",
+        "run_id": "nine-speakers-nightly-batch-1788492792",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-09-03T20:33:10-05:00",
-        "ended_at": "2026-09-03T20:45:27-05:00",
-        "elapsed_s": 740,
+        "started_at": "2026-09-03T22:33:12-05:00",
+        "ended_at": "2026-09-03T22:42:08-05:00",
+        "elapsed_s": 539,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1540,7 +1540,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Posted 3 retroactive issue-#5 reports for silently-merged PRs #68/#69/#71 (continuity gap); found+fixed+shipped PR #72 (endpoint_cli play command raw-tracebacked on an out-of-range --layer or overflowing --pitch/--volume/--rhythm-density, unlike sync's broader catch next to it) with 2 regression tests, run 5x, full suite 218 passing, sim clean, prose-ratchet +0. Debt: 0 opened, 0 closed. Milestone #5's remaining checkboxes (1,2,3,5) still correctly wait on Zach/hardware; #62/#60 needs-human DEFA"
+        "claimed_reason": "Milestone #64's buildable sub-items are exhausted (both landed in prior runs) and its remainder needs Zach+hardware; #60/#62 are needs-human with DEFAULT-AFTER not yet due; #7 stays parked. Found+fixed one live bug via stress-testing instead: nine_speakers/sim.py's --viz-delay raw-tracebacked on a negative value (time.sleep(negative) -> uncaught ValueError mid-run); PR #73 merged clean, suite 219/219, sim smoke clean, prose +0. This continues the repo's existing raw-traceback hardening sweep (#4"
       },
       "containment": {
         "foreign_clones": [],
@@ -2464,10 +2464,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-04T03:40:02Z",
+    "generated": "2026-09-04T03:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-04T04:10:02Z",
+    "valid_until": "2026-09-04T04:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2475,11 +2475,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 3 days, 8 hours, 29 minutes",
+    "uptime": "up 3 days, 8 hours, 39 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-04T03:40:02Z"
+      "sampled_at": "2026-09-04T03:50:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
