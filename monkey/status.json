@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-04T20:40:02Z",
-  "valid_until": "2026-09-06T00:40:02Z",
+  "generated": "2026-09-04T20:50:02Z",
+  "valid_until": "2026-09-06T00:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -2197,6 +2197,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "vim-arcade-nightly-batch-1788554228",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-09-04T15:37:08-05:00",
+          "ended_at": "2026-09-04T15:41:13-05:00",
+          "elapsed_s": 247,
+          "rc": 1,
+          "status": "FAILED",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1788472626",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-09-03T16:57:06-05:00",
@@ -2263,41 +2280,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "only open issue (#207) reconfirmed blocked on human root access (realisateur#728 still open, no session-marker.sh hook wiring, sudo denied); no change since same-day 01:22 UTC check"
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1788340628",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-09-02T04:17:08-05:00",
-          "ended_at": "2026-09-02T04:21:54-05:00",
-          "elapsed_s": 288,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed #217 (merge_guard.py premise expired -- superseded by merge_safety.py/commit 1b98499, PR #35, which resolved issue #10 more completely); only remaining open issue #207 is blocked on a human running dresse --host --apply / selfdev-hooks-provision.sh --apply as root, tracked in hf7y/realisateur#728."
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1788472626",
+        "run_id": "vim-arcade-nightly-batch-1788554228",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-09-03T16:57:06-05:00",
-        "ended_at": "2026-09-03T16:58:02-05:00",
-        "elapsed_s": 58,
-        "rc": 0,
-        "status": "done",
+        "started_at": "2026-09-04T15:37:08-05:00",
+        "ended_at": "2026-09-04T15:41:13-05:00",
+        "elapsed_s": 247,
+        "rc": 1,
+        "status": "FAILED",
         "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "only open issue (#207) is blocked on human root access (realisateur#728, re-verified today 09:58Z, no change); nothing actionable"
+        "verdict_computed": "FAILED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2447,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-04T20:40:01Z",
+    "generated": "2026-09-04T20:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-04T21:10:01Z",
+    "valid_until": "2026-09-04T21:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2458,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 1 hour, 29 minutes",
+    "uptime": "up 4 days, 1 hour, 39 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-04T20:40:01Z"
+      "sampled_at": "2026-09-04T20:50:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
