@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-04T06:10:02Z",
-  "valid_until": "2026-09-05T10:10:02Z",
+  "generated": "2026-09-04T06:20:03Z",
+  "valid_until": "2026-09-05T10:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1054,6 +1054,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "ecosim-nightly-batch-1788502267",
+          "job": "ecosim-nightly-batch",
+          "started_at": "2026-09-04T01:11:07-05:00",
+          "ended_at": "2026-09-04T01:12:35-05:00",
+          "elapsed_s": 90,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Milestone #113's only two issues (#97, #118) re-verified 2026-09-04T06:11Z: both blockers unchanged (ECOSYSTEM_ISSUES_TOKEN still unset via gh secret list; crontab spool still EACCES) -- both need Zach directly, nothing repo-side to do"
+        },
+        {
           "run_id": "ecosim-nightly-batch-1788491466",
           "job": "ecosim-nightly-batch",
           "started_at": "2026-09-03T22:11:06-05:00",
@@ -1120,31 +1137,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "All 3 open issues (97, 113, 118) re-verified 2026-09-03: each is human-blocked and unchanged since last check -- 97 waits on Zach's gh secret set ECOSYSTEM_ISSUES_TOKEN, 113 waits on 97, 118 waits on a crontab edit only Zach/root can make. No repo-side action available."
-        },
-        {
-          "run_id": "ecosim-nightly-batch-1788430266",
-          "job": "ecosim-nightly-batch",
-          "started_at": "2026-09-03T05:11:06-05:00",
-          "ended_at": "2026-09-03T05:20:51-05:00",
-          "elapsed_s": 587,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "ecosim-nightly-batch-1788491466",
+        "run_id": "ecosim-nightly-batch-1788502267",
         "job": "ecosim-nightly-batch",
-        "started_at": "2026-09-03T22:11:06-05:00",
-        "ended_at": "2026-09-03T22:16:20-05:00",
-        "elapsed_s": 317,
+        "started_at": "2026-09-04T01:11:07-05:00",
+        "ended_at": "2026-09-04T01:12:35-05:00",
+        "elapsed_s": 90,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1154,7 +1154,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "queue's 3 open issues (#97,#113,#118) all re-verified 2026-09-04 as blocked strictly on Zach (gh secret set / crontab edit); no repo-side action available"
+        "claimed_reason": "Milestone #113's only two issues (#97, #118) re-verified 2026-09-04T06:11Z: both blockers unchanged (ECOSYSTEM_ISSUES_TOKEN still unset via gh secret list; crontab spool still EACCES) -- both need Zach directly, nothing repo-side to do"
       },
       "containment": {
         "foreign_clones": [],
@@ -1440,6 +1440,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "nine-speakers-nightly-batch-1788502389",
+          "job": "nine-speakers-nightly-batch",
+          "started_at": "2026-09-04T01:13:09-05:00",
+          "ended_at": "2026-09-04T01:18:52-05:00",
+          "elapsed_s": 345,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Re-verified suite (219 passed) + sim smoke clean; fresh adversarial read of hardware/{endpoint_process,network_endpoint,registry,supervisor,endpoint_cli,channel_map,level_balance,pd_lint}.py and nine_speakers/sim.py found no new defect -- codebase is now thoroughly hardened after 30+ prior passes. Remaining milestone (#5) work -- #64 (card bring-up), #59/#60 (projector hardware facts), #62 (zaxon ownership) -- is genuinely blocked on Zach's physical hardware/decision, not on further code."
+        },
+        {
           "run_id": "nine-speakers-nightly-batch-1788492792",
           "job": "nine-speakers-nightly-batch",
           "started_at": "2026-09-03T22:33:12-05:00",
@@ -1506,41 +1523,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Shipped PR #71 (registry.load_registry now rejects a non-int port instead of raw-tracebacking downstream in serve/play/sync), caught up two missing #5 status reports (PR #68/#69), and did a full fresh read of every remaining module (audio.py, viz.py, selfmodel.py, acoustics.py, node.py, bus.py, world.py, channel_map.py, level_balance.py, pd_lint.py, pi-image/*) with no further reachable defect found; all 5 open issues (#7, #59, #60, #62, #64) are genuinely blocked on Zach's decision or physical "
-        },
-        {
-          "run_id": "nine-speakers-nightly-batch-1788430388",
-          "job": "nine-speakers-nightly-batch",
-          "started_at": "2026-09-03T05:13:08-05:00",
-          "ended_at": "2026-09-03T05:22:21-05:00",
-          "elapsed_s": 556,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Re-verified 214 tests + CI green; fresh full review of nine_speakers/ core sim modules found no new defect; posted findings to #5; all remaining open issues (#60/#62/#64/#59/#7) correctly wait on Zach with real hardware or his own decision timers."
         }
       ],
       "last_run": {
-        "run_id": "nine-speakers-nightly-batch-1788492792",
+        "run_id": "nine-speakers-nightly-batch-1788502389",
         "job": "nine-speakers-nightly-batch",
-        "started_at": "2026-09-03T22:33:12-05:00",
-        "ended_at": "2026-09-03T22:42:08-05:00",
-        "elapsed_s": 539,
+        "started_at": "2026-09-04T01:13:09-05:00",
+        "ended_at": "2026-09-04T01:18:52-05:00",
+        "elapsed_s": 345,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Milestone #64's buildable sub-items are exhausted (both landed in prior runs) and its remainder needs Zach+hardware; #60/#62 are needs-human with DEFAULT-AFTER not yet due; #7 stays parked. Found+fixed one live bug via stress-testing instead: nine_speakers/sim.py's --viz-delay raw-tracebacked on a negative value (time.sleep(negative) -> uncaught ValueError mid-run); PR #73 merged clean, suite 219/219, sim smoke clean, prose +0. This continues the repo's existing raw-traceback hardening sweep (#4"
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Re-verified suite (219 passed) + sim smoke clean; fresh adversarial read of hardware/{endpoint_process,network_endpoint,registry,supervisor,endpoint_cli,channel_map,level_balance,pd_lint}.py and nine_speakers/sim.py found no new defect -- codebase is now thoroughly hardened after 30+ prior passes. Remaining milestone (#5) work -- #64 (card bring-up), #59/#60 (projector hardware facts), #62 (zaxon ownership) -- is genuinely blocked on Zach's physical hardware/decision, not on further code."
       },
       "containment": {
         "foreign_clones": [],
@@ -2464,10 +2464,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-04T06:10:01Z",
+    "generated": "2026-09-04T06:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-04T06:40:01Z",
+    "valid_until": "2026-09-04T06:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2475,11 +2475,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 3 days, 10 hours, 59 minutes",
+    "uptime": "up 3 days, 11 hours, 9 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-04T06:10:01Z"
+      "sampled_at": "2026-09-04T06:20:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
