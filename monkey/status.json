@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T16:30:03Z",
-  "valid_until": "2026-09-06T20:30:03Z",
+  "generated": "2026-09-05T16:40:02Z",
+  "valid_until": "2026-09-06T20:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -659,6 +659,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788625628",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-05T11:27:08-05:00",
+          "ended_at": "2026-09-05T11:30:31-05:00",
+          "elapsed_s": 205,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Orientation pass only: all 5 open issues are either needs-human/question (#103, #97, #95, #68) awaiting an unstamped hf7y comment, or #67's untestable-from-this-session-identity check; both open PRs (#100, #102) are BLOCKED on the required prose/prose check, which fails on any new markdown-only file due to a structural bug already fixed as a draft PR upstream (hf7y/etalon#32, itself still unmerged) -- no new actionable work in chezz tonight."
+        },
+        {
           "run_id": "chezz-nightly-batch-1788611229",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-05T07:27:09-05:00",
@@ -725,41 +742,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788582427",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-04T23:27:07-05:00",
-          "ended_at": "2026-09-04T23:42:35-05:00",
-          "elapsed_s": 930,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 3,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788611229",
+        "run_id": "chezz-nightly-batch-1788625628",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-05T07:27:09-05:00",
-        "ended_at": "2026-09-05T08:11:15-05:00",
-        "elapsed_s": 2649,
+        "started_at": "2026-09-05T11:27:08-05:00",
+        "ended_at": "2026-09-05T11:30:31-05:00",
+        "elapsed_s": 205,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 2,
-        "prs_merged": 2,
-        "verdict_computed": "WORKED",
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Landed hf7y/chezz#89 (engine unification: scripts/build-classic-artifact.mjs splices narrative's current engine into classic's shell by name, wired into check-size.mjs/build-site.sh; #105 merged to main, #104 merged to chezz-classic syncing that branch's own tests); closed #89. Remaining open issues (#103, #97, #95, #68) are needs-human/awaiting Zach's answer, #67 is self-resolving observational, and PRs #100/#102 are blocked externally on hf7y/etalon#32 (draft, unmerged) -- nothing further is a"
+        "claimed_reason": "Orientation pass only: all 5 open issues are either needs-human/question (#103, #97, #95, #68) awaiting an unstamped hf7y comment, or #67's untestable-from-this-session-identity check; both open PRs (#100, #102) are BLOCKED on the required prose/prose check, which fails on any new markdown-only file due to a structural bug already fixed as a draft PR upstream (hf7y/etalon#32, itself still unmerged) -- no new actionable work in chezz tonight."
       },
       "containment": {
         "foreign_clones": [],
@@ -1941,6 +1941,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788625393",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-05T11:23:13-05:00",
+          "ended_at": "2026-09-05T11:33:31-05:00",
+          "elapsed_s": 621,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "Triaged all 13 salvage/senechal-nightly-batch-* branches for #591 (confirmed every one superseded by later work on main, none carries unlanded content) and posted exact delete commands; deletion itself refused by this session's own Claude Code auto-mode classifier on 3 different tool paths (git push --delete, git fetch, gh api DELETE ref). Rest of tonight's actionable backlog (#558, #656, #631, #646, #628 dead-handler remedies) is already built/merged and waiting on Zach's hands or host SSH this"
+        },
+        {
           "run_id": "senechal-nightly-batch-1788619392",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-05T09:43:12-05:00",
@@ -2007,31 +2024,14 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788600192",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-05T04:23:12-05:00",
-          "ended_at": "2026-09-05T04:35:37-05:00",
-          "elapsed_s": 747,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Re-verified full test suite (all green), ran absorb-and-pr (correctly rejected #698/#702 as human edits), confirmed both milestone issues #558/#656 are built+merged remedies awaiting Zach's enable on monkey/dexter, re-confirmed the branch-delete (#591) and force-push (#409) session-permission walls this session too, and linked #646 to the already-open etalon#27/#28 fix. Backlog's remaining items are all blocked on Zach's hands, another repo's self-dev, or an already-exhausted session permission "
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788619392",
+        "run_id": "senechal-nightly-batch-1788625393",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-05T09:43:12-05:00",
-        "ended_at": "2026-09-05T09:51:26-05:00",
-        "elapsed_s": 496,
+        "started_at": "2026-09-05T11:23:13-05:00",
+        "ended_at": "2026-09-05T11:33:31-05:00",
+        "elapsed_s": 621,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2040,8 +2040,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Re-verified full test suite (green) and swept the open backlog; every remaining item is genuinely blocked on a human/host action (enable on monkey/dexter, a classifier wall on branch-delete/force-push, or a pending Zach decision within its DEFAULT-AFTER window) -- nothing actionable to build tonight."
+        "claimed_verdict": "BLOCKED",
+        "claimed_reason": "Triaged all 13 salvage/senechal-nightly-batch-* branches for #591 (confirmed every one superseded by later work on main, none carries unlanded content) and posted exact delete commands; deletion itself refused by this session's own Claude Code auto-mode classifier on 3 different tool paths (git push --delete, git fetch, gh api DELETE ref). Rest of tonight's actionable backlog (#558, #656, #631, #646, #628 dead-handler remedies) is already built/merged and waiting on Zach's hands or host SSH this"
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2447,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T16:30:02Z",
+    "generated": "2026-09-05T16:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T17:00:02Z",
+    "valid_until": "2026-09-05T17:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2458,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 21 hours, 19 minutes",
+    "uptime": "up 4 days, 21 hours, 29 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T16:30:02Z"
+      "sampled_at": "2026-09-05T16:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
