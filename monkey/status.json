@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T10:20:02Z",
-  "valid_until": "2026-09-06T14:20:02Z",
+  "generated": "2026-09-05T10:30:02Z",
+  "valid_until": "2026-09-06T14:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -144,8 +144,25 @@
         "21 5 * * * /home/american-cycle/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
         "1,21,41 * * * * PACED_MAX_PER_TICK=1 /home/american-cycle/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
-      "release_tick": "2026-09-04T10:21:02Z rc=1 pin=2026-09-01T030800Z 2 ok, 0 gap, 1 bad",
+      "release_tick": "2026-09-05T10:21:02Z rc=1 pin=2026-09-01T030800Z 2 ok, 0 gap, 1 bad",
       "runs": [
+        {
+          "run_id": "american-cycle-nightly-batch-1788600120",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-05T04:22:00-05:00",
+          "ended_at": "2026-09-05T05:22:14-05:00",
+          "elapsed_s": 3617,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Closed #91 (deck-sensitivity per-file work for 16 findings, PR #184 merged); v0.2 milestone (#10 #19 #20 #42 #51 #53 #77) still has actionable open items for the next run."
+        },
         {
           "run_id": "american-cycle-nightly-batch-1788595332",
           "job": "american-cycle-nightly-batch",
@@ -213,41 +230,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788578529",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-04T22:22:09-05:00",
-          "ended_at": "2026-09-04T22:51:42-05:00",
-          "elapsed_s": 1778,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 2,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1788595332",
+        "run_id": "american-cycle-nightly-batch-1788600120",
         "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-05T03:02:12-05:00",
-        "ended_at": "2026-09-05T03:50:14-05:00",
-        "elapsed_s": 2884,
+        "started_at": "2026-09-05T04:22:00-05:00",
+        "ended_at": "2026-09-05T05:22:14-05:00",
+        "elapsed_s": 3617,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 2,
-        "prs_merged": 2,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Shipped a deck-sensitivity provenance axis (tracks/types.ts) + multi-pool sweep runner (sim/tracks.ts --deck-sweep, covers all Track B/C/D items) for #91's v0.2 audit, applied it to findings/runaway-no-brake.ts (the file #91 names), and fixed a real independent staleness there (incumbency from #180 now drives determination, not the original three loops). PRs #182 and #183 merged, tree clean. Actionable work remains: 17 more findings still need the same per-file deck-sensitivity pass per #91's ac"
+        "claimed_reason": "Closed #91 (deck-sensitivity per-file work for 16 findings, PR #184 merged); v0.2 milestone (#10 #19 #20 #42 #51 #53 #77) still has actionable open items for the next run."
       },
       "containment": {
         "foreign_clones": [],
@@ -890,11 +890,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "issue #149: branch-deletion permission wall (7th denial) + bashified land-or-retire is Zach's call, unanswered past its DEFAULT-AFTER window"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "crt@selfdev.invalid",
         "clones": []
@@ -2447,10 +2443,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T10:20:01Z",
+    "generated": "2026-09-05T10:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T10:50:01Z",
+    "valid_until": "2026-09-05T11:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2454,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 15 hours, 9 minutes",
+    "uptime": "up 4 days, 15 hours, 19 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T10:20:01Z"
+      "sampled_at": "2026-09-05T10:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
