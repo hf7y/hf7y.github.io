@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T14:30:23Z",
-  "valid_until": "2026-09-06T18:30:23Z",
+  "generated": "2026-09-05T14:40:03Z",
+  "valid_until": "2026-09-06T18:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1406,11 +1406,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Milestone #27 checkbox 1 waits on Monday's window becoming askable then answered by Zach; #106/#82 confirmed as real live-inventory gap (5-page sweep); #59/#88/#138/#145 need dexter/mandark access; #87 needs non-hf7y hermes-agent"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "groc-mangr@selfdev.invalid",
         "clones": []
@@ -2447,22 +2443,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T14:30:02Z",
+    "generated": "2026-09-05T14:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T15:00:02Z",
-    "verdict": "DOWN",
-    "why": "VM is poweroff",
-    "vm_state": "poweroff",
-    "disk": "",
-    "disk_home": "unknown",
+    "valid_until": "2026-09-05T15:10:02Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 19 hours, 20 minutes",
+    "uptime": "up 4 days, 19 hours, 29 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T14:30:02Z"
+      "sampled_at": "2026-09-05T14:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
