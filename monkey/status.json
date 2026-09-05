@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T15:00:22Z",
-  "valid_until": "2026-09-06T19:00:22Z",
+  "generated": "2026-09-05T15:10:23Z",
+  "valid_until": "2026-09-06T19:10:23Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1304,6 +1304,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788619449",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-05T09:44:09-05:00",
+          "ended_at": "2026-09-05T10:08:07-05:00",
+          "elapsed_s": 1440,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "Built and drafted PR #163 (#148's CDP re-isolation, Zach's decision from today); needs dexter hands to arm the new tunnel key and redeploy before it can merge -- everything else in the queue is likewise blocked on a human reply, dexter access, or hermes-agent source."
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788587050",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-05T00:44:10-05:00",
@@ -1370,41 +1387,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "zaxon's shared reply slot is saturated (10 asked/24h, none answered) -- window confirm and Nuts substitution both wait on Zach's phone, not code; full re-verify found no new mechanism gap"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788535449",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-04T10:24:09-05:00",
-          "ended_at": "2026-09-04T10:46:21-05:00",
-          "elapsed_s": 1335,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 2,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Fixed two live bugs (window-confirm reply-polling gate, zaxon inbox for_agent/claim scoping), PRs #161/#162 merged; #106's mechanism verified live; #59/#88 still blocked on dexter hands"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788587050",
+        "run_id": "groc-mangr-nightly-batch-1788619449",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-05T00:44:10-05:00",
-        "ended_at": "2026-09-05T00:57:47-05:00",
-        "elapsed_s": 820,
+        "started_at": "2026-09-05T09:44:09-05:00",
+        "ended_at": "2026-09-05T10:08:07-05:00",
+        "elapsed_s": 1440,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "Milestone #27 checkbox 1 waits on Monday's window becoming askable then answered by Zach; #106/#82 confirmed as real live-inventory gap (5-page sweep); #59/#88/#138/#145 need dexter/mandark access; #87 needs non-hf7y hermes-agent"
+        "claimed_reason": "Built and drafted PR #163 (#148's CDP re-isolation, Zach's decision from today); needs dexter hands to arm the new tunnel key and redeploy before it can merge -- everything else in the queue is likewise blocked on a human reply, dexter access, or hermes-agent source."
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2447,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T15:00:02Z",
+    "generated": "2026-09-05T15:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T15:30:02Z",
+    "valid_until": "2026-09-05T15:40:02Z",
     "verdict": "DOWN",
     "why": "VM is poweroff",
     "vm_state": "poweroff",
@@ -2458,11 +2458,11 @@
     "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 19 hours, 50 minutes",
+    "uptime": "up 4 days, 20 hours, 0 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T15:00:02Z"
+      "sampled_at": "2026-09-05T15:10:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
