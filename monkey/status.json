@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T18:00:02Z",
-  "valid_until": "2026-09-06T22:00:02Z",
+  "generated": "2026-09-05T18:10:02Z",
+  "valid_until": "2026-09-06T22:10:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -147,6 +147,23 @@
       "release_tick": "2026-09-05T10:21:02Z rc=1 pin=2026-09-01T030800Z 2 ok, 0 gap, 1 bad",
       "runs": [
         {
+          "run_id": "american-cycle-nightly-batch-1788628921",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-05T12:22:01-05:00",
+          "ended_at": "2026-09-05T13:02:27-05:00",
+          "elapsed_s": 2429,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Shipped surprise-keyed lean push behind an opt-in flag for #51 (PR #190) and measured battleground self-selection for #186 (PR #191), both merged to main with full checks green; remaining v0.2/v0.3/v0.4 milestone issues and #53's residue are all parked/needs-human or blocked on external data sourcing, not further actionable without a human ruling."
+        },
+        {
           "run_id": "american-cycle-nightly-batch-1788625322",
           "job": "american-cycle-nightly-batch",
           "started_at": "2026-09-05T11:22:02-05:00",
@@ -213,31 +230,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Verified repo health (tsc/tests/findings/UI-bundle all clean, 0 broken); full sweep of all 35 open issues found none armed for building -- 7 v0.2 issues freshly re-verified as blocked on human rulings or out-of-scope content authoring, remaining 28 explicitly labeled parked/needs-human; no dangling unmerged branch work; no action taken."
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788607326",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-05T06:22:06-05:00",
-          "ended_at": "2026-09-05T06:48:09-05:00",
-          "elapsed_s": 1566,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Re-verified tsc/tests/findings/ui-bundle all green; shipped findings/identity-bonus-rollout.ts (measures #19's post-#41/#27 identity-match rollout: 1/346 cards weighted, mean 1.39 pips, ceiling collision confirmed), pushed to main (709b116), CI green, commented on #19 with results. Remaining backlog (v0.2/v0.3/v0.4) is entirely parked or needs-human except #19, whose remainder is per-card content authoring, out of scope for an unattended run."
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1788625322",
+        "run_id": "american-cycle-nightly-batch-1788628921",
         "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-05T11:22:02-05:00",
-        "ended_at": "2026-09-05T11:59:30-05:00",
-        "elapsed_s": 2250,
+        "started_at": "2026-09-05T12:22:01-05:00",
+        "ended_at": "2026-09-05T13:02:27-05:00",
+        "elapsed_s": 2429,
         "rc": 0,
         "status": "done",
         "commits_added": 2,
@@ -246,8 +246,8 @@
         "prs_opened": 2,
         "prs_merged": 2,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed #188 (skill-signal/seat-bias) and #189 (arithmetic-load) for #53's v0.2 ledger; remaining historical-validation targets (Senate/midterm/governor/president turnover) are buildable next via MEDSL-style data sourcing, same shape as #52's historical-push.ts."
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Shipped surprise-keyed lean push behind an opt-in flag for #51 (PR #190) and measured battleground self-selection for #186 (PR #191), both merged to main with full checks green; remaining v0.2/v0.3/v0.4 milestone issues and #53's residue are all parked/needs-human or blocked on external data sourcing, not further actionable without a human ruling."
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2447,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T18:00:01Z",
+    "generated": "2026-09-05T18:10:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T18:30:01Z",
+    "valid_until": "2026-09-05T18:40:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2458,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 22 hours, 49 minutes",
+    "uptime": "up 4 days, 22 hours, 59 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T18:00:01Z"
+      "sampled_at": "2026-09-05T18:10:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
