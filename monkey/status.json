@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T13:20:02Z",
-  "valid_until": "2026-09-06T17:20:02Z",
+  "generated": "2026-09-05T13:30:03Z",
+  "valid_until": "2026-09-06T17:30:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -2197,6 +2197,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "vim-arcade-nightly-batch-1788614227",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-09-05T08:17:07-05:00",
+          "ended_at": "2026-09-05T08:24:47-05:00",
+          "elapsed_s": 462,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "closed #223 (unrankable-band, PR #229 merged); milestone 2 has #220 left, a bigger two-view feature Zach already decided (option 3) -- next pickup"
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1788604626",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-09-05T05:37:06-05:00",
@@ -2263,31 +2280,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1788577026",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-09-04T21:57:06-05:00",
-          "ended_at": "2026-09-04T22:13:55-05:00",
-          "elapsed_s": 1012,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Closed #218 with the built needs-me command-hint + shell-buffer feature (PR #219, merged a7d31e0); only #207 remains open, still blocked on hf7y/realisateur#728 (root-only apply step, re-verified still open)."
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1788604626",
+        "run_id": "vim-arcade-nightly-batch-1788614227",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-09-05T05:37:06-05:00",
-        "ended_at": "2026-09-05T06:01:40-05:00",
-        "elapsed_s": 1477,
+        "started_at": "2026-09-05T08:17:07-05:00",
+        "ended_at": "2026-09-05T08:24:47-05:00",
+        "elapsed_s": 462,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -2297,7 +2297,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "shipped #222 (reachability.py); #220 (two-view toggle) and #223 (unrankable band) still open and actionable in the same milestone"
+        "claimed_reason": "closed #223 (unrankable-band, PR #229 merged); milestone 2 has #220 left, a bigger two-view feature Zach already decided (option 3) -- next pickup"
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2447,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T13:20:01Z",
+    "generated": "2026-09-05T13:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T13:50:01Z",
+    "valid_until": "2026-09-05T14:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2458,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 18 hours, 9 minutes",
+    "uptime": "up 4 days, 18 hours, 19 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T13:20:01Z"
+      "sampled_at": "2026-09-05T13:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
