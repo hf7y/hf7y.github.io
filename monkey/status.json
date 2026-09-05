@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T18:50:02Z",
-  "valid_until": "2026-09-06T22:50:02Z",
+  "generated": "2026-09-05T19:00:03Z",
+  "valid_until": "2026-09-06T23:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1941,6 +1941,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788633791",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-05T13:43:11-05:00",
+          "ended_at": "2026-09-05T13:53:50-05:00",
+          "elapsed_s": 641,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Re-verified full local suite green, bashified still ships main (#409 step1 holds), milestone #558/#656 remedies confirmed built+merged and correctly blocked on Zach's enable, #591's 13 remaining salvage branches re-confirmed superseded (delete still classifier-blocked, 2 tries), no new actionable work found across the rest of the open backlog."
+        },
+        {
           "run_id": "senechal-nightly-batch-1788625393",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-05T11:23:13-05:00",
@@ -2007,31 +2024,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Re-verified full test suite (109+64 suites) and contract test all green; ran estate-health (clean besides tracked #345 getty@tty1 finding); audited all 18 open issues -- every actionable item is either a built/tested/merged remedy awaiting Zach's enable on the real host (#656, #558, #628, #631, #422, #409), a needs-decision issue within its DEFAULT-AFTER window (#699, #634, #646, #637, #458), or a vision item not yet scoped to build (#344, #396, #439, #348-phase2/5 blocked on #699); #591's salva"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788604992",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-05T05:43:12-05:00",
-          "ended_at": "2026-09-05T06:29:00-05:00",
-          "elapsed_s": 2750,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 2,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788625393",
+        "run_id": "senechal-nightly-batch-1788633791",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-05T11:23:13-05:00",
-        "ended_at": "2026-09-05T11:33:31-05:00",
-        "elapsed_s": 621,
+        "started_at": "2026-09-05T13:43:11-05:00",
+        "ended_at": "2026-09-05T13:53:50-05:00",
+        "elapsed_s": 641,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2040,8 +2040,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "Triaged all 13 salvage/senechal-nightly-batch-* branches for #591 (confirmed every one superseded by later work on main, none carries unlanded content) and posted exact delete commands; deletion itself refused by this session's own Claude Code auto-mode classifier on 3 different tool paths (git push --delete, git fetch, gh api DELETE ref). Rest of tonight's actionable backlog (#558, #656, #631, #646, #628 dead-handler remedies) is already built/merged and waiting on Zach's hands or host SSH this"
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Re-verified full local suite green, bashified still ships main (#409 step1 holds), milestone #558/#656 remedies confirmed built+merged and correctly blocked on Zach's enable, #591's 13 remaining salvage branches re-confirmed superseded (delete still classifier-blocked, 2 tries), no new actionable work found across the rest of the open backlog."
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2447,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T18:50:02Z",
+    "generated": "2026-09-05T19:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T19:20:02Z",
+    "valid_until": "2026-09-05T19:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2458,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 23 hours, 39 minutes",
+    "uptime": "up 4 days, 23 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T18:50:02Z"
+      "sampled_at": "2026-09-05T19:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
