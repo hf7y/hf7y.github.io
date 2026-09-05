@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T14:40:03Z",
-  "valid_until": "2026-09-06T18:40:03Z",
+  "generated": "2026-09-05T14:50:02Z",
+  "valid_until": "2026-09-06T18:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -147,6 +147,23 @@
       "release_tick": "2026-09-05T10:21:02Z rc=1 pin=2026-09-01T030800Z 2 ok, 0 gap, 1 bad",
       "runs": [
         {
+          "run_id": "american-cycle-nightly-batch-1788618122",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-05T09:22:02-05:00",
+          "ended_at": "2026-09-05T09:45:24-05:00",
+          "elapsed_s": 1405,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 1,
+          "issues_opened": 1,
+          "issues_closed": 2,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "american-cycle-nightly-batch-1788613319",
           "job": "american-cycle-nightly-batch",
           "started_at": "2026-09-05T08:01:59-05:00",
@@ -213,41 +230,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Shipped a deck-sensitivity provenance axis (tracks/types.ts) + multi-pool sweep runner (sim/tracks.ts --deck-sweep, covers all Track B/C/D items) for #91's v0.2 audit, applied it to findings/runaway-no-brake.ts (the file #91 names), and fixed a real independent staleness there (incumbency from #180 now drives determination, not the original three loops). PRs #182 and #183 merged, tree clean. Actionable work remains: 17 more findings still need the same per-file deck-sensitivity pass per #91's ac"
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788589326",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-05T01:22:06-05:00",
-          "ended_at": "2026-09-05T02:24:47-05:00",
-          "elapsed_s": 3763,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 3,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 3,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1788613319",
+        "run_id": "american-cycle-nightly-batch-1788618122",
         "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-05T08:01:59-05:00",
-        "ended_at": "2026-09-05T08:10:29-05:00",
-        "elapsed_s": 513,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 0,
-        "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Verified repo health (tsc/tests/findings/UI-bundle all clean, 0 broken); full sweep of all 35 open issues found none armed for building -- 7 v0.2 issues freshly re-verified as blocked on human rulings or out-of-scope content authoring, remaining 28 explicitly labeled parked/needs-human; no dangling unmerged branch work; no action taken."
+        "started_at": "2026-09-05T09:22:02-05:00",
+        "ended_at": "2026-09-05T09:45:24-05:00",
+        "elapsed_s": 1405,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 1,
+        "issues_opened": 1,
+        "issues_closed": 2,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED-CUTOFF",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -505,11 +505,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Merged #78 (grocy_api_key /etc/selfdev fan-out, docs-only) and deleted the stale already-merged circadian-ramp-vs-night-fade-hold-17 branch; reconfirmed every remaining open issue (#17,#18,#19,#22,#29,#30,#42,#68,#13,#14) chains to the same wall -- baudin@monkey has no .session-handoff/ha_token (ha-probe.sh exits 1: 'no HA token at .../ha_token'), confirmed live this run -- or to a human decision already correctly labeled needs-human (#29 Midea unit count, #42 route1-vs-route2, #13 ARRIS port-fo"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "baudin@selfdev.invalid",
         "clones": []
@@ -1406,7 +1402,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Milestone #27 checkbox 1 waits on Monday's window becoming askable then answered by Zach; #106/#82 confirmed as real live-inventory gap (5-page sweep); #59/#88/#138/#145 need dexter/mandark access; #87 needs non-hf7y hermes-agent"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "groc-mangr@selfdev.invalid",
         "clones": []
@@ -2322,6 +2322,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788618376",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-05T09:26:16-05:00",
+          "ended_at": "2026-09-05T09:43:13-05:00",
+          "elapsed_s": 1020,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed PR #141 (merged to main): reconstruct-metadata.py now line-buffers stdout and writes its report per-album, fixing the '900s timeout, no output' wall hf7y/wtul#112 measured three times; commented there with what landed, left open (115/222 Track-N titles still needs sleeve/local-spins matching). Milestone triage: most 'Show post-mortem' items (#74, #120, #121, #122, #124, #125, #129, #131, #37) are genuinely blocked on Zach/hardware/credentials the agent may not create for itself (dexter SS"
+        },
+        {
           "run_id": "wtul-nightly-batch-1788613577",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-05T08:06:17-05:00",
@@ -2388,41 +2405,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Continuation run: closed #138 via PR #139 (merged 7d2e408) -- imaging/fm_sweeper_bed.pd (a real Pd install was built locally and used to actually render+verify the bed, not just structurally lint it), imaging/RECORDING_SPEC.md, lib/sweepers.py's needed_versus_done()+scripts/sweeper-checklist.py; reaped prose to +0 census before merging. Updated #123 to reflect the split (script still blocked on the station policy). Milestone 'Show post-mortem 2026-09-04' has 11 open issues left, several actionab"
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788593177",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-05T02:26:17-05:00",
-          "ended_at": "2026-09-05T02:48:07-05:00",
-          "elapsed_s": 1313,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788613577",
+        "run_id": "wtul-nightly-batch-1788618376",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-05T08:06:17-05:00",
-        "ended_at": "2026-09-05T08:16:56-05:00",
-        "elapsed_s": 641,
+        "started_at": "2026-09-05T09:26:16-05:00",
+        "ended_at": "2026-09-05T09:43:13-05:00",
+        "elapsed_s": 1020,
         "rc": 0,
         "status": "done",
-        "commits_added": 5,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Fixed PR #140's red prose-ratchet check (branch was +17 over merge-base in unit 3 -- both new .py files' comments/docstrings) by folding standalone comments into trailing ones and dropping 4 redundant section-header comments in tests/test_dual_rip.py; census now +0, full suite still 964/9/0, merged as b120bb7. Milestone 'Show post-mortem 2026-09-04' still has 10 open issues (#121-131 minus 127/130/133/136/139 already landed) for the next run."
+        "claimed_reason": "Landed PR #141 (merged to main): reconstruct-metadata.py now line-buffers stdout and writes its report per-album, fixing the '900s timeout, no output' wall hf7y/wtul#112 measured three times; commented there with what landed, left open (115/222 Track-N titles still needs sleeve/local-spins matching). Milestone triage: most 'Show post-mortem' items (#74, #120, #121, #122, #124, #125, #129, #131, #37) are genuinely blocked on Zach/hardware/credentials the agent may not create for itself (dexter SS"
       },
       "containment": {
         "foreign_clones": [],
@@ -2443,10 +2443,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T14:40:02Z",
+    "generated": "2026-09-05T14:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T15:10:02Z",
+    "valid_until": "2026-09-05T15:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2454,11 +2454,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 19 hours, 29 minutes",
+    "uptime": "up 4 days, 19 hours, 39 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T14:40:02Z"
+      "sampled_at": "2026-09-05T14:50:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
