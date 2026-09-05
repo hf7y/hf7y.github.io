@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T05:50:03Z",
-  "valid_until": "2026-09-06T09:50:03Z",
+  "generated": "2026-09-05T06:00:02Z",
+  "valid_until": "2026-09-06T10:00:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -788,6 +788,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1788587420",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-05T00:50:20-05:00",
+          "ended_at": "2026-09-05T00:57:13-05:00",
+          "elapsed_s": 416,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "issue #149: branch-deletion permission wall (7th denial) + bashified land-or-retire is Zach's call, unanswered past its DEFAULT-AFTER window"
+        },
+        {
           "run_id": "crt-nightly-batch-1788579018",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-04T22:30:18-05:00",
@@ -854,31 +871,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Verified #150's landing (bell-test/whisper-leftover items 2-3 of #149) closed clean, full suite green on a3753e4; re-verified the 5 superseded branches' SHAs and reconfirmed branch-deletion is blocked by the classifier via a 4th method (gh api DELETE ref, distinct from the label PATCH which succeeded); applied needs-human label to #149 since prior run said it would but hadn't; actionable queue (excluding needs-host/needs-human) is now empty."
-        },
-        {
-          "run_id": "crt-nightly-batch-1788557421",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-04T16:30:21-05:00",
-          "ended_at": "2026-09-04T16:44:02-05:00",
-          "elapsed_s": 824,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Confirmed main green (tests + CI); re-probed dexter (SSH refused, tailscale probe itself blocked) and confirmed #131/#145/#146/#147 all transitively wall on that same dexter-access gap -- labeled needs-host on all four so future runs don't re-derive it; re-tried #149's branch deletions (blocked by the same classifier wall as last run) and read the bashified branch (313 files, -304011 lines, a full architectural pivot, 15 days idle) to confirm its 'land or retire' call is genuinely Zach's, not a "
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788579018",
+        "run_id": "crt-nightly-batch-1788587420",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-04T22:30:18-05:00",
-        "ended_at": "2026-09-04T22:44:23-05:00",
-        "elapsed_s": 847,
+        "started_at": "2026-09-05T00:50:20-05:00",
+        "ended_at": "2026-09-05T00:57:13-05:00",
+        "elapsed_s": 416,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -888,7 +888,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "Rewrote crt#149's body to a proper DECISION (bashified: land or retire, no safe default) per etiquette's grammar, ending the label-hygiene thrash; confirmed 6th time the 5-branch deletion is a permission wall this seat structurally lacks, not a decision"
+        "claimed_reason": "issue #149: branch-deletion permission wall (7th denial) + bashified land-or-retire is Zach's call, unanswered past its DEFAULT-AFTER window"
       },
       "containment": {
         "foreign_clones": [],
@@ -1304,6 +1304,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788587050",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-05T00:44:10-05:00",
+          "ended_at": "2026-09-05T00:57:47-05:00",
+          "elapsed_s": 820,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "Milestone #27 checkbox 1 waits on Monday's window becoming askable then answered by Zach; #106/#82 confirmed as real live-inventory gap (5-page sweep); #59/#88/#138/#145 need dexter/mandark access; #87 needs non-hf7y hermes-agent"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788563050",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-04T18:04:10-05:00",
@@ -1370,31 +1387,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Fixed two live bugs (window-confirm reply-polling gate, zaxon inbox for_agent/claim scoping), PRs #161/#162 merged; #106's mechanism verified live; #59/#88 still blocked on dexter hands"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788533049",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-04T09:44:09-05:00",
-          "ended_at": "2026-09-04T09:51:01-05:00",
-          "elapsed_s": 414,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "fixed PR #160's failing prose-ratchet check (reaped 5 added comment lines, census back at baseline 536), merged it, and updated #106 with the result; dexter/mandark reconfirmed unreachable so live-verification and the rest of the milestone stay blocked, but #91 (MEDAS) and #89 (taste rotation) are open, unblocked, and buildable for the next run"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788563050",
+        "run_id": "groc-mangr-nightly-batch-1788587050",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-04T18:04:10-05:00",
-        "ended_at": "2026-09-04T18:13:14-05:00",
-        "elapsed_s": 547,
+        "started_at": "2026-09-05T00:44:10-05:00",
+        "ended_at": "2026-09-05T00:57:47-05:00",
+        "elapsed_s": 820,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1404,7 +1404,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "Live-verified #160's self-heal substitution ask end to end tonight (ticket fce738ca fired automatically, cart correctly gated); milestone otherwise unchanged -- blocked on Zach's replies (Nuts substitute, feedback nudge) and zaxon's 24h/0-answered backlog refusal, plus the standing dexter/mandark access wall on #59/#88/#138/#145."
+        "claimed_reason": "Milestone #27 checkbox 1 waits on Monday's window becoming askable then answered by Zach; #106/#82 confirmed as real live-inventory gap (5-page sweep); #59/#88/#138/#145 need dexter/mandark access; #87 needs non-hf7y hermes-agent"
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2447,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T05:50:02Z",
+    "generated": "2026-09-05T06:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T06:20:02Z",
+    "valid_until": "2026-09-05T06:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2458,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 10 hours, 39 minutes",
+    "uptime": "up 4 days, 10 hours, 49 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T05:50:02Z"
+      "sampled_at": "2026-09-05T06:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
