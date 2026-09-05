@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T06:30:02Z",
-  "valid_until": "2026-09-06T10:30:02Z",
+  "generated": "2026-09-05T06:40:03Z",
+  "valid_until": "2026-09-06T10:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -2197,6 +2197,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "vim-arcade-nightly-batch-1788589028",
+          "job": "vim-arcade-nightly-batch",
+          "started_at": "2026-09-05T01:17:08-05:00",
+          "ended_at": "2026-09-05T01:33:37-05:00",
+          "elapsed_s": 992,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Shipped #221 (DEFAULT-AFTER parsing, PR #226, merged); closed duplicate PR #225 for the same issue found mid-run. #222 and #223 (same milestone) remain actionable next; #220/#224 wait on Zach's ruling; #207 waits on root."
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1788581828",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-09-04T23:17:08-05:00",
@@ -2263,41 +2280,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "only open issue (#207) is blocked on human root access (realisateur#728, re-verified today 09:58Z, no change); nothing actionable"
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1788429425",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-09-03T04:57:05-05:00",
-          "ended_at": "2026-09-03T04:58:20-05:00",
-          "elapsed_s": 78,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "only open issue (#207) re-verified still blocked on human root access (realisateur#728 open); nothing actionable"
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1788581828",
+        "run_id": "vim-arcade-nightly-batch-1788589028",
         "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-09-04T23:17:08-05:00",
-        "ended_at": "2026-09-04T23:31:18-05:00",
-        "elapsed_s": 853,
+        "started_at": "2026-09-05T01:17:08-05:00",
+        "ended_at": "2026-09-05T01:33:37-05:00",
+        "elapsed_s": 992,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 1,
         "prs_opened": 1,
-        "prs_merged": 0,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Shipped #221 (DEFAULT-AFTER parsing, PR #226, merged); closed duplicate PR #225 for the same issue found mid-run. #222 and #223 (same milestone) remain actionable next; #220/#224 wait on Zach's ruling; #207 waits on root."
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2447,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T06:30:01Z",
+    "generated": "2026-09-05T06:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T07:00:01Z",
+    "valid_until": "2026-09-05T07:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2458,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 11 hours, 19 minutes",
+    "uptime": "up 4 days, 11 hours, 29 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T06:30:01Z"
+      "sampled_at": "2026-09-05T06:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
