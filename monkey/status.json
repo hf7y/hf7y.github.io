@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T14:00:22Z",
-  "valid_until": "2026-09-06T18:00:22Z",
+  "generated": "2026-09-05T14:10:12Z",
+  "valid_until": "2026-09-06T18:10:12Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -12,7 +12,7 @@
       "uid": 3015,
       "armed": false,
       "dispatch_line": false,
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "runs": [
@@ -137,9 +137,9 @@
     {
       "account": "american-cycle",
       "uid": 3018,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "21 5 * * * /home/american-cycle/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
         "1,21,41 * * * * PACED_MAX_PER_TICK=1 /home/american-cycle/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -267,9 +267,9 @@
     {
       "account": "apms",
       "uid": 3016,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/apms/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -398,7 +398,7 @@
       "uid": 3005,
       "armed": false,
       "dispatch_line": false,
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "runs": [
@@ -525,7 +525,7 @@
       "uid": 3002,
       "armed": false,
       "dispatch_line": false,
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "runs": [
@@ -650,9 +650,9 @@
     {
       "account": "chezz",
       "uid": 3003,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "7,27,47 * * * * PACED_MAX_PER_TICK=1 /home/chezz/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -779,14 +779,31 @@
     {
       "account": "crt",
       "uid": 3006,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/crt/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "crt-nightly-batch-1788616218",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-05T08:50:18-05:00",
+          "ended_at": "2026-09-05T09:05:11-05:00",
+          "elapsed_s": 895,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "Both open issues (#149 branch deletion, #148 required-check branch-protection PUT) re-verified this run and confirmed to reduce to the same auto-mode-classifier permission wall on destructive git/admin mutations; milestone #1 is entirely needs-host; full test suite re-run ALL GREEN"
+        },
         {
           "run_id": "crt-nightly-batch-1788606618",
           "job": "crt-nightly-batch",
@@ -854,41 +871,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "Rewrote crt#149's body to a proper DECISION (bashified: land or retire, no safe default) per etiquette's grammar, ending the label-hygiene thrash; confirmed 6th time the 5-branch deletion is a permission wall this seat structurally lacks, not a decision"
-        },
-        {
-          "run_id": "crt-nightly-batch-1788575418",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-04T21:30:18-05:00",
-          "ended_at": "2026-09-04T21:43:03-05:00",
-          "elapsed_s": 768,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788606618",
+        "run_id": "crt-nightly-batch-1788616218",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-05T06:10:18-05:00",
-        "ended_at": "2026-09-05T06:31:59-05:00",
-        "elapsed_s": 1304,
+        "started_at": "2026-09-05T08:50:18-05:00",
+        "ended_at": "2026-09-05T09:05:11-05:00",
+        "elapsed_s": 895,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "Merged #152 (gitleaks check + README, closes 2/3 of #148's checklist); folded #148 and #149 back to NO-DECISION now their real questions are answered; both now reduce solely to a confirmed classifier wall on branch-protection/ref-deletion mutations this seat can't perform"
+        "claimed_reason": "Both open issues (#149 branch deletion, #148 required-check branch-protection PUT) re-verified this run and confirmed to reduce to the same auto-mode-classifier permission wall on destructive git/admin mutations; milestone #1 is entirely needs-host; full test suite re-run ALL GREEN"
       },
       "containment": {
         "foreign_clones": [],
@@ -908,9 +908,9 @@
     {
       "account": "dcp-gate-site",
       "uid": 3017,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "56 5 * * * /home/dcp-gate-site/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
         "16,36,56 * * * * PACED_MAX_PER_TICK=1 /home/dcp-gate-site/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -1040,7 +1040,7 @@
       "uid": 3001,
       "armed": false,
       "dispatch_line": false,
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [
         "7,37 * * * * ECOSIM_SENSOR_BIN=/usr/local/bin/sonde /home/ecosim/Documents/Projects/ecosim/bin/ecosim-sensor-tick.sh # ecosim:ecosim-sensor:TICK"
       ],
@@ -1169,7 +1169,7 @@
       "uid": 3004,
       "armed": false,
       "dispatch_line": false,
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "runs": [
@@ -1294,9 +1294,9 @@
     {
       "account": "groc-mangr",
       "uid": 3007,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "0 */4 * * * /home/groc-mangr/Documents/Projects/groc-mangr/scripts/tick.sh >> /home/groc-mangr/.local/state/groc-mangr/tick.log 2>&1 # groc-mangr:tick",
         "4,24,44 * * * * PACED_MAX_PER_TICK=1 /home/groc-mangr/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -1426,7 +1426,7 @@
       "uid": 3008,
       "armed": false,
       "dispatch_line": false,
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "runs": [
@@ -1553,7 +1553,7 @@
       "uid": 3010,
       "armed": false,
       "dispatch_line": false,
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "runs": [
@@ -1680,7 +1680,7 @@
       "uid": 3011,
       "armed": false,
       "dispatch_line": false,
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "runs": [
@@ -1807,7 +1807,7 @@
       "uid": 3012,
       "armed": false,
       "dispatch_line": false,
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "runs": [
@@ -1932,9 +1932,9 @@
     {
       "account": "senechal",
       "uid": 3014,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "3,23,43 * * * * PACED_MAX_PER_TICK=1 /home/senechal/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -2063,7 +2063,7 @@
       "uid": 3009,
       "armed": false,
       "dispatch_line": false,
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "runs": [
@@ -2188,9 +2188,9 @@
     {
       "account": "vim-arcade",
       "uid": 3000,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "17,37,57 * * * * PACED_MAX_PER_TICK=1 /home/vim-arcade/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -2317,9 +2317,9 @@
     {
       "account": "wtul",
       "uid": 3013,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "6,26,46 * * * * PACED_MAX_PER_TICK=1 /home/wtul/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -2445,24 +2445,24 @@
     }
   ],
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
-  "roster_read": false,
+  "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T14:00:01Z",
+    "generated": "2026-09-05T14:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T14:30:01Z",
-    "verdict": "DOWN",
-    "why": "VM is poweroff",
-    "vm_state": "poweroff",
+    "valid_until": "2026-09-05T14:40:02Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
     "disk": "",
     "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 18 hours, 50 minutes",
+    "uptime": "up 4 days, 18 hours, 59 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T14:00:01Z"
+      "sampled_at": "2026-09-05T14:10:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
