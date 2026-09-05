@@ -1,16 +1,16 @@
 {
   "schema": 3,
-  "generated": "2026-09-04T06:11:15Z",
-  "valid_until": "2026-09-05T10:11:15Z",
+  "generated": "2026-09-05T05:59:35Z",
+  "valid_until": "2026-09-06T09:59:35Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "cut_interval_days": 30,
   "decision": "ERROR",
-  "reason": "the cut step produced no result; see run 33843296635",
+  "reason": "the cut step produced no result; see run 33948576212",
   "main_sha": "a8069cd",
-  "ci_run": "33843296635",
+  "ci_run": "33948576212",
   "build_id": null,
-  "blocked_streak": 3,
+  "blocked_streak": 4,
   "last_cut": {
     "at": "2026-09-01T03:08:05Z",
     "decision": "CUT",
@@ -26,6 +26,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-09-05T05:59:35Z",
+      "decision": "ERROR",
+      "reason": "the cut step produced no result; see run 33948576212",
+      "main_sha": "a8069cd",
+      "ci_run": "33948576212",
+      "build_id": null
+    },
     {
       "at": "2026-09-04T06:11:15Z",
       "decision": "ERROR",
