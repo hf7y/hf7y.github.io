@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T14:50:02Z",
-  "valid_until": "2026-09-06T18:50:02Z",
+  "generated": "2026-09-05T15:00:22Z",
+  "valid_until": "2026-09-06T19:00:22Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -505,7 +505,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Merged #78 (grocy_api_key /etc/selfdev fan-out, docs-only) and deleted the stale already-merged circadian-ramp-vs-night-fade-hold-17 branch; reconfirmed every remaining open issue (#17,#18,#19,#22,#29,#30,#42,#68,#13,#14) chains to the same wall -- baudin@monkey has no .session-handoff/ha_token (ha-probe.sh exits 1: 'no HA token at .../ha_token'), confirmed live this run -- or to a human decision already correctly labeled needs-human (#29 Midea unit count, #42 route1-vs-route2, #13 ARRIS port-fo"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "baudin@selfdev.invalid",
         "clones": []
@@ -1937,6 +1941,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788619392",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-05T09:43:12-05:00",
+          "ended_at": "2026-09-05T09:51:26-05:00",
+          "elapsed_s": 496,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Re-verified full test suite (green) and swept the open backlog; every remaining item is genuinely blocked on a human/host action (enable on monkey/dexter, a classifier wall on branch-delete/force-push, or a pending Zach decision within its DEFAULT-AFTER window) -- nothing actionable to build tonight."
+        },
+        {
           "run_id": "senechal-nightly-batch-1788614591",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-05T08:23:11-05:00",
@@ -2003,31 +2024,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Re-verified full test suite (all green), ran absorb-and-pr (correctly rejected #698/#702 as human edits), confirmed both milestone issues #558/#656 are built+merged remedies awaiting Zach's enable on monkey/dexter, re-confirmed the branch-delete (#591) and force-push (#409) session-permission walls this session too, and linked #646 to the already-open etalon#27/#28 fix. Backlog's remaining items are all blocked on Zach's hands, another repo's self-dev, or an already-exhausted session permission "
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788595392",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-05T03:03:12-05:00",
-          "ended_at": "2026-09-05T03:10:35-05:00",
-          "elapsed_s": 446,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Milestone (#558/#656) fully built+merged, blocked only on Zach running enable on dexter/monkey (SSH confirmed refused tonight); re-verified full test suite (all pass) and ran tools/absorb-and-pr.sh (both door filings #698/#702 correctly rejected, need real cron offset unreachable from here); closed #410 as fully superseded by #699 (debt: 0 opened, 1 closed); every other open issue is either a DECISION with a DEFAULT-AFTER not yet due, or a remedy already built+merged waiting on Zach's hands/host"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788614591",
+        "run_id": "senechal-nightly-batch-1788619392",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-05T08:23:11-05:00",
-        "ended_at": "2026-09-05T08:40:39-05:00",
-        "elapsed_s": 1051,
+        "started_at": "2026-09-05T09:43:12-05:00",
+        "ended_at": "2026-09-05T09:51:26-05:00",
+        "elapsed_s": 496,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2037,7 +2041,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Re-verified full test suite (64 suites green) and absorb-and-pr (clean); confirmed backlog fully triaged -- milestone #558/#656 and #631 blocked only on Zach's hands/SSH (remedies already built+merged), #591's 13 salvage branches reconfirmed superseded but deletion still denied by this session's classifier (3 more attempts, no luck tonight), remaining open issues are decision-pending or long-term trackers with no unilateral action warranted."
+        "claimed_reason": "Re-verified full test suite (green) and swept the open backlog; every remaining item is genuinely blocked on a human/host action (enable on monkey/dexter, a classifier wall on branch-delete/force-push, or a pending Zach decision within its DEFAULT-AFTER window) -- nothing actionable to build tonight."
       },
       "containment": {
         "foreign_clones": [],
@@ -2443,22 +2447,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T14:50:02Z",
+    "generated": "2026-09-05T15:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T15:20:02Z",
-    "verdict": "OK",
-    "why": "running, sshd answering, root rw, disk internal",
-    "vm_state": "running",
-    "disk": "C:\\WSL\\monkey",
-    "disk_home": "internal",
+    "valid_until": "2026-09-05T15:30:02Z",
+    "verdict": "DOWN",
+    "why": "VM is poweroff",
+    "vm_state": "poweroff",
+    "disk": "",
+    "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 19 hours, 39 minutes",
+    "uptime": "up 4 days, 19 hours, 50 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T14:50:02Z"
+      "sampled_at": "2026-09-05T15:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
