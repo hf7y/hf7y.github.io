@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T03:00:02Z",
-  "valid_until": "2026-09-06T07:00:02Z",
+  "generated": "2026-09-05T03:10:03Z",
+  "valid_until": "2026-09-06T07:10:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1276,11 +1276,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Merged #176 (calendar-invalid snapshot dir, left unmerged from a prior run); found and fixed a residual gap it left (incomplete_snapshots silently swallowed a calendar-invalid dir that carried a completion marker) as #177/#178; both branches' suites green (main 311 tests, bashified 11 CI jobs); remaining backlog (#23/#25/#29/#30/#31/#70) still genuinely blocked on real mandark/dexter host access this sandbox lacks, #26 still Zach's own call."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "gardien@selfdev.invalid",
         "clones": []
@@ -2326,6 +2322,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788576375",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-04T21:46:15-05:00",
+          "ended_at": "2026-09-04T22:01:52-05:00",
+          "elapsed_s": 940,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Landed the cut-off #119 stall-eject work as PR #135 (reaped its own +2 prose overage to net-zero, merged, closed #119); investigated #128 and found the artifact it depends on is genuinely ambiguous between two label mechanisms (recorded findings + the concrete question on the issue, left open rather than guessing); #120 (two-drive ripping) is now unblocked since #119 shipped and is the next milestone item ready to pick up."
+        },
+        {
           "run_id": "wtul-nightly-batch-1788570377",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-04T20:06:17-05:00",
@@ -2392,41 +2405,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "Fourth pass today, fresh session: re-verified pytest (854 passed), re-probed dexter SSH and fpcalc (both still walled), re-read all 7 open issues + PR #105 for a human reply (none) -- everything terminates on #99's reap-vs-raise-floor call, unchanged from the third pass."
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788447967",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-03T10:06:07-05:00",
-          "ended_at": "2026-09-03T10:12:08-05:00",
-          "elapsed_s": 364,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "All open issues (#99, #105, #74, #53, #37, #110) terminate in Zach's decision on #99 (reap 115-148 legitimate docstring lines vs raise the prose-ratchet floor); re-verified fpcalc/dexter-SSH/cmake/pip walls fresh, all unchanged, pytest 854/9/0 clean"
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788570377",
+        "run_id": "wtul-nightly-batch-1788576375",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-04T20:06:17-05:00",
-        "ended_at": "2026-09-04T20:27:16-05:00",
-        "elapsed_s": 1262,
-        "rc": 1,
-        "status": "FAILED (ceiling: max turns reached)",
-        "commits_added": 2,
+        "started_at": "2026-09-04T21:46:15-05:00",
+        "ended_at": "2026-09-04T22:01:52-05:00",
+        "elapsed_s": 940,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 1,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 1,
-        "verdict_computed": "WORKED-CUTOFF",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "Landed the cut-off #119 stall-eject work as PR #135 (reaped its own +2 prose overage to net-zero, merged, closed #119); investigated #128 and found the artifact it depends on is genuinely ambiguous between two label mechanisms (recorded findings + the concrete question on the issue, left open rather than guessing); #120 (two-drive ripping) is now unblocked since #119 shipped and is the next milestone item ready to pick up."
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2443,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T03:00:02Z",
+    "generated": "2026-09-05T03:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T03:30:02Z",
+    "valid_until": "2026-09-05T03:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2454,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 7 hours, 49 minutes",
+    "uptime": "up 4 days, 7 hours, 59 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T03:00:02Z"
+      "sampled_at": "2026-09-05T03:10:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
