@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T23:10:02Z",
-  "valid_until": "2026-09-07T03:10:02Z",
+  "generated": "2026-09-05T23:20:02Z",
+  "valid_until": "2026-09-07T03:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1941,6 +1941,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788649392",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-05T18:03:12-05:00",
+          "ended_at": "2026-09-05T18:20:20-05:00",
+          "elapsed_s": 1030,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "13 salvage branches from #591 fully triaged and confirmed stale/superseded (evidence posted); remote deletion refused by this session's own sandbox classifier on 3 different git/gh delete attempts -- needs Zach or an unrestricted session to run the 13 git push --delete lines left on the issue. Every other open issue is either already-mechanized-and-blocked-on-live-host-enable (#558, #656, #628, #422, #631 -- SSH to dexter/monkey confirmed refused fresh tonight) or a genuine judgment call already"
+        },
+        {
           "run_id": "senechal-nightly-batch-1788644592",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-05T16:43:12-05:00",
@@ -2007,31 +2024,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "Triaged all 13 salvage/senechal-nightly-batch-* branches for #591 (confirmed every one superseded by later work on main, none carries unlanded content) and posted exact delete commands; deletion itself refused by this session's own Claude Code auto-mode classifier on 3 different tool paths (git push --delete, git fetch, gh api DELETE ref). Rest of tonight's actionable backlog (#558, #656, #631, #646, #628 dead-handler remedies) is already built/merged and waiting on Zach's hands or host SSH this"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788619392",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-05T09:43:12-05:00",
-          "ended_at": "2026-09-05T09:51:26-05:00",
-          "elapsed_s": 496,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Re-verified full test suite (green) and swept the open backlog; every remaining item is genuinely blocked on a human/host action (enable on monkey/dexter, a classifier wall on branch-delete/force-push, or a pending Zach decision within its DEFAULT-AFTER window) -- nothing actionable to build tonight."
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788644592",
+        "run_id": "senechal-nightly-batch-1788649392",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-05T16:43:12-05:00",
-        "ended_at": "2026-09-05T16:57:48-05:00",
-        "elapsed_s": 879,
+        "started_at": "2026-09-05T18:03:12-05:00",
+        "ended_at": "2026-09-05T18:20:20-05:00",
+        "elapsed_s": 1030,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2040,8 +2040,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Full backlog triaged: milestone issues #558/#656 and #628/#422/#631/#409 all have merged/tested remedies waiting only on Zach's own enable/build-cut on real hosts (no SSH this session); #591's 13 salvage branches fully re-confirmed superseded, deletion still denied by the session's own permission classifier (same wall as 5 prior attempts today, nothing new to add); #699/#646/#637/#634/#635 are genuine judgment calls with unexpired DEFAULT-AFTER windows. Full test suite (109 unittest + 206 alerti"
+        "claimed_verdict": "BLOCKED",
+        "claimed_reason": "13 salvage branches from #591 fully triaged and confirmed stale/superseded (evidence posted); remote deletion refused by this session's own sandbox classifier on 3 different git/gh delete attempts -- needs Zach or an unrestricted session to run the 13 git push --delete lines left on the issue. Every other open issue is either already-mechanized-and-blocked-on-live-host-enable (#558, #656, #628, #422, #631 -- SSH to dexter/monkey confirmed refused fresh tonight) or a genuine judgment call already"
       },
       "containment": {
         "foreign_clones": [],
@@ -2326,6 +2326,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788649576",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-05T18:06:16-05:00",
+          "ended_at": "2026-09-05T18:20:01-05:00",
+          "elapsed_s": 828,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Landed PR #145 (build-playlist ranks library_schema's indexed pool + excludes unreachable picks at build time, #129's two code-side done-when items); backlog fully triaged and every remaining open issue is blocked on Zach/hardware/credentials, not on further code."
+        },
+        {
           "run_id": "wtul-nightly-batch-1788644777",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-05T16:46:17-05:00",
@@ -2392,41 +2409,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "Built and merged #112's local-spins-DB order-match (PR #143, lib/spin_order_match.py, tested against real scraped Spinitron data); nothing else in the backlog is agent-actionable without dexter/mandark SSH, a human decision, or physical hardware."
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788623179",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-05T10:46:19-05:00",
-          "ended_at": "2026-09-05T11:13:28-05:00",
-          "elapsed_s": 1632,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 3,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Filled #120's landing-comment gap (PR #140 was merged unreported); built and merged PR #142 (#131's monkey-side staging push, credential-independent, real rsync-checksum tests); surveyed the full backlog fresh and confirmed nothing else is agent-actionable without the dexter SSH credential or a human decision."
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788644777",
+        "run_id": "wtul-nightly-batch-1788649576",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-05T16:46:17-05:00",
-        "ended_at": "2026-09-05T17:04:09-05:00",
-        "elapsed_s": 1075,
+        "started_at": "2026-09-05T18:06:16-05:00",
+        "ended_at": "2026-09-05T18:20:01-05:00",
+        "elapsed_s": 828,
         "rc": 0,
         "status": "done",
-        "commits_added": 3,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Milestone 'Show post-mortem 2026-09-04': merged PR #144 (artist-only fingerprint-index pass + library-holdings query, unblocking half of #74/#122 without dexter access); corrected stale merge status on #128. Remaining milestone issues (#120,#121,#123,#124,#125,#129,#131,#37) are genuinely blocked on Zach/hardware/credentials, already correctly left open by prior runs. Next actionable: #126's useful half (mp3 pre-fill against whatever submission inbox exists today, independent of the blocked clas"
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Landed PR #145 (build-playlist ranks library_schema's indexed pool + excludes unreachable picks at build time, #129's two code-side done-when items); backlog fully triaged and every remaining open issue is blocked on Zach/hardware/credentials, not on further code."
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2447,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T23:10:01Z",
+    "generated": "2026-09-05T23:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T23:40:01Z",
+    "valid_until": "2026-09-05T23:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2458,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 5 days, 3 hours, 59 minutes",
+    "uptime": "up 5 days, 4 hours, 9 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T23:10:01Z"
+      "sampled_at": "2026-09-05T23:20:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
