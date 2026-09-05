@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T17:10:02Z",
-  "valid_until": "2026-09-06T21:10:02Z",
+  "generated": "2026-09-05T17:20:03Z",
+  "valid_until": "2026-09-06T21:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -276,6 +276,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1788628206",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-05T12:10:06-05:00",
+          "ended_at": "2026-09-05T12:11:30-05:00",
+          "elapsed_s": 86,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Re-verified repo health (py_compile clean, bullets.py 0 findings, tree clean, origin/HEAD correct) and re-checked all 5 open issues incl. milestone #86; all remain genuinely blocked on human decisions/timers or missing canvas.token, none expired, nothing new since 2026-09-04 -- no actionable work this run."
+        },
+        {
           "run_id": "apms-nightly-batch-1788616207",
           "job": "apms-nightly-batch",
           "started_at": "2026-09-05T08:50:07-05:00",
@@ -342,31 +359,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Re-checked milestone #86 (STT loop proof) and #55 (Roll Call probe): both remain blocked on a real class recording (next session 2026-09-14) and a canvas.token this scheduled account deliberately lacks -- confirmed via a filesystem-wide search for tokens/recordings, nothing found. Remaining open issues (#79, #75, #70) are needs-human DECISION issues with DEFAULT-AFTER dates not yet reached. No actionable work found; tree clean, nothing to commit."
-        },
-        {
-          "run_id": "apms-nightly-batch-1788568206",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-04T19:30:06-05:00",
-          "ended_at": "2026-09-04T19:33:02-05:00",
-          "elapsed_s": 179,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Re-verified all 5 open issues (86, 79, 75, 70, 55): all blocked on human decision/credential/real class session, unchanged from this morning's 07:53Z re-verification; confirmed independently (no canvas.token, no CANVAS_TOKEN, no class-02 recording present) rather than trusting the prior comments; bullets.py, ledger.py, and the prose CI workflow all run clean. No actionable work; no issues opened or closed."
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788616207",
+        "run_id": "apms-nightly-batch-1788628206",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-05T08:50:07-05:00",
-        "ended_at": "2026-09-05T08:52:05-05:00",
-        "elapsed_s": 121,
+        "started_at": "2026-09-05T12:10:06-05:00",
+        "ended_at": "2026-09-05T12:11:30-05:00",
+        "elapsed_s": 86,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -376,7 +376,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "Re-verified: repo clean, ledger.py/parse checks pass, no regressions. All 5 open issues remain blocked on humans/external state (86 milestone: no real class recording exists, next session 2026-09-14, and no canvas.token in this checkout; 55: same missing-token wall; 70/75/79: DECISION issues awaiting Zach, DEFAULT-AFTER windows not yet expired). Nothing actionable without a human or a future class session."
+        "claimed_reason": "Re-verified repo health (py_compile clean, bullets.py 0 findings, tree clean, origin/HEAD correct) and re-checked all 5 open issues incl. milestone #86; all remain genuinely blocked on human decisions/timers or missing canvas.token, none expired, nothing new since 2026-09-04 -- no actionable work this run."
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2447,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T17:10:01Z",
+    "generated": "2026-09-05T17:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T17:40:01Z",
+    "valid_until": "2026-09-05T17:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2458,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 21 hours, 59 minutes",
+    "uptime": "up 4 days, 22 hours, 9 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T17:10:01Z"
+      "sampled_at": "2026-09-05T17:20:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
