@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-05T04:20:02Z",
-  "valid_until": "2026-09-06T08:20:02Z",
+  "generated": "2026-09-05T04:30:02Z",
+  "valid_until": "2026-09-06T08:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -119,11 +119,7 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "real-media run landed for #2 (offline path declared winner); #5 blocked on SSH creds, not DNS; #18/#6/#28 unchanged, all genuinely blocked or parked"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "abletim@selfdev.invalid",
         "clones": []
@@ -1406,11 +1402,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Live-verified #160's self-heal substitution ask end to end tonight (ticket fce738ca fired automatically, cart correctly gated); milestone otherwise unchanged -- blocked on Zach's replies (Nuts substitute, feedback nudge) and zaxon's 24h/0-answered backlog refusal, plus the standing dexter/mandark access wall on #59/#88/#138/#145."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "groc-mangr@selfdev.invalid",
         "clones": []
@@ -2326,6 +2318,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788581176",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-04T23:06:16-05:00",
+          "ended_at": "2026-09-04T23:26:29-05:00",
+          "elapsed_s": 1215,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "wtul-nightly-batch-1788576375",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-04T21:46:15-05:00",
@@ -2392,41 +2401,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "PR #133 merged (golden earned by plays+rest, not rip age alone, #127 closed); reaped a genuine per-branch prose overage to +0 along the way. 8 non-needs-human issues remain in the Show post-mortem 2026-09-04 milestone (#119,#120,#122,#124,#126,#128,#129,#132) -- actionable next."
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788483969",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-03T20:06:09-05:00",
-          "ended_at": "2026-09-03T20:11:13-05:00",
-          "elapsed_s": 307,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "Fourth pass today, fresh session: re-verified pytest (854 passed), re-probed dexter SSH and fpcalc (both still walled), re-read all 7 open issues + PR #105 for a human reply (none) -- everything terminates on #99's reap-vs-raise-floor call, unchanged from the third pass."
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788576375",
+        "run_id": "wtul-nightly-batch-1788581176",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-04T21:46:15-05:00",
-        "ended_at": "2026-09-04T22:01:52-05:00",
-        "elapsed_s": 940,
+        "started_at": "2026-09-04T23:06:16-05:00",
+        "ended_at": "2026-09-04T23:26:29-05:00",
+        "elapsed_s": 1215,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "Landed the cut-off #119 stall-eject work as PR #135 (reaped its own +2 prose overage to net-zero, merged, closed #119); investigated #128 and found the artifact it depends on is genuinely ambiguous between two label mechanisms (recorded findings + the concrete question on the issue, left open rather than guessing); #120 (two-drive ripping) is now unblocked since #119 shipped and is the next milestone item ready to pick up."
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2447,10 +2439,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-05T04:20:02Z",
+    "generated": "2026-09-05T04:30:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-05T04:50:02Z",
+    "valid_until": "2026-09-05T05:00:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2450,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 9 hours, 9 minutes",
+    "uptime": "up 4 days, 9 hours, 19 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-05T04:20:02Z"
+      "sampled_at": "2026-09-05T04:30:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
