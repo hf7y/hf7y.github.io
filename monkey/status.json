@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-06T20:40:02Z",
-  "valid_until": "2026-09-08T00:40:02Z",
+  "generated": "2026-09-06T20:50:12Z",
+  "valid_until": "2026-09-08T00:50:12Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -547,11 +547,13 @@
     {
       "account": "bibliothecaire",
       "uid": 3002,
-      "armed": false,
-      "dispatch_line": false,
+      "armed": true,
+      "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/bibliothecaire.git",
       "roster_state": "live",
-      "cron": [],
+      "cron": [
+        "12,32,52 * * * * PACED_MAX_PER_TICK=1 /home/bibliothecaire/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
+      ],
       "release_tick": null,
       "milestone_self_fed": {
         "current": false,
@@ -695,6 +697,23 @@
       },
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788726331",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-06T20:25:31Z",
+          "ended_at": "2026-09-06T20:43:21Z",
+          "elapsed_s": 1072,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 1,
+          "issues_closed": 2,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "chezz-nightly-batch-1788724094",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-06T19:48:14Z",
@@ -761,39 +780,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788713675",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-06T16:54:35Z",
-          "ended_at": "2026-09-06T16:55:22Z",
-          "elapsed_s": 50,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788724094",
+        "run_id": "chezz-nightly-batch-1788726331",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-06T19:48:14Z",
-        "ended_at": "2026-09-06T19:52:07Z",
-        "elapsed_s": 236,
+        "started_at": "2026-09-06T20:25:31Z",
+        "ended_at": "2026-09-06T20:43:21Z",
+        "elapsed_s": 1072,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
-        "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_opened": 1,
+        "issues_closed": 2,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -1370,6 +1372,23 @@
       },
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788727449",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-06T20:44:09Z",
+          "ended_at": "2026-09-06T20:47:42Z",
+          "elapsed_s": 215,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788726467",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-06T20:27:47Z",
@@ -1436,31 +1455,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788718918",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-06T18:21:58Z",
-          "ended_at": "2026-09-06T18:28:36Z",
-          "elapsed_s": 400,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788726467",
+        "run_id": "groc-mangr-nightly-batch-1788727449",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-06T20:27:47Z",
-        "ended_at": "2026-09-06T20:34:48Z",
-        "elapsed_s": 424,
+        "started_at": "2026-09-06T20:44:09Z",
+        "ended_at": "2026-09-06T20:47:42Z",
+        "elapsed_s": 215,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1747,7 +1749,16 @@
       },
       "identity": {
         "declared": "realisateur@selfdev.invalid",
-        "clones": []
+        "clones": [
+          {
+            "path": "/home/realisateur/Documents/Projects/realisateur",
+            "local_identity": null,
+            "count": 1,
+            "commits": [
+              "42e0ce9 t <dangerpine@gmail.com> 2026-08-30T12:46:13-05:00"
+            ]
+          }
+        ]
       },
       "credentials": {
         "app_key": "0o640",
@@ -1772,6 +1783,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "scheduler-paced-dev-1788726265",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-09-06T20:24:25Z",
+          "ended_at": "2026-09-06T20:44:56Z",
+          "elapsed_s": 1233,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "scheduler-paced-dev-1788725236",
           "job": "scheduler-paced-dev",
@@ -1839,38 +1867,21 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-paced-dev-1788718782",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-09-06T18:19:42Z",
-          "ended_at": "2026-09-06T18:38:23Z",
-          "elapsed_s": 1123,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1788725236",
+        "run_id": "scheduler-paced-dev-1788726265",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-09-06T20:07:16Z",
-        "ended_at": "2026-09-06T20:23:44Z",
-        "elapsed_s": 990,
+        "started_at": "2026-09-06T20:24:25Z",
+        "ended_at": "2026-09-06T20:44:56Z",
+        "elapsed_s": 1233,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
@@ -2565,22 +2576,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-06T20:40:02Z",
+    "generated": "2026-09-06T20:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-06T21:10:02Z",
+    "valid_until": "2026-09-06T21:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
-    "disk": "C:\\WSL\\monkey",
-    "disk_home": "internal",
+    "disk": "",
+    "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 1 hour, 30 minutes",
+    "uptime": "up 6 days, 1 hour, 40 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-06T20:40:02Z"
+      "sampled_at": "2026-09-06T20:50:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
