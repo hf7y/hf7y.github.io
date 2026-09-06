@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-06T08:10:02Z",
-  "valid_until": "2026-09-07T12:10:02Z",
+  "generated": "2026-09-06T08:20:02Z",
+  "valid_until": "2026-09-07T12:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -147,6 +147,40 @@
       "release_tick": "2026-09-05T10:21:02Z rc=1 pin=2026-09-01T030800Z 2 ok, 0 gap, 1 bad",
       "runs": [
         {
+          "run_id": "american-cycle-nightly-batch-1788682453",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-06T03:14:13-05:00",
+          "ended_at": "2026-09-06T03:14:36-05:00",
+          "elapsed_s": 25,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
+          "run_id": "american-cycle-nightly-batch-1788682311",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-06T03:11:51-05:00",
+          "ended_at": "2026-09-06T03:12:14-05:00",
+          "elapsed_s": 25,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "american-cycle-nightly-batch-1788680470",
           "job": "american-cycle-nightly-batch",
           "started_at": "2026-09-06T02:41:10-05:00",
@@ -196,48 +230,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788679577",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-06T02:26:17-05:00",
-          "ended_at": "2026-09-06T02:26:44-05:00",
-          "elapsed_s": 29,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788679510",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-06T02:25:10-05:00",
-          "ended_at": "2026-09-06T02:25:20-05:00",
-          "elapsed_s": 13,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1788680470",
+        "run_id": "american-cycle-nightly-batch-1788682453",
         "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-06T02:41:10-05:00",
-        "ended_at": "2026-09-06T02:41:31-05:00",
-        "elapsed_s": 23,
+        "started_at": "2026-09-06T03:14:13-05:00",
+        "ended_at": "2026-09-06T03:14:36-05:00",
+        "elapsed_s": 25,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1149,11 +1149,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Only #97/#118 open (milestone 1), both re-verified blocked on Zach-only actions (secret paste, crontab edit); no repo-side action available."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "ecosim@selfdev.invalid",
         "clones": []
@@ -1276,11 +1272,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Merged #176 (calendar-invalid snapshot dir, left unmerged from a prior run); found and fixed a residual gap it left (incomplete_snapshots silently swallowed a calendar-invalid dir that carried a completion marker) as #177/#178; both branches' suites green (main 311 tests, bashified 11 CI jobs); remaining backlog (#23/#25/#29/#30/#31/#70) still genuinely blocked on real mandark/dexter host access this sandbox lacks, #26 still Zach's own call."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "gardien@selfdev.invalid",
         "clones": []
@@ -1303,6 +1295,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "groc-mangr-nightly-batch-1788681848",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-06T03:04:08-05:00",
+          "ended_at": "2026-09-06T03:11:55-05:00",
+          "elapsed_s": 470,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "groc-mangr-nightly-batch-1788681025",
           "job": "groc-mangr-nightly-batch",
@@ -1370,31 +1379,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788674451",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-06T01:00:51-05:00",
-          "ended_at": "2026-09-06T01:05:58-05:00",
-          "elapsed_s": 310,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788681025",
+        "run_id": "groc-mangr-nightly-batch-1788681848",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-06T02:50:25-05:00",
-        "ended_at": "2026-09-06T03:03:25-05:00",
-        "elapsed_s": 782,
+        "started_at": "2026-09-06T03:04:08-05:00",
+        "ended_at": "2026-09-06T03:11:55-05:00",
+        "elapsed_s": 470,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1560,6 +1552,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "realisateur-nightly-batch-1788680503",
+          "job": "realisateur-nightly-batch",
+          "started_at": "2026-09-06T02:41:43-05:00",
+          "ended_at": "2026-09-06T03:11:49-05:00",
+          "elapsed_s": 1809,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 3,
+          "prs_opened": 1,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-nightly-batch-1788679847",
           "job": "realisateur-nightly-batch",
           "started_at": "2026-09-06T02:30:47-05:00",
@@ -1626,47 +1635,26 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-nightly-batch-1788675559",
-          "job": "realisateur-nightly-batch",
-          "started_at": "2026-09-06T01:19:19-05:00",
-          "ended_at": "2026-09-06T01:28:11-05:00",
-          "elapsed_s": 535,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-nightly-batch-1788679847",
+        "run_id": "realisateur-nightly-batch-1788680503",
         "job": "realisateur-nightly-batch",
-        "started_at": "2026-09-06T02:30:47-05:00",
-        "ended_at": "2026-09-06T02:39:14-05:00",
-        "elapsed_s": 509,
+        "started_at": "2026-09-06T02:41:43-05:00",
+        "ended_at": "2026-09-06T03:11:49-05:00",
+        "elapsed_s": 1809,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 3,
         "prs_opened": 1,
-        "prs_merged": 0,
+        "prs_merged": 2,
         "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "realisateur@selfdev.invalid",
         "clones": []
@@ -1945,6 +1933,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788680958",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-06T02:49:18-05:00",
+          "ended_at": "2026-09-06T03:12:30-05:00",
+          "elapsed_s": 1395,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "senechal-nightly-batch-1788680060",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-06T02:34:20-05:00",
@@ -2011,38 +2016,21 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788673387",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-06T00:43:07-05:00",
-          "ended_at": "2026-09-06T01:01:06-05:00",
-          "elapsed_s": 1081,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788680060",
+        "run_id": "senechal-nightly-batch-1788680958",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-06T02:34:20-05:00",
-        "ended_at": "2026-09-06T02:47:27-05:00",
-        "elapsed_s": 790,
+        "started_at": "2026-09-06T02:49:18-05:00",
+        "ended_at": "2026-09-06T03:12:30-05:00",
+        "elapsed_s": 1395,
         "rc": 0,
         "status": "done",
         "commits_added": 2,
-        "issues_opened": 1,
-        "issues_closed": 0,
+        "issues_opened": 0,
+        "issues_closed": 1,
         "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_merged": 2,
         "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
@@ -2451,10 +2439,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-06T08:10:01Z",
+    "generated": "2026-09-06T08:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-06T08:40:01Z",
+    "valid_until": "2026-09-06T08:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2462,11 +2450,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 5 days, 12 hours, 59 minutes",
+    "uptime": "up 5 days, 13 hours, 9 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-06T08:10:01Z"
+      "sampled_at": "2026-09-06T08:20:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
