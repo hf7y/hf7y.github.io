@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-06T08:40:02Z",
-  "valid_until": "2026-09-07T12:40:02Z",
+  "generated": "2026-09-06T08:50:02Z",
+  "valid_until": "2026-09-07T12:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1533,7 +1533,11 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Re-verified suite (219 passed) + sim smoke clean; fresh adversarial read of hardware/{endpoint_process,network_endpoint,registry,supervisor,endpoint_cli,channel_map,level_balance,pd_lint}.py and nine_speakers/sim.py found no new defect -- codebase is now thoroughly hardened after 30+ prior passes. Remaining milestone (#5) work -- #64 (card bring-up), #59/#60 (projector hardware facts), #62 (zaxon ownership) -- is genuinely blocked on Zach's physical hardware/decision, not on further code."
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "nine-speakers@selfdev.invalid",
         "clones": []
@@ -1685,6 +1689,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "scheduler-paced-dev-1788683631",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-09-06T03:33:51-05:00",
+          "ended_at": "2026-09-06T03:47:49-05:00",
+          "elapsed_s": 840,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "scheduler-paced-dev-1788682874",
           "job": "scheduler-paced-dev",
           "started_at": "2026-09-06T03:21:14-05:00",
@@ -1751,31 +1772,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-paced-dev-1788674636",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-09-06T01:03:56-05:00",
-          "ended_at": "2026-09-06T01:43:05-05:00",
-          "elapsed_s": 2352,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 3,
-          "issues_opened": 3,
-          "issues_closed": 2,
-          "prs_opened": 0,
-          "prs_merged": 3,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1788682874",
+        "run_id": "scheduler-paced-dev-1788683631",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-09-06T03:21:14-05:00",
-        "ended_at": "2026-09-06T03:32:11-05:00",
-        "elapsed_s": 660,
+        "started_at": "2026-09-06T03:33:51-05:00",
+        "ended_at": "2026-09-06T03:47:49-05:00",
+        "elapsed_s": 840,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1941,6 +1945,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788683701",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-06T03:35:01-05:00",
+          "ended_at": "2026-09-06T03:41:11-05:00",
+          "elapsed_s": 373,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "senechal-nightly-batch-1788682660",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-06T03:17:40-05:00",
@@ -2007,39 +2028,22 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788676266",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-06T01:31:06-05:00",
-          "ended_at": "2026-09-06T01:58:13-05:00",
-          "elapsed_s": 1629,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 1,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788682660",
+        "run_id": "senechal-nightly-batch-1788683701",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-06T03:17:40-05:00",
-        "ended_at": "2026-09-06T03:33:05-05:00",
-        "elapsed_s": 928,
+        "started_at": "2026-09-06T03:35:01-05:00",
+        "ended_at": "2026-09-06T03:41:11-05:00",
+        "elapsed_s": 373,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
-        "issues_opened": 6,
-        "issues_closed": 7,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "commits_added": 0,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2447,10 +2451,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-06T08:40:02Z",
+    "generated": "2026-09-06T08:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-06T09:10:02Z",
+    "valid_until": "2026-09-06T09:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2458,11 +2462,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 5 days, 13 hours, 29 minutes",
+    "uptime": "up 5 days, 13 hours, 39 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-06T08:40:02Z"
+      "sampled_at": "2026-09-06T08:50:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
