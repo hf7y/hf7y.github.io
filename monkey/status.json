@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-06T19:00:02Z",
-  "valid_until": "2026-09-07T23:00:02Z",
+  "generated": "2026-09-06T19:10:03Z",
+  "valid_until": "2026-09-07T23:10:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -12,6 +12,7 @@
       "uid": 3015,
       "armed": false,
       "dispatch_line": false,
+      "repo_url": "https://github.com/hf7y/abletim.git",
       "roster_state": "parked",
       "cron": [],
       "release_tick": null,
@@ -144,6 +145,7 @@
       "uid": 3018,
       "armed": true,
       "dispatch_line": true,
+      "repo_url": "https://github.com/hf7y/american-cycle.git",
       "roster_state": "live",
       "cron": [
         "21 5 * * * /home/american-cycle/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
@@ -279,6 +281,7 @@
       "uid": 3016,
       "armed": true,
       "dispatch_line": true,
+      "repo_url": "https://github.com/hf7y/apms-2173.git",
       "roster_state": "live",
       "cron": [
         "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/apms/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -290,6 +293,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "apms-nightly-batch-1788721635",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-06T19:07:15Z",
+          "ended_at": "2026-09-06T19:09:50Z",
+          "elapsed_s": 158,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "apms-nightly-batch-1788719041",
           "job": "apms-nightly-batch",
@@ -357,39 +377,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "apms-nightly-batch-1788711514",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-06T16:18:34Z",
-          "ended_at": "2026-09-06T16:23:32Z",
-          "elapsed_s": 300,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788719041",
+        "run_id": "apms-nightly-batch-1788721635",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-06T18:24:01Z",
-        "ended_at": "2026-09-06T18:25:54Z",
-        "elapsed_s": 115,
+        "started_at": "2026-09-06T19:07:15Z",
+        "ended_at": "2026-09-06T19:09:50Z",
+        "elapsed_s": 158,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -413,6 +416,7 @@
       "uid": 3005,
       "armed": false,
       "dispatch_line": false,
+      "repo_url": "https://github.com/hf7y/baudin.git",
       "roster_state": "parked",
       "cron": [],
       "release_tick": null,
@@ -545,6 +549,7 @@
       "uid": 3002,
       "armed": false,
       "dispatch_line": false,
+      "repo_url": "https://github.com/hf7y/bibliothecaire.git",
       "roster_state": "live",
       "cron": [],
       "release_tick": null,
@@ -677,6 +682,7 @@
       "uid": 3003,
       "armed": true,
       "dispatch_line": true,
+      "repo_url": "https://github.com/hf7y/chezz.git",
       "roster_state": "live",
       "cron": [
         "7,27,47 * * * * PACED_MAX_PER_TICK=1 /home/chezz/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -791,11 +797,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "chezz@selfdev.invalid",
         "clones": []
@@ -811,6 +813,7 @@
       "uid": 3006,
       "armed": true,
       "dispatch_line": true,
+      "repo_url": "https://github.com/hf7y/crt.git",
       "roster_state": "live",
       "cron": [
         "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/crt/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -822,6 +825,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "crt-nightly-batch-1788721185",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-06T18:59:45Z",
+          "ended_at": "2026-09-06T19:01:29Z",
+          "elapsed_s": 107,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "crt-nightly-batch-1788720611",
           "job": "crt-nightly-batch",
@@ -889,31 +909,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1788715143",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-06T17:19:03Z",
-          "ended_at": "2026-09-06T17:24:51Z",
-          "elapsed_s": 350,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788720611",
+        "run_id": "crt-nightly-batch-1788721185",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-06T18:50:11Z",
-        "ended_at": "2026-09-06T18:56:41Z",
-        "elapsed_s": 393,
+        "started_at": "2026-09-06T18:59:45Z",
+        "ended_at": "2026-09-06T19:01:29Z",
+        "elapsed_s": 107,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -945,6 +948,7 @@
       "uid": 3017,
       "armed": true,
       "dispatch_line": true,
+      "repo_url": "https://github.com/hf7y/dcp-gate-site.git",
       "roster_state": "live",
       "cron": [
         "56 5 * * * /home/dcp-gate-site/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
@@ -957,6 +961,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "dcp-gate-site-nightly-batch-1788721375",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-06T19:02:55Z",
+          "ended_at": "2026-09-06T19:09:00Z",
+          "elapsed_s": 367,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "dcp-gate-site-nightly-batch-1788718852",
           "job": "dcp-gate-site-nightly-batch",
@@ -1024,39 +1045,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788711003",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-06T16:10:03Z",
-          "ended_at": "2026-09-06T16:18:32Z",
-          "elapsed_s": 511,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 1,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788718852",
+        "run_id": "dcp-gate-site-nightly-batch-1788721375",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-06T18:20:52Z",
-        "ended_at": "2026-09-06T18:33:56Z",
-        "elapsed_s": 786,
+        "started_at": "2026-09-06T19:02:55Z",
+        "ended_at": "2026-09-06T19:09:00Z",
+        "elapsed_s": 367,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -1080,6 +1084,7 @@
       "uid": 3001,
       "armed": false,
       "dispatch_line": false,
+      "repo_url": "https://github.com/hf7y/ecosim.git",
       "roster_state": "parked",
       "cron": [
         "7,37 * * * * ECOSIM_SENSOR_BIN=/usr/local/bin/sonde /home/ecosim/Documents/Projects/ecosim/bin/ecosim-sensor-tick.sh # ecosim:ecosim-sensor:TICK"
@@ -1214,6 +1219,7 @@
       "uid": 3004,
       "armed": false,
       "dispatch_line": false,
+      "repo_url": "https://github.com/hf7y/gardien.git",
       "roster_state": "parked",
       "cron": [],
       "release_tick": null,
@@ -1346,6 +1352,7 @@
       "uid": 3007,
       "armed": true,
       "dispatch_line": true,
+      "repo_url": "https://github.com/hf7y/groc-mangr.git",
       "roster_state": "live",
       "cron": [
         "0 */4 * * * /home/groc-mangr/Documents/Projects/groc-mangr/scripts/tick.sh >> /home/groc-mangr/.local/state/groc-mangr/tick.log 2>&1 # groc-mangr:tick",
@@ -1358,6 +1365,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "groc-mangr-nightly-batch-1788721510",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-06T19:05:10Z",
+          "ended_at": "2026-09-06T19:08:57Z",
+          "elapsed_s": 230,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "groc-mangr-nightly-batch-1788718918",
           "job": "groc-mangr-nightly-batch",
@@ -1425,31 +1449,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788710649",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-06T16:04:09Z",
-          "ended_at": "2026-09-06T16:16:43Z",
-          "elapsed_s": 757,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788718918",
+        "run_id": "groc-mangr-nightly-batch-1788721510",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-06T18:21:58Z",
-        "ended_at": "2026-09-06T18:28:36Z",
-        "elapsed_s": 400,
+        "started_at": "2026-09-06T19:05:10Z",
+        "ended_at": "2026-09-06T19:08:57Z",
+        "elapsed_s": 230,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1481,6 +1488,7 @@
       "uid": 3008,
       "armed": false,
       "dispatch_line": false,
+      "repo_url": "https://github.com/hf7y/nine-speakers.git",
       "roster_state": "parked",
       "cron": [],
       "release_tick": null,
@@ -1613,6 +1621,7 @@
       "uid": 3010,
       "armed": true,
       "dispatch_line": true,
+      "repo_url": "https://github.com/hf7y/realisateur.git",
       "roster_state": "live",
       "cron": [
         "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/realisateur/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -1747,6 +1756,7 @@
       "uid": 3011,
       "armed": true,
       "dispatch_line": true,
+      "repo_url": "https://github.com/hf7y/scheduler.git",
       "roster_state": "live",
       "cron": [
         "1,21,41 * * * * PACED_MAX_PER_TICK=1 /home/scheduler/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -1758,6 +1768,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "scheduler-paced-dev-1788719913",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-09-06T18:38:33Z",
+          "ended_at": "2026-09-06T19:07:25Z",
+          "elapsed_s": 1735,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "scheduler-paced-dev-1788718782",
           "job": "scheduler-paced-dev",
@@ -1825,36 +1852,19 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-paced-dev-1788713349",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-09-06T16:49:09Z",
-          "ended_at": "2026-09-06T16:51:43Z",
-          "elapsed_s": 156,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1788718782",
+        "run_id": "scheduler-paced-dev-1788719913",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-09-06T18:19:42Z",
-        "ended_at": "2026-09-06T18:38:23Z",
-        "elapsed_s": 1123,
+        "started_at": "2026-09-06T18:38:33Z",
+        "ended_at": "2026-09-06T19:07:25Z",
+        "elapsed_s": 1735,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 1,
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
@@ -1890,6 +1900,7 @@
       "uid": 3012,
       "armed": false,
       "dispatch_line": false,
+      "repo_url": "https://github.com/hf7y/secretaire.git",
       "roster_state": "parked",
       "cron": [],
       "release_tick": null,
@@ -2022,6 +2033,7 @@
       "uid": 3014,
       "armed": true,
       "dispatch_line": true,
+      "repo_url": "https://github.com/hf7y/senechal.git",
       "roster_state": "live",
       "cron": [
         "3,23,43 * * * * PACED_MAX_PER_TICK=1 /home/senechal/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -2033,6 +2045,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "senechal-nightly-batch-1788720189",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-06T18:43:09Z",
+          "ended_at": "2026-09-06T19:01:46Z",
+          "elapsed_s": 1120,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "senechal-nightly-batch-1788718584",
           "job": "senechal-nightly-batch",
@@ -2100,39 +2129,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788708924",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-06T15:35:24Z",
-          "ended_at": "2026-09-06T15:44:19Z",
-          "elapsed_s": 537,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788718584",
+        "run_id": "senechal-nightly-batch-1788720189",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-06T18:16:24Z",
-        "ended_at": "2026-09-06T18:42:32Z",
-        "elapsed_s": 1571,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 2,
+        "started_at": "2026-09-06T18:43:09Z",
+        "ended_at": "2026-09-06T19:01:46Z",
+        "elapsed_s": 1120,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 2,
-        "verdict_computed": "WORKED",
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "FAILED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2156,6 +2168,7 @@
       "uid": 3009,
       "armed": false,
       "dispatch_line": false,
+      "repo_url": "https://github.com/hf7y/sequestria.git",
       "roster_state": "parked",
       "cron": [],
       "release_tick": null,
@@ -2288,6 +2301,7 @@
       "uid": 3000,
       "armed": true,
       "dispatch_line": true,
+      "repo_url": "https://github.com/hf7y/vim-arcade.git",
       "roster_state": "live",
       "cron": [
         "17,37,57 * * * * PACED_MAX_PER_TICK=1 /home/vim-arcade/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -2422,6 +2436,7 @@
       "uid": 3013,
       "armed": true,
       "dispatch_line": true,
+      "repo_url": "https://github.com/hf7y/wtul.git",
       "roster_state": "live",
       "cron": [
         "6,26,46 * * * * PACED_MAX_PER_TICK=1 /home/wtul/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -2555,10 +2570,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-06T19:00:01Z",
+    "generated": "2026-09-06T19:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-06T19:30:01Z",
+    "valid_until": "2026-09-06T19:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2566,11 +2581,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 5 days, 23 hours, 50 minutes",
+    "uptime": "up 6 days, 0 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-06T19:00:01Z"
+      "sampled_at": "2026-09-06T19:10:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
