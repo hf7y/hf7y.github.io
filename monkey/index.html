@@ -87,6 +87,7 @@ fetch("status.json?t="+Date.now()).then(r=>r.json()).then(d=>{
                  ([,m])=>m===null || (m && +m.slice(-1)!==0)));
   const ident  = A.filter(a=>a.identity && a.identity.clones.length);
   const idDark = A.filter(a=>a.identity===null);
+  const fed    = A.filter(a=>a.milestone_self_fed && a.milestone_self_fed.current);
 
   let head, cls, note="";
   if (unwatched) {
@@ -182,6 +183,16 @@ fetch("status.json?t="+Date.now()).then(r=>r.json()).then(d=>{
   if (dark.length) items.push(`${el("warn",`${dark.length} armed with an empty ledger`)} &mdash;
      ${dark.map(a=>`<code>${H(a.account)}</code>`).join(", ")}. Cron holds a runner for each;
      none has ever recorded a run.`);
+  // hf7y/scheduler#575: an agent-filed milestone still counts as actionable
+  // and dispatch proceeds, but a self-fed repo is visible here rather than
+  // only in a ledger nobody opens. One dispatch is ordinary; the streak is
+  // what turns it into something to watch.
+  fed.forEach(a=>{
+    const m=a.milestone_self_fed;
+    items.push(`${el("warn",`<code>${H(a.account)}</code> milestone self-fed`)} &mdash;
+      ${m.streak} consecutive dispatch${m.streak>1?"es":""} let through on agent-filed
+      issues only, no human's, since ${H(ago(m.since))}. hf7y/scheduler#575.`);
+  });
   const findings = items.length
     ? `<h2>findings</h2><ul class="find">${items.map(i=>`<li>${i}</li>`).join("")}</ul>` : "";
 
