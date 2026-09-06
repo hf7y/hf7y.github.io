@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-06T08:20:02Z",
-  "valid_until": "2026-09-07T12:20:02Z",
+  "generated": "2026-09-06T08:30:02Z",
+  "valid_until": "2026-09-07T12:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -147,6 +147,23 @@
       "release_tick": "2026-09-05T10:21:02Z rc=1 pin=2026-09-01T030800Z 2 ok, 0 gap, 1 bad",
       "runs": [
         {
+          "run_id": "american-cycle-nightly-batch-1788682870",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-06T03:21:10-05:00",
+          "ended_at": "2026-09-06T03:21:41-05:00",
+          "elapsed_s": 34,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "american-cycle-nightly-batch-1788682453",
           "job": "american-cycle-nightly-batch",
           "started_at": "2026-09-06T03:14:13-05:00",
@@ -213,31 +230,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788679643",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-06T02:27:23-05:00",
-          "ended_at": "2026-09-06T02:27:46-05:00",
-          "elapsed_s": 26,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1788682453",
+        "run_id": "american-cycle-nightly-batch-1788682870",
         "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-06T03:14:13-05:00",
-        "ended_at": "2026-09-06T03:14:36-05:00",
-        "elapsed_s": 25,
+        "started_at": "2026-09-06T03:21:10-05:00",
+        "ended_at": "2026-09-06T03:21:41-05:00",
+        "elapsed_s": 34,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -275,6 +275,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "apms-nightly-batch-1788683106",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-06T03:25:06-05:00",
+          "ended_at": "2026-09-06T03:28:05-05:00",
+          "elapsed_s": 182,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "apms-nightly-batch-1788681007",
           "job": "apms-nightly-batch",
@@ -342,39 +359,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "apms-nightly-batch-1788676334",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-06T01:32:14-05:00",
-          "ended_at": "2026-09-06T01:36:32-05:00",
-          "elapsed_s": 260,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788681007",
+        "run_id": "apms-nightly-batch-1788683106",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-06T02:50:07-05:00",
-        "ended_at": "2026-09-06T02:52:31-05:00",
-        "elapsed_s": 146,
+        "started_at": "2026-09-06T03:25:06-05:00",
+        "ended_at": "2026-09-06T03:28:05-05:00",
+        "elapsed_s": 182,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -659,6 +659,23 @@
       "release_tick": null,
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788682726",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-06T03:18:46-05:00",
+          "ended_at": "2026-09-06T03:22:17-05:00",
+          "elapsed_s": 214,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "chezz-nightly-batch-1788680123",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-06T02:35:23-05:00",
@@ -725,31 +742,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788674829",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-06T01:07:09-05:00",
-          "ended_at": "2026-09-06T01:17:11-05:00",
-          "elapsed_s": 604,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788680123",
+        "run_id": "chezz-nightly-batch-1788682726",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-06T02:35:23-05:00",
-        "ended_at": "2026-09-06T02:42:45-05:00",
-        "elapsed_s": 444,
+        "started_at": "2026-09-06T03:18:46-05:00",
+        "ended_at": "2026-09-06T03:22:17-05:00",
+        "elapsed_s": 214,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -918,6 +918,23 @@
       "release_tick": "2026-09-05T10:56:02Z rc=1 pin=2026-09-01T030800Z 2 ok, 0 gap, 1 bad",
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1788682593",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-06T03:16:33-05:00",
+          "ended_at": "2026-09-06T03:28:31-05:00",
+          "elapsed_s": 721,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1788680891",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-09-06T02:48:11-05:00",
@@ -984,31 +1001,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788674445",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-06T01:00:45-05:00",
-          "ended_at": "2026-09-06T01:17:40-05:00",
-          "elapsed_s": 1017,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788680891",
+        "run_id": "dcp-gate-site-nightly-batch-1788682593",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-06T02:48:11-05:00",
-        "ended_at": "2026-09-06T02:52:19-05:00",
-        "elapsed_s": 250,
+        "started_at": "2026-09-06T03:16:33-05:00",
+        "ended_at": "2026-09-06T03:28:31-05:00",
+        "elapsed_s": 721,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1149,7 +1149,11 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Only #97/#118 open (milestone 1), both re-verified blocked on Zach-only actions (secret paste, crontab edit); no repo-side action available."
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "ecosim@selfdev.invalid",
         "clones": []
@@ -1272,7 +1276,11 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Merged #176 (calendar-invalid snapshot dir, left unmerged from a prior run); found and fixed a residual gap it left (incomplete_snapshots silently swallowed a calendar-invalid dir that carried a completion marker) as #177/#178; both branches' suites green (main 311 tests, bashified 11 CI jobs); remaining backlog (#23/#25/#29/#30/#31/#70) still genuinely blocked on real mandark/dexter host access this sandbox lacks, #26 still Zach's own call."
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "gardien@selfdev.invalid",
         "clones": []
@@ -1295,6 +1303,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "groc-mangr-nightly-batch-1788682860",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-06T03:21:00-05:00",
+          "ended_at": "2026-09-06T03:27:47-05:00",
+          "elapsed_s": 410,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "groc-mangr-nightly-batch-1788681848",
           "job": "groc-mangr-nightly-batch",
@@ -1362,31 +1387,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788675848",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-06T01:24:08-05:00",
-          "ended_at": "2026-09-06T01:45:48-05:00",
-          "elapsed_s": 1302,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788681848",
+        "run_id": "groc-mangr-nightly-batch-1788682860",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-06T03:04:08-05:00",
-        "ended_at": "2026-09-06T03:11:55-05:00",
-        "elapsed_s": 470,
+        "started_at": "2026-09-06T03:21:00-05:00",
+        "ended_at": "2026-09-06T03:27:47-05:00",
+        "elapsed_s": 410,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1654,7 +1662,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "realisateur@selfdev.invalid",
         "clones": []
@@ -1676,6 +1688,23 @@
       ],
       "release_tick": null,
       "runs": [
+        {
+          "run_id": "scheduler-paced-dev-1788682524",
+          "job": "scheduler-paced-dev",
+          "started_at": "2026-09-06T03:15:24-05:00",
+          "ended_at": "2026-09-06T03:20:59-05:00",
+          "elapsed_s": 338,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "scheduler-paced-dev-1788679922",
           "job": "scheduler-paced-dev",
@@ -1743,37 +1772,20 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-paced-dev-1788671637",
-          "job": "scheduler-paced-dev",
-          "started_at": "2026-09-06T00:13:57-05:00",
-          "ended_at": "2026-09-06T00:35:54-05:00",
-          "elapsed_s": 1322,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 4,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-paced-dev-1788679922",
+        "run_id": "scheduler-paced-dev-1788682524",
         "job": "scheduler-paced-dev",
-        "started_at": "2026-09-06T02:32:02-05:00",
-        "ended_at": "2026-09-06T03:02:10-05:00",
-        "elapsed_s": 1810,
+        "started_at": "2026-09-06T03:15:24-05:00",
+        "ended_at": "2026-09-06T03:20:59-05:00",
+        "elapsed_s": 338,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
-        "issues_opened": 1,
-        "issues_closed": 0,
-        "prs_opened": 1,
+        "commits_added": 0,
+        "issues_opened": 0,
+        "issues_closed": 1,
+        "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "WORKED",
         "claimed_verdict": "none",
@@ -2439,10 +2451,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-06T08:20:02Z",
+    "generated": "2026-09-06T08:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-06T08:50:02Z",
+    "valid_until": "2026-09-06T09:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2450,11 +2462,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 5 days, 13 hours, 9 minutes",
+    "uptime": "up 5 days, 13 hours, 19 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-06T08:20:02Z"
+      "sampled_at": "2026-09-06T08:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
