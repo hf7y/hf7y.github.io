@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-06T23:30:02Z",
-  "valid_until": "2026-09-08T03:30:02Z",
+  "generated": "2026-09-06T23:40:12Z",
+  "valid_until": "2026-09-08T03:40:12Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -159,6 +159,23 @@
       },
       "runs": [
         {
+          "run_id": "american-cycle-nightly-batch-1788734314",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-06T22:38:34Z",
+          "ended_at": "2026-09-06T23:38:53Z",
+          "elapsed_s": 3621,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 2,
+          "issues_opened": 2,
+          "issues_closed": 3,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "american-cycle-nightly-batch-1788732305",
           "job": "american-cycle-nightly-batch",
           "started_at": "2026-09-06T22:05:05Z",
@@ -225,38 +242,21 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788726655",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-06T20:30:55Z",
-          "ended_at": "2026-09-06T20:59:07Z",
-          "elapsed_s": 1694,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1788732305",
+        "run_id": "american-cycle-nightly-batch-1788734314",
         "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-06T22:05:05Z",
-        "ended_at": "2026-09-06T22:37:20Z",
-        "elapsed_s": 1938,
+        "started_at": "2026-09-06T22:38:34Z",
+        "ended_at": "2026-09-06T23:38:53Z",
+        "elapsed_s": 3621,
         "rc": 1,
         "status": "FAILED (ceiling: max turns reached)",
-        "commits_added": 3,
-        "issues_opened": 0,
-        "issues_closed": 0,
+        "commits_added": 2,
+        "issues_opened": 2,
+        "issues_closed": 3,
         "prs_opened": 1,
-        "prs_merged": 0,
+        "prs_merged": 1,
         "verdict_computed": "WORKED-CUTOFF",
         "claimed_verdict": "none",
         "claimed_reason": ""
@@ -1070,7 +1070,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "dcp-gate-site@selfdev.invalid",
         "clones": []
@@ -1370,6 +1374,23 @@
       },
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788735360",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-06T22:56:00Z",
+          "ended_at": "2026-09-06T23:34:20Z",
+          "elapsed_s": 2302,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "landed #171 (live retry-reconciliation bug, PR merged); milestone's remaining items all genuinely blocked on dexter/HA hands or Zach's own replies, re-confirmed tonight"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788734122",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-06T22:35:22Z",
@@ -1436,31 +1457,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788727449",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-06T20:44:09Z",
-          "ended_at": "2026-09-06T20:47:42Z",
-          "elapsed_s": 215,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788734122",
+        "run_id": "groc-mangr-nightly-batch-1788735360",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-06T22:35:22Z",
-        "ended_at": "2026-09-06T22:52:52Z",
-        "elapsed_s": 1053,
+        "started_at": "2026-09-06T22:56:00Z",
+        "ended_at": "2026-09-06T23:34:20Z",
+        "elapsed_s": 2302,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1469,8 +1473,8 @@
         "prs_opened": 1,
         "prs_merged": 1,
         "verdict_computed": "WORKED",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "landed PR 170 fixing an orphaned zaxon ticket bug found via a live #106 check; milestone 27 waits on Zach's reply to two live tickets and on dexter/mandark ssh access refused/denied fresh tonight"
+        "claimed_verdict": "CONTINUE",
+        "claimed_reason": "landed #171 (live retry-reconciliation bug, PR merged); milestone's remaining items all genuinely blocked on dexter/HA hands or Zach's own replies, re-confirmed tonight"
       },
       "containment": {
         "foreign_clones": [],
@@ -2578,10 +2582,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-06T23:30:01Z",
+    "generated": "2026-09-06T23:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T00:00:01Z",
+    "valid_until": "2026-09-07T00:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2589,11 +2593,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 4 hours, 20 minutes",
+    "uptime": "up 6 days, 4 hours, 30 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-06T23:30:01Z"
+      "sampled_at": "2026-09-06T23:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
