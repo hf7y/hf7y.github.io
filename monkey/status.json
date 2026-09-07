@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T12:20:02Z",
-  "valid_until": "2026-09-08T16:20:02Z",
+  "generated": "2026-09-07T12:30:02Z",
+  "valid_until": "2026-09-08T16:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -529,11 +529,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Merged #78 (grocy_api_key /etc/selfdev fan-out, docs-only) and deleted the stale already-merged circadian-ramp-vs-night-fade-hold-17 branch; reconfirmed every remaining open issue (#17,#18,#19,#22,#29,#30,#42,#68,#13,#14) chains to the same wall -- baudin@monkey has no .session-handoff/ha_token (ha-probe.sh exits 1: 'no HA token at .../ha_token'), confirmed live this run -- or to a human decision already correctly labeled needs-human (#29 Midea unit count, #42 route1-vs-route2, #13 ARRIS port-fo"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "baudin@selfdev.invalid",
         "clones": []
@@ -664,11 +660,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Milestone #35/#37/#38 all mechanism-vendored (scripts, works.json, deploy+test in #92); every remaining step needs a privileged human act (sudo mandark, dexter docker access, or the tracked realisateur#1008 rescue), no request-queue issues open."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "bibliothecaire@selfdev.invalid",
         "clones": []
@@ -1374,6 +1366,40 @@
       },
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788783948",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-07T12:25:48Z",
+          "ended_at": "2026-09-07T12:29:21Z",
+          "elapsed_s": 216,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "CDP refused, dexter ssh refused, mandark ssh denied, zaxon window ticket stale and past the 12h-knowable floor, no new issues or walls cleared"
+        },
+        {
+          "run_id": "groc-mangr-nightly-batch-1788783310",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-07T12:15:10Z",
+          "ended_at": "2026-09-07T12:23:22Z",
+          "elapsed_s": 495,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "CDP refused, dexter ssh refused, mandark ssh denied, zaxon window ticket stale and past the 12h-knowable floor, no new issues or walls cleared"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788780818",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-07T11:33:38Z",
@@ -1423,64 +1449,26 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Shipped PR #177 (spoiled-vs-consumed split on #59); milestone #27 dependencies #82/#87/#88/#148 reconfirmed blocked on unchanged walls, tree clean, tests 450/450"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788778517",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-07T10:55:17Z",
-          "ended_at": "2026-09-07T11:04:49Z",
-          "elapsed_s": 574,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Shipped PR #177 (spoiled-vs-consumed split on #59); milestone #27 dependencies #82/#87/#88/#148 reconfirmed blocked on unchanged walls, tree clean, tests 450/450"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788777746",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-07T10:42:26Z",
-          "ended_at": "2026-09-07T10:53:53Z",
-          "elapsed_s": 690,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Shipped PR #177 (spoiled-vs-consumed split on #59); milestone #27 dependencies #82/#87/#88/#148 reconfirmed blocked on unchanged walls, tree clean, tests 450/450"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788780818",
+        "run_id": "groc-mangr-nightly-batch-1788783948",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-07T11:33:38Z",
-        "ended_at": "2026-09-07T11:42:27Z",
-        "elapsed_s": 532,
+        "started_at": "2026-09-07T12:25:48Z",
+        "ended_at": "2026-09-07T12:29:21Z",
+        "elapsed_s": 216,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "PR 179 landed (item 4 of 87); everything else blocked on dexter shell, CDP, or Zach's phone-side Tailscale install, all reconfirmed unchanged"
+        "claimed_reason": "CDP refused, dexter ssh refused, mandark ssh denied, zaxon window ticket stale and past the 12h-knowable floor, no new issues or walls cleared"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "groc-mangr@selfdev.invalid",
         "clones": []
@@ -1900,11 +1888,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "ci@realisateur.invalid",
         "clones": [
@@ -2046,11 +2030,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Only open issue is #17 (needs-human DECISION: which host runs the HP 8710 printer remedy); 21-day default not yet reached (set 2026-09-02); re-verified full test suite green; nothing else actionable"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "secretaire@selfdev.invalid",
         "clones": []
@@ -2181,11 +2161,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "test@example.com",
         "clones": []
@@ -2314,11 +2290,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "sequestria@selfdev.invalid",
         "clones": []
@@ -2603,10 +2575,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T12:20:02Z",
+    "generated": "2026-09-07T12:30:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T12:50:02Z",
+    "valid_until": "2026-09-07T13:00:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2614,11 +2586,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 17 hours, 9 minutes",
+    "uptime": "up 6 days, 17 hours, 19 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T12:20:02Z"
+      "sampled_at": "2026-09-07T12:30:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
