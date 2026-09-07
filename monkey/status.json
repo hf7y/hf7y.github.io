@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T18:20:02Z",
-  "valid_until": "2026-09-08T22:20:02Z",
+  "generated": "2026-09-07T18:30:32Z",
+  "valid_until": "2026-09-08T22:30:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -159,6 +159,23 @@
       },
       "runs": [
         {
+          "run_id": "american-cycle-nightly-batch-1788805232",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-07T18:20:32Z",
+          "ended_at": "2026-09-07T18:26:05Z",
+          "elapsed_s": 336,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "american-cycle-nightly-batch-1788803713",
           "job": "american-cycle-nightly-batch",
           "started_at": "2026-09-07T17:55:13Z",
@@ -225,39 +242,22 @@
           "verdict_computed": "FAILED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788796021",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-07T15:47:01Z",
-          "ended_at": "2026-09-07T16:08:09Z",
-          "elapsed_s": 1271,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1788803713",
+        "run_id": "american-cycle-nightly-batch-1788805232",
         "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-07T17:55:13Z",
-        "ended_at": "2026-09-07T18:18:38Z",
-        "elapsed_s": 1408,
+        "started_at": "2026-09-07T18:20:32Z",
+        "ended_at": "2026-09-07T18:26:05Z",
+        "elapsed_s": 336,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
+        "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -293,6 +293,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "apms-nightly-batch-1788805045",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-07T18:17:25Z",
+          "ended_at": "2026-09-07T18:21:26Z",
+          "elapsed_s": 244,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "Re-checked: no canvas.token, no CANVAS_TOKEN env var in this checkout for #86 and #55; no real class recording exists anywhere and session 03 is still 2026-09-14, 7 days out"
+        },
         {
           "run_id": "apms-nightly-batch-1788802640",
           "job": "apms-nightly-batch",
@@ -360,31 +377,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "no canvas.token in this checkout; class session 03 is 2026-09-14, not yet happened"
-        },
-        {
-          "run_id": "apms-nightly-batch-1788792697",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-07T14:51:37Z",
-          "ended_at": "2026-09-07T14:54:04Z",
-          "elapsed_s": 150,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "no canvas.token credential; no class recording until 2026-09-14"
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788802640",
+        "run_id": "apms-nightly-batch-1788805045",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-07T17:37:20Z",
-        "ended_at": "2026-09-07T17:39:42Z",
-        "elapsed_s": 145,
+        "started_at": "2026-09-07T18:17:25Z",
+        "ended_at": "2026-09-07T18:21:26Z",
+        "elapsed_s": 244,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -394,7 +394,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "Both open issues (#86, #55) need a canvas.token this scheduled checkout deliberately lacks (confirmed absent) and #86 also needs the 2026-09-14 class session"
+        "claimed_reason": "Re-checked: no canvas.token, no CANVAS_TOKEN env var in this checkout for #86 and #55; no real class recording exists anywhere and session 03 is still 2026-09-14, 7 days out"
       },
       "containment": {
         "foreign_clones": [],
@@ -529,7 +529,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Merged #78 (grocy_api_key /etc/selfdev fan-out, docs-only) and deleted the stale already-merged circadian-ramp-vs-night-fade-hold-17 branch; reconfirmed every remaining open issue (#17,#18,#19,#22,#29,#30,#42,#68,#13,#14) chains to the same wall -- baudin@monkey has no .session-handoff/ha_token (ha-probe.sh exits 1: 'no HA token at .../ha_token'), confirmed live this run -- or to a human decision already correctly labeled needs-human (#29 Midea unit count, #42 route1-vs-route2, #13 ARRIS port-fo"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "baudin@selfdev.invalid",
         "clones": []
@@ -2599,22 +2603,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T18:20:02Z",
+    "generated": "2026-09-07T18:30:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T18:50:02Z",
-    "verdict": "OK",
-    "why": "running, sshd answering, root rw, disk internal",
-    "vm_state": "running",
-    "disk": "C:\\WSL\\monkey",
-    "disk_home": "internal",
+    "valid_until": "2026-09-07T19:00:01Z",
+    "verdict": "DEGRADED",
+    "why": "the host could not read the VM state, but sshd answers -- it is up",
+    "vm_state": "unknown",
+    "disk": "",
+    "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 23 hours, 9 minutes",
+    "uptime": "up 6 days, 23 hours, 20 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T18:20:02Z"
+      "sampled_at": "2026-09-07T18:30:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
