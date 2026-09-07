@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T22:20:32Z",
-  "valid_until": "2026-09-09T02:20:32Z",
+  "generated": "2026-09-07T22:30:13Z",
+  "valid_until": "2026-09-09T02:30:13Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -697,6 +697,23 @@
       },
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788819847",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-07T22:24:07Z",
+          "ended_at": "2026-09-07T22:27:52Z",
+          "elapsed_s": 228,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "chezz-nightly-batch-1788817398",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-07T21:43:18Z",
@@ -763,31 +780,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788804916",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-07T18:15:16Z",
-          "ended_at": "2026-09-07T18:15:56Z",
-          "elapsed_s": 43,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788817398",
+        "run_id": "chezz-nightly-batch-1788819847",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-07T21:43:18Z",
-        "ended_at": "2026-09-07T21:44:26Z",
-        "elapsed_s": 71,
+        "started_at": "2026-09-07T22:24:07Z",
+        "ended_at": "2026-09-07T22:27:52Z",
+        "elapsed_s": 228,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -831,6 +831,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "crt-nightly-batch-1788814960",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-07T21:02:40Z",
+          "ended_at": "2026-09-07T22:21:01Z",
+          "elapsed_s": 4704,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 6,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 6,
+          "prs_merged": 6,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "crt-nightly-batch-1788809947",
           "job": "crt-nightly-batch",
@@ -898,47 +915,26 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1788802179",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-07T17:29:39Z",
-          "ended_at": "2026-09-07T17:41:58Z",
-          "elapsed_s": 743,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788809947",
+        "run_id": "crt-nightly-batch-1788814960",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-07T19:39:07Z",
-        "ended_at": "2026-09-07T19:48:49Z",
-        "elapsed_s": 585,
+        "started_at": "2026-09-07T21:02:40Z",
+        "ended_at": "2026-09-07T22:21:01Z",
+        "elapsed_s": 4704,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 6,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 0,
+        "issues_closed": 1,
+        "prs_opened": 6,
+        "prs_merged": 6,
         "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "crt@selfdev.invalid",
         "clones": []
@@ -967,6 +963,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "dcp-gate-site-nightly-batch-1788819712",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-07T22:21:52Z",
+          "ended_at": "2026-09-07T22:29:28Z",
+          "elapsed_s": 458,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "All 3 agent-actionable issues re-verified blocked on humans/other repos tonight: #34 dexter SSH still refused (ssh -p 2223 dexter -> Permission denied publickey,password, re-tested just now), #104 fix lives in hf7y/etalon#36 (draft PR passing, still awaiting their self-dev review/merge, not my call), #106 needs Netlify dashboard access this seat lacks (which netlify and env netlify both empty, re-checked). Nothing left to build in this repo tonight; #27 is DECISION: awaiting Zach."
+        },
         {
           "run_id": "dcp-gate-site-nightly-batch-1788817266",
           "job": "dcp-gate-site-nightly-batch",
@@ -1034,47 +1047,26 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "All 3 agent-actionable issues re-verified blocked on humans/other repos tonight: #34 dexter SSH still refused (ssh -p 2223 dexter -> Permission denied publickey,password, re-tested just now), #104 fix lives in hf7y/etalon#36 (draft PR passing, still awaiting their self-dev review/merge, not my call), #106 needs Netlify dashboard access this seat lacks (which netlify and env netlify both empty, re-checked). Nothing left to build in this repo tonight; #27 is DECISION: awaiting Zach."
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788804785",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-07T18:13:05Z",
-          "ended_at": "2026-09-07T18:17:49Z",
-          "elapsed_s": 287,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "All 3 agent-actionable issues re-verified blocked on humans/other repos tonight: #34 dexter SSH still refused (ssh -p 2223 dexter -> Permission denied publickey,password, re-tested just now), #104 fix lives in hf7y/etalon#36 (draft PR passing, still awaiting their self-dev review/merge, not my call), #106 needs Netlify dashboard access this seat lacks (which netlify and env netlify both empty, re-checked). Nothing left to build in this repo tonight; #27 is DECISION: awaiting Zach."
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788817266",
+        "run_id": "dcp-gate-site-nightly-batch-1788819712",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-07T21:41:06Z",
-        "ended_at": "2026-09-07T21:44:52Z",
-        "elapsed_s": 229,
+        "started_at": "2026-09-07T22:21:52Z",
+        "ended_at": "2026-09-07T22:29:28Z",
+        "elapsed_s": 458,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "All 3 agent-actionable issues re-verified blocked on humans/other repos tonight: #34 dexter SSH still refused (ssh -p 2223 dexter -> Permission denied publickey,password, re-tested just now), #104 fix lives in hf7y/etalon#36 (draft PR passing, still awaiting their self-dev review/merge, not my call), #106 needs Netlify dashboard access this seat lacks (which netlify and env netlify both empty, re-checked). Nothing left to build in this repo tonight; #27 is DECISION: awaiting Zach."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "dcp-gate-site@selfdev.invalid",
         "clones": []
@@ -2603,22 +2595,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T22:20:02Z",
+    "generated": "2026-09-07T22:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T22:50:02Z",
-    "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
+    "valid_until": "2026-09-07T23:00:02Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
     "disk": "",
     "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 3 hours, 10 minutes",
+    "uptime": "up 1 week, 3 hours, 20 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T22:20:02Z"
+      "sampled_at": "2026-09-07T22:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
