@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T06:30:12Z",
-  "valid_until": "2026-09-08T10:30:12Z",
+  "generated": "2026-09-07T06:40:02Z",
+  "valid_until": "2026-09-08T10:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -125,7 +125,11 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "real-media run landed for #2 (offline path declared winner); #5 blocked on SSH creds, not DNS; #18/#6/#28 unchanged, all genuinely blocked or parked"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "abletim@selfdev.invalid",
         "clones": []
@@ -154,6 +158,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "american-cycle-nightly-batch-1788762183",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-07T06:23:03Z",
+          "ended_at": "2026-09-07T06:30:28Z",
+          "elapsed_s": 448,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "american-cycle-nightly-batch-1788760334",
           "job": "american-cycle-nightly-batch",
@@ -221,39 +242,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788753669",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-07T04:01:09Z",
-          "ended_at": "2026-09-07T04:18:11Z",
-          "elapsed_s": 1025,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1788760334",
+        "run_id": "american-cycle-nightly-batch-1788762183",
         "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-07T05:52:14Z",
-        "ended_at": "2026-09-07T06:09:57Z",
-        "elapsed_s": 1066,
+        "started_at": "2026-09-07T06:23:03Z",
+        "ended_at": "2026-09-07T06:30:28Z",
+        "elapsed_s": 448,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
+        "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -828,6 +832,23 @@
       },
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1788762374",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-07T06:26:14Z",
+          "ended_at": "2026-09-07T06:30:50Z",
+          "elapsed_s": 279,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "crt-nightly-batch-1788761411",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-07T06:10:11Z",
@@ -894,31 +915,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "161 and 148 both need a privileged human seat, no new avenue this run"
-        },
-        {
-          "run_id": "crt-nightly-batch-1788756170",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-07T04:42:50Z",
-          "ended_at": "2026-09-07T04:58:39Z",
-          "elapsed_s": 951,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "161 and 148 both need a privileged human seat, no new avenue this run"
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788761411",
+        "run_id": "crt-nightly-batch-1788762374",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-07T06:10:11Z",
-        "ended_at": "2026-09-07T06:16:06Z",
-        "elapsed_s": 358,
+        "started_at": "2026-09-07T06:26:14Z",
+        "ended_at": "2026-09-07T06:30:50Z",
+        "elapsed_s": 279,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2600,10 +2604,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T06:30:02Z",
+    "generated": "2026-09-07T06:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T07:00:02Z",
+    "valid_until": "2026-09-07T07:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2611,11 +2615,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 11 hours, 20 minutes",
+    "uptime": "up 6 days, 11 hours, 29 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T06:30:02Z"
+      "sampled_at": "2026-09-07T06:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
