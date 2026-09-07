@@ -1,23 +1,23 @@
 {
   "schema": 3,
-  "generated": "2026-09-06T06:11:08Z",
-  "valid_until": "2026-09-07T10:11:08Z",
+  "generated": "2026-09-07T03:18:16Z",
+  "valid_until": "2026-09-08T07:18:16Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "cut_interval_days": 30,
-  "decision": "NO_CHANGE",
-  "reason": "payload changed, waiting on the cut interval (last cut 5d ago, interval is 30d)",
-  "main_sha": "a8069cd",
-  "ci_run": "34015816705",
-  "build_id": null,
+  "decision": "CUT",
+  "reason": "18 verb(s) cut",
+  "main_sha": "dfe7c1f",
+  "ci_run": "34078406758",
+  "build_id": "2026-09-07T031807Z",
   "blocked_streak": 0,
   "last_cut": {
-    "at": "2026-09-01T03:08:05Z",
+    "at": "2026-09-07T03:18:16Z",
     "decision": "CUT",
-    "reason": "17 verb(s) cut",
-    "main_sha": "51b5f91",
-    "ci_run": "33462382621",
-    "build_id": "2026-09-01T030800Z"
+    "reason": "18 verb(s) cut",
+    "main_sha": "dfe7c1f",
+    "ci_run": "34078406758",
+    "build_id": "2026-09-07T031807Z"
   },
   "decisions_enum": [
     "CUT",
@@ -26,6 +26,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-09-07T03:18:16Z",
+      "decision": "CUT",
+      "reason": "18 verb(s) cut",
+      "main_sha": "dfe7c1f",
+      "ci_run": "34078406758",
+      "build_id": "2026-09-07T031807Z"
+    },
     {
       "at": "2026-09-06T06:11:08Z",
       "decision": "NO_CHANGE",
