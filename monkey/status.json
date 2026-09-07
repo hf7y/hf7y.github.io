@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T23:40:32Z",
-  "valid_until": "2026-09-09T03:40:32Z",
+  "generated": "2026-09-07T23:50:12Z",
+  "valid_until": "2026-09-09T03:50:12Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -125,11 +125,7 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "real-media run landed for #2 (offline path declared winner); #5 blocked on SSH creds, not DNS; #18/#6/#28 unchanged, all genuinely blocked or parked"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "abletim@selfdev.invalid",
         "clones": []
@@ -261,7 +257,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "american-cycle@selfdev.invalid",
         "clones": []
@@ -392,7 +392,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "canvas.token missing for #55/#86; session 03 recording not yet captured"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "apms@selfdev.invalid",
         "clones": []
@@ -521,11 +525,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Merged #78 (grocy_api_key /etc/selfdev fan-out, docs-only) and deleted the stale already-merged circadian-ramp-vs-night-fade-hold-17 branch; reconfirmed every remaining open issue (#17,#18,#19,#22,#29,#30,#42,#68,#13,#14) chains to the same wall -- baudin@monkey has no .session-handoff/ha_token (ha-probe.sh exits 1: 'no HA token at .../ha_token'), confirmed live this run -- or to a human decision already correctly labeled needs-human (#29 Midea unit count, #42 route1-vs-route2, #13 ARRIS port-fo"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "baudin@selfdev.invalid",
         "clones": []
@@ -689,6 +689,23 @@
       },
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788824718",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-07T23:45:18Z",
+          "ended_at": "2026-09-07T23:46:14Z",
+          "elapsed_s": 59,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "chezz-nightly-batch-1788822256",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-07T23:04:16Z",
@@ -755,31 +772,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788809810",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-07T19:36:50Z",
-          "ended_at": "2026-09-07T19:38:53Z",
-          "elapsed_s": 126,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788822256",
+        "run_id": "chezz-nightly-batch-1788824718",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-07T23:04:16Z",
-        "ended_at": "2026-09-07T23:06:07Z",
-        "elapsed_s": 114,
+        "started_at": "2026-09-07T23:45:18Z",
+        "ended_at": "2026-09-07T23:46:14Z",
+        "elapsed_s": 59,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1062,11 +1062,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "All 3 agent-actionable issues re-verified blocked on humans/other repos tonight: #34 dexter SSH still refused (ssh -p 2223 dexter -> Permission denied publickey,password, re-tested just now), #104 fix lives in hf7y/etalon#36 (draft PR passing, still awaiting their self-dev review/merge, not my call), #106 needs Netlify dashboard access this seat lacks (which netlify and env netlify both empty, re-checked). Nothing left to build in this repo tonight; #27 is DECISION: awaiting Zach."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "dcp-gate-site@selfdev.invalid",
         "clones": []
@@ -1601,11 +1597,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Re-verified suite (219 passed) + sim smoke clean; fresh adversarial read of hardware/{endpoint_process,network_endpoint,registry,supervisor,endpoint_cli,channel_map,level_balance,pd_lint}.py and nine_speakers/sim.py found no new defect -- codebase is now thoroughly hardened after 30+ prior passes. Remaining milestone (#5) work -- #64 (card bring-up), #59/#60 (projector hardware facts), #62 (zaxon ownership) -- is genuinely blocked on Zach's physical hardware/decision, not on further code."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "nine-speakers@selfdev.invalid",
         "clones": []
@@ -1633,6 +1625,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "realisateur-shotgun-1788824033",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-07T23:33:53Z",
+          "ended_at": "2026-09-07T23:42:16Z",
+          "elapsed_s": 507,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 1,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "realisateur-shotgun-1788823017",
           "job": "realisateur-shotgun",
@@ -1700,39 +1709,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788817661",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-07T21:47:41Z",
-          "ended_at": "2026-09-07T21:51:10Z",
-          "elapsed_s": 212,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788823017",
+        "run_id": "realisateur-shotgun-1788824033",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-07T23:16:57Z",
-        "ended_at": "2026-09-07T23:18:27Z",
-        "elapsed_s": 93,
+        "started_at": "2026-09-07T23:33:53Z",
+        "ended_at": "2026-09-07T23:42:16Z",
+        "elapsed_s": 507,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
-        "issues_opened": 0,
+        "commits_added": 1,
+        "issues_opened": 1,
         "issues_closed": 0,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2038,11 +2030,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Only open issue is #17 (needs-human DECISION: which host runs the HP 8710 printer remedy); 21-day default not yet reached (set 2026-09-02); re-verified full test suite green; nothing else actionable"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "secretaire@selfdev.invalid",
         "clones": []
@@ -2070,6 +2058,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "senechal-nightly-batch-1788823709",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-07T23:28:29Z",
+          "ended_at": "2026-09-07T23:45:33Z",
+          "elapsed_s": 1027,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "every open issue's next step needs mandark/dexter SSH (refused, tested live) or Zach's own hands/decision; all already documented in-thread"
+        },
         {
           "run_id": "senechal-nightly-batch-1788823077",
           "job": "senechal-nightly-batch",
@@ -2137,47 +2142,26 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "every open issue's next step needs mandark/dexter SSH (refused, tested live) or Zach's own hands/decision; all already documented in-thread"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788814829",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-07T21:00:29Z",
-          "ended_at": "2026-09-07T21:07:16Z",
-          "elapsed_s": 410,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "every open issue's next step needs mandark/dexter SSH (refused, tested live) or Zach's own hands/decision; all already documented in-thread"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788823077",
+        "run_id": "senechal-nightly-batch-1788823709",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-07T23:17:57Z",
-        "ended_at": "2026-09-07T23:27:16Z",
-        "elapsed_s": 562,
+        "started_at": "2026-09-07T23:28:29Z",
+        "ended_at": "2026-09-07T23:45:33Z",
+        "elapsed_s": 1027,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "every open issue's next step needs mandark/dexter SSH (refused, tested live) or Zach's own hands/decision; all already documented in-thread"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "test@example.com",
         "clones": []
@@ -2306,11 +2290,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "sequestria@selfdev.invalid",
         "clones": []
@@ -2441,7 +2421,11 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "Merged #239 (assignees-field migration, prose ratchet fixed) and closed #240; #235 (spawn-a-runner) remains open in milestone 3, unattempted this run"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
         "clones": []
@@ -2591,22 +2575,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T23:40:02Z",
+    "generated": "2026-09-07T23:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T00:10:02Z",
-    "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
-    "disk": "",
-    "disk_home": "unknown",
+    "valid_until": "2026-09-08T00:20:02Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 4 hours, 30 minutes",
+    "uptime": "up 1 week, 4 hours, 40 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T23:40:02Z"
+      "sampled_at": "2026-09-07T23:50:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
