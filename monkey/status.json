@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T11:30:02Z",
-  "valid_until": "2026-09-08T15:30:02Z",
+  "generated": "2026-09-07T11:40:32Z",
+  "valid_until": "2026-09-08T15:40:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -294,6 +294,23 @@
       },
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1788780502",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-07T11:28:22Z",
+          "ended_at": "2026-09-07T11:30:14Z",
+          "elapsed_s": 115,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "no canvas.token/CANVAS_TOKEN in this checkout; session 03 (STT recording) is 2026-09-14, not yet happened"
+        },
+        {
           "run_id": "apms-nightly-batch-1788778077",
           "job": "apms-nightly-batch",
           "started_at": "2026-09-07T10:47:57Z",
@@ -360,31 +377,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "No canvas.token in scheduled checkout (#55, #86); session 03 real class not until 2026-09-14 (#86)"
-        },
-        {
-          "run_id": "apms-nightly-batch-1788768737",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-07T08:12:17Z",
-          "ended_at": "2026-09-07T08:13:54Z",
-          "elapsed_s": 100,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "Both open issues (#86, #55) re-verified at current HEAD 9ddeebf ~80min ago: no canvas.token/CANVAS_TOKEN in this checkout, and #86 additionally waits on real session 03 (2026-09-14). Code side fully built (roll_call.py, standup.parse); only a human-placed credential or the calendar date unblocks either."
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788778077",
+        "run_id": "apms-nightly-batch-1788780502",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-07T10:47:57Z",
-        "ended_at": "2026-09-07T10:50:00Z",
-        "elapsed_s": 126,
+        "started_at": "2026-09-07T11:28:22Z",
+        "ended_at": "2026-09-07T11:30:14Z",
+        "elapsed_s": 115,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -394,7 +394,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "issues #86 #55 need a live canvas.token + real session 03 (2026-09-14); unchanged since 06:53Z today"
+        "claimed_reason": "no canvas.token/CANVAS_TOKEN in this checkout; session 03 (STT recording) is 2026-09-14, not yet happened"
       },
       "containment": {
         "foreign_clones": [],
@@ -2079,6 +2079,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788780036",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-07T11:20:36Z",
+          "ended_at": "2026-09-07T11:32:36Z",
+          "elapsed_s": 724,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "senechal-nightly-batch-1788777613",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-07T10:40:13Z",
@@ -2145,31 +2162,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788768160",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-07T08:02:40Z",
-          "ended_at": "2026-09-07T08:14:18Z",
-          "elapsed_s": 701,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788777613",
+        "run_id": "senechal-nightly-batch-1788780036",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-07T10:40:13Z",
-        "ended_at": "2026-09-07T10:55:57Z",
-        "elapsed_s": 947,
+        "started_at": "2026-09-07T11:20:36Z",
+        "ended_at": "2026-09-07T11:32:36Z",
+        "elapsed_s": 724,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2314,11 +2314,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "sequestria@selfdev.invalid",
         "clones": []
@@ -2449,11 +2445,7 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "Merged #239 (assignees-field migration, prose ratchet fixed) and closed #240; #235 (spawn-a-runner) remains open in milestone 3, unattempted this run"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
         "clones": []
@@ -2603,22 +2595,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T11:30:02Z",
+    "generated": "2026-09-07T11:40:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T12:00:02Z",
-    "verdict": "OK",
-    "why": "running, sshd answering, root rw, disk internal",
-    "vm_state": "running",
-    "disk": "C:\\WSL\\monkey",
-    "disk_home": "internal",
+    "valid_until": "2026-09-07T12:10:01Z",
+    "verdict": "DEGRADED",
+    "why": "the host could not read the VM state, but sshd answers -- it is up",
+    "vm_state": "unknown",
+    "disk": "",
+    "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 16 hours, 19 minutes",
+    "uptime": "up 6 days, 16 hours, 31 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T11:30:02Z"
+      "sampled_at": "2026-09-07T11:40:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
