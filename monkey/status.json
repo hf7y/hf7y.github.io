@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T11:40:32Z",
-  "valid_until": "2026-09-08T15:40:32Z",
+  "generated": "2026-09-07T11:50:02Z",
+  "valid_until": "2026-09-08T15:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1374,6 +1374,23 @@
       },
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788780818",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-07T11:33:38Z",
+          "ended_at": "2026-09-07T11:42:27Z",
+          "elapsed_s": 532,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "PR 179 landed (item 4 of 87); everything else blocked on dexter shell, CDP, or Zach's phone-side Tailscale install, all reconfirmed unchanged"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788780169",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-07T11:22:49Z",
@@ -1440,39 +1457,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "CONTINUE",
           "claimed_reason": "Shipped PR #177 (spoiled-vs-consumed split on #59); milestone #27 dependencies #82/#87/#88/#148 reconfirmed blocked on unchanged walls, tree clean, tests 450/450"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788775310",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-07T10:01:50Z",
-          "ended_at": "2026-09-07T10:11:51Z",
-          "elapsed_s": 604,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Shipped PR #177 (spoiled-vs-consumed split on #59); milestone #27 dependencies #82/#87/#88/#148 reconfirmed blocked on unchanged walls, tree clean, tests 450/450"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788780169",
+        "run_id": "groc-mangr-nightly-batch-1788780818",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-07T11:22:49Z",
-        "ended_at": "2026-09-07T11:27:09Z",
-        "elapsed_s": 263,
+        "started_at": "2026-09-07T11:33:38Z",
+        "ended_at": "2026-09-07T11:42:27Z",
+        "elapsed_s": 532,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "PR 179 landed (item 4 of 87); everything else blocked on dexter shell, CDP, or Zach's phone-side Tailscale install, all reconfirmed unchanged"
       },
@@ -2314,7 +2314,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "sequestria@selfdev.invalid",
         "clones": []
@@ -2445,7 +2449,11 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "Merged #239 (assignees-field migration, prose ratchet fixed) and closed #240; #235 (spawn-a-runner) remains open in milestone 3, unattempted this run"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
         "clones": []
@@ -2595,22 +2603,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T11:40:01Z",
+    "generated": "2026-09-07T11:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T12:10:01Z",
-    "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
-    "disk": "",
-    "disk_home": "unknown",
+    "valid_until": "2026-09-07T12:20:01Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 16 hours, 31 minutes",
+    "uptime": "up 6 days, 16 hours, 39 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T11:40:01Z"
+      "sampled_at": "2026-09-07T11:50:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
