@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T11:00:02Z",
-  "valid_until": "2026-09-08T15:00:02Z",
+  "generated": "2026-09-07T11:10:02Z",
+  "valid_until": "2026-09-08T15:10:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -125,7 +125,11 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "real-media run landed for #2 (offline path declared winner); #5 blocked on SSH creds, not DNS; #18/#6/#28 unchanged, all genuinely blocked or parked"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "abletim@selfdev.invalid",
         "clones": []
@@ -1370,6 +1374,23 @@
       },
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788778517",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-07T10:55:17Z",
+          "ended_at": "2026-09-07T11:04:49Z",
+          "elapsed_s": 574,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "Shipped PR #177 (spoiled-vs-consumed split on #59); milestone #27 dependencies #82/#87/#88/#148 reconfirmed blocked on unchanged walls, tree clean, tests 450/450"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788777746",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-07T10:42:26Z",
@@ -1436,38 +1457,21 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "window-confirm (7654d48a) and substitution asks (156808c1) both cooling; CDP/dexter/mandark all unreachable"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788768546",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-07T08:09:06Z",
-          "ended_at": "2026-09-07T08:18:54Z",
-          "elapsed_s": 591,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "re-verified fresh at 07:31Z: CDP=000, ssh dexter refused, ssh mandark denied, zaxon window ticket 7654d48a stale but correctly within 12h cooldown (~2.3h left), milestone #27/#59/#82/#87/#88 all confirmed genuinely blocked on dexter shell, Zach's own action, or a third-party input shape, no new mechanism found to build"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788777746",
+        "run_id": "groc-mangr-nightly-batch-1788778517",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-07T10:42:26Z",
-        "ended_at": "2026-09-07T10:53:53Z",
-        "elapsed_s": 690,
+        "started_at": "2026-09-07T10:55:17Z",
+        "ended_at": "2026-09-07T11:04:49Z",
+        "elapsed_s": 574,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 0,
+        "prs_opened": 0,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "Shipped PR #177 (spoiled-vs-consumed split on #59); milestone #27 dependencies #82/#87/#88/#148 reconfirmed blocked on unchanged walls, tree clean, tests 450/450"
@@ -1794,6 +1798,23 @@
       },
       "runs": [
         {
+          "run_id": "scheduler-shotgun-1788778298",
+          "job": "scheduler-shotgun",
+          "started_at": "2026-09-07T10:51:38Z",
+          "ended_at": "2026-09-07T11:02:39Z",
+          "elapsed_s": 664,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "scheduler-shotgun-1788775801",
           "job": "scheduler-shotgun",
           "started_at": "2026-09-07T10:10:01Z",
@@ -1860,43 +1881,30 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-shotgun-1788755032",
-          "job": "scheduler-shotgun",
-          "started_at": "2026-09-07T04:23:52Z",
-          "ended_at": "2026-09-07T04:30:37Z",
-          "elapsed_s": 408,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "v2#318: landed realisateur draft PR#1064 + vim-arcade draft PR#239 (both validation issues filed); confirmed #364's precondition still unmet via host evidence"
         }
       ],
       "last_run": {
-        "run_id": "scheduler-shotgun-1788775801",
+        "run_id": "scheduler-shotgun-1788778298",
         "job": "scheduler-shotgun",
-        "started_at": "2026-09-07T10:10:01Z",
-        "ended_at": "2026-09-07T10:20:41Z",
-        "elapsed_s": 643,
+        "started_at": "2026-09-07T10:51:38Z",
+        "ended_at": "2026-09-07T11:02:39Z",
+        "elapsed_s": 664,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 1,
         "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "ci@realisateur.invalid",
         "clones": [
@@ -2306,7 +2314,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "sequestria@selfdev.invalid",
         "clones": []
@@ -2437,7 +2449,11 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "Merged #239 (assignees-field migration, prose ratchet fixed) and closed #240; #235 (spawn-a-runner) remains open in milestone 3, unattempted this run"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
         "clones": []
@@ -2587,10 +2603,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T11:00:02Z",
+    "generated": "2026-09-07T11:10:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T11:30:02Z",
+    "valid_until": "2026-09-07T11:40:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2598,11 +2614,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 15 hours, 50 minutes",
+    "uptime": "up 6 days, 15 hours, 59 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T11:00:02Z"
+      "sampled_at": "2026-09-07T11:10:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
