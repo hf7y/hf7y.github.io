@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T01:00:32Z",
-  "valid_until": "2026-09-08T05:00:32Z",
+  "generated": "2026-09-07T01:10:32Z",
+  "valid_until": "2026-09-08T05:10:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -159,6 +159,23 @@
       },
       "runs": [
         {
+          "run_id": "american-cycle-nightly-batch-1788743028",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-07T01:03:48Z",
+          "ended_at": "2026-09-07T01:04:17Z",
+          "elapsed_s": 32,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "american-cycle-nightly-batch-1788742331",
           "job": "american-cycle-nightly-batch",
           "started_at": "2026-09-07T00:52:11Z",
@@ -225,31 +242,14 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788732305",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-06T22:05:05Z",
-          "ended_at": "2026-09-06T22:37:20Z",
-          "elapsed_s": 1938,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 3,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1788742331",
+        "run_id": "american-cycle-nightly-batch-1788743028",
         "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-07T00:52:11Z",
-        "ended_at": "2026-09-07T00:52:45Z",
-        "elapsed_s": 37,
+        "started_at": "2026-09-07T01:03:48Z",
+        "ended_at": "2026-09-07T01:04:17Z",
+        "elapsed_s": 32,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2582,10 +2582,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T01:00:01Z",
+    "generated": "2026-09-07T01:10:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T01:30:01Z",
+    "valid_until": "2026-09-07T01:40:01Z",
     "verdict": "DEGRADED",
     "why": "the host could not read the VM state, but sshd answers -- it is up",
     "vm_state": "unknown",
@@ -2593,11 +2593,11 @@
     "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 5 hours, 50 minutes",
+    "uptime": "up 6 days, 6 hours, 0 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T01:00:01Z"
+      "sampled_at": "2026-09-07T01:10:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
