@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T14:50:32Z",
-  "valid_until": "2026-09-08T18:50:32Z",
+  "generated": "2026-09-07T15:00:02Z",
+  "valid_until": "2026-09-08T19:00:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -261,7 +261,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "american-cycle@selfdev.invalid",
         "clones": []
@@ -289,6 +293,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "apms-nightly-batch-1788792697",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-07T14:51:37Z",
+          "ended_at": "2026-09-07T14:54:04Z",
+          "elapsed_s": 150,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "no canvas.token credential; no class recording until 2026-09-14"
+        },
         {
           "run_id": "apms-nightly-batch-1788782924",
           "job": "apms-nightly-batch",
@@ -356,31 +377,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "issues #86/#55 need canvas.token + #86 also needs session-03 recording (2026-09-14); both re-verified at HEAD 9ddeebf already today, no other open issues/PRs"
-        },
-        {
-          "run_id": "apms-nightly-batch-1788773021",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-07T09:23:41Z",
-          "ended_at": "2026-09-07T09:26:40Z",
-          "elapsed_s": 182,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "Issue 86 needs a real class recording (session 03 is 2026-09-14) and a canvas.token; issue 55 needs only a canvas.token, its probe (roll_call.py) already merged"
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788782924",
+        "run_id": "apms-nightly-batch-1788792697",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-07T12:08:44Z",
-        "ended_at": "2026-09-07T12:14:20Z",
-        "elapsed_s": 339,
+        "started_at": "2026-09-07T14:51:37Z",
+        "ended_at": "2026-09-07T14:54:04Z",
+        "elapsed_s": 150,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -390,7 +394,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "canvas.token missing for scheduled account (deliberate, per ROSTER); real class session needed for #86 recording; both already re-confirmed today 06:53 UTC, no state change since"
+        "claimed_reason": "no canvas.token credential; no class recording until 2026-09-14"
       },
       "containment": {
         "foreign_clones": [],
@@ -1197,7 +1201,11 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Only #97/#118 open (milestone 1), both re-verified blocked on Zach-only actions (secret paste, crontab edit); no repo-side action available."
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "ecosim@selfdev.invalid",
         "clones": []
@@ -1593,11 +1601,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Re-verified suite (219 passed) + sim smoke clean; fresh adversarial read of hardware/{endpoint_process,network_endpoint,registry,supervisor,endpoint_cli,channel_map,level_balance,pd_lint}.py and nine_speakers/sim.py found no new defect -- codebase is now thoroughly hardened after 30+ prior passes. Remaining milestone (#5) work -- #64 (card bring-up), #59/#60 (projector hardware facts), #62 (zaxon ownership) -- is genuinely blocked on Zach's physical hardware/decision, not on further code."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "nine-speakers@selfdev.invalid",
         "clones": []
@@ -1884,7 +1888,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "ci@realisateur.invalid",
         "clones": [
@@ -2059,6 +2067,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788792371",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-07T14:46:11Z",
+          "ended_at": "2026-09-07T14:53:29Z",
+          "elapsed_s": 441,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "senechal-nightly-batch-1788782535",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-07T12:02:15Z",
@@ -2125,31 +2150,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788772676",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-07T09:17:56Z",
-          "ended_at": "2026-09-07T09:31:00Z",
-          "elapsed_s": 787,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788782535",
+        "run_id": "senechal-nightly-batch-1788792371",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-07T12:02:15Z",
-        "ended_at": "2026-09-07T12:13:56Z",
-        "elapsed_s": 704,
+        "started_at": "2026-09-07T14:46:11Z",
+        "ended_at": "2026-09-07T14:53:29Z",
+        "elapsed_s": 441,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2462,6 +2470,23 @@
       },
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788792632",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-07T14:50:32Z",
+          "ended_at": "2026-09-07T14:57:16Z",
+          "elapsed_s": 407,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "19th pass: all 17 open issues re-checked live, every one still genuinely blocked (Zach decision/hardware/credential/sudo-apt-pip wall); zero open PRs; close-audit and unlanded-work-check both clean"
+        },
+        {
           "run_id": "wtul-nightly-batch-1788782859",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-07T12:07:39Z",
@@ -2528,31 +2553,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "16th same-day pass: zero new agent-actionable work since pass 15 (06:40Z). Live-verified rather than trusted the memory snapshot given the 3+hr gap: checked every open issue's actual last-comment createdAt (not just issue updatedAt) across all 17 open issues -- max is #162 at 06:25:54Z, already pass 15's own subject, nothing postdates it. gh pr list empty, close-audit.sh and unlanded-work-check.sh both clean, pytest -q 1102 passed/9 skipped/6 failed (same pre-existing ffmpeg-missing set, unchang"
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788772952",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-07T09:22:32Z",
-          "ended_at": "2026-09-07T09:25:46Z",
-          "elapsed_s": 197,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "16th pass, 07:50Z: live-checked all 16 open issues' updatedAt -- newest is #162 at 06:25:54Z, predating the 15th pass's ~06:40Z cutoff, so nothing postdates it. gh pr list empty, close-audit.sh and unlanded-work-check.sh both clean. pytest -q: 1102 passed/9 skipped/6 failed (same pre-existing ffmpeg-missing set as every prior pass, unchanged). No issue closeable this pass -- honest empty run."
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788782859",
+        "run_id": "wtul-nightly-batch-1788792632",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-07T12:07:39Z",
-        "ended_at": "2026-09-07T12:10:53Z",
-        "elapsed_s": 198,
+        "started_at": "2026-09-07T14:50:32Z",
+        "ended_at": "2026-09-07T14:57:16Z",
+        "elapsed_s": 407,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2562,7 +2570,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "18th /wtul-batch pass 2026-09-07T12:10Z: gh pr list empty, close-audit/unlanded-work-check clean, pytest 1102/9/6(pre-existing) unchanged. All 17 open issues re-checked live (per-issue last-comment createdAt + issue-list createdAt for brand-new issues) -- nothing landed since prior pass's 06:25:54Z cutoff. All milestone work remains blocked on Zach decisions (#99 reap-vs-raise), SSH/credential walls to dexter/mandark (#74/#112/#122/#124/#129/#131), or hands-on hardware verification (#37/#53/#110"
+        "claimed_reason": "19th pass: all 17 open issues re-checked live, every one still genuinely blocked (Zach decision/hardware/credential/sudo-apt-pip wall); zero open PRs; close-audit and unlanded-work-check both clean"
       },
       "containment": {
         "foreign_clones": [],
@@ -2583,22 +2591,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T14:50:02Z",
+    "generated": "2026-09-07T15:00:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T15:20:02Z",
-    "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
-    "disk": "",
-    "disk_home": "unknown",
+    "valid_until": "2026-09-07T15:30:01Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 19 hours, 41 minutes",
+    "uptime": "up 6 days, 19 hours, 50 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T14:50:02Z"
+      "sampled_at": "2026-09-07T15:00:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
