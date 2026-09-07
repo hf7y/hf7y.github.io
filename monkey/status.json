@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T17:10:32Z",
-  "valid_until": "2026-09-08T21:10:32Z",
+  "generated": "2026-09-07T17:20:02Z",
+  "valid_until": "2026-09-08T21:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -529,7 +529,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Merged #78 (grocy_api_key /etc/selfdev fan-out, docs-only) and deleted the stale already-merged circadian-ramp-vs-night-fade-hold-17 branch; reconfirmed every remaining open issue (#17,#18,#19,#22,#29,#30,#42,#68,#13,#14) chains to the same wall -- baudin@monkey has no .session-handoff/ha_token (ha-probe.sh exits 1: 'no HA token at .../ha_token'), confirmed live this run -- or to a human decision already correctly labeled needs-human (#29 Midea unit count, #42 route1-vs-route2, #13 ARRIS port-fo"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "baudin@selfdev.invalid",
         "clones": []
@@ -795,7 +799,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "chezz@selfdev.invalid",
         "clones": []
@@ -1366,6 +1374,23 @@
       },
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788800788",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-07T17:06:28Z",
+          "ended_at": "2026-09-07T17:15:08Z",
+          "elapsed_s": 523,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "ran ssh dexter and ssh mandark (refused/denied), curl'd CDP (000), checked which docker (absent), tried ssh-keygen previously (classifier-blocked, not retried) -- probed Grocy stock_log live instead, resolved the Fruit deferred question without needing any of those"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788800086",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-07T16:54:46Z",
@@ -1432,31 +1457,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "reprobed CDP/dexter/mandark walls fresh, all unchanged; zaxon tickets stale, cooldown not due; no new inbox entries; window will pass unconfirmed by design; nothing newly actionable"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788795012",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-07T15:30:12Z",
-          "ended_at": "2026-09-07T15:35:49Z",
-          "elapsed_s": 340,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "reprobed CDP/dexter/mandark walls fresh, all unchanged; zaxon tickets stale, cooldown not due; no new inbox entries; window will pass unconfirmed by design; nothing newly actionable"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788800086",
+        "run_id": "groc-mangr-nightly-batch-1788800788",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-07T16:54:46Z",
-        "ended_at": "2026-09-07T17:01:12Z",
-        "elapsed_s": 389,
+        "started_at": "2026-09-07T17:06:28Z",
+        "ended_at": "2026-09-07T17:15:08Z",
+        "elapsed_s": 523,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2173,7 +2181,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "test@example.com",
         "clones": []
@@ -2437,7 +2449,11 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "Merged #239 (assignees-field migration, prose ratchet fixed) and closed #240; #235 (spawn-a-runner) remains open in milestone 3, unattempted this run"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
         "clones": []
@@ -2587,22 +2603,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T17:10:01Z",
+    "generated": "2026-09-07T17:20:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T17:40:01Z",
-    "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
-    "disk": "",
-    "disk_home": "unknown",
+    "valid_until": "2026-09-07T17:50:01Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 22 hours, 1 minute",
+    "uptime": "up 6 days, 22 hours, 10 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T17:10:01Z"
+      "sampled_at": "2026-09-07T17:20:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
