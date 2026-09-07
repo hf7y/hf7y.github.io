@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T15:20:02Z",
-  "valid_until": "2026-09-08T19:20:02Z",
+  "generated": "2026-09-07T15:30:02Z",
+  "valid_until": "2026-09-08T19:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -968,6 +968,23 @@
       },
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1788794821",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-07T15:27:01Z",
+          "ended_at": "2026-09-07T15:30:26Z",
+          "elapsed_s": 208,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "All 3 agent-actionable issues re-verified blocked on humans/other repos tonight: #34 dexter SSH still refused (ssh -p 2223 dexter -> Permission denied publickey,password, re-tested just now), #104 fix lives in hf7y/etalon#36 (draft PR passing, still awaiting their self-dev review/merge, not my call), #106 needs Netlify dashboard access this seat lacks (which netlify and env netlify both empty, re-checked). Nothing left to build in this repo tonight; #27 is DECISION: awaiting Zach."
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1788792305",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-09-07T14:45:05Z",
@@ -1034,31 +1051,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "re-verified all 3 actionable issues tonight, all still blocked: NOFF drive not attached to dexter per /mnt walk (#34), hf7y/etalon#36 still open/draft upstream not mine to merge (#104), no netlify CLI or token in env for dashboard check (#106)"
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788775108",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-07T09:58:28Z",
-          "ended_at": "2026-09-07T10:01:08Z",
-          "elapsed_s": 163,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "re-verified all 3 actionable issues tonight, all still blocked: NOFF drive not attached to dexter per /mnt walk (#34), hf7y/etalon#36 still open/draft upstream not mine to merge (#104), no netlify CLI or token in env for dashboard check (#106)"
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788792305",
+        "run_id": "dcp-gate-site-nightly-batch-1788794821",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-07T14:45:05Z",
-        "ended_at": "2026-09-07T14:47:20Z",
-        "elapsed_s": 138,
+        "started_at": "2026-09-07T15:27:01Z",
+        "ended_at": "2026-09-07T15:30:26Z",
+        "elapsed_s": 208,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1068,7 +1068,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "re-verified all 3 actionable issues tonight, all still blocked: NOFF drive not attached to dexter per /mnt walk (#34), hf7y/etalon#36 still open/draft upstream not mine to merge (#104), no netlify CLI or token in env for dashboard check (#106)"
+        "claimed_reason": "All 3 agent-actionable issues re-verified blocked on humans/other repos tonight: #34 dexter SSH still refused (ssh -p 2223 dexter -> Permission denied publickey,password, re-tested just now), #104 fix lives in hf7y/etalon#36 (draft PR passing, still awaiting their self-dev review/merge, not my call), #106 needs Netlify dashboard access this seat lacks (which netlify and env netlify both empty, re-checked). Nothing left to build in this repo tonight; #27 is DECISION: awaiting Zach."
       },
       "containment": {
         "foreign_clones": [],
@@ -2603,10 +2603,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T15:20:01Z",
+    "generated": "2026-09-07T15:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T15:50:01Z",
+    "valid_until": "2026-09-07T16:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2614,11 +2614,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 20 hours, 10 minutes",
+    "uptime": "up 6 days, 20 hours, 20 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T15:20:01Z"
+      "sampled_at": "2026-09-07T15:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
