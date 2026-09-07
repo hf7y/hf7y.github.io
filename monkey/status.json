@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-07T05:10:03Z",
-  "valid_until": "2026-09-08T09:10:03Z",
+  "generated": "2026-09-07T05:20:02Z",
+  "valid_until": "2026-09-08T09:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-01T030800Z",
@@ -1472,11 +1472,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "ssh dexter refused, ssh mandark denied, CDP curl 000, ssh-keygen denied by classifier, zaxon tickets stale/cooling"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "groc-mangr@selfdev.invalid",
         "clones": []
@@ -1740,11 +1736,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "ci@realisateur.invalid",
         "clones": [
@@ -2076,6 +2068,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788757391",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-07T05:03:11Z",
+          "ended_at": "2026-09-07T05:13:57Z",
+          "elapsed_s": 649,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "senechal-nightly-batch-1788756373",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-07T04:46:13Z",
@@ -2142,39 +2151,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788749591",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-07T02:53:11Z",
-          "ended_at": "2026-09-07T03:17:40Z",
-          "elapsed_s": 1472,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788756373",
+        "run_id": "senechal-nightly-batch-1788757391",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-07T04:46:13Z",
-        "ended_at": "2026-09-07T04:59:54Z",
-        "elapsed_s": 824,
+        "started_at": "2026-09-07T05:03:11Z",
+        "ended_at": "2026-09-07T05:13:57Z",
+        "elapsed_s": 649,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2446,11 +2438,7 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "Merged #239 (assignees-field migration, prose ratchet fixed) and closed #240; #235 (spawn-a-runner) remains open in milestone 3, unattempted this run"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
         "clones": []
@@ -2581,11 +2569,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "wtul@selfdev.invalid",
         "clones": []
@@ -2600,10 +2584,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-07T05:10:02Z",
+    "generated": "2026-09-07T05:20:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-07T05:40:02Z",
+    "valid_until": "2026-09-07T05:50:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2611,11 +2595,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 10 hours, 0 minutes",
+    "uptime": "up 6 days, 10 hours, 10 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-07T05:10:02Z"
+      "sampled_at": "2026-09-07T05:20:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
