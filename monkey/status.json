@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T10:30:32Z",
-  "valid_until": "2026-09-09T14:30:32Z",
+  "generated": "2026-09-08T10:40:02Z",
+  "valid_until": "2026-09-09T14:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1390,6 +1390,23 @@
       },
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788862924",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-08T10:22:04Z",
+          "ended_at": "2026-09-08T10:37:04Z",
+          "elapsed_s": 903,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "CONTINUE",
+          "claimed_reason": "PR #186 merged tonight (mutations: retire state.events, #59) -- corrected a stale zero-readers classification and deleted the dead write path; #59 MCP wiring and public/ retirement still blocked on dexter shell and #88; milestone #82/#87/#88 unchanged, still blocked on dexter/mandark/Zach"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788860442",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-08T09:40:42Z",
@@ -1456,31 +1473,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "fresh re-verification 07:xxZ: milestone #59/#82/#87/#88 and #145/#148 all genuinely blocked on dexter/mandark ssh, docker absent, CDP down, and Zach's own phone reply (both zaxon tickets stale)"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788850399",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-08T06:53:19Z",
-          "ended_at": "2026-09-08T06:57:30Z",
-          "elapsed_s": 255,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "milestone #59/#82/#87/#88 all genuinely blocked on dexter/mandark ssh, docker, and Zach's own phone reply"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788860442",
+        "run_id": "groc-mangr-nightly-batch-1788862924",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-08T09:40:42Z",
-        "ended_at": "2026-09-08T09:53:33Z",
-        "elapsed_s": 774,
+        "started_at": "2026-09-08T10:22:04Z",
+        "ended_at": "2026-09-08T10:37:04Z",
+        "elapsed_s": 903,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
@@ -1490,7 +1490,7 @@
         "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "CONTINUE",
-        "claimed_reason": "PR #185 merged tonight (search-terms: stop stripping dried, #82) -- real live wrong-tile bug caught in tick.log and fixed; milestone #59/#88/#145/#138/#148 unchanged, still genuinely blocked on dexter/mandark ssh and Zach's pending zaxon replies"
+        "claimed_reason": "PR #186 merged tonight (mutations: retire state.events, #59) -- corrected a stale zero-readers classification and deleted the dead write path; #59 MCP wiring and public/ retirement still blocked on dexter shell and #88; milestone #82/#87/#88 unchanged, still blocked on dexter/mandark/Zach"
       },
       "containment": {
         "foreign_clones": [],
@@ -1658,6 +1658,23 @@
       },
       "runs": [
         {
+          "run_id": "realisateur-shotgun-1788863758",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-08T10:35:58Z",
+          "ended_at": "2026-09-08T10:38:30Z",
+          "elapsed_s": 155,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-shotgun-1788862769",
           "job": "realisateur-shotgun",
           "started_at": "2026-09-08T10:19:29Z",
@@ -1724,31 +1741,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788859112",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-08T09:18:32Z",
-          "ended_at": "2026-09-08T09:22:52Z",
-          "elapsed_s": 263,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788862769",
+        "run_id": "realisateur-shotgun-1788863758",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-08T10:19:29Z",
-        "ended_at": "2026-09-08T10:21:50Z",
-        "elapsed_s": 144,
+        "started_at": "2026-09-08T10:35:58Z",
+        "ended_at": "2026-09-08T10:38:30Z",
+        "elapsed_s": 155,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2062,11 +2062,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Only open issue is #17 (needs-human DECISION: which host runs the HP 8710 printer remedy); 21-day default not yet reached (set 2026-09-02); re-verified full test suite green; nothing else actionable"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "secretaire@selfdev.invalid",
         "clones": []
@@ -2619,22 +2615,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T10:30:02Z",
+    "generated": "2026-09-08T10:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T11:00:02Z",
-    "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
-    "disk": "",
-    "disk_home": "unknown",
+    "valid_until": "2026-09-08T11:10:02Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 15 hours, 20 minutes",
+    "uptime": "up 1 week, 15 hours, 30 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T10:30:02Z"
+      "sampled_at": "2026-09-08T10:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
