@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T18:00:02Z",
-  "valid_until": "2026-09-09T22:00:02Z",
+  "generated": "2026-09-08T18:10:32Z",
+  "valid_until": "2026-09-09T22:10:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -799,7 +799,27 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "backlog is empty (0 open issues); PRs 100/102/116 all fail the required prose/prose check via the markdown-ratio rule, fix is drafted+CI-green at hf7y/etalon#32 and tracked at hf7y/etalon#33, both need Zach's own read to ready/merge, not mine to do"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [
+          "/srv/ecosystem1-vault/chezz/research/balance/2026-08-22-analytic-material-sufficiency.md",
+          "/srv/ecosystem1-vault/.git/refs/heads/main",
+          "/srv/ecosystem1-vault/.git/objects/ad",
+          "/srv/ecosystem1-vault/.git/objects/ad/7c23a99415f4ed0429370423e77447582c4050",
+          "/srv/ecosystem1-vault/.git/objects/ac",
+          "/srv/ecosystem1-vault/.git/objects/ac/cf19385443652061e8c0fe0b30f0ff159f55e7",
+          "/srv/ecosystem1-vault/.git/objects/2c",
+          "/srv/ecosystem1-vault/.git/objects/2c/fd677f0b3fec625870e37a07978a3afba26995",
+          "/srv/ecosystem1-vault/.git/objects/fb",
+          "/srv/ecosystem1-vault/.git/objects/fb/605b205a8536759bca552c27422c54c4df9433",
+          "/srv/ecosystem1-vault/.git/objects/bc/ddd839d76be3cb4fadc05fcb74f303265c7494",
+          "/srv/ecosystem1-vault/.git/objects/6a",
+          "/srv/ecosystem1-vault/.git/objects/6a/7c8527a987df6e8168e5800a9e7a843208170a",
+          "/srv/ecosystem1-vault/.git/index",
+          "/srv/ecosystem1-vault/.git/COMMIT_EDITMSG"
+        ],
+        "sudoers": []
+      },
       "identity": {
         "declared": "chezz@selfdev.invalid",
         "clones": []
@@ -1638,6 +1658,23 @@
       },
       "runs": [
         {
+          "run_id": "realisateur-shotgun-1788890578",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-08T18:02:58Z",
+          "ended_at": "2026-09-08T18:06:35Z",
+          "elapsed_s": 220,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-shotgun-1788888281",
           "job": "realisateur-shotgun",
           "started_at": "2026-09-08T17:24:41Z",
@@ -1704,31 +1741,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788874174",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-08T13:29:34Z",
-          "ended_at": "2026-09-08T13:31:49Z",
-          "elapsed_s": 139,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788888281",
+        "run_id": "realisateur-shotgun-1788890578",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-08T17:24:41Z",
-        "ended_at": "2026-09-08T17:29:59Z",
-        "elapsed_s": 322,
+        "started_at": "2026-09-08T18:02:58Z",
+        "ended_at": "2026-09-08T18:06:35Z",
+        "elapsed_s": 220,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2177,7 +2197,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "test@example.com",
         "clones": []
@@ -2441,7 +2465,11 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "landed #264 (dispatch reports back to filed issue), closed stale/duplicate PRs #259+#265; #235's issue-targeting half still needs scheduler-side design"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
         "clones": []
@@ -2591,22 +2619,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T18:00:02Z",
+    "generated": "2026-09-08T18:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T18:30:02Z",
-    "verdict": "OK",
-    "why": "running, sshd answering, root rw, disk internal",
-    "vm_state": "running",
-    "disk": "C:\\WSL\\monkey",
-    "disk_home": "internal",
+    "valid_until": "2026-09-08T18:40:02Z",
+    "verdict": "DEGRADED",
+    "why": "the host could not read the VM state, but sshd answers -- it is up",
+    "vm_state": "unknown",
+    "disk": "",
+    "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 22 hours, 50 minutes",
+    "uptime": "up 1 week, 23 hours, 0 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T18:00:02Z"
+      "sampled_at": "2026-09-08T18:10:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
