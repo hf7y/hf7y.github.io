@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T08:00:32Z",
-  "valid_until": "2026-09-09T12:00:32Z",
+  "generated": "2026-09-08T08:10:22Z",
+  "valid_until": "2026-09-09T12:10:22Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -529,11 +529,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Merged #78 (grocy_api_key /etc/selfdev fan-out, docs-only) and deleted the stale already-merged circadian-ramp-vs-night-fade-hold-17 branch; reconfirmed every remaining open issue (#17,#18,#19,#22,#29,#30,#42,#68,#13,#14) chains to the same wall -- baudin@monkey has no .session-handoff/ha_token (ha-probe.sh exits 1: 'no HA token at .../ha_token'), confirmed live this run -- or to a human decision already correctly labeled needs-human (#29 Midea unit count, #42 route1-vs-route2, #13 ARRIS port-fo"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "baudin@selfdev.invalid",
         "clones": []
@@ -697,6 +693,23 @@
       },
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788854954",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-08T08:09:14Z",
+          "ended_at": "2026-09-08T08:10:30Z",
+          "elapsed_s": 80,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "chezz-nightly-batch-1788852546",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-08T07:29:06Z",
@@ -763,31 +776,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788844535",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-08T05:15:35Z",
-          "ended_at": "2026-09-08T05:18:13Z",
-          "elapsed_s": 161,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788852546",
+        "run_id": "chezz-nightly-batch-1788854954",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-08T07:29:06Z",
-        "ended_at": "2026-09-08T07:31:18Z",
-        "elapsed_s": 135,
+        "started_at": "2026-09-08T08:09:14Z",
+        "ended_at": "2026-09-08T08:10:30Z",
+        "elapsed_s": 80,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -984,6 +980,23 @@
       },
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1788854889",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-08T08:08:09Z",
+          "ended_at": "2026-09-08T08:10:46Z",
+          "elapsed_s": 160,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "re-verified tonight: #34 dexter SSH still refused (publickey,password), #104 awaits hf7y/etalon#36 self-dev merge, #106 needs Netlify dashboard access this seat lacks; nothing left to build, backlog is these 3 plus #27 which awaits Zach directly"
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1788852413",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-09-08T07:26:53Z",
@@ -1050,31 +1063,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "re-verified tonight: #34 dexter SSH still refused (publickey,password), #104 awaits hf7y/etalon#36 self-dev merge, #106 needs Netlify dashboard access this seat lacks; nothing left to build, backlog is these 3 plus #27 which awaits Zach directly"
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788842530",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-08T04:42:10Z",
-          "ended_at": "2026-09-08T04:46:44Z",
-          "elapsed_s": 277,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "re-verified tonight: #34 dexter SSH still refused (publickey,password), #104 awaits hf7y/etalon#36 self-dev merge, #106 needs Netlify dashboard access this seat lacks; nothing left to build, backlog is these 3 plus #27 which awaits Zach directly"
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788852413",
+        "run_id": "dcp-gate-site-nightly-batch-1788854889",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-08T07:26:53Z",
-        "ended_at": "2026-09-08T07:31:28Z",
-        "elapsed_s": 278,
+        "started_at": "2026-09-08T08:08:09Z",
+        "ended_at": "2026-09-08T08:10:46Z",
+        "elapsed_s": 160,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1658,6 +1654,23 @@
       },
       "runs": [
         {
+          "run_id": "realisateur-shotgun-1788854703",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-08T08:05:03Z",
+          "ended_at": "2026-09-08T08:08:04Z",
+          "elapsed_s": 184,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-shotgun-1788853949",
           "job": "realisateur-shotgun",
           "started_at": "2026-09-08T07:52:29Z",
@@ -1724,31 +1737,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788849369",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-08T06:36:09Z",
-          "ended_at": "2026-09-08T06:46:09Z",
-          "elapsed_s": 604,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788853949",
+        "run_id": "realisateur-shotgun-1788854703",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-08T07:52:29Z",
-        "ended_at": "2026-09-08T07:54:35Z",
-        "elapsed_s": 129,
+        "started_at": "2026-09-08T08:05:03Z",
+        "ended_at": "2026-09-08T08:08:04Z",
+        "elapsed_s": 184,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2095,6 +2091,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788853933",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-08T07:52:13Z",
+          "ended_at": "2026-09-08T08:02:51Z",
+          "elapsed_s": 641,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
+        },
+        {
           "run_id": "senechal-nightly-batch-1788851468",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-08T07:11:08Z",
@@ -2161,31 +2174,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788843411",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-08T04:56:51Z",
-          "ended_at": "2026-09-08T05:09:06Z",
-          "elapsed_s": 738,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788851468",
+        "run_id": "senechal-nightly-batch-1788853933",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-08T07:11:08Z",
-        "ended_at": "2026-09-08T07:17:33Z",
-        "elapsed_s": 388,
+        "started_at": "2026-09-08T07:52:13Z",
+        "ended_at": "2026-09-08T08:02:51Z",
+        "elapsed_s": 641,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2330,11 +2326,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "sequestria@selfdev.invalid",
         "clones": []
@@ -2619,22 +2611,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T08:00:02Z",
+    "generated": "2026-09-08T08:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T08:30:02Z",
+    "valid_until": "2026-09-08T08:40:02Z",
     "verdict": "DEGRADED",
     "why": "the host could not read the VM state, but sshd answers -- it is up",
     "vm_state": "unknown",
-    "disk": "",
-    "disk_home": "unknown",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 12 hours, 50 minutes",
+    "uptime": "up 1 week, 13 hours, 0 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T08:00:02Z"
+      "sampled_at": "2026-09-08T08:10:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
