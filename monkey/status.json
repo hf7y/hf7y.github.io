@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T00:20:02Z",
-  "valid_until": "2026-09-09T04:20:02Z",
+  "generated": "2026-09-08T00:30:32Z",
+  "valid_until": "2026-09-09T04:30:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -261,11 +261,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "american-cycle@selfdev.invalid",
         "clones": []
@@ -697,6 +693,23 @@
       },
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788827178",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-08T00:26:18Z",
+          "ended_at": "2026-09-08T00:28:07Z",
+          "elapsed_s": 111,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "chezz-nightly-batch-1788824718",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-07T23:45:18Z",
@@ -763,31 +776,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788814895",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-07T21:01:35Z",
-          "ended_at": "2026-09-07T21:02:52Z",
-          "elapsed_s": 80,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788824718",
+        "run_id": "chezz-nightly-batch-1788827178",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-07T23:45:18Z",
-        "ended_at": "2026-09-07T23:46:14Z",
-        "elapsed_s": 59,
+        "started_at": "2026-09-08T00:26:18Z",
+        "ended_at": "2026-09-08T00:28:07Z",
+        "elapsed_s": 111,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1070,11 +1066,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "All 3 agent-actionable issues re-verified blocked on humans/other repos tonight: #34 dexter SSH still refused (ssh -p 2223 dexter -> Permission denied publickey,password, re-tested just now), #104 fix lives in hf7y/etalon#36 (draft PR passing, still awaiting their self-dev review/merge, not my call), #106 needs Netlify dashboard access this seat lacks (which netlify and env netlify both empty, re-checked). Nothing left to build in this repo tonight; #27 is DECISION: awaiting Zach."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "dcp-gate-site@selfdev.invalid",
         "clones": []
@@ -1798,6 +1790,23 @@
       },
       "runs": [
         {
+          "run_id": "scheduler-shotgun-1788826799",
+          "job": "scheduler-shotgun",
+          "started_at": "2026-09-08T00:19:59Z",
+          "ended_at": "2026-09-08T00:24:57Z",
+          "elapsed_s": 300,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "scheduler-shotgun-1788825750",
           "job": "scheduler-shotgun",
           "started_at": "2026-09-08T00:02:30Z",
@@ -1864,39 +1873,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-shotgun-1788821402",
-          "job": "scheduler-shotgun",
-          "started_at": "2026-09-07T22:50:02Z",
-          "ended_at": "2026-09-07T22:55:04Z",
-          "elapsed_s": 305,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-shotgun-1788825750",
+        "run_id": "scheduler-shotgun-1788826799",
         "job": "scheduler-shotgun",
-        "started_at": "2026-09-08T00:02:30Z",
-        "ended_at": "2026-09-08T00:10:22Z",
-        "elapsed_s": 476,
+        "started_at": "2026-09-08T00:19:59Z",
+        "ended_at": "2026-09-08T00:24:57Z",
+        "elapsed_s": 300,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
+        "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2603,22 +2595,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T00:20:01Z",
+    "generated": "2026-09-08T00:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T00:50:01Z",
-    "verdict": "OK",
-    "why": "running, sshd answering, root rw, disk internal",
-    "vm_state": "running",
-    "disk": "C:\\WSL\\monkey",
-    "disk_home": "internal",
+    "valid_until": "2026-09-08T01:00:02Z",
+    "verdict": "DEGRADED",
+    "why": "the host could not read the VM state, but sshd answers -- it is up",
+    "vm_state": "unknown",
+    "disk": "",
+    "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 5 hours, 10 minutes",
+    "uptime": "up 1 week, 5 hours, 20 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T00:20:01Z"
+      "sampled_at": "2026-09-08T00:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
