@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T01:10:02Z",
-  "valid_until": "2026-09-09T05:10:02Z",
+  "generated": "2026-09-08T01:20:03Z",
+  "valid_until": "2026-09-09T05:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -396,7 +396,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "no canvas.token/CANVAS_TOKEN in this checkout (#55,#86) and session 03 (2026-09-14) hasn't happened yet (#86)"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "apms@selfdev.invalid",
         "clones": []
@@ -693,6 +697,23 @@
       },
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788829709",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-08T01:08:29Z",
+          "ended_at": "2026-09-08T01:12:16Z",
+          "elapsed_s": 230,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "chezz-nightly-batch-1788827178",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-08T00:26:18Z",
@@ -759,31 +780,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788817398",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-07T21:43:18Z",
-          "ended_at": "2026-09-07T21:44:26Z",
-          "elapsed_s": 71,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788827178",
+        "run_id": "chezz-nightly-batch-1788829709",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-08T00:26:18Z",
-        "ended_at": "2026-09-08T00:28:07Z",
-        "elapsed_s": 111,
+        "started_at": "2026-09-08T01:08:29Z",
+        "ended_at": "2026-09-08T01:12:16Z",
+        "elapsed_s": 230,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2075,6 +2079,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788829643",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-08T01:07:23Z",
+          "ended_at": "2026-09-08T01:13:31Z",
+          "elapsed_s": 371,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 1,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "every open issue's next step needs mandark/dexter SSH (refused, tested live) or Zach's own hands/decision; all already documented in-thread"
+        },
+        {
           "run_id": "senechal-nightly-batch-1788827242",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-08T00:27:22Z",
@@ -2141,35 +2162,18 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "every open issue's next step needs mandark/dexter SSH (refused, tested live) or Zach's own hands/decision; all already documented in-thread"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788821186",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-07T22:46:26Z",
-          "ended_at": "2026-09-07T23:16:37Z",
-          "elapsed_s": 1813,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 3,
-          "issues_opened": 1,
-          "issues_closed": 3,
-          "prs_opened": 3,
-          "prs_merged": 4,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "every open issue's next step needs mandark/dexter SSH (refused, tested live) or Zach's own hands/decision; all already documented in-thread"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788827242",
+        "run_id": "senechal-nightly-batch-1788829643",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-08T00:27:22Z",
-        "ended_at": "2026-09-08T00:38:35Z",
-        "elapsed_s": 676,
+        "started_at": "2026-09-08T01:07:23Z",
+        "ended_at": "2026-09-08T01:13:31Z",
+        "elapsed_s": 371,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
-        "issues_opened": 0,
+        "issues_opened": 1,
         "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
@@ -2599,10 +2603,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T01:10:02Z",
+    "generated": "2026-09-08T01:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T01:40:02Z",
+    "valid_until": "2026-09-08T01:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2610,11 +2614,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 6 hours, 1 minute",
+    "uptime": "up 1 week, 6 hours, 10 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T01:10:02Z"
+      "sampled_at": "2026-09-08T01:20:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
