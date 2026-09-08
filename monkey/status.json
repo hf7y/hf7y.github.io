@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T10:20:32Z",
-  "valid_until": "2026-09-09T14:20:32Z",
+  "generated": "2026-09-08T10:30:32Z",
+  "valid_until": "2026-09-09T14:30:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -151,7 +151,7 @@
         "21 5 * * * /home/american-cycle/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
         "1,21,41 * * * * PACED_MAX_PER_TICK=1 /home/american-cycle/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
-      "release_tick": "2026-09-07T10:21:03Z rc=0 pin=2026-09-07T031807Z 3 ok, 0 gap, 0 bad",
+      "release_tick": "2026-09-08T10:21:01Z rc=0 pin=2026-09-07T031807Z 3 ok, 0 gap, 0 bad",
       "milestone_self_fed": {
         "current": false,
         "streak": 0,
@@ -294,6 +294,23 @@
       },
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1788862987",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-08T10:23:07Z",
+          "ended_at": "2026-09-08T10:25:38Z",
+          "elapsed_s": 154,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "no canvas.token in checkout; next real class (session 03) is 2026-09-14"
+        },
+        {
           "run_id": "apms-nightly-batch-1788860510",
           "job": "apms-nightly-batch",
           "started_at": "2026-09-08T09:41:50Z",
@@ -360,31 +377,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "Checked canvas.token/CANVAS_TOKEN (absent), searched filesystem for a real session recording (none), ran pytest (29 passed, no regressions) -- both open issues (#86, #55) unchanged since the 00:47Z check today: #55 needs a human-placed canvas.token, #86 needs that plus session 03 on 2026-09-14"
-        },
-        {
-          "run_id": "apms-nightly-batch-1788850465",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-08T06:54:25Z",
-          "ended_at": "2026-09-08T06:56:18Z",
-          "elapsed_s": 116,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "no canvas.token for scheduled account (#55) and session 03 (2026-09-14) hasn't happened yet (#86)"
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788860510",
+        "run_id": "apms-nightly-batch-1788862987",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-08T09:41:50Z",
-        "ended_at": "2026-09-08T09:45:45Z",
-        "elapsed_s": 238,
+        "started_at": "2026-09-08T10:23:07Z",
+        "ended_at": "2026-09-08T10:25:38Z",
+        "elapsed_s": 154,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -394,7 +394,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "no canvas token; no real session before 2026-09-14"
+        "claimed_reason": "no canvas.token in checkout; next real class (session 03) is 2026-09-14"
       },
       "containment": {
         "foreign_clones": [],
@@ -1658,6 +1658,23 @@
       },
       "runs": [
         {
+          "run_id": "realisateur-shotgun-1788862769",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-08T10:19:29Z",
+          "ended_at": "2026-09-08T10:21:50Z",
+          "elapsed_s": 144,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-shotgun-1788861828",
           "job": "realisateur-shotgun",
           "started_at": "2026-09-08T10:03:48Z",
@@ -1724,31 +1741,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788857990",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-08T08:59:50Z",
-          "ended_at": "2026-09-08T09:06:23Z",
-          "elapsed_s": 396,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788861828",
+        "run_id": "realisateur-shotgun-1788862769",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-08T10:03:48Z",
-        "ended_at": "2026-09-08T10:05:36Z",
-        "elapsed_s": 111,
+        "started_at": "2026-09-08T10:19:29Z",
+        "ended_at": "2026-09-08T10:21:50Z",
+        "elapsed_s": 144,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1813,6 +1813,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "scheduler-shotgun-1788863076",
+          "job": "scheduler-shotgun",
+          "started_at": "2026-09-08T10:24:36Z",
+          "ended_at": "2026-09-08T10:31:32Z",
+          "elapsed_s": 419,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
+        },
         {
           "run_id": "scheduler-shotgun-1788862106",
           "job": "scheduler-shotgun",
@@ -1880,31 +1897,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
-        },
-        {
-          "run_id": "scheduler-shotgun-1788858542",
-          "job": "scheduler-shotgun",
-          "started_at": "2026-09-08T09:09:02Z",
-          "ended_at": "2026-09-08T09:14:16Z",
-          "elapsed_s": 318,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
         }
       ],
       "last_run": {
-        "run_id": "scheduler-shotgun-1788862106",
+        "run_id": "scheduler-shotgun-1788863076",
         "job": "scheduler-shotgun",
-        "started_at": "2026-09-08T10:08:26Z",
-        "ended_at": "2026-09-08T10:15:01Z",
-        "elapsed_s": 399,
+        "started_at": "2026-09-08T10:24:36Z",
+        "ended_at": "2026-09-08T10:31:32Z",
+        "elapsed_s": 419,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2498,6 +2498,23 @@
       },
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788862346",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-08T10:12:26Z",
+          "ended_at": "2026-09-08T10:24:43Z",
+          "elapsed_s": 741,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "33rd consecutive empty pass, but this one found why: wtul-nightly-batch dispatches via root sudo bypassing the per-account paced runner/ledger entirely (scheduler-paced-runner/run.log shows only HOLD since 2026-09-07T01:26, ledger.tsv 27h+ stale) -- so the DONE cooldown scheduler#54 built never engages. Filed as scheduler#350 comment (a live migration issue), not a new duplicate. Queue itself unchanged: same 17 open issues, all Zach/hardware/credential-blocked."
+        },
+        {
           "run_id": "wtul-nightly-batch-1788859928",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-08T09:32:08Z",
@@ -2564,31 +2581,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "29th consecutive /wtul-batch pass, 2026-09-08T~06:48Z: quick-diff against 28th pass's 05:20Z cutoff found zero drift -- same 17 open issues, max updatedAt still #162 (06:25:54Z on 09-07), gh issue list --state all still tops out at #171 (already closed, no new issue filed), gh pr list empty. close-audit.sh and unlanded-work-check.sh both clean. pytest -q: 1102 passed/9 skipped/6 failed, byte-identical to every pass since the fifteenth (same pre-existing ffmpeg-missing set in test_audio_edges.py)"
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788850015",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-08T06:46:55Z",
-          "ended_at": "2026-09-08T06:49:30Z",
-          "elapsed_s": 158,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "29th consecutive /wtul-batch pass, 2026-09-08T~06:48Z: quick-diff against 28th pass's 05:20Z cutoff found zero drift -- same 17 open issues, max updatedAt still #162 (06:25:54Z on 09-07), gh issue list --state all still tops out at #171 (already closed, no new issue filed), gh pr list empty. close-audit.sh and unlanded-work-check.sh both clean. pytest -q: 1102 passed/9 skipped/6 failed, byte-identical to every pass since the fifteenth (same pre-existing ffmpeg-missing set in test_audio_edges.py)"
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788859928",
+        "run_id": "wtul-nightly-batch-1788862346",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-08T09:32:08Z",
-        "ended_at": "2026-09-08T09:35:59Z",
-        "elapsed_s": 234,
+        "started_at": "2026-09-08T10:12:26Z",
+        "ended_at": "2026-09-08T10:24:43Z",
+        "elapsed_s": 741,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2598,7 +2598,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": "32nd consecutive empty pass, zero drift since 31st; queue genuinely drained, checked scheduler#360 as adjacent-but-different question rather than filing a duplicate"
+        "claimed_reason": "33rd consecutive empty pass, but this one found why: wtul-nightly-batch dispatches via root sudo bypassing the per-account paced runner/ledger entirely (scheduler-paced-runner/run.log shows only HOLD since 2026-09-07T01:26, ledger.tsv 27h+ stale) -- so the DONE cooldown scheduler#54 built never engages. Filed as scheduler#350 comment (a live migration issue), not a new duplicate. Queue itself unchanged: same 17 open issues, all Zach/hardware/credential-blocked."
       },
       "containment": {
         "foreign_clones": [],
@@ -2619,10 +2619,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T10:20:01Z",
+    "generated": "2026-09-08T10:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T10:50:01Z",
+    "valid_until": "2026-09-08T11:00:02Z",
     "verdict": "DEGRADED",
     "why": "the host could not read the VM state, but sshd answers -- it is up",
     "vm_state": "unknown",
@@ -2630,11 +2630,11 @@
     "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 15 hours, 10 minutes",
+    "uptime": "up 1 week, 15 hours, 20 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T10:20:01Z"
+      "sampled_at": "2026-09-08T10:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
