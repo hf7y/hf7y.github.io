@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T03:30:02Z",
-  "valid_until": "2026-09-09T07:30:02Z",
+  "generated": "2026-09-08T03:40:32Z",
+  "valid_until": "2026-09-09T07:40:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -294,6 +294,23 @@
       },
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1788838169",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-08T03:29:29Z",
+          "ended_at": "2026-09-08T03:32:54Z",
+          "elapsed_s": 208,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "no canvas.token or CANVAS_TOKEN in checkout blocks the number 55 read probe, and issue 86 needs a real class session on 2026-09-14; both re-verified unchanged, no new mechanism to build tonight"
+        },
+        {
           "run_id": "apms-nightly-batch-1788835706",
           "job": "apms-nightly-batch",
           "started_at": "2026-09-08T02:48:26Z",
@@ -360,31 +377,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "no canvas.token/CANVAS_TOKEN in this checkout (#55,#86) and session 03 (2026-09-14) hasn't happened yet (#86)"
-        },
-        {
-          "run_id": "apms-nightly-batch-1788825804",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-08T00:03:24Z",
-          "ended_at": "2026-09-08T00:06:06Z",
-          "elapsed_s": 165,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "no canvas.token/CANVAS_TOKEN in this scheduled checkout blocks #55 and #86's read half; #86 also needs the 2026-09-14 real class session, still days out"
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788835706",
+        "run_id": "apms-nightly-batch-1788838169",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-08T02:48:26Z",
-        "ended_at": "2026-09-08T02:50:23Z",
-        "elapsed_s": 120,
+        "started_at": "2026-09-08T03:29:29Z",
+        "ended_at": "2026-09-08T03:32:54Z",
+        "elapsed_s": 208,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -394,7 +394,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "no canvas.token or CANVAS_TOKEN in this checkout blocks #55's probe and #86's read side; #86 also needs session 03 on 2026-09-14 for a real recording, still 6 days out"
+        "claimed_reason": "no canvas.token or CANVAS_TOKEN in checkout blocks the number 55 read probe, and issue 86 needs a real class session on 2026-09-14; both re-verified unchanged, no new mechanism to build tonight"
       },
       "containment": {
         "foreign_clones": [],
@@ -799,27 +799,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [
-          "/srv/ecosystem1-vault/chezz/research/balance/2026-08-22-analytic-material-sufficiency.md",
-          "/srv/ecosystem1-vault/.git/refs/heads/main",
-          "/srv/ecosystem1-vault/.git/objects/ad",
-          "/srv/ecosystem1-vault/.git/objects/ad/7c23a99415f4ed0429370423e77447582c4050",
-          "/srv/ecosystem1-vault/.git/objects/ac",
-          "/srv/ecosystem1-vault/.git/objects/ac/cf19385443652061e8c0fe0b30f0ff159f55e7",
-          "/srv/ecosystem1-vault/.git/objects/2c",
-          "/srv/ecosystem1-vault/.git/objects/2c/fd677f0b3fec625870e37a07978a3afba26995",
-          "/srv/ecosystem1-vault/.git/objects/fb",
-          "/srv/ecosystem1-vault/.git/objects/fb/605b205a8536759bca552c27422c54c4df9433",
-          "/srv/ecosystem1-vault/.git/objects/bc/ddd839d76be3cb4fadc05fcb74f303265c7494",
-          "/srv/ecosystem1-vault/.git/objects/6a",
-          "/srv/ecosystem1-vault/.git/objects/6a/7c8527a987df6e8168e5800a9e7a843208170a",
-          "/srv/ecosystem1-vault/.git/index",
-          "/srv/ecosystem1-vault/.git/COMMIT_EDITMSG"
-        ],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "chezz@selfdev.invalid",
         "clones": []
@@ -950,7 +930,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "crt@selfdev.invalid",
         "clones": []
@@ -1386,6 +1370,23 @@
       },
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788837981",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-08T03:26:21Z",
+          "ended_at": "2026-09-08T03:31:23Z",
+          "elapsed_s": 305,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "tests 494/494 pass, tree clean, close-audit/unlanded-work clean; CDP unreachable, ssh dexter refused, ssh mandark denied, docker absent; nothing new in milestone #59/#82/#87/#88 or zaxon inbox to build against"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788835515",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-08T02:45:15Z",
@@ -1452,31 +1453,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "dexter/mandark/CDP/docker walls all unchanged, zaxon tickets stale, nothing new to build tonight"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788825669",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-08T00:01:09Z",
-          "ended_at": "2026-09-08T00:07:07Z",
-          "elapsed_s": 361,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "dexter refused, mandark denied, CDP down, docker absent, window-confirm cooldown unexpired until 2026-09-08T05:00:34Z, no new zaxon inbox/tickets, milestone issues #59/#82/#87/#88 all blocked on the same walls; nothing left to build this tick"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788835515",
+        "run_id": "groc-mangr-nightly-batch-1788837981",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-08T02:45:15Z",
-        "ended_at": "2026-09-08T02:50:27Z",
-        "elapsed_s": 315,
+        "started_at": "2026-09-08T03:26:21Z",
+        "ended_at": "2026-09-08T03:31:23Z",
+        "elapsed_s": 305,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1486,7 +1470,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "milestone #27 queue (#59/#82/#87/#88) all genuinely blocked on dexter/mandark hands, upstream (hermes-agent), or Zach's own action; sent the one unasked question (Tailscale phone install, ticket a90996af, tracked on #88) since it unblocks #59's RETIRE section"
+        "claimed_reason": "tests 494/494 pass, tree clean, close-audit/unlanded-work clean; CDP unreachable, ssh dexter refused, ssh mandark denied, docker absent; nothing new in milestone #59/#82/#87/#88 or zaxon inbox to build against"
       },
       "containment": {
         "foreign_clones": [],
@@ -2091,6 +2075,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788838485",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-08T03:34:45Z",
+          "ended_at": "2026-09-08T03:40:36Z",
+          "elapsed_s": 354,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
+        },
+        {
           "run_id": "senechal-nightly-batch-1788836020",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-08T02:53:40Z",
@@ -2157,31 +2158,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "every open issue's next step needs mandark/dexter SSH (refused, tested live) or Zach's own hands/decision; all already documented in-thread"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788829643",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-08T01:07:23Z",
-          "ended_at": "2026-09-08T01:13:31Z",
-          "elapsed_s": 371,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 1,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "every open issue's next step needs mandark/dexter SSH (refused, tested live) or Zach's own hands/decision; all already documented in-thread"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788836020",
+        "run_id": "senechal-nightly-batch-1788838485",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-08T02:53:40Z",
-        "ended_at": "2026-09-08T03:04:38Z",
-        "elapsed_s": 661,
+        "started_at": "2026-09-08T03:34:45Z",
+        "ended_at": "2026-09-08T03:40:36Z",
+        "elapsed_s": 354,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2326,11 +2310,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "sequestria@selfdev.invalid",
         "clones": []
@@ -2596,7 +2576,11 @@
         "claimed_verdict": "DONE",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "wtul@selfdev.invalid",
         "clones": []
@@ -2611,22 +2595,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T03:30:02Z",
+    "generated": "2026-09-08T03:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T04:00:02Z",
-    "verdict": "OK",
-    "why": "running, sshd answering, root rw, disk internal",
-    "vm_state": "running",
-    "disk": "C:\\WSL\\monkey",
-    "disk_home": "internal",
+    "valid_until": "2026-09-08T04:10:02Z",
+    "verdict": "DEGRADED",
+    "why": "the host could not read the VM state, but sshd answers -- it is up",
+    "vm_state": "unknown",
+    "disk": "",
+    "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 8 hours, 20 minutes",
+    "uptime": "up 1 week, 8 hours, 30 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T03:30:02Z"
+      "sampled_at": "2026-09-08T03:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
