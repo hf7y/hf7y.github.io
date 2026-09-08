@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T00:50:02Z",
-  "valid_until": "2026-09-09T04:50:02Z",
+  "generated": "2026-09-08T01:00:02Z",
+  "valid_until": "2026-09-09T05:00:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -664,11 +664,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Milestone #35/#37/#38 all mechanism-vendored (scripts, works.json, deploy+test in #92); every remaining step needs a privileged human act (sudo mandark, dexter docker access, or the tracked realisateur#1008 rescue), no request-queue issues open."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "bibliothecaire@selfdev.invalid",
         "clones": []
@@ -1340,11 +1336,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "gardien@selfdev.invalid",
         "clones": []
@@ -1642,6 +1634,23 @@
       },
       "runs": [
         {
+          "run_id": "realisateur-shotgun-1788828295",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-08T00:44:55Z",
+          "ended_at": "2026-09-08T00:52:01Z",
+          "elapsed_s": 429,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-shotgun-1788827356",
           "job": "realisateur-shotgun",
           "started_at": "2026-09-08T00:29:16Z",
@@ -1708,35 +1717,18 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788823017",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-07T23:16:57Z",
-          "ended_at": "2026-09-07T23:18:27Z",
-          "elapsed_s": 93,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788827356",
+        "run_id": "realisateur-shotgun-1788828295",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-08T00:29:16Z",
-        "ended_at": "2026-09-08T00:32:15Z",
-        "elapsed_s": 182,
+        "started_at": "2026-09-08T00:44:55Z",
+        "ended_at": "2026-09-08T00:52:01Z",
+        "elapsed_s": 429,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
-        "issues_opened": 1,
+        "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
@@ -2482,6 +2474,23 @@
       },
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788828946",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-08T00:55:46Z",
+          "ended_at": "2026-09-08T00:59:32Z",
+          "elapsed_s": 229,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "24th pass: found and landed a genuinely new PR (#170, flaky test fix from a prior run's /wtul-batch hang) that no earlier pass had seen -- its prose/prose check was red (+4 over merge-base from a standalone 4-line comment), reaped it to a trailing comment (+0 confirmed via local --census), pushed, verified pytest+prose green in CI, squash-merged as 1a0401e. Issue queue itself unchanged (still #162 at 06:25:54Z, same 23-pass-old cutoff) -- no issue to close for this one, it was a standalone test-"
+        },
+        {
           "run_id": "wtul-nightly-batch-1788828249",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-08T00:44:09Z",
@@ -2548,39 +2557,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788818340",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-07T21:59:00Z",
-          "ended_at": "2026-09-07T22:08:32Z",
-          "elapsed_s": 575,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788828249",
+        "run_id": "wtul-nightly-batch-1788828946",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-08T00:44:09Z",
-        "ended_at": "2026-09-08T00:49:44Z",
-        "elapsed_s": 337,
+        "started_at": "2026-09-08T00:55:46Z",
+        "ended_at": "2026-09-08T00:59:32Z",
+        "elapsed_s": 229,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
         "claimed_reason": "24th pass: found and landed a genuinely new PR (#170, flaky test fix from a prior run's /wtul-batch hang) that no earlier pass had seen -- its prose/prose check was red (+4 over merge-base from a standalone 4-line comment), reaped it to a trailing comment (+0 confirmed via local --census), pushed, verified pytest+prose green in CI, squash-merged as 1a0401e. Issue queue itself unchanged (still #162 at 06:25:54Z, same 23-pass-old cutoff) -- no issue to close for this one, it was a standalone test-"
       },
@@ -2603,10 +2595,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T00:50:01Z",
+    "generated": "2026-09-08T01:00:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T01:20:01Z",
+    "valid_until": "2026-09-08T01:30:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2614,11 +2606,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 5 hours, 40 minutes",
+    "uptime": "up 1 week, 5 hours, 50 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T00:50:01Z"
+      "sampled_at": "2026-09-08T01:00:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
