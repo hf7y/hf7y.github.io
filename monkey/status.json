@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T11:20:22Z",
-  "valid_until": "2026-09-09T15:20:22Z",
+  "generated": "2026-09-08T11:30:02Z",
+  "valid_until": "2026-09-09T15:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -125,7 +125,11 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "real-media run landed for #2 (offline path declared winner); #5 blocked on SSH creds, not DNS; #18/#6/#28 unchanged, all genuinely blocked or parked"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "abletim@selfdev.invalid",
         "clones": []
@@ -795,7 +799,27 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [
+          "/srv/ecosystem1-vault/chezz/research/balance/2026-08-22-analytic-material-sufficiency.md",
+          "/srv/ecosystem1-vault/.git/refs/heads/main",
+          "/srv/ecosystem1-vault/.git/objects/ad",
+          "/srv/ecosystem1-vault/.git/objects/ad/7c23a99415f4ed0429370423e77447582c4050",
+          "/srv/ecosystem1-vault/.git/objects/ac",
+          "/srv/ecosystem1-vault/.git/objects/ac/cf19385443652061e8c0fe0b30f0ff159f55e7",
+          "/srv/ecosystem1-vault/.git/objects/2c",
+          "/srv/ecosystem1-vault/.git/objects/2c/fd677f0b3fec625870e37a07978a3afba26995",
+          "/srv/ecosystem1-vault/.git/objects/fb",
+          "/srv/ecosystem1-vault/.git/objects/fb/605b205a8536759bca552c27422c54c4df9433",
+          "/srv/ecosystem1-vault/.git/objects/bc/ddd839d76be3cb4fadc05fcb74f303265c7494",
+          "/srv/ecosystem1-vault/.git/objects/6a",
+          "/srv/ecosystem1-vault/.git/objects/6a/7c8527a987df6e8168e5800a9e7a843208170a",
+          "/srv/ecosystem1-vault/.git/index",
+          "/srv/ecosystem1-vault/.git/COMMIT_EDITMSG"
+        ],
+        "sudoers": []
+      },
       "identity": {
         "declared": "chezz@selfdev.invalid",
         "clones": []
@@ -823,6 +847,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "crt-nightly-batch-1788865957",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-08T11:12:37Z",
+          "ended_at": "2026-09-08T11:27:34Z",
+          "elapsed_s": 900,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 1,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "crt-nightly-batch-1788862857",
           "job": "crt-nightly-batch",
@@ -890,39 +931,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1788854126",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-08T07:55:26Z",
-          "ended_at": "2026-09-08T08:15:02Z",
-          "elapsed_s": 1179,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788862857",
+        "run_id": "crt-nightly-batch-1788865957",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-08T10:20:57Z",
-        "ended_at": "2026-09-08T11:10:54Z",
-        "elapsed_s": 3000,
+        "started_at": "2026-09-08T11:12:37Z",
+        "ended_at": "2026-09-08T11:27:34Z",
+        "elapsed_s": 900,
         "rc": 0,
         "status": "done",
-        "commits_added": 2,
-        "issues_opened": 0,
+        "commits_added": 0,
+        "issues_opened": 1,
         "issues_closed": 0,
-        "prs_opened": 1,
-        "prs_merged": 2,
-        "verdict_computed": "WORKED",
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -1634,6 +1658,23 @@
       },
       "runs": [
         {
+          "run_id": "realisateur-shotgun-1788866742",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-08T11:25:42Z",
+          "ended_at": "2026-09-08T11:27:46Z",
+          "elapsed_s": 127,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-shotgun-1788865801",
           "job": "realisateur-shotgun",
           "started_at": "2026-09-08T11:10:01Z",
@@ -1700,31 +1741,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788861828",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-08T10:03:48Z",
-          "ended_at": "2026-09-08T10:05:36Z",
-          "elapsed_s": 111,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788865801",
+        "run_id": "realisateur-shotgun-1788866742",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-08T11:10:01Z",
-        "ended_at": "2026-09-08T11:12:36Z",
-        "elapsed_s": 158,
+        "started_at": "2026-09-08T11:25:42Z",
+        "ended_at": "2026-09-08T11:27:46Z",
+        "elapsed_s": 127,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2038,7 +2062,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Only open issue is #17 (needs-human DECISION: which host runs the HP 8710 printer remedy); 21-day default not yet reached (set 2026-09-02); re-verified full test suite green; nothing else actionable"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "secretaire@selfdev.invalid",
         "clones": []
@@ -2066,6 +2094,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "senechal-nightly-batch-1788866274",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-08T11:17:54Z",
+          "ended_at": "2026-09-08T11:25:05Z",
+          "elapsed_s": 434,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
+        },
         {
           "run_id": "senechal-nightly-batch-1788863799",
           "job": "senechal-nightly-batch",
@@ -2133,31 +2178,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788853933",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-08T07:52:13Z",
-          "ended_at": "2026-09-08T08:02:51Z",
-          "elapsed_s": 641,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788863799",
+        "run_id": "senechal-nightly-batch-1788866274",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-08T10:36:39Z",
-        "ended_at": "2026-09-08T10:45:02Z",
-        "elapsed_s": 506,
+        "started_at": "2026-09-08T11:17:54Z",
+        "ended_at": "2026-09-08T11:25:05Z",
+        "elapsed_s": 434,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2169,7 +2197,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "test@example.com",
         "clones": []
@@ -2298,7 +2330,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "sequestria@selfdev.invalid",
         "clones": []
@@ -2583,22 +2619,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T11:20:01Z",
+    "generated": "2026-09-08T11:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T11:50:01Z",
-    "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
+    "valid_until": "2026-09-08T12:00:02Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
     "disk": "C:\\WSL\\monkey",
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 16 hours, 10 minutes",
+    "uptime": "up 1 week, 16 hours, 20 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T11:20:01Z"
+      "sampled_at": "2026-09-08T11:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
