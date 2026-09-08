@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T06:30:32Z",
-  "valid_until": "2026-09-09T10:30:32Z",
+  "generated": "2026-09-08T06:40:02Z",
+  "valid_until": "2026-09-09T10:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -529,11 +529,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Merged #78 (grocy_api_key /etc/selfdev fan-out, docs-only) and deleted the stale already-merged circadian-ramp-vs-night-fade-hold-17 branch; reconfirmed every remaining open issue (#17,#18,#19,#22,#29,#30,#42,#68,#13,#14) chains to the same wall -- baudin@monkey has no .session-handoff/ha_token (ha-probe.sh exits 1: 'no HA token at .../ha_token'), confirmed live this run -- or to a human decision already correctly labeled needs-human (#29 Midea unit count, #42 route1-vs-route2, #13 ARRIS port-fo"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "baudin@selfdev.invalid",
         "clones": []
@@ -950,11 +946,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "crt@selfdev.invalid",
         "clones": []
@@ -1814,6 +1806,23 @@
       },
       "runs": [
         {
+          "run_id": "scheduler-shotgun-1788848743",
+          "job": "scheduler-shotgun",
+          "started_at": "2026-09-08T06:25:43Z",
+          "ended_at": "2026-09-08T06:31:46Z",
+          "elapsed_s": 366,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 1,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "scheduler-shotgun-1788841516",
           "job": "scheduler-shotgun",
           "started_at": "2026-09-08T04:25:16Z",
@@ -1880,39 +1889,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-shotgun-1788834507",
-          "job": "scheduler-shotgun",
-          "started_at": "2026-09-08T02:28:27Z",
-          "ended_at": "2026-09-08T02:42:10Z",
-          "elapsed_s": 826,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-shotgun-1788841516",
+        "run_id": "scheduler-shotgun-1788848743",
         "job": "scheduler-shotgun",
-        "started_at": "2026-09-08T04:25:16Z",
-        "ended_at": "2026-09-08T04:34:47Z",
-        "elapsed_s": 574,
+        "started_at": "2026-09-08T06:25:43Z",
+        "ended_at": "2026-09-08T06:31:46Z",
+        "elapsed_s": 366,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
-        "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 1,
+        "commits_added": 0,
+        "issues_opened": 1,
+        "issues_closed": 0,
+        "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2619,22 +2611,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T06:30:01Z",
+    "generated": "2026-09-08T06:40:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T07:00:01Z",
-    "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
-    "disk": "",
-    "disk_home": "unknown",
+    "valid_until": "2026-09-08T07:10:01Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 11 hours, 20 minutes",
+    "uptime": "up 1 week, 11 hours, 30 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T06:30:01Z"
+      "sampled_at": "2026-09-08T06:40:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
