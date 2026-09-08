@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T12:40:02Z",
-  "valid_until": "2026-09-09T16:40:02Z",
+  "generated": "2026-09-08T12:50:02Z",
+  "valid_until": "2026-09-09T16:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -125,11 +125,7 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "real-media run landed for #2 (offline path declared winner); #5 blocked on SSH creds, not DNS; #18/#6/#28 unchanged, all genuinely blocked or parked"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "abletim@selfdev.invalid",
         "clones": []
@@ -848,6 +844,23 @@
       },
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1788869574",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-08T12:12:54Z",
+          "ended_at": "2026-09-08T12:49:23Z",
+          "elapsed_s": 2191,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 3,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "crt-nightly-batch-1788867165",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-08T11:32:45Z",
@@ -914,39 +927,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1788857859",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-08T08:57:39Z",
-          "ended_at": "2026-09-08T09:05:02Z",
-          "elapsed_s": 446,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788867165",
+        "run_id": "crt-nightly-batch-1788869574",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-08T11:32:45Z",
-        "ended_at": "2026-09-08T11:51:37Z",
-        "elapsed_s": 1134,
-        "rc": 1,
-        "status": "FAILED (ceiling: max turns reached)",
-        "commits_added": 2,
+        "started_at": "2026-09-08T12:12:54Z",
+        "ended_at": "2026-09-08T12:49:23Z",
+        "elapsed_s": 2191,
+        "rc": 0,
+        "status": "done",
+        "commits_added": 3,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "FAILED",
+        "prs_opened": 3,
+        "prs_merged": 2,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -1086,7 +1082,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Re-verified this run: dexter SSH still Permission-denied publickey/password for dcp-gate-site@dexter, drive still not attached (/mnt/c /mnt/d only mounts on this host) -- blocks #34 sec4/5. hf7y/etalon#36 still draft/unmerged upstream, no reviewer activity since 2026-09-06 -- blocks #104's re-seed. Netlify branch-deploy needs dashboard access this seat has no CLI/token route to -- blocks #106. close-audit.sh and unlanded-work-check.sh both report clean, next-issue.sh surfaces no other actionable"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "dcp-gate-site@selfdev.invalid",
         "clones": []
@@ -1217,7 +1217,11 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Only #97/#118 open (milestone 1), both re-verified blocked on Zach-only actions (secret paste, crontab edit); no repo-side action available."
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "ecosim@selfdev.invalid",
         "clones": []
@@ -1348,7 +1352,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "gardien@selfdev.invalid",
         "clones": []
@@ -1904,7 +1912,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "ci@realisateur.invalid",
         "clones": [
@@ -2079,6 +2091,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788871095",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-08T12:38:15Z",
+          "ended_at": "2026-09-08T12:46:30Z",
+          "elapsed_s": 498,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
+        },
+        {
           "run_id": "senechal-nightly-batch-1788868683",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-08T11:58:03Z",
@@ -2145,31 +2174,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788858858",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-08T09:14:18Z",
-          "ended_at": "2026-09-08T09:21:40Z",
-          "elapsed_s": 445,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788868683",
+        "run_id": "senechal-nightly-batch-1788871095",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-08T11:58:03Z",
-        "ended_at": "2026-09-08T12:05:17Z",
-        "elapsed_s": 438,
+        "started_at": "2026-09-08T12:38:15Z",
+        "ended_at": "2026-09-08T12:46:30Z",
+        "elapsed_s": 498,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2603,10 +2615,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T12:40:02Z",
+    "generated": "2026-09-08T12:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T13:10:02Z",
+    "valid_until": "2026-09-08T13:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2614,11 +2626,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 17 hours, 30 minutes",
+    "uptime": "up 1 week, 17 hours, 40 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T12:40:02Z"
+      "sampled_at": "2026-09-08T12:50:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
