@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T22:50:32Z",
-  "valid_until": "2026-09-10T02:50:32Z",
+  "generated": "2026-09-08T23:00:33Z",
+  "valid_until": "2026-09-10T03:00:33Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -125,11 +125,7 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "real-media run landed for #2 (offline path declared winner); #5 blocked on SSH creds, not DNS; #18/#6/#28 unchanged, all genuinely blocked or parked"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "abletim@selfdev.invalid",
         "clones": []
@@ -261,11 +257,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "american-cycle@selfdev.invalid",
         "clones": []
@@ -697,6 +689,23 @@
       },
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788908253",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-08T22:57:33Z",
+          "ended_at": "2026-09-08T22:58:15Z",
+          "elapsed_s": 46,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "backlog is empty (0 open issues); PRs 100/102/116 all fail the required prose/prose check via the markdown-ratio rule, fix is drafted+CI-green at hf7y/etalon#32 and tracked at hf7y/etalon#33, both need Zach's own read to ready/merge, not mine to do"
+        },
+        {
           "run_id": "chezz-nightly-batch-1788897594",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-08T19:59:54Z",
@@ -763,31 +772,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788871926",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-08T12:52:06Z",
-          "ended_at": "2026-09-08T12:54:44Z",
-          "elapsed_s": 162,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788897594",
+        "run_id": "chezz-nightly-batch-1788908253",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-08T19:59:54Z",
-        "ended_at": "2026-09-08T20:01:07Z",
-        "elapsed_s": 76,
+        "started_at": "2026-09-08T22:57:33Z",
+        "ended_at": "2026-09-08T22:58:15Z",
+        "elapsed_s": 46,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1356,11 +1348,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "gardien@selfdev.invalid",
         "clones": []
@@ -1658,6 +1646,23 @@
       },
       "runs": [
         {
+          "run_id": "realisateur-shotgun-1788908042",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-08T22:54:02Z",
+          "ended_at": "2026-09-08T22:58:48Z",
+          "elapsed_s": 289,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-shotgun-1788899616",
           "job": "realisateur-shotgun",
           "started_at": "2026-09-08T20:33:36Z",
@@ -1724,31 +1729,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788890578",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-08T18:02:58Z",
-          "ended_at": "2026-09-08T18:06:35Z",
-          "elapsed_s": 220,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788899616",
+        "run_id": "realisateur-shotgun-1788908042",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-08T20:33:36Z",
-        "ended_at": "2026-09-08T20:36:29Z",
-        "elapsed_s": 176,
+        "started_at": "2026-09-08T22:54:02Z",
+        "ended_at": "2026-09-08T22:58:48Z",
+        "elapsed_s": 289,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2619,10 +2607,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T22:50:01Z",
+    "generated": "2026-09-08T23:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T23:20:01Z",
+    "valid_until": "2026-09-08T23:30:02Z",
     "verdict": "DEGRADED",
     "why": "the host could not read the VM state, but sshd answers -- it is up",
     "vm_state": "unknown",
@@ -2630,11 +2618,11 @@
     "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 1 day, 3 hours, 40 minutes",
+    "uptime": "up 1 week, 1 day, 3 hours, 51 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T22:50:01Z"
+      "sampled_at": "2026-09-08T23:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
