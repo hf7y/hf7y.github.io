@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T03:00:02Z",
-  "valid_until": "2026-09-09T07:00:02Z",
+  "generated": "2026-09-08T03:10:32Z",
+  "valid_until": "2026-09-09T07:10:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -832,6 +832,23 @@
       },
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1788835380",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-08T02:43:00Z",
+          "ended_at": "2026-09-08T03:04:27Z",
+          "elapsed_s": 1290,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "crt-nightly-batch-1788832793",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-08T01:59:53Z",
@@ -898,38 +915,21 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1788826367",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-08T00:12:47Z",
-          "ended_at": "2026-09-08T00:31:15Z",
-          "elapsed_s": 1110,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 3,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 4,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788832793",
+        "run_id": "crt-nightly-batch-1788835380",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-08T01:59:53Z",
-        "ended_at": "2026-09-08T02:08:34Z",
-        "elapsed_s": 524,
+        "started_at": "2026-09-08T02:43:00Z",
+        "ended_at": "2026-09-08T03:04:27Z",
+        "elapsed_s": 1290,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 0,
-        "prs_merged": 0,
+        "issues_closed": 0,
+        "prs_opened": 1,
+        "prs_merged": 1,
         "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
@@ -1900,11 +1900,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "ci@realisateur.invalid",
         "clones": [
@@ -2046,11 +2042,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Only open issue is #17 (needs-human DECISION: which host runs the HP 8710 printer remedy); 21-day default not yet reached (set 2026-09-02); re-verified full test suite green; nothing else actionable"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "secretaire@selfdev.invalid",
         "clones": []
@@ -2078,6 +2070,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "senechal-nightly-batch-1788836020",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-08T02:53:40Z",
+          "ended_at": "2026-09-08T03:04:38Z",
+          "elapsed_s": 661,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
+        },
         {
           "run_id": "senechal-nightly-batch-1788835313",
           "job": "senechal-nightly-batch",
@@ -2145,31 +2154,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "every open issue's next step needs mandark/dexter SSH (refused, tested live) or Zach's own hands/decision; all already documented in-thread"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788827242",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-08T00:27:22Z",
-          "ended_at": "2026-09-08T00:38:35Z",
-          "elapsed_s": 676,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "every open issue's next step needs mandark/dexter SSH (refused, tested live) or Zach's own hands/decision; all already documented in-thread"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788835313",
+        "run_id": "senechal-nightly-batch-1788836020",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-08T02:41:53Z",
-        "ended_at": "2026-09-08T02:49:29Z",
-        "elapsed_s": 458,
+        "started_at": "2026-09-08T02:53:40Z",
+        "ended_at": "2026-09-08T03:04:38Z",
+        "elapsed_s": 661,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2181,11 +2173,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "test@example.com",
         "clones": []
@@ -2603,22 +2591,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T03:00:01Z",
+    "generated": "2026-09-08T03:10:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T03:30:01Z",
-    "verdict": "OK",
-    "why": "running, sshd answering, root rw, disk internal",
-    "vm_state": "running",
-    "disk": "C:\\WSL\\monkey",
-    "disk_home": "internal",
+    "valid_until": "2026-09-08T03:40:01Z",
+    "verdict": "DEGRADED",
+    "why": "the host could not read the VM state, but sshd answers -- it is up",
+    "vm_state": "unknown",
+    "disk": "",
+    "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 7 hours, 50 minutes",
+    "uptime": "up 1 week, 8 hours, 0 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T03:00:01Z"
+      "sampled_at": "2026-09-08T03:10:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
