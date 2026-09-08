@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T03:10:32Z",
-  "valid_until": "2026-09-09T07:10:32Z",
+  "generated": "2026-09-08T03:20:03Z",
+  "valid_until": "2026-09-09T07:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -261,11 +261,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "american-cycle@selfdev.invalid",
         "clones": []
@@ -697,6 +693,23 @@
       },
       "runs": [
         {
+          "run_id": "chezz-nightly-batch-1788837031",
+          "job": "chezz-nightly-batch",
+          "started_at": "2026-09-08T03:10:31Z",
+          "ended_at": "2026-09-08T03:19:59Z",
+          "elapsed_s": 571,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "chezz-nightly-batch-1788834549",
           "job": "chezz-nightly-batch",
           "started_at": "2026-09-08T02:29:09Z",
@@ -763,31 +776,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1788824718",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-07T23:45:18Z",
-          "ended_at": "2026-09-07T23:46:14Z",
-          "elapsed_s": 59,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "chezz-nightly-batch-1788834549",
+        "run_id": "chezz-nightly-batch-1788837031",
         "job": "chezz-nightly-batch",
-        "started_at": "2026-09-08T02:29:09Z",
-        "ended_at": "2026-09-08T02:29:59Z",
-        "elapsed_s": 52,
+        "started_at": "2026-09-08T03:10:31Z",
+        "ended_at": "2026-09-08T03:19:59Z",
+        "elapsed_s": 571,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -801,7 +797,23 @@
       },
       "containment": {
         "foreign_clones": [],
-        "outside_home": [],
+        "outside_home": [
+          "/srv/ecosystem1-vault/chezz/research/balance/2026-08-22-analytic-material-sufficiency.md",
+          "/srv/ecosystem1-vault/.git/refs/heads/main",
+          "/srv/ecosystem1-vault/.git/objects/ad",
+          "/srv/ecosystem1-vault/.git/objects/ad/7c23a99415f4ed0429370423e77447582c4050",
+          "/srv/ecosystem1-vault/.git/objects/ac",
+          "/srv/ecosystem1-vault/.git/objects/ac/cf19385443652061e8c0fe0b30f0ff159f55e7",
+          "/srv/ecosystem1-vault/.git/objects/2c",
+          "/srv/ecosystem1-vault/.git/objects/2c/fd677f0b3fec625870e37a07978a3afba26995",
+          "/srv/ecosystem1-vault/.git/objects/fb",
+          "/srv/ecosystem1-vault/.git/objects/fb/605b205a8536759bca552c27422c54c4df9433",
+          "/srv/ecosystem1-vault/.git/objects/bc/ddd839d76be3cb4fadc05fcb74f303265c7494",
+          "/srv/ecosystem1-vault/.git/objects/6a",
+          "/srv/ecosystem1-vault/.git/objects/6a/7c8527a987df6e8168e5800a9e7a843208170a",
+          "/srv/ecosystem1-vault/.git/index",
+          "/srv/ecosystem1-vault/.git/COMMIT_EDITMSG"
+        ],
         "sudoers": []
       },
       "identity": {
@@ -1070,11 +1082,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "re-verified tonight: #34 dexter SSH still refused (publickey,password), #104 awaits hf7y/etalon#36 self-dev merge, #106 needs Netlify dashboard access this seat lacks; nothing left to build, backlog is these 3 plus #27 which awaits Zach directly"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "dcp-gate-site@selfdev.invalid",
         "clones": []
@@ -1609,11 +1617,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Re-verified suite (219 passed) + sim smoke clean; fresh adversarial read of hardware/{endpoint_process,network_endpoint,registry,supervisor,endpoint_cli,channel_map,level_balance,pd_lint}.py and nine_speakers/sim.py found no new defect -- codebase is now thoroughly hardened after 30+ prior passes. Remaining milestone (#5) work -- #64 (card bring-up), #59/#60 (projector hardware facts), #62 (zaxon ownership) -- is genuinely blocked on Zach's physical hardware/decision, not on further code."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "nine-speakers@selfdev.invalid",
         "clones": []
@@ -1744,11 +1748,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "ci@realisateur.invalid",
         "clones": [
@@ -1797,6 +1797,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "scheduler-shotgun-1788835918",
+          "job": "scheduler-shotgun",
+          "started_at": "2026-09-08T02:51:58Z",
+          "ended_at": "2026-09-08T03:13:52Z",
+          "elapsed_s": 1318,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "scheduler-shotgun-1788834507",
           "job": "scheduler-shotgun",
@@ -1864,43 +1881,30 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-shotgun-1788827698",
-          "job": "scheduler-shotgun",
-          "started_at": "2026-09-08T00:34:58Z",
-          "ended_at": "2026-09-08T00:40:36Z",
-          "elapsed_s": 341,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-shotgun-1788834507",
+        "run_id": "scheduler-shotgun-1788835918",
         "job": "scheduler-shotgun",
-        "started_at": "2026-09-08T02:28:27Z",
-        "ended_at": "2026-09-08T02:42:10Z",
-        "elapsed_s": 826,
+        "started_at": "2026-09-08T02:51:58Z",
+        "ended_at": "2026-09-08T03:13:52Z",
+        "elapsed_s": 1318,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "ci@realisateur.invalid",
         "clones": [
@@ -2042,7 +2046,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Only open issue is #17 (needs-human DECISION: which host runs the HP 8710 printer remedy); 21-day default not yet reached (set 2026-09-02); re-verified full test suite green; nothing else actionable"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "secretaire@selfdev.invalid",
         "clones": []
@@ -2173,7 +2181,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "test@example.com",
         "clones": []
@@ -2470,6 +2482,23 @@
       },
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788836843",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-08T03:07:23Z",
+          "ended_at": "2026-09-08T03:19:37Z",
+          "elapsed_s": 737,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "wtul-nightly-batch-1788836085",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-08T02:54:45Z",
@@ -2536,39 +2565,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": "24th pass: found and landed a genuinely new PR (#170, flaky test fix from a prior run's /wtul-batch hang) that no earlier pass had seen -- its prose/prose check was red (+4 over merge-base from a standalone 4-line comment), reaped it to a trailing comment (+0 confirmed via local --census), pushed, verified pytest+prose green in CI, squash-merged as 1a0401e. Issue queue itself unchanged (still #162 at 06:25:54Z, same 23-pass-old cutoff) -- no issue to close for this one, it was a standalone test-"
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788829577",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-08T01:06:17Z",
-          "ended_at": "2026-09-08T01:09:16Z",
-          "elapsed_s": 182,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "24th pass: found and landed a genuinely new PR (#170, flaky test fix from a prior run's /wtul-batch hang) that no earlier pass had seen -- its prose/prose check was red (+4 over merge-base from a standalone 4-line comment), reaped it to a trailing comment (+0 confirmed via local --census), pushed, verified pytest+prose green in CI, squash-merged as 1a0401e. Issue queue itself unchanged (still #162 at 06:25:54Z, same 23-pass-old cutoff) -- no issue to close for this one, it was a standalone test-"
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788836085",
+        "run_id": "wtul-nightly-batch-1788836843",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-08T02:54:45Z",
-        "ended_at": "2026-09-08T02:59:02Z",
-        "elapsed_s": 259,
+        "started_at": "2026-09-08T03:07:23Z",
+        "ended_at": "2026-09-08T03:19:37Z",
+        "elapsed_s": 737,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 0,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
         "claimed_reason": ""
       },
@@ -2591,22 +2603,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T03:10:01Z",
+    "generated": "2026-09-08T03:20:03Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T03:40:01Z",
-    "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
-    "disk": "",
-    "disk_home": "unknown",
+    "valid_until": "2026-09-08T03:50:03Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 8 hours, 0 minutes",
+    "uptime": "up 1 week, 8 hours, 10 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T03:10:01Z"
+      "sampled_at": "2026-09-08T03:20:03Z"
     },
     "root_mount": "rw",
     "guest_error": null,
