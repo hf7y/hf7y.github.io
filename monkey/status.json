@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T04:40:02Z",
-  "valid_until": "2026-09-09T08:40:02Z",
+  "generated": "2026-09-08T04:50:02Z",
+  "valid_until": "2026-09-09T08:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -984,6 +984,23 @@
       },
       "runs": [
         {
+          "run_id": "dcp-gate-site-nightly-batch-1788842530",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-08T04:42:10Z",
+          "ended_at": "2026-09-08T04:46:44Z",
+          "elapsed_s": 277,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "re-verified tonight: #34 dexter SSH still refused (publickey,password), #104 awaits hf7y/etalon#36 self-dev merge, #106 needs Netlify dashboard access this seat lacks; nothing left to build, backlog is these 3 plus #27 which awaits Zach directly"
+        },
+        {
           "run_id": "dcp-gate-site-nightly-batch-1788840111",
           "job": "dcp-gate-site-nightly-batch",
           "started_at": "2026-09-08T04:01:51Z",
@@ -1050,31 +1067,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "All 3 agent-actionable issues re-verified blocked on humans/other repos tonight: #34 dexter SSH still refused (ssh -p 2223 dexter -> Permission denied publickey,password, re-tested just now), #104 fix lives in hf7y/etalon#36 (draft PR passing, still awaiting their self-dev review/merge, not my call), #106 needs Netlify dashboard access this seat lacks (which netlify and env netlify both empty, re-checked). Nothing left to build in this repo tonight; #27 is DECISION: awaiting Zach."
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788830210",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-08T01:16:50Z",
-          "ended_at": "2026-09-08T01:20:47Z",
-          "elapsed_s": 240,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "All 3 agent-actionable issues re-verified blocked on humans/other repos tonight: #34 dexter SSH still refused (ssh -p 2223 dexter -> Permission denied publickey,password, re-tested just now), #104 fix lives in hf7y/etalon#36 (draft PR passing, still awaiting their self-dev review/merge, not my call), #106 needs Netlify dashboard access this seat lacks (which netlify and env netlify both empty, re-checked). Nothing left to build in this repo tonight; #27 is DECISION: awaiting Zach."
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788840111",
+        "run_id": "dcp-gate-site-nightly-batch-1788842530",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-08T04:01:51Z",
-        "ended_at": "2026-09-08T04:05:50Z",
-        "elapsed_s": 242,
+        "started_at": "2026-09-08T04:42:10Z",
+        "ended_at": "2026-09-08T04:46:44Z",
+        "elapsed_s": 277,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1658,6 +1658,23 @@
       },
       "runs": [
         {
+          "run_id": "realisateur-shotgun-1788842346",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-08T04:39:06Z",
+          "ended_at": "2026-09-08T04:41:36Z",
+          "elapsed_s": 153,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-shotgun-1788841186",
           "job": "realisateur-shotgun",
           "started_at": "2026-09-08T04:19:46Z",
@@ -1724,31 +1741,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788834152",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-08T02:22:32Z",
-          "ended_at": "2026-09-08T02:25:45Z",
-          "elapsed_s": 196,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 1,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788841186",
+        "run_id": "realisateur-shotgun-1788842346",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-08T04:19:46Z",
-        "ended_at": "2026-09-08T04:22:34Z",
-        "elapsed_s": 170,
+        "started_at": "2026-09-08T04:39:06Z",
+        "ended_at": "2026-09-08T04:41:36Z",
+        "elapsed_s": 153,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2498,6 +2498,23 @@
       },
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1788842599",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-08T04:43:19Z",
+          "ended_at": "2026-09-08T04:45:52Z",
+          "elapsed_s": 156,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "27th consecutive /wtul-batch pass: quick-diff confirms zero drift since 26th pass (issue updatedAt tops out at #162 06:25:54Z, no issue past #171, gh pr list empty, close-audit/unlanded-work-check clean, pytest 1102/9/6 unchanged pre-existing ffmpeg failures)."
+        },
+        {
           "run_id": "wtul-nightly-batch-1788840180",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-08T04:03:00Z",
@@ -2564,31 +2581,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "DONE",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "wtul-nightly-batch-1788835450",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-08T02:44:10Z",
-          "ended_at": "2026-09-08T02:53:27Z",
-          "elapsed_s": 559,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "24th pass: found and landed a genuinely new PR (#170, flaky test fix from a prior run's /wtul-batch hang) that no earlier pass had seen -- its prose/prose check was red (+4 over merge-base from a standalone 4-line comment), reaped it to a trailing comment (+0 confirmed via local --census), pushed, verified pytest+prose green in CI, squash-merged as 1a0401e. Issue queue itself unchanged (still #162 at 06:25:54Z, same 23-pass-old cutoff) -- no issue to close for this one, it was a standalone test-"
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1788840180",
+        "run_id": "wtul-nightly-batch-1788842599",
         "job": "wtul-nightly-batch",
-        "started_at": "2026-09-08T04:03:00Z",
-        "ended_at": "2026-09-08T04:05:02Z",
-        "elapsed_s": 126,
+        "started_at": "2026-09-08T04:43:19Z",
+        "ended_at": "2026-09-08T04:45:52Z",
+        "elapsed_s": 156,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2598,7 +2598,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "DONE",
-        "claimed_reason": ""
+        "claimed_reason": "27th consecutive /wtul-batch pass: quick-diff confirms zero drift since 26th pass (issue updatedAt tops out at #162 06:25:54Z, no issue past #171, gh pr list empty, close-audit/unlanded-work-check clean, pytest 1102/9/6 unchanged pre-existing ffmpeg failures)."
       },
       "containment": {
         "foreign_clones": [],
@@ -2619,10 +2619,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T04:40:01Z",
+    "generated": "2026-09-08T04:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T05:10:01Z",
+    "valid_until": "2026-09-08T05:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2630,11 +2630,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 9 hours, 29 minutes",
+    "uptime": "up 1 week, 9 hours, 40 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T04:40:01Z"
+      "sampled_at": "2026-09-08T04:50:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
