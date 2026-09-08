@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T14:50:12Z",
-  "valid_until": "2026-09-09T18:50:12Z",
+  "generated": "2026-09-08T15:00:12Z",
+  "valid_until": "2026-09-09T19:00:12Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -261,7 +261,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "american-cycle@selfdev.invalid",
         "clones": []
@@ -289,6 +293,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "apms-nightly-batch-1788878916",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-08T14:48:36Z",
+          "ended_at": "2026-09-08T14:52:03Z",
+          "elapsed_s": 212,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "no canvas.token/CANVAS_TOKEN in this scheduled checkout blocks #55 and #86's read half; no real class recording exists yet for #86, session 03 is 2026-09-14"
+        },
         {
           "run_id": "apms-nightly-batch-1788876415",
           "job": "apms-nightly-batch",
@@ -356,31 +377,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "canvas.token absent (both #55 #86) and session-03 recording not yet happened (#86, due 2026-09-14) -- unchanged since today's 00:47Z check"
-        },
-        {
-          "run_id": "apms-nightly-batch-1788865390",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-08T11:03:10Z",
-          "ended_at": "2026-09-08T11:04:51Z",
-          "elapsed_s": 105,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "Both open issues (#55, #86) need external input: a human-placed canvas.token to run roll_call.py (scheduled account deliberately carries none, per ROSTER), and session 03 on 2026-09-14 to feed the STT loop a real recording; re-verified today, tests 29 passed, nothing changed since the 00:47Z comments"
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788876415",
+        "run_id": "apms-nightly-batch-1788878916",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-08T14:06:55Z",
-        "ended_at": "2026-09-08T14:08:28Z",
-        "elapsed_s": 99,
+        "started_at": "2026-09-08T14:48:36Z",
+        "ended_at": "2026-09-08T14:52:03Z",
+        "elapsed_s": 212,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -390,9 +394,13 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "no canvas.token in this scheduled checkout (deliberate per ROSTER) and no real class recording exists yet; session 03 is 2026-09-14"
+        "claimed_reason": "no canvas.token/CANVAS_TOKEN in this scheduled checkout blocks #55 and #86's read half; no real class recording exists yet for #86, session 03 is 2026-09-14"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "apms@selfdev.invalid",
         "clones": []
@@ -1806,6 +1814,23 @@
       },
       "runs": [
         {
+          "run_id": "scheduler-shotgun-1788877888",
+          "job": "scheduler-shotgun",
+          "started_at": "2026-09-08T14:31:28Z",
+          "ended_at": "2026-09-08T14:57:02Z",
+          "elapsed_s": 1537,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 1,
+          "issues_closed": 1,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
+        },
+        {
           "run_id": "scheduler-shotgun-1788876429",
           "job": "scheduler-shotgun",
           "started_at": "2026-09-08T14:07:09Z",
@@ -1872,39 +1897,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
-        },
-        {
-          "run_id": "scheduler-shotgun-1788868016",
-          "job": "scheduler-shotgun",
-          "started_at": "2026-09-08T11:46:56Z",
-          "ended_at": "2026-09-08T11:54:50Z",
-          "elapsed_s": 477,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
         }
       ],
       "last_run": {
-        "run_id": "scheduler-shotgun-1788876429",
+        "run_id": "scheduler-shotgun-1788877888",
         "job": "scheduler-shotgun",
-        "started_at": "2026-09-08T14:07:09Z",
-        "ended_at": "2026-09-08T14:16:37Z",
-        "elapsed_s": 574,
+        "started_at": "2026-09-08T14:31:28Z",
+        "ended_at": "2026-09-08T14:57:02Z",
+        "elapsed_s": 1537,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
-        "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "commits_added": 1,
+        "issues_opened": 1,
+        "issues_closed": 1,
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
       },
@@ -2087,6 +2095,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788878779",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-08T14:46:19Z",
+          "ended_at": "2026-09-08T14:55:10Z",
+          "elapsed_s": 534,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
+        },
+        {
           "run_id": "senechal-nightly-batch-1788876348",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-08T14:05:48Z",
@@ -2153,43 +2178,30 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788866274",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-08T11:17:54Z",
-          "ended_at": "2026-09-08T11:25:05Z",
-          "elapsed_s": 434,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788876348",
+        "run_id": "senechal-nightly-batch-1788878779",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-08T14:05:48Z",
-        "ended_at": "2026-09-08T14:21:52Z",
-        "elapsed_s": 968,
+        "started_at": "2026-09-08T14:46:19Z",
+        "ended_at": "2026-09-08T14:55:10Z",
+        "elapsed_s": 534,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 0,
+        "prs_merged": 2,
         "verdict_computed": "WORKED",
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "test@example.com",
         "clones": []
@@ -2453,7 +2465,11 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "landed #264 (dispatch reports back to filed issue), closed stale/duplicate PRs #259+#265; #235's issue-targeting half still needs scheduler-side design"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
         "clones": []
@@ -2603,10 +2619,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T14:50:02Z",
+    "generated": "2026-09-08T15:00:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T15:20:02Z",
+    "valid_until": "2026-09-08T15:30:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2614,11 +2630,11 @@
     "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 19 hours, 40 minutes",
+    "uptime": "up 1 week, 19 hours, 50 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T14:50:02Z"
+      "sampled_at": "2026-09-08T15:00:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
