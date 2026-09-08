@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T08:40:02Z",
-  "valid_until": "2026-09-09T12:40:02Z",
+  "generated": "2026-09-08T08:50:02Z",
+  "valid_until": "2026-09-09T12:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1658,6 +1658,23 @@
       },
       "runs": [
         {
+          "run_id": "realisateur-shotgun-1788856982",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-08T08:43:02Z",
+          "ended_at": "2026-09-08T08:49:29Z",
+          "elapsed_s": 390,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-shotgun-1788855663",
           "job": "realisateur-shotgun",
           "started_at": "2026-09-08T08:21:03Z",
@@ -1724,31 +1741,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788852302",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-08T07:25:02Z",
-          "ended_at": "2026-09-08T07:27:01Z",
-          "elapsed_s": 122,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788855663",
+        "run_id": "realisateur-shotgun-1788856982",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-08T08:21:03Z",
-        "ended_at": "2026-09-08T08:23:25Z",
-        "elapsed_s": 145,
+        "started_at": "2026-09-08T08:43:02Z",
+        "ended_at": "2026-09-08T08:49:29Z",
+        "elapsed_s": 390,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2095,6 +2095,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788856414",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-08T08:33:34Z",
+          "ended_at": "2026-09-08T08:41:01Z",
+          "elapsed_s": 451,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
+        },
+        {
           "run_id": "senechal-nightly-batch-1788853933",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-08T07:52:13Z",
@@ -2161,31 +2178,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788845864",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-08T05:37:44Z",
-          "ended_at": "2026-09-08T05:56:34Z",
-          "elapsed_s": 1133,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788853933",
+        "run_id": "senechal-nightly-batch-1788856414",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-08T07:52:13Z",
-        "ended_at": "2026-09-08T08:02:51Z",
-        "elapsed_s": 641,
+        "started_at": "2026-09-08T08:33:34Z",
+        "ended_at": "2026-09-08T08:41:01Z",
+        "elapsed_s": 451,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2195,7 +2195,7 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
+        "claimed_reason": "reviewed all 13 open issues; tests/suites/absorb/close-audit all clean; every actionable item needs Zach's remedy-enable (sudo) or an external repo ruling (realisateur#864/#983), none buildable from this session"
       },
       "containment": {
         "foreign_clones": [],
@@ -2619,10 +2619,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T08:40:02Z",
+    "generated": "2026-09-08T08:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T09:10:02Z",
+    "valid_until": "2026-09-08T09:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2630,11 +2630,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 13 hours, 29 minutes",
+    "uptime": "up 1 week, 13 hours, 40 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T08:40:02Z"
+      "sampled_at": "2026-09-08T08:50:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
