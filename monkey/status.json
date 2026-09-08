@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T23:20:32Z",
-  "valid_until": "2026-09-10T03:20:32Z",
+  "generated": "2026-09-08T23:30:32Z",
+  "valid_until": "2026-09-10T03:30:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1814,6 +1814,23 @@
       },
       "runs": [
         {
+          "run_id": "scheduler-shotgun-1788909588",
+          "job": "scheduler-shotgun",
+          "started_at": "2026-09-08T23:19:48Z",
+          "ended_at": "2026-09-08T23:30:24Z",
+          "elapsed_s": 639,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
+        },
+        {
           "run_id": "scheduler-shotgun-1788908484",
           "job": "scheduler-shotgun",
           "started_at": "2026-09-08T23:01:24Z",
@@ -1880,47 +1897,26 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
-        },
-        {
-          "run_id": "scheduler-shotgun-1788893004",
-          "job": "scheduler-shotgun",
-          "started_at": "2026-09-08T18:43:24Z",
-          "ended_at": "2026-09-08T18:49:31Z",
-          "elapsed_s": 370,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
         }
       ],
       "last_run": {
-        "run_id": "scheduler-shotgun-1788908484",
+        "run_id": "scheduler-shotgun-1788909588",
         "job": "scheduler-shotgun",
-        "started_at": "2026-09-08T23:01:24Z",
-        "ended_at": "2026-09-08T23:09:33Z",
-        "elapsed_s": 492,
+        "started_at": "2026-09-08T23:19:48Z",
+        "ended_at": "2026-09-08T23:30:24Z",
+        "elapsed_s": 639,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "ci@realisateur.invalid",
         "clones": [
@@ -2619,10 +2615,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T23:20:01Z",
+    "generated": "2026-09-08T23:30:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T23:50:01Z",
+    "valid_until": "2026-09-09T00:00:01Z",
     "verdict": "DEGRADED",
     "why": "the host could not read the VM state, but sshd answers -- it is up",
     "vm_state": "unknown",
@@ -2630,11 +2626,11 @@
     "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 1 day, 4 hours, 10 minutes",
+    "uptime": "up 1 week, 1 day, 4 hours, 20 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T23:20:01Z"
+      "sampled_at": "2026-09-08T23:30:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
