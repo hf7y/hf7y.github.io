@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T12:30:02Z",
-  "valid_until": "2026-09-09T16:30:02Z",
+  "generated": "2026-09-08T12:40:02Z",
+  "valid_until": "2026-09-09T16:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1217,11 +1217,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Only #97/#118 open (milestone 1), both re-verified blocked on Zach-only actions (secret paste, crontab edit); no repo-side action available."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "ecosim@selfdev.invalid",
         "clones": []
@@ -1908,11 +1904,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "ci@realisateur.invalid",
         "clones": [
@@ -2054,7 +2046,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Only open issue is #17 (needs-human DECISION: which host runs the HP 8710 printer remedy); 21-day default not yet reached (set 2026-09-02); re-verified full test suite green; nothing else actionable"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "secretaire@selfdev.invalid",
         "clones": []
@@ -2607,10 +2603,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T12:30:02Z",
+    "generated": "2026-09-08T12:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T13:00:02Z",
+    "valid_until": "2026-09-08T13:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2618,11 +2614,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 17 hours, 20 minutes",
+    "uptime": "up 1 week, 17 hours, 30 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T12:30:02Z"
+      "sampled_at": "2026-09-08T12:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
