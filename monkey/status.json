@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T07:10:02Z",
-  "valid_until": "2026-09-09T11:10:02Z",
+  "generated": "2026-09-08T07:20:02Z",
+  "valid_until": "2026-09-09T11:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1356,7 +1356,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "gardien@selfdev.invalid",
         "clones": []
@@ -1488,7 +1492,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "milestone #59/#82/#87/#88 all genuinely blocked on dexter/mandark ssh, docker, and Zach's own phone reply"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "groc-mangr@selfdev.invalid",
         "clones": []
@@ -1617,7 +1625,11 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Re-verified suite (219 passed) + sim smoke clean; fresh adversarial read of hardware/{endpoint_process,network_endpoint,registry,supervisor,endpoint_cli,channel_map,level_balance,pd_lint}.py and nine_speakers/sim.py found no new defect -- codebase is now thoroughly hardened after 30+ prior passes. Remaining milestone (#5) work -- #64 (card bring-up), #59/#60 (projector hardware facts), #62 (zaxon ownership) -- is genuinely blocked on Zach's physical hardware/decision, not on further code."
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "nine-speakers@selfdev.invalid",
         "clones": []
@@ -1802,6 +1814,23 @@
       },
       "runs": [
         {
+          "run_id": "scheduler-shotgun-1788851159",
+          "job": "scheduler-shotgun",
+          "started_at": "2026-09-08T07:05:59Z",
+          "ended_at": "2026-09-08T07:20:37Z",
+          "elapsed_s": 881,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 3,
+          "prs_opened": 0,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "scheduler-shotgun-1788850137",
           "job": "scheduler-shotgun",
           "started_at": "2026-09-08T06:48:57Z",
@@ -1868,39 +1897,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "scheduler-shotgun-1788837872",
-          "job": "scheduler-shotgun",
-          "started_at": "2026-09-08T03:24:32Z",
-          "ended_at": "2026-09-08T03:46:47Z",
-          "elapsed_s": 1337,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 2,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "scheduler-shotgun-1788850137",
+        "run_id": "scheduler-shotgun-1788851159",
         "job": "scheduler-shotgun",
-        "started_at": "2026-09-08T06:48:57Z",
-        "ended_at": "2026-09-08T06:55:26Z",
-        "elapsed_s": 392,
+        "started_at": "2026-09-08T07:05:59Z",
+        "ended_at": "2026-09-08T07:20:37Z",
+        "elapsed_s": 881,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 3,
         "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2083,6 +2095,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1788851468",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-08T07:11:08Z",
+          "ended_at": "2026-09-08T07:17:33Z",
+          "elapsed_s": 388,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
+        },
+        {
           "run_id": "senechal-nightly-batch-1788849001",
           "job": "senechal-nightly-batch",
           "started_at": "2026-09-08T06:30:01Z",
@@ -2149,31 +2178,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1788840899",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-08T04:14:59Z",
-          "ended_at": "2026-09-08T04:26:42Z",
-          "elapsed_s": 706,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "re-verified 2026-09-08: tests pass (109+232+68 suites+7 contract), absorb-and-pr found nothing pending, milestone issues 772/656/558/344/345/422/460/634 and backlog 784/783/439/348 all confirmed still blocked on Zach's SSH/hands/git-identity calls or another repo's self-dev, per each issue's own latest comment"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1788849001",
+        "run_id": "senechal-nightly-batch-1788851468",
         "job": "senechal-nightly-batch",
-        "started_at": "2026-09-08T06:30:01Z",
-        "ended_at": "2026-09-08T06:41:50Z",
-        "elapsed_s": 712,
+        "started_at": "2026-09-08T07:11:08Z",
+        "ended_at": "2026-09-08T07:17:33Z",
+        "elapsed_s": 388,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2607,10 +2619,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T07:10:01Z",
+    "generated": "2026-09-08T07:20:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T07:40:01Z",
+    "valid_until": "2026-09-08T07:50:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2618,11 +2630,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 11 hours, 59 minutes",
+    "uptime": "up 1 week, 12 hours, 9 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T07:10:01Z"
+      "sampled_at": "2026-09-08T07:20:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
