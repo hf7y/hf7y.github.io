@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T18:10:32Z",
-  "valid_until": "2026-09-09T22:10:32Z",
+  "generated": "2026-09-08T18:20:02Z",
+  "valid_until": "2026-09-09T22:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -159,6 +159,23 @@
       },
       "runs": [
         {
+          "run_id": "american-cycle-nightly-batch-1788890394",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-08T17:59:54Z",
+          "ended_at": "2026-09-08T18:14:59Z",
+          "elapsed_s": 908,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "american-cycle-nightly-batch-1788889650",
           "job": "american-cycle-nightly-batch",
           "started_at": "2026-09-08T17:47:30Z",
@@ -225,35 +242,18 @@
           "verdict_computed": "FAILED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1788874308",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-08T13:31:48Z",
-          "ended_at": "2026-09-08T13:39:16Z",
-          "elapsed_s": 451,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1788889650",
+        "run_id": "american-cycle-nightly-batch-1788890394",
         "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-08T17:47:30Z",
-        "ended_at": "2026-09-08T17:56:38Z",
-        "elapsed_s": 551,
+        "started_at": "2026-09-08T17:59:54Z",
+        "ended_at": "2026-09-08T18:14:59Z",
+        "elapsed_s": 908,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
-        "issues_opened": 1,
+        "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
@@ -529,11 +529,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Merged #78 (grocy_api_key /etc/selfdev fan-out, docs-only) and deleted the stale already-merged circadian-ramp-vs-night-fade-hold-17 branch; reconfirmed every remaining open issue (#17,#18,#19,#22,#29,#30,#42,#68,#13,#14) chains to the same wall -- baudin@monkey has no .session-handoff/ha_token (ha-probe.sh exits 1: 'no HA token at .../ha_token'), confirmed live this run -- or to a human decision already correctly labeled needs-human (#29 Midea unit count, #42 route1-vs-route2, #13 ARRIS port-fo"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "baudin@selfdev.invalid",
         "clones": []
@@ -848,6 +844,23 @@
       },
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1788889840",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-08T17:50:40Z",
+          "ended_at": "2026-09-08T18:12:59Z",
+          "elapsed_s": 1341,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "crt-nightly-batch-1788888522",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-08T17:28:42Z",
@@ -914,47 +927,26 @@
           "verdict_computed": "FAILED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1788872756",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-08T13:05:56Z",
-          "ended_at": "2026-09-08T13:24:06Z",
-          "elapsed_s": 1094,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788888522",
+        "run_id": "crt-nightly-batch-1788889840",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-08T17:28:42Z",
-        "ended_at": "2026-09-08T17:50:03Z",
-        "elapsed_s": 1284,
+        "started_at": "2026-09-08T17:50:40Z",
+        "ended_at": "2026-09-08T18:12:59Z",
+        "elapsed_s": 1341,
         "rc": 1,
         "status": "FAILED (ceiling: max turns reached)",
         "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 1,
+        "prs_merged": 0,
         "verdict_computed": "WORKED-CUTOFF",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "crt@selfdev.invalid",
         "clones": []
@@ -983,6 +975,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "dcp-gate-site-nightly-batch-1788891369",
+          "job": "dcp-gate-site-nightly-batch",
+          "started_at": "2026-09-08T18:16:09Z",
+          "ended_at": "2026-09-08T18:18:57Z",
+          "elapsed_s": 171,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "Re-verified this run: dexter SSH still Permission-denied publickey/password for dcp-gate-site@dexter, drive still not attached (/mnt/c /mnt/d only mounts on this host) -- blocks #34 sec4/5. hf7y/etalon#36 still draft/unmerged upstream, no reviewer activity since 2026-09-06 -- blocks #104's re-seed. Netlify branch-deploy needs dashboard access this seat has no CLI/token route to -- blocks #106. close-audit.sh and unlanded-work-check.sh both report clean, next-issue.sh surfaces no other actionable"
+        },
         {
           "run_id": "dcp-gate-site-nightly-batch-1788888333",
           "job": "dcp-gate-site-nightly-batch",
@@ -1050,31 +1059,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "Re-verified this run: dexter SSH still Permission-denied publickey/password for dcp-gate-site@dexter, drive still not attached (/mnt/c /mnt/d only mounts on this host) -- blocks #34 sec4/5. hf7y/etalon#36 still draft/unmerged upstream, no reviewer activity since 2026-09-06 -- blocks #104's re-seed. Netlify branch-deploy needs dashboard access this seat has no CLI/token route to -- blocks #106. close-audit.sh and unlanded-work-check.sh both report clean, next-issue.sh surfaces no other actionable"
-        },
-        {
-          "run_id": "dcp-gate-site-nightly-batch-1788869444",
-          "job": "dcp-gate-site-nightly-batch",
-          "started_at": "2026-09-08T12:10:44Z",
-          "ended_at": "2026-09-08T12:13:06Z",
-          "elapsed_s": 146,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "Re-verified this run: dexter SSH still Permission-denied publickey/password for dcp-gate-site@dexter, drive still not attached (/mnt/c /mnt/d only mounts on this host) -- blocks #34 sec4/5. hf7y/etalon#36 still draft/unmerged upstream, no reviewer activity since 2026-09-06 -- blocks #104's re-seed. Netlify branch-deploy needs dashboard access this seat has no CLI/token route to -- blocks #106. close-audit.sh and unlanded-work-check.sh both report clean, next-issue.sh surfaces no other actionable"
         }
       ],
       "last_run": {
-        "run_id": "dcp-gate-site-nightly-batch-1788888333",
+        "run_id": "dcp-gate-site-nightly-batch-1788891369",
         "job": "dcp-gate-site-nightly-batch",
-        "started_at": "2026-09-08T17:25:33Z",
-        "ended_at": "2026-09-08T17:31:17Z",
-        "elapsed_s": 347,
+        "started_at": "2026-09-08T18:16:09Z",
+        "ended_at": "2026-09-08T18:18:57Z",
+        "elapsed_s": 171,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1086,11 +1078,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Re-verified this run: dexter SSH still Permission-denied publickey/password for dcp-gate-site@dexter, drive still not attached (/mnt/c /mnt/d only mounts on this host) -- blocks #34 sec4/5. hf7y/etalon#36 still draft/unmerged upstream, no reviewer activity since 2026-09-06 -- blocks #104's re-seed. Netlify branch-deploy needs dashboard access this seat has no CLI/token route to -- blocks #106. close-audit.sh and unlanded-work-check.sh both report clean, next-issue.sh surfaces no other actionable"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "dcp-gate-site@selfdev.invalid",
         "clones": []
@@ -1814,6 +1802,23 @@
       },
       "runs": [
         {
+          "run_id": "scheduler-shotgun-1788890960",
+          "job": "scheduler-shotgun",
+          "started_at": "2026-09-08T18:09:20Z",
+          "ended_at": "2026-09-08T18:15:39Z",
+          "elapsed_s": 382,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
+        },
+        {
           "run_id": "scheduler-shotgun-1788888753",
           "job": "scheduler-shotgun",
           "started_at": "2026-09-08T17:32:33Z",
@@ -1880,39 +1885,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
-        },
-        {
-          "run_id": "scheduler-shotgun-1788874477",
-          "job": "scheduler-shotgun",
-          "started_at": "2026-09-08T13:34:37Z",
-          "ended_at": "2026-09-08T13:43:41Z",
-          "elapsed_s": 548,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
         }
       ],
       "last_run": {
-        "run_id": "scheduler-shotgun-1788888753",
+        "run_id": "scheduler-shotgun-1788890960",
         "job": "scheduler-shotgun",
-        "started_at": "2026-09-08T17:32:33Z",
-        "ended_at": "2026-09-08T17:58:33Z",
-        "elapsed_s": 1564,
+        "started_at": "2026-09-08T18:09:20Z",
+        "ended_at": "2026-09-08T18:15:39Z",
+        "elapsed_s": 382,
         "rc": 0,
         "status": "done",
-        "commits_added": 3,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 2,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "gen-2 milestone re-audited: #350's code is merged, gh api repos/hf7y/verbs/environments shows promote-verb-build requires reviewer hf7y (cannot bypass); #570/#694 are DECISION issues, DEFAULT-AFTER windows unelapsed (none/30d from 2026-09-08)"
       },
@@ -2619,22 +2607,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T18:10:02Z",
+    "generated": "2026-09-08T18:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T18:40:02Z",
-    "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
-    "disk": "",
-    "disk_home": "unknown",
+    "valid_until": "2026-09-08T18:50:02Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 23 hours, 0 minutes",
+    "uptime": "up 1 week, 23 hours, 10 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T18:10:02Z"
+      "sampled_at": "2026-09-08T18:20:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
