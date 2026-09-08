@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-08T09:00:02Z",
-  "valid_until": "2026-09-09T13:00:02Z",
+  "generated": "2026-09-08T09:10:32Z",
+  "valid_until": "2026-09-09T13:10:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -294,6 +294,23 @@
       },
       "runs": [
         {
+          "run_id": "apms-nightly-batch-1788857990",
+          "job": "apms-nightly-batch",
+          "started_at": "2026-09-08T08:59:50Z",
+          "ended_at": "2026-09-08T09:04:00Z",
+          "elapsed_s": 254,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "no canvas.token/CANVAS_TOKEN in scheduled checkout (#55, #86) and no real class recording exists yet -- session 03 is 2026-09-14, still 6 days out; both already re-verified today 00:47Z, unchanged"
+        },
+        {
           "run_id": "apms-nightly-batch-1788855475",
           "job": "apms-nightly-batch",
           "started_at": "2026-09-08T08:17:55Z",
@@ -360,31 +377,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "re-verified 06:15 UTC: no canvas.token/CANVAS_TOKEN (#55), no real class recording and session 03 is 2026-09-14 (#86); both milestone issues already re-confirmed today at 00:47Z with same walls, tree clean, 29 tests pass, no unlanded work"
-        },
-        {
-          "run_id": "apms-nightly-batch-1788845550",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-08T05:32:30Z",
-          "ended_at": "2026-09-08T05:36:07Z",
-          "elapsed_s": 219,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "issues #86 and #55 both need external events: a canvas.token in a human checkout, and session 03 (2026-09-14) actually happening; both re-verified today already, tree clean, 29 tests pass"
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1788855475",
+        "run_id": "apms-nightly-batch-1788857990",
         "job": "apms-nightly-batch",
-        "started_at": "2026-09-08T08:17:55Z",
-        "ended_at": "2026-09-08T08:21:37Z",
-        "elapsed_s": 226,
+        "started_at": "2026-09-08T08:59:50Z",
+        "ended_at": "2026-09-08T09:04:00Z",
+        "elapsed_s": 254,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -848,6 +848,23 @@
       },
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1788857859",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-08T08:57:39Z",
+          "ended_at": "2026-09-08T09:05:02Z",
+          "elapsed_s": 446,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "crt-nightly-batch-1788855339",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-08T08:15:39Z",
@@ -914,31 +931,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1788850082",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-08T06:48:02Z",
-          "ended_at": "2026-09-08T07:02:08Z",
-          "elapsed_s": 849,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "FAILED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1788855339",
+        "run_id": "crt-nightly-batch-1788857859",
         "job": "crt-nightly-batch",
-        "started_at": "2026-09-08T08:15:39Z",
-        "ended_at": "2026-09-08T08:23:27Z",
-        "elapsed_s": 472,
+        "started_at": "2026-09-08T08:57:39Z",
+        "ended_at": "2026-09-08T09:05:02Z",
+        "elapsed_s": 446,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1390,6 +1390,23 @@
       },
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1788857927",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-08T08:58:47Z",
+          "ended_at": "2026-09-08T09:02:49Z",
+          "elapsed_s": 245,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "fresh re-verification 09:02Z: milestone #59/#82/#87/#88 and #138/#145/#148/#163 all genuinely blocked on dexter (conn refused)/mandark (auth denied) ssh, docker absent, CDP down, both zaxon tickets stale, no new inbox entries"
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1788855407",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-08T08:16:47Z",
@@ -1456,31 +1473,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "dexter ssh refused, mandark ssh permission denied, docker absent, CDP unreachable, zaxon ticket d70dca74 stale, milestone queue re-verified with no new gap"
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1788845487",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-08T05:31:27Z",
-          "ended_at": "2026-09-08T05:35:45Z",
-          "elapsed_s": 261,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "dexter ssh refused, mandark ssh permission denied, docker absent, CDP unreachable, zaxon ticket d70dca74 pending unanswered"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1788855407",
+        "run_id": "groc-mangr-nightly-batch-1788857927",
         "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-08T08:16:47Z",
-        "ended_at": "2026-09-08T08:21:19Z",
-        "elapsed_s": 275,
+        "started_at": "2026-09-08T08:58:47Z",
+        "ended_at": "2026-09-08T09:02:49Z",
+        "elapsed_s": 245,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1490,9 +1490,13 @@
         "prs_merged": 0,
         "verdict_computed": "IDLE",
         "claimed_verdict": "BLOCKED",
-        "claimed_reason": "fresh re-verification 07:xxZ: milestone #59/#82/#87/#88 and #145/#148 all genuinely blocked on dexter/mandark ssh, docker absent, CDP down, and Zach's own phone reply (both zaxon tickets stale)"
+        "claimed_reason": "fresh re-verification 09:02Z: milestone #59/#82/#87/#88 and #138/#145/#148/#163 all genuinely blocked on dexter (conn refused)/mandark (auth denied) ssh, docker absent, CDP down, both zaxon tickets stale, no new inbox entries"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "groc-mangr@selfdev.invalid",
         "clones": []
@@ -1621,7 +1625,11 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Re-verified suite (219 passed) + sim smoke clean; fresh adversarial read of hardware/{endpoint_process,network_endpoint,registry,supervisor,endpoint_cli,channel_map,level_balance,pd_lint}.py and nine_speakers/sim.py found no new defect -- codebase is now thoroughly hardened after 30+ prior passes. Remaining milestone (#5) work -- #64 (card bring-up), #59/#60 (projector hardware facts), #62 (zaxon ownership) -- is genuinely blocked on Zach's physical hardware/decision, not on further code."
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "nine-speakers@selfdev.invalid",
         "clones": []
@@ -1649,6 +1657,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "realisateur-shotgun-1788857990",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-08T08:59:50Z",
+          "ended_at": "2026-09-08T09:06:23Z",
+          "elapsed_s": 396,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "realisateur-shotgun-1788856982",
           "job": "realisateur-shotgun",
@@ -1716,31 +1741,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788853028",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-08T07:37:08Z",
-          "ended_at": "2026-09-08T07:42:21Z",
-          "elapsed_s": 316,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788856982",
+        "run_id": "realisateur-shotgun-1788857990",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-08T08:43:02Z",
-        "ended_at": "2026-09-08T08:49:29Z",
-        "elapsed_s": 390,
+        "started_at": "2026-09-08T08:59:50Z",
+        "ended_at": "2026-09-08T09:06:23Z",
+        "elapsed_s": 396,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2054,7 +2062,11 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Only open issue is #17 (needs-human DECISION: which host runs the HP 8710 printer remedy); 21-day default not yet reached (set 2026-09-02); re-verified full test suite green; nothing else actionable"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "secretaire@selfdev.invalid",
         "clones": []
@@ -2453,7 +2465,11 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "landed #264 (dispatch reports back to filed issue), closed stale/duplicate PRs #259+#265; #235's issue-targeting half still needs scheduler-side design"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
         "clones": []
@@ -2603,22 +2619,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-08T09:00:02Z",
+    "generated": "2026-09-08T09:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-08T09:30:02Z",
-    "verdict": "OK",
-    "why": "running, sshd answering, root rw, disk internal",
-    "vm_state": "running",
-    "disk": "C:\\WSL\\monkey",
-    "disk_home": "internal",
+    "valid_until": "2026-09-08T09:40:02Z",
+    "verdict": "DEGRADED",
+    "why": "the host could not read the VM state, but sshd answers -- it is up",
+    "vm_state": "unknown",
+    "disk": "",
+    "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 13 hours, 51 minutes",
+    "uptime": "up 1 week, 14 hours, 0 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-08T09:00:02Z"
+      "sampled_at": "2026-09-08T09:10:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
