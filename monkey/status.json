@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-09T00:30:32Z",
-  "valid_until": "2026-09-10T04:30:32Z",
+  "generated": "2026-09-09T00:40:03Z",
+  "valid_until": "2026-09-10T04:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -2444,7 +2444,11 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "landed #264 (dispatch reports back to filed issue), closed stale/duplicate PRs #259+#265; #235's issue-targeting half still needs scheduler-side design"
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
         "clones": []
@@ -2594,22 +2598,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-09T00:30:01Z",
+    "generated": "2026-09-09T00:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-09T01:00:01Z",
-    "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
-    "disk": "",
-    "disk_home": "unknown",
+    "valid_until": "2026-09-09T01:10:02Z",
+    "verdict": "OK",
+    "why": "running, sshd answering, root rw, disk internal",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 1 day, 5 hours, 20 minutes",
+    "uptime": "up 1 week, 1 day, 5 hours, 30 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-09T00:30:01Z"
+      "sampled_at": "2026-09-09T00:40:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
