@@ -1,16 +1,16 @@
 {
   "schema": 3,
-  "generated": "2026-09-08T06:09:02Z",
-  "valid_until": "2026-09-09T10:09:02Z",
+  "generated": "2026-09-09T06:14:25Z",
+  "valid_until": "2026-09-10T10:14:25Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "cut_interval_days": 30,
-  "decision": "NO_CHANGE",
-  "reason": "payload changed, waiting on the cut interval (last cut 1d ago, interval is 30d)",
+  "decision": "ERROR",
+  "reason": "reading hf7y's repositories ...; registry: 21 project(s) carry .agent-project;   none   groc-mangr: bashified carries no bin/ or man/ -- declares no verbs;   none   sequestria: bashified carries no bin/ or man/ -- declares no verbs;   none   nine-speakers: bashified carries no bin/ or man/ -- declares no verbs;   none   baudin: bashified carries no bin/ or man/ -- declares no verbs;   24 name(s) recorded as not-a-verb in /home/runner/work/verbs/verbs/.realisateur/bin/lib/not-a-verb.tsv -- each is named in the manifest; derived 24 verb(s) from 8 project(s);   assembled bibliothecaire at c533ecc8964d;   assembled crt at 4ff446772202;   assembled ecosim at 814dbbe544bb;   assembled gardien at 85063f15623a;   assembled realisateur at 813244e0ee28;   assembled scheduler at 8942b900cc43;   assembled senechal at 5e99a3670a0d;   assembled vim-arcade at 9a0323a443d6;   PERSONAL gardien/kwallet-migrate.sh: declares '# KIND: personal' -- NOT carried to any;            account. It reaches PATH as a symlink into its own checkout, and that;            is the intended permanent state. Omitted from this build.;   PERSONAL vim-arcade/vim-arcade: declares '# KIND: personal' -- NOT carried to any;            account. It reaches PATH as a symlink into its own checkout, and that;            is the intended permanent state. Omitted from this build.;   2 personal tool(s) omitted;  22 verb(s) remain; == A. EVERY COMMAND IN THE BUILD DECLARES ITS CHANNEL ==;   ok    crt/demande: verb;   ok    realisateur/ausculte: verb;   ok    realisateur/check-project-busy: verb;   ok    realisateur/consigne: verb;   ok    realisateur/cutover-check: verb;   ok    realisateur/defere: verb;   ok    realisateur/etiquette: verb;   ok    realisateur/gh: verb;   ok    realisateur/notify-senechal: verb;   ok    realisateur/tarife: verb;   ok    senechal/installe: verb;   ok    senechal/recense: verb;   OWED  8 undeclared, held by the ratchet: bibliothecaire/consulte bibliothecaire/cueille bibliothecaire/fonde bibliothecaire/range ecosim/sonde gardien/fauche gardien/garde scheduler/dose;         each needs '# KIND: verb', 'product' or 'personal' in its own project's file;   UNDECLARED realisateur/decision-rot: no '# KIND: verb', '# KIND: product' or '# KIND: personal' in its first 90 lines;   UNDECLARED realisateur/unarmed: no '# KIND: verb', '# KIND: product' or '# KIND: personal' in its first 90 lines; == B. NO PRODUCT RIDES THE WORKCHAIN BUILD ==;   ok    no product in this build's manifest; == C. NO PERSONAL TOOL RIDES THE VERB BUILD ==;   ok    no personal tool in this build's manifest; verb-kind-lint.sh: 2 violation(s) over 22 command(s) in 7 project(s).; cut-verb-build.sh: the assembled build carries a command in the wrong channel, or one that declares no channel at all. See the lines above. Refusing.",
   "main_sha": "934a9fd",
-  "ci_run": "34193377691",
+  "ci_run": "34318149770",
   "build_id": null,
-  "blocked_streak": 0,
+  "blocked_streak": 1,
   "last_cut": {
     "at": "2026-09-07T03:18:16Z",
     "decision": "CUT",
@@ -26,6 +26,14 @@
     "ERROR"
   ],
   "history": [
+    {
+      "at": "2026-09-09T06:14:25Z",
+      "decision": "ERROR",
+      "reason": "reading hf7y's repositories ...; registry: 21 project(s) carry .agent-project;   none   groc-mangr: bashified carries no bin/ or man/ -- declares no verbs;   none   sequestria: bashified carries no bin/ or man/ -- declares no verbs;   none   nine-speakers: bashified carries no bin/ or man/ -- declares no verbs;   none   baudin: bashified carries no bin/ or man/ -- declares no verbs;   24 name(s) recorded as not-a-verb in /home/runner/work/verbs/verbs/.realisateur/bin/lib/not-a-verb.tsv -- each is named in the manifest; derived 24 verb(s) from 8 project(s);   assembled bibliothecaire at c533ecc8964d;   assembled crt at 4ff446772202;   assembled ecosim at 814dbbe544bb;   assembled gardien at 85063f15623a;   assembled realisateur at 813244e0ee28;   assembled scheduler at 8942b900cc43;   assembled senechal at 5e99a3670a0d;   assembled vim-arcade at 9a0323a443d6;   PERSONAL gardien/kwallet-migrate.sh: declares '# KIND: personal' -- NOT carried to any;            account. It reaches PATH as a symlink into its own checkout, and that;            is the intended permanent state. Omitted from this build.;   PERSONAL vim-arcade/vim-arcade: declares '# KIND: personal' -- NOT carried to any;            account. It reaches PATH as a symlink into its own checkout, and that;            is the intended permanent state. Omitted from this build.;   2 personal tool(s) omitted;  22 verb(s) remain; == A. EVERY COMMAND IN THE BUILD DECLARES ITS CHANNEL ==;   ok    crt/demande: verb;   ok    realisateur/ausculte: verb;   ok    realisateur/check-project-busy: verb;   ok    realisateur/consigne: verb;   ok    realisateur/cutover-check: verb;   ok    realisateur/defere: verb;   ok    realisateur/etiquette: verb;   ok    realisateur/gh: verb;   ok    realisateur/notify-senechal: verb;   ok    realisateur/tarife: verb;   ok    senechal/installe: verb;   ok    senechal/recense: verb;   OWED  8 undeclared, held by the ratchet: bibliothecaire/consulte bibliothecaire/cueille bibliothecaire/fonde bibliothecaire/range ecosim/sonde gardien/fauche gardien/garde scheduler/dose;         each needs '# KIND: verb', 'product' or 'personal' in its own project's file;   UNDECLARED realisateur/decision-rot: no '# KIND: verb', '# KIND: product' or '# KIND: personal' in its first 90 lines;   UNDECLARED realisateur/unarmed: no '# KIND: verb', '# KIND: product' or '# KIND: personal' in its first 90 lines; == B. NO PRODUCT RIDES THE WORKCHAIN BUILD ==;   ok    no product in this build's manifest; == C. NO PERSONAL TOOL RIDES THE VERB BUILD ==;   ok    no personal tool in this build's manifest; verb-kind-lint.sh: 2 violation(s) over 22 command(s) in 7 project(s).; cut-verb-build.sh: the assembled build carries a command in the wrong channel, or one that declares no channel at all. See the lines above. Refusing.",
+      "main_sha": "934a9fd",
+      "ci_run": "34318149770",
+      "build_id": null
+    },
     {
       "at": "2026-09-08T06:09:02Z",
       "decision": "NO_CHANGE",
