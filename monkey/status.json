@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-09T04:20:12Z",
-  "valid_until": "2026-09-10T08:20:12Z",
+  "generated": "2026-09-09T04:30:12Z",
+  "valid_until": "2026-09-10T08:30:12Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -529,11 +529,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Merged #78 (grocy_api_key /etc/selfdev fan-out, docs-only) and deleted the stale already-merged circadian-ramp-vs-night-fade-hold-17 branch; reconfirmed every remaining open issue (#17,#18,#19,#22,#29,#30,#42,#68,#13,#14) chains to the same wall -- baudin@monkey has no .session-handoff/ha_token (ha-probe.sh exits 1: 'no HA token at .../ha_token'), confirmed live this run -- or to a human decision already correctly labeled needs-human (#29 Midea unit count, #42 route1-vs-route2, #13 ARRIS port-fo"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "baudin@selfdev.invalid",
         "clones": []
@@ -1658,6 +1654,23 @@
       },
       "runs": [
         {
+          "run_id": "realisateur-shotgun-1788926373",
+          "job": "realisateur-shotgun",
+          "started_at": "2026-09-09T03:59:33Z",
+          "ended_at": "2026-09-09T04:24:26Z",
+          "elapsed_s": 1497,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 1,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "realisateur-shotgun-1788925077",
           "job": "realisateur-shotgun",
           "started_at": "2026-09-09T03:37:57Z",
@@ -1724,39 +1737,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "realisateur-shotgun-1788918467",
-          "job": "realisateur-shotgun",
-          "started_at": "2026-09-09T01:47:47Z",
-          "ended_at": "2026-09-09T02:11:11Z",
-          "elapsed_s": 1407,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 3,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "realisateur-shotgun-1788925077",
+        "run_id": "realisateur-shotgun-1788926373",
         "job": "realisateur-shotgun",
-        "started_at": "2026-09-09T03:37:57Z",
-        "ended_at": "2026-09-09T03:49:53Z",
-        "elapsed_s": 719,
+        "started_at": "2026-09-09T03:59:33Z",
+        "ended_at": "2026-09-09T04:24:26Z",
+        "elapsed_s": 1497,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
-        "issues_opened": 0,
+        "commits_added": 1,
+        "issues_opened": 1,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_opened": 1,
+        "prs_merged": 2,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2598,22 +2594,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-09T04:20:01Z",
+    "generated": "2026-09-09T04:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-09T04:50:01Z",
+    "valid_until": "2026-09-09T05:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
-    "disk": "C:\\WSL\\monkey",
-    "disk_home": "internal",
+    "disk": "",
+    "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 1 day, 9 hours, 10 minutes",
+    "uptime": "up 1 week, 1 day, 9 hours, 21 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-09T04:20:01Z"
+      "sampled_at": "2026-09-09T04:30:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
