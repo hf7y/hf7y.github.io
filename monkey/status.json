@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-15T17:50:02Z",
-  "valid_until": "2026-09-16T21:50:02Z",
+  "generated": "2026-09-15T18:00:32Z",
+  "valid_until": "2026-09-16T22:00:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -294,6 +294,23 @@
       },
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1789494610",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-09-15T17:50:10Z",
+          "ended_at": "2026-09-15T17:57:37Z",
+          "elapsed_s": 450,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "wtul-nightly-batch-1789488614",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-15T16:10:14Z",
@@ -360,31 +377,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Milestone #35/#37/#38 all confirmed genuinely blocked on privileged host access (re-verified: no docker, ssh to mandark/dexter both fail); request queue and general queue both empty, nothing actionable to claim."
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1789452613",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-15T06:10:13Z",
-          "ended_at": "2026-09-15T06:30:48Z",
-          "elapsed_s": 1237,
-          "rc": 1,
-          "status": "done",
-          "commits_added": 20,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1789488614",
-        "job": "wtul-nightly-batch",
-        "started_at": "2026-09-15T16:10:14Z",
-        "ended_at": "2026-09-15T16:17:40Z",
-        "elapsed_s": 449,
+        "run_id": "gardien-nightly-batch-1789494610",
+        "job": "gardien-nightly-batch",
+        "started_at": "2026-09-15T17:50:10Z",
+        "ended_at": "2026-09-15T17:57:37Z",
+        "elapsed_s": 450,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -710,6 +710,23 @@
       },
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1789494432",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-15T17:47:12Z",
+          "ended_at": "2026-09-15T18:01:20Z",
+          "elapsed_s": 850,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1789488432",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-15T16:07:12Z",
@@ -776,41 +793,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Milestone 'corpus lands where it belongs' (#35/#37/#38): buildable slices already delivered (#74 works.json, #92 deploy script+fixture test); re-verified live that ssh mandark, docker, and sudo remain unavailable here -- rest is blocked on Zach/privileged runner, not re-probing further per the milestone's own anti-pattern warning. No request-queue issues open."
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1789458434",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-15T07:47:14Z",
-          "ended_at": "2026-09-15T08:05:52Z",
-          "elapsed_s": 1121,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1789488432",
-        "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-15T16:07:12Z",
-        "ended_at": "2026-09-15T16:13:14Z",
-        "elapsed_s": 365,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 0,
+        "run_id": "wtul-nightly-batch-1789494432",
+        "job": "wtul-nightly-batch",
+        "started_at": "2026-09-15T17:47:12Z",
+        "ended_at": "2026-09-15T18:01:20Z",
+        "elapsed_s": 850,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "milestone #27's 16 issues are each already walled tonight: ssh dexter/mandark refused, no docker/CDP, or awaiting Zach's decision with no default due"
+        "verdict_computed": "WORKED-CUTOFF",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -1128,7 +1128,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "dcp-gate-site@selfdev.invalid",
         "clones": []
@@ -1394,7 +1398,11 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "test@example.com",
         "clones": []
@@ -2570,6 +2578,23 @@
       },
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1789494371",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-15T17:46:11Z",
+          "ended_at": "2026-09-15T17:53:30Z",
+          "elapsed_s": 442,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "CDP/dexter/mandark/crontab all refused fresh, zaxon ticket eec0c28e stale, no due decisions"
+        },
+        {
           "run_id": "crt-nightly-batch-1789488372",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-15T16:06:12Z",
@@ -2636,41 +2661,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "apms-nightly-batch-1789452371",
-          "job": "apms-nightly-batch",
-          "started_at": "2026-09-15T06:06:11Z",
-          "ended_at": "2026-09-15T06:10:43Z",
-          "elapsed_s": 276,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "no canvas.token and no filed class recording; both need Zach live"
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1789488372",
-        "job": "crt-nightly-batch",
-        "started_at": "2026-09-15T16:06:12Z",
-        "ended_at": "2026-09-15T16:29:42Z",
-        "elapsed_s": 1412,
+        "run_id": "groc-mangr-nightly-batch-1789494371",
+        "job": "groc-mangr-nightly-batch",
+        "started_at": "2026-09-15T17:46:11Z",
+        "ended_at": "2026-09-15T17:53:30Z",
+        "elapsed_s": 442,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "BLOCKED",
+        "claimed_reason": "CDP/dexter/mandark/crontab all refused fresh, zaxon ticket eec0c28e stale, no due decisions"
       },
       "containment": {
         "foreign_clones": [],
@@ -2691,22 +2699,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": false,
   "watcher": {
-    "generated": "2026-09-15T17:50:01Z",
+    "generated": "2026-09-15T18:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-15T18:20:01Z",
-    "verdict": "OK",
-    "why": "running, sshd answering, root rw, disk internal",
-    "vm_state": "running",
-    "disk": "C:\\WSL\\monkey",
-    "disk_home": "internal",
+    "valid_until": "2026-09-15T18:30:02Z",
+    "verdict": "DEGRADED",
+    "why": "the host could not read the VM state, but sshd answers -- it is up",
+    "vm_state": "unknown",
+    "disk": "",
+    "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 11 hours, 34 minutes",
+    "uptime": "up 4 days, 11 hours, 45 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-15T17:50:01Z"
+      "sampled_at": "2026-09-15T18:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
