@@ -1,12 +1,12 @@
 {
   "accounts": [],
-  "generated": "2026-09-15T20:50:02Z",
+  "generated": "2026-09-15T21:00:01Z",
   "host": "monkey",
   "watcher": {
-    "generated": "2026-09-15T20:50:02Z",
+    "generated": "2026-09-15T21:00:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-15T21:20:02Z",
+    "valid_until": "2026-09-15T21:30:01Z",
     "verdict": "DEGRADED",
     "why": "sshd sent its banner but the session stalled -- no answer in 180s",
     "vm_state": "running",
@@ -14,11 +14,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 14 hours, 35 minutes",
+    "uptime": "up 4 days, 14 hours, 45 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-15T20:50:02Z"
+      "sampled_at": "2026-09-15T21:00:01Z"
     },
     "root_mount": "rw",
     "guest_error": "sshd sent its banner but the session stalled -- no answer in 180s",
