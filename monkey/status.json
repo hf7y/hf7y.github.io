@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-15T17:40:02Z",
-  "valid_until": "2026-09-16T21:40:02Z",
+  "generated": "2026-09-15T17:50:02Z",
+  "valid_until": "2026-09-16T21:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1026,6 +1026,23 @@
       },
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1789493770",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-09-15T17:36:10Z",
+          "ended_at": "2026-09-15T17:42:41Z",
+          "elapsed_s": 394,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "wtul-nightly-batch-1789487773",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-15T15:56:13Z",
@@ -1092,47 +1109,26 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1789463775",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-15T09:16:15Z",
-          "ended_at": "2026-09-15T09:45:39Z",
-          "elapsed_s": 1766,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1789487773",
-        "job": "wtul-nightly-batch",
-        "started_at": "2026-09-15T15:56:13Z",
-        "ended_at": "2026-09-15T16:01:39Z",
-        "elapsed_s": 329,
+        "run_id": "gardien-nightly-batch-1789493770",
+        "job": "gardien-nightly-batch",
+        "started_at": "2026-09-15T17:36:10Z",
+        "ended_at": "2026-09-15T17:42:41Z",
+        "elapsed_s": 394,
         "rc": 0,
         "status": "done",
-        "commits_added": 3,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "dcp-gate-site@selfdev.invalid",
         "clones": []
@@ -1398,11 +1394,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "test@example.com",
         "clones": []
@@ -2421,6 +2413,23 @@
       },
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1789493833",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-15T17:37:13Z",
+          "ended_at": "2026-09-15T17:47:49Z",
+          "elapsed_s": 640,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "vim-arcade-nightly-batch-1789477031",
           "job": "vim-arcade-nightly-batch",
           "started_at": "2026-09-15T12:57:11Z",
@@ -2487,41 +2496,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "ls *.token empty, CANVAS_TOKEN unset, gh issue list --search 'in:title Voice note' empty -- #55/#86/#94 all wait on Zach's live token or WhatsApp voice note, not code"
-        },
-        {
-          "run_id": "senechal-nightly-batch-1789457833",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-15T07:37:13Z",
-          "ended_at": "2026-09-15T07:43:35Z",
-          "elapsed_s": 385,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "vim-arcade-nightly-batch-1789477031",
-        "job": "vim-arcade-nightly-batch",
-        "started_at": "2026-09-15T12:57:11Z",
-        "ended_at": "2026-09-15T13:19:55Z",
-        "elapsed_s": 1368,
+        "run_id": "crt-nightly-batch-1789493833",
+        "job": "crt-nightly-batch",
+        "started_at": "2026-09-15T17:37:13Z",
+        "ended_at": "2026-09-15T17:47:49Z",
+        "elapsed_s": 640,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 1,
-        "prs_opened": 1,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "CONTINUE",
-        "claimed_reason": "arc B (#281) landed+merged (PR #309); arc C (#282) is the next actionable milestone item"
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2699,10 +2691,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": false,
   "watcher": {
-    "generated": "2026-09-15T17:40:02Z",
+    "generated": "2026-09-15T17:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-15T18:10:02Z",
+    "valid_until": "2026-09-15T18:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2710,11 +2702,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 11 hours, 24 minutes",
+    "uptime": "up 4 days, 11 hours, 34 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-15T17:40:02Z"
+      "sampled_at": "2026-09-15T17:50:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
