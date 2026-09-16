@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-16T10:20:02Z",
-  "valid_until": "2026-09-17T14:20:02Z",
+  "generated": "2026-09-16T10:30:02Z",
+  "valid_until": "2026-09-17T14:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -151,7 +151,7 @@
         "21 5 * * * /home/american-cycle/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
         "1,21,41 * * * * PACED_MAX_PER_TICK=1 /home/american-cycle/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
-      "release_tick": "2026-09-15T10:21:02Z rc=0 pin=2026-09-07T031807Z 3 ok, 0 gap, 0 bad",
+      "release_tick": "2026-09-16T10:21:02Z rc=0 pin=2026-09-07T031807Z 3 ok, 0 gap, 0 bad",
       "milestone_self_fed": {
         "current": false,
         "streak": 0,
@@ -2711,10 +2711,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-16T10:20:01Z",
+    "generated": "2026-09-16T10:30:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-16T10:50:01Z",
+    "valid_until": "2026-09-16T11:00:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2722,11 +2722,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 5 days, 4 hours, 4 minutes",
+    "uptime": "up 5 days, 4 hours, 14 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-16T10:20:01Z"
+      "sampled_at": "2026-09-16T10:30:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
