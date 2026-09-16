@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-16T00:50:02Z",
-  "valid_until": "2026-09-17T04:50:02Z",
+  "generated": "2026-09-16T01:00:03Z",
+  "valid_until": "2026-09-17T05:00:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -2699,10 +2699,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": false,
   "watcher": {
-    "generated": "2026-09-16T00:50:02Z",
+    "generated": "2026-09-16T01:00:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-16T01:20:02Z",
+    "valid_until": "2026-09-16T01:30:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2710,11 +2710,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 days, 18 hours, 34 minutes",
+    "uptime": "up 4 days, 18 hours, 44 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-16T00:50:02Z"
+      "sampled_at": "2026-09-16T01:00:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
