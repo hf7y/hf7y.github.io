@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-16T22:30:02Z",
-  "valid_until": "2026-09-18T02:30:02Z",
+  "generated": "2026-09-16T22:40:02Z",
+  "valid_until": "2026-09-18T02:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1038,6 +1038,23 @@
       },
       "runs": [
         {
+          "run_id": "crt-nightly-batch-1789596971",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-16T22:16:11Z",
+          "ended_at": "2026-09-16T22:35:33Z",
+          "elapsed_s": 1165,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "bibliothecaire-research-1789578968",
           "job": "bibliothecaire-research",
           "started_at": "2026-09-16T17:16:08Z",
@@ -1104,41 +1121,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "wtul-nightly-batch-1789560972",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-16T12:16:12Z",
-          "ended_at": "2026-09-16T12:22:04Z",
-          "elapsed_s": 356,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1789578968",
-        "job": "bibliothecaire-research",
-        "started_at": "2026-09-16T17:16:08Z",
-        "ended_at": "2026-09-16T17:17:49Z",
-        "elapsed_s": 104,
+        "run_id": "crt-nightly-batch-1789596971",
+        "job": "crt-nightly-batch",
+        "started_at": "2026-09-16T22:16:11Z",
+        "ended_at": "2026-09-16T22:35:33Z",
+        "elapsed_s": 1165,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 0,
+        "issues_closed": 2,
+        "prs_opened": 1,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Queue empty: no request-labeled or eligible open issues; only #35/#37/#38 open, all deferred/durable, re-confirmed blocked this run (no SSH key for mandark, sudo denied outright, no docker binary, dexter refuses 22/8092) \u2014 identical walls to the 14:15-14:16Z checks already on those threads today, nothing new to add."
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -1695,7 +1695,11 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Re-verified suite (219 passed) + sim smoke clean; fresh adversarial read of hardware/{endpoint_process,network_endpoint,registry,supervisor,endpoint_cli,channel_map,level_balance,pd_lint}.py and nine_speakers/sim.py found no new defect -- codebase is now thoroughly hardened after 30+ prior passes. Remaining milestone (#5) work -- #64 (card bring-up), #59/#60 (projector hardware facts), #62 (zaxon ownership) -- is genuinely blocked on Zach's physical hardware/decision, not on further code."
       },
-      "containment": null,
+      "containment": {
+        "foreign_clones": [],
+        "outside_home": [],
+        "sudoers": []
+      },
       "identity": {
         "declared": "nine-speakers@selfdev.invalid",
         "clones": []
@@ -2709,10 +2713,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-16T22:30:01Z",
+    "generated": "2026-09-16T22:40:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-16T23:00:01Z",
+    "valid_until": "2026-09-16T23:10:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2720,11 +2724,11 @@
     "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 5 days, 16 hours, 14 minutes",
+    "uptime": "up 5 days, 16 hours, 24 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-16T22:30:01Z"
+      "sampled_at": "2026-09-16T22:40:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
