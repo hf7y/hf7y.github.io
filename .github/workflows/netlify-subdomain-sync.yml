@@ -36,6 +36,12 @@ jobs:
               "https://api.netlify.com/api/v1/sites/$site")" \
               || { echo "::error::Netlify site '$site' (for $domain) not found or not reachable"; fail=1; continue; }
 
+            custom_domain="$(printf '%s' "$site_json" | jq -r '.custom_domain // empty')"
+            if [ "$custom_domain" = "$domain" ]; then
+              echo "already the primary domain: $domain -> $site"
+              continue
+            fi
+
             already="$(printf '%s' "$site_json" | jq -r --arg d "$domain" \
               '(.domain_aliases // []) | index($d) != null')"
             if [ "$already" = "true" ]; then
