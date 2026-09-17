@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-17T23:30:13Z",
-  "valid_until": "2026-09-19T03:30:13Z",
+  "generated": "2026-09-17T23:40:02Z",
+  "valid_until": "2026-09-19T03:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -723,6 +723,23 @@
       },
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1789687632",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-17T23:27:12Z",
+          "ended_at": "2026-09-17T23:35:04Z",
+          "elapsed_s": 477,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "secretaire-nightly-batch-1789682829",
           "job": "secretaire-nightly-batch",
           "started_at": "2026-09-17T22:07:09Z",
@@ -789,31 +806,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "wtul-nightly-batch-1789640834",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-17T10:27:14Z",
-          "ended_at": "2026-09-17T10:32:34Z",
-          "elapsed_s": 323,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "secretaire-nightly-batch-1789682829",
-        "job": "secretaire-nightly-batch",
-        "started_at": "2026-09-17T22:07:09Z",
-        "ended_at": "2026-09-17T22:10:33Z",
-        "elapsed_s": 207,
+        "run_id": "wtul-nightly-batch-1789687632",
+        "job": "wtul-nightly-batch",
+        "started_at": "2026-09-17T23:27:12Z",
+        "ended_at": "2026-09-17T23:35:04Z",
+        "elapsed_s": 477,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2692,11 +2692,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "test@example.com",
         "clones": []
@@ -2711,22 +2707,22 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-17T23:30:02Z",
+    "generated": "2026-09-17T23:40:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-18T00:00:02Z",
+    "valid_until": "2026-09-18T00:10:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
-    "disk": "",
-    "disk_home": "unknown",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 17 hours, 14 minutes",
+    "uptime": "up 6 days, 17 hours, 25 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-17T23:30:02Z"
+      "sampled_at": "2026-09-17T23:40:01Z"
     },
     "root_mount": "rw",
     "guest_error": null,
