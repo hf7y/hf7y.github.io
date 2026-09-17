@@ -1,0 +1,81 @@
+name: Netlify subdomain sync
+
+on:
+  push:
+    branches: [master, main]
+    paths: [subdomains.txt]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add each listed subdomain to its Netlify site's domain_aliases
+        run: |
+          set -euo pipefail
+          [ -n "${NETLIFY_AUTH_TOKEN:-}" ] || { echo "::error::NETLIFY_AUTH_TOKEN secret is not set"; exit 1; }
+
+          fail=0
+          while IFS= read -r line; do
+            line="${line%%#*}"
+            line="$(printf '%s' "$line" | xargs || true)"
+            [ -n "$line" ] || continue
+            name="${line%% *}"
+            rest="${line#* }"
+            case "$rest" in
+              netlify:*) site="${rest#netlify:}" ;;
+              *) echo "::error::subdomains.txt: '$line' has no netlify:<site> target"; fail=1; continue ;;
+            esac
+            domain="$name.hf7y.com"
+
+            site_json="$(curl -sf -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+              "https://api.netlify.com/api/v1/sites/$site")" \
+              || { echo "::error::Netlify site '$site' (for $domain) not found or not reachable"; fail=1; continue; }
+
+            already="$(printf '%s' "$site_json" | jq -r --arg d "$domain" \
+              '(.domain_aliases // []) | index($d) != null')"
+            if [ "$already" = "true" ]; then
+              echo "already present: $domain -> $site"
+              continue
+            fi
+
+            new_aliases="$(printf '%s' "$site_json" | jq -c --arg d "$domain" \
+              '(.domain_aliases // []) + [$d]')"
+            echo "adding: $domain -> $site (domain_aliases: $new_aliases)"
+            curl -sf -X PATCH -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d "{\"domain_aliases\": $new_aliases}" \
+              "https://api.netlify.com/api/v1/sites/$site" >/dev/null \
+              || { echo "::error::failed to PATCH domain_aliases for site '$site'"; fail=1; continue; }
+          done < subdomains.txt
+          exit "$fail"
+
+      - name: Assert the apex still serves GitHub Pages
+        run: |
+          set -euo pipefail
+          code="$(curl -s -o /dev/null -w '%{http_code}' https://hf7y.com/)"
+          [ "$code" -ge 200 ] && [ "$code" -lt 300 ] || { echo "::error::https://hf7y.com/ returned $code"; exit 1; }
+
+      - name: Assert every listed subdomain resolves with a valid certificate
+        run: |
+          set -euo pipefail
+          fail=0
+          while IFS= read -r line; do
+            line="${line%%#*}"
+            line="$(printf '%s' "$line" | xargs || true)"
+            [ -n "$line" ] || continue
+            name="${line%% *}"
+            domain="$name.hf7y.com"
+            code="$(curl -s -o /dev/null -w '%{http_code}' "https://$domain/")" || code=000
+            if [ "$code" -ge 200 ] && [ "$code" -lt 300 ]; then
+              echo "ok: https://$domain/ -> $code"
+            else
+              echo "::error::https://$domain/ returned $code"
+              fail=1
+            fi
+          done < subdomains.txt
+          exit "$fail"

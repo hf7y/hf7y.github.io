@@ -1,0 +1,5 @@
+# One line per subdomain of hf7y.com, format: <name> netlify:<netlify-site-name>
+# A push to main touching this file runs .github/workflows/netlify-subdomain-sync.yml,
+# which ADDS <name>.hf7y.com to that Netlify site's domain_aliases. Removing a line
+# here does NOT remove the alias on Netlify -- do that by hand, this is add-only.
+american-cycle netlify:american-cycle
