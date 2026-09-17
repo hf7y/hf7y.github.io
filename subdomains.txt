@@ -1,0 +1,14 @@
+# <name> <scheme>:<target>
+#
+# One line per *.hf7y.com subdomain this repo's sync workflow manages.
+# <name>.hf7y.com resolves through the wildcard (* A 75.2.60.5, hf7y/hf7y.github.io#4)
+# unless an explicit DNS record overrides it (chezz, wtul do -- see below).
+#
+# netlify:<site> -- .github/workflows/subdomains-sync.yml calls the Netlify
+# API to add <name>.hf7y.com to Netlify site <site>'s domain_aliases. <site>
+# is the site's own slug (the "<site>.netlify.app" subdomain), not the
+# hf7y.com name -- they differ whenever the site predates this list.
+#
+# Removing a line does not delete anything on Netlify (by design, #4).
+
+american-cycle netlify:american-cycle

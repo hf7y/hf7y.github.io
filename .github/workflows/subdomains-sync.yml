@@ -1,0 +1,104 @@
+name: Sync *.hf7y.com subdomains
+
+# hf7y/hf7y.github.io#4: giving a project <name>.hf7y.com should take a
+# one-line commit to subdomains.txt, not a Netlify dashboard visit. DNS is
+# the wildcard (* A 75.2.60.5, set by hand in Namecheap, #4); this workflow
+# only tells Netlify which site each name belongs to.
+
+on:
+  push:
+    branches: [main]
+    paths: [subdomains.txt]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Plan and apply domain aliases
+        run: |
+          set -euo pipefail
+          if [ -z "${NETLIFY_AUTH_TOKEN:-}" ]; then
+            echo "::error::NETLIFY_AUTH_TOKEN is not set -- see hf7y/senechal#899" >&2
+            exit 1
+          fi
+
+          fail=0
+          while IFS= read -r line; do
+            case "$line" in
+              ''|'#'*) continue ;;
+            esac
+            name="${line%% *}"
+            target="${line#* }"
+            case "$target" in
+              netlify:*) site="${target#netlify:}" ;;
+              *) echo "::error::subdomains.txt: unknown scheme in line: $line" >&2; fail=1; continue ;;
+            esac
+            domain="${name}.hf7y.com"
+
+            site_json="$(curl -sS -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+              "https://api.netlify.com/api/v1/sites/${site}")"
+            if [ -z "$site_json" ] || [ "$(printf '%s' "$site_json" | jq -r '.id // empty')" = "" ]; then
+              echo "::error::Netlify site '$site' not found (subdomains.txt line: $line)" >&2
+              fail=1
+              continue
+            fi
+
+            custom_domain="$(printf '%s' "$site_json" | jq -r '.custom_domain // empty')"
+            if [ "$custom_domain" = "$domain" ]; then
+              echo "already the primary domain, nothing to do: $domain -> $site"
+              continue
+            fi
+
+            has_alias="$(printf '%s' "$site_json" | jq --arg d "$domain" '(.domain_aliases // []) | index($d) != null')"
+            if [ "$has_alias" = "true" ]; then
+              echo "already an alias, nothing to do: $domain -> $site"
+              continue
+            fi
+
+            new_aliases="$(printf '%s' "$site_json" | jq --arg d "$domain" '(.domain_aliases // []) + [$d]')"
+            echo "would add domain alias: $domain -> $site"
+            echo "  new domain_aliases: $new_aliases"
+
+            curl -sS -X PATCH \
+              -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d "{\"domain_aliases\": ${new_aliases}}" \
+              "https://api.netlify.com/api/v1/sites/${site}" > /dev/null
+            echo "added: $domain -> $site"
+          done < subdomains.txt
+          exit "$fail"
+
+      - name: Verify hf7y.com still serves
+        run: |
+          set -euo pipefail
+          code="$(curl -s -o /dev/null -w '%{http_code}' https://hf7y.com/)"
+          if [ "$code" -lt 200 ] || [ "$code" -ge 300 ]; then
+            echo "::error::https://hf7y.com/ returned $code, expected 2xx" >&2
+            exit 1
+          fi
+          echo "hf7y.com: $code"
+
+      - name: Verify each managed subdomain serves
+        run: |
+          set -euo pipefail
+          fail=0
+          while IFS= read -r line; do
+            case "$line" in
+              ''|'#'*) continue ;;
+            esac
+            name="${line%% *}"
+            domain="${name}.hf7y.com"
+            code="$(curl -s -o /dev/null -w '%{http_code}' "https://${domain}/" || echo 000)"
+            if [ "$code" -lt 200 ] || [ "$code" -ge 300 ]; then
+              echo "::error::https://${domain}/ returned $code, expected 2xx" >&2
+              fail=1
+              continue
+            fi
+            echo "$domain: $code"
+          done < subdomains.txt
+          exit "$fail"
