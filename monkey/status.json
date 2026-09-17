@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-17T09:00:32Z",
-  "valid_until": "2026-09-18T13:00:32Z",
+  "generated": "2026-09-17T09:10:32Z",
+  "valid_until": "2026-09-18T13:10:32Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -153,11 +153,28 @@
       ],
       "release_tick": "2026-09-16T10:21:02Z rc=0 pin=2026-09-07T031807Z 3 ok, 0 gap, 0 bad",
       "milestone_self_fed": {
-        "current": false,
-        "streak": 0,
-        "since": null
+        "current": true,
+        "streak": 1,
+        "since": "2026-09-17T02:01:05-05:00"
       },
       "runs": [
+        {
+          "run_id": "american-cycle-nightly-batch-1789633277",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-17T08:21:17Z",
+          "ended_at": "2026-09-17T09:03:21Z",
+          "elapsed_s": 2527,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "senechal-nightly-batch-1789591274",
           "job": "senechal-nightly-batch",
@@ -225,38 +242,21 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1789567275",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-16T14:01:15Z",
-          "ended_at": "2026-09-16T14:20:46Z",
-          "elapsed_s": 1174,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1789591274",
-        "job": "senechal-nightly-batch",
-        "started_at": "2026-09-16T20:41:14Z",
-        "ended_at": "2026-09-16T21:02:29Z",
-        "elapsed_s": 1277,
+        "run_id": "american-cycle-nightly-batch-1789633277",
+        "job": "american-cycle-nightly-batch",
+        "started_at": "2026-09-17T08:21:17Z",
+        "ended_at": "2026-09-17T09:03:21Z",
+        "elapsed_s": 2527,
         "rc": 0,
         "status": "done",
         "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 1,
-        "prs_merged": 2,
+        "prs_merged": 0,
         "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
@@ -2711,10 +2711,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-17T09:00:02Z",
+    "generated": "2026-09-17T09:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-17T09:30:02Z",
+    "valid_until": "2026-09-17T09:40:02Z",
     "verdict": "DEGRADED",
     "why": "the host could not read the VM state, but sshd answers -- it is up",
     "vm_state": "unknown",
@@ -2722,11 +2722,11 @@
     "disk_home": "unknown",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 6 days, 2 hours, 45 minutes",
+    "uptime": "up 6 days, 2 hours, 55 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-17T09:00:02Z"
+      "sampled_at": "2026-09-17T09:10:02Z"
     },
     "root_mount": "rw",
     "guest_error": null,
