@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-18T16:00:02Z",
-  "valid_until": "2026-09-19T20:00:02Z",
+  "generated": "2026-09-18T16:10:02Z",
+  "valid_until": "2026-09-19T20:10:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -132,6 +132,7 @@
       },
       "identity": {
         "declared": "abletim@selfdev.invalid",
+        "repaired_at": null,
         "clones": []
       },
       "credentials": {
@@ -268,16 +269,8 @@
       },
       "identity": {
         "declared": "american-cycle@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/american-cycle/Documents/Projects/american-cycle",
-            "local_identity": null,
-            "count": 1,
-            "commits": [
-              "770bf8f test <test@example.com> 2026-09-18T06:50:33-05:00"
-            ]
-          }
-        ]
+        "repaired_at": "2026-09-18T13:15:02Z",
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -412,6 +405,7 @@
       },
       "identity": {
         "declared": "apms@selfdev.invalid",
+        "repaired_at": "2026-09-18T13:15:02Z",
         "clones": []
       },
       "credentials": {
@@ -545,6 +539,7 @@
       },
       "identity": {
         "declared": "baudin@selfdev.invalid",
+        "repaired_at": "2026-09-18T13:15:02Z",
         "clones": []
       },
       "credentials": {
@@ -680,6 +675,7 @@
       },
       "identity": {
         "declared": "bibliothecaire@selfdev.invalid",
+        "repaired_at": "2026-09-18T13:15:02Z",
         "clones": []
       },
       "credentials": {
@@ -810,24 +806,12 @@
       },
       "containment": {
         "foreign_clones": [],
-        "outside_home": [
-          "/srv/ecosystem1-vault/chezz/research/balance/2026-08-22-analytic-material-sufficiency.md",
-          "/srv/ecosystem1-vault/.git/objects/ad",
-          "/srv/ecosystem1-vault/.git/objects/ad/7c23a99415f4ed0429370423e77447582c4050",
-          "/srv/ecosystem1-vault/.git/objects/ac",
-          "/srv/ecosystem1-vault/.git/objects/ac/cf19385443652061e8c0fe0b30f0ff159f55e7",
-          "/srv/ecosystem1-vault/.git/objects/2c",
-          "/srv/ecosystem1-vault/.git/objects/2c/fd677f0b3fec625870e37a07978a3afba26995",
-          "/srv/ecosystem1-vault/.git/objects/fb",
-          "/srv/ecosystem1-vault/.git/objects/fb/605b205a8536759bca552c27422c54c4df9433",
-          "/srv/ecosystem1-vault/.git/objects/bc/ddd839d76be3cb4fadc05fcb74f303265c7494",
-          "/srv/ecosystem1-vault/.git/objects/6a",
-          "/srv/ecosystem1-vault/.git/objects/6a/7c8527a987df6e8168e5800a9e7a843208170a"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "identity": {
         "declared": "chezz@selfdev.invalid",
+        "repaired_at": "2026-09-01T04:55:02Z",
         "clones": []
       },
       "credentials": {
@@ -958,27 +942,12 @@
       },
       "containment": {
         "foreign_clones": [],
-        "outside_home": [
-          "/srv/ecosystem1-vault/.git/objects/c1",
-          "/srv/ecosystem1-vault/.git/objects/c1/09db2b02de751f396966b124c021d1aa3fa066",
-          "/srv/ecosystem1-vault/.git/objects/b8",
-          "/srv/ecosystem1-vault/.git/objects/b8/0ceacc719307370580c2c4e03de9876575b5b8",
-          "/srv/ecosystem1-vault/.git/objects/77",
-          "/srv/ecosystem1-vault/.git/objects/77/2daf23ae07227e3757c9ff70aeab05d8617dfc",
-          "/srv/ecosystem1-vault/.git/objects/9d",
-          "/srv/ecosystem1-vault/.git/objects/9d/6eeff888963a264592ec93f7668828dcf89374",
-          "/srv/ecosystem1-vault/.git/objects/52/c5a61d9840b4b358dc39a2a36e46cb7567341d",
-          "/srv/ecosystem1-vault/.git/objects/88",
-          "/srv/ecosystem1-vault/.git/objects/88/e16a3aca56c1b3187d2c7cf0934602cf91b688",
-          "/srv/ecosystem1-vault/.git/objects/f7",
-          "/srv/ecosystem1-vault/.git/objects/f7/6a1b5720ab1e9a7f57b5b4d4e5c61856422b92",
-          "/srv/ecosystem1-vault/.git/COMMIT_EDITMSG",
-          "/srv/ecosystem1-vault/crt/DEXTER-MOVE-20260909.md"
-        ],
+        "outside_home": [],
         "sudoers": []
       },
       "identity": {
         "declared": "crt@selfdev.invalid",
+        "repaired_at": "2026-09-18T13:15:02Z",
         "clones": []
       },
       "credentials": {
@@ -1115,6 +1084,7 @@
       },
       "identity": {
         "declared": "dcp-gate-site@selfdev.invalid",
+        "repaired_at": "2026-09-18T13:15:03Z",
         "clones": []
       },
       "credentials": {
@@ -1250,6 +1220,7 @@
       },
       "identity": {
         "declared": "ecosim@selfdev.invalid",
+        "repaired_at": null,
         "clones": []
       },
       "credentials": {
@@ -1385,6 +1356,7 @@
       },
       "identity": {
         "declared": "gardien@selfdev.invalid",
+        "repaired_at": "2026-09-08T23:34:43Z",
         "clones": []
       },
       "credentials": {
@@ -1525,17 +1497,8 @@
       },
       "identity": {
         "declared": "groc-mangr@selfdev.invalid",
-        "clones": [
-          {
-            "path": "/home/groc-mangr/Documents/Projects/groc-mangr",
-            "local_identity": null,
-            "count": 2,
-            "commits": [
-              "4143495 test <test@example.com> 2026-09-10T12:48:37-05:00",
-              "149371b test <test@example.com> 2026-09-10T12:41:06-05:00"
-            ]
-          }
-        ]
+        "repaired_at": "2026-09-18T13:15:03Z",
+        "clones": []
       },
       "credentials": {
         "app_key": "0o640",
@@ -1668,6 +1631,7 @@
       },
       "identity": {
         "declared": "nine-speakers@selfdev.invalid",
+        "repaired_at": "2026-09-01T04:55:00Z",
         "clones": []
       },
       "credentials": {
@@ -1803,6 +1767,7 @@
       },
       "identity": {
         "declared": "realisateur@selfdev.invalid",
+        "repaired_at": "2026-08-21T04:12:03Z",
         "clones": []
       },
       "credentials": {
@@ -1938,6 +1903,7 @@
       },
       "identity": {
         "declared": "scheduler@selfdev.invalid",
+        "repaired_at": "2026-09-02T08:05:54Z",
         "clones": []
       },
       "credentials": {
@@ -2073,6 +2039,7 @@
       },
       "identity": {
         "declared": "secretaire@selfdev.invalid",
+        "repaired_at": "2026-09-01T04:55:03Z",
         "clones": []
       },
       "credentials": {
@@ -2208,6 +2175,7 @@
       },
       "identity": {
         "declared": "senechal@selfdev.invalid",
+        "repaired_at": "2026-09-01T05:08:43Z",
         "clones": []
       },
       "credentials": {
@@ -2341,6 +2309,7 @@
       },
       "identity": {
         "declared": "sequestria@selfdev.invalid",
+        "repaired_at": "2026-09-01T04:55:00Z",
         "clones": []
       },
       "credentials": {
@@ -2476,6 +2445,7 @@
       },
       "identity": {
         "declared": "vim-arcade@selfdev.invalid",
+        "repaired_at": "2026-09-01T04:54:59Z",
         "clones": []
       },
       "credentials": {
@@ -2611,6 +2581,7 @@
       },
       "identity": {
         "declared": "wtul@selfdev.invalid",
+        "repaired_at": "2026-09-01T04:54:59Z",
         "clones": []
       },
       "credentials": {
@@ -2623,10 +2594,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-18T16:00:02Z",
+    "generated": "2026-09-18T16:10:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-18T16:30:02Z",
+    "valid_until": "2026-09-18T16:40:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2635,12 +2606,12 @@
     "disk_read_at": "2026-09-18T15:00:01Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 9 hours, 42 minutes",
+    "uptime": "up 1 week, 9 hours, 52 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-18T16:00:02Z"
+      "sampled_at": "2026-09-18T16:10:01Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
