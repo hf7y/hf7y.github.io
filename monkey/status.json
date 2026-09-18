@@ -1,24 +1,24 @@
 {
   "accounts": [],
-  "generated": "2026-09-18T12:00:02Z",
+  "generated": "2026-09-18T12:10:01Z",
   "host": "monkey",
   "watcher": {
-    "generated": "2026-09-18T12:00:02Z",
+    "generated": "2026-09-18T12:10:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-18T12:30:02Z",
+    "valid_until": "2026-09-18T12:40:01Z",
     "verdict": "DEGRADED",
-    "why": "the host could not read the VM state, but sshd answers -- it is up",
-    "vm_state": "unknown",
-    "disk": "",
-    "disk_home": "unknown",
+    "why": "sshd sent its banner but the session stalled -- no answer in 180s",
+    "vm_state": "running",
+    "disk": "C:\\WSL\\monkey",
+    "disk_home": "internal",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 week, 5 hours, 45 minutes",
+    "uptime": "up 1 week, 5 hours, 55 minutes",
     "clock_drift_hours": null,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-18T12:00:02Z"
+      "sampled_at": "2026-09-18T12:10:01Z"
     },
     "root_mount": "rw",
     "guest_error": "sshd sent its banner but the session stalled -- no answer in 180s",
