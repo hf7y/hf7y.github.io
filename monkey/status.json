@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-20T05:50:05Z",
-  "valid_until": "2026-09-21T09:50:05Z",
+  "generated": "2026-09-20T06:00:08Z",
+  "valid_until": "2026-09-21T10:00:08Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -290,11 +290,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-18T06:50:06-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1789883414",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-20T05:50:14Z",
+          "ended_at": "2026-09-20T05:58:29Z",
+          "elapsed_s": 498,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 1,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Delivered #98 (overnight AC setpoint .edu sourcing) to close; request queue now empty; milestone #35/#37/#38 remain correctly blocked on privileged host access (mandark SSH, dexter docker) per today's re-verifications, and #99 is a same-day DECISION issue not yet at its 7d default."
+        },
         {
           "run_id": "american-cycle-nightly-batch-1789735810",
           "job": "american-cycle-nightly-batch",
@@ -362,41 +379,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1789701011",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-18T03:10:11Z",
-          "ended_at": "2026-09-18T03:19:29Z",
-          "elapsed_s": 561,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1789735810",
-        "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-18T12:50:10Z",
-        "ended_at": "2026-09-18T13:00:01Z",
-        "elapsed_s": 595,
+        "run_id": "bibliothecaire-research-1789883414",
+        "job": "bibliothecaire-research",
+        "started_at": "2026-09-20T05:50:14Z",
+        "ended_at": "2026-09-20T05:58:29Z",
+        "elapsed_s": 498,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 0,
+        "issues_closed": 1,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Delivered #98 (overnight AC setpoint .edu sourcing) to close; request queue now empty; milestone #35/#37/#38 remain correctly blocked on privileged host access (mandark SSH, dexter docker) per today's re-verifications, and #99 is a same-day DECISION issue not yet at its 7d default."
       },
       "containment": {
         "foreign_clones": [],
@@ -560,9 +560,9 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-18T06:32:05-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
         {
@@ -2622,10 +2622,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": false,
   "watcher": {
-    "generated": "2026-09-20T05:50:04Z",
+    "generated": "2026-09-20T06:00:08Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-20T06:20:04Z",
+    "valid_until": "2026-09-20T06:30:08Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2634,12 +2634,12 @@
     "disk_read_at": "2026-09-20T05:40:02Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 13 minutes",
+    "uptime": "up 22 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-20T05:50:04Z"
+      "sampled_at": "2026-09-20T06:00:08Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
