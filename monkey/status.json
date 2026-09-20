@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-20T15:00:02Z",
-  "valid_until": "2026-09-21T19:00:02Z",
+  "generated": "2026-09-20T15:10:03Z",
+  "valid_until": "2026-09-21T19:10:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -13,7 +13,7 @@
       "armed": false,
       "dispatch_line": false,
       "repo_url": "https://github.com/hf7y/abletim.git",
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "milestone_self_fed": {
@@ -144,10 +144,10 @@
     {
       "account": "american-cycle",
       "uid": 3018,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/american-cycle.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "21 5 * * * /home/american-cycle/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
         "1,21,41 * * * * PACED_MAX_PER_TICK=1 /home/american-cycle/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -281,10 +281,10 @@
     {
       "account": "apms",
       "uid": 3016,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/apms-2173.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/apms/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -420,7 +420,7 @@
       "armed": false,
       "dispatch_line": false,
       "repo_url": "https://github.com/hf7y/baudin.git",
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "milestone_self_fed": {
@@ -551,10 +551,10 @@
     {
       "account": "bibliothecaire",
       "uid": 3002,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/bibliothecaire.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "12,32,52 * * * * PACED_MAX_PER_TICK=1 /home/bibliothecaire/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -687,10 +687,10 @@
     {
       "account": "chezz",
       "uid": 3003,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/chezz.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "7,27,47 * * * * PACED_MAX_PER_TICK=1 /home/chezz/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -851,10 +851,10 @@
     {
       "account": "crt",
       "uid": 3006,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/crt.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/crt/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -987,10 +987,10 @@
     {
       "account": "dcp-gate-site",
       "uid": 3017,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/dcp-gate-site.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "56 5 * * * /home/dcp-gate-site/.local/libexec/selfdev/selfdev-release-tick.sh --apply # realisateur:selfdev-release:TICK",
         "16,36,56 * * * * PACED_MAX_PER_TICK=1 /home/dcp-gate-site/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
@@ -1002,6 +1002,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "wtul-nightly-batch-1789916173",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-20T14:56:13Z",
+          "ended_at": "2026-09-20T15:09:06Z",
+          "elapsed_s": 776,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "groc-mangr-nightly-batch-1789913775",
           "job": "groc-mangr-nightly-batch",
@@ -1069,41 +1086,24 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "secretaire-nightly-batch-1789896974",
-          "job": "secretaire-nightly-batch",
-          "started_at": "2026-09-20T09:36:14Z",
-          "ended_at": "2026-09-20T09:49:03Z",
-          "elapsed_s": 771,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1789913775",
-        "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-20T14:16:15Z",
-        "ended_at": "2026-09-20T14:20:08Z",
-        "elapsed_s": 236,
+        "run_id": "wtul-nightly-batch-1789916173",
+        "job": "wtul-nightly-batch",
+        "started_at": "2026-09-20T14:56:13Z",
+        "ended_at": "2026-09-20T15:09:06Z",
+        "elapsed_s": 776,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "dexter/docker/CDP/zaxon access all reconfirmed down fresh tonight; milestone-list and #148/#145 all wait on those or a pending Zach DECISION, none due yet"
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -1127,7 +1127,7 @@
       "armed": false,
       "dispatch_line": false,
       "repo_url": "https://github.com/hf7y/ecosim.git",
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [
         "7,37 * * * * ECOSIM_SENSOR_BIN=/usr/local/bin/sonde /home/ecosim/Documents/Projects/ecosim/bin/ecosim-sensor-tick.sh # ecosim:ecosim-sensor:TICK"
       ],
@@ -1260,10 +1260,10 @@
     {
       "account": "gardien",
       "uid": 3004,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/gardien.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "12,32,52 * * * * PACED_MAX_PER_TICK=1 /home/gardien/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -1396,10 +1396,10 @@
     {
       "account": "groc-mangr",
       "uid": 3007,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/groc-mangr.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "GROC_APPLY_DECAY=1",
         "GROC_APPLY_EAT_PACE=1",
@@ -1540,7 +1540,7 @@
       "armed": false,
       "dispatch_line": false,
       "repo_url": "https://github.com/hf7y/nine-speakers.git",
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "milestone_self_fed": {
@@ -1671,10 +1671,10 @@
     {
       "account": "realisateur",
       "uid": 3010,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/realisateur.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "10,30,50 * * * * PACED_MAX_PER_TICK=1 /home/realisateur/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -1820,10 +1820,10 @@
     {
       "account": "scheduler",
       "uid": 3011,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/scheduler.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "1,21,41 * * * * PACED_MAX_PER_TICK=1 /home/scheduler/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -1969,10 +1969,10 @@
     {
       "account": "secretaire",
       "uid": 3012,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/secretaire.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "15,35,55 * * * * PACED_MAX_PER_TICK=1 /usr/local/share/verb-builds/current/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -2105,10 +2105,10 @@
     {
       "account": "senechal",
       "uid": 3014,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/senechal.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "3,23,43 * * * * PACED_MAX_PER_TICK=1 /home/senechal/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -2244,7 +2244,7 @@
       "armed": false,
       "dispatch_line": false,
       "repo_url": "https://github.com/hf7y/sequestria.git",
-      "roster_state": null,
+      "roster_state": "parked",
       "cron": [],
       "release_tick": null,
       "milestone_self_fed": {
@@ -2375,10 +2375,10 @@
     {
       "account": "vim-arcade",
       "uid": 3000,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/vim-arcade.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "17,37,57 * * * * PACED_MAX_PER_TICK=1 /home/vim-arcade/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -2524,10 +2524,10 @@
     {
       "account": "wtul",
       "uid": 3013,
-      "armed": null,
+      "armed": true,
       "dispatch_line": true,
       "repo_url": "https://github.com/hf7y/wtul.git",
-      "roster_state": null,
+      "roster_state": "live",
       "cron": [
         "6,26,46 * * * * PACED_MAX_PER_TICK=1 /home/wtul/Documents/Projects/scheduler/bin/usage-paced-runner.sh # scheduler:scheduler-paced-runner:RUNNER (usage-paced dispatch)"
       ],
@@ -2659,12 +2659,12 @@
     }
   ],
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
-  "roster_read": false,
+  "roster_read": true,
   "watcher": {
-    "generated": "2026-09-20T15:00:01Z",
+    "generated": "2026-09-20T15:10:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-20T15:30:01Z",
+    "valid_until": "2026-09-20T15:40:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2673,12 +2673,12 @@
     "disk_read_at": "2026-09-20T05:40:02Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 8 hours, 38 minutes",
+    "uptime": "up 8 hours, 48 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-20T15:00:01Z"
+      "sampled_at": "2026-09-20T15:10:02Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
