@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-20T09:20:05Z",
-  "valid_until": "2026-09-21T13:20:05Z",
+  "generated": "2026-09-20T09:30:05Z",
+  "valid_until": "2026-09-21T13:30:05Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -125,11 +125,7 @@
         "claimed_verdict": "CONTINUE",
         "claimed_reason": "real-media run landed for #2 (offline path declared winner); #5 blocked on SSH creds, not DNS; #18/#6/#28 unchanged, all genuinely blocked or parked"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "abletim@selfdev.invalid",
         "repaired_at": null,
@@ -262,13 +258,9 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
-        "declared": "american-cycle@selfdev.invalid",
+        "declared": "test@example.com",
         "repaired_at": "2026-09-18T13:15:02Z",
         "clones": []
       },
@@ -398,11 +390,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "test@example.com",
         "repaired_at": "2026-09-18T13:15:02Z",
@@ -532,11 +520,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Merged #78 (grocy_api_key /etc/selfdev fan-out, docs-only) and deleted the stale already-merged circadian-ramp-vs-night-fade-hold-17 branch; reconfirmed every remaining open issue (#17,#18,#19,#22,#29,#30,#42,#68,#13,#14) chains to the same wall -- baudin@monkey has no .session-handoff/ha_token (ha-probe.sh exits 1: 'no HA token at .../ha_token'), confirmed live this run -- or to a human decision already correctly labeled needs-human (#29 Midea unit count, #42 route1-vs-route2, #13 ARRIS port-fo"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "baudin@selfdev.invalid",
         "repaired_at": "2026-09-18T13:15:02Z",
@@ -565,6 +549,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "senechal-nightly-batch-1789895536",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-20T09:12:16Z",
+          "ended_at": "2026-09-20T09:28:10Z",
+          "elapsed_s": 957,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "wtul-nightly-batch-1789891938",
           "job": "wtul-nightly-batch",
@@ -632,49 +633,28 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1789732332",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-18T11:52:12Z",
-          "ended_at": "2026-09-18T12:25:49Z",
-          "elapsed_s": 2021,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1789891938",
-        "job": "wtul-nightly-batch",
-        "started_at": "2026-09-20T08:12:18Z",
-        "ended_at": "2026-09-20T08:35:47Z",
-        "elapsed_s": 1411,
+        "run_id": "senechal-nightly-batch-1789895536",
+        "job": "senechal-nightly-batch",
+        "started_at": "2026-09-20T09:12:16Z",
+        "ended_at": "2026-09-20T09:28:10Z",
+        "elapsed_s": 957,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 3,
-        "prs_merged": 1,
-        "verdict_computed": "WORKED",
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
-        "declared": "bibliothecaire@selfdev.invalid",
+        "declared": "test@example.com",
         "repaired_at": "2026-09-18T13:15:02Z",
         "clones": []
       },
@@ -804,11 +784,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Request queue empty (no request-labeled or eligible open issues); re-verified #35/#37/#38 walls myself (mandark: host key verification failed; dexter ssh: connection refused; dexter:8092 http: 000; no docker binary; sudo blocked by tool layer) -- unchanged from groc-mangr's 07:05Z check same day, all genuinely blocked on human/privileged-runner access, not on research."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "chezz@selfdev.invalid",
         "repaired_at": "2026-09-01T04:55:02Z",
@@ -832,11 +808,7 @@
       "milestone_self_fed": null,
       "runs": [],
       "last_run": null,
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "cinema-sanctuary@selfdev.invalid",
         "repaired_at": null,
@@ -968,11 +940,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "crt@selfdev.invalid",
         "repaired_at": "2026-09-18T13:15:02Z",
@@ -1105,11 +1073,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "dcp-gate-site@selfdev.invalid",
         "repaired_at": "2026-09-18T13:15:03Z",
@@ -1241,11 +1205,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Only #97/#118 open (milestone 1), both re-verified blocked on Zach-only actions (secret paste, crontab edit); no repo-side action available."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "ecosim@selfdev.invalid",
         "repaired_at": null,
@@ -1377,11 +1337,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "re-probed ssh dexter (refused), tailscaled (inactive), GHCR grant (404), crt#317 (still draft) live tonight -- all three open issues (#35 zach's read, #38 dexter+GHCR, #40 crt merge) wait on something outside this run"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "gardien@selfdev.invalid",
         "repaired_at": "2026-09-08T23:34:43Z",
@@ -1518,11 +1474,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "groc-mangr@selfdev.invalid",
         "repaired_at": "2026-09-18T13:15:03Z",
@@ -1652,11 +1604,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Re-verified suite (219 passed) + sim smoke clean; fresh adversarial read of hardware/{endpoint_process,network_endpoint,registry,supervisor,endpoint_cli,channel_map,level_balance,pd_lint}.py and nine_speakers/sim.py found no new defect -- codebase is now thoroughly hardened after 30+ prior passes. Remaining milestone (#5) work -- #64 (card bring-up), #59/#60 (projector hardware facts), #62 (zaxon ownership) -- is genuinely blocked on Zach's physical hardware/decision, not on further code."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "nine-speakers@selfdev.invalid",
         "repaired_at": "2026-09-01T04:55:00Z",
@@ -1685,6 +1633,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "wtul-nightly-batch-1789895419",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-20T09:10:19Z",
+          "ended_at": "2026-09-20T09:26:08Z",
+          "elapsed_s": 953,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "secretaire-nightly-batch-1789894212",
           "job": "secretaire-nightly-batch",
@@ -1752,47 +1717,26 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1789732213",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-18T11:50:13Z",
-          "ended_at": "2026-09-18T12:06:27Z",
-          "elapsed_s": 977,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 72,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 2,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "secretaire-nightly-batch-1789894212",
-        "job": "secretaire-nightly-batch",
-        "started_at": "2026-09-20T08:50:12Z",
-        "ended_at": "2026-09-20T08:55:34Z",
-        "elapsed_s": 325,
+        "run_id": "wtul-nightly-batch-1789895419",
+        "job": "wtul-nightly-batch",
+        "started_at": "2026-09-20T09:10:19Z",
+        "ended_at": "2026-09-20T09:26:08Z",
+        "elapsed_s": 953,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "realisateur@selfdev.invalid",
         "repaired_at": "2026-08-21T04:12:03Z",
@@ -1924,11 +1868,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Finished PR #915 (already green), landed #944/#946/#947, closed #933, ceiling raised to 21"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "test@example.com",
         "repaired_at": "2026-09-02T08:05:54Z",
@@ -2073,11 +2013,7 @@
         "claimed_verdict": "BLOCKED",
         "claimed_reason": "Only open issue is #17 (needs-human DECISION: which host runs the HP 8710 printer remedy); 21-day default not yet reached (set 2026-09-02); re-verified full test suite green; nothing else actionable"
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "secretaire@selfdev.invalid",
         "repaired_at": "2026-09-01T04:55:03Z",
@@ -2209,11 +2145,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "senechal@selfdev.invalid",
         "repaired_at": "2026-09-01T05:08:43Z",
@@ -2343,11 +2275,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "sequestria@selfdev.invalid",
         "repaired_at": "2026-09-01T04:55:00Z",
@@ -2479,11 +2407,7 @@
         "claimed_verdict": "DONE",
         "claimed_reason": "Request queue empty; milestone #35/#37/#38 already re-verified today 07:05Z with same wall (mandark SSH denied, dexter refused, no docker/sudo here) -- independently reproduced, nothing new to add or build."
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "test@example.com",
         "repaired_at": "2026-09-01T04:54:59Z",
@@ -2628,11 +2552,7 @@
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
-      "containment": {
-        "foreign_clones": [],
-        "outside_home": [],
-        "sudoers": []
-      },
+      "containment": null,
       "identity": {
         "declared": "test@example.com",
         "repaired_at": "2026-09-01T04:54:59Z",
@@ -2648,10 +2568,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": false,
   "watcher": {
-    "generated": "2026-09-20T09:20:04Z",
+    "generated": "2026-09-20T09:30:05Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-20T09:50:04Z",
+    "valid_until": "2026-09-20T10:00:05Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2660,12 +2580,12 @@
     "disk_read_at": "2026-09-20T05:40:02Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 3 hours, 25 minutes",
+    "uptime": "up 3 hours, 35 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-20T09:20:04Z"
+      "sampled_at": "2026-09-20T09:30:05Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
