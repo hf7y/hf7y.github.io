@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-20T20:20:03Z",
-  "valid_until": "2026-09-22T00:20:03Z",
+  "generated": "2026-09-20T20:30:03Z",
+  "valid_until": "2026-09-22T00:30:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1269,11 +1269,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": false,
-        "streak": 0,
-        "since": null
+        "current": true,
+        "streak": 1,
+        "since": "2026-09-20T14:52:05-05:00"
       },
       "runs": [
+        {
+          "run_id": "american-cycle-nightly-batch-1789935131",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-20T20:12:11Z",
+          "ended_at": "2026-09-20T20:31:07Z",
+          "elapsed_s": 1139,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 1,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "wtul-nightly-batch-1789929133",
           "job": "wtul-nightly-batch",
@@ -1341,39 +1358,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "BLOCKED",
           "claimed_reason": "All 4 open issues (97,94,86,55) need live creds this account never carries: ls *.token empty, CANVAS_TOKEN and ZAXON_LIVE unset in env -- checked again this tick, 20min after the 14:34Z check that landed real fixes (#101), nothing changed since"
-        },
-        {
-          "run_id": "wtul-nightly-batch-1789912338",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-20T13:52:18Z",
-          "ended_at": "2026-09-20T14:02:34Z",
-          "elapsed_s": 619,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1789929133",
-        "job": "wtul-nightly-batch",
-        "started_at": "2026-09-20T18:32:13Z",
-        "ended_at": "2026-09-20T18:39:30Z",
-        "elapsed_s": 440,
+        "run_id": "american-cycle-nightly-batch-1789935131",
+        "job": "american-cycle-nightly-batch",
+        "started_at": "2026-09-20T20:12:11Z",
+        "ended_at": "2026-09-20T20:31:07Z",
+        "elapsed_s": 1139,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
-        "issues_opened": 0,
-        "issues_closed": 1,
+        "issues_opened": 1,
+        "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -1680,11 +1680,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": false,
-        "streak": 0,
-        "since": null
+        "current": true,
+        "streak": 1,
+        "since": "2026-09-20T14:50:06-05:00"
       },
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1789936210",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-20T20:30:10Z",
+          "ended_at": "2026-09-20T20:31:23Z",
+          "elapsed_s": 76,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty of actionable requests; milestone #1 (#35/#37/#38) re-verified fresh (mandark: Permission denied; dexter:22 connection refused; dexter:8092 curl fails; sudo blocked; no docker) \u2014 identical to the 07:05Z check already commented today, no new information to post."
+        },
         {
           "run_id": "senechal-nightly-batch-1789931415",
           "job": "senechal-nightly-batch",
@@ -1752,31 +1769,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1789917009",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-20T15:10:09Z",
-          "ended_at": "2026-09-20T15:57:39Z",
-          "elapsed_s": 2854,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1789931415",
-        "job": "senechal-nightly-batch",
-        "started_at": "2026-09-20T19:10:15Z",
-        "ended_at": "2026-09-20T19:22:42Z",
-        "elapsed_s": 750,
+        "run_id": "bibliothecaire-research-1789936210",
+        "job": "bibliothecaire-research",
+        "started_at": "2026-09-20T20:30:10Z",
+        "ended_at": "2026-09-20T20:31:23Z",
+        "elapsed_s": 76,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1785,8 +1785,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Queue empty of actionable requests; milestone #1 (#35/#37/#38) re-verified fresh (mandark: Permission denied; dexter:22 connection refused; dexter:8092 curl fails; sudo blocked; no docker) \u2014 identical to the 07:05Z check already commented today, no new information to post."
       },
       "containment": {
         "foreign_clones": [],
@@ -1834,6 +1834,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "senechal-nightly-batch-1789935674",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-20T20:21:14Z",
+          "ended_at": "2026-09-20T20:29:00Z",
+          "elapsed_s": 470,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "gardien-nightly-batch-1789934470",
           "job": "gardien-nightly-batch",
@@ -1901,31 +1918,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "wtul-nightly-batch-1789912873",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-20T14:01:13Z",
-          "ended_at": "2026-09-20T14:20:32Z",
-          "elapsed_s": 1162,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "DONE",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1789934470",
-        "job": "gardien-nightly-batch",
-        "started_at": "2026-09-20T20:01:10Z",
-        "ended_at": "2026-09-20T20:08:39Z",
-        "elapsed_s": 452,
+        "run_id": "senechal-nightly-batch-1789935674",
+        "job": "senechal-nightly-batch",
+        "started_at": "2026-09-20T20:21:14Z",
+        "ended_at": "2026-09-20T20:29:00Z",
+        "elapsed_s": 470,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2661,10 +2661,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-20T20:20:02Z",
+    "generated": "2026-09-20T20:30:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-20T20:50:02Z",
+    "valid_until": "2026-09-20T21:00:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2673,12 +2673,12 @@
     "disk_read_at": "2026-09-20T05:40:02Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 13 hours, 58 minutes",
+    "uptime": "up 14 hours, 8 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-20T20:20:02Z"
+      "sampled_at": "2026-09-20T20:30:01Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
