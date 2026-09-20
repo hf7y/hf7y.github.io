@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-20T11:50:06Z",
-  "valid_until": "2026-09-21T15:50:06Z",
+  "generated": "2026-09-20T12:00:05Z",
+  "valid_until": "2026-09-21T16:00:05Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -560,11 +560,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-20T04:52:07-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
+        {
+          "run_id": "crt-nightly-batch-1789905138",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-20T11:52:18Z",
+          "ended_at": "2026-09-20T11:58:37Z",
+          "elapsed_s": 381,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "american-cycle-nightly-batch-1789899136",
           "job": "american-cycle-nightly-batch",
@@ -632,31 +649,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1789889535",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-20T07:32:15Z",
-          "ended_at": "2026-09-20T07:42:40Z",
-          "elapsed_s": 628,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 2,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1789899136",
-        "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-20T10:12:16Z",
-        "ended_at": "2026-09-20T10:24:21Z",
-        "elapsed_s": 729,
+        "run_id": "crt-nightly-batch-1789905138",
+        "job": "crt-nightly-batch",
+        "started_at": "2026-09-20T11:52:18Z",
+        "ended_at": "2026-09-20T11:58:37Z",
+        "elapsed_s": 381,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2661,10 +2661,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": false,
   "watcher": {
-    "generated": "2026-09-20T11:50:05Z",
+    "generated": "2026-09-20T12:00:05Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-20T12:20:05Z",
+    "valid_until": "2026-09-20T12:30:05Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2673,12 +2673,12 @@
     "disk_read_at": "2026-09-20T05:40:02Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 5 hours, 43 minutes",
+    "uptime": "up 5 hours, 52 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-20T11:50:05Z"
+      "sampled_at": "2026-09-20T12:00:05Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
