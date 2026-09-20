@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-20T06:30:08Z",
-  "valid_until": "2026-09-21T10:30:08Z",
+  "generated": "2026-09-20T06:40:08Z",
+  "valid_until": "2026-09-21T10:40:08Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1680,11 +1680,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-20T00:50:11-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1789885815",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-20T06:30:15Z",
+          "ended_at": "2026-09-20T06:31:21Z",
+          "elapsed_s": 69,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "request queue empty; #35/#37/#38 need root on mandark, #99 is a DECISION for @hf7y within its 7d default window -- nothing actionable"
+        },
         {
           "run_id": "american-cycle-nightly-batch-1789884615",
           "job": "american-cycle-nightly-batch",
@@ -1752,31 +1769,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1789693811",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-18T01:10:11Z",
-          "ended_at": "2026-09-18T01:35:36Z",
-          "elapsed_s": 1527,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1789884615",
-        "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-20T06:10:15Z",
-        "ended_at": "2026-09-20T06:26:01Z",
-        "elapsed_s": 949,
+        "run_id": "bibliothecaire-research-1789885815",
+        "job": "bibliothecaire-research",
+        "started_at": "2026-09-20T06:30:15Z",
+        "ended_at": "2026-09-20T06:31:21Z",
+        "elapsed_s": 69,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1785,8 +1785,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "DONE",
+        "claimed_reason": "request queue empty; #35/#37/#38 need root on mandark, #99 is a DECISION for @hf7y within its 7d default window -- nothing actionable"
       },
       "containment": {
         "foreign_clones": [],
@@ -2364,6 +2364,23 @@
       },
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1789885039",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-20T06:17:19Z",
+          "ended_at": "2026-09-20T06:36:21Z",
+          "elapsed_s": 1145,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 2,
+          "prs_opened": 2,
+          "prs_merged": 2,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1789731432",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-18T11:37:12Z",
@@ -2430,41 +2447,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "gardien-nightly-batch-1789689429",
-          "job": "gardien-nightly-batch",
-          "started_at": "2026-09-17T23:57:09Z",
-          "ended_at": "2026-09-17T23:59:33Z",
-          "elapsed_s": 147,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "ssh mandark/dexter still unreachable (permission denied / connection refused), PR 184 still MERGEABLE but prose/prose blocked on etalon#46's own merge-vs-override call, all 11 milestone issues re-probed with no new mechanism buildable in sandbox"
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1789731432",
-        "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-18T11:37:12Z",
-        "ended_at": "2026-09-18T11:46:41Z",
-        "elapsed_s": 572,
+        "run_id": "wtul-nightly-batch-1789885039",
+        "job": "wtul-nightly-batch",
+        "started_at": "2026-09-20T06:17:19Z",
+        "ended_at": "2026-09-20T06:36:21Z",
+        "elapsed_s": 1145,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 2,
         "issues_opened": 0,
-        "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "reprobed fresh tonight: ssh dexter connection refused, no docker/podman binary, CDP curl 127.0.0.1:9222 returns 000; all 20 open issues confirmed gated on exactly that dexter/CDP access, on a pending Zach decision not yet due, or explicitly parked behind the milestone by Zach himself; Grocy itself is reachable via tailscale and decay's remaining gap is real due stock not yet existing, not code"
+        "issues_closed": 2,
+        "prs_opened": 2,
+        "prs_merged": 2,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2499,6 +2499,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "crt-nightly-batch-1789884378",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-20T06:06:18Z",
+          "ended_at": "2026-09-20T06:38:14Z",
+          "elapsed_s": 1919,
+          "rc": 1,
+          "status": "FAILED (ceiling: max turns reached)",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "bibliothecaire-research-1789724769",
           "job": "bibliothecaire-research",
@@ -2566,41 +2583,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "secretaire-nightly-batch-1789688771",
-          "job": "secretaire-nightly-batch",
-          "started_at": "2026-09-17T23:46:11Z",
-          "ended_at": "2026-09-17T23:51:09Z",
-          "elapsed_s": 301,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "GHCR Actions-access grant and dexter host access both need a human; crt#317's merge needs crt's own self-dev, none of the three open issues have anything left this run can do"
         }
       ],
       "last_run": {
-        "run_id": "bibliothecaire-research-1789724769",
-        "job": "bibliothecaire-research",
-        "started_at": "2026-09-18T09:46:09Z",
-        "ended_at": "2026-09-18T09:48:11Z",
-        "elapsed_s": 126,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 0,
+        "run_id": "crt-nightly-batch-1789884378",
+        "job": "crt-nightly-batch",
+        "started_at": "2026-09-20T06:06:18Z",
+        "ended_at": "2026-09-20T06:38:14Z",
+        "elapsed_s": 1919,
+        "rc": 1,
+        "status": "FAILED (ceiling: max turns reached)",
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "DONE",
-        "claimed_reason": "Request queue empty (no open request-labeled issues); milestone #1 (#35/#37/#38) all mechanically complete and re-verified blocked this run (uid 3013/wtul, no gardien/selfdev group): mandark SSH permission denied (no key), dexter SSH connection refused + no docker binary + port 8092 unreachable, sudo denied outright by tool-permission layer -- identical wall to 09-15/16/17 passes, nothing new to build; close-audit clean, no comment added to avoid redundant re-verification spam"
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED-CUTOFF",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2622,10 +2622,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": false,
   "watcher": {
-    "generated": "2026-09-20T06:30:07Z",
+    "generated": "2026-09-20T06:40:07Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-20T07:00:07Z",
+    "valid_until": "2026-09-20T07:10:07Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2634,12 +2634,12 @@
     "disk_read_at": "2026-09-20T05:40:02Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 50 minutes",
+    "uptime": "up 59 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-20T06:30:07Z"
+      "sampled_at": "2026-09-20T06:40:07Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
