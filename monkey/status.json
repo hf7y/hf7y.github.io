@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-20T12:00:05Z",
-  "valid_until": "2026-09-21T16:00:05Z",
+  "generated": "2026-09-20T12:10:05Z",
+  "valid_until": "2026-09-21T16:10:05Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -154,11 +154,28 @@
       ],
       "release_tick": "2026-09-20T10:21:05Z rc=1 pin=2026-09-07T031807Z 2 ok, 0 gap, 1 bad",
       "milestone_self_fed": {
-        "current": false,
-        "streak": 0,
-        "since": null
+        "current": true,
+        "streak": 1,
+        "since": "2026-09-20T05:21:08-05:00"
       },
       "runs": [
+        {
+          "run_id": "american-cycle-nightly-batch-1789902075",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-20T11:01:15Z",
+          "ended_at": "2026-09-20T12:06:10Z",
+          "elapsed_s": 3898,
+          "rc": 1,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "FAILED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "senechal-nightly-batch-1789896078",
           "job": "senechal-nightly-batch",
@@ -226,39 +243,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "bibliothecaire-research-1789884076",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-09-20T06:01:16Z",
-          "ended_at": "2026-09-20T06:04:04Z",
-          "elapsed_s": 171,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Milestone 'The corpus lands where it belongs' (#35,#37,#38,#99): all vendoring buildable without a host is merged (#97, #92, #74); #35/#37/#38 remain blocked on Zach's own privileged act (sudo/root on mandark, docker on dexter) -- reconfirmed today with no change (ssh mandark: publickey/password denied; dexter:8092 unreachable, no docker binary; sudo -n blocked at the tool-permission layer). #99 is needs-human with DEFAULT-AFTER 7d not yet elapsed. request queue empty. Not posting a 4th consecut"
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1789896078",
-        "job": "senechal-nightly-batch",
-        "started_at": "2026-09-20T09:21:18Z",
-        "ended_at": "2026-09-20T09:42:36Z",
-        "elapsed_s": 1280,
-        "rc": 0,
+        "run_id": "american-cycle-nightly-batch-1789902075",
+        "job": "american-cycle-nightly-batch",
+        "started_at": "2026-09-20T11:01:15Z",
+        "ended_at": "2026-09-20T12:06:10Z",
+        "elapsed_s": 3898,
+        "rc": 1,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "verdict_computed": "FAILED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -290,11 +290,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-20T04:30:07-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
+        {
+          "run_id": "crt-nightly-batch-1789905018",
+          "job": "crt-nightly-batch",
+          "started_at": "2026-09-20T11:50:18Z",
+          "ended_at": "2026-09-20T12:01:38Z",
+          "elapsed_s": 683,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "american-cycle-nightly-batch-1789897815",
           "job": "american-cycle-nightly-batch",
@@ -362,39 +379,22 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1789888217",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-20T07:10:17Z",
-          "ended_at": "2026-09-20T07:29:04Z",
-          "elapsed_s": 1129,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 0,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1789897815",
-        "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-20T09:50:15Z",
-        "ended_at": "2026-09-20T10:14:16Z",
-        "elapsed_s": 1443,
-        "rc": 1,
+        "run_id": "crt-nightly-batch-1789905018",
+        "job": "crt-nightly-batch",
+        "started_at": "2026-09-20T11:50:18Z",
+        "ended_at": "2026-09-20T12:01:38Z",
+        "elapsed_s": 683,
+        "rc": 0,
         "status": "done",
-        "commits_added": 2,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "FAILED",
+        "verdict_computed": "IDLE",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -1829,9 +1829,9 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-20T03:01:11-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
         {
@@ -2661,10 +2661,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": false,
   "watcher": {
-    "generated": "2026-09-20T12:00:05Z",
+    "generated": "2026-09-20T12:10:04Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-20T12:30:05Z",
+    "valid_until": "2026-09-20T12:40:04Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2673,12 +2673,12 @@
     "disk_read_at": "2026-09-20T05:40:02Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 5 hours, 52 minutes",
+    "uptime": "up 6 hours, 2 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-20T12:00:05Z"
+      "sampled_at": "2026-09-20T12:10:04Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
