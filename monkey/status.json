@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-20T07:00:08Z",
-  "valid_until": "2026-09-21T11:00:08Z",
+  "generated": "2026-09-20T07:10:08Z",
+  "valid_until": "2026-09-21T11:10:08Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1410,11 +1410,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-20T01:04:11-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1789887853",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-20T07:04:13Z",
+          "ended_at": "2026-09-20T07:05:58Z",
+          "elapsed_s": 109,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Request queue empty; milestone #1 (#35/#37/#38) re-verified fresh today, still blocked on sudo@mandark / docker+SSH@dexter, no change from 2026-09-17 \u2014 posted dated confirmation comments on each"
+        },
         {
           "run_id": "american-cycle-nightly-batch-1789885455",
           "job": "american-cycle-nightly-batch",
@@ -1482,41 +1499,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1789693451",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-18T01:04:11Z",
-          "ended_at": "2026-09-18T01:13:41Z",
-          "elapsed_s": 573,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1789885455",
-        "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-20T06:24:15Z",
-        "ended_at": "2026-09-20T06:54:53Z",
-        "elapsed_s": 1841,
+        "run_id": "bibliothecaire-research-1789887853",
+        "job": "bibliothecaire-research",
+        "started_at": "2026-09-20T07:04:13Z",
+        "ended_at": "2026-09-20T07:05:58Z",
+        "elapsed_s": 109,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 1,
+        "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Request queue empty; milestone #1 (#35/#37/#38) re-verified fresh today, still blocked on sudo@mandark / docker+SSH@dexter, no change from 2026-09-17 \u2014 posted dated confirmation comments on each"
       },
       "containment": {
         "foreign_clones": [],
@@ -2472,9 +2472,22 @@
         "sudoers": []
       },
       "identity": {
-        "declared": "vim-arcade@selfdev.invalid",
+        "declared": "test@example.com",
         "repaired_at": "2026-09-01T04:54:59Z",
-        "clones": []
+        "clones": [
+          {
+            "path": "/home/vim-arcade/Documents/Projects/vim-arcade",
+            "local_identity": null,
+            "count": 8,
+            "commits": [
+              "851519d vim-arcade <vim-arcade@selfdev.invalid> 2026-09-06T12:52:17-05:00",
+              "58c30b0 vim-arcade <vim-arcade@selfdev.invalid> 2026-09-06T12:50:36-05:00",
+              "5cb115f vim-arcade <vim-arcade@selfdev.invalid> 2026-09-06T12:45:32-05:00",
+              "50f7a69 vim-arcade <vim-arcade@selfdev.invalid> 2026-09-05T08:23:32-05:00",
+              "cd84d53 vim-arcade <vim-arcade@selfdev.invalid> 2026-09-05T08:19:48-05:00"
+            ]
+          }
+        ]
       },
       "credentials": {
         "app_key": "0o640",
@@ -2622,10 +2635,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": false,
   "watcher": {
-    "generated": "2026-09-20T07:00:07Z",
+    "generated": "2026-09-20T07:10:08Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-20T07:30:07Z",
+    "valid_until": "2026-09-20T07:40:08Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2634,12 +2647,12 @@
     "disk_read_at": "2026-09-20T05:40:02Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 hour, 17 minutes",
+    "uptime": "up 1 hour, 27 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-20T07:00:07Z"
+      "sampled_at": "2026-09-20T07:10:08Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
