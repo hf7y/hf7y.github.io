@@ -1,12 +1,12 @@
 {
   "accounts": [],
-  "generated": "2026-09-21T22:30:02Z",
+  "generated": "2026-09-21T22:40:21Z",
   "host": "monkey",
   "watcher": {
-    "generated": "2026-09-21T22:30:02Z",
+    "generated": "2026-09-21T22:40:21Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-21T23:00:02Z",
+    "valid_until": "2026-09-21T23:10:21Z",
     "verdict": "DEGRADED",
     "why": "sshd sent its banner but the session stalled -- no answer in 180s",
     "vm_state": "running",
@@ -15,12 +15,12 @@
     "disk_read_at": "2026-09-21T14:56:29Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 16 hours, 16 minutes",
+    "uptime": "up 1 day, 16 hours, 26 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
-      "long_readout_count": null,
-      "sampled_at": null
+      "long_readout_count": 0,
+      "sampled_at": "2026-09-21T22:40:21Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
