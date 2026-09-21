@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-21T16:30:02Z",
-  "valid_until": "2026-09-22T20:30:02Z",
+  "generated": "2026-09-21T16:40:03Z",
+  "valid_until": "2026-09-22T20:40:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -296,6 +296,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1790008213",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-21T16:30:13Z",
+          "ended_at": "2026-09-21T16:36:54Z",
+          "elapsed_s": 404,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "gardien-nightly-batch-1790005811",
           "job": "gardien-nightly-batch",
           "started_at": "2026-09-21T15:50:11Z",
@@ -362,31 +379,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1789944612",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-20T22:50:12Z",
-          "ended_at": "2026-09-20T22:56:52Z",
-          "elapsed_s": 404,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1790005811",
-        "job": "gardien-nightly-batch",
-        "started_at": "2026-09-21T15:50:11Z",
-        "ended_at": "2026-09-21T15:54:53Z",
-        "elapsed_s": 286,
+        "run_id": "senechal-nightly-batch-1790008213",
+        "job": "senechal-nightly-batch",
+        "started_at": "2026-09-21T16:30:13Z",
+        "ended_at": "2026-09-21T16:36:54Z",
+        "elapsed_s": 404,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -696,11 +696,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": false,
-        "streak": 0,
-        "since": null
+        "current": true,
+        "streak": 1,
+        "since": "2026-09-21T11:07:05-05:00"
       },
       "runs": [
+        {
+          "run_id": "american-cycle-nightly-batch-1790008031",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-21T16:27:11Z",
+          "ended_at": "2026-09-21T16:39:51Z",
+          "elapsed_s": 763,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 9,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "senechal-nightly-batch-1790004433",
           "job": "senechal-nightly-batch",
@@ -768,39 +785,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "crt-nightly-batch-1789952747",
-          "job": "crt-nightly-batch",
-          "started_at": "2026-09-21T01:05:47Z",
-          "ended_at": "2026-09-21T01:15:48Z",
-          "elapsed_s": 604,
-          "rc": 1,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1790004433",
-        "job": "senechal-nightly-batch",
-        "started_at": "2026-09-21T15:27:13Z",
-        "ended_at": "2026-09-21T15:37:29Z",
-        "elapsed_s": 619,
+        "run_id": "american-cycle-nightly-batch-1790008031",
+        "job": "american-cycle-nightly-batch",
+        "started_at": "2026-09-21T16:27:11Z",
+        "ended_at": "2026-09-21T16:39:51Z",
+        "elapsed_s": 763,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 9,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -865,6 +865,23 @@
         "since": null
       },
       "runs": [
+        {
+          "run_id": "gardien-nightly-batch-1790008210",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-09-21T16:30:10Z",
+          "ended_at": "2026-09-21T16:39:37Z",
+          "elapsed_s": 571,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "Re-ran main's 315 python tests and bashified's full 12-suite run (all green); re-probed ssh mandark (TCP timeout) and ssh dexter (connection refused), confirmed no garde.json anywhere on this filesystem; PR184 still MERGEABLE but BLOCKED on the required prose/prose check per #203, which is unchanged at etalon#45/#46 (no new comment since 2026-09-16); swept bin/lib for hardcoded tmp paths, unguarded cd, and eval -- found none, so no new mechanism to build tonight. All 11 milestone issues (#23 #26"
+        },
         {
           "run_id": "wtul-nightly-batch-1790005814",
           "job": "wtul-nightly-batch",
@@ -932,31 +949,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1789952748",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-21T01:05:48Z",
-          "ended_at": "2026-09-21T01:19:26Z",
-          "elapsed_s": 823,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1790005814",
-        "job": "wtul-nightly-batch",
-        "started_at": "2026-09-21T15:50:14Z",
-        "ended_at": "2026-09-21T16:27:16Z",
-        "elapsed_s": 2225,
+        "run_id": "gardien-nightly-batch-1790008210",
+        "job": "gardien-nightly-batch",
+        "started_at": "2026-09-21T16:30:10Z",
+        "ended_at": "2026-09-21T16:39:37Z",
+        "elapsed_s": 571,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -965,8 +965,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "BLOCKED",
+        "claimed_reason": "Re-ran main's 315 python tests and bashified's full 12-suite run (all green); re-probed ssh mandark (TCP timeout) and ssh dexter (connection refused), confirmed no garde.json anywhere on this filesystem; PR184 still MERGEABLE but BLOCKED on the required prose/prose check per #203, which is unchanged at etalon#45/#46 (no new comment since 2026-09-16); swept bin/lib for hardcoded tmp paths, unguarded cd, and eval -- found none, so no new mechanism to build tonight. All 11 milestone issues (#23 #26"
       },
       "containment": {
         "foreign_clones": [],
@@ -2539,6 +2539,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1790007971",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-21T16:26:11Z",
+          "ended_at": "2026-09-21T16:34:12Z",
+          "elapsed_s": 484,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "gardien-nightly-batch-1790006770",
           "job": "gardien-nightly-batch",
           "started_at": "2026-09-21T16:06:10Z",
@@ -2605,31 +2622,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "bibliothecaire-research-1789989968",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-09-21T11:26:08Z",
-          "ended_at": "2026-09-21T11:29:34Z",
-          "elapsed_s": 210,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Milestone 'The corpus lands where it belongs' (#35,#37,#38): re-verified all three walls (mandark now network-timeout not just auth-denied; dexter SSH/8092 unreachable, no docker) \u2014 no new mechanism to build, all already vendored (#72,#97,#92,#73); no request-labeled or other eligible issues in queue"
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1790006770",
-        "job": "gardien-nightly-batch",
-        "started_at": "2026-09-21T16:06:10Z",
-        "ended_at": "2026-09-21T16:10:25Z",
-        "elapsed_s": 259,
+        "run_id": "senechal-nightly-batch-1790007971",
+        "job": "senechal-nightly-batch",
+        "started_at": "2026-09-21T16:26:11Z",
+        "ended_at": "2026-09-21T16:34:12Z",
+        "elapsed_s": 484,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2638,8 +2638,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "re-verified fresh tonight: ssh mandark/dexter both fail at TCP layer, main+bashified suites green (315+429), PR184 still gated on etalon46/45 with zero movement since 09-16"
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2673,10 +2673,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-21T16:30:01Z",
+    "generated": "2026-09-21T16:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-21T17:00:01Z",
+    "valid_until": "2026-09-21T17:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2685,12 +2685,12 @@
     "disk_read_at": "2026-09-21T14:56:29Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 10 hours, 14 minutes",
+    "uptime": "up 1 day, 10 hours, 24 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-21T16:30:01Z"
+      "sampled_at": "2026-09-21T16:40:02Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
