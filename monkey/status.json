@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-21T15:40:02Z",
-  "valid_until": "2026-09-22T19:40:02Z",
+  "generated": "2026-09-21T15:50:03Z",
+  "valid_until": "2026-09-22T19:50:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -2649,7 +2649,19 @@
       "identity": {
         "declared": "test@example.com",
         "repaired_at": "2026-09-01T04:54:59Z",
-        "clones": []
+        "clones": [
+          {
+            "path": "/home/wtul/Documents/Projects/wtul",
+            "local_identity": null,
+            "count": 4,
+            "commits": [
+              "8356c93 wtul <wtul@selfdev.invalid> 2026-09-20T02:42:16-05:00",
+              "eed5077 wtul <wtul@selfdev.invalid> 2026-09-20T02:36:54-05:00",
+              "0b9c2f9 wtul <wtul@selfdev.invalid> 2026-09-10T16:36:38-05:00",
+              "757d19d wtul <wtul@selfdev.invalid> 2026-09-10T16:32:02-05:00"
+            ]
+          }
+        ]
       },
       "credentials": {
         "app_key": "0o640",
@@ -2661,10 +2673,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-21T15:40:02Z",
+    "generated": "2026-09-21T15:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-21T16:10:02Z",
+    "valid_until": "2026-09-21T16:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2673,12 +2685,12 @@
     "disk_read_at": "2026-09-21T14:56:29Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 9 hours, 24 minutes",
+    "uptime": "up 1 day, 9 hours, 34 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-21T15:40:02Z"
+      "sampled_at": "2026-09-21T15:50:02Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
