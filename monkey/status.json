@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-21T18:10:02Z",
-  "valid_until": "2026-09-22T22:10:02Z",
+  "generated": "2026-09-21T18:20:02Z",
+  "valid_until": "2026-09-22T22:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -290,11 +290,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": false,
-        "streak": 0,
-        "since": null
+        "current": true,
+        "streak": 1,
+        "since": "2026-09-21T12:10:05-05:00"
       },
       "runs": [
+        {
+          "run_id": "american-cycle-nightly-batch-1790011811",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-21T17:30:11Z",
+          "ended_at": "2026-09-21T18:19:44Z",
+          "elapsed_s": 2978,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 2,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "senechal-nightly-batch-1790008213",
           "job": "senechal-nightly-batch",
@@ -362,39 +379,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Request queue empty (no 'request'-labeled or eligible open issues); milestone 'corpus lands where it belongs' (#35/#37/#38) independently re-verified blocked on same wall as wtul's comment 3min prior (11:29Z): mandark SSH timeout, dexter SSH refused/8092 no response, no docker binary, sudo blocked by tool-permission layer -- skipped a 4th duplicate comment same tick"
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1789948212",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-20T23:50:12Z",
-          "ended_at": "2026-09-21T01:15:52Z",
-          "elapsed_s": 5143,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1790008213",
-        "job": "senechal-nightly-batch",
-        "started_at": "2026-09-21T16:30:13Z",
-        "ended_at": "2026-09-21T16:36:54Z",
-        "elapsed_s": 404,
+        "run_id": "american-cycle-nightly-batch-1790011811",
+        "job": "american-cycle-nightly-batch",
+        "started_at": "2026-09-21T17:30:11Z",
+        "ended_at": "2026-09-21T18:19:44Z",
+        "elapsed_s": 2978,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
+        "prs_opened": 2,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2673,10 +2673,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-21T18:10:01Z",
+    "generated": "2026-09-21T18:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-21T18:40:01Z",
+    "valid_until": "2026-09-21T18:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2685,12 +2685,12 @@
     "disk_read_at": "2026-09-21T14:56:29Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 11 hours, 53 minutes",
+    "uptime": "up 1 day, 12 hours, 3 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-21T18:10:01Z"
+      "sampled_at": "2026-09-21T18:20:02Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
