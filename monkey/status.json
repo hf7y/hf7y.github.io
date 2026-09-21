@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-21T15:20:03Z",
-  "valid_until": "2026-09-22T19:20:03Z",
+  "generated": "2026-09-21T15:30:03Z",
+  "valid_until": "2026-09-22T19:30:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -2114,11 +2114,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-21T09:56:39-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1790004188",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-21T15:23:08Z",
+          "ended_at": "2026-09-21T15:25:29Z",
+          "elapsed_s": 144,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "request queue empty, fallback queue empty, PR #74 already merged; milestone #1 (#35/#37/#38) independently reconfirmed blocked on privileged mandark/dexter access (no ssh key, no docker, sudo denied by sandbox) -- same conclusion already posted 3h earlier today by wtul, skipped a duplicate comment per rule 0's spirit"
+        },
         {
           "run_id": "american-cycle-nightly-batch-1790002992",
           "job": "american-cycle-nightly-batch",
@@ -2186,41 +2203,24 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "bibliothecaire-research-1789942988",
-          "job": "bibliothecaire-research",
-          "started_at": "2026-09-20T22:23:08Z",
-          "ended_at": "2026-09-20T22:25:06Z",
-          "elapsed_s": 121,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "DONE",
-          "claimed_reason": "Request queue empty (no request-label issues, no non-deferred/non-in-progress issues); milestone #35/#37/#38 re-verified this run (senechal identity) with identical walls already confirmed today 07:05Z: mandark SSH connection timed out, dexter:8092 unreachable (000), no docker binary, sudo blocked by tool-permission layer -- nothing actionable, all three block on privileged access or Zach's own keystroke, not on more agent work."
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1790002992",
-        "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-21T15:03:12Z",
-        "ended_at": "2026-09-21T15:17:51Z",
-        "elapsed_s": 882,
+        "run_id": "bibliothecaire-research-1790004188",
+        "job": "bibliothecaire-research",
+        "started_at": "2026-09-21T15:23:08Z",
+        "ended_at": "2026-09-21T15:25:29Z",
+        "elapsed_s": 144,
         "rc": 0,
         "status": "done",
-        "commits_added": 8,
+        "commits_added": 0,
         "issues_opened": 0,
-        "issues_closed": 2,
+        "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "request queue empty, fallback queue empty, PR #74 already merged; milestone #1 (#35/#37/#38) independently reconfirmed blocked on privileged mandark/dexter access (no ssh key, no docker, sudo denied by sandbox) -- same conclusion already posted 3h earlier today by wtul, skipped a duplicate comment per rule 0's spirit"
       },
       "containment": {
         "foreign_clones": [],
@@ -2661,10 +2661,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-21T15:20:02Z",
+    "generated": "2026-09-21T15:30:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-21T15:50:02Z",
+    "valid_until": "2026-09-21T16:00:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2673,12 +2673,12 @@
     "disk_read_at": "2026-09-21T14:56:29Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 9 hours, 4 minutes",
+    "uptime": "up 1 day, 9 hours, 14 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-21T15:20:02Z"
+      "sampled_at": "2026-09-21T15:30:02Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
