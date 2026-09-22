@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-22T00:10:02Z",
-  "valid_until": "2026-09-23T04:10:02Z",
+  "generated": "2026-09-22T00:20:03Z",
+  "valid_until": "2026-09-23T04:20:03Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1695,6 +1695,23 @@
       },
       "runs": [
         {
+          "run_id": "gardien-nightly-batch-1790035810",
+          "job": "gardien-nightly-batch",
+          "started_at": "2026-09-22T00:10:10Z",
+          "ended_at": "2026-09-22T00:16:14Z",
+          "elapsed_s": 367,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "BLOCKED",
+          "claimed_reason": "milestone re-verified today (2026-09-21), all 11 items wait on real mandark/dexter host access or etalon#46's merge call; no delta since 15:20Z comment"
+        },
+        {
           "run_id": "wtul-nightly-batch-1790034613",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-21T23:50:13Z",
@@ -1761,31 +1778,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "wtul-nightly-batch-1790014214",
-          "job": "wtul-nightly-batch",
-          "started_at": "2026-09-21T18:10:14Z",
-          "ended_at": "2026-09-21T18:25:05Z",
-          "elapsed_s": 894,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1790034613",
-        "job": "wtul-nightly-batch",
-        "started_at": "2026-09-21T23:50:13Z",
-        "ended_at": "2026-09-21T23:54:35Z",
-        "elapsed_s": 265,
+        "run_id": "gardien-nightly-batch-1790035810",
+        "job": "gardien-nightly-batch",
+        "started_at": "2026-09-22T00:10:10Z",
+        "ended_at": "2026-09-22T00:16:14Z",
+        "elapsed_s": 367,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1794,8 +1794,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "BLOCKED",
+        "claimed_reason": "milestone re-verified today (2026-09-21), all 11 items wait on real mandark/dexter host access or etalon#46's merge call; no delta since 15:20Z comment"
       },
       "containment": {
         "foreign_clones": [],
@@ -2682,10 +2682,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-22T00:10:01Z",
+    "generated": "2026-09-22T00:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-22T00:40:01Z",
+    "valid_until": "2026-09-22T00:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2694,12 +2694,12 @@
     "disk_read_at": "2026-09-21T14:56:29Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 1 day, 17 hours, 53 minutes",
+    "uptime": "up 1 day, 18 hours, 3 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-22T00:10:01Z"
+      "sampled_at": "2026-09-22T00:20:02Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
