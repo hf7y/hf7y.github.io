@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-23T11:40:02Z",
-  "valid_until": "2026-09-24T15:40:02Z",
+  "generated": "2026-09-23T11:50:02Z",
+  "valid_until": "2026-09-24T15:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -429,12 +429,13 @@
       "containment": {
         "foreign_clones": [],
         "outside_home": [
+          "/var/tmp/wtul-ramp-cache/224e43bcedceeab10a6cc4e53365b43171518829.json",
           "/var/tmp/wtul-ramp-cache/b0e8e0ce1355f48a4bdd7cf2e2543a525c79ec9b.json",
           "/var/tmp/wtul-ramp-cache/c59f83ecac3e47859b10f081e1a8f219ed80bc4c.json",
           "/var/tmp/wtul-ramp-cache/8c3ff2f779016ec1299a1a9f738b3ce01de8949b.json",
+          "/var/tmp/wtul-ramp-cache/3baffd025be0b4ad70fd77de8407ebeaeffd9d9c.json.lock",
           "/var/tmp/wtul-ramp-cache/5419991d73c89c92f692aaad00f60616a6bdffe4.json",
-          "/var/tmp/wtul-ramp-cache/f5d95189c22604f5c3b518bd894f17c4d72b143d.json",
-          "/var/tmp/wtul-ramp-cache/224e43bcedceeab10a6cc4e53365b43171518829.json.lock"
+          "/var/tmp/wtul-ramp-cache/f5d95189c22604f5c3b518bd894f17c4d72b143d.json"
         ],
         "sudoers": []
       },
@@ -601,6 +602,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1790160735",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-23T10:52:15Z",
+          "ended_at": "2026-09-23T11:49:52Z",
+          "elapsed_s": 3462,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 3,
+          "issues_opened": 1,
+          "issues_closed": 0,
+          "prs_opened": 2,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "wtul-nightly-batch-1790154736",
           "job": "wtul-nightly-batch",
           "started_at": "2026-09-23T09:12:16Z",
@@ -667,39 +685,22 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "vim-arcade-nightly-batch-1790146329",
-          "job": "vim-arcade-nightly-batch",
-          "started_at": "2026-09-23T06:52:09Z",
-          "ended_at": "2026-09-23T07:08:24Z",
-          "elapsed_s": 978,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "landed #320's cross-repo rank (PR #325, merged), closed 3 duplicate PRs (#321-323) and 1 redundant PR (#324) plus their remote branches; #318 and #319 remain open, no open milestone, real work"
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1790154736",
-        "job": "wtul-nightly-batch",
-        "started_at": "2026-09-23T09:12:16Z",
-        "ended_at": "2026-09-23T09:19:23Z",
-        "elapsed_s": 431,
+        "run_id": "senechal-nightly-batch-1790160735",
+        "job": "senechal-nightly-batch",
+        "started_at": "2026-09-23T10:52:15Z",
+        "ended_at": "2026-09-23T11:49:52Z",
+        "elapsed_s": 3462,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
-        "issues_opened": 0,
+        "commits_added": 3,
+        "issues_opened": 1,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_opened": 2,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2750,10 +2751,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-23T11:40:02Z",
+    "generated": "2026-09-23T11:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-23T12:10:02Z",
+    "valid_until": "2026-09-23T12:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2762,12 +2763,12 @@
     "disk_read_at": "2026-09-22T15:00:01Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 7 hours, 8 minutes",
+    "uptime": "up 7 hours, 17 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-23T11:40:02Z"
+      "sampled_at": "2026-09-23T11:50:01Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
