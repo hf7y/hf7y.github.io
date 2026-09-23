@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-23T12:20:02Z",
-  "valid_until": "2026-09-24T16:20:02Z",
+  "generated": "2026-09-23T12:30:02Z",
+  "valid_until": "2026-09-24T16:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1907,11 +1907,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-23T05:41:05-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1790166069",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-23T12:21:09Z",
+          "ended_at": "2026-09-23T12:22:45Z",
+          "elapsed_s": 99,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty: no open 'request'-labeled issues; fallback search found only #101 (a Zach-decision branch keep/delete, already verified by prior agents, no action left) and #35/#37/#38 (deferred, mandark network-unreachable, re-verified 2026-09-22)."
+        },
         {
           "run_id": "american-cycle-nightly-batch-1790161270",
           "job": "american-cycle-nightly-batch",
@@ -1979,31 +1996,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1790146872",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-23T07:01:12Z",
-          "ended_at": "2026-09-23T07:15:06Z",
-          "elapsed_s": 838,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 1,
-          "prs_opened": 2,
-          "prs_merged": 2,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1790161270",
-        "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-23T11:01:10Z",
-        "ended_at": "2026-09-23T11:15:40Z",
-        "elapsed_s": 874,
+        "run_id": "bibliothecaire-research-1790166069",
+        "job": "bibliothecaire-research",
+        "started_at": "2026-09-23T12:21:09Z",
+        "ended_at": "2026-09-23T12:22:45Z",
+        "elapsed_s": 99,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2012,8 +2012,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Queue empty: no open 'request'-labeled issues; fallback search found only #101 (a Zach-decision branch keep/delete, already verified by prior agents, no action left) and #35/#37/#38 (deferred, mandark network-unreachable, re-verified 2026-09-22)."
       },
       "containment": {
         "foreign_clones": [],
@@ -2468,6 +2468,23 @@
       },
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1790165837",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-23T12:17:17Z",
+          "ended_at": "2026-09-23T12:27:33Z",
+          "elapsed_s": 619,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1790159831",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-23T10:37:11Z",
@@ -2534,41 +2551,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Queue empty of actionable work: no request-labeled issues; milestone #1 (#35/#37/#38) all deferred/durable, re-verified daily through 2026-09-22 as blocked on privileged mandark/dexter access with no change; #101 is a DECISION for Zach with its DEFAULT-AFTER already satisfied (branch left in place, verified by chezz@monkey)."
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1790146632",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-23T06:57:12Z",
-          "ended_at": "2026-09-23T07:12:03Z",
-          "elapsed_s": 895,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1790159831",
-        "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-23T10:37:11Z",
-        "ended_at": "2026-09-23T10:51:44Z",
-        "elapsed_s": 876,
+        "run_id": "wtul-nightly-batch-1790165837",
+        "job": "wtul-nightly-batch",
+        "started_at": "2026-09-23T12:17:17Z",
+        "ended_at": "2026-09-23T12:27:33Z",
+        "elapsed_s": 619,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "ssh dexter refused, no docker, CDP 000 on 127.0.0.1:9222 -- Grocy/zaxon live, place-order pipeline still unreachable, same wall every session tonight found"
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2751,10 +2751,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-23T12:20:02Z",
+    "generated": "2026-09-23T12:30:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-23T12:50:02Z",
+    "valid_until": "2026-09-23T13:00:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2763,12 +2763,12 @@
     "disk_read_at": "2026-09-22T15:00:01Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 7 hours, 47 minutes",
+    "uptime": "up 7 hours, 57 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-23T12:20:02Z"
+      "sampled_at": "2026-09-23T12:30:01Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
