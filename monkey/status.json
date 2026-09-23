@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-23T13:00:02Z",
-  "valid_until": "2026-09-24T17:00:02Z",
+  "generated": "2026-09-23T13:10:02Z",
+  "valid_until": "2026-09-24T17:10:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -913,6 +913,23 @@
       },
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1790167816",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-23T12:50:16Z",
+          "ended_at": "2026-09-23T13:01:44Z",
+          "elapsed_s": 690,
+          "rc": 1,
+          "status": "FAILED",
+          "commits_added": 2,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 1,
+          "verdict_computed": "WORKED-CUTOFF",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "groc-mangr-nightly-batch-1790165412",
           "job": "groc-mangr-nightly-batch",
           "started_at": "2026-09-23T12:10:12Z",
@@ -979,45 +996,29 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "No open 'request' issues; milestone #1 (#35/#37/#38) reconfirmed blocked on root/docker access this run (ssh mandark: no known host key + historical Permission denied; ssh dexter: connection refused; no docker binary), #101 is a DECISION awaiting Zach, already reverified today with DEFAULT-AFTER in place -- nothing actionable."
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1790151011",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-23T08:10:11Z",
-          "ended_at": "2026-09-23T08:23:09Z",
-          "elapsed_s": 781,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "groc-mangr-nightly-batch-1790165412",
-        "job": "groc-mangr-nightly-batch",
-        "started_at": "2026-09-23T12:10:12Z",
-        "ended_at": "2026-09-23T12:18:15Z",
-        "elapsed_s": 487,
-        "rc": 0,
-        "status": "done",
-        "commits_added": 0,
+        "run_id": "wtul-nightly-batch-1790167816",
+        "job": "wtul-nightly-batch",
+        "started_at": "2026-09-23T12:50:16Z",
+        "ended_at": "2026-09-23T13:01:44Z",
+        "elapsed_s": 690,
+        "rc": 1,
+        "status": "FAILED",
+        "commits_added": 2,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
-        "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "prs_opened": 1,
+        "prs_merged": 1,
+        "verdict_computed": "WORKED-CUTOFF",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
         "outside_home": [
+          "/var/tmp/wtul-ramp-cache/d2f00e7fdac73ec4a8684d126c55d7c8891e08ce.json.lock",
           "/var/tmp/wtul-ramp-cache/paths",
           "/var/tmp/wtul-ramp-cache/paths/016476349ae72bcd75352e94e64b3931a0139104.json",
           "/var/tmp/wtul-ramp-cache/paths/215f64a9243a1cf9a742212e2b4a72a3bdb1071d.json",
@@ -1035,10 +1036,9 @@
           "/var/tmp/wtul-ramp-cache/paths/3ba9f5df1a69174eb493ab0c666bf1c6b73a0274.json",
           "/var/tmp/wtul-ramp-cache/paths/9cea87d726a1df071fb29f812662bb25242d0ff6.json",
           "/var/tmp/wtul-ramp-cache/paths/fb280b4aeaf8d4c7cfde3cdddc64c6c624213635.json",
+          "/var/tmp/wtul-ramp-cache/paths/75522002c09a1cb41ec873ac9a36440f6cbd7abe.json",
           "/var/tmp/wtul-ramp-cache/paths/cd365d73fc4fc22ec38acf8762c9e617bacf2694.json",
-          "/var/tmp/wtul-ramp-cache/paths/e18d60365c14c44418d62e25427ae0b49fa8cfb1.json",
-          "/var/tmp/wtul-ramp-cache/paths/3c5c3bb056b87670d420762496ed6cb413b4edb2.json",
-          "... and 21 more"
+          "... and 25 more"
         ],
         "sudoers": []
       },
@@ -2773,10 +2773,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-23T13:00:02Z",
+    "generated": "2026-09-23T13:10:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-23T13:30:02Z",
+    "valid_until": "2026-09-23T13:40:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2785,12 +2785,12 @@
     "disk_read_at": "2026-09-22T15:00:01Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 8 hours, 27 minutes",
+    "uptime": "up 8 hours, 37 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-23T13:00:02Z"
+      "sampled_at": "2026-09-23T13:10:01Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
