@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-23T09:40:02Z",
-  "valid_until": "2026-09-24T13:40:02Z",
+  "generated": "2026-09-23T09:50:02Z",
+  "valid_until": "2026-09-24T13:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -835,8 +835,10 @@
       "containment": {
         "foreign_clones": [],
         "outside_home": [
-          "/var/tmp/wtul-ramp-cache/ce6a1f238d8560393795f5b860e8acb4f42ac47a.json.lock",
-          "/var/tmp/wtul-ramp-cache/a05efebb43db4756c578d4dc50acc0115f30ac5e.json.lock"
+          "/var/tmp/wtul-ramp-cache/a05efebb43db4756c578d4dc50acc0115f30ac5e.json",
+          "/var/tmp/wtul-ramp-cache/14b78aa81eca46b687248802d2ac80abc7292f9c.json.lock",
+          "/var/tmp/wtul-ramp-cache/907bd33963f30f1c2c0337e44e11059bcfd3a6fc.json.lock",
+          "/var/tmp/wtul-ramp-cache/ce6a1f238d8560393795f5b860e8acb4f42ac47a.json"
         ],
         "sudoers": []
       },
@@ -1456,6 +1458,23 @@
       },
       "runs": [
         {
+          "run_id": "senechal-nightly-batch-1790155453",
+          "job": "senechal-nightly-batch",
+          "started_at": "2026-09-23T09:24:13Z",
+          "ended_at": "2026-09-23T09:43:55Z",
+          "elapsed_s": 1185,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 1,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 1,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "gardien-nightly-batch-1790154250",
           "job": "gardien-nightly-batch",
           "started_at": "2026-09-23T09:04:10Z",
@@ -1522,41 +1541,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1790143452",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-23T06:04:12Z",
-          "ended_at": "2026-09-23T06:08:49Z",
-          "elapsed_s": 282,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "gardien-nightly-batch-1790154250",
-        "job": "gardien-nightly-batch",
-        "started_at": "2026-09-23T09:04:10Z",
-        "ended_at": "2026-09-23T09:09:05Z",
-        "elapsed_s": 298,
+        "run_id": "senechal-nightly-batch-1790155453",
+        "job": "senechal-nightly-batch",
+        "started_at": "2026-09-23T09:24:13Z",
+        "ended_at": "2026-09-23T09:43:55Z",
+        "elapsed_s": 1185,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 1,
         "issues_opened": 0,
         "issues_closed": 0,
-        "prs_opened": 0,
+        "prs_opened": 1,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "ssh mandark permission denied (publickey), ssh dexter connection refused, no garde.json reachable, etalon#46 merge-vs-override call still unanswered since 09-16"
+        "verdict_computed": "WORKED",
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
@@ -2735,10 +2737,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-23T09:40:02Z",
+    "generated": "2026-09-23T09:50:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-23T10:10:02Z",
+    "valid_until": "2026-09-23T10:20:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2747,12 +2749,12 @@
     "disk_read_at": "2026-09-22T15:00:01Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 5 hours, 7 minutes",
+    "uptime": "up 5 hours, 18 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-23T09:40:02Z"
+      "sampled_at": "2026-09-23T09:50:02Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
