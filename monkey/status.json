@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-23T04:40:01Z",
-  "valid_until": "2026-09-24T08:40:01Z",
+  "generated": "2026-09-23T04:50:02Z",
+  "valid_until": "2026-09-24T08:50:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -1419,11 +1419,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": false,
-        "streak": 0,
-        "since": null
+        "current": true,
+        "streak": 1,
+        "since": "2026-09-22T04:24:04-05:00"
       },
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1790138650",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-23T04:44:10Z",
+          "ended_at": "2026-09-23T04:45:29Z",
+          "elapsed_s": 83,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "request queue empty; milestone #35/#37/#38 re-verified blocked today by unattended-monkey (mandark SSH timeout, no dexter/docker path); #101 is a needs-human decision for @zach with a 30d default already specified, nothing for an agent to do"
+        },
         {
           "run_id": "apms-nightly-batch-1790064249",
           "job": "apms-nightly-batch",
@@ -1491,41 +1508,24 @@
           "verdict_computed": "FAILED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "secretaire-nightly-batch-1790052249",
-          "job": "secretaire-nightly-batch",
-          "started_at": "2026-09-22T04:44:09Z",
-          "ended_at": "2026-09-22T04:49:15Z",
-          "elapsed_s": 311,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "BLOCKED",
-          "claimed_reason": "dexter host-key/deploy-key decision (#55) and Zach's own mail-ranking read (#35) are the only remaining milestone work, both already freshly re-verified tonight with no new mechanism found"
         }
       ],
       "last_run": {
-        "run_id": "apms-nightly-batch-1790064249",
-        "job": "apms-nightly-batch",
-        "started_at": "2026-09-22T08:04:09Z",
-        "ended_at": "2026-09-22T08:11:20Z",
-        "elapsed_s": 434,
+        "run_id": "bibliothecaire-research-1790138650",
+        "job": "bibliothecaire-research",
+        "started_at": "2026-09-23T04:44:10Z",
+        "ended_at": "2026-09-23T04:45:29Z",
+        "elapsed_s": 83,
         "rc": 0,
         "status": "done",
-        "commits_added": 1,
-        "issues_opened": 3,
-        "issues_closed": 2,
-        "prs_opened": 3,
-        "prs_merged": 2,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "commits_added": 0,
+        "issues_opened": 0,
+        "issues_closed": 0,
+        "prs_opened": 0,
+        "prs_merged": 0,
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "request queue empty; milestone #35/#37/#38 re-verified blocked today by unattended-monkey (mandark SSH timeout, no dexter/docker path); #101 is a needs-human decision for @zach with a 30d default already specified, nothing for an agent to do"
       },
       "containment": {
         "foreign_clones": [],
@@ -2682,10 +2682,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-23T04:40:01Z",
+    "generated": "2026-09-23T04:50:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-23T05:10:01Z",
+    "valid_until": "2026-09-23T05:20:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2694,12 +2694,12 @@
     "disk_read_at": "2026-09-22T15:00:01Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 7 minutes",
+    "uptime": "up 17 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-23T04:40:01Z"
+      "sampled_at": "2026-09-23T04:50:01Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
