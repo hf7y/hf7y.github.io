@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-23T09:20:02Z",
-  "valid_until": "2026-09-24T13:20:02Z",
+  "generated": "2026-09-23T09:30:02Z",
+  "valid_until": "2026-09-24T13:30:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -182,11 +182,28 @@
       ],
       "release_tick": "2026-09-21T10:21:02Z rc=0 pin=2026-09-07T031807Z 3 ok, 0 gap, 0 bad",
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-23T03:01:06-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1790155270",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-23T09:21:10Z",
+          "ended_at": "2026-09-23T09:23:29Z",
+          "elapsed_s": 143,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Milestone #1 queue empty of actionable work: #35/#37/#38 remain durable+deferred (mechanism vendored & fixture-proven per #72/#73/#74/#92/#97, only privileged mandark/dexter keystroke left, already re-confirmed today's-eve 2026-09-22 by wtul incl. CI-runner-workaround dead end); #101 is a DECISION for Zach with a 30d default, already independently verified by chezz (stale/superseded branch, safe either way) -- nothing left for this seat to research or verify. No open request-queue issues, no ope"
+        },
         {
           "run_id": "american-cycle-nightly-batch-1790154071",
           "job": "american-cycle-nightly-batch",
@@ -254,41 +271,24 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1790139671",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-23T05:01:11Z",
-          "ended_at": "2026-09-23T05:16:49Z",
-          "elapsed_s": 940,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 1,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1790154071",
-        "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-23T09:01:11Z",
-        "ended_at": "2026-09-23T09:18:19Z",
-        "elapsed_s": 1030,
+        "run_id": "bibliothecaire-research-1790155270",
+        "job": "bibliothecaire-research",
+        "started_at": "2026-09-23T09:21:10Z",
+        "ended_at": "2026-09-23T09:23:29Z",
+        "elapsed_s": 143,
         "rc": 0,
         "status": "done",
-        "commits_added": 16,
+        "commits_added": 0,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "WORKED",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "verdict_computed": "IDLE",
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Milestone #1 queue empty of actionable work: #35/#37/#38 remain durable+deferred (mechanism vendored & fixture-proven per #72/#73/#74/#92/#97, only privileged mandark/dexter keystroke left, already re-confirmed today's-eve 2026-09-22 by wtul incl. CI-runner-workaround dead end); #101 is a DECISION for Zach with a 30d default, already independently verified by chezz (stale/superseded branch, safe either way) -- nothing left for this seat to research or verify. No open request-queue issues, no ope"
       },
       "containment": {
         "foreign_clones": [],
@@ -2592,11 +2592,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-23T03:06:06-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1790155569",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-23T09:26:09Z",
+          "ended_at": "2026-09-23T09:30:26Z",
+          "elapsed_s": 261,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Request queue empty (label:request); only open issues are milestone #1's #35/#37/#38 (privileged mandark/dexter access wall, re-verified daily through 2026-09-22, mechanism already vendored+fixture-proven) and #101 (Zach's keep/delete call on iiif-page92-scans, already verified twice, DEFAULT-AFTER 30d not reached) -- both are BLOCKED WAITING ON A HUMAN, nothing to build or research this run."
+        },
         {
           "run_id": "american-cycle-nightly-batch-1790154371",
           "job": "american-cycle-nightly-batch",
@@ -2664,31 +2681,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1790142371",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-23T05:46:11Z",
-          "ended_at": "2026-09-23T06:05:33Z",
-          "elapsed_s": 1166,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 2,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "CONTINUE",
-          "claimed_reason": "Landed groc-runner deploy.sh (PR #353, checks green, automerge armed) closing part of #234's deploy-and-wire gap; found+recorded that this seat runs on a booted monkey with selfdev/key access but zero network route to Grocy/dexter (#234, #341). Rest of milestone #27 (#59 #87 #88 #192 #197 #224 #233 #248 #274 #277 #284 #303 #343 #351) stays gated on live infra access or a Zach DECISION -- verified each against tonight's own walls, nothing else buildable from this seat."
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1790154371",
-        "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-23T09:06:11Z",
-        "ended_at": "2026-09-23T09:18:25Z",
-        "elapsed_s": 737,
+        "run_id": "bibliothecaire-research-1790155569",
+        "job": "bibliothecaire-research",
+        "started_at": "2026-09-23T09:26:09Z",
+        "ended_at": "2026-09-23T09:30:26Z",
+        "elapsed_s": 261,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2697,8 +2697,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Request queue empty (label:request); only open issues are milestone #1's #35/#37/#38 (privileged mandark/dexter access wall, re-verified daily through 2026-09-22, mechanism already vendored+fixture-proven) and #101 (Zach's keep/delete call on iiif-page92-scans, already verified twice, DEFAULT-AFTER 30d not reached) -- both are BLOCKED WAITING ON A HUMAN, nothing to build or research this run."
       },
       "containment": {
         "foreign_clones": [],
@@ -2732,10 +2732,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-23T09:20:02Z",
+    "generated": "2026-09-23T09:30:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-23T09:50:02Z",
+    "valid_until": "2026-09-23T10:00:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2744,12 +2744,12 @@
     "disk_read_at": "2026-09-22T15:00:01Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 hours, 47 minutes",
+    "uptime": "up 4 hours, 57 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-23T09:20:02Z"
+      "sampled_at": "2026-09-23T09:30:01Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
