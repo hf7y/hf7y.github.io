@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-23T12:10:02Z",
-  "valid_until": "2026-09-24T16:10:02Z",
+  "generated": "2026-09-23T12:20:02Z",
+  "valid_until": "2026-09-24T16:20:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -913,6 +913,23 @@
       },
       "runs": [
         {
+          "run_id": "groc-mangr-nightly-batch-1790165412",
+          "job": "groc-mangr-nightly-batch",
+          "started_at": "2026-09-23T12:10:12Z",
+          "ended_at": "2026-09-23T12:18:15Z",
+          "elapsed_s": 487,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "crt-nightly-batch-1790161813",
           "job": "crt-nightly-batch",
           "started_at": "2026-09-23T11:10:13Z",
@@ -979,31 +996,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "senechal-nightly-batch-1790146219",
-          "job": "senechal-nightly-batch",
-          "started_at": "2026-09-23T06:50:19Z",
-          "ended_at": "2026-09-23T07:11:48Z",
-          "elapsed_s": 1292,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 0,
-          "issues_opened": 1,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "IDLE",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "crt-nightly-batch-1790161813",
-        "job": "crt-nightly-batch",
-        "started_at": "2026-09-23T11:10:13Z",
-        "ended_at": "2026-09-23T11:18:16Z",
-        "elapsed_s": 486,
+        "run_id": "groc-mangr-nightly-batch-1790165412",
+        "job": "groc-mangr-nightly-batch",
+        "started_at": "2026-09-23T12:10:12Z",
+        "ended_at": "2026-09-23T12:18:15Z",
+        "elapsed_s": 487,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1325,11 +1325,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": true,
-        "streak": 1,
-        "since": "2026-09-23T04:12:05-05:00"
+        "current": false,
+        "streak": 0,
+        "since": null
       },
       "runs": [
+        {
+          "run_id": "bibliothecaire-research-1790165530",
+          "job": "bibliothecaire-research",
+          "started_at": "2026-09-23T12:12:10Z",
+          "ended_at": "2026-09-23T12:14:20Z",
+          "elapsed_s": 134,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "DONE",
+          "claimed_reason": "Queue empty: no request-labeled issues; only open issue set is milestone 'The corpus lands where it belongs' (#35/#37/#38 deferred, blocked on privileged mandark/dexter access -- re-verified live this run, walls unchanged from apms/wtul's checks hours earlier today; #101 is a fresh DECISION for Zach with a 30d default already recorded). Nothing actionable, nothing new to build."
+        },
         {
           "run_id": "american-cycle-nightly-batch-1790159531",
           "job": "american-cycle-nightly-batch",
@@ -1397,31 +1414,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "groc-mangr-nightly-batch-1790145133",
-          "job": "groc-mangr-nightly-batch",
-          "started_at": "2026-09-23T06:32:13Z",
-          "ended_at": "2026-09-23T06:53:47Z",
-          "elapsed_s": 1296,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 1,
-          "issues_closed": 1,
-          "prs_opened": 1,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "american-cycle-nightly-batch-1790159531",
-        "job": "american-cycle-nightly-batch",
-        "started_at": "2026-09-23T10:32:11Z",
-        "ended_at": "2026-09-23T10:52:05Z",
-        "elapsed_s": 1197,
+        "run_id": "bibliothecaire-research-1790165530",
+        "job": "bibliothecaire-research",
+        "started_at": "2026-09-23T12:12:10Z",
+        "ended_at": "2026-09-23T12:14:20Z",
+        "elapsed_s": 134,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -1430,8 +1430,8 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "none",
-        "claimed_reason": ""
+        "claimed_verdict": "DONE",
+        "claimed_reason": "Queue empty: no request-labeled issues; only open issue set is milestone 'The corpus lands where it belongs' (#35/#37/#38 deferred, blocked on privileged mandark/dexter access -- re-verified live this run, walls unchanged from apms/wtul's checks hours earlier today; #101 is a fresh DECISION for Zach with a 30d default already recorded). Nothing actionable, nothing new to build."
       },
       "containment": {
         "foreign_clones": [],
@@ -2751,10 +2751,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-23T12:10:02Z",
+    "generated": "2026-09-23T12:20:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-23T12:40:02Z",
+    "valid_until": "2026-09-23T12:50:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2763,12 +2763,12 @@
     "disk_read_at": "2026-09-22T15:00:01Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 7 hours, 37 minutes",
+    "uptime": "up 7 hours, 47 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-23T12:10:02Z"
+      "sampled_at": "2026-09-23T12:20:02Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
