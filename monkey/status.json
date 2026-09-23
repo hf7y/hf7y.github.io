@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-23T09:50:02Z",
-  "valid_until": "2026-09-24T13:50:02Z",
+  "generated": "2026-09-23T10:00:02Z",
+  "valid_until": "2026-09-24T14:00:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -835,9 +835,11 @@
       "containment": {
         "foreign_clones": [],
         "outside_home": [
+          "/var/tmp/wtul-ramp-cache/31bb62bf4545bf1bbe7312918cea6136b9ce2aa1.json.lock",
           "/var/tmp/wtul-ramp-cache/a05efebb43db4756c578d4dc50acc0115f30ac5e.json",
-          "/var/tmp/wtul-ramp-cache/14b78aa81eca46b687248802d2ac80abc7292f9c.json.lock",
-          "/var/tmp/wtul-ramp-cache/907bd33963f30f1c2c0337e44e11059bcfd3a6fc.json.lock",
+          "/var/tmp/wtul-ramp-cache/14b78aa81eca46b687248802d2ac80abc7292f9c.json",
+          "/var/tmp/wtul-ramp-cache/880fa32704493513741bc90a25588b7fb044e62f.json.lock",
+          "/var/tmp/wtul-ramp-cache/907bd33963f30f1c2c0337e44e11059bcfd3a6fc.json",
           "/var/tmp/wtul-ramp-cache/ce6a1f238d8560393795f5b860e8acb4f42ac47a.json"
         ],
         "sudoers": []
@@ -2737,10 +2739,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-23T09:50:02Z",
+    "generated": "2026-09-23T10:00:01Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-23T10:20:02Z",
+    "valid_until": "2026-09-23T10:30:01Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2749,12 +2751,12 @@
     "disk_read_at": "2026-09-22T15:00:01Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 5 hours, 18 minutes",
+    "uptime": "up 5 hours, 27 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-23T09:50:02Z"
+      "sampled_at": "2026-09-23T10:00:01Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
