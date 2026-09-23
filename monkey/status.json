@@ -1,8 +1,8 @@
 {
   "schema": 3,
   "host": "monkey",
-  "generated": "2026-09-23T09:30:02Z",
-  "valid_until": "2026-09-24T13:30:02Z",
+  "generated": "2026-09-23T09:40:02Z",
+  "valid_until": "2026-09-24T13:40:02Z",
   "cadence_hours": 24,
   "grace_hours": 4,
   "verb_build": "2026-09-07T031807Z",
@@ -730,6 +730,23 @@
       },
       "runs": [
         {
+          "run_id": "wtul-nightly-batch-1790155638",
+          "job": "wtul-nightly-batch",
+          "started_at": "2026-09-23T09:27:18Z",
+          "ended_at": "2026-09-23T09:36:57Z",
+          "elapsed_s": 583,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
+        {
           "run_id": "secretaire-nightly-batch-1790154429",
           "job": "secretaire-nightly-batch",
           "started_at": "2026-09-23T09:07:09Z",
@@ -796,31 +813,14 @@
           "verdict_computed": "IDLE",
           "claimed_verdict": "DONE",
           "claimed_reason": "Queue empty of actionable research requests: #101 is a decision issue for Zach (branch keep/delete, DEFAULT-AFTER 30d, already engaged, not decided) -- posted verification that the branch is a stale pre-refactor snapshot, safe either way, no merge needed; #35/#37/#38 correctly deferred, each blocked on a privileged act only Zach can perform (sudo on mandark, ssh access, tailnet host) with the buildable-without-host slices already merged (#97, #92, #74)."
-        },
-        {
-          "run_id": "american-cycle-nightly-batch-1790143632",
-          "job": "american-cycle-nightly-batch",
-          "started_at": "2026-09-23T06:07:12Z",
-          "ended_at": "2026-09-23T06:17:27Z",
-          "elapsed_s": 618,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 15,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 0,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "secretaire-nightly-batch-1790154429",
-        "job": "secretaire-nightly-batch",
-        "started_at": "2026-09-23T09:07:09Z",
-        "ended_at": "2026-09-23T09:14:32Z",
-        "elapsed_s": 447,
+        "run_id": "wtul-nightly-batch-1790155638",
+        "job": "wtul-nightly-batch",
+        "started_at": "2026-09-23T09:27:18Z",
+        "ended_at": "2026-09-23T09:36:57Z",
+        "elapsed_s": 583,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -829,12 +829,15 @@
         "prs_opened": 0,
         "prs_merged": 0,
         "verdict_computed": "IDLE",
-        "claimed_verdict": "BLOCKED",
-        "claimed_reason": "ssh dexter:22 refused, :2223 stops at host-key TOFU, tailscaled inactive, no dexter-scoped deploy key on this seat -- #55 asks Zach for the out-of-band fingerprint and deploy-key call, 14d default not elapsed (filed 2026-09-22); #35's two remaining items need Zach's own read of ranked mail, not code"
+        "claimed_verdict": "none",
+        "claimed_reason": ""
       },
       "containment": {
         "foreign_clones": [],
-        "outside_home": [],
+        "outside_home": [
+          "/var/tmp/wtul-ramp-cache/ce6a1f238d8560393795f5b860e8acb4f42ac47a.json.lock",
+          "/var/tmp/wtul-ramp-cache/a05efebb43db4756c578d4dc50acc0115f30ac5e.json.lock"
+        ],
         "sudoers": []
       },
       "identity": {
@@ -1739,11 +1742,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": false,
-        "streak": 0,
-        "since": null
+        "current": true,
+        "streak": 1,
+        "since": "2026-09-23T03:50:06-05:00"
       },
       "runs": [
+        {
+          "run_id": "american-cycle-nightly-batch-1790154611",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-23T09:10:11Z",
+          "ended_at": "2026-09-23T09:36:47Z",
+          "elapsed_s": 1599,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "IDLE",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "senechal-nightly-batch-1790149813",
           "job": "senechal-nightly-batch",
@@ -1811,31 +1831,14 @@
           "verdict_computed": "WORKED",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1790142613",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-23T05:50:13Z",
-          "ended_at": "2026-09-23T06:00:37Z",
-          "elapsed_s": 628,
-          "rc": 0,
-          "status": "done",
-          "commits_added": 1,
-          "issues_opened": 0,
-          "issues_closed": 0,
-          "prs_opened": 0,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "senechal-nightly-batch-1790149813",
-        "job": "senechal-nightly-batch",
-        "started_at": "2026-09-23T07:50:13Z",
-        "ended_at": "2026-09-23T08:02:16Z",
-        "elapsed_s": 726,
+        "run_id": "american-cycle-nightly-batch-1790154611",
+        "job": "american-cycle-nightly-batch",
+        "started_at": "2026-09-23T09:10:11Z",
+        "ended_at": "2026-09-23T09:36:47Z",
+        "elapsed_s": 1599,
         "rc": 0,
         "status": "done",
         "commits_added": 0,
@@ -2173,11 +2176,28 @@
       ],
       "release_tick": null,
       "milestone_self_fed": {
-        "current": false,
-        "streak": 0,
-        "since": null
+        "current": true,
+        "streak": 1,
+        "since": "2026-09-23T04:03:05-05:00"
       },
       "runs": [
+        {
+          "run_id": "american-cycle-nightly-batch-1790155391",
+          "job": "american-cycle-nightly-batch",
+          "started_at": "2026-09-23T09:23:11Z",
+          "ended_at": "2026-09-23T09:31:51Z",
+          "elapsed_s": 523,
+          "rc": 0,
+          "status": "done",
+          "commits_added": 16,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "verdict_computed": "WORKED",
+          "claimed_verdict": "none",
+          "claimed_reason": ""
+        },
         {
           "run_id": "wtul-nightly-batch-1790146994",
           "job": "wtul-nightly-batch",
@@ -2245,39 +2265,22 @@
           "verdict_computed": "WORKED-CUTOFF",
           "claimed_verdict": "none",
           "claimed_reason": ""
-        },
-        {
-          "run_id": "chezz-nightly-batch-1790138590",
-          "job": "chezz-nightly-batch",
-          "started_at": "2026-09-23T04:43:10Z",
-          "ended_at": "2026-09-23T05:14:41Z",
-          "elapsed_s": 1895,
-          "rc": 1,
-          "status": "FAILED (ceiling: max turns reached)",
-          "commits_added": 2,
-          "issues_opened": 1,
-          "issues_closed": 0,
-          "prs_opened": 2,
-          "prs_merged": 1,
-          "verdict_computed": "WORKED-CUTOFF",
-          "claimed_verdict": "none",
-          "claimed_reason": ""
         }
       ],
       "last_run": {
-        "run_id": "wtul-nightly-batch-1790146994",
-        "job": "wtul-nightly-batch",
-        "started_at": "2026-09-23T07:03:14Z",
-        "ended_at": "2026-09-23T07:09:47Z",
-        "elapsed_s": 397,
+        "run_id": "american-cycle-nightly-batch-1790155391",
+        "job": "american-cycle-nightly-batch",
+        "started_at": "2026-09-23T09:23:11Z",
+        "ended_at": "2026-09-23T09:31:51Z",
+        "elapsed_s": 523,
         "rc": 0,
         "status": "done",
-        "commits_added": 0,
+        "commits_added": 16,
         "issues_opened": 0,
         "issues_closed": 0,
         "prs_opened": 0,
         "prs_merged": 0,
-        "verdict_computed": "IDLE",
+        "verdict_computed": "WORKED",
         "claimed_verdict": "none",
         "claimed_reason": ""
       },
@@ -2732,10 +2735,10 @@
   "accounts_scope": "uid 3000-3099 only. Accounts outside this band are NOT enumerated: this list is not a census of everything on the host that runs work. Service accounts (e.g. uid 1001) are invisible here.",
   "roster_read": true,
   "watcher": {
-    "generated": "2026-09-23T09:30:01Z",
+    "generated": "2026-09-23T09:40:02Z",
     "cadence_minutes": 10,
     "grace_minutes": 20,
-    "valid_until": "2026-09-23T10:00:01Z",
+    "valid_until": "2026-09-23T10:10:02Z",
     "verdict": "OK",
     "why": "running, sshd answering, root rw, disk internal",
     "vm_state": "running",
@@ -2744,12 +2747,12 @@
     "disk_read_at": "2026-09-22T15:00:01Z",
     "sshd": "answering",
     "screenshot": false,
-    "uptime": "up 4 hours, 57 minutes",
+    "uptime": "up 5 hours, 7 minutes",
     "clock_drift_hours": null,
     "clock_drift_applies": false,
     "clocksource": {
       "long_readout_count": 0,
-      "sampled_at": "2026-09-23T09:30:01Z"
+      "sampled_at": "2026-09-23T09:40:02Z"
     },
     "host_read": "guest",
     "root_mount": "rw",
