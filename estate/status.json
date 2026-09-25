@@ -1,0 +1,346 @@
+{
+ "generated_at": "2026-09-25T12:48:09Z",
+ "host": "dexter",
+ "cadence_min": 20,
+ "grace_min": 40,
+ "valid_until": "2026-09-25T13:48:09Z",
+ "containers": [
+  {
+   "name": "ci-sequestria",
+   "image": "selfdev-runner:2.337.0",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-23T06:29:18Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "condescending_joliot",
+   "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
+   "project": null,
+   "state": "exited",
+   "health": null,
+   "restarts": 0,
+   "exit_code": 56,
+   "started_at": "2026-09-23T06:23:20Z",
+   "finished_at": "2026-09-23T06:24:30Z",
+   "ports_published": null
+  },
+  {
+   "name": "desk",
+   "image": "ghcr.io/hf7y/secretaire:latest",
+   "project": "secretaire",
+   "state": "running",
+   "health": "healthy",
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-23T04:33:37Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "groc-browser",
+   "image": "ghcr.io/hf7y/groc-browser:latest",
+   "project": "groc-browser",
+   "state": "exited",
+   "health": "unhealthy",
+   "restarts": 0,
+   "exit_code": 0,
+   "started_at": "2026-09-23T19:43:23Z",
+   "finished_at": "2026-09-23T19:45:01Z",
+   "ports_published": false
+  },
+  {
+   "name": "roster",
+   "image": "ghcr.io/hf7y/roster:latest",
+   "project": "roster",
+   "state": "running",
+   "health": "healthy",
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-25T04:27:55Z",
+   "finished_at": null,
+   "ports_published": true
+  },
+  {
+   "name": "whisper",
+   "image": "ghcr.io/hf7y/whisper:latest",
+   "project": "whisper",
+   "state": "running",
+   "health": "healthy",
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-23T04:33:37Z",
+   "finished_at": null,
+   "ports_published": true
+  },
+  {
+   "name": "wtul-dexter-promote",
+   "image": "ghcr.io/hf7y/wtul-dexter-promote:latest",
+   "project": "wtul-dexter-promote",
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-23T04:33:37Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "xenodochial_wilson",
+   "image": "sha256:93e91132a92436e536ed6d98f0a1514821fc58343f66a95f0d444d5bd1720e21",
+   "project": null,
+   "state": "exited",
+   "health": null,
+   "restarts": 0,
+   "exit_code": 1,
+   "started_at": "2026-09-25T02:11:31Z",
+   "finished_at": "2026-09-25T02:11:44Z",
+   "ports_published": null
+  },
+  {
+   "name": "zaxon-gateway",
+   "image": "ghcr.io/hf7y/zaxon:latest",
+   "project": "zaxon",
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-23T04:33:37Z",
+   "finished_at": null,
+   "ports_published": true
+  },
+  {
+   "name": "zaxon-relay",
+   "image": "ghcr.io/hf7y/zaxon:latest",
+   "project": "zaxon",
+   "state": "running",
+   "health": "healthy",
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-23T04:33:40Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "zaxon-watcher",
+   "image": "ghcr.io/hf7y/zaxon:latest",
+   "project": "zaxon",
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-23T04:33:40Z",
+   "finished_at": null,
+   "ports_published": null
+  }
+ ],
+ "services": [
+  {
+   "name": "groc-browser",
+   "dir": "/srv/groc-browser",
+   "on_demand": true
+  },
+  {
+   "name": "roster",
+   "dir": "/srv/roster",
+   "on_demand": false
+  },
+  {
+   "name": "secretaire",
+   "dir": "/srv/secretaire",
+   "on_demand": false
+  },
+  {
+   "name": "whisper",
+   "dir": "/srv/whisper",
+   "on_demand": false
+  },
+  {
+   "name": "wtul-dexter-promote",
+   "dir": "/srv/wtul-dexter-promote",
+   "on_demand": false
+  },
+  {
+   "name": "zaxon",
+   "dir": "/srv/zaxon",
+   "on_demand": false
+  }
+ ],
+ "unmanaged": [
+  "ci-sequestria",
+  "condescending_joliot",
+  "xenodochial_wilson"
+ ],
+ "nightly": {
+  "armed": true,
+  "cron_line": "0 1 * * * /srv/agent/nightly.sh # realisateur:agent-nightly:RUNNER",
+  "repos": [
+   "crt",
+   "dog",
+   "musc-2300",
+   "groc-mangr",
+   "wtul",
+   "senechal",
+   "etalon",
+   "realisateur"
+  ],
+  "last_run": {
+   "log": "nightly.20260925T055521Z.log",
+   "started_at": "2026-09-25T05:55:21Z",
+   "finished_at": "2026-09-25T07:00:12Z",
+   "turns": 150,
+   "dispatched": {
+    "crt": {
+     "queue": 9,
+     "at": "2026-09-25T05:55:22Z",
+     "outcome": "finished"
+    },
+    "dog": {
+     "queue": 2,
+     "at": "2026-09-25T06:13:02Z",
+     "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 68,
+     "at": "2026-09-25T06:24:22Z",
+     "outcome": "finished"
+    },
+    "groc-mangr": {
+     "queue": 25,
+     "at": "2026-09-25T06:32:21Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 29,
+     "at": "2026-09-25T06:34:08Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 32,
+     "at": "2026-09-25T06:39:04Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 38,
+     "at": "2026-09-25T06:48:30Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 178,
+     "at": "2026-09-25T06:50:25Z",
+     "outcome": "finished"
+    }
+   },
+   "skipped": [],
+   "queue_unreadable": [],
+   "age_h": 6.9
+  },
+  "passes": [
+   {
+    "repo": "crt",
+    "log": "crt.20260925T055522Z.log",
+    "result": "success",
+    "turns": 62,
+    "cost_usd": 1.398,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/crt/pull/403",
+    "note": null,
+    "at": "2026-09-25T05:55:22Z"
+   },
+   {
+    "repo": "dog",
+    "log": "dog.20260925T061302Z.log",
+    "result": "success",
+    "turns": 94,
+    "cost_usd": 2.6359,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/dog/pull/10",
+    "note": null,
+    "at": "2026-09-25T06:13:02Z"
+   },
+   {
+    "repo": "musc-2300",
+    "log": "musc-2300.20260925T062422Z.log",
+    "result": "success",
+    "turns": 53,
+    "cost_usd": 0.9639,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/148",
+    "note": null,
+    "at": "2026-09-25T06:24:22Z"
+   },
+   {
+    "repo": "groc-mangr",
+    "log": "groc-mangr.20260925T063221Z.log",
+    "result": "success",
+    "turns": 26,
+    "cost_usd": 0.396,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/373",
+    "note": null,
+    "at": "2026-09-25T06:32:21Z"
+   },
+   {
+    "repo": "wtul",
+    "log": "wtul.20260925T063408Z.log",
+    "result": "success",
+    "turns": 49,
+    "cost_usd": 1.1829,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/wtul/pull/357",
+    "note": null,
+    "at": "2026-09-25T06:34:08Z"
+   },
+   {
+    "repo": "senechal",
+    "log": "senechal.20260925T063904Z.log",
+    "result": "success",
+    "turns": 38,
+    "cost_usd": 0.9808,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1028",
+    "note": null,
+    "at": "2026-09-25T06:39:04Z"
+   },
+   {
+    "repo": "etalon",
+    "log": "etalon.20260925T064830Z.log",
+    "result": "success",
+    "turns": 21,
+    "cost_usd": 0.3473,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/etalon/pull/69",
+    "note": null,
+    "at": "2026-09-25T06:48:30Z"
+   },
+   {
+    "repo": "realisateur",
+    "log": "realisateur.20260925T065025Z.log",
+    "result": "success",
+    "turns": 78,
+    "cost_usd": 1.6696,
+    "rc": 0,
+    "report": "missing",
+    "pr": null,
+    "note": null,
+    "at": "2026-09-25T06:50:25Z"
+   }
+  ],
+  "max_age_h": 26
+ },
+ "verdict": "DEGRADED",
+ "findings": [
+  "realisateur: last pass wrote no REPORT.md -- the only real failure of a pass"
+ ]
+}
