@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-26T07:00:01Z",
+ "generated_at": "2026-09-26T07:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-26T08:00:01Z",
+ "valid_until": "2026-09-26T08:20:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -42,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "determined_cerf",
-   "image": "agent:local",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-09-26T06:56:46Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -76,6 +64,18 @@
    "started_at": "2026-09-25T04:27:55Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "stupefied_hodgkin",
+   "image": "agent:local",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-26T07:07:27Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "whisper",
@@ -185,7 +185,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "determined_cerf",
+  "stupefied_hodgkin",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -225,12 +225,17 @@
     "groc-mangr": {
      "queue": 25,
      "at": "2026-09-26T06:56:46Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 38,
+     "at": "2026-09-26T07:07:27Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.0
+   "age_h": 1.3
   },
   "passes": [
    {
@@ -272,6 +277,18 @@
    {
     "repo": "groc-mangr",
     "log": "groc-mangr.20260926T065646Z.log",
+    "result": "success",
+    "turns": 59,
+    "cost_usd": 1.3666,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/374",
+    "note": null,
+    "at": "2026-09-26T06:56:46Z"
+   },
+   {
+    "repo": "wtul",
+    "log": "wtul.20260926T070727Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -279,19 +296,7 @@
     "report": null,
     "pr": null,
     "note": null,
-    "at": "2026-09-26T06:56:46Z"
-   },
-   {
-    "repo": "wtul",
-    "log": "wtul.20260925T063408Z.log",
-    "result": "success",
-    "turns": 49,
-    "cost_usd": 1.1829,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/wtul/pull/357",
-    "note": null,
-    "at": "2026-09-25T06:34:08Z"
+    "at": "2026-09-26T07:07:27Z"
    },
    {
     "repo": "senechal",
