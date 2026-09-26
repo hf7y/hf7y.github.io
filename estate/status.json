@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-26T08:20:01Z",
+ "generated_at": "2026-09-26T08:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-26T09:20:01Z",
+ "valid_until": "2026-09-26T09:40:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -64,18 +64,6 @@
    "started_at": "2026-09-25T04:27:55Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "vibrant_easley",
-   "image": "agent:local",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-09-26T07:37:00Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "whisper",
@@ -185,7 +173,6 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "vibrant_easley",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -204,7 +191,7 @@
   "last_run": {
    "log": "nightly.20260926T060001Z.log",
    "started_at": "2026-09-26T06:00:01Z",
-   "finished_at": null,
+   "finished_at": "2026-09-26T08:39:59Z",
    "turns": 150,
    "dispatched": {
     "crt": {
@@ -240,12 +227,17 @@
     "etalon": {
      "queue": 38,
      "at": "2026-09-26T07:37:00Z",
-     "outcome": null
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 179,
+     "at": "2026-09-26T08:21:31Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.3
+   "age_h": 2.7
   },
   "passes": [
    {
@@ -323,34 +315,32 @@
    {
     "repo": "etalon",
     "log": "etalon.20260926T073700Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "result": "success",
+    "turns": 97,
+    "cost_usd": 2.3786,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/etalon/pull/71",
     "note": null,
     "at": "2026-09-26T07:37:00Z"
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20260925T065025Z.log",
+    "log": "realisateur.20260926T082131Z.log",
     "result": "success",
-    "turns": 78,
-    "cost_usd": 1.6696,
+    "turns": 83,
+    "cost_usd": 2.8275,
     "rc": 0,
-    "report": "missing",
-    "pr": null,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1330",
     "note": null,
-    "at": "2026-09-25T06:50:25Z"
+    "at": "2026-09-26T08:21:31Z"
    }
   ],
   "max_age_h": 26
  },
  "verdict": "DEGRADED",
  "findings": [
-  "the last nightly has no `done` line -- still running, or it died",
-  "crt: last pass wrote no REPORT.md -- the only real failure of a pass",
-  "realisateur: last pass wrote no REPORT.md -- the only real failure of a pass"
+  "crt: last pass wrote no REPORT.md -- the only real failure of a pass"
  ]
 }
