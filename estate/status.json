@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-26T23:20:01Z",
+ "generated_at": "2026-09-26T23:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-27T00:20:01Z",
+ "valid_until": "2026-09-27T00:40:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -225,7 +225,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 17.3
+   "age_h": 17.7
   },
   "passes": [
    {
@@ -336,6 +336,7 @@
   "dispatch_source": {
    "nightly.sh": "linked",
    "run-agent.sh": "linked",
+   "merge-carry.sh": "linked",
    "repos": "linked",
    "Dockerfile": "linked"
   },
