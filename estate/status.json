@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-26T18:20:02Z",
+ "generated_at": "2026-09-26T18:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-26T19:20:02Z",
+ "valid_until": "2026-09-26T19:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -237,7 +237,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 12.3
+   "age_h": 12.7
   },
   "passes": [
    {
@@ -346,8 +346,8 @@
    }
   ],
   "dispatch_source": {
-   "nightly.sh": "drifted",
-   "run-agent.sh": "drifted",
+   "nightly.sh": "behind",
+   "run-agent.sh": "behind",
    "repos": "copy",
    "Dockerfile": "copy"
   },
@@ -355,7 +355,7 @@
  },
  "verdict": "DEGRADED",
  "findings": [
-  "/srv/agent: nightly.sh run-agent.sh do NOT match the clone -- the nightly runs code that is not on `main`. `bin/wire-agent-dispatch.sh --check`",
+  "/srv/agent: the nightly is running an EARLIER nightly.sh run-agent.sh than `main` holds. `bin/wire-agent-dispatch.sh --apply`",
   "crt: last pass wrote no REPORT.md -- the only real failure of a pass"
  ]
 }
