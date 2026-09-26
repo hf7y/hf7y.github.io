@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-26T06:00:02Z",
+ "generated_at": "2026-09-26T06:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-26T07:00:02Z",
+ "valid_until": "2026-09-26T07:20:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -52,6 +52,18 @@
    "started_at": "2026-09-23T19:43:23Z",
    "finished_at": "2026-09-23T19:45:01Z",
    "ports_published": false
+  },
+  {
+   "name": "nifty_moser",
+   "image": "agent:local",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-26T06:10:06Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -173,6 +185,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
+  "nifty_moser",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -193,35 +206,46 @@
    "started_at": "2026-09-26T06:00:01Z",
    "finished_at": null,
    "turns": 150,
-   "dispatched": {},
+   "dispatched": {
+    "crt": {
+     "queue": 10,
+     "at": "2026-09-26T06:00:02Z",
+     "outcome": "finished"
+    },
+    "dog": {
+     "queue": 2,
+     "at": "2026-09-26T06:10:06Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20260925T055522Z.log",
+    "log": "crt.20260926T060002Z.log",
     "result": "success",
-    "turns": 62,
-    "cost_usd": 1.398,
+    "turns": 47,
+    "cost_usd": 1.0242,
     "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/crt/pull/403",
+    "report": "missing",
+    "pr": null,
     "note": null,
-    "at": "2026-09-25T05:55:22Z"
+    "at": "2026-09-26T06:00:02Z"
    },
    {
     "repo": "dog",
-    "log": "dog.20260925T061302Z.log",
-    "result": "success",
-    "turns": 94,
-    "cost_usd": 2.6359,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/dog/pull/10",
+    "log": "dog.20260926T061006Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "note": null,
-    "at": "2026-09-25T06:13:02Z"
+    "at": "2026-09-26T06:10:06Z"
    },
    {
     "repo": "musc-2300",
@@ -301,6 +325,7 @@
  "verdict": "DEGRADED",
  "findings": [
   "the last nightly has no `done` line -- still running, or it died",
+  "crt: last pass wrote no REPORT.md -- the only real failure of a pass",
   "realisateur: last pass wrote no REPORT.md -- the only real failure of a pass"
  ]
 }
