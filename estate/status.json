@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-26T05:40:01Z",
+ "generated_at": "2026-09-26T06:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-26T06:40:01Z",
+ "valid_until": "2026-09-26T07:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -189,55 +189,14 @@
    "realisateur"
   ],
   "last_run": {
-   "log": "nightly.20260925T055521Z.log",
-   "started_at": "2026-09-25T05:55:21Z",
-   "finished_at": "2026-09-25T07:00:12Z",
+   "log": "nightly.20260926T060001Z.log",
+   "started_at": "2026-09-26T06:00:01Z",
+   "finished_at": null,
    "turns": 150,
-   "dispatched": {
-    "crt": {
-     "queue": 9,
-     "at": "2026-09-25T05:55:22Z",
-     "outcome": "finished"
-    },
-    "dog": {
-     "queue": 2,
-     "at": "2026-09-25T06:13:02Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 68,
-     "at": "2026-09-25T06:24:22Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 25,
-     "at": "2026-09-25T06:32:21Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 29,
-     "at": "2026-09-25T06:34:08Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 32,
-     "at": "2026-09-25T06:39:04Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 38,
-     "at": "2026-09-25T06:48:30Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 178,
-     "at": "2026-09-25T06:50:25Z",
-     "outcome": "finished"
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 23.7
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -341,6 +300,7 @@
  },
  "verdict": "DEGRADED",
  "findings": [
+  "the last nightly has no `done` line -- still running, or it died",
   "realisateur: last pass wrote no REPORT.md -- the only real failure of a pass"
  ]
 }
