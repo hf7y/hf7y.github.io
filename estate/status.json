@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-26T19:20:02Z",
+ "generated_at": "2026-09-26T19:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-26T20:20:02Z",
+ "valid_until": "2026-09-26T20:40:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -76,18 +76,6 @@
    "started_at": "2026-09-23T04:33:37Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "wtul-dexter-promote",
-   "image": "ghcr.io/hf7y/wtul-dexter-promote:latest",
-   "project": "wtul-dexter-promote",
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-09-23T04:33:37Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "xenodochial_wilson",
@@ -237,7 +225,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 13.3
+   "age_h": 13.7
   },
   "passes": [
    {
@@ -351,10 +339,19 @@
    "repos": "copy",
    "Dockerfile": "copy"
   },
+  "dispatch_token": {
+   "kind": "classic",
+   "reachable": "yes",
+   "login": "hf7y",
+   "workflows": "no",
+   "why": "no workflow scope -- a pass editing .github/workflows/ cannot push it"
+  },
   "max_age_h": 26
  },
- "verdict": "DEGRADED",
+ "verdict": "DOWN",
  "findings": [
+  "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
+  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: the nightly is running an EARLIER nightly.sh run-agent.sh than `main` holds. `bin/wire-agent-dispatch.sh --apply`",
   "crt: last pass wrote no REPORT.md -- the only real failure of a pass"
  ]
