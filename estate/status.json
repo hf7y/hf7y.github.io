@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-26T17:40:02Z",
+ "generated_at": "2026-09-26T18:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-26T18:40:02Z",
+ "valid_until": "2026-09-26T19:00:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -237,7 +237,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 11.7
+   "age_h": 12.0
   },
   "passes": [
    {
@@ -249,6 +249,7 @@
     "rc": 0,
     "report": "missing",
     "pr": null,
+    "tree": null,
     "note": null,
     "at": "2026-09-26T06:00:02Z"
    },
@@ -261,6 +262,7 @@
     "rc": 0,
     "report": "present",
     "pr": "https://github.com/hf7y-estate/dog/pull/11",
+    "tree": null,
     "note": null,
     "at": "2026-09-26T06:10:06Z"
    },
@@ -273,6 +275,7 @@
     "rc": 0,
     "report": "present",
     "pr": "https://github.com/hf7y-estate/musc-2300/pull/151",
+    "tree": null,
     "note": null,
     "at": "2026-09-26T06:47:43Z"
    },
@@ -285,6 +288,7 @@
     "rc": 0,
     "report": "present",
     "pr": "https://github.com/hf7y-estate/groc-mangr/pull/374",
+    "tree": null,
     "note": null,
     "at": "2026-09-26T06:56:46Z"
    },
@@ -297,6 +301,7 @@
     "rc": 0,
     "report": "present",
     "pr": "https://github.com/hf7y-estate/wtul/pull/383",
+    "tree": null,
     "note": null,
     "at": "2026-09-26T07:07:27Z"
    },
@@ -309,6 +314,7 @@
     "rc": 0,
     "report": "present",
     "pr": "https://github.com/hf7y-estate/senechal/pull/1035",
+    "tree": null,
     "note": null,
     "at": "2026-09-26T07:30:15Z"
    },
@@ -321,6 +327,7 @@
     "rc": 0,
     "report": "present",
     "pr": "https://github.com/hf7y-estate/etalon/pull/71",
+    "tree": null,
     "note": null,
     "at": "2026-09-26T07:37:00Z"
    },
@@ -333,6 +340,7 @@
     "rc": 0,
     "report": "present",
     "pr": "https://github.com/hf7y-estate/realisateur/pull/1330",
+    "tree": null,
     "note": null,
     "at": "2026-09-26T08:21:31Z"
    }
