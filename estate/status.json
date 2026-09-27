@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-27T07:20:01Z",
+ "generated_at": "2026-09-27T07:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-27T08:20:01Z",
+ "valid_until": "2026-09-27T08:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -64,18 +64,6 @@
    "started_at": "2026-09-25T04:27:55Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "upbeat_nash",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-09-27T07:10:27Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "whisper",
@@ -178,7 +166,6 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "upbeat_nash",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -197,7 +184,7 @@
   "last_run": {
    "log": "nightly.20260927T060001Z.log",
    "started_at": "2026-09-27T06:00:01Z",
-   "finished_at": null,
+   "finished_at": "2026-09-27T07:38:40Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -230,12 +217,22 @@
     "senechal": {
      "queue": 44,
      "at": "2026-09-27T07:10:26Z",
-     "outcome": null
+     "outcome": "exited 1"
+    },
+    "etalon": {
+     "queue": 38,
+     "at": "2026-09-27T07:28:18Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 183,
+     "at": "2026-09-27T07:34:52Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.3
+   "age_h": 1.7
   },
   "passes": [
    {
@@ -306,10 +303,10 @@
    {
     "repo": "senechal",
     "log": "senechal.20260927T071026Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 22,
+    "cost_usd": 3.2213,
+    "rc": 0,
     "report": null,
     "pr": null,
     "tree": null,
@@ -318,29 +315,29 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20260926T073700Z.log",
+    "log": "etalon.20260927T072818Z.log",
     "result": "success",
-    "turns": 97,
-    "cost_usd": 2.3786,
+    "turns": 27,
+    "cost_usd": 0.3851,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/etalon/pull/71",
+    "pr": "https://github.com/hf7y-estate/etalon/pull/72",
     "tree": null,
     "note": null,
-    "at": "2026-09-26T07:37:00Z"
+    "at": "2026-09-27T07:28:18Z"
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20260926T082131Z.log",
+    "log": "realisateur.20260927T073452Z.log",
     "result": "success",
-    "turns": 83,
-    "cost_usd": 2.8275,
+    "turns": 29,
+    "cost_usd": 0.5726,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1330",
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1358",
     "tree": null,
     "note": null,
-    "at": "2026-09-26T08:21:31Z"
+    "at": "2026-09-27T07:34:52Z"
    }
   ],
   "dispatch_source": {
@@ -363,7 +360,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
+  "senechal: pass exited 1",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
