@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-28T04:00:01Z",
+ "generated_at": "2026-09-28T04:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-28T05:00:01Z",
+ "valid_until": "2026-09-28T05:20:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -64,6 +64,18 @@
    "started_at": "2026-09-25T04:27:55Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "serene_elgamal",
+   "image": "sha256:6e1a93ea163db68d7caf6fecb48e3fca66143fa333b54117f0480470406772e3",
+   "project": null,
+   "state": "exited",
+   "health": null,
+   "restarts": 0,
+   "exit_code": 1,
+   "started_at": "2026-09-28T04:13:52Z",
+   "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
   },
   {
    "name": "whisper",
@@ -166,6 +178,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
+  "serene_elgamal",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -232,7 +245,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 22.0
+   "age_h": 22.3
   },
   "passes": [
    {
