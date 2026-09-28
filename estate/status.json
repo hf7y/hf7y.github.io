@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-28T06:00:02Z",
+ "generated_at": "2026-09-28T06:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-28T07:00:02Z",
+ "valid_until": "2026-09-28T07:20:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -136,6 +136,18 @@
    "started_at": "2026-09-23T04:33:40Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zen_margulis",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-28T06:10:49Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -179,7 +191,8 @@
   "ci-sequestria",
   "condescending_joliot",
   "serene_elgamal",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "zen_margulis"
  ],
  "nightly": {
   "armed": true,
@@ -199,52 +212,68 @@
    "started_at": "2026-09-28T06:00:01Z",
    "finished_at": null,
    "turns": 150,
-   "image": null,
+   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "crt": {
+     "queue": 10,
+     "at": "2026-09-28T06:00:09Z",
+     "outcome": "finished"
+    },
+    "dog": {
+     "queue": 1,
+     "at": "2026-09-28T06:07:28Z",
+     "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 68,
+     "at": "2026-09-28T06:10:49Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20260927T060011Z.log",
+    "log": "crt.20260928T060009Z.log",
     "result": "success",
-    "turns": 62,
-    "cost_usd": 1.535,
+    "turns": 56,
+    "cost_usd": 0.9857,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/crt/pull/405",
+    "pr": "https://github.com/hf7y-estate/crt/pull/406",
     "tree": null,
     "note": null,
-    "at": "2026-09-27T06:00:11Z"
+    "at": "2026-09-28T06:00:09Z"
    },
    {
     "repo": "dog",
-    "log": "dog.20260927T061037Z.log",
+    "log": "dog.20260928T060728Z.log",
     "result": "success",
-    "turns": 21,
-    "cost_usd": 0.4317,
+    "turns": 26,
+    "cost_usd": 0.5057,
     "rc": 0,
     "report": "present",
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-09-27T06:10:37Z"
+    "at": "2026-09-28T06:07:28Z"
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20260927T061513Z.log",
-    "result": "success",
-    "turns": 51,
-    "cost_usd": 0.9575,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/152",
+    "log": "musc-2300.20260928T061049Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-09-27T06:15:13Z"
+    "at": "2026-09-28T06:10:49Z"
    },
    {
     "repo": "groc-mangr",
