@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-28T10:40:01Z",
+ "generated_at": "2026-09-28T11:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-28T11:40:01Z",
+ "valid_until": "2026-09-28T12:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -245,7 +245,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 4.7
+   "age_h": 5.0
   },
   "passes": [
    {
