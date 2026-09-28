@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-28T06:20:02Z",
+ "generated_at": "2026-09-28T06:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-28T07:20:02Z",
+ "valid_until": "2026-09-28T07:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -52,6 +52,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "interesting_satoshi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-28T06:38:48Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -136,18 +148,6 @@
    "started_at": "2026-09-23T04:33:40Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zen_margulis",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-09-28T06:10:49Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -190,9 +190,9 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
+  "interesting_satoshi",
   "serene_elgamal",
-  "xenodochial_wilson",
-  "zen_margulis"
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -228,12 +228,27 @@
     "musc-2300": {
      "queue": 68,
      "at": "2026-09-28T06:10:49Z",
+     "outcome": "finished"
+    },
+    "groc-mangr": {
+     "queue": 25,
+     "at": "2026-09-28T06:22:04Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 32,
+     "at": "2026-09-28T06:31:46Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 46,
+     "at": "2026-09-28T06:38:48Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
@@ -265,6 +280,45 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20260928T061049Z.log",
+    "result": "success",
+    "turns": 61,
+    "cost_usd": 1.7888,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/153",
+    "tree": null,
+    "note": null,
+    "at": "2026-09-28T06:10:49Z"
+   },
+   {
+    "repo": "groc-mangr",
+    "log": "groc-mangr.20260928T062204Z.log",
+    "result": "success",
+    "turns": 63,
+    "cost_usd": 1.7237,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/376",
+    "tree": null,
+    "note": null,
+    "at": "2026-09-28T06:22:04Z"
+   },
+   {
+    "repo": "wtul",
+    "log": "wtul.20260928T063146Z.log",
+    "result": "success",
+    "turns": 65,
+    "cost_usd": 1.8141,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/wtul/pull/409",
+    "tree": null,
+    "note": null,
+    "at": "2026-09-28T06:31:46Z"
+   },
+   {
+    "repo": "senechal",
+    "log": "senechal.20260928T063848Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -273,46 +327,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-09-28T06:10:49Z"
-   },
-   {
-    "repo": "groc-mangr",
-    "log": "groc-mangr.20260927T062400Z.log",
-    "result": "success",
-    "turns": 54,
-    "cost_usd": 1.3765,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/375",
-    "tree": null,
-    "note": null,
-    "at": "2026-09-27T06:24:00Z"
-   },
-   {
-    "repo": "wtul",
-    "log": "wtul.20260927T063812Z.log",
-    "result": "success",
-    "turns": 111,
-    "cost_usd": 3.8406,
-    "rc": 0,
-    "report": "present",
-    "pr": null,
-    "tree": null,
-    "note": null,
-    "at": "2026-09-27T06:38:12Z"
-   },
-   {
-    "repo": "senechal",
-    "log": "senechal.20260927T071026Z.log",
-    "result": "success",
-    "turns": 22,
-    "cost_usd": 3.2213,
-    "rc": 0,
-    "report": null,
-    "pr": null,
-    "tree": null,
-    "note": null,
-    "at": "2026-09-27T07:10:26Z"
+    "at": "2026-09-28T06:38:48Z"
    },
    {
     "repo": "etalon",
