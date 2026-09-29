@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-29T05:40:01Z",
+ "generated_at": "2026-09-29T06:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-29T06:40:01Z",
+ "valid_until": "2026-09-29T07:00:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -195,57 +195,16 @@
    "realisateur"
   ],
   "last_run": {
-   "log": "nightly.20260928T060001Z.log",
-   "started_at": "2026-09-28T06:00:01Z",
-   "finished_at": "2026-09-28T07:07:38Z",
+   "log": "nightly.20260929T060001Z.log",
+   "started_at": "2026-09-29T06:00:01Z",
+   "finished_at": null,
    "turns": 150,
-   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
+   "image": null,
    "pull_failed": null,
-   "dispatched": {
-    "crt": {
-     "queue": 10,
-     "at": "2026-09-28T06:00:09Z",
-     "outcome": "finished"
-    },
-    "dog": {
-     "queue": 1,
-     "at": "2026-09-28T06:07:28Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 68,
-     "at": "2026-09-28T06:10:49Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 25,
-     "at": "2026-09-28T06:22:04Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 32,
-     "at": "2026-09-28T06:31:46Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 46,
-     "at": "2026-09-28T06:38:48Z",
-     "outcome": "exited 1"
-    },
-    "etalon": {
-     "queue": 38,
-     "at": "2026-09-28T06:53:50Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 181,
-     "at": "2026-09-28T06:57:46Z",
-     "outcome": "finished"
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 23.7
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -373,7 +332,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "senechal: pass exited 1",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
