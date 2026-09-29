@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-29T06:00:01Z",
+ "generated_at": "2026-09-29T06:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-29T07:00:01Z",
+ "valid_until": "2026-09-29T07:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -136,6 +136,18 @@
    "started_at": "2026-09-23T04:33:40Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zealous_knuth",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-29T06:11:08Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -179,7 +191,8 @@
   "ci-sequestria",
   "condescending_joliot",
   "serene_elgamal",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "zealous_knuth"
  ],
  "nightly": {
   "armed": true,
@@ -199,39 +212,50 @@
    "started_at": "2026-09-29T06:00:01Z",
    "finished_at": null,
    "turns": 150,
-   "image": null,
+   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "crt": {
+     "queue": 10,
+     "at": "2026-09-29T06:00:08Z",
+     "outcome": "finished"
+    },
+    "dog": {
+     "queue": 1,
+     "at": "2026-09-29T06:11:08Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20260928T060009Z.log",
+    "log": "crt.20260929T060008Z.log",
     "result": "success",
-    "turns": 56,
-    "cost_usd": 0.9857,
+    "turns": 36,
+    "cost_usd": 2.1906,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/crt/pull/406",
+    "pr": "https://github.com/hf7y-estate/crt/pull/407",
     "tree": null,
     "note": null,
-    "at": "2026-09-28T06:00:09Z"
+    "at": "2026-09-29T06:00:08Z"
    },
    {
     "repo": "dog",
-    "log": "dog.20260928T060728Z.log",
-    "result": "success",
-    "turns": 26,
-    "cost_usd": 0.5057,
-    "rc": 0,
-    "report": "present",
+    "log": "dog.20260929T061108Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-09-28T06:07:28Z"
+    "at": "2026-09-29T06:11:08Z"
    },
    {
     "repo": "musc-2300",
