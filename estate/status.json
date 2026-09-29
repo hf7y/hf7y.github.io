@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-29T06:20:01Z",
+ "generated_at": "2026-09-29T06:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-29T07:20:01Z",
+ "valid_until": "2026-09-29T07:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -78,6 +78,18 @@
    "ports_published": null
   },
   {
+   "name": "tender_booth",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-29T06:37:56Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -136,18 +148,6 @@
    "started_at": "2026-09-23T04:33:40Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zealous_knuth",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-09-29T06:11:08Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -191,8 +191,8 @@
   "ci-sequestria",
   "condescending_joliot",
   "serene_elgamal",
-  "xenodochial_wilson",
-  "zealous_knuth"
+  "tender_booth",
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -223,12 +223,27 @@
     "dog": {
      "queue": 1,
      "at": "2026-09-29T06:11:08Z",
+     "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 67,
+     "at": "2026-09-29T06:21:45Z",
+     "outcome": "finished"
+    },
+    "groc-mangr": {
+     "queue": 24,
+     "at": "2026-09-29T06:33:34Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 33,
+     "at": "2026-09-29T06:37:56Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
@@ -247,6 +262,45 @@
    {
     "repo": "dog",
     "log": "dog.20260929T061108Z.log",
+    "result": "success",
+    "turns": 26,
+    "cost_usd": 0.5404,
+    "rc": 0,
+    "report": "present",
+    "pr": null,
+    "tree": null,
+    "note": null,
+    "at": "2026-09-29T06:11:08Z"
+   },
+   {
+    "repo": "musc-2300",
+    "log": "musc-2300.20260929T062145Z.log",
+    "result": "success",
+    "turns": 69,
+    "cost_usd": 1.593,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/154",
+    "tree": null,
+    "note": null,
+    "at": "2026-09-29T06:21:45Z"
+   },
+   {
+    "repo": "groc-mangr",
+    "log": "groc-mangr.20260929T063334Z.log",
+    "result": "success",
+    "turns": 29,
+    "cost_usd": 0.5491,
+    "rc": 0,
+    "report": "present",
+    "pr": null,
+    "tree": null,
+    "note": null,
+    "at": "2026-09-29T06:33:34Z"
+   },
+   {
+    "repo": "wtul",
+    "log": "wtul.20260929T063756Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -255,46 +309,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-09-29T06:11:08Z"
-   },
-   {
-    "repo": "musc-2300",
-    "log": "musc-2300.20260928T061049Z.log",
-    "result": "success",
-    "turns": 61,
-    "cost_usd": 1.7888,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/153",
-    "tree": null,
-    "note": null,
-    "at": "2026-09-28T06:10:49Z"
-   },
-   {
-    "repo": "groc-mangr",
-    "log": "groc-mangr.20260928T062204Z.log",
-    "result": "success",
-    "turns": 63,
-    "cost_usd": 1.7237,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/376",
-    "tree": null,
-    "note": null,
-    "at": "2026-09-28T06:22:04Z"
-   },
-   {
-    "repo": "wtul",
-    "log": "wtul.20260928T063146Z.log",
-    "result": "success",
-    "turns": 65,
-    "cost_usd": 1.8141,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/wtul/pull/409",
-    "tree": null,
-    "note": null,
-    "at": "2026-09-28T06:31:46Z"
+    "at": "2026-09-29T06:37:56Z"
    },
    {
     "repo": "senechal",
