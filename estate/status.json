@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-29T06:40:02Z",
+ "generated_at": "2026-09-29T07:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-29T07:40:02Z",
+ "valid_until": "2026-09-29T08:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -243,7 +243,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 1.0
   },
   "passes": [
    {
@@ -306,7 +306,7 @@
     "cost_usd": null,
     "rc": null,
     "report": null,
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/wtul/pull/417",
     "tree": null,
     "note": null,
     "at": "2026-09-29T06:37:56Z"
