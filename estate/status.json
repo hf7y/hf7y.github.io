@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-30T07:40:02Z",
+ "generated_at": "2026-09-30T08:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-30T08:40:02Z",
+ "valid_until": "2026-09-30T09:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -64,18 +64,6 @@
    "started_at": "2026-09-25T04:27:55Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "sad_golick",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-09-30T07:34:01Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "serene_elgamal",
@@ -190,7 +178,6 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "sad_golick",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -210,7 +197,7 @@
   "last_run": {
    "log": "nightly.20260930T060001Z.log",
    "started_at": "2026-09-30T06:00:01Z",
-   "finished_at": null,
+   "finished_at": "2026-09-30T07:44:52Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -248,14 +235,14 @@
     "realisateur": {
      "queue": 173,
      "at": "2026-09-30T07:34:01Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.7
+   "age_h": 2.0
   },
   "passes": [
    {
@@ -352,12 +339,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20260930T073401Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "result": "success",
+    "turns": 63,
+    "cost_usd": 1.4374,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1368",
     "tree": null,
     "note": null,
     "at": "2026-09-30T07:34:01Z"
@@ -383,7 +370,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "crt: pass exited 1",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
