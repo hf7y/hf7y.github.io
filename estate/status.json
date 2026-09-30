@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-30T06:20:02Z",
+ "generated_at": "2026-09-30T06:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-30T07:20:02Z",
+ "valid_until": "2026-09-30T07:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -54,6 +54,18 @@
    "ports_published": false
   },
   {
+   "name": "optimistic_almeida",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-30T06:35:16Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -75,18 +87,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "serene_zhukovsky",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-09-30T06:09:29Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -190,8 +190,8 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
+  "optimistic_almeida",
   "serene_elgamal",
-  "serene_zhukovsky",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -223,6 +223,16 @@
     "musc-2300": {
      "queue": 67,
      "at": "2026-09-30T06:09:29Z",
+     "outcome": "finished"
+    },
+    "groc-mangr": {
+     "queue": 22,
+     "at": "2026-09-30T06:32:34Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 37,
+     "at": "2026-09-30T06:35:16Z",
      "outcome": null
     }
    },
@@ -230,7 +240,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
@@ -262,6 +272,32 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20260930T060929Z.log",
+    "result": "success",
+    "turns": 68,
+    "cost_usd": 1.4257,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/169",
+    "tree": null,
+    "note": null,
+    "at": "2026-09-30T06:09:29Z"
+   },
+   {
+    "repo": "groc-mangr",
+    "log": "groc-mangr.20260930T063234Z.log",
+    "result": "success",
+    "turns": 30,
+    "cost_usd": 0.4986,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/377",
+    "tree": null,
+    "note": null,
+    "at": "2026-09-30T06:32:34Z"
+   },
+   {
+    "repo": "wtul",
+    "log": "wtul.20260930T063516Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -270,33 +306,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-09-30T06:09:29Z"
-   },
-   {
-    "repo": "groc-mangr",
-    "log": "groc-mangr.20260929T063334Z.log",
-    "result": "success",
-    "turns": 29,
-    "cost_usd": 0.5491,
-    "rc": 0,
-    "report": "present",
-    "pr": null,
-    "tree": null,
-    "note": null,
-    "at": "2026-09-29T06:33:34Z"
-   },
-   {
-    "repo": "wtul",
-    "log": "wtul.20260929T063756Z.log",
-    "result": "success",
-    "turns": 59,
-    "cost_usd": 1.2476,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/wtul/pull/417",
-    "tree": null,
-    "note": null,
-    "at": "2026-09-29T06:37:56Z"
+    "at": "2026-09-30T06:35:16Z"
    },
    {
     "repo": "senechal",
