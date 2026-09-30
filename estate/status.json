@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-30T05:40:02Z",
+ "generated_at": "2026-09-30T06:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-30T06:40:02Z",
+ "valid_until": "2026-09-30T07:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -195,57 +195,16 @@
    "realisateur"
   ],
   "last_run": {
-   "log": "nightly.20260929T060001Z.log",
-   "started_at": "2026-09-29T06:00:01Z",
-   "finished_at": "2026-09-29T07:30:40Z",
+   "log": "nightly.20260930T060001Z.log",
+   "started_at": "2026-09-30T06:00:01Z",
+   "finished_at": null,
    "turns": 150,
-   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
+   "image": null,
    "pull_failed": null,
-   "dispatched": {
-    "crt": {
-     "queue": 10,
-     "at": "2026-09-29T06:00:08Z",
-     "outcome": "finished"
-    },
-    "dog": {
-     "queue": 1,
-     "at": "2026-09-29T06:11:08Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 67,
-     "at": "2026-09-29T06:21:45Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 24,
-     "at": "2026-09-29T06:33:34Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 33,
-     "at": "2026-09-29T06:37:56Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 49,
-     "at": "2026-09-29T07:00:44Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 37,
-     "at": "2026-09-29T07:12:54Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 182,
-     "at": "2026-09-29T07:16:13Z",
-     "outcome": "finished"
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 23.7
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -373,6 +332,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
