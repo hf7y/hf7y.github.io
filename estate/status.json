@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-30T07:20:02Z",
+ "generated_at": "2026-09-30T07:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-30T08:20:02Z",
+ "valid_until": "2026-09-30T08:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -54,18 +54,6 @@
    "ports_published": false
   },
   {
-   "name": "loving_visvesvaraya",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-09-30T06:52:32Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -76,6 +64,18 @@
    "started_at": "2026-09-25T04:27:55Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "sad_golick",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-09-30T07:34:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "serene_elgamal",
@@ -190,7 +190,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "loving_visvesvaraya",
+  "sad_golick",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -238,6 +238,16 @@
     "senechal": {
      "queue": 51,
      "at": "2026-09-30T06:52:31Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 35,
+     "at": "2026-09-30T07:27:39Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 173,
+     "at": "2026-09-30T07:34:01Z",
      "outcome": null
     }
    },
@@ -245,7 +255,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.3
+   "age_h": 1.7
   },
   "passes": [
    {
@@ -316,6 +326,32 @@
    {
     "repo": "senechal",
     "log": "senechal.20260930T065231Z.log",
+    "result": "success",
+    "turns": 88,
+    "cost_usd": 3.1818,
+    "rc": 0,
+    "report": "present",
+    "pr": null,
+    "tree": null,
+    "note": null,
+    "at": "2026-09-30T06:52:31Z"
+   },
+   {
+    "repo": "etalon",
+    "log": "etalon.20260930T072739Z.log",
+    "result": "success",
+    "turns": 36,
+    "cost_usd": 0.6982,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/etalon/pull/75",
+    "tree": null,
+    "note": null,
+    "at": "2026-09-30T07:27:39Z"
+   },
+   {
+    "repo": "realisateur",
+    "log": "realisateur.20260930T073401Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -324,33 +360,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-09-30T06:52:31Z"
-   },
-   {
-    "repo": "etalon",
-    "log": "etalon.20260929T071254Z.log",
-    "result": "success",
-    "turns": 48,
-    "cost_usd": 0.7841,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/etalon/pull/74",
-    "tree": null,
-    "note": null,
-    "at": "2026-09-29T07:12:54Z"
-   },
-   {
-    "repo": "realisateur",
-    "log": "realisateur.20260929T071613Z.log",
-    "result": "success",
-    "turns": 42,
-    "cost_usd": 0.9681,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1363",
-    "tree": null,
-    "note": null,
-    "at": "2026-09-29T07:16:13Z"
+    "at": "2026-09-30T07:34:01Z"
    }
   ],
   "dispatch_source": {
