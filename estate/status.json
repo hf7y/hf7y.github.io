@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-30T06:40:02Z",
+ "generated_at": "2026-09-30T07:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-09-30T07:40:02Z",
+ "valid_until": "2026-09-30T08:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -54,14 +54,14 @@
    "ports_published": false
   },
   {
-   "name": "optimistic_almeida",
+   "name": "loving_visvesvaraya",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-09-30T06:35:16Z",
+   "started_at": "2026-09-30T06:52:32Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -190,7 +190,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "optimistic_almeida",
+  "loving_visvesvaraya",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -233,6 +233,11 @@
     "wtul": {
      "queue": 37,
      "at": "2026-09-30T06:35:16Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 51,
+     "at": "2026-09-30T06:52:31Z",
      "outcome": null
     }
    },
@@ -240,7 +245,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 1.0
   },
   "passes": [
    {
@@ -298,6 +303,19 @@
    {
     "repo": "wtul",
     "log": "wtul.20260930T063516Z.log",
+    "result": "success",
+    "turns": 95,
+    "cost_usd": 3.4944,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/wtul/pull/418",
+    "tree": null,
+    "note": null,
+    "at": "2026-09-30T06:35:16Z"
+   },
+   {
+    "repo": "senechal",
+    "log": "senechal.20260930T065231Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -306,20 +324,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-09-30T06:35:16Z"
-   },
-   {
-    "repo": "senechal",
-    "log": "senechal.20260929T070044Z.log",
-    "result": "success",
-    "turns": 76,
-    "cost_usd": 2.4556,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1052",
-    "tree": null,
-    "note": null,
-    "at": "2026-09-29T07:00:44Z"
+    "at": "2026-09-30T06:52:31Z"
    },
    {
     "repo": "etalon",
