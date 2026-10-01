@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-01T06:40:01Z",
+ "generated_at": "2026-10-01T07:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-01T07:40:01Z",
+ "valid_until": "2026-10-01T08:00:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -54,14 +54,14 @@
    "ports_published": false
   },
   {
-   "name": "pensive_swirles",
+   "name": "lucid_goldwasser",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-01T06:39:12Z",
+   "started_at": "2026-10-01T06:49:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -190,7 +190,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "pensive_swirles",
+  "lucid_goldwasser",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -235,6 +235,11 @@
     "wtul": {
      "queue": 37,
      "at": "2026-10-01T06:39:12Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 51,
+     "at": "2026-10-01T06:49:01Z",
      "outcome": null
     }
    },
@@ -242,7 +247,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 1.0
   },
   "passes": [
    {
@@ -300,6 +305,19 @@
    {
     "repo": "wtul",
     "log": "wtul.20261001T063912Z.log",
+    "result": "success",
+    "turns": 71,
+    "cost_usd": 2.2826,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/wtul/pull/420",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-01T06:39:12Z"
+   },
+   {
+    "repo": "senechal",
+    "log": "senechal.20261001T064901Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -308,20 +326,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-01T06:39:12Z"
-   },
-   {
-    "repo": "senechal",
-    "log": "senechal.20260930T065231Z.log",
-    "result": "success",
-    "turns": 88,
-    "cost_usd": 3.1818,
-    "rc": 0,
-    "report": "present",
-    "pr": null,
-    "tree": null,
-    "note": null,
-    "at": "2026-09-30T06:52:31Z"
+    "at": "2026-10-01T06:49:01Z"
    },
    {
     "repo": "etalon",
