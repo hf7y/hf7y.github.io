@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-01T21:00:02Z",
+ "generated_at": "2026-10-01T21:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-01T22:00:02Z",
+ "valid_until": "2026-10-01T22:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -27,18 +27,6 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
-   "ports_published": null
-  },
-  {
-   "name": "condescending_kowalevski",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-01T20:35:23Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -190,7 +178,6 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "condescending_kowalevski",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -269,7 +256,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 15.0
+   "age_h": 15.3
   },
   "passes": [
    {
@@ -366,12 +353,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261001T203522Z.sent-1383.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "result": "success",
+    "turns": 73,
+    "cost_usd": 2.5226,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1397",
     "tree": null,
     "note": null,
     "at": "sent--1-383::"
@@ -417,16 +404,16 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261001T185329Z.log",
-    "result": "success",
-    "turns": 66,
-    "cost_usd": 2.1259,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/chezz/pull/153",
+    "log": "chezz.20261001T210506Z.log",
+    "result": "error_max_turns",
+    "turns": 2,
+    "cost_usd": 0.0543,
+    "rc": 1,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-01T18:53:29Z"
+    "at": "2026-10-01T21:05:06Z"
    }
   ],
   "dispatch_source": {
@@ -450,6 +437,7 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "space-canon: on the repo list and never dispatched"
+  "space-canon: on the repo list and never dispatched",
+  "chezz: last pass ended `error_max_turns`"
  ]
 }
