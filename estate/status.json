@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-01T19:20:01Z",
+ "generated_at": "2026-10-01T19:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-01T20:20:01Z",
+ "valid_until": "2026-10-01T20:40:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -27,18 +27,6 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
-   "ports_published": null
-  },
-  {
-   "name": "cranky_zhukovsky",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-01T18:53:29Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -190,7 +178,6 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "cranky_zhukovsky",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -267,7 +254,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 13.3
+   "age_h": 13.7
   },
   "passes": [
    {
