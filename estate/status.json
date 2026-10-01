@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-01T19:40:01Z",
+ "generated_at": "2026-10-01T20:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-01T20:40:01Z",
+ "valid_until": "2026-10-01T21:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -194,7 +194,8 @@
    "etalon",
    "realisateur",
    "bibliothecaire",
-   "secretaire"
+   "secretaire",
+   "space-canon"
   ],
   "last_run": {
    "log": "nightly.20261001T060001Z.log",
@@ -254,7 +255,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 13.7
+   "age_h": 14.0
   },
   "passes": [
    {
@@ -386,6 +387,19 @@
     "tree": null,
     "note": null,
     "at": "2026-10-01T07:28:42Z"
+   },
+   {
+    "repo": "space-canon",
+    "log": null,
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
+    "tree": null,
+    "at": null,
+    "note": "never dispatched: no log under the agent dir"
    }
   ],
   "dispatch_source": {
@@ -408,6 +422,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
+  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "space-canon: on the repo list and never dispatched"
  ]
 }
