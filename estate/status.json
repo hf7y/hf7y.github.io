@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-01T18:20:02Z",
+ "generated_at": "2026-10-01T18:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-01T19:20:02Z",
+ "valid_until": "2026-10-01T19:40:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -38,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-09-23T04:33:37Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "festive_tesla",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-01T18:20:32Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -178,6 +190,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
+  "festive_tesla",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -254,7 +267,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 12.3
+   "age_h": 12.7
   },
   "passes": [
    {
