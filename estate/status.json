@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-01T07:20:02Z",
+ "generated_at": "2026-10-01T07:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-01T08:20:02Z",
+ "valid_until": "2026-10-01T08:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -75,18 +75,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "sharp_moser",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-01T07:13:49Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -191,7 +179,6 @@
   "ci-sequestria",
   "condescending_joliot",
   "serene_elgamal",
-  "sharp_moser",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -212,7 +199,7 @@
   "last_run": {
    "log": "nightly.20261001T060001Z.log",
    "started_at": "2026-10-01T06:00:01Z",
-   "finished_at": null,
+   "finished_at": "2026-10-01T07:34:48Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -250,14 +237,24 @@
     "realisateur": {
      "queue": 173,
      "at": "2026-10-01T07:13:49Z",
-     "outcome": null
+     "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 13,
+     "at": "2026-10-01T07:20:58Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 5,
+     "at": "2026-10-01T07:28:42Z",
+     "outcome": "finished"
     }
    },
    "skipped": [
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.3
+   "age_h": 1.7
   },
   "passes": [
    {
@@ -354,41 +351,41 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261001T071349Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "result": "success",
+    "turns": 48,
+    "cost_usd": 1.0463,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1371",
     "tree": null,
     "note": null,
     "at": "2026-10-01T07:13:49Z"
    },
    {
     "repo": "bibliothecaire",
-    "log": null,
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "log": "bibliothecaire.20261001T072058Z.log",
+    "result": "success",
+    "turns": 40,
+    "cost_usd": 0.9289,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/114",
     "tree": null,
-    "at": null,
-    "note": "never dispatched: no log under the agent dir"
+    "note": null,
+    "at": "2026-10-01T07:20:58Z"
    },
    {
     "repo": "secretaire",
-    "log": null,
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "log": "secretaire.20261001T072842Z.log",
+    "result": "success",
+    "turns": 49,
+    "cost_usd": 1.3046,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/62",
     "tree": null,
-    "at": null,
-    "note": "never dispatched: no log under the agent dir"
+    "note": null,
+    "at": "2026-10-01T07:28:42Z"
    }
   ],
   "dispatch_source": {
@@ -411,9 +408,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
-  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "bibliothecaire: on the repo list and never dispatched",
-  "secretaire: on the repo list and never dispatched"
+  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
