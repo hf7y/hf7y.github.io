@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-01T01:00:01Z",
+ "generated_at": "2026-10-01T01:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-01T02:00:01Z",
+ "valid_until": "2026-10-01T02:20:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -192,7 +192,9 @@
    "wtul",
    "senechal",
    "etalon",
-   "realisateur"
+   "realisateur",
+   "bibliothecaire",
+   "secretaire"
   ],
   "last_run": {
    "log": "nightly.20260930T060001Z.log",
@@ -242,7 +244,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 19.0
+   "age_h": 19.3
   },
   "passes": [
    {
@@ -348,6 +350,32 @@
     "tree": null,
     "note": null,
     "at": "2026-09-30T07:34:01Z"
+   },
+   {
+    "repo": "bibliothecaire",
+    "log": null,
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
+    "tree": null,
+    "at": null,
+    "note": "never dispatched: no log under the agent dir"
+   },
+   {
+    "repo": "secretaire",
+    "log": null,
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
+    "tree": null,
+    "at": null,
+    "note": "never dispatched: no log under the agent dir"
    }
   ],
   "dispatch_source": {
@@ -371,6 +399,8 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "crt: pass exited 1",
-  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
+  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "bibliothecaire: on the repo list and never dispatched",
+  "secretaire: on the repo list and never dispatched"
  ]
 }
