@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T09:00:02Z",
+ "generated_at": "2026-10-02T09:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-02T10:00:02Z",
+ "valid_until": "2026-10-02T10:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -54,14 +54,14 @@
    "ports_published": false
   },
   {
-   "name": "romantic_villani",
+   "name": "romantic_lehmann",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-02T08:55:31Z",
+   "started_at": "2026-10-02T09:18:09Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -190,7 +190,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "romantic_villani",
+  "romantic_lehmann",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -307,6 +307,21 @@
     "dcp-gate-site": {
      "queue": 4,
      "at": "2026-10-02T08:55:31Z",
+     "outcome": "finished"
+    },
+    "ecosim": {
+     "queue": 3,
+     "at": "2026-10-02T09:07:16Z",
+     "outcome": "finished"
+    },
+    "front-door": {
+     "queue": 6,
+     "at": "2026-10-02T09:14:29Z",
+     "outcome": "finished"
+    },
+    "gardien": {
+     "queue": 12,
+     "at": "2026-10-02T09:18:08Z",
      "outcome": null
     }
    },
@@ -314,7 +329,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 3.0
+   "age_h": 3.3
   },
   "passes": [
    {
