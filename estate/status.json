@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T06:00:02Z",
+ "generated_at": "2026-10-02T06:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-02T07:00:02Z",
+ "valid_until": "2026-10-02T07:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -75,6 +75,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "vigorous_brown",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-02T06:18:47Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -179,6 +191,7 @@
   "ci-sequestria",
   "condescending_joliot",
   "serene_elgamal",
+  "vigorous_brown",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -203,26 +216,39 @@
    "started_at": "2026-10-02T06:00:01Z",
    "finished_at": null,
    "turns": 150,
-   "image": null,
+   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
-   "skipped": [],
+   "dispatched": {
+    "crt": {
+     "queue": 8,
+     "at": "2026-10-02T06:00:12Z",
+     "outcome": "exited 1"
+    },
+    "musc-2300": {
+     "queue": 50,
+     "at": "2026-10-02T06:18:42Z",
+     "outcome": null
+    }
+   },
+   "skipped": [
+    "dog"
+   ],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261001T060005Z.log",
+    "log": "crt.20261002T060012Z.log",
     "result": "success",
-    "turns": 36,
-    "cost_usd": 1.1448,
+    "turns": 2,
+    "cost_usd": 1.6997,
     "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/crt/pull/408",
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-01T06:00:05Z"
+    "at": "2026-10-02T06:00:12Z"
    },
    {
     "repo": "dog",
@@ -239,16 +265,16 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261001T061559Z.log",
-    "result": "success",
-    "turns": 79,
-    "cost_usd": 1.7597,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/172",
+    "log": "musc-2300.20261002T061842Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-01T06:15:59Z"
+    "at": "2026-10-02T06:18:42Z"
    },
    {
     "repo": "groc-mangr",
@@ -389,6 +415,7 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
+  "crt: pass exited 1",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "space-canon: on the repo list and never dispatched",
   "chezz: last pass ended `error_max_turns`"
