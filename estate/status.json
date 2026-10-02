@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T05:40:01Z",
+ "generated_at": "2026-10-02T06:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-02T06:40:01Z",
+ "valid_until": "2026-10-02T07:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -199,64 +199,16 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261001T060001Z.log",
-   "started_at": "2026-10-01T06:00:01Z",
-   "finished_at": "2026-10-01T07:34:48Z",
+   "log": "nightly.20261002T060001Z.log",
+   "started_at": "2026-10-02T06:00:01Z",
+   "finished_at": null,
    "turns": 150,
-   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
+   "image": null,
    "pull_failed": null,
-   "dispatched": {
-    "crt": {
-     "queue": 10,
-     "at": "2026-10-01T06:00:05Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 53,
-     "at": "2026-10-01T06:15:59Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 22,
-     "at": "2026-10-01T06:32:59Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 37,
-     "at": "2026-10-01T06:39:12Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 51,
-     "at": "2026-10-01T06:49:01Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 34,
-     "at": "2026-10-01T07:07:38Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 173,
-     "at": "2026-10-01T07:13:49Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 13,
-     "at": "2026-10-01T07:20:58Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 5,
-     "at": "2026-10-01T07:28:42Z",
-     "outcome": "finished"
-    }
-   },
-   "skipped": [
-    "dog"
-   ],
+   "dispatched": {},
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 23.7
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -436,6 +388,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "space-canon: on the repo list and never dispatched",
   "chezz: last pass ended `error_max_turns`"
