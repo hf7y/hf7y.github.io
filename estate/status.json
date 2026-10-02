@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T07:20:02Z",
+ "generated_at": "2026-10-02T07:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-02T08:20:02Z",
+ "valid_until": "2026-10-02T08:40:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "dazzling_chaplygin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-02T07:37:35Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -52,18 +64,6 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
-  },
-  {
-   "name": "jolly_meninsky",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-02T07:10:46Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -190,7 +190,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "jolly_meninsky",
+  "dazzling_chaplygin",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -252,6 +252,21 @@
     "realisateur": {
      "queue": 136,
      "at": "2026-10-02T07:10:46Z",
+     "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 13,
+     "at": "2026-10-02T07:24:35Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 5,
+     "at": "2026-10-02T07:27:40Z",
+     "outcome": "finished"
+    },
+    "space-canon": {
+     "queue": 2,
+     "at": "2026-10-02T07:37:35Z",
      "outcome": null
     }
    },
@@ -259,7 +274,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.3
+   "age_h": 1.7
   },
   "passes": [
    {
@@ -356,11 +371,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261002T071046Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
+    "result": "success",
+    "turns": 65,
+    "cost_usd": 2.0571,
+    "rc": 0,
+    "report": "present",
     "pr": null,
     "tree": null,
     "note": null,
@@ -368,33 +383,33 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261001T072058Z.log",
+    "log": "bibliothecaire.20261002T072435Z.log",
     "result": "success",
-    "turns": 40,
-    "cost_usd": 0.9289,
+    "turns": 16,
+    "cost_usd": 0.4211,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/114",
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-01T07:20:58Z"
+    "at": "2026-10-02T07:24:35Z"
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261001T072842Z.log",
+    "log": "secretaire.20261002T072740Z.log",
     "result": "success",
-    "turns": 49,
-    "cost_usd": 1.3046,
+    "turns": 69,
+    "cost_usd": 2.8591,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/62",
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/63",
     "tree": null,
     "note": null,
-    "at": "2026-10-01T07:28:42Z"
+    "at": "2026-10-02T07:27:40Z"
    },
    {
     "repo": "space-canon",
-    "log": null,
+    "log": "space-canon.20261002T073735Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -402,8 +417,8 @@
     "report": null,
     "pr": null,
     "tree": null,
-    "at": null,
-    "note": "never dispatched: no log under the agent dir"
+    "note": null,
+    "at": "2026-10-02T07:37:35Z"
    },
    {
     "repo": "chezz",
@@ -442,7 +457,6 @@
   "the last nightly has no `done` line -- still running, or it died",
   "crt: pass exited 1",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "space-canon: on the repo list and never dispatched",
   "chezz: last pass ended `error_max_turns`"
  ]
 }
