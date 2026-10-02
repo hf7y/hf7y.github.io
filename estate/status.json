@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T09:20:01Z",
+ "generated_at": "2026-10-02T09:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-02T10:20:01Z",
+ "valid_until": "2026-10-02T10:40:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -52,18 +52,6 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
-  },
-  {
-   "name": "romantic_lehmann",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-02T09:18:09Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -190,7 +178,6 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "romantic_lehmann",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -214,7 +201,7 @@
   "last_run": {
    "log": "nightly.20261002T060001Z.log",
    "started_at": "2026-10-02T06:00:01Z",
-   "finished_at": null,
+   "finished_at": "2026-10-02T09:38:45Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -322,14 +309,35 @@
     "gardien": {
      "queue": 12,
      "at": "2026-10-02T09:18:08Z",
-     "outcome": null
+     "outcome": "finished"
+    },
+    "nine-speakers": {
+     "queue": 1,
+     "at": "2026-10-02T09:23:26Z",
+     "outcome": "finished"
+    },
+    "scheduler": {
+     "queue": 19,
+     "at": "2026-10-02T09:31:16Z",
+     "outcome": "finished"
+    },
+    "sequestria": {
+     "queue": 1,
+     "at": "2026-10-02T09:37:24Z",
+     "outcome": "finished"
     }
    },
    "skipped": [
-    "dog"
+    "dog",
+    "inv-redirects",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vibe-kiosk",
+    "vim-arcade",
+    "vkv23"
    ],
    "queue_unreadable": [],
-   "age_h": 3.3
+   "age_h": 3.7
   },
   "passes": [
    {
@@ -509,7 +517,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "crt: pass exited 1",
   "american-cycle: pass exited 1",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
