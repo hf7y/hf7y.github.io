@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T08:40:02Z",
+ "generated_at": "2026-10-02T09:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-02T09:40:02Z",
+ "valid_until": "2026-10-02T10:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -54,6 +54,18 @@
    "ports_published": false
   },
   {
+   "name": "romantic_villani",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-02T08:55:31Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -88,18 +100,6 @@
    "started_at": "2026-09-23T04:33:37Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "wonderful_colden",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-02T08:09:40Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "xenodochial_wilson",
@@ -190,8 +190,8 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
+  "romantic_villani",
   "serene_elgamal",
-  "wonderful_colden",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -287,6 +287,26 @@
     "american-cycle": {
      "queue": 6,
      "at": "2026-10-02T08:09:39Z",
+     "outcome": "exited 1"
+    },
+    "apms-2173": {
+     "queue": 15,
+     "at": "2026-10-02T08:41:02Z",
+     "outcome": "finished"
+    },
+    "baudin": {
+     "queue": 8,
+     "at": "2026-10-02T08:46:47Z",
+     "outcome": "finished"
+    },
+    "cinema-sanctuary": {
+     "queue": 3,
+     "at": "2026-10-02T08:51:20Z",
+     "outcome": "finished"
+    },
+    "dcp-gate-site": {
+     "queue": 4,
+     "at": "2026-10-02T08:55:31Z",
      "outcome": null
     }
    },
@@ -294,7 +314,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.7
+   "age_h": 3.0
   },
   "passes": [
    {
@@ -476,6 +496,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "crt: pass exited 1",
+  "american-cycle: pass exited 1",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
