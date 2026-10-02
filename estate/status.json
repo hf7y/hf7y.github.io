@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T06:40:02Z",
+ "generated_at": "2026-10-02T07:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-02T07:40:02Z",
+ "valid_until": "2026-10-02T08:00:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -78,14 +78,14 @@
    "ports_published": null
   },
   {
-   "name": "vigorous_aryabhata",
+   "name": "sharp_almeida",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-02T06:32:01Z",
+   "started_at": "2026-10-02T06:49:45Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -191,7 +191,7 @@
   "ci-sequestria",
   "condescending_joliot",
   "serene_elgamal",
-  "vigorous_aryabhata",
+  "sharp_almeida",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -237,6 +237,11 @@
     "wtul": {
      "queue": 39,
      "at": "2026-10-02T06:32:01Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 29,
+     "at": "2026-10-02T06:49:45Z",
      "outcome": null
     }
    },
@@ -244,7 +249,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 1.0
   },
   "passes": [
    {
@@ -302,6 +307,19 @@
    {
     "repo": "wtul",
     "log": "wtul.20261002T063201Z.log",
+    "result": "success",
+    "turns": 93,
+    "cost_usd": 3.8731,
+    "rc": 0,
+    "report": "present",
+    "pr": null,
+    "tree": null,
+    "note": null,
+    "at": "2026-10-02T06:32:01Z"
+   },
+   {
+    "repo": "senechal",
+    "log": "senechal.20261002T064945Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -310,20 +328,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-02T06:32:01Z"
-   },
-   {
-    "repo": "senechal",
-    "log": "senechal.20261001T064901Z.log",
-    "result": "success",
-    "turns": 86,
-    "cost_usd": 2.9506,
-    "rc": 0,
-    "report": "present",
-    "pr": null,
-    "tree": null,
-    "note": null,
-    "at": "2026-10-01T06:49:01Z"
+    "at": "2026-10-02T06:49:45Z"
    },
    {
     "repo": "etalon",
