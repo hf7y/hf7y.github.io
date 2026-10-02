@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T08:00:02Z",
+ "generated_at": "2026-10-02T08:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-02T09:00:02Z",
+ "valid_until": "2026-10-02T09:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-09-23T04:33:37Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "flamboyant_goldstine",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-02T07:56:28Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -100,6 +88,18 @@
    "started_at": "2026-09-23T04:33:37Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "wonderful_colden",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-02T08:09:40Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "xenodochial_wilson",
@@ -190,8 +190,8 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "flamboyant_goldstine",
   "serene_elgamal",
+  "wonderful_colden",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -282,6 +282,11 @@
     "abletim": {
      "queue": 2,
      "at": "2026-10-02T07:56:28Z",
+     "outcome": "finished"
+    },
+    "american-cycle": {
+     "queue": 6,
+     "at": "2026-10-02T08:09:39Z",
      "outcome": null
     }
    },
@@ -289,7 +294,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.0
+   "age_h": 2.3
   },
   "passes": [
    {
