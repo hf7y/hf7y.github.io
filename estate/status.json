@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T10:40:01Z",
+ "generated_at": "2026-10-03T11:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T11:40:01Z",
+ "valid_until": "2026-10-03T12:00:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -42,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "gracious_hodgkin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-03T10:35:31Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -87,6 +75,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "vigorous_shirley",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T10:46:35Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -190,8 +190,8 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "gracious_hodgkin",
   "serene_elgamal",
+  "vigorous_shirley",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -322,14 +322,25 @@
     "gardien": {
      "queue": 12,
      "at": "2026-10-03T10:35:31Z",
+     "outcome": "finished"
+    },
+    "nine-speakers": {
+     "queue": 1,
+     "at": "2026-10-03T10:40:21Z",
+     "outcome": "finished"
+    },
+    "scheduler": {
+     "queue": 19,
+     "at": "2026-10-03T10:46:35Z",
      "outcome": null
     }
    },
    "skipped": [
-    "dog"
+    "dog",
+    "inv-redirects"
    ],
    "queue_unreadable": [],
-   "age_h": 4.7
+   "age_h": 5.0
   },
   "passes": [
    {
