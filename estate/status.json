@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T22:40:02Z",
+ "generated_at": "2026-10-03T23:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T23:40:02Z",
+ "valid_until": "2026-10-04T00:00:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -54,14 +54,14 @@
    "ports_published": false
   },
   {
-   "name": "optimistic_chaum",
+   "name": "loving_margulis",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-03T22:38:05Z",
+   "started_at": "2026-10-03T22:53:54Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -238,7 +238,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "optimistic_chaum",
+  "loving_margulis",
   "serene_elgamal",
   "upbeat_dirac",
   "vibrant_bassi",
@@ -277,7 +277,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -308,7 +308,7 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261003T223805Z.log",
+    "log": "musc-2300.20261003T225354Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -317,7 +317,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T22:38:05Z"
+    "at": "2026-10-03T22:53:54Z"
    },
    {
     "repo": "groc-mangr",
