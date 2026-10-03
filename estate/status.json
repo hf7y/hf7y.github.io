@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T09:00:02Z",
+ "generated_at": "2026-10-03T09:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T10:00:02Z",
+ "valid_until": "2026-10-03T10:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -42,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "ecstatic_euler",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-03T08:59:13Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -64,6 +52,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "pedantic_dhawan",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T09:09:21Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -190,7 +190,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "ecstatic_euler",
+  "pedantic_dhawan",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -277,6 +277,16 @@
     "abc": {
      "queue": 10,
      "at": "2026-10-03T08:59:13Z",
+     "outcome": "finished"
+    },
+    "abletim": {
+     "queue": 2,
+     "at": "2026-10-03T09:07:03Z",
+     "outcome": "finished"
+    },
+    "american-cycle": {
+     "queue": 6,
+     "at": "2026-10-03T09:09:21Z",
      "outcome": null
     }
    },
@@ -284,7 +294,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 3.0
+   "age_h": 3.3
   },
   "passes": [
    {
