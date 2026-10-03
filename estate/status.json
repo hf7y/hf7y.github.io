@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T06:00:01Z",
+ "generated_at": "2026-10-03T06:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T07:00:01Z",
+ "valid_until": "2026-10-03T07:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -52,6 +52,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "optimistic_chebyshev",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T06:18:43Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -178,6 +190,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
+  "optimistic_chebyshev",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -203,26 +216,49 @@
    "started_at": "2026-10-03T06:00:01Z",
    "finished_at": null,
    "turns": 150,
-   "image": null,
+   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
-   "skipped": [],
+   "dispatched": {
+    "crt": {
+     "queue": 8,
+     "at": "2026-10-03T06:00:05Z",
+     "outcome": "exited 1"
+    },
+    "musc-2300": {
+     "queue": 49,
+     "at": "2026-10-03T06:06:04Z",
+     "outcome": "finished"
+    },
+    "groc-mangr": {
+     "queue": 14,
+     "at": "2026-10-03T06:13:54Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 39,
+     "at": "2026-10-03T06:18:43Z",
+     "outcome": null
+    }
+   },
+   "skipped": [
+    "dog"
+   ],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261002T060012Z.log",
+    "log": "crt.20261003T060005Z.log",
     "result": "success",
-    "turns": 2,
-    "cost_usd": 1.6997,
+    "turns": 39,
+    "cost_usd": 0.9889,
     "rc": 0,
     "report": null,
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-02T06:00:12Z"
+    "at": "2026-10-03T06:00:05Z"
    },
    {
     "repo": "dog",
@@ -239,42 +275,42 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261002T061842Z.log",
+    "log": "musc-2300.20261003T060604Z.log",
     "result": "success",
-    "turns": 50,
-    "cost_usd": 1.0475,
+    "turns": 69,
+    "cost_usd": 1.6202,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/176",
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/177",
     "tree": null,
     "note": null,
-    "at": "2026-10-02T06:18:42Z"
+    "at": "2026-10-03T06:06:04Z"
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261002T062332Z.log",
+    "log": "groc-mangr.20261003T061354Z.log",
     "result": "success",
-    "turns": 67,
-    "cost_usd": 1.9365,
+    "turns": 31,
+    "cost_usd": 0.653,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/379",
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/380",
     "tree": null,
     "note": null,
-    "at": "2026-10-02T06:23:32Z"
+    "at": "2026-10-03T06:13:54Z"
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261002T063201Z.log",
-    "result": "success",
-    "turns": 93,
-    "cost_usd": 3.8731,
-    "rc": 0,
-    "report": "present",
+    "log": "wtul.20261003T061843Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-02T06:32:01Z"
+    "at": "2026-10-03T06:18:43Z"
    },
    {
     "repo": "senechal",
@@ -389,6 +425,7 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
+  "crt: pass exited 1",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
