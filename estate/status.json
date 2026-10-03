@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T21:20:02Z",
+ "generated_at": "2026-10-03T21:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T22:20:02Z",
+ "valid_until": "2026-10-03T22:40:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -13,7 +13,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-09-23T06:29:18Z",
+   "started_at": "2026-10-03T21:35:58Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -37,7 +37,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-09-23T04:33:37Z",
+   "started_at": "2026-10-03T21:35:58Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -61,7 +61,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-09-25T04:27:55Z",
+   "started_at": "2026-10-03T21:35:58Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -85,9 +85,33 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-09-23T04:33:37Z",
+   "started_at": "2026-10-03T21:35:58Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "wtul-dexter-promote-promote-1",
+   "image": "ghcr.io/hf7y-estate/wtul-dexter-promote:latest",
+   "project": "wtul-dexter-promote",
+   "state": "exited",
+   "health": null,
+   "restarts": 0,
+   "exit_code": 0,
+   "started_at": "2026-10-03T21:36:02Z",
+   "finished_at": "2026-10-03T21:36:08Z",
+   "ports_published": null
+  },
+  {
+   "name": "wtul-ready-ready-1",
+   "image": "ghcr.io/hf7y-estate/wtul-dexter-promote:latest",
+   "project": "wtul-ready",
+   "state": "exited",
+   "health": null,
+   "restarts": 0,
+   "exit_code": 1,
+   "started_at": "2026-10-03T21:36:03Z",
+   "finished_at": "2026-10-03T21:37:05Z",
+   "ports_published": null
   },
   {
    "name": "xenodochial_wilson",
@@ -109,7 +133,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-09-23T04:33:37Z",
+   "started_at": "2026-10-03T21:35:58Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -121,7 +145,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-09-23T04:33:40Z",
+   "started_at": "2026-10-03T21:36:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -133,7 +157,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-09-23T04:33:40Z",
+   "started_at": "2026-10-03T21:36:01Z",
    "finished_at": null,
    "ports_published": null
   }
@@ -199,145 +223,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261003T060001Z.log",
-   "started_at": "2026-10-03T06:00:01Z",
-   "finished_at": "2026-10-03T11:15:28Z",
+   "log": "nightly.20261003T212100Z.log",
+   "started_at": "2026-10-03T21:21:00Z",
+   "finished_at": "2026-10-03T21:31:18Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "crt": {
-     "queue": 8,
-     "at": "2026-10-03T06:00:05Z",
-     "outcome": "exited 1"
-    },
-    "musc-2300": {
-     "queue": 49,
-     "at": "2026-10-03T06:06:04Z",
-     "outcome": "finished"
-    },
     "groc-mangr": {
-     "queue": 14,
-     "at": "2026-10-03T06:13:54Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 39,
-     "at": "2026-10-03T06:18:43Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 29,
-     "at": "2026-10-03T06:36:54Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 28,
-     "at": "2026-10-03T07:04:29Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 136,
-     "at": "2026-10-03T07:21:05Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 18,
-     "at": "2026-10-03T07:45:43Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 5,
-     "at": "2026-10-03T08:14:41Z",
-     "outcome": "finished"
-    },
-    "space-canon": {
-     "queue": 2,
-     "at": "2026-10-03T08:23:40Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 7,
-     "at": "2026-10-03T08:43:44Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 10,
-     "at": "2026-10-03T08:59:13Z",
-     "outcome": "finished"
-    },
-    "abletim": {
-     "queue": 2,
-     "at": "2026-10-03T09:07:03Z",
-     "outcome": "finished"
-    },
-    "american-cycle": {
-     "queue": 6,
-     "at": "2026-10-03T09:09:21Z",
-     "outcome": "finished"
-    },
-    "apms-2173": {
-     "queue": 15,
-     "at": "2026-10-03T09:20:35Z",
-     "outcome": "finished"
-    },
-    "baudin": {
-     "queue": 8,
-     "at": "2026-10-03T09:32:37Z",
-     "outcome": "finished"
-    },
-    "cinema-sanctuary": {
-     "queue": 3,
-     "at": "2026-10-03T09:35:37Z",
-     "outcome": "finished"
-    },
-    "dcp-gate-site": {
-     "queue": 4,
-     "at": "2026-10-03T09:54:50Z",
-     "outcome": "finished"
-    },
-    "ecosim": {
-     "queue": 3,
-     "at": "2026-10-03T10:15:18Z",
-     "outcome": "finished"
-    },
-    "front-door": {
-     "queue": 5,
-     "at": "2026-10-03T10:20:26Z",
-     "outcome": "finished"
-    },
-    "gardien": {
-     "queue": 12,
-     "at": "2026-10-03T10:35:31Z",
-     "outcome": "finished"
-    },
-    "nine-speakers": {
      "queue": 1,
-     "at": "2026-10-03T10:40:21Z",
-     "outcome": "finished"
-    },
-    "scheduler": {
-     "queue": 19,
-     "at": "2026-10-03T10:46:35Z",
-     "outcome": "finished"
-    },
-    "sequestria": {
-     "queue": 1,
-     "at": "2026-10-03T11:13:51Z",
+     "at": "2026-10-03T21:29:23Z",
      "outcome": "finished"
     }
    },
-   "skipped": [
-    "dog",
-    "inv-redirects",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vibe-kiosk",
-    "vim-arcade",
-    "vkv23"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 15.3
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -381,16 +282,16 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261003T061354Z.log",
+    "log": "groc-mangr.20261003T212923Z.log",
     "result": "success",
-    "turns": 31,
-    "cost_usd": 0.653,
+    "turns": 12,
+    "cost_usd": 0.2627,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/380",
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T06:13:54Z"
+    "at": "2026-10-03T21:29:23Z"
    },
    {
     "repo": "wtul",
@@ -517,7 +418,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "crt: pass exited 1",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
