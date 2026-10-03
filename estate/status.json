@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T09:40:02Z",
+ "generated_at": "2026-10-03T10:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T10:40:02Z",
+ "valid_until": "2026-10-03T11:00:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "dazzling_chebyshev",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T09:54:50Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -38,18 +50,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-09-23T04:33:37Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "funny_wilbur",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-03T09:35:37Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -190,7 +190,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "funny_wilbur",
+  "dazzling_chebyshev",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -302,6 +302,11 @@
     "cinema-sanctuary": {
      "queue": 3,
      "at": "2026-10-03T09:35:37Z",
+     "outcome": "finished"
+    },
+    "dcp-gate-site": {
+     "queue": 4,
+     "at": "2026-10-03T09:54:50Z",
      "outcome": null
     }
    },
@@ -309,7 +314,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 3.7
+   "age_h": 4.0
   },
   "passes": [
    {
