@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T08:00:02Z",
+ "generated_at": "2026-10-03T08:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T09:00:02Z",
+ "valid_until": "2026-10-03T09:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -54,6 +54,18 @@
    "ports_published": false
   },
   {
+   "name": "priceless_dhawan",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T08:14:42Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -64,18 +76,6 @@
    "started_at": "2026-09-25T04:27:55Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "sad_hawking",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-03T07:45:43Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "serene_elgamal",
@@ -190,7 +190,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "sad_hawking",
+  "priceless_dhawan",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -257,6 +257,11 @@
     "bibliothecaire": {
      "queue": 18,
      "at": "2026-10-03T07:45:43Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 5,
+     "at": "2026-10-03T08:14:41Z",
      "outcome": null
     }
    },
@@ -264,7 +269,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.0
+   "age_h": 2.3
   },
   "passes": [
    {
@@ -374,6 +379,19 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261003T074543Z.log",
+    "result": "success",
+    "turns": 103,
+    "cost_usd": 3.1154,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/121",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-03T07:45:43Z"
+   },
+   {
+    "repo": "secretaire",
+    "log": "secretaire.20261003T081441Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -382,20 +400,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T07:45:43Z"
-   },
-   {
-    "repo": "secretaire",
-    "log": "secretaire.20261002T072740Z.log",
-    "result": "success",
-    "turns": 69,
-    "cost_usd": 2.8591,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/63",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-02T07:27:40Z"
+    "at": "2026-10-03T08:14:41Z"
    },
    {
     "repo": "space-canon",
