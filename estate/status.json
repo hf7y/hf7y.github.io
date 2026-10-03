@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-03T23:20:02Z",
+ "generated_at": "2026-10-03T23:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T00:20:02Z",
+ "valid_until": "2026-10-04T00:40:01Z",
  "containers": [
-  {
-   "name": "blissful_albattani",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-03T23:11:03Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -42,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "condescending_mendeleev",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T23:22:38Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -50,6 +50,30 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-03T21:35:58Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "friendly_euler",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T23:28:04Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "great_cannon",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T23:26:44Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,26 +90,14 @@
    "ports_published": false
   },
   {
-   "name": "hopeful_wright",
+   "name": "kind_mayer",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-03T23:10:19Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "jolly_burnell",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-03T23:10:20Z",
+   "started_at": "2026-10-03T23:35:07Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -236,11 +248,12 @@
   }
  ],
  "unmanaged": [
-  "blissful_albattani",
   "ci-sequestria",
   "condescending_joliot",
-  "hopeful_wright",
-  "jolly_burnell",
+  "condescending_mendeleev",
+  "friendly_euler",
+  "great_cannon",
+  "kind_mayer",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -262,16 +275,16 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261003T231017Z.log",
-   "started_at": "2026-10-03T23:10:17Z",
+   "log": "nightly.20261003T232640Z.log",
+   "started_at": "2026-10-03T23:26:40Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "etalon": {
+    "wtul": {
      "queue": 1,
-     "at": "2026-10-03T23:10:20Z",
+     "at": "2026-10-03T23:26:43Z",
      "outcome": null
     }
    },
@@ -334,16 +347,16 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261003T214131Z.log",
-    "result": "success",
-    "turns": 53,
-    "cost_usd": 1.0111,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/wtul/pull/430",
+    "log": "wtul.20261003T232643Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T21:41:31Z"
+    "at": "2026-10-03T23:26:43Z"
    },
    {
     "repo": "senechal",
@@ -360,7 +373,7 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261003T231020Z.log",
+    "log": "etalon.20261003T233507Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -369,11 +382,11 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T23:10:20Z"
+    "at": "2026-10-03T23:35:07Z"
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261003T231018Z.log",
+    "log": "realisateur.20261003T232236Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -382,11 +395,11 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T23:10:18Z"
+    "at": "2026-10-03T23:22:36Z"
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261003T231103Z.log",
+    "log": "bibliothecaire.20261003T232804Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -395,7 +408,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T23:11:03Z"
+    "at": "2026-10-03T23:28:04Z"
    },
    {
     "repo": "secretaire",
