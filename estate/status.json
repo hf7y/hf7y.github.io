@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T08:20:01Z",
+ "generated_at": "2026-10-03T08:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T09:20:01Z",
+ "valid_until": "2026-10-03T09:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -54,18 +54,6 @@
    "ports_published": false
   },
   {
-   "name": "priceless_dhawan",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-03T08:14:42Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -100,6 +88,18 @@
    "started_at": "2026-09-23T04:33:37Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "wonderful_bouman",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T08:23:40Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "xenodochial_wilson",
@@ -190,8 +190,8 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "priceless_dhawan",
   "serene_elgamal",
+  "wonderful_bouman",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -262,6 +262,11 @@
     "secretaire": {
      "queue": 5,
      "at": "2026-10-03T08:14:41Z",
+     "outcome": "finished"
+    },
+    "space-canon": {
+     "queue": 2,
+     "at": "2026-10-03T08:23:40Z",
      "outcome": null
     }
    },
@@ -269,7 +274,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.3
+   "age_h": 2.7
   },
   "passes": [
    {
@@ -392,6 +397,19 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261003T081441Z.log",
+    "result": "success",
+    "turns": 47,
+    "cost_usd": 1.3706,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/64",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-03T08:14:41Z"
+   },
+   {
+    "repo": "space-canon",
+    "log": "space-canon.20261003T082340Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -400,20 +418,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T08:14:41Z"
-   },
-   {
-    "repo": "space-canon",
-    "log": "space-canon.20261002T073735Z.log",
-    "result": "success",
-    "turns": 49,
-    "cost_usd": 1.2168,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/space-canon/pull/13",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-02T07:37:35Z"
+    "at": "2026-10-03T08:23:40Z"
    },
    {
     "repo": "chezz",
