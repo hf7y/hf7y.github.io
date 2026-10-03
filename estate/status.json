@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T22:00:02Z",
+ "generated_at": "2026-10-03T22:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T23:00:02Z",
+ "valid_until": "2026-10-03T23:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -38,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-03T21:35:58Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "elegant_ptolemy",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T22:07:08Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -202,6 +214,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
+  "elegant_ptolemy",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -223,22 +236,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261003T214125Z.log",
-   "started_at": "2026-10-03T21:41:25Z",
-   "finished_at": "2026-10-03T21:48:26Z",
+   "log": "nightly.20261003T220706Z.log",
+   "started_at": "2026-10-03T22:07:06Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "wtul": {
+    "bibliothecaire": {
      "queue": 1,
-     "at": "2026-10-03T21:41:31Z",
-     "outcome": "finished"
+     "at": "2026-10-03T22:07:08Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -347,16 +360,16 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261003T074543Z.log",
-    "result": "success",
-    "turns": 103,
-    "cost_usd": 3.1154,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/121",
+    "log": "bibliothecaire.20261003T220708Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T07:45:43Z"
+    "at": "2026-10-03T22:07:08Z"
    },
    {
     "repo": "secretaire",
@@ -418,6 +431,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
