@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T05:40:01Z",
+ "generated_at": "2026-10-03T06:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T06:40:01Z",
+ "valid_until": "2026-10-03T07:00:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -199,145 +199,16 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261002T060001Z.log",
-   "started_at": "2026-10-02T06:00:01Z",
-   "finished_at": "2026-10-02T09:38:45Z",
+   "log": "nightly.20261003T060001Z.log",
+   "started_at": "2026-10-03T06:00:01Z",
+   "finished_at": null,
    "turns": 150,
-   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
+   "image": null,
    "pull_failed": null,
-   "dispatched": {
-    "crt": {
-     "queue": 8,
-     "at": "2026-10-02T06:00:12Z",
-     "outcome": "exited 1"
-    },
-    "musc-2300": {
-     "queue": 50,
-     "at": "2026-10-02T06:18:42Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 14,
-     "at": "2026-10-02T06:23:32Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 39,
-     "at": "2026-10-02T06:32:01Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 29,
-     "at": "2026-10-02T06:49:45Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 26,
-     "at": "2026-10-02T07:02:42Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 136,
-     "at": "2026-10-02T07:10:46Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 13,
-     "at": "2026-10-02T07:24:35Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 5,
-     "at": "2026-10-02T07:27:40Z",
-     "outcome": "finished"
-    },
-    "space-canon": {
-     "queue": 2,
-     "at": "2026-10-02T07:37:35Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 7,
-     "at": "2026-10-02T07:43:08Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 10,
-     "at": "2026-10-02T07:53:01Z",
-     "outcome": "finished"
-    },
-    "abletim": {
-     "queue": 2,
-     "at": "2026-10-02T07:56:28Z",
-     "outcome": "finished"
-    },
-    "american-cycle": {
-     "queue": 6,
-     "at": "2026-10-02T08:09:39Z",
-     "outcome": "exited 1"
-    },
-    "apms-2173": {
-     "queue": 15,
-     "at": "2026-10-02T08:41:02Z",
-     "outcome": "finished"
-    },
-    "baudin": {
-     "queue": 8,
-     "at": "2026-10-02T08:46:47Z",
-     "outcome": "finished"
-    },
-    "cinema-sanctuary": {
-     "queue": 3,
-     "at": "2026-10-02T08:51:20Z",
-     "outcome": "finished"
-    },
-    "dcp-gate-site": {
-     "queue": 4,
-     "at": "2026-10-02T08:55:31Z",
-     "outcome": "finished"
-    },
-    "ecosim": {
-     "queue": 3,
-     "at": "2026-10-02T09:07:16Z",
-     "outcome": "finished"
-    },
-    "front-door": {
-     "queue": 6,
-     "at": "2026-10-02T09:14:29Z",
-     "outcome": "finished"
-    },
-    "gardien": {
-     "queue": 12,
-     "at": "2026-10-02T09:18:08Z",
-     "outcome": "finished"
-    },
-    "nine-speakers": {
-     "queue": 1,
-     "at": "2026-10-02T09:23:26Z",
-     "outcome": "finished"
-    },
-    "scheduler": {
-     "queue": 19,
-     "at": "2026-10-02T09:31:16Z",
-     "outcome": "finished"
-    },
-    "sequestria": {
-     "queue": 1,
-     "at": "2026-10-02T09:37:24Z",
-     "outcome": "finished"
-    }
-   },
-   "skipped": [
-    "dog",
-    "inv-redirects",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vibe-kiosk",
-    "vim-arcade",
-    "vkv23"
-   ],
+   "dispatched": {},
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 23.7
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -517,8 +388,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "crt: pass exited 1",
-  "american-cycle: pass exited 1",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
