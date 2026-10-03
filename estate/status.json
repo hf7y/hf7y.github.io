@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T21:40:01Z",
+ "generated_at": "2026-10-03T22:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T22:40:01Z",
+ "valid_until": "2026-10-03T23:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -223,16 +223,16 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261003T212100Z.log",
-   "started_at": "2026-10-03T21:21:00Z",
-   "finished_at": "2026-10-03T21:31:18Z",
+   "log": "nightly.20261003T214125Z.log",
+   "started_at": "2026-10-03T21:41:25Z",
+   "finished_at": "2026-10-03T21:48:26Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "groc-mangr": {
+    "wtul": {
      "queue": 1,
-     "at": "2026-10-03T21:29:23Z",
+     "at": "2026-10-03T21:41:31Z",
      "outcome": "finished"
     }
    },
@@ -295,16 +295,16 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261003T061843Z.log",
+    "log": "wtul.20261003T214131Z.log",
     "result": "success",
-    "turns": 62,
-    "cost_usd": 1.5148,
+    "turns": 53,
+    "cost_usd": 1.0111,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/wtul/pull/428",
+    "pr": "https://github.com/hf7y-estate/wtul/pull/430",
     "tree": null,
     "note": null,
-    "at": "2026-10-03T06:18:43Z"
+    "at": "2026-10-03T21:41:31Z"
    },
    {
     "repo": "senechal",
