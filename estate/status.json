@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-03T10:20:02Z",
+ "generated_at": "2026-10-03T10:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T11:20:02Z",
+ "valid_until": "2026-10-03T11:40:01Z",
  "containers": [
-  {
-   "name": "admiring_benz",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-03T10:15:18Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -50,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-09-23T04:33:37Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "gracious_hodgkin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T10:35:31Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -188,9 +188,9 @@
   }
  ],
  "unmanaged": [
-  "admiring_benz",
   "ci-sequestria",
   "condescending_joliot",
+  "gracious_hodgkin",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -312,6 +312,16 @@
     "ecosim": {
      "queue": 3,
      "at": "2026-10-03T10:15:18Z",
+     "outcome": "finished"
+    },
+    "front-door": {
+     "queue": 5,
+     "at": "2026-10-03T10:20:26Z",
+     "outcome": "finished"
+    },
+    "gardien": {
+     "queue": 12,
+     "at": "2026-10-03T10:35:31Z",
      "outcome": null
     }
    },
@@ -319,7 +329,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 4.3
+   "age_h": 4.7
   },
   "passes": [
    {
