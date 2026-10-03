@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-03T10:00:01Z",
+ "generated_at": "2026-10-03T10:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-03T11:00:01Z",
+ "valid_until": "2026-10-03T11:20:02Z",
  "containers": [
+  {
+   "name": "admiring_benz",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T10:15:18Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -27,18 +39,6 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
-   "ports_published": null
-  },
-  {
-   "name": "dazzling_chebyshev",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-03T09:54:50Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -188,9 +188,9 @@
   }
  ],
  "unmanaged": [
+  "admiring_benz",
   "ci-sequestria",
   "condescending_joliot",
-  "dazzling_chebyshev",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -307,6 +307,11 @@
     "dcp-gate-site": {
      "queue": 4,
      "at": "2026-10-03T09:54:50Z",
+     "outcome": "finished"
+    },
+    "ecosim": {
+     "queue": 3,
+     "at": "2026-10-03T10:15:18Z",
      "outcome": null
     }
    },
@@ -314,7 +319,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 4.0
+   "age_h": 4.3
   },
   "passes": [
    {
