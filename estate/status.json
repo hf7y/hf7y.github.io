@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-04T04:40:02Z",
+ "generated_at": "2026-10-04T05:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T05:40:02Z",
+ "valid_until": "2026-10-04T06:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -42,26 +42,14 @@
    "ports_published": null
   },
   {
-   "name": "ecstatic_mayer",
+   "name": "distracted_allen",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-04T04:37:50Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "elegant_khayyam",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T04:38:39Z",
+   "started_at": "2026-10-04T04:56:46Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -76,6 +64,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "nostalgic_hypatia",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-04T04:53:51Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -226,8 +226,8 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "ecstatic_mayer",
-  "elegant_khayyam",
+  "distracted_allen",
+  "nostalgic_hypatia",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -249,22 +249,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261004T043446Z.log",
-   "started_at": "2026-10-04T04:34:46Z",
+   "log": "nightly.20261004T045041Z.log",
+   "started_at": "2026-10-04T04:50:41Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "senechal": {
+    "realisateur": {
      "queue": 1,
-     "at": "2026-10-04T04:37:49Z",
+     "at": "2026-10-04T04:56:45Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -321,7 +321,7 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261004T043838Z.log",
+    "log": "wtul.20261004T045349Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -330,20 +330,20 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T04:38:38Z"
+    "at": "2026-10-04T04:53:49Z"
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261004T043749Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
+    "log": "senechal.20261004T044820Z.log",
+    "result": "success",
+    "turns": 39,
+    "cost_usd": 1.1122,
+    "rc": 0,
+    "report": "present",
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T04:37:49Z"
+    "at": "2026-10-04T04:48:20Z"
    },
    {
     "repo": "etalon",
@@ -360,16 +360,16 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261004T005441Z.log",
-    "result": "success",
-    "turns": 30,
-    "cost_usd": 0.9465,
-    "rc": 0,
-    "report": "present",
+    "log": "realisateur.20261004T045645Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T00:54:41Z"
+    "at": "2026-10-04T04:56:45Z"
    },
    {
     "repo": "bibliothecaire",
