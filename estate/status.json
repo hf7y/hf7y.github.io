@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-04T03:20:01Z",
+ "generated_at": "2026-10-04T03:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T04:20:01Z",
+ "valid_until": "2026-10-04T04:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "crazy_morse",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T03:13:38Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -50,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-03T21:35:58Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "focused_neumann",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-04T03:29:44Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -87,6 +87,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "vigorous_dirac",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-04T03:39:31Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -214,8 +226,9 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "crazy_morse",
+  "focused_neumann",
   "serene_elgamal",
+  "vigorous_dirac",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -236,22 +249,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261004T031330Z.log",
-   "started_at": "2026-10-04T03:13:30Z",
+   "log": "nightly.20261004T032937Z.log",
+   "started_at": "2026-10-04T03:29:37Z",
    "finished_at": null,
-   "turns": 150,
+   "turns": 200,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "musc-2300": {
+    "bibliothecaire": {
      "queue": 1,
-     "at": "2026-10-04T03:13:37Z",
+     "at": "2026-10-04T03:29:43Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -282,7 +295,7 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261004T031337Z.log",
+    "log": "musc-2300.20261004T033930Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -291,7 +304,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T03:13:37Z"
+    "at": "2026-10-04T03:39:30Z"
    },
    {
     "repo": "groc-mangr",
@@ -360,16 +373,16 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261004T024957Z.log",
-    "result": "success",
-    "turns": 136,
-    "cost_usd": 4.2913,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/138",
+    "log": "bibliothecaire.20261004T032943Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T02:49:57Z"
+    "at": "2026-10-04T03:29:43Z"
    },
    {
     "repo": "secretaire",
