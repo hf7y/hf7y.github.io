@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-04T00:40:02Z",
+ "generated_at": "2026-10-04T01:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T01:40:02Z",
+ "valid_until": "2026-10-04T02:00:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "confident_saha",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-04T00:59:37Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -42,14 +54,14 @@
    "ports_published": null
   },
   {
-   "name": "frosty_lichterman",
+   "name": "gracious_lederberg",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-04T00:39:39Z",
+   "started_at": "2026-10-04T00:54:42Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,38 +78,14 @@
    "ports_published": false
   },
   {
-   "name": "jovial_villani",
+   "name": "romantic_payne",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-04T00:09:53Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "magical_khorana",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T00:37:26Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "quizzical_goodall",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T00:20:40Z",
+   "started_at": "2026-10-04T00:54:18Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -123,6 +111,30 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "sharp_wozniak",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-04T00:54:19Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "sweet_mestorf",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-04T00:54:14Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -208,18 +220,6 @@
    "started_at": "2026-10-03T21:36:01Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zen_banach",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-03T23:58:18Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -262,13 +262,13 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "frosty_lichterman",
-  "jovial_villani",
-  "magical_khorana",
-  "quizzical_goodall",
+  "confident_saha",
+  "gracious_lederberg",
+  "romantic_payne",
   "serene_elgamal",
-  "xenodochial_wilson",
-  "zen_banach"
+  "sharp_wozniak",
+  "sweet_mestorf",
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -288,22 +288,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261004T001949Z.log",
-   "started_at": "2026-10-04T00:19:49Z",
+   "log": "nightly.20261004T005411Z.log",
+   "started_at": "2026-10-04T00:54:11Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "abc": {
+    "apms-2173": {
      "queue": 1,
-     "at": "2026-10-04T00:20:39Z",
+     "at": "2026-10-04T00:54:13Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -386,7 +386,7 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261004T003938Z.log",
+    "log": "etalon.20261004T005417Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -395,11 +395,11 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T00:39:38Z"
+    "at": "2026-10-04T00:54:17Z"
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261004T000952Z.log",
+    "log": "realisateur.20261004T005441Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -408,11 +408,11 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T00:09:52Z"
+    "at": "2026-10-04T00:54:41Z"
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261004T003726Z.log",
+    "log": "bibliothecaire.20261004T005936Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -421,7 +421,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T00:37:26Z"
+    "at": "2026-10-04T00:59:36Z"
    },
    {
     "repo": "secretaire",
