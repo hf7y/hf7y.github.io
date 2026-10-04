@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-04T03:40:02Z",
+ "generated_at": "2026-10-04T04:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T04:40:02Z",
+ "valid_until": "2026-10-04T05:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -90,14 +90,14 @@
    "ports_published": null
   },
   {
-   "name": "vigorous_dirac",
+   "name": "vigilant_beaver",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-04T03:39:31Z",
+   "started_at": "2026-10-04T03:45:59Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -228,7 +228,7 @@
   "condescending_joliot",
   "focused_neumann",
   "serene_elgamal",
-  "vigorous_dirac",
+  "vigilant_beaver",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -249,16 +249,16 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261004T032937Z.log",
-   "started_at": "2026-10-04T03:29:37Z",
+   "log": "nightly.20261004T034556Z.log",
+   "started_at": "2026-10-04T03:45:56Z",
    "finished_at": null,
-   "turns": 200,
+   "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "bibliothecaire": {
+    "wtul": {
      "queue": 1,
-     "at": "2026-10-04T03:29:43Z",
+     "at": "2026-10-04T03:45:58Z",
      "outcome": null
     }
    },
@@ -295,16 +295,16 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261004T033930Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "log": "musc-2300.20261004T034732Z.log",
+    "result": "success",
+    "turns": 76,
+    "cost_usd": 1.7584,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/187",
     "tree": null,
     "note": null,
-    "at": "2026-10-04T03:39:30Z"
+    "at": "2026-10-04T03:47:32Z"
    },
    {
     "repo": "groc-mangr",
@@ -321,16 +321,16 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261004T000806Z.log",
-    "result": "success",
-    "turns": 29,
-    "cost_usd": 0.6708,
-    "rc": 0,
-    "report": "present",
+    "log": "wtul.20261004T034558Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T00:08:06Z"
+    "at": "2026-10-04T03:45:58Z"
    },
    {
     "repo": "senechal",
