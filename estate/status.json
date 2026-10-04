@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-03T23:40:01Z",
+ "generated_at": "2026-10-04T00:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T00:40:01Z",
+ "valid_until": "2026-10-04T01:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -54,6 +54,18 @@
    "ports_published": null
   },
   {
+   "name": "elated_shamir",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T23:46:05Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "friendly_euler",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -62,18 +74,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-03T23:28:04Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "great_cannon",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-03T23:26:44Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -90,14 +90,14 @@
    "ports_published": false
   },
   {
-   "name": "kind_mayer",
+   "name": "naughty_curie",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-03T23:35:07Z",
+   "started_at": "2026-10-03T23:57:42Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -208,6 +208,18 @@
    "started_at": "2026-10-03T21:36:01Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zen_banach",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-03T23:58:18Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -251,11 +263,12 @@
   "ci-sequestria",
   "condescending_joliot",
   "condescending_mendeleev",
+  "elated_shamir",
   "friendly_euler",
-  "great_cannon",
-  "kind_mayer",
+  "naughty_curie",
   "serene_elgamal",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "zen_banach"
  ],
  "nightly": {
   "armed": true,
@@ -275,22 +288,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261003T232640Z.log",
-   "started_at": "2026-10-03T23:26:40Z",
+   "log": "nightly.20261003T234242Z.log",
+   "started_at": "2026-10-03T23:42:42Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "wtul": {
+    "apms-2173": {
      "queue": 1,
-     "at": "2026-10-03T23:26:43Z",
+     "at": "2026-10-03T23:58:18Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -347,7 +360,7 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261003T232643Z.log",
+    "log": "wtul.20261003T234604Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -356,7 +369,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T23:26:43Z"
+    "at": "2026-10-03T23:46:04Z"
    },
    {
     "repo": "senechal",
@@ -373,7 +386,7 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261003T233507Z.log",
+    "log": "etalon.20261003T235741Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -382,7 +395,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T23:35:07Z"
+    "at": "2026-10-03T23:57:41Z"
    },
    {
     "repo": "realisateur",
