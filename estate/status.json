@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-04T04:00:02Z",
+ "generated_at": "2026-10-04T04:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T05:00:02Z",
+ "valid_until": "2026-10-04T05:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -42,14 +42,14 @@
    "ports_published": null
   },
   {
-   "name": "focused_neumann",
+   "name": "great_wright",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-04T03:29:44Z",
+   "started_at": "2026-10-04T04:18:15Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -90,18 +90,6 @@
    "ports_published": null
   },
   {
-   "name": "vigilant_beaver",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T03:45:59Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -112,6 +100,18 @@
    "started_at": "2026-10-03T21:35:58Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "wizardly_hypatia",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-04T04:18:08Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -226,9 +226,9 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "focused_neumann",
+  "great_wright",
   "serene_elgamal",
-  "vigilant_beaver",
+  "wizardly_hypatia",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -249,22 +249,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261004T034556Z.log",
-   "started_at": "2026-10-04T03:45:56Z",
+   "log": "nightly.20261004T041806Z.log",
+   "started_at": "2026-10-04T04:18:06Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "wtul": {
+    "etalon": {
      "queue": 1,
-     "at": "2026-10-04T03:45:58Z",
+     "at": "2026-10-04T04:18:13Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -321,7 +321,7 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261004T034558Z.log",
+    "log": "wtul.20261004T041807Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -330,7 +330,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T03:45:58Z"
+    "at": "2026-10-04T04:18:07Z"
    },
    {
     "repo": "senechal",
@@ -347,16 +347,16 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261004T005417Z.log",
-    "result": "success",
-    "turns": 113,
-    "cost_usd": 3.4284,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1431",
+    "log": "etalon.20261004T041813Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T00:54:17Z"
+    "at": "2026-10-04T04:18:13Z"
    },
    {
     "repo": "realisateur",
@@ -373,16 +373,16 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261004T032943Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "log": "bibliothecaire.20261004T040417Z.log",
+    "result": "success",
+    "turns": 38,
+    "cost_usd": 0.9876,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/140",
     "tree": null,
     "note": null,
-    "at": "2026-10-04T03:29:43Z"
+    "at": "2026-10-04T04:04:17Z"
    },
    {
     "repo": "secretaire",
