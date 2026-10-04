@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-04T03:00:01Z",
+ "generated_at": "2026-10-04T03:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T04:00:01Z",
+ "valid_until": "2026-10-04T04:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "crazy_morse",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-04T03:13:38Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -38,30 +50,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-03T21:35:58Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "elegant_napier",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T02:49:58Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "friendly_carson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T02:58:03Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -226,8 +214,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "elegant_napier",
-  "friendly_carson",
+  "crazy_morse",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -249,22 +236,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261004T025756Z.log",
-   "started_at": "2026-10-04T02:57:56Z",
+   "log": "nightly.20261004T031330Z.log",
+   "started_at": "2026-10-04T03:13:30Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "space-canon": {
+    "musc-2300": {
      "queue": 1,
-     "at": "2026-10-04T02:58:02Z",
+     "at": "2026-10-04T03:13:37Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -295,16 +282,16 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261003T225354Z.log",
-    "result": "success",
-    "turns": 43,
-    "cost_usd": 0.7923,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/182",
+    "log": "musc-2300.20261004T031337Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T22:53:54Z"
+    "at": "2026-10-04T03:13:37Z"
    },
    {
     "repo": "groc-mangr",
@@ -374,12 +361,12 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261004T024957Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "result": "success",
+    "turns": 136,
+    "cost_usd": 4.2913,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/138",
     "tree": null,
     "note": null,
     "at": "2026-10-04T02:49:57Z"
@@ -400,11 +387,11 @@
    {
     "repo": "space-canon",
     "log": "space-canon.20261004T025802Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
+    "result": "success",
+    "turns": 27,
+    "cost_usd": 0.6682,
+    "rc": 0,
+    "report": "present",
     "pr": null,
     "tree": null,
     "note": null,
