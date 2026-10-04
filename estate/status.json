@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-04T05:00:02Z",
+ "generated_at": "2026-10-04T05:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T06:00:02Z",
+ "valid_until": "2026-10-04T06:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -42,14 +42,14 @@
    "ports_published": null
   },
   {
-   "name": "distracted_allen",
+   "name": "distracted_kare",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-04T04:56:46Z",
+   "started_at": "2026-10-04T05:12:13Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -64,18 +64,6 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
-  },
-  {
-   "name": "nostalgic_hypatia",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T04:53:51Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -226,8 +214,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "distracted_allen",
-  "nostalgic_hypatia",
+  "distracted_kare",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -258,13 +245,13 @@
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-04T04:56:45Z",
+     "at": "2026-10-04T05:12:12Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -322,12 +309,12 @@
    {
     "repo": "wtul",
     "log": "wtul.20261004T045349Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "result": "success",
+    "turns": 109,
+    "cost_usd": 2.8919,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/wtul/pull/442",
     "tree": null,
     "note": null,
     "at": "2026-10-04T04:53:49Z"
@@ -360,7 +347,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261004T045645Z.log",
+    "log": "realisateur.20261004T051212Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -369,7 +356,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T04:56:45Z"
+    "at": "2026-10-04T05:12:12Z"
    },
    {
     "repo": "bibliothecaire",
