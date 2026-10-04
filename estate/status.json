@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-04T07:00:02Z",
+ "generated_at": "2026-10-04T07:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T08:00:02Z",
+ "valid_until": "2026-10-04T08:20:02Z",
  "containers": [
-  {
-   "name": "awesome_chandrasekhar",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T06:59:53Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -87,6 +75,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "trusting_hofstadter",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-04T07:17:38Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -212,10 +212,10 @@
   }
  ],
  "unmanaged": [
-  "awesome_chandrasekhar",
   "ci-sequestria",
   "condescending_joliot",
   "serene_elgamal",
+  "trusting_hofstadter",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -281,6 +281,21 @@
     "bibliothecaire": {
      "queue": 25,
      "at": "2026-10-04T06:59:52Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 5,
+     "at": "2026-10-04T07:12:34Z",
+     "outcome": "finished"
+    },
+    "space-canon": {
+     "queue": 8,
+     "at": "2026-10-04T07:15:13Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 7,
+     "at": "2026-10-04T07:17:37Z",
      "outcome": null
     }
    },
@@ -288,7 +303,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.0
+   "age_h": 1.3
   },
   "passes": [
    {
@@ -398,6 +413,45 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261004T065952Z.log",
+    "result": "success",
+    "turns": 88,
+    "cost_usd": 3.4505,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/141",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-04T06:59:52Z"
+   },
+   {
+    "repo": "secretaire",
+    "log": "secretaire.20261004T071234Z.log",
+    "result": "success",
+    "turns": 16,
+    "cost_usd": 0.4361,
+    "rc": 0,
+    "report": "present",
+    "pr": null,
+    "tree": null,
+    "note": null,
+    "at": "2026-10-04T07:12:34Z"
+   },
+   {
+    "repo": "space-canon",
+    "log": "space-canon.20261004T071513Z.log",
+    "result": "success",
+    "turns": 25,
+    "cost_usd": 0.5172,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/space-canon/pull/22",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-04T07:15:13Z"
+   },
+   {
+    "repo": "chezz",
+    "log": "chezz.20261004T071737Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -406,46 +460,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T06:59:52Z"
-   },
-   {
-    "repo": "secretaire",
-    "log": "secretaire.20261003T081441Z.log",
-    "result": "success",
-    "turns": 47,
-    "cost_usd": 1.3706,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/64",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-03T08:14:41Z"
-   },
-   {
-    "repo": "space-canon",
-    "log": "space-canon.20261004T025802Z.log",
-    "result": "success",
-    "turns": 27,
-    "cost_usd": 0.6682,
-    "rc": 0,
-    "report": "present",
-    "pr": null,
-    "tree": null,
-    "note": null,
-    "at": "2026-10-04T02:58:02Z"
-   },
-   {
-    "repo": "chezz",
-    "log": "chezz.20261004T020610Z.log",
-    "result": "success",
-    "turns": 60,
-    "cost_usd": 1.6253,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/chezz/pull/172",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-04T02:06:10Z"
+    "at": "2026-10-04T07:17:37Z"
    }
   ],
   "dispatch_source": {
