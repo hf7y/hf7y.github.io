@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-04T05:20:01Z",
+ "generated_at": "2026-10-04T05:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T06:20:01Z",
+ "valid_until": "2026-10-04T06:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-03T21:35:58Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "distracted_kare",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T05:12:13Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -214,7 +202,6 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "distracted_kare",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -238,20 +225,20 @@
   "last_run": {
    "log": "nightly.20261004T045041Z.log",
    "started_at": "2026-10-04T04:50:41Z",
-   "finished_at": null,
+   "finished_at": "2026-10-04T05:35:41Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-04T05:12:12Z",
-     "outcome": null
+     "at": "2026-10-04T05:25:14Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.8
   },
   "passes": [
    {
@@ -347,16 +334,16 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261004T051212Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "log": "realisateur.20261004T052514Z.log",
+    "result": "success",
+    "turns": 37,
+    "cost_usd": 0.8474,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1439",
     "tree": null,
     "note": null,
-    "at": "2026-10-04T05:12:12Z"
+    "at": "2026-10-04T05:25:14Z"
    },
    {
     "repo": "bibliothecaire",
@@ -431,7 +418,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
