@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-04T01:20:02Z",
+ "generated_at": "2026-10-04T01:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T02:20:02Z",
+ "valid_until": "2026-10-04T02:40:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "confident_saha",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T00:59:37Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -50,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-03T21:35:58Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "funny_meitner",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-04T01:26:47Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -64,6 +64,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "keen_morse",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-04T01:35:35Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -87,18 +99,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "thirsty_sinoussi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-04T01:18:46Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -226,9 +226,9 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "confident_saha",
+  "funny_meitner",
+  "keen_morse",
   "serene_elgamal",
-  "thirsty_sinoussi",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -249,16 +249,16 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261004T011420Z.log",
-   "started_at": "2026-10-04T01:14:20Z",
+   "log": "nightly.20261004T013140Z.log",
+   "started_at": "2026-10-04T01:31:40Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "senechal": {
+    "chezz": {
      "queue": 1,
-     "at": "2026-10-04T01:18:45Z",
+     "at": "2026-10-04T01:35:34Z",
      "outcome": null
     }
    },
@@ -334,16 +334,16 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261004T011845Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
+    "log": "senechal.20261004T012319Z.log",
+    "result": "success",
+    "turns": 45,
+    "cost_usd": 1.3969,
+    "rc": 0,
+    "report": "present",
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T01:18:45Z"
+    "at": "2026-10-04T01:23:19Z"
    },
    {
     "repo": "etalon",
@@ -373,7 +373,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261004T005936Z.log",
+    "log": "bibliothecaire.20261004T012647Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -382,7 +382,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T00:59:36Z"
+    "at": "2026-10-04T01:26:47Z"
    },
    {
     "repo": "secretaire",
@@ -412,16 +412,16 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261003T084344Z.log",
-    "result": "success",
-    "turns": 62,
-    "cost_usd": 1.8854,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/chezz/pull/169",
+    "log": "chezz.20261004T013534Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-03T08:43:44Z"
+    "at": "2026-10-04T01:35:34Z"
    }
   ],
   "dispatch_source": {
