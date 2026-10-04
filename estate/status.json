@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-04T06:40:01Z",
+ "generated_at": "2026-10-04T07:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-04T07:40:01Z",
+ "valid_until": "2026-10-04T08:00:02Z",
  "containers": [
   {
-   "name": "bold_hermann",
+   "name": "awesome_chandrasekhar",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-04T06:30:01Z",
+   "started_at": "2026-10-04T06:59:53Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -212,7 +212,7 @@
   }
  ],
  "unmanaged": [
-  "bold_hermann",
+  "awesome_chandrasekhar",
   "ci-sequestria",
   "condescending_joliot",
   "serene_elgamal",
@@ -271,6 +271,16 @@
     "etalon": {
      "queue": 24,
      "at": "2026-10-04T06:30:00Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 136,
+     "at": "2026-10-04T06:46:45Z",
+     "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 25,
+     "at": "2026-10-04T06:59:52Z",
      "outcome": null
     }
    },
@@ -278,7 +288,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 1.0
   },
   "passes": [
    {
@@ -362,6 +372,32 @@
    {
     "repo": "etalon",
     "log": "etalon.20261004T063000Z.log",
+    "result": "success",
+    "turns": 109,
+    "cost_usd": 4.0352,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/etalon/pull/88",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-04T06:30:00Z"
+   },
+   {
+    "repo": "realisateur",
+    "log": "realisateur.20261004T064645Z.log",
+    "result": "success",
+    "turns": 59,
+    "cost_usd": 1.4682,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1440",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-04T06:46:45Z"
+   },
+   {
+    "repo": "bibliothecaire",
+    "log": "bibliothecaire.20261004T065952Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -370,33 +406,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T06:30:00Z"
-   },
-   {
-    "repo": "realisateur",
-    "log": "realisateur.20261004T052514Z.log",
-    "result": "success",
-    "turns": 37,
-    "cost_usd": 0.8474,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1439",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-04T05:25:14Z"
-   },
-   {
-    "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261004T040417Z.log",
-    "result": "success",
-    "turns": 38,
-    "cost_usd": 0.9876,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/140",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-04T04:04:17Z"
+    "at": "2026-10-04T06:59:52Z"
    },
    {
     "repo": "secretaire",
