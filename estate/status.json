@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T04:20:01Z",
+ "generated_at": "2026-10-05T04:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T05:20:01Z",
+ "valid_until": "2026-10-05T05:40:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -61,9 +61,9 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T03:46:03Z",
+   "started_at": "2026-10-05T04:32:46Z",
    "finished_at": null,
-   "ports_published": false
+   "ports_published": true
   },
   {
    "name": "serene_elgamal",
@@ -85,9 +85,9 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T03:46:03Z",
+   "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
-   "ports_published": false
+   "ports_published": true
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -133,9 +133,9 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T03:46:05Z",
+   "started_at": "2026-10-05T04:32:19Z",
    "finished_at": null,
-   "ports_published": false
+   "ports_published": true
   },
   {
    "name": "zaxon-relay",
@@ -143,9 +143,9 @@
    "project": "zaxon",
    "state": "running",
    "health": "healthy",
-   "restarts": 5,
+   "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T04:15:54Z",
+   "started_at": "2026-10-05T04:32:20Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -155,9 +155,9 @@
    "project": "zaxon",
    "state": "running",
    "health": null,
-   "restarts": 5,
+   "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T04:15:52Z",
+   "started_at": "2026-10-05T04:32:20Z",
    "finished_at": null,
    "ports_published": null
   }
@@ -295,7 +295,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 22.3
+   "age_h": 22.7
   },
   "passes": [
    {
@@ -475,11 +475,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "roster: running with NONE of its declared ports published",
-  "whisper: running with NONE of its declared ports published",
-  "zaxon-gateway: running with NONE of its declared ports published",
-  "zaxon-relay: restarted 5 times",
-  "zaxon-watcher: restarted 5 times",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
