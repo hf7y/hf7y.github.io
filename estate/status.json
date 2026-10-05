@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-05T10:40:01Z",
+ "generated_at": "2026-10-05T11:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T11:40:01Z",
+ "valid_until": "2026-10-05T12:00:01Z",
  "containers": [
   {
-   "name": "admiring_pike",
+   "name": "blissful_boyd",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T10:39:32Z",
+   "started_at": "2026-10-05T10:57:27Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "clever_lichterman",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T10:42:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
    "project": null,
@@ -39,6 +51,18 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
+   "ports_published": null
+  },
+  {
+   "name": "crazy_kalam",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T10:52:31Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -54,18 +78,6 @@
    "ports_published": null
   },
   {
-   "name": "gracious_golick",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T10:37:50Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -76,18 +88,6 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
-  },
-  {
-   "name": "interesting_chandrasekhar",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T10:38:35Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "objective_galileo",
@@ -272,11 +272,11 @@
   }
  ],
  "unmanaged": [
-  "admiring_pike",
+  "blissful_boyd",
   "ci-sequestria",
+  "clever_lichterman",
   "condescending_joliot",
-  "gracious_golick",
-  "interesting_chandrasekhar",
+  "crazy_kalam",
   "objective_galileo",
   "objective_thompson",
   "quizzical_heyrovsky",
@@ -316,7 +316,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 3.9
+   "age_h": 4.2
   },
   "passes": [
    {
@@ -386,7 +386,7 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261005T103927Z.log",
+    "log": "senechal.20261005T105225Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -395,7 +395,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T10:39:27Z"
+    "at": "2026-10-05T10:52:25Z"
    },
    {
     "repo": "etalon",
