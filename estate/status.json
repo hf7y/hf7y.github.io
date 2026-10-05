@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T07:20:02Z",
+ "generated_at": "2026-10-05T07:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T08:20:02Z",
+ "valid_until": "2026-10-05T08:40:02Z",
  "containers": [
   {
    "name": "blissful_banzai",
@@ -18,14 +18,26 @@
    "ports_published": null
   },
   {
-   "name": "busy_perlman",
+   "name": "bold_taussig",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T05:49:09Z",
+   "started_at": "2026-10-05T07:26:34Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "charming_jemison",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T07:24:03Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -98,18 +110,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T06:41:57Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "frosty_brattain",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T06:03:51Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -369,13 +369,13 @@
  ],
  "unmanaged": [
   "blissful_banzai",
-  "busy_perlman",
+  "bold_taussig",
+  "charming_jemison",
   "ci-sequestria",
   "condescending_joliot",
   "dazzling_newton",
   "distracted_lichterman",
   "flamboyant_mclean",
-  "frosty_brattain",
   "heuristic_bardeen",
   "hopeful_diffie",
   "interesting_elion",
@@ -420,7 +420,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -451,7 +451,7 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261005T054903Z.log",
+    "log": "musc-2300.20261005T072634Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -460,7 +460,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T05:49:03Z"
+    "at": "2026-10-05T07:26:34Z"
    },
    {
     "repo": "groc-mangr",
@@ -477,7 +477,7 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261005T060344Z.log",
+    "log": "wtul.20261005T072401Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -486,7 +486,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T06:03:44Z"
+    "at": "2026-10-05T07:24:01Z"
    },
    {
     "repo": "senechal",
