@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-05T13:20:01Z",
+ "generated_at": "2026-10-05T13:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T14:20:01Z",
+ "valid_until": "2026-10-05T14:40:02Z",
  "containers": [
+  {
+   "name": "affectionate_dhawan",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T13:27:36Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -38,6 +50,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "flamboyant_chaum",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T13:29:10Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -78,18 +102,6 @@
    "ports_published": true
   },
   {
-   "name": "sad_snyder",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T12:27:06Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "serene_elgamal",
    "image": "sha256:6e1a93ea163db68d7caf6fecb48e3fca66143fa333b54117f0480470406772e3",
    "project": null,
@@ -99,18 +111,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "vibrant_rubin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T12:41:20Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -236,12 +236,12 @@
   }
  ],
  "unmanaged": [
+  "affectionate_dhawan",
   "ci-sequestria",
   "condescending_joliot",
+  "flamboyant_chaum",
   "inspiring_galois",
-  "sad_snyder",
   "serene_elgamal",
-  "vibrant_rubin",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -277,7 +277,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 6.6
+   "age_h": 6.9
   },
   "passes": [
    {
@@ -386,7 +386,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261005T122706Z.log",
+    "log": "bibliothecaire.20261005T132735Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -395,7 +395,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T12:27:06Z"
+    "at": "2026-10-05T13:27:35Z"
    },
    {
     "repo": "secretaire",
