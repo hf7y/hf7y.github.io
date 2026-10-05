@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-05T12:40:02Z",
+ "generated_at": "2026-10-05T13:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T13:40:02Z",
+ "valid_until": "2026-10-05T14:00:02Z",
  "containers": [
+  {
+   "name": "blissful_grothendieck",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T12:58:33Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -66,30 +78,6 @@
    "ports_published": null
   },
   {
-   "name": "magical_mahavira",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T12:07:21Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "recursing_dirac",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T12:37:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -123,6 +111,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "vibrant_rubin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T12:41:20Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -248,13 +248,13 @@
   }
  ],
  "unmanaged": [
+  "blissful_grothendieck",
   "ci-sequestria",
   "condescending_joliot",
   "inspiring_galois",
-  "magical_mahavira",
-  "recursing_dirac",
   "sad_snyder",
   "serene_elgamal",
+  "vibrant_rubin",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -290,7 +290,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 5.9
+   "age_h": 6.2
   },
   "passes": [
    {
@@ -439,12 +439,12 @@
    {
     "repo": "chezz",
     "log": "chezz.20261005T123747Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "result": "success",
+    "turns": 58,
+    "cost_usd": 1.5339,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/chezz/pull/181",
     "tree": null,
     "note": null,
     "at": "2026-10-05T12:37:47Z"
