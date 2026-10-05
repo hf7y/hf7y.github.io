@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-05T06:00:02Z",
+ "generated_at": "2026-10-05T06:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T07:00:02Z",
+ "valid_until": "2026-10-05T07:20:01Z",
  "containers": [
-  {
-   "name": "adoring_goldberg",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T05:50:56Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "busy_perlman",
    "image": "ghcr.io/hf7y-estate/agent:latest",
@@ -62,6 +50,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "frosty_brattain",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:03:51Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -114,14 +114,14 @@
    "ports_published": null
   },
   {
-   "name": "thirsty_ganguly",
+   "name": "serene_mendeleev",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T05:39:31Z",
+   "started_at": "2026-10-05T06:10:39Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -248,13 +248,13 @@
   }
  ],
  "unmanaged": [
-  "adoring_goldberg",
   "busy_perlman",
   "ci-sequestria",
   "condescending_joliot",
+  "frosty_brattain",
   "frosty_payne",
   "serene_elgamal",
-  "thirsty_ganguly",
+  "serene_mendeleev",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -279,26 +279,39 @@
    "started_at": "2026-10-05T06:00:01Z",
    "finished_at": null,
    "turns": 150,
-   "image": null,
+   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
-   "skipped": [],
+   "dispatched": {
+    "crt": {
+     "queue": 12,
+     "at": "2026-10-05T06:00:07Z",
+     "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 50,
+     "at": "2026-10-05T06:14:31Z",
+     "outcome": null
+    }
+   },
+   "skipped": [
+    "dog"
+   ],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261004T060009Z.log",
+    "log": "crt.20261005T060007Z.log",
     "result": "success",
-    "turns": 19,
-    "cost_usd": 0.4296,
+    "turns": 52,
+    "cost_usd": 1.7164,
     "rc": 0,
     "report": "present",
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/crt/pull/417",
     "tree": null,
     "note": null,
-    "at": "2026-10-04T06:00:09Z"
+    "at": "2026-10-05T06:00:07Z"
    },
    {
     "repo": "dog",
@@ -341,7 +354,7 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261005T055050Z.log",
+    "log": "wtul.20261005T060344Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -350,7 +363,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T05:50:50Z"
+    "at": "2026-10-05T06:03:44Z"
    },
    {
     "repo": "senechal",
@@ -380,7 +393,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261005T053925Z.log",
+    "log": "realisateur.20261005T061032Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -389,7 +402,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T05:39:25Z"
+    "at": "2026-10-05T06:10:32Z"
    },
    {
     "repo": "bibliothecaire",
