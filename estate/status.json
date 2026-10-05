@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T16:20:02Z",
+ "generated_at": "2026-10-05T16:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T17:20:02Z",
+ "valid_until": "2026-10-05T17:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "focused_aryabhata",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T16:06:07Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -238,7 +226,6 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "focused_aryabhata",
   "hardcore_moser",
   "inspiring_galois",
   "serene_elgamal",
@@ -279,7 +266,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -389,12 +376,12 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261005T160606Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "result": "success",
+    "turns": 141,
+    "cost_usd": 5.4907,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/156",
     "tree": null,
     "note": null,
     "at": "2026-10-05T16:06:06Z"
