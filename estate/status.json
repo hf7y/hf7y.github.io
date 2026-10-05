@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T15:20:02Z",
+ "generated_at": "2026-10-05T15:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T16:20:02Z",
+ "valid_until": "2026-10-05T16:40:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "crazy_colden",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T15:23:34Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -38,18 +50,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "ecstatic_jepsen",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T15:09:49Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -78,6 +78,18 @@
    "ports_published": null
   },
   {
+   "name": "lucid_elgamal",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T15:26:06Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -102,14 +114,14 @@
    "ports_published": null
   },
   {
-   "name": "suspicious_mendel",
+   "name": "silly_poincare",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T14:29:10Z",
+   "started_at": "2026-10-05T15:39:20Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -238,10 +250,11 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "ecstatic_jepsen",
+  "crazy_colden",
   "inspiring_galois",
+  "lucid_elgamal",
   "serene_elgamal",
-  "suspicious_mendel",
+  "silly_poincare",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -262,36 +275,36 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261005T064502Z.log",
-   "started_at": "2026-10-05T06:45:02Z",
-   "finished_at": "2026-10-05T08:18:20Z",
+   "log": "nightly.20261005T152555Z.log",
+   "started_at": "2026-10-05T15:25:55Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "abletim": {
-     "queue": 30,
-     "at": "2026-10-05T07:50:41Z",
-     "outcome": "finished"
+    "crt": {
+     "queue": 12,
+     "at": "2026-10-05T15:26:03Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 8.6
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261005T095123Z.log",
-    "result": "success",
-    "turns": 60,
-    "cost_usd": 1.3056,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/crt/pull/420",
+    "log": "crt.20261005T152603Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T09:51:23Z"
+    "at": "2026-10-05T15:26:03Z"
    },
    {
     "repo": "dog",
@@ -386,7 +399,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261005T142909Z.log",
+    "log": "bibliothecaire.20261005T153919Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -395,7 +408,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T14:29:09Z"
+    "at": "2026-10-05T15:39:19Z"
    },
    {
     "repo": "secretaire",
@@ -457,6 +470,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
