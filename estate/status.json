@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T04:40:01Z",
+ "generated_at": "2026-10-05T05:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T05:40:01Z",
+ "valid_until": "2026-10-05T06:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "cool_pascal",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T04:56:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -52,6 +64,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "lucid_almeida",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T04:55:49Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -202,6 +226,8 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
+  "cool_pascal",
+  "lucid_almeida",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -295,7 +321,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 22.7
+   "age_h": 23.0
   },
   "passes": [
    {
@@ -430,16 +456,16 @@
    },
    {
     "repo": "space-canon",
-    "log": "space-canon.20261004T071513Z.log",
-    "result": "success",
-    "turns": 25,
-    "cost_usd": 0.5172,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/space-canon/pull/22",
+    "log": "space-canon.20261005T045542Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T07:15:13Z"
+    "at": "2026-10-05T04:55:42Z"
    },
    {
     "repo": "chezz",
