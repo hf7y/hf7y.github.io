@@ -1,10 +1,34 @@
 {
- "generated_at": "2026-10-05T05:40:02Z",
+ "generated_at": "2026-10-05T06:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T06:40:02Z",
+ "valid_until": "2026-10-05T07:00:02Z",
  "containers": [
+  {
+   "name": "adoring_goldberg",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T05:50:56Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "busy_perlman",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T05:49:09Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -42,6 +66,18 @@
    "ports_published": null
   },
   {
+   "name": "frosty_payne",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T05:57:07Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -52,18 +88,6 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
-  },
-  {
-   "name": "reverent_williams",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T05:39:35Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -87,18 +111,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "sleepy_goldwasser",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T05:39:38Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -236,11 +248,12 @@
   }
  ],
  "unmanaged": [
+  "adoring_goldberg",
+  "busy_perlman",
   "ci-sequestria",
   "condescending_joliot",
-  "reverent_williams",
+  "frosty_payne",
   "serene_elgamal",
-  "sleepy_goldwasser",
   "thirsty_ganguly",
   "xenodochial_wilson"
  ],
@@ -262,19 +275,13 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261005T053927Z.log",
-   "started_at": "2026-10-05T05:39:27Z",
+   "log": "nightly.20261005T060001Z.log",
+   "started_at": "2026-10-05T06:00:01Z",
    "finished_at": null,
    "turns": 150,
-   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
+   "image": null,
    "pull_failed": null,
-   "dispatched": {
-    "wtul": {
-     "queue": 36,
-     "at": "2026-10-05T05:39:31Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
    "age_h": 0.0
@@ -308,7 +315,7 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261005T053930Z.log",
+    "log": "musc-2300.20261005T054903Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -317,7 +324,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T05:39:30Z"
+    "at": "2026-10-05T05:49:03Z"
    },
    {
     "repo": "groc-mangr",
@@ -334,7 +341,7 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261005T053931Z.log",
+    "log": "wtul.20261005T055050Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -343,7 +350,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T05:39:31Z"
+    "at": "2026-10-05T05:50:50Z"
    },
    {
     "repo": "senechal",
