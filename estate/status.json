@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T17:00:02Z",
+ "generated_at": "2026-10-05T17:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T18:00:02Z",
+ "valid_until": "2026-10-05T18:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -62,18 +62,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T12:00:03Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "relaxed_elion",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T16:46:34Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -227,7 +215,6 @@
   "ci-sequestria",
   "condescending_joliot",
   "inspiring_galois",
-  "relaxed_elion",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -266,7 +253,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.6
+   "age_h": 1.9
   },
   "passes": [
    {
