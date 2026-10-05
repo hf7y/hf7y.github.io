@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T12:00:02Z",
+ "generated_at": "2026-10-05T12:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T13:00:02Z",
+ "valid_until": "2026-10-05T13:20:01Z",
  "containers": [
   {
    "name": "boring_raman",
@@ -42,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "crazy_kalam",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T10:52:31Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -66,14 +54,14 @@
    "ports_published": null
   },
   {
-   "name": "ecstatic_galois",
+   "name": "goofy_tu",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T11:04:21Z",
+   "started_at": "2026-10-05T12:07:02Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -90,14 +78,26 @@
    "ports_published": false
   },
   {
-   "name": "pensive_hawking",
+   "name": "inspiring_galois",
+   "image": "musc-2300:local",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T12:00:03Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "magical_mahavira",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T11:43:13Z",
+   "started_at": "2026-10-05T12:07:21Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -123,6 +123,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "trusting_chaplygin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T12:14:33Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -251,10 +263,11 @@
   "boring_raman",
   "ci-sequestria",
   "condescending_joliot",
-  "crazy_kalam",
-  "ecstatic_galois",
-  "pensive_hawking",
+  "goofy_tu",
+  "inspiring_galois",
+  "magical_mahavira",
   "serene_elgamal",
+  "trusting_chaplygin",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -290,7 +303,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 5.2
+   "age_h": 5.6
   },
   "passes": [
    {
@@ -360,7 +373,7 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261005T105225Z.log",
+    "log": "senechal.20261005T120701Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -369,7 +382,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T10:52:25Z"
+    "at": "2026-10-05T12:07:01Z"
    },
    {
     "repo": "etalon",
@@ -387,11 +400,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261005T110415Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
+    "result": "success",
+    "turns": 107,
+    "cost_usd": 3.1137,
+    "rc": 0,
+    "report": "present",
     "pr": null,
     "tree": null,
     "note": null,
