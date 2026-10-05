@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T04:00:02Z",
+ "generated_at": "2026-10-05T04:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T05:00:02Z",
+ "valid_until": "2026-10-05T05:20:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -143,9 +143,9 @@
    "project": "zaxon",
    "state": "running",
    "health": "healthy",
-   "restarts": 2,
+   "restarts": 5,
    "exit_code": null,
-   "started_at": "2026-10-05T03:59:22Z",
+   "started_at": "2026-10-05T04:15:54Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -155,9 +155,9 @@
    "project": "zaxon",
    "state": "running",
    "health": null,
-   "restarts": 2,
+   "restarts": 5,
    "exit_code": null,
-   "started_at": "2026-10-05T03:59:21Z",
+   "started_at": "2026-10-05T04:15:52Z",
    "finished_at": null,
    "ports_published": null
   }
@@ -295,7 +295,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 22.0
+   "age_h": 22.3
   },
   "passes": [
    {
@@ -478,6 +478,8 @@
   "roster: running with NONE of its declared ports published",
   "whisper: running with NONE of its declared ports published",
   "zaxon-gateway: running with NONE of its declared ports published",
+  "zaxon-relay: restarted 5 times",
+  "zaxon-watcher: restarted 5 times",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
