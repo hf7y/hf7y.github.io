@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-05T11:20:02Z",
+ "generated_at": "2026-10-05T11:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T12:20:02Z",
+ "valid_until": "2026-10-05T12:40:01Z",
  "containers": [
+  {
+   "name": "boring_raman",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T11:23:53Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -78,18 +90,6 @@
    "ports_published": null
   },
   {
-   "name": "exciting_stonebraker",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T11:04:00Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -100,18 +100,6 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
-  },
-  {
-   "name": "intelligent_chandrasekhar",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T11:03:05Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -260,13 +248,12 @@
   }
  ],
  "unmanaged": [
+  "boring_raman",
   "ci-sequestria",
   "competent_brahmagupta",
   "condescending_joliot",
   "crazy_kalam",
   "ecstatic_galois",
-  "exciting_stonebraker",
-  "intelligent_chandrasekhar",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -303,7 +290,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 4.6
+   "age_h": 4.9
   },
   "passes": [
    {
@@ -426,6 +413,19 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261005T110304Z.log",
+    "result": "success",
+    "turns": 51,
+    "cost_usd": 1.4451,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/71",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-05T11:03:04Z"
+   },
+   {
+    "repo": "space-canon",
+    "log": "space-canon.20261005T112352Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -434,20 +434,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T11:03:04Z"
-   },
-   {
-    "repo": "space-canon",
-    "log": "space-canon.20261005T102211Z.log",
-    "result": "success",
-    "turns": 98,
-    "cost_usd": 3.5428,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/space-canon/pull/28",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-05T10:22:11Z"
+    "at": "2026-10-05T11:23:52Z"
    },
    {
     "repo": "chezz",
