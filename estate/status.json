@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T05:20:01Z",
+ "generated_at": "2026-10-05T05:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T06:20:01Z",
+ "valid_until": "2026-10-05T06:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "clever_haibt",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T05:12:35Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,6 +54,18 @@
    "ports_published": false
   },
   {
+   "name": "reverent_williams",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T05:39:35Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -87,6 +87,30 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "sleepy_goldwasser",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T05:39:38Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "thirsty_ganguly",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T05:39:31Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +237,11 @@
  ],
  "unmanaged": [
   "ci-sequestria",
-  "clever_haibt",
   "condescending_joliot",
+  "reverent_williams",
   "serene_elgamal",
+  "sleepy_goldwasser",
+  "thirsty_ganguly",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -236,79 +262,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261004T060001Z.log",
-   "started_at": "2026-10-04T06:00:01Z",
-   "finished_at": "2026-10-04T07:33:31Z",
+   "log": "nightly.20261005T053927Z.log",
+   "started_at": "2026-10-05T05:39:27Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "crt": {
-     "queue": 8,
-     "at": "2026-10-04T06:00:09Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 42,
-     "at": "2026-10-04T06:02:41Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 10,
-     "at": "2026-10-04T06:07:42Z",
-     "outcome": "finished"
-    },
     "wtul": {
      "queue": 36,
-     "at": "2026-10-04T06:13:26Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 29,
-     "at": "2026-10-04T06:25:21Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 24,
-     "at": "2026-10-04T06:30:00Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 136,
-     "at": "2026-10-04T06:46:45Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 25,
-     "at": "2026-10-04T06:59:52Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 5,
-     "at": "2026-10-04T07:12:34Z",
-     "outcome": "finished"
-    },
-    "space-canon": {
-     "queue": 8,
-     "at": "2026-10-04T07:15:13Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 7,
-     "at": "2026-10-04T07:17:37Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 5,
-     "at": "2026-10-04T07:29:55Z",
-     "outcome": "finished"
+     "at": "2026-10-05T05:39:31Z",
+     "outcome": null
     }
    },
-   "skipped": [
-    "dog"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 23.3
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -339,16 +308,16 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261004T060241Z.log",
-    "result": "success",
-    "turns": 58,
-    "cost_usd": 1.1854,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/188",
+    "log": "musc-2300.20261005T053930Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T06:02:41Z"
+    "at": "2026-10-05T05:39:30Z"
    },
    {
     "repo": "groc-mangr",
@@ -365,16 +334,16 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261004T061326Z.log",
-    "result": "success",
-    "turns": 51,
-    "cost_usd": 2.0196,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/wtul/pull/443",
+    "log": "wtul.20261005T053931Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T06:13:26Z"
+    "at": "2026-10-05T05:39:31Z"
    },
    {
     "repo": "senechal",
@@ -404,16 +373,16 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261004T064645Z.log",
-    "result": "success",
-    "turns": 59,
-    "cost_usd": 1.4682,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1440",
+    "log": "realisateur.20261005T053925Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T06:46:45Z"
+    "at": "2026-10-05T05:39:25Z"
    },
    {
     "repo": "bibliothecaire",
@@ -488,6 +457,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
