@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T16:00:02Z",
+ "generated_at": "2026-10-05T16:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T17:00:02Z",
+ "valid_until": "2026-10-05T17:20:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "crazy_colden",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T15:23:34Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -50,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "focused_aryabhata",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T16:06:07Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -64,6 +64,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "hardcore_moser",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T16:05:34Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "inspiring_galois",
@@ -99,18 +111,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "thirsty_carson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T15:56:24Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -238,10 +238,10 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "crazy_colden",
+  "focused_aryabhata",
+  "hardcore_moser",
   "inspiring_galois",
   "serene_elgamal",
-  "thirsty_carson",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -279,7 +279,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -388,7 +388,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261005T155616Z.log",
+    "log": "bibliothecaire.20261005T160606Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -397,7 +397,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T15:56:16Z"
+    "at": "2026-10-05T16:06:06Z"
    },
    {
     "repo": "secretaire",
