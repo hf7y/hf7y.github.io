@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-05T06:40:02Z",
+ "generated_at": "2026-10-05T07:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T07:40:02Z",
+ "valid_until": "2026-10-05T08:00:01Z",
  "containers": [
+  {
+   "name": "blissful_banzai",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:41:49Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "busy_perlman",
    "image": "ghcr.io/hf7y-estate/agent:latest",
@@ -42,6 +54,18 @@
    "ports_published": null
   },
   {
+   "name": "dazzling_newton",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:41:49Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -50,6 +74,30 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "flamboyant_mclean",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:41:57Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "friendly_carver",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:41:46Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,6 +114,18 @@
    "ports_published": null
   },
   {
+   "name": "gallant_kare",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:41:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -78,6 +138,30 @@
    "ports_published": false
   },
   {
+   "name": "interesting_elion",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:45:09Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "naughty_haslett",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:41:58Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "nostalgic_mclean",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -86,6 +170,30 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T06:35:54Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "quizzical_clarke",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:41:42Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "recursing_wright",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:43:15Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -111,6 +219,30 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "vigorous_bhaskara",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:45:05Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "vigorous_volhard",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T06:43:14Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -236,12 +368,23 @@
   }
  ],
  "unmanaged": [
+  "blissful_banzai",
   "busy_perlman",
   "ci-sequestria",
   "condescending_joliot",
+  "dazzling_newton",
+  "flamboyant_mclean",
+  "friendly_carver",
   "frosty_brattain",
+  "gallant_kare",
+  "interesting_elion",
+  "naughty_haslett",
   "nostalgic_mclean",
+  "quizzical_clarke",
+  "recursing_wright",
   "serene_elgamal",
+  "vigorous_bhaskara",
+  "vigorous_volhard",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -262,29 +405,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261005T060001Z.log",
-   "started_at": "2026-10-05T06:00:01Z",
+   "log": "nightly.20261005T064502Z.log",
+   "started_at": "2026-10-05T06:45:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "crt": {
-     "queue": 12,
-     "at": "2026-10-05T06:00:07Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 50,
-     "at": "2026-10-05T06:14:31Z",
+    "abletim": {
+     "queue": 22,
+     "at": "2026-10-05T06:45:07Z",
      "outcome": null
     }
    },
-   "skipped": [
-    "dog"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -328,16 +464,16 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261004T060742Z.log",
-    "result": "success",
-    "turns": 68,
-    "cost_usd": 2.0319,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/381",
+    "log": "groc-mangr.20261005T064148Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T06:07:42Z"
+    "at": "2026-10-05T06:41:48Z"
    },
    {
     "repo": "wtul",
@@ -354,29 +490,29 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261004T062521Z.log",
-    "result": "success",
-    "turns": 30,
-    "cost_usd": 0.8367,
-    "rc": 0,
-    "report": "present",
+    "log": "senechal.20261005T064313Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T06:25:21Z"
+    "at": "2026-10-05T06:43:13Z"
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261004T063000Z.log",
-    "result": "success",
-    "turns": 109,
-    "cost_usd": 4.0352,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/etalon/pull/88",
+    "log": "etalon.20261005T064141Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T06:30:00Z"
+    "at": "2026-10-05T06:41:41Z"
    },
    {
     "repo": "realisateur",
@@ -393,16 +529,16 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261004T065952Z.log",
-    "result": "success",
-    "turns": 88,
-    "cost_usd": 3.4505,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/141",
+    "log": "bibliothecaire.20261005T064153Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T06:59:52Z"
+    "at": "2026-10-05T06:41:53Z"
    },
    {
     "repo": "secretaire",
@@ -432,16 +568,16 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261004T071737Z.log",
-    "result": "success",
-    "turns": 60,
-    "cost_usd": 1.8737,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/chezz/pull/173",
+    "log": "chezz.20261005T064151Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-04T07:17:37Z"
+    "at": "2026-10-05T06:41:51Z"
    }
   ],
   "dispatch_source": {
