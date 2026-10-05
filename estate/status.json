@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T07:40:02Z",
+ "generated_at": "2026-10-05T08:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T08:40:02Z",
+ "valid_until": "2026-10-05T09:00:02Z",
  "containers": [
   {
    "name": "blissful_banzai",
@@ -26,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T07:26:34Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "charming_jemison",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T07:24:03Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -102,6 +90,18 @@
    "ports_published": null
   },
   {
+   "name": "fervent_goldberg",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T07:50:48Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "flamboyant_mclean",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -150,14 +150,14 @@
    "ports_published": null
   },
   {
-   "name": "interesting_elion",
+   "name": "mystifying_jennings",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T06:45:09Z",
+   "started_at": "2026-10-05T07:49:16Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -370,15 +370,15 @@
  "unmanaged": [
   "blissful_banzai",
   "bold_taussig",
-  "charming_jemison",
   "ci-sequestria",
   "condescending_joliot",
   "dazzling_newton",
   "distracted_lichterman",
+  "fervent_goldberg",
   "flamboyant_mclean",
   "heuristic_bardeen",
   "hopeful_diffie",
-  "interesting_elion",
+  "mystifying_jennings",
   "nostalgic_mclean",
   "quizzical_clarke",
   "recursing_wright",
@@ -413,14 +413,14 @@
    "pull_failed": null,
    "dispatched": {
     "abletim": {
-     "queue": 22,
-     "at": "2026-10-05T06:45:07Z",
+     "queue": 30,
+     "at": "2026-10-05T07:50:41Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -477,7 +477,7 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261005T072401Z.log",
+    "log": "wtul.20261005T074909Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -486,7 +486,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-05T07:24:01Z"
+    "at": "2026-10-05T07:49:09Z"
    },
    {
     "repo": "senechal",
