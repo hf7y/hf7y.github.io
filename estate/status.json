@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-05T11:40:01Z",
+ "generated_at": "2026-10-05T12:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-05T12:40:01Z",
+ "valid_until": "2026-10-05T13:00:02Z",
  "containers": [
   {
    "name": "boring_raman",
@@ -26,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "competent_brahmagupta",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T11:14:46Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -100,6 +88,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "pensive_hawking",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-05T11:43:13Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -250,10 +250,10 @@
  "unmanaged": [
   "boring_raman",
   "ci-sequestria",
-  "competent_brahmagupta",
   "condescending_joliot",
   "crazy_kalam",
   "ecstatic_galois",
+  "pensive_hawking",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -290,7 +290,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 4.9
+   "age_h": 5.2
   },
   "passes": [
    {
