@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-06T12:40:02Z",
+ "generated_at": "2026-10-06T13:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T13:40:02Z",
+ "valid_until": "2026-10-06T14:00:01Z",
  "containers": [
-  {
-   "name": "amazing_borg",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T12:17:15Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -112,6 +100,18 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "wizardly_kalam",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T12:47:12Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -224,11 +224,11 @@
   }
  ],
  "unmanaged": [
-  "amazing_borg",
   "ci-sequestria",
   "condescending_joliot",
   "inspiring_galois",
   "serene_elgamal",
+  "wizardly_kalam",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -284,6 +284,11 @@
     "etalon": {
      "queue": 30,
      "at": "2026-10-06T12:17:08Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 150,
+     "at": "2026-10-06T12:47:09Z",
      "outcome": null
     }
    },
@@ -291,7 +296,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.5
+   "age_h": 2.9
   },
   "passes": [
    {
@@ -375,6 +380,19 @@
    {
     "repo": "etalon",
     "log": "etalon.20261006T121708Z.log",
+    "result": "success",
+    "turns": 103,
+    "cost_usd": 3.3305,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/etalon/pull/104",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T12:17:08Z"
+   },
+   {
+    "repo": "realisateur",
+    "log": "realisateur.20261006T124709Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -383,20 +401,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T12:17:08Z"
-   },
-   {
-    "repo": "realisateur",
-    "log": "realisateur.20261006T073804Z.log",
-    "result": "success",
-    "turns": 118,
-    "cost_usd": 3.75,
-    "rc": 0,
-    "report": "present",
-    "pr": null,
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T07:38:04Z"
+    "at": "2026-10-06T12:47:09Z"
    },
    {
     "repo": "bibliothecaire",
