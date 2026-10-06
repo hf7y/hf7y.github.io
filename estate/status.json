@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T15:40:02Z",
+ "generated_at": "2026-10-06T16:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T16:40:02Z",
+ "valid_until": "2026-10-06T17:00:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -42,14 +42,14 @@
    "ports_published": null
   },
   {
-   "name": "eloquent_kowalevski",
+   "name": "friendly_ramanujan",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-06T15:27:57Z",
+   "started_at": "2026-10-06T15:51:15Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -226,7 +226,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "eloquent_kowalevski",
+  "friendly_ramanujan",
   "inspiring_galois",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -304,6 +304,16 @@
     "space-canon": {
      "queue": 3,
      "at": "2026-10-06T15:27:55Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 5,
+     "at": "2026-10-06T15:41:55Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-06T15:51:13Z",
      "outcome": null
     }
    },
@@ -311,7 +321,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.5
+   "age_h": 1.9
   },
   "passes": [
    {
@@ -447,28 +457,28 @@
    {
     "repo": "space-canon",
     "log": "space-canon.20261006T152755Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "result": "success",
+    "turns": 73,
+    "cost_usd": 1.9425,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/space-canon/pull/30",
     "tree": null,
     "note": null,
     "at": "2026-10-06T15:27:55Z"
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261006T134716Z.log",
+    "log": "chezz.20261006T154155Z.log",
     "result": "success",
-    "turns": 29,
-    "cost_usd": 0.6847,
+    "turns": 25,
+    "cost_usd": 0.647,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/chezz/pull/183",
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T13:47:16Z"
+    "at": "2026-10-06T15:41:55Z"
    }
   ],
   "dispatch_source": {
