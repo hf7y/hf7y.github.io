@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T23:20:02Z",
+ "generated_at": "2026-10-06T23:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T00:20:02Z",
+ "valid_until": "2026-10-07T00:40:02Z",
  "containers": [
   {
    "name": "clever_zhukovsky",
@@ -62,6 +62,30 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T12:00:03Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "keen_ardinghelli",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T23:36:09Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "nifty_raman",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T23:32:51Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -215,6 +239,8 @@
   "clever_zhukovsky",
   "condescending_joliot",
   "inspiring_galois",
+  "keen_ardinghelli",
+  "nifty_raman",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -236,16 +262,16 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261006T231614Z.log",
-   "started_at": "2026-10-06T23:16:14Z",
+   "log": "nightly.20261006T233551Z.log",
+   "started_at": "2026-10-06T23:35:51Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "realisateur": {
+    "crt": {
      "queue": 1,
-     "at": "2026-10-06T23:16:26Z",
+     "at": "2026-10-06T23:36:01Z",
      "outcome": null
     }
    },
@@ -256,15 +282,15 @@
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261006T210714Z.log",
-    "result": "success",
-    "turns": 108,
-    "cost_usd": 3.4321,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/437",
+    "log": "crt.20261006T233601Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-06T21:07:14Z"
+    "at": "2026-10-06T23:36:01Z"
    },
    {
     "repo": "dog",
@@ -316,15 +342,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261006T223652Z.log",
-    "result": "success",
-    "turns": 65,
-    "cost_usd": 2.0175,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1129",
-    "commented": true,
+    "log": "senechal.20261006T233249Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-06T22:36:52Z"
+    "at": "2026-10-06T23:32:49Z"
    },
    {
     "repo": "etalon",
@@ -421,6 +447,8 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "crt: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
