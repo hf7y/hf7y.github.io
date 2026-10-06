@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-06T17:20:03Z",
+ "generated_at": "2026-10-06T17:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T18:20:03Z",
+ "valid_until": "2026-10-06T18:40:01Z",
  "containers": [
-  {
-   "name": "affectionate_napier",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T16:58:03Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -50,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "gifted_wu",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T17:34:32Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -224,9 +224,9 @@
   }
  ],
  "unmanaged": [
-  "affectionate_napier",
   "ci-sequestria",
   "condescending_joliot",
+  "gifted_wu",
   "inspiring_galois",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -274,6 +274,11 @@
     "wtul": {
      "queue": 32,
      "at": "2026-10-06T16:58:01Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 10,
+     "at": "2026-10-06T17:34:25Z",
      "outcome": null
     }
    },
@@ -281,7 +286,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.2
+   "age_h": 1.5
   },
   "passes": [
    {
@@ -339,6 +344,19 @@
    {
     "repo": "wtul",
     "log": "wtul.20261006T165801Z.log",
+    "result": "success",
+    "turns": 72,
+    "cost_usd": 2.0173,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/wtul/pull/457",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T16:58:01Z"
+   },
+   {
+    "repo": "senechal",
+    "log": "senechal.20261006T173425Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -347,20 +365,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T16:58:01Z"
-   },
-   {
-    "repo": "senechal",
-    "log": "senechal.20261006T145555Z.log",
-    "result": "success",
-    "turns": 56,
-    "cost_usd": 1.1648,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1116",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T14:55:55Z"
+    "at": "2026-10-06T17:34:25Z"
    },
    {
     "repo": "etalon",
