@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-06T12:00:02Z",
+ "generated_at": "2026-10-06T12:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T13:00:02Z",
+ "valid_until": "2026-10-06T13:20:02Z",
  "containers": [
+  {
+   "name": "amazing_borg",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T12:17:15Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -52,18 +64,6 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
-  },
-  {
-   "name": "hungry_beaver",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T11:40:11Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "inspiring_galois",
@@ -224,9 +224,9 @@
   }
  ],
  "unmanaged": [
+  "amazing_borg",
   "ci-sequestria",
   "condescending_joliot",
-  "hungry_beaver",
   "inspiring_galois",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -279,6 +279,11 @@
     "senechal": {
      "queue": 13,
      "at": "2026-10-06T11:40:08Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 30,
+     "at": "2026-10-06T12:17:08Z",
      "outcome": null
     }
    },
@@ -286,7 +291,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 2.2
   },
   "passes": [
    {
@@ -357,6 +362,19 @@
    {
     "repo": "senechal",
     "log": "senechal.20261006T114008Z.log",
+    "result": "success",
+    "turns": 95,
+    "cost_usd": 3.9749,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1114",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T11:40:08Z"
+   },
+   {
+    "repo": "etalon",
+    "log": "etalon.20261006T121708Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -365,20 +383,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T11:40:08Z"
-   },
-   {
-    "repo": "etalon",
-    "log": "etalon.20261006T072511Z.log",
-    "result": "success",
-    "turns": 85,
-    "cost_usd": 2.7288,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/etalon/pull/103",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T07:25:11Z"
+    "at": "2026-10-06T12:17:08Z"
    },
    {
     "repo": "realisateur",
