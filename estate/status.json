@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T15:00:02Z",
+ "generated_at": "2026-10-06T15:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T16:00:02Z",
+ "valid_until": "2026-10-06T16:20:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "competent_bell",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T15:16:10Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -100,18 +112,6 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "wonderful_kare",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T14:55:56Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -225,10 +225,10 @@
  ],
  "unmanaged": [
   "ci-sequestria",
+  "competent_bell",
   "condescending_joliot",
   "inspiring_galois",
   "serene_elgamal",
-  "wonderful_kare",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -279,6 +279,21 @@
     "senechal": {
      "queue": 13,
      "at": "2026-10-06T14:55:55Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 30,
+     "at": "2026-10-06T15:04:15Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 150,
+     "at": "2026-10-06T15:10:52Z",
+     "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 29,
+     "at": "2026-10-06T15:16:07Z",
      "outcome": null
     }
    },
@@ -286,7 +301,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -357,6 +372,45 @@
    {
     "repo": "senechal",
     "log": "senechal.20261006T145555Z.log",
+    "result": "success",
+    "turns": 56,
+    "cost_usd": 1.1648,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1116",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T14:55:55Z"
+   },
+   {
+    "repo": "etalon",
+    "log": "etalon.20261006T150415Z.log",
+    "result": "success",
+    "turns": 46,
+    "cost_usd": 1.0925,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/etalon/pull/105",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T15:04:15Z"
+   },
+   {
+    "repo": "realisateur",
+    "log": "realisateur.20261006T151052Z.log",
+    "result": "success",
+    "turns": 35,
+    "cost_usd": 0.8319,
+    "rc": 0,
+    "report": "present",
+    "pr": null,
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T15:10:52Z"
+   },
+   {
+    "repo": "bibliothecaire",
+    "log": "bibliothecaire.20261006T151607Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -365,46 +419,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T14:55:55Z"
-   },
-   {
-    "repo": "etalon",
-    "log": "etalon.20261006T121708Z.log",
-    "result": "success",
-    "turns": 103,
-    "cost_usd": 3.3305,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/etalon/pull/104",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T12:17:08Z"
-   },
-   {
-    "repo": "realisateur",
-    "log": "realisateur.20261006T124709Z.log",
-    "result": "success",
-    "turns": 74,
-    "cost_usd": 2.4129,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1552",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T12:47:09Z"
-   },
-   {
-    "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261006T132555Z.log",
-    "result": "success",
-    "turns": 27,
-    "cost_usd": 0.6472,
-    "rc": 0,
-    "report": "present",
-    "pr": null,
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T13:25:55Z"
+    "at": "2026-10-06T15:16:07Z"
    },
    {
     "repo": "secretaire",
