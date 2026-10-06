@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-06T23:00:02Z",
+ "generated_at": "2026-10-06T23:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T00:00:02Z",
+ "valid_until": "2026-10-07T00:20:02Z",
  "containers": [
+  {
+   "name": "clever_zhukovsky",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T23:16:41Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -133,7 +145,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-06T19:28:16Z",
+   "started_at": "2026-10-06T23:10:03Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -145,7 +157,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-06T19:28:17Z",
+   "started_at": "2026-10-06T23:10:20Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -157,7 +169,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-06T19:28:17Z",
+   "started_at": "2026-10-06T23:10:30Z",
    "finished_at": null,
    "ports_published": null
   }
@@ -200,6 +212,7 @@
   }
  ],
  "unmanaged": [
+  "clever_zhukovsky",
   "condescending_joliot",
   "inspiring_galois",
   "serene_elgamal",
@@ -223,22 +236,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261006T223642Z.log",
-   "started_at": "2026-10-06T22:36:42Z",
-   "finished_at": "2026-10-06T22:54:12Z",
+   "log": "nightly.20261006T231614Z.log",
+   "started_at": "2026-10-06T23:16:14Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "senechal": {
+    "realisateur": {
      "queue": 1,
-     "at": "2026-10-06T22:36:52Z",
-     "outcome": "finished"
+     "at": "2026-10-06T23:16:26Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.4
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -248,9 +261,8 @@
     "turns": 108,
     "cost_usd": 3.4321,
     "rc": 0,
-    "report": "present",
     "pr": "https://github.com/hf7y-estate/crt/pull/437",
-    "tree": null,
+    "commented": false,
     "note": null,
     "at": "2026-10-06T21:07:14Z"
    },
@@ -261,9 +273,8 @@
     "turns": 26,
     "cost_usd": 0.5404,
     "rc": 0,
-    "report": "present",
     "pr": null,
-    "tree": null,
+    "commented": true,
     "note": null,
     "at": "2026-09-29T06:11:08Z"
    },
@@ -274,9 +285,8 @@
     "turns": 75,
     "cost_usd": 1.6513,
     "rc": 0,
-    "report": "present",
     "pr": "https://github.com/hf7y-estate/musc-2300/pull/237",
-    "tree": null,
+    "commented": false,
     "note": null,
     "at": "2026-10-06T21:25:51Z"
    },
@@ -287,9 +297,8 @@
     "turns": 50,
     "cost_usd": 1.129,
     "rc": 0,
-    "report": "present",
     "pr": "https://github.com/hf7y-estate/groc-mangr/pull/393",
-    "tree": null,
+    "commented": false,
     "note": null,
     "at": "2026-10-06T22:28:15Z"
    },
@@ -300,9 +309,8 @@
     "turns": 60,
     "cost_usd": 1.8699,
     "rc": 0,
-    "report": "present",
     "pr": "https://github.com/hf7y-estate/wtul/pull/459",
-    "tree": null,
+    "commented": true,
     "note": null,
     "at": "2026-10-06T21:40:39Z"
    },
@@ -313,9 +321,8 @@
     "turns": 65,
     "cost_usd": 2.0175,
     "rc": 0,
-    "report": "present",
     "pr": "https://github.com/hf7y-estate/senechal/pull/1129",
-    "tree": null,
+    "commented": true,
     "note": null,
     "at": "2026-10-06T22:36:52Z"
    },
@@ -326,24 +333,22 @@
     "turns": 69,
     "cost_usd": 1.6752,
     "rc": 0,
-    "report": "present",
     "pr": "https://github.com/hf7y-estate/etalon/pull/131",
-    "tree": null,
+    "commented": false,
     "note": null,
     "at": "2026-10-06T22:08:02Z"
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261006T222811Z.log",
-    "result": "success",
-    "turns": 97,
-    "cost_usd": 4.3878,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1607",
-    "tree": null,
+    "log": "realisateur.20261006T231626Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-06T22:28:11Z"
+    "at": "2026-10-06T23:16:26Z"
    },
    {
     "repo": "bibliothecaire",
@@ -352,9 +357,8 @@
     "turns": 47,
     "cost_usd": 0.9188,
     "rc": 0,
-    "report": "present",
     "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/159",
-    "tree": null,
+    "commented": false,
     "note": null,
     "at": "2026-10-06T22:50:40Z"
    },
@@ -365,37 +369,34 @@
     "turns": 38,
     "cost_usd": 0.9198,
     "rc": 0,
-    "report": "present",
     "pr": "https://github.com/hf7y-estate/secretaire/pull/89",
-    "tree": null,
+    "commented": false,
     "note": null,
     "at": "2026-10-06T22:55:50Z"
    },
    {
     "repo": "space-canon",
-    "log": "space-canon.20261006T200248Z.log",
+    "log": "space-canon.20261006T230008Z.log",
     "result": "success",
-    "turns": 76,
-    "cost_usd": 1.9037,
+    "turns": 31,
+    "cost_usd": 0.6649,
     "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/space-canon/pull/31",
-    "tree": null,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-06T20:02:48Z"
+    "at": "2026-10-06T23:00:08Z"
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261006T201425Z.log",
+    "log": "chezz.20261006T230421Z.log",
     "result": "success",
-    "turns": 25,
-    "cost_usd": 0.4687,
+    "turns": 55,
+    "cost_usd": 1.093,
     "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/chezz/pull/187",
-    "tree": null,
+    "pr": "https://github.com/hf7y-estate/chezz/pull/188",
+    "commented": false,
     "note": null,
-    "at": "2026-10-06T20:14:25Z"
+    "at": "2026-10-06T23:04:21Z"
    }
   ],
   "dispatch_source": {
@@ -418,6 +419,8 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
+  "the last nightly has no `done` line -- still running, or it died",
+  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
