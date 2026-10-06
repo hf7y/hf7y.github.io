@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T16:00:01Z",
+ "generated_at": "2026-10-06T16:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T17:00:01Z",
+ "valid_until": "2026-10-06T17:20:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "friendly_ramanujan",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T15:51:15Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -99,6 +87,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "strange_noether",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T16:07:20Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -226,9 +226,9 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "friendly_ramanujan",
   "inspiring_galois",
   "serene_elgamal",
+  "strange_noether",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -249,8 +249,8 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261006T140703Z.log",
-   "started_at": "2026-10-06T14:07:03Z",
+   "log": "nightly.20261006T160702Z.log",
+   "started_at": "2026-10-06T16:07:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -258,84 +258,27 @@
    "dispatched": {
     "crt": {
      "queue": 12,
-     "at": "2026-10-06T14:07:13Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 47,
-     "at": "2026-10-06T14:16:50Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 13,
-     "at": "2026-10-06T14:38:29Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 32,
-     "at": "2026-10-06T14:43:55Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 13,
-     "at": "2026-10-06T14:55:55Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 30,
-     "at": "2026-10-06T15:04:15Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 150,
-     "at": "2026-10-06T15:10:52Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 29,
-     "at": "2026-10-06T15:16:07Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 16,
-     "at": "2026-10-06T15:20:56Z",
-     "outcome": "finished"
-    },
-    "space-canon": {
-     "queue": 3,
-     "at": "2026-10-06T15:27:55Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 5,
-     "at": "2026-10-06T15:41:55Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-06T15:51:13Z",
+     "at": "2026-10-06T16:07:13Z",
      "outcome": null
     }
    },
-   "skipped": [
-    "dog"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261006T140713Z.log",
-    "result": "success",
-    "turns": 36,
-    "cost_usd": 1.1462,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/crt/pull/424",
+    "log": "crt.20261006T160713Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T14:07:13Z"
+    "at": "2026-10-06T16:07:13Z"
    },
    {
     "repo": "dog",
