@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T11:40:01Z",
+ "generated_at": "2026-10-06T12:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T12:40:01Z",
+ "valid_until": "2026-10-06T13:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -52,6 +52,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "hungry_beaver",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T11:40:11Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "inspiring_galois",
@@ -214,6 +226,7 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
+  "hungry_beaver",
   "inspiring_galois",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -262,13 +275,18 @@
      "queue": 32,
      "at": "2026-10-06T10:45:54Z",
      "outcome": "exited 1"
+    },
+    "senechal": {
+     "queue": 13,
+     "at": "2026-10-06T11:40:08Z",
+     "outcome": null
     }
    },
    "skipped": [
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.5
+   "age_h": 1.9
   },
   "passes": [
    {
@@ -338,16 +356,16 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261006T065424Z.log",
-    "result": "success",
-    "turns": 56,
-    "cost_usd": 2.0541,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1112",
+    "log": "senechal.20261006T114008Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T06:54:24Z"
+    "at": "2026-10-06T11:40:08Z"
    },
    {
     "repo": "etalon",
