@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-06T19:20:01Z",
+ "generated_at": "2026-10-06T19:40:03Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T20:20:01Z",
+ "valid_until": "2026-10-06T20:40:03Z",
  "containers": [
+  {
+   "name": "ci-org",
+   "image": "selfdev-runner:2.337.0",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T19:35:16Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "ci-sequestria",
    "image": "selfdev-runner:2.337.0",
@@ -114,18 +126,6 @@
    "ports_published": null
   },
   {
-   "name": "strange_tesla",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T18:28:20Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -175,37 +175,37 @@
   },
   {
    "name": "zaxon-gateway",
-   "image": "ghcr.io/hf7y/zaxon:latest",
+   "image": "zaxon:crt-40d82c03a4fa",
    "project": "zaxon",
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T04:32:19Z",
+   "started_at": "2026-10-06T19:28:16Z",
    "finished_at": null,
    "ports_published": true
   },
   {
    "name": "zaxon-relay",
-   "image": "ghcr.io/hf7y/zaxon:latest",
+   "image": "zaxon:crt-40d82c03a4fa",
    "project": "zaxon",
    "state": "running",
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T04:32:20Z",
+   "started_at": "2026-10-06T19:28:17Z",
    "finished_at": null,
    "ports_published": null
   },
   {
    "name": "zaxon-watcher",
-   "image": "ghcr.io/hf7y/zaxon:latest",
+   "image": "zaxon:crt-40d82c03a4fa",
    "project": "zaxon",
    "state": "running",
-   "health": null,
+   "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-05T04:32:20Z",
+   "started_at": "2026-10-06T19:28:17Z",
    "finished_at": null,
    "ports_published": null
   }
@@ -248,13 +248,13 @@
   }
  ],
  "unmanaged": [
+  "ci-org",
   "ci-sequestria",
   "clever_galileo",
   "condescending_joliot",
   "inspiring_galois",
   "nifty_khorana",
   "serene_elgamal",
-  "strange_tesla",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -275,16 +275,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261006T184359Z.log",
-   "started_at": "2026-10-06T18:43:59Z",
+   "log": "nightly.20261006T192228Z.log",
+   "started_at": "2026-10-06T19:22:28Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-06T19:22:37Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -368,11 +374,11 @@
    {
     "repo": "etalon",
     "log": "etalon.20261006T182808Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
+    "result": "success",
+    "turns": 23,
+    "cost_usd": 0.7656,
+    "rc": 0,
+    "report": "present",
     "pr": null,
     "tree": null,
     "note": null,
