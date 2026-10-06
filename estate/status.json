@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T10:40:02Z",
+ "generated_at": "2026-10-06T11:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T11:40:02Z",
+ "valid_until": "2026-10-06T12:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -66,14 +66,14 @@
    "ports_published": null
   },
   {
-   "name": "romantic_blackwell",
+   "name": "jovial_dijkstra",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-06T10:20:00Z",
+   "started_at": "2026-10-06T10:45:57Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -227,7 +227,7 @@
   "ci-sequestria",
   "condescending_joliot",
   "inspiring_galois",
-  "romantic_blackwell",
+  "jovial_dijkstra",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -264,6 +264,16 @@
     "musc-2300": {
      "queue": 47,
      "at": "2026-10-06T10:19:59Z",
+     "outcome": "finished"
+    },
+    "groc-mangr": {
+     "queue": 13,
+     "at": "2026-10-06T10:40:25Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 32,
+     "at": "2026-10-06T10:45:54Z",
      "outcome": null
     }
    },
@@ -271,7 +281,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -303,6 +313,32 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261006T101959Z.log",
+    "result": "success",
+    "turns": 106,
+    "cost_usd": 3.5083,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/231",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T10:19:59Z"
+   },
+   {
+    "repo": "groc-mangr",
+    "log": "groc-mangr.20261006T104025Z.log",
+    "result": "success",
+    "turns": 28,
+    "cost_usd": 0.975,
+    "rc": 0,
+    "report": "present",
+    "pr": null,
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T10:40:25Z"
+   },
+   {
+    "repo": "wtul",
+    "log": "wtul.20261006T104554Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -311,33 +347,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T10:19:59Z"
-   },
-   {
-    "repo": "groc-mangr",
-    "log": "groc-mangr.20261006T062125Z.log",
-    "result": "success",
-    "turns": 46,
-    "cost_usd": 1.7464,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/388",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T06:21:25Z"
-   },
-   {
-    "repo": "wtul",
-    "log": "wtul.20261006T063058Z.log",
-    "result": "success",
-    "turns": 80,
-    "cost_usd": 2.8179,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/wtul/pull/455",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T06:30:58Z"
+    "at": "2026-10-06T10:45:54Z"
    },
    {
     "repo": "senechal",
