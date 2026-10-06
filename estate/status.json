@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-06T22:00:03Z",
+ "generated_at": "2026-10-06T22:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T23:00:03Z",
+ "valid_until": "2026-10-06T23:20:02Z",
  "containers": [
-  {
-   "name": "boring_aryabhata",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T21:52:22Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -42,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "eloquent_wozniak",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T21:55:54Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -74,6 +50,30 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T12:00:03Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "loving_curie",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T22:08:11Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "nifty_wilbur",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T22:15:23Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -224,10 +224,10 @@
   }
  ],
  "unmanaged": [
-  "boring_aryabhata",
   "condescending_joliot",
-  "eloquent_wozniak",
   "inspiring_galois",
+  "loving_curie",
+  "nifty_wilbur",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -249,17 +249,17 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261006T215219Z.log",
-   "started_at": "2026-10-06T21:52:19Z",
-   "finished_at": "2026-10-06T21:58:49Z",
+   "log": "nightly.20261006T221508Z.log",
+   "started_at": "2026-10-06T22:15:08Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "etalon": {
+    "realisateur": {
      "queue": 1,
-     "at": "2026-10-06T21:52:31Z",
-     "outcome": "finished"
+     "at": "2026-10-06T22:15:19Z",
+     "outcome": null
     }
    },
    "skipped": [],
@@ -335,32 +335,19 @@
    {
     "repo": "senechal",
     "log": "senechal.20261006T215221Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "result": "success",
+    "turns": 71,
+    "cost_usd": 2.4101,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1128",
     "tree": null,
     "note": null,
     "at": "2026-10-06T21:52:21Z"
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261006T215231Z.log",
-    "result": "success",
-    "turns": 25,
-    "cost_usd": 0.7365,
-    "rc": 0,
-    "report": "present",
-    "pr": null,
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T21:52:31Z"
-   },
-   {
-    "repo": "realisateur",
-    "log": "realisateur.20261006T215550Z.log",
+    "log": "etalon.20261006T220802Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -369,7 +356,20 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T21:55:50Z"
+    "at": "2026-10-06T22:08:02Z"
+   },
+   {
+    "repo": "realisateur",
+    "log": "realisateur.20261006T221519Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T22:15:19Z"
    },
    {
     "repo": "bibliothecaire",
@@ -444,6 +444,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
