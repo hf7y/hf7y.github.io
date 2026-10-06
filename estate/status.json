@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T20:20:02Z",
+ "generated_at": "2026-10-06T20:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T21:20:02Z",
+ "valid_until": "2026-10-06T21:40:02Z",
  "containers": [
   {
    "name": "ci-org",
@@ -78,14 +78,14 @@
    "ports_published": null
   },
   {
-   "name": "magical_engelbart",
+   "name": "relaxed_mendeleev",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-06T20:17:43Z",
+   "started_at": "2026-10-06T20:31:52Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -240,7 +240,7 @@
   "ci-sequestria",
   "condescending_joliot",
   "inspiring_galois",
-  "magical_engelbart",
+  "relaxed_mendeleev",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -277,7 +277,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.8
   },
   "passes": [
    {
@@ -373,7 +373,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261006T201741Z.log",
+    "log": "realisateur.20261006T203148Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -382,7 +382,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T20:17:41Z"
+    "at": "2026-10-06T20:31:48Z"
    },
    {
     "repo": "bibliothecaire",
