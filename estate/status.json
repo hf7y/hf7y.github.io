@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T18:00:02Z",
+ "generated_at": "2026-10-06T18:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T19:00:02Z",
+ "valid_until": "2026-10-06T19:20:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -30,6 +30,30 @@
    "ports_published": null
   },
   {
+   "name": "confident_leakey",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T18:09:07Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "crazy_kowalevski",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T18:12:39Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -38,18 +62,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "dreamy_golick",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T17:45:18Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -184,6 +196,18 @@
    "started_at": "2026-10-05T04:32:20Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zealous_agnesi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T18:09:25Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -226,10 +250,12 @@
  "unmanaged": [
   "ci-sequestria",
   "condescending_joliot",
-  "dreamy_golick",
+  "confident_leakey",
+  "crazy_kowalevski",
   "inspiring_galois",
   "serene_elgamal",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "zealous_agnesi"
  ],
  "nightly": {
   "armed": true,
@@ -249,49 +275,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261006T160702Z.log",
-   "started_at": "2026-10-06T16:07:02Z",
+   "log": "nightly.20261006T180914Z.log",
+   "started_at": "2026-10-06T18:09:14Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "crt": {
-     "queue": 12,
-     "at": "2026-10-06T16:07:13Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 49,
-     "at": "2026-10-06T16:36:29Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 15,
-     "at": "2026-10-06T16:44:53Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 32,
-     "at": "2026-10-06T16:58:01Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 10,
-     "at": "2026-10-06T17:34:25Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 30,
-     "at": "2026-10-06T17:45:11Z",
+    "secretaire": {
+     "queue": 1,
+     "at": "2026-10-06T18:09:21Z",
      "outcome": null
     }
    },
-   "skipped": [
-    "dog"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -374,7 +373,7 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261006T174511Z.log",
+    "log": "etalon.20261006T181228Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -383,20 +382,20 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T17:45:11Z"
+    "at": "2026-10-06T18:12:28Z"
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261006T151052Z.log",
-    "result": "success",
-    "turns": 35,
-    "cost_usd": 0.8319,
-    "rc": 0,
-    "report": "present",
+    "log": "realisateur.20261006T180905Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T15:10:52Z"
+    "at": "2026-10-06T18:09:05Z"
    },
    {
     "repo": "bibliothecaire",
@@ -413,16 +412,16 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261006T152056Z.log",
-    "result": "success",
-    "turns": 29,
-    "cost_usd": 0.7056,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/82",
+    "log": "secretaire.20261006T180921Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T15:20:56Z"
+    "at": "2026-10-06T18:09:21Z"
    },
    {
     "repo": "space-canon",
