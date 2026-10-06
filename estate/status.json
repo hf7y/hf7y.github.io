@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T15:20:02Z",
+ "generated_at": "2026-10-06T15:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T16:20:02Z",
+ "valid_until": "2026-10-06T16:40:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "competent_bell",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T15:16:10Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -50,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "eloquent_kowalevski",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T15:27:57Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -225,8 +225,8 @@
  ],
  "unmanaged": [
   "ci-sequestria",
-  "competent_bell",
   "condescending_joliot",
+  "eloquent_kowalevski",
   "inspiring_galois",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -294,6 +294,16 @@
     "bibliothecaire": {
      "queue": 29,
      "at": "2026-10-06T15:16:07Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 16,
+     "at": "2026-10-06T15:20:56Z",
+     "outcome": "finished"
+    },
+    "space-canon": {
+     "queue": 3,
+     "at": "2026-10-06T15:27:55Z",
      "outcome": null
     }
    },
@@ -301,7 +311,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.2
+   "age_h": 1.5
   },
   "passes": [
    {
@@ -411,6 +421,32 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261006T151607Z.log",
+    "result": "success",
+    "turns": 39,
+    "cost_usd": 0.9972,
+    "rc": 0,
+    "report": "present",
+    "pr": null,
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T15:16:07Z"
+   },
+   {
+    "repo": "secretaire",
+    "log": "secretaire.20261006T152056Z.log",
+    "result": "success",
+    "turns": 29,
+    "cost_usd": 0.7056,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/82",
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T15:20:56Z"
+   },
+   {
+    "repo": "space-canon",
+    "log": "space-canon.20261006T152755Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -419,33 +455,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T15:16:07Z"
-   },
-   {
-    "repo": "secretaire",
-    "log": "secretaire.20261006T133038Z.log",
-    "result": "success",
-    "turns": 30,
-    "cost_usd": 0.8505,
-    "rc": 0,
-    "report": "present",
-    "pr": null,
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T13:30:38Z"
-   },
-   {
-    "repo": "space-canon",
-    "log": "space-canon.20261006T134354Z.log",
-    "result": "success",
-    "turns": 25,
-    "cost_usd": 0.493,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/space-canon/pull/29",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T13:43:54Z"
+    "at": "2026-10-06T15:27:55Z"
    },
    {
     "repo": "chezz",
