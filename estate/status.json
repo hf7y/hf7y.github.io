@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-06T20:40:02Z",
+ "generated_at": "2026-10-06T21:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T21:40:02Z",
+ "valid_until": "2026-10-06T22:00:02Z",
  "containers": [
+  {
+   "name": "admiring_hawking",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T20:52:38Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "ci-org",
    "image": "selfdev-runner:2.337.0",
@@ -74,18 +86,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T12:00:03Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "relaxed_mendeleev",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T20:31:52Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -236,11 +236,11 @@
   }
  ],
  "unmanaged": [
+  "admiring_hawking",
   "ci-org",
   "ci-sequestria",
   "condescending_joliot",
   "inspiring_galois",
-  "relaxed_mendeleev",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -277,7 +277,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.8
+   "age_h": 1.1
   },
   "passes": [
    {
@@ -373,7 +373,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261006T203148Z.log",
+    "log": "realisateur.20261006T205234Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -382,7 +382,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T20:31:48Z"
+    "at": "2026-10-06T20:52:34Z"
    },
    {
     "repo": "bibliothecaire",
