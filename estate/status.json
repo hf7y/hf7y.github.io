@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T13:40:01Z",
+ "generated_at": "2026-10-06T14:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T14:40:01Z",
+ "valid_until": "2026-10-06T15:00:01Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "clever_hopper",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T13:30:42Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -225,7 +213,6 @@
  ],
  "unmanaged": [
   "ci-sequestria",
-  "clever_hopper",
   "condescending_joliot",
   "inspiring_galois",
   "serene_elgamal",
@@ -251,7 +238,7 @@
   "last_run": {
    "log": "nightly.20261006T100702Z.log",
    "started_at": "2026-10-06T10:07:02Z",
-   "finished_at": null,
+   "finished_at": "2026-10-06T13:59:30Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -299,14 +286,29 @@
     "secretaire": {
      "queue": 8,
      "at": "2026-10-06T13:30:38Z",
-     "outcome": null
+     "outcome": "finished"
+    },
+    "space-canon": {
+     "queue": 3,
+     "at": "2026-10-06T13:43:54Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 5,
+     "at": "2026-10-06T13:47:16Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-06T13:50:41Z",
+     "outcome": "finished"
     }
    },
    "skipped": [
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 3.5
+   "age_h": 3.9
   },
   "passes": [
    {
@@ -429,11 +431,11 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261006T133038Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
+    "result": "success",
+    "turns": 30,
+    "cost_usd": 0.8505,
+    "rc": 0,
+    "report": "present",
     "pr": null,
     "tree": null,
     "note": null,
@@ -441,29 +443,29 @@
    },
    {
     "repo": "space-canon",
-    "log": "space-canon.20261006T091530Z.log",
+    "log": "space-canon.20261006T134354Z.log",
     "result": "success",
-    "turns": 34,
-    "cost_usd": 0.7529,
+    "turns": 25,
+    "cost_usd": 0.493,
     "rc": 0,
     "report": "present",
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/space-canon/pull/29",
     "tree": null,
     "note": null,
-    "at": "2026-10-06T09:15:30Z"
+    "at": "2026-10-06T13:43:54Z"
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261006T092028Z.log",
+    "log": "chezz.20261006T134716Z.log",
     "result": "success",
-    "turns": 47,
-    "cost_usd": 1.3423,
+    "turns": 29,
+    "cost_usd": 0.6847,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/chezz/pull/182",
+    "pr": "https://github.com/hf7y-estate/chezz/pull/183",
     "tree": null,
     "note": null,
-    "at": "2026-10-06T09:20:28Z"
+    "at": "2026-10-06T13:47:16Z"
    }
   ],
   "dispatch_source": {
@@ -486,7 +488,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "wtul: pass exited 1",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
