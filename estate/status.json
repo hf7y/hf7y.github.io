@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T19:40:03Z",
+ "generated_at": "2026-10-06T20:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T20:40:03Z",
+ "valid_until": "2026-10-06T21:00:02Z",
  "containers": [
   {
    "name": "ci-org",
@@ -26,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "clever_galileo",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T18:53:06Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -76,6 +64,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "hungry_feynman",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T19:57:11Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "inspiring_galois",
@@ -250,8 +250,8 @@
  "unmanaged": [
   "ci-org",
   "ci-sequestria",
-  "clever_galileo",
   "condescending_joliot",
+  "hungry_feynman",
   "inspiring_galois",
   "nifty_khorana",
   "serene_elgamal",
@@ -275,22 +275,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261006T192228Z.log",
-   "started_at": "2026-10-06T19:22:28Z",
-   "finished_at": null,
+   "log": "nightly.20261006T195110Z.log",
+   "started_at": "2026-10-06T19:51:10Z",
+   "finished_at": "2026-10-06T19:56:49Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "realisateur": {
+    "etalon": {
      "queue": 1,
-     "at": "2026-10-06T19:22:37Z",
-     "outcome": null
+     "at": "2026-10-06T19:51:23Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -373,16 +373,16 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261006T182808Z.log",
+    "log": "etalon.20261006T195123Z.log",
     "result": "success",
-    "turns": 23,
-    "cost_usd": 0.7656,
+    "turns": 40,
+    "cost_usd": 0.8334,
     "rc": 0,
     "report": "present",
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/116",
     "tree": null,
     "note": null,
-    "at": "2026-10-06T18:28:08Z"
+    "at": "2026-10-06T19:51:23Z"
    },
    {
     "repo": "realisateur",
@@ -400,6 +400,19 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261006T185302Z.log",
+    "result": "success",
+    "turns": 88,
+    "cost_usd": 2.3518,
+    "rc": 0,
+    "report": "present",
+    "pr": null,
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T18:53:02Z"
+   },
+   {
+    "repo": "secretaire",
+    "log": "secretaire.20261006T195707Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -408,20 +421,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T18:53:02Z"
-   },
-   {
-    "repo": "secretaire",
-    "log": "secretaire.20261006T180921Z.log",
-    "result": "success",
-    "turns": 42,
-    "cost_usd": 0.8448,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/85",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T18:09:21Z"
+    "at": "2026-10-06T19:57:07Z"
    },
    {
     "repo": "space-canon",
@@ -470,7 +470,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
