@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-06T21:20:02Z",
+ "generated_at": "2026-10-06T21:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T22:20:02Z",
+ "valid_until": "2026-10-06T22:40:02Z",
  "containers": [
+  {
+   "name": "compassionate_morse",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T21:35:17Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -66,14 +78,14 @@
    "ports_published": null
   },
   {
-   "name": "jovial_ride",
+   "name": "kind_dirac",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-06T21:07:22Z",
+   "started_at": "2026-10-06T21:35:28Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -224,10 +236,11 @@
   }
  ],
  "unmanaged": [
+  "compassionate_morse",
   "condescending_joliot",
   "elegant_hypatia",
   "inspiring_galois",
-  "jovial_ride",
+  "kind_dirac",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -249,8 +262,8 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261006T211612Z.log",
-   "started_at": "2026-10-06T21:16:12Z",
+   "log": "nightly.20261006T213218Z.log",
+   "started_at": "2026-10-06T21:32:18Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -258,7 +271,7 @@
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-06T21:16:23Z",
+     "at": "2026-10-06T21:32:29Z",
      "outcome": null
     }
    },
@@ -270,12 +283,12 @@
    {
     "repo": "crt",
     "log": "crt.20261006T210714Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "report": null,
-    "pr": null,
+    "result": "success",
+    "turns": 108,
+    "cost_usd": 3.4321,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/crt/pull/437",
     "tree": null,
     "note": null,
     "at": "2026-10-06T21:07:14Z"
@@ -295,29 +308,29 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261006T163629Z.log",
+    "log": "musc-2300.20261006T212551Z.log",
     "result": "success",
-    "turns": 51,
-    "cost_usd": 1.0895,
+    "turns": 75,
+    "cost_usd": 1.6513,
     "rc": 0,
     "report": "present",
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/235",
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/237",
     "tree": null,
     "note": null,
-    "at": "2026-10-06T16:36:29Z"
+    "at": "2026-10-06T21:25:51Z"
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261006T164453Z.log",
-    "result": "success",
-    "turns": 87,
-    "cost_usd": 4.2876,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/391",
+    "log": "groc-mangr.20261006T213513Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T16:44:53Z"
+    "at": "2026-10-06T21:35:13Z"
    },
    {
     "repo": "wtul",
@@ -347,16 +360,16 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261006T195123Z.log",
-    "result": "success",
-    "turns": 40,
-    "cost_usd": 0.8334,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/etalon/pull/116",
+    "log": "etalon.20261006T213519Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "report": null,
+    "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T19:51:23Z"
+    "at": "2026-10-06T21:35:19Z"
    },
    {
     "repo": "realisateur",
