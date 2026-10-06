@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T05:40:02Z",
+ "generated_at": "2026-10-06T06:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T06:40:02Z",
+ "valid_until": "2026-10-06T07:00:02Z",
  "containers": [
   {
    "name": "ci-sequestria",
@@ -236,24 +236,16 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261005T152555Z.log",
-   "started_at": "2026-10-05T15:25:55Z",
-   "finished_at": "2026-10-05T15:45:33Z",
+   "log": "nightly.20261006T060001Z.log",
+   "started_at": "2026-10-06T06:00:01Z",
+   "finished_at": null,
    "turns": 150,
-   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
+   "image": null,
    "pull_failed": null,
-   "dispatched": {
-    "crt": {
-     "queue": 12,
-     "at": "2026-10-05T15:26:03Z",
-     "outcome": "finished"
-    }
-   },
-   "skipped": [
-    "dog"
-   ],
+   "dispatched": {},
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 14.2
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -433,6 +425,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
  ]
 }
