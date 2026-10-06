@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-06T22:20:02Z",
+ "generated_at": "2026-10-06T22:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-06T23:20:02Z",
+ "valid_until": "2026-10-06T23:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "great_payne",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-06T22:36:54Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,26 +66,14 @@
    "ports_published": null
   },
   {
-   "name": "loving_curie",
+   "name": "keen_tesla",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-06T22:08:11Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "nifty_wilbur",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-06T22:15:23Z",
+   "started_at": "2026-10-06T22:28:16Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -225,9 +225,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "great_payne",
   "inspiring_galois",
-  "loving_curie",
-  "nifty_wilbur",
+  "keen_tesla",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -249,16 +249,16 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261006T221508Z.log",
-   "started_at": "2026-10-06T22:15:08Z",
+   "log": "nightly.20261006T223642Z.log",
+   "started_at": "2026-10-06T22:36:42Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "realisateur": {
+    "senechal": {
      "queue": 1,
-     "at": "2026-10-06T22:15:19Z",
+     "at": "2026-10-06T22:36:52Z",
      "outcome": null
     }
    },
@@ -308,16 +308,16 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261006T213513Z.log",
+    "log": "groc-mangr.20261006T222815Z.log",
     "result": "success",
-    "turns": 24,
-    "cost_usd": 0.7118,
+    "turns": 50,
+    "cost_usd": 1.129,
     "rc": 0,
     "report": "present",
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/393",
     "tree": null,
     "note": null,
-    "at": "2026-10-06T21:35:13Z"
+    "at": "2026-10-06T22:28:15Z"
    },
    {
     "repo": "wtul",
@@ -334,33 +334,33 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261006T215221Z.log",
-    "result": "success",
-    "turns": 71,
-    "cost_usd": 2.4101,
-    "rc": 0,
-    "report": "present",
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1128",
-    "tree": null,
-    "note": null,
-    "at": "2026-10-06T21:52:21Z"
-   },
-   {
-    "repo": "etalon",
-    "log": "etalon.20261006T220802Z.log",
+    "log": "senechal.20261006T223652Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
     "rc": null,
     "report": null,
     "pr": null,
+    "tree": null,
+    "note": null,
+    "at": "2026-10-06T22:36:52Z"
+   },
+   {
+    "repo": "etalon",
+    "log": "etalon.20261006T220802Z.log",
+    "result": "success",
+    "turns": 69,
+    "cost_usd": 1.6752,
+    "rc": 0,
+    "report": "present",
+    "pr": "https://github.com/hf7y-estate/etalon/pull/131",
     "tree": null,
     "note": null,
     "at": "2026-10-06T22:08:02Z"
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261006T221519Z.log",
+    "log": "realisateur.20261006T222811Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -369,7 +369,7 @@
     "pr": null,
     "tree": null,
     "note": null,
-    "at": "2026-10-06T22:15:19Z"
+    "at": "2026-10-06T22:28:11Z"
    },
    {
     "repo": "bibliothecaire",
