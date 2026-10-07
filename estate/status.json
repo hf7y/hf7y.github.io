@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-07T05:40:02Z",
+ "generated_at": "2026-10-07T06:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T06:40:02Z",
+ "valid_until": "2026-10-07T07:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "elastic_mestorf",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-07T05:47:46Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -63,18 +75,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "unruffled_bhaskara",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T05:38:38Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "elastic_mestorf",
   "serene_elgamal",
-  "unruffled_bhaskara",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -243,6 +243,11 @@
     "groc-mangr": {
      "queue": 15,
      "at": "2026-10-07T05:38:33Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 33,
+     "at": "2026-10-07T05:47:42Z",
      "outcome": null
     }
    },
@@ -250,7 +255,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -292,10 +297,10 @@
    {
     "repo": "groc-mangr",
     "log": "groc-mangr.20261007T053833Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 33,
+    "cost_usd": 1.1379,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -303,15 +308,15 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261007T015750Z.log",
-    "result": "success",
-    "turns": 98,
-    "cost_usd": 3.5881,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/wtul/pull/460",
-    "commented": true,
+    "log": "wtul.20261007T054742Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-07T01:57:50Z"
+    "at": "2026-10-07T05:47:42Z"
    },
    {
     "repo": "senechal",
@@ -421,6 +426,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
+  "wtul: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
