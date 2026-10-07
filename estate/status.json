@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-07T04:00:03Z",
+ "generated_at": "2026-10-07T04:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T05:00:03Z",
+ "valid_until": "2026-10-07T05:20:02Z",
  "containers": [
-  {
-   "name": "charming_murdock",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T03:47:23Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -52,6 +40,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "laughing_bartik",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-07T04:06:02Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "charming_murdock",
   "condescending_joliot",
+  "laughing_bartik",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -238,7 +238,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 3.1
+   "age_h": 3.5
   },
   "passes": [
    {
@@ -340,10 +340,10 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261007T034719Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 59,
+    "cost_usd": 1.5701,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -351,39 +351,39 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261007T000831Z.log",
+    "log": "secretaire.20261007T040101Z.log",
     "result": "success",
-    "turns": 51,
-    "cost_usd": 1.2688,
+    "turns": 35,
+    "cost_usd": 0.6301,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/90",
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/91",
+    "commented": false,
     "note": null,
-    "at": "2026-10-07T00:08:31Z"
+    "at": "2026-10-07T04:01:01Z"
    },
    {
     "repo": "space-canon",
-    "log": "space-canon.20261006T230008Z.log",
+    "log": "space-canon.20261007T040408Z.log",
     "result": "success",
-    "turns": 31,
-    "cost_usd": 0.6649,
+    "turns": 14,
+    "cost_usd": 0.2916,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-06T23:00:08Z"
+    "at": "2026-10-07T04:04:08Z"
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261006T230421Z.log",
-    "result": "success",
-    "turns": 55,
-    "cost_usd": 1.093,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/chezz/pull/188",
+    "log": "chezz.20261007T040558Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-06T23:04:21Z"
+    "at": "2026-10-07T04:05:58Z"
    }
   ],
   "dispatch_source": {
@@ -407,6 +407,7 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
+  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
+  "chezz: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
