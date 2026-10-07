@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-07T03:20:01Z",
+ "generated_at": "2026-10-07T03:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T04:20:01Z",
+ "valid_until": "2026-10-07T04:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -52,18 +52,6 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
-  },
-  {
-   "name": "inspiring_galois",
-   "image": "musc-2300:local",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-05T12:00:03Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -214,7 +202,6 @@
  "unmanaged": [
   "condescending_joliot",
   "cool_rosalind",
-  "inspiring_galois",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -251,7 +238,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.5
+   "age_h": 2.8
   },
   "passes": [
    {
