@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-07T13:40:02Z",
+ "generated_at": "2026-10-07T14:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T14:40:02Z",
+ "valid_until": "2026-10-07T15:00:02Z",
  "containers": [
-  {
-   "name": "angry_tharp",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T13:35:49Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -38,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "friendly_sutherland",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-07T13:53:57Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "angry_tharp",
   "condescending_joliot",
+  "friendly_sutherland",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -273,6 +273,11 @@
     "space-canon": {
      "queue": 2,
      "at": "2026-10-07T13:35:47Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 6,
+     "at": "2026-10-07T13:53:51Z",
      "outcome": null
     }
    },
@@ -281,7 +286,7 @@
     "secretaire"
    ],
    "queue_unreadable": [],
-   "age_h": 4.5
+   "age_h": 4.9
   },
   "passes": [
    {
@@ -407,6 +412,18 @@
    {
     "repo": "space-canon",
     "log": "space-canon.20261007T133547Z.log",
+    "result": "success",
+    "turns": 39,
+    "cost_usd": 0.7952,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/space-canon/pull/33",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-07T13:35:47Z"
+   },
+   {
+    "repo": "chezz",
+    "log": "chezz.20261007T135351Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -414,19 +431,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T13:35:47Z"
-   },
-   {
-    "repo": "chezz",
-    "log": "chezz.20261007T070526Z.log",
-    "result": "success",
-    "turns": 60,
-    "cost_usd": 1.5707,
-    "rc": 0,
-    "pr": null,
-    "commented": true,
-    "note": null,
-    "at": "2026-10-07T07:05:26Z"
+    "at": "2026-10-07T13:53:51Z"
    }
   ],
   "dispatch_source": {
@@ -452,6 +457,6 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
-  "space-canon: last pass landed nothing -- no PR and no comment on its issue"
+  "chezz: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
