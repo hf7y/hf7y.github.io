@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-07T22:00:02Z",
+ "generated_at": "2026-10-07T22:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T23:00:02Z",
+ "valid_until": "2026-10-07T23:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "dreamy_wing",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-07T22:13:17Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -189,6 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "dreamy_wing",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -210,92 +223,42 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261007T190702Z.log",
-   "started_at": "2026-10-07T19:07:02Z",
-   "finished_at": "2026-10-07T21:53:54Z",
+   "log": "nightly.20261007T220702Z.log",
+   "started_at": "2026-10-07T22:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "crt": {
      "queue": 19,
-     "at": "2026-10-07T19:07:10Z",
+     "at": "2026-10-07T22:07:14Z",
      "outcome": "finished"
     },
     "musc-2300": {
-     "queue": 51,
-     "at": "2026-10-07T19:42:29Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 11,
-     "at": "2026-10-07T19:49:26Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 33,
-     "at": "2026-10-07T20:19:51Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 24,
-     "at": "2026-10-07T20:26:57Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 48,
-     "at": "2026-10-07T20:37:21Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 150,
-     "at": "2026-10-07T20:43:05Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 30,
-     "at": "2026-10-07T21:05:36Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 8,
-     "at": "2026-10-07T21:23:54Z",
-     "outcome": "finished"
-    },
-    "space-canon": {
-     "queue": 2,
-     "at": "2026-10-07T21:27:44Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 6,
-     "at": "2026-10-07T21:32:02Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-07T21:48:03Z",
-     "outcome": "finished"
+     "queue": 53,
+     "at": "2026-10-07T22:13:15Z",
+     "outcome": null
     }
    },
    "skipped": [
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.9
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261007T190710Z.log",
+    "log": "crt.20261007T220714Z.log",
     "result": "success",
-    "turns": 59,
-    "cost_usd": 1.5794,
+    "turns": 22,
+    "cost_usd": 0.7309,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/449",
-    "commented": true,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-07T19:07:10Z"
+    "at": "2026-10-07T22:07:14Z"
    },
    {
     "repo": "dog",
@@ -311,15 +274,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261007T194229Z.log",
-    "result": "success",
-    "turns": 53,
-    "cost_usd": 1.1984,
-    "rc": 0,
+    "log": "musc-2300.20261007T221315Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-07T19:42:29Z"
+    "at": "2026-10-07T22:13:15Z"
    },
    {
     "repo": "groc-mangr",
@@ -450,7 +413,10 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "crt: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
