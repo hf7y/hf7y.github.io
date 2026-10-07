@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-07T20:40:02Z",
+ "generated_at": "2026-10-07T21:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T21:40:02Z",
+ "valid_until": "2026-10-07T22:00:02Z",
  "containers": [
-  {
-   "name": "blissful_hawking",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T20:37:31Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-07T19:43:26Z",
    "finished_at": "2026-10-07T20:05:01Z",
    "ports_published": false
+  },
+  {
+   "name": "nifty_chandrasekhar",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-07T20:43:11Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "blissful_hawking",
   "condescending_joliot",
+  "nifty_chandrasekhar",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -258,6 +258,11 @@
     "etalon": {
      "queue": 48,
      "at": "2026-10-07T20:37:21Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 150,
+     "at": "2026-10-07T20:43:05Z",
      "outcome": null
     }
    },
@@ -265,7 +270,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.6
+   "age_h": 1.9
   },
   "passes": [
    {
@@ -343,6 +348,18 @@
    {
     "repo": "etalon",
     "log": "etalon.20261007T203721Z.log",
+    "result": "success",
+    "turns": 56,
+    "cost_usd": 1.5325,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/138",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-07T20:37:21Z"
+   },
+   {
+    "repo": "realisateur",
+    "log": "realisateur.20261007T204305Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -350,19 +367,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T20:37:21Z"
-   },
-   {
-    "repo": "realisateur",
-    "log": "realisateur.20261007T171313Z.log",
-    "result": "success",
-    "turns": 51,
-    "cost_usd": 1.3256,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1634",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-07T17:13:13Z"
+    "at": "2026-10-07T20:43:05Z"
    },
    {
     "repo": "bibliothecaire",
@@ -436,6 +441,6 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
-  "etalon: last pass landed nothing -- no PR and no comment on its issue"
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
