@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-07T05:00:02Z",
+ "generated_at": "2026-10-07T05:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T06:00:02Z",
+ "valid_until": "2026-10-07T06:20:02Z",
  "containers": [
+  {
+   "name": "adoring_brahmagupta",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-07T05:14:39Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -188,6 +200,7 @@
   }
  ],
  "unmanaged": [
+  "adoring_brahmagupta",
   "condescending_joliot",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -210,35 +223,42 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261007T005127Z.log",
-   "started_at": "2026-10-07T00:51:27Z",
-   "finished_at": "2026-10-07T02:37:40Z",
+   "log": "nightly.20261007T050702Z.log",
+   "started_at": "2026-10-07T05:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "realisateur": {
-     "queue": 1,
-     "at": "2026-10-07T00:51:39Z",
+    "crt": {
+     "queue": 18,
+     "at": "2026-10-07T05:07:10Z",
      "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 51,
+     "at": "2026-10-07T05:14:36Z",
+     "outcome": null
     }
    },
-   "skipped": [],
+   "skipped": [
+    "dog"
+   ],
    "queue_unreadable": [],
-   "age_h": 4.1
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261007T000709Z.log",
+    "log": "crt.20261007T050710Z.log",
     "result": "success",
-    "turns": 88,
-    "cost_usd": 2.8541,
+    "turns": 31,
+    "cost_usd": 0.8624,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/445",
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/crt/pull/447",
+    "commented": false,
     "note": null,
-    "at": "2026-10-07T00:07:09Z"
+    "at": "2026-10-07T05:07:10Z"
    },
    {
     "repo": "dog",
@@ -254,15 +274,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261007T004817Z.log",
-    "result": "success",
-    "turns": 88,
-    "cost_usd": 2.4895,
-    "rc": 1,
+    "log": "musc-2300.20261007T051436Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-07T00:48:17Z"
+    "at": "2026-10-07T05:14:36Z"
    },
    {
     "repo": "groc-mangr",
@@ -393,7 +413,9 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
