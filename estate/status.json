@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-07T02:20:02Z",
+ "generated_at": "2026-10-07T02:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T03:20:02Z",
+ "valid_until": "2026-10-07T03:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -62,18 +62,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T12:00:03Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "magical_ishizaka",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T00:51:44Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -227,7 +215,6 @@
   "condescending_joliot",
   "friendly_hawking",
   "inspiring_galois",
-  "magical_ishizaka",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -251,7 +238,7 @@
   "last_run": {
    "log": "nightly.20261007T005127Z.log",
    "started_at": "2026-10-07T00:51:27Z",
-   "finished_at": null,
+   "finished_at": "2026-10-07T02:37:40Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -259,12 +246,12 @@
     "realisateur": {
      "queue": 1,
      "at": "2026-10-07T00:51:39Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.5
+   "age_h": 1.8
   },
   "passes": [
    {
@@ -354,12 +341,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261007T005139Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "error_max_turns",
+    "turns": 151,
+    "cost_usd": 6.9919,
+    "rc": 1,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-07T00:51:39Z"
    },
@@ -432,9 +419,8 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue"
+  "realisateur: last pass ended `error_max_turns`"
  ]
 }
