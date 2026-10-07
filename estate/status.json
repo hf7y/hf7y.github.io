@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-07T01:40:01Z",
+ "generated_at": "2026-10-07T02:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T02:40:01Z",
+ "valid_until": "2026-10-07T03:00:01Z",
  "containers": [
-  {
-   "name": "charming_elion",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T01:33:28Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -38,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "friendly_hawking",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-07T01:57:54Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -224,8 +224,8 @@
   }
  ],
  "unmanaged": [
-  "charming_elion",
   "condescending_joliot",
+  "friendly_hawking",
   "inspiring_galois",
   "magical_ishizaka",
   "serene_elgamal",
@@ -264,7 +264,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.8
+   "age_h": 1.1
   },
   "passes": [
    {
@@ -306,6 +306,18 @@
    {
     "repo": "groc-mangr",
     "log": "groc-mangr.20261007T013324Z.log",
+    "result": "success",
+    "turns": 69,
+    "cost_usd": 2.5091,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/394",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-07T01:33:24Z"
+   },
+   {
+    "repo": "wtul",
+    "log": "wtul.20261007T015750Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -313,19 +325,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T01:33:24Z"
-   },
-   {
-    "repo": "wtul",
-    "log": "wtul.20261006T214039Z.log",
-    "result": "success",
-    "turns": 60,
-    "cost_usd": 1.8699,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/wtul/pull/459",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-06T21:40:39Z"
+    "at": "2026-10-07T01:57:50Z"
    },
    {
     "repo": "senechal",
@@ -434,7 +434,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
+  "wtul: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
