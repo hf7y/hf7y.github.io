@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-07T18:00:01Z",
+ "generated_at": "2026-10-07T18:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T19:00:01Z",
+ "valid_until": "2026-10-07T19:20:02Z",
  "containers": [
   {
-   "name": "bold_wilson",
+   "name": "agitated_keller",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-07T17:53:47Z",
+   "started_at": "2026-10-07T18:20:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -45,13 +45,13 @@
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
-   "state": "exited",
-   "health": "unhealthy",
+   "state": "running",
+   "health": "healthy",
    "restarts": 0,
-   "exit_code": 0,
-   "started_at": "2026-10-07T17:43:27Z",
-   "finished_at": "2026-10-07T18:00:01Z",
-   "ports_published": false
+   "exit_code": null,
+   "started_at": "2026-10-07T18:03:40Z",
+   "finished_at": null,
+   "ports_published": true
   },
   {
    "name": "roster",
@@ -200,7 +200,7 @@
   }
  ],
  "unmanaged": [
-  "bold_wilson",
+  "agitated_keller",
   "condescending_joliot",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -273,6 +273,21 @@
     "secretaire": {
      "queue": 8,
      "at": "2026-10-07T17:53:45Z",
+     "outcome": "finished"
+    },
+    "space-canon": {
+     "queue": 2,
+     "at": "2026-10-07T18:01:11Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 6,
+     "at": "2026-10-07T18:12:44Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-07T18:19:59Z",
      "outcome": null
     }
    },
@@ -280,7 +295,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.9
+   "age_h": 3.2
   },
   "passes": [
    {
@@ -394,38 +409,38 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261007T175345Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 51,
+    "cost_usd": 1.2863,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/102",
     "commented": false,
     "note": null,
     "at": "2026-10-07T17:53:45Z"
    },
    {
     "repo": "space-canon",
-    "log": "space-canon.20261007T133547Z.log",
+    "log": "space-canon.20261007T180111Z.log",
     "result": "success",
-    "turns": 39,
-    "cost_usd": 0.7952,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/space-canon/pull/33",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-07T13:35:47Z"
-   },
-   {
-    "repo": "chezz",
-    "log": "chezz.20261007T135351Z.log",
-    "result": "success",
-    "turns": 46,
-    "cost_usd": 1.3352,
+    "turns": 31,
+    "cost_usd": 0.7946,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-07T13:53:51Z"
+    "at": "2026-10-07T18:01:11Z"
+   },
+   {
+    "repo": "chezz",
+    "log": "chezz.20261007T181244Z.log",
+    "result": "success",
+    "turns": 35,
+    "cost_usd": 0.6457,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/chezz/pull/190",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-07T18:12:44Z"
    }
   ],
   "dispatch_source": {
@@ -450,7 +465,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
+  "senechal: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
