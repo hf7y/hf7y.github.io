@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-07T04:20:02Z",
+ "generated_at": "2026-10-07T04:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T05:20:02Z",
+ "valid_until": "2026-10-07T05:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -40,18 +40,6 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
-  },
-  {
-   "name": "laughing_bartik",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T04:06:02Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -201,7 +189,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "laughing_bartik",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -238,7 +225,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 3.5
+   "age_h": 3.8
   },
   "passes": [
    {
@@ -376,12 +363,12 @@
    {
     "repo": "chezz",
     "log": "chezz.20261007T040558Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 63,
+    "cost_usd": 1.2423,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/chezz/pull/189",
+    "commented": true,
     "note": null,
     "at": "2026-10-07T04:05:58Z"
    }
@@ -407,7 +394,6 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
-  "chezz: last pass landed nothing -- no PR and no comment on its issue"
+  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
