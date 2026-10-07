@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-07T06:20:02Z",
+ "generated_at": "2026-10-07T06:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T07:20:02Z",
+ "valid_until": "2026-10-07T07:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,14 +42,14 @@
    "ports_published": false
   },
   {
-   "name": "mystifying_rosalind",
+   "name": "happy_noether",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-07T06:15:27Z",
+   "started_at": "2026-10-07T06:22:59Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "mystifying_rosalind",
+  "happy_noether",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -258,6 +258,11 @@
     "etalon": {
      "queue": 48,
      "at": "2026-10-07T06:15:12Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 150,
+     "at": "2026-10-07T06:22:54Z",
      "outcome": null
     }
    },
@@ -265,7 +270,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.2
+   "age_h": 1.6
   },
   "passes": [
    {
@@ -343,6 +348,18 @@
    {
     "repo": "etalon",
     "log": "etalon.20261007T061512Z.log",
+    "result": "success",
+    "turns": 35,
+    "cost_usd": 0.8826,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/133",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-07T06:15:12Z"
+   },
+   {
+    "repo": "realisateur",
+    "log": "realisateur.20261007T062254Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -350,19 +367,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T06:15:12Z"
-   },
-   {
-    "repo": "realisateur",
-    "log": "realisateur.20261007T031207Z.log",
-    "result": "success",
-    "turns": 108,
-    "cost_usd": 3.3974,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1630",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-07T03:12:07Z"
+    "at": "2026-10-07T06:22:54Z"
    },
    {
     "repo": "bibliothecaire",
@@ -437,7 +442,7 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
-  "etalon: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
