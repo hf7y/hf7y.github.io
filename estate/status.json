@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-07T11:40:01Z",
+ "generated_at": "2026-10-07T12:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T12:40:01Z",
+ "valid_until": "2026-10-07T13:00:01Z",
  "containers": [
-  {
-   "name": "charming_nobel",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T11:31:35Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -52,6 +40,18 @@
    "started_at": "2026-09-27T00:42:12Z",
    "finished_at": "2026-09-27T00:45:02Z",
    "ports_published": false
+  },
+  {
+   "name": "peaceful_bassi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-07T11:50:34Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "charming_nobel",
   "condescending_joliot",
+  "peaceful_bassi",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -253,6 +253,11 @@
     "senechal": {
      "queue": 20,
      "at": "2026-10-07T11:31:33Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 48,
+     "at": "2026-10-07T11:50:18Z",
      "outcome": null
     }
    },
@@ -260,7 +265,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.5
+   "age_h": 2.9
   },
   "passes": [
    {
@@ -326,6 +331,18 @@
    {
     "repo": "senechal",
     "log": "senechal.20261007T113133Z.log",
+    "result": "success",
+    "turns": 66,
+    "cost_usd": 1.7639,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1146",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-07T11:31:33Z"
+   },
+   {
+    "repo": "etalon",
+    "log": "etalon.20261007T115018Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -333,19 +350,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T11:31:33Z"
-   },
-   {
-    "repo": "etalon",
-    "log": "etalon.20261007T061512Z.log",
-    "result": "success",
-    "turns": 35,
-    "cost_usd": 0.8826,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/etalon/pull/133",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-07T06:15:12Z"
+    "at": "2026-10-07T11:50:18Z"
    },
    {
     "repo": "realisateur",
@@ -431,6 +436,6 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue"
+  "etalon: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
