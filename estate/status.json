@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-07T23:20:01Z",
+ "generated_at": "2026-10-07T23:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T00:20:01Z",
+ "valid_until": "2026-10-08T00:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,14 +42,14 @@
    "ports_published": false
   },
   {
-   "name": "hungry_yalow",
+   "name": "heuristic_wiles",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-07T22:58:00Z",
+   "started_at": "2026-10-07T23:39:10Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "hungry_yalow",
+  "heuristic_wiles",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -248,6 +248,16 @@
     "wtul": {
      "queue": 32,
      "at": "2026-10-07T22:57:57Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 28,
+     "at": "2026-10-07T23:24:11Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 49,
+     "at": "2026-10-07T23:39:01Z",
      "outcome": null
     }
    },
@@ -255,7 +265,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.2
+   "age_h": 1.6
   },
   "passes": [
    {
@@ -309,6 +319,30 @@
    {
     "repo": "wtul",
     "log": "wtul.20261007T225757Z.log",
+    "result": "success",
+    "turns": 77,
+    "cost_usd": 3.1623,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/wtul/pull/462",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-07T22:57:57Z"
+   },
+   {
+    "repo": "senechal",
+    "log": "senechal.20261007T232411Z.log",
+    "result": "success",
+    "turns": 80,
+    "cost_usd": 2.0389,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1157",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-07T23:24:11Z"
+   },
+   {
+    "repo": "etalon",
+    "log": "etalon.20261007T233901Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -316,31 +350,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T22:57:57Z"
-   },
-   {
-    "repo": "senechal",
-    "log": "senechal.20261007T202657Z.log",
-    "result": "success",
-    "turns": 34,
-    "cost_usd": 0.7628,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1151",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-07T20:26:57Z"
-   },
-   {
-    "repo": "etalon",
-    "log": "etalon.20261007T203721Z.log",
-    "result": "success",
-    "turns": 56,
-    "cost_usd": 1.5325,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/etalon/pull/138",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-07T20:37:21Z"
+    "at": "2026-10-07T23:39:01Z"
    },
    {
     "repo": "realisateur",
@@ -427,6 +437,6 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
-  "wtul: last pass landed nothing -- no PR and no comment on its issue"
+  "etalon: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
