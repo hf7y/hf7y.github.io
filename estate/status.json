@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-07T01:20:02Z",
+ "generated_at": "2026-10-07T01:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T02:20:02Z",
+ "valid_until": "2026-10-07T02:40:01Z",
  "containers": [
+  {
+   "name": "charming_elion",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-07T01:33:28Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -62,18 +74,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-07T00:51:44Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "optimistic_almeida",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T00:48:27Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -224,10 +224,10 @@
   }
  ],
  "unmanaged": [
+  "charming_elion",
   "condescending_joliot",
   "inspiring_galois",
   "magical_ishizaka",
-  "optimistic_almeida",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -264,7 +264,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.8
   },
   "passes": [
    {
@@ -294,10 +294,10 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261007T004817Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 88,
+    "cost_usd": 2.4895,
+    "rc": 1,
     "pr": null,
     "commented": true,
     "note": null,
@@ -305,15 +305,15 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261006T222815Z.log",
-    "result": "success",
-    "turns": 50,
-    "cost_usd": 1.129,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/393",
+    "log": "groc-mangr.20261007T013324Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-06T22:28:15Z"
+    "at": "2026-10-07T01:33:24Z"
    },
    {
     "repo": "wtul",
@@ -434,6 +434,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
