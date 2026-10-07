@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-07T02:40:01Z",
+ "generated_at": "2026-10-07T03:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T03:40:01Z",
+ "valid_until": "2026-10-07T04:00:02Z",
  "containers": [
+  {
+   "name": "clever_sammet",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-07T02:42:53Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -26,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "friendly_hawking",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T01:57:54Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -212,8 +212,8 @@
   }
  ],
  "unmanaged": [
+  "clever_sammet",
   "condescending_joliot",
-  "friendly_hawking",
   "inspiring_galois",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -251,7 +251,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.8
+   "age_h": 2.1
   },
   "passes": [
    {
@@ -305,6 +305,18 @@
    {
     "repo": "wtul",
     "log": "wtul.20261007T015750Z.log",
+    "result": "success",
+    "turns": 98,
+    "cost_usd": 3.5881,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/wtul/pull/460",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-07T01:57:50Z"
+   },
+   {
+    "repo": "senechal",
+    "log": "senechal.20261007T024251Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -312,19 +324,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T01:57:50Z"
-   },
-   {
-    "repo": "senechal",
-    "log": "senechal.20261006T233249Z.log",
-    "result": "success",
-    "turns": 63,
-    "cost_usd": 1.5985,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1133",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-06T23:32:49Z"
+    "at": "2026-10-07T02:42:51Z"
    },
    {
     "repo": "etalon",
@@ -420,7 +420,7 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "wtul: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass ended `error_max_turns`"
  ]
 }
