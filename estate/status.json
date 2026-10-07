@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-07T13:20:01Z",
+ "generated_at": "2026-10-07T13:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T14:20:01Z",
+ "valid_until": "2026-10-07T14:40:02Z",
  "containers": [
   {
-   "name": "adoring_mccarthy",
+   "name": "angry_tharp",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-07T12:31:28Z",
+   "started_at": "2026-10-07T13:35:49Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -200,7 +200,7 @@
   }
  ],
  "unmanaged": [
-  "adoring_mccarthy",
+  "angry_tharp",
   "condescending_joliot",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -268,14 +268,20 @@
     "bibliothecaire": {
      "queue": 30,
      "at": "2026-10-07T12:31:25Z",
+     "outcome": "finished"
+    },
+    "space-canon": {
+     "queue": 2,
+     "at": "2026-10-07T13:35:47Z",
      "outcome": null
     }
    },
    "skipped": [
-    "dog"
+    "dog",
+    "secretaire"
    ],
    "queue_unreadable": [],
-   "age_h": 4.2
+   "age_h": 4.5
   },
   "passes": [
    {
@@ -377,12 +383,12 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261007T123125Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 135,
+    "cost_usd": 4.4297,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-07T12:31:25Z"
    },
@@ -400,15 +406,15 @@
    },
    {
     "repo": "space-canon",
-    "log": "space-canon.20261007T070228Z.log",
-    "result": "success",
-    "turns": 25,
-    "cost_usd": 0.476,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/space-canon/pull/32",
-    "commented": true,
+    "log": "space-canon.20261007T133547Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-07T07:02:28Z"
+    "at": "2026-10-07T13:35:47Z"
    },
    {
     "repo": "chezz",
@@ -446,6 +452,6 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
+  "space-canon: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
