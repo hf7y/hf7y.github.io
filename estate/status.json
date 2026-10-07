@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-07T17:40:01Z",
+ "generated_at": "2026-10-07T18:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-07T18:40:01Z",
+ "valid_until": "2026-10-07T19:00:01Z",
  "containers": [
+  {
+   "name": "bold_wilson",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-07T17:53:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -37,21 +49,9 @@
    "health": "unhealthy",
    "restarts": 0,
    "exit_code": 0,
-   "started_at": "2026-09-27T00:42:12Z",
-   "finished_at": "2026-09-27T00:45:02Z",
+   "started_at": "2026-10-07T17:43:27Z",
+   "finished_at": "2026-10-07T18:00:01Z",
    "ports_published": false
-  },
-  {
-   "name": "relaxed_proskuriakova",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T17:25:05Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
+  "bold_wilson",
   "condescending_joliot",
-  "relaxed_proskuriakova",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -268,6 +268,11 @@
     "bibliothecaire": {
      "queue": 30,
      "at": "2026-10-07T17:25:02Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 8,
+     "at": "2026-10-07T17:53:45Z",
      "outcome": null
     }
    },
@@ -275,7 +280,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.5
+   "age_h": 2.9
   },
   "passes": [
    {
@@ -377,6 +382,18 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261007T172502Z.log",
+    "result": "success",
+    "turns": 145,
+    "cost_usd": 4.8451,
+    "rc": 0,
+    "pr": null,
+    "commented": true,
+    "note": null,
+    "at": "2026-10-07T17:25:02Z"
+   },
+   {
+    "repo": "secretaire",
+    "log": "secretaire.20261007T175345Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -384,19 +401,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T17:25:02Z"
-   },
-   {
-    "repo": "secretaire",
-    "log": "secretaire.20261007T070124Z.log",
-    "result": "success",
-    "turns": 5,
-    "cost_usd": 0.1344,
-    "rc": 0,
-    "pr": null,
-    "commented": true,
-    "note": null,
-    "at": "2026-10-07T07:01:24Z"
+    "at": "2026-10-07T17:53:45Z"
    },
    {
     "repo": "space-canon",
@@ -446,6 +451,6 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
