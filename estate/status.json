@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-08T18:00:02Z",
+ "generated_at": "2026-10-08T18:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T19:00:02Z",
+ "valid_until": "2026-10-08T19:20:01Z",
  "containers": [
-  {
-   "name": "boring_mahavira",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T17:56:22Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-08T06:52:28Z",
    "finished_at": "2026-10-08T07:15:01Z",
    "ports_published": false
+  },
+  {
+   "name": "nifty_austin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T18:18:00Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "boring_mahavira",
   "condescending_joliot",
+  "nifty_austin",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -274,12 +274,24 @@
     "bibliothecaire": {
      "queue": 30,
      "at": "2026-10-08T17:56:18Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 10,
+     "at": "2026-10-08T18:05:48Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 8,
+     "at": "2026-10-08T18:17:56Z",
      "outcome": null
     }
    },
-   "skipped": [],
+   "skipped": [
+    "space-canon"
+   ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 2.2
   },
   "passes": [
    {
@@ -381,26 +393,26 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261008T175618Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 53,
+    "cost_usd": 1.0446,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/166",
     "commented": false,
     "note": null,
     "at": "2026-10-08T17:56:18Z"
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261008T145811Z.log",
+    "log": "secretaire.20261008T180548Z.log",
     "result": "success",
-    "turns": 71,
-    "cost_usd": 3.0911,
+    "turns": 65,
+    "cost_usd": 2.8537,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/128",
-    "commented": false,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/131",
+    "commented": true,
     "note": null,
-    "at": "2026-10-08T14:58:11Z"
+    "at": "2026-10-08T18:05:48Z"
    },
    {
     "repo": "space-canon",
@@ -416,15 +428,15 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261008T150730Z.log",
-    "result": "success",
-    "turns": 9,
-    "cost_usd": 0.293,
-    "rc": 0,
+    "log": "chezz.20261008T181756Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-08T15:07:30Z"
+    "at": "2026-10-08T18:17:56Z"
    },
    {
     "repo": "baudin",
@@ -461,6 +473,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
+  "chezz: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
