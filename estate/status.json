@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T16:20:02Z",
+ "generated_at": "2026-10-08T16:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T17:20:02Z",
+ "valid_until": "2026-10-08T17:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,14 +42,14 @@
    "ports_published": false
   },
   {
-   "name": "infallible_colden",
+   "name": "hungry_gates",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-08T16:07:13Z",
+   "started_at": "2026-10-08T16:32:46Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "infallible_colden",
+  "hungry_gates",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -234,17 +234,51 @@
     "crt": {
      "queue": 23,
      "at": "2026-10-08T16:07:09Z",
+     "outcome": "finished"
+    },
+    "dog": {
+     "queue": 1,
+     "at": "2026-10-08T16:30:31Z",
+     "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 56,
+     "at": "2026-10-08T16:32:43Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
     "repo": "crt",
     "log": "crt.20261008T160709Z.log",
+    "result": "success",
+    "turns": 54,
+    "cost_usd": 2.0861,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/458",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-08T16:07:09Z"
+   },
+   {
+    "repo": "dog",
+    "log": "dog.20261008T163031Z.log",
+    "result": "success",
+    "turns": 20,
+    "cost_usd": 0.3119,
+    "rc": 0,
+    "pr": null,
+    "commented": true,
+    "note": null,
+    "at": "2026-10-08T16:30:31Z"
+   },
+   {
+    "repo": "musc-2300",
+    "log": "musc-2300.20261008T163243Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -252,31 +286,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T16:07:09Z"
-   },
-   {
-    "repo": "dog",
-    "log": "dog.20261008T104024Z.log",
-    "result": "success",
-    "turns": 67,
-    "cost_usd": 1.5408,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/dog/pull/13",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-08T10:40:24Z"
-   },
-   {
-    "repo": "musc-2300",
-    "log": "musc-2300.20261008T105054Z.log",
-    "result": "success",
-    "turns": 138,
-    "cost_usd": 4.5197,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/255",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-08T10:50:54Z"
+    "at": "2026-10-08T16:32:43Z"
    },
    {
     "repo": "groc-mangr",
@@ -421,7 +431,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "crt: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue"
  ]
