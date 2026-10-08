@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-08T11:20:01Z",
+ "generated_at": "2026-10-08T11:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T12:20:01Z",
+ "valid_until": "2026-10-08T12:40:02Z",
  "containers": [
-  {
-   "name": "condescending_feynman",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T10:50:56Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-08T06:52:28Z",
    "finished_at": "2026-10-08T07:15:01Z",
    "ports_published": false
+  },
+  {
+   "name": "kind_torvalds",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T11:25:33Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "condescending_feynman",
   "condescending_joliot",
+  "kind_torvalds",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -244,12 +244,17 @@
     "musc-2300": {
      "queue": 55,
      "at": "2026-10-08T10:50:54Z",
+     "outcome": "finished"
+    },
+    "groc-mangr": {
+     "queue": 29,
+     "at": "2026-10-08T11:25:29Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.2
+   "age_h": 2.5
   },
   "passes": [
    {
@@ -279,6 +284,18 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261008T105054Z.log",
+    "result": "success",
+    "turns": 138,
+    "cost_usd": 4.5197,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/255",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-08T10:50:54Z"
+   },
+   {
+    "repo": "groc-mangr",
+    "log": "groc-mangr.20261008T112529Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -286,19 +303,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T10:50:54Z"
-   },
-   {
-    "repo": "groc-mangr",
-    "log": "groc-mangr.20261008T063713Z.log",
-    "result": "success",
-    "turns": 49,
-    "cost_usd": 1.2314,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/422",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-08T06:37:13Z"
+    "at": "2026-10-08T11:25:29Z"
    },
    {
     "repo": "wtul",
@@ -431,7 +436,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
