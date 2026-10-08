@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T07:40:02Z",
+ "generated_at": "2026-10-08T08:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T08:40:02Z",
+ "valid_until": "2026-10-08T09:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "exciting_satoshi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T07:53:28Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -76,18 +88,6 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "wizardly_khayyam",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T07:21:45Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "exciting_satoshi",
   "serene_elgamal",
-  "wizardly_khayyam",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -264,6 +264,11 @@
     "realisateur": {
      "queue": 199,
      "at": "2026-10-08T07:21:42Z",
+     "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 31,
+     "at": "2026-10-08T07:53:26Z",
      "outcome": null
     }
    },
@@ -271,7 +276,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.7
+   "age_h": 2.0
   },
   "passes": [
    {
@@ -361,6 +366,18 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261008T072142Z.log",
+    "result": "success",
+    "turns": 136,
+    "cost_usd": 5.28,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1663",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-08T07:21:42Z"
+   },
+   {
+    "repo": "bibliothecaire",
+    "log": "bibliothecaire.20261008T075326Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -368,19 +385,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T07:21:42Z"
-   },
-   {
-    "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261008T044847Z.log",
-    "result": "success",
-    "turns": 56,
-    "cost_usd": 1.469,
-    "rc": 0,
-    "pr": null,
-    "commented": false,
-    "note": null,
-    "at": "2026-10-08T04:48:47Z"
+    "at": "2026-10-08T07:53:26Z"
    },
    {
     "repo": "secretaire",
@@ -454,7 +459,6 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
