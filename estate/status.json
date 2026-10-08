@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T15:00:02Z",
+ "generated_at": "2026-10-08T15:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T16:00:02Z",
+ "valid_until": "2026-10-08T16:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "funny_wilson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T14:58:13Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-08T06:52:28Z",
    "finished_at": "2026-10-08T07:15:01Z",
    "ports_published": false
+  },
+  {
+   "name": "nervous_solomon",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T15:11:14Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "funny_wilson",
+  "nervous_solomon",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -279,12 +279,24 @@
     "secretaire": {
      "queue": 10,
      "at": "2026-10-08T14:58:11Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 8,
+     "at": "2026-10-08T15:07:30Z",
+     "outcome": "finished"
+    },
+    "baudin": {
+     "queue": 22,
+     "at": "2026-10-08T15:11:12Z",
      "outcome": null
     }
    },
-   "skipped": [],
+   "skipped": [
+    "space-canon"
+   ],
    "queue_unreadable": [],
-   "age_h": 5.9
+   "age_h": 6.2
   },
   "passes": [
    {
@@ -398,11 +410,11 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261008T145811Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 71,
+    "cost_usd": 3.0911,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/128",
     "commented": false,
     "note": null,
     "at": "2026-10-08T14:58:11Z"
@@ -421,27 +433,27 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261008T080957Z.log",
+    "log": "chezz.20261008T150730Z.log",
     "result": "success",
-    "turns": 10,
-    "cost_usd": 0.3394,
+    "turns": 9,
+    "cost_usd": 0.293,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-08T08:09:57Z"
+    "at": "2026-10-08T15:07:30Z"
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261008T081403Z.log",
-    "result": "success",
-    "turns": 64,
-    "cost_usd": 1.9636,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/124",
+    "log": "baudin.20261008T151112Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T08:14:03Z"
+    "at": "2026-10-08T15:11:12Z"
    }
   ],
   "dispatch_source": {
@@ -468,6 +480,6 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
+  "baudin: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
