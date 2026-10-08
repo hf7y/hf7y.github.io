@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T23:00:01Z",
+ "generated_at": "2026-10-08T23:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T00:00:01Z",
+ "valid_until": "2026-10-09T00:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -40,6 +40,18 @@
    "started_at": "2026-10-08T22:13:55Z",
    "finished_at": "2026-10-08T22:35:02Z",
    "ports_published": false
+  },
+  {
+   "name": "romantic_burnell",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T23:07:11Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -189,6 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "romantic_burnell",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -211,98 +224,35 @@
    "baudin"
   ],
   "last_run": {
-   "log": "nightly.20261008T190702Z.log",
-   "started_at": "2026-10-08T19:07:02Z",
-   "finished_at": "2026-10-08T22:23:15Z",
+   "log": "nightly.20261008T230702Z.log",
+   "started_at": "2026-10-08T23:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "crt": {
-     "queue": 23,
-     "at": "2026-10-08T19:07:09Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 55,
-     "at": "2026-10-08T19:28:18Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
      "queue": 28,
-     "at": "2026-10-08T19:53:13Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 33,
-     "at": "2026-10-08T20:01:21Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 30,
-     "at": "2026-10-08T20:08:41Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 53,
-     "at": "2026-10-08T20:38:29Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 199,
-     "at": "2026-10-08T20:54:22Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 31,
-     "at": "2026-10-08T21:15:46Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 12,
-     "at": "2026-10-08T21:29:40Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 8,
-     "at": "2026-10-08T21:48:28Z",
-     "outcome": "finished"
-    },
-    "baudin": {
-     "queue": 21,
-     "at": "2026-10-08T21:54:29Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-08T22:01:16Z",
-     "outcome": "finished"
-    },
-    "abletim": {
-     "queue": 23,
-     "at": "2026-10-08T22:01:45Z",
-     "outcome": "finished"
+     "at": "2026-10-08T23:07:09Z",
+     "outcome": null
     }
    },
-   "skipped": [
-    "dog",
-    "space-canon"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 3.9
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261008T190709Z.log",
-    "result": "success",
-    "turns": 59,
-    "cost_usd": 1.7688,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/459",
+    "log": "crt.20261008T230709Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T19:07:09Z"
+    "at": "2026-10-08T23:07:09Z"
    },
    {
     "repo": "dog",
@@ -469,7 +419,9 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue"
