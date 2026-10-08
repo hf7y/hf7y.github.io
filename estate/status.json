@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T00:40:01Z",
+ "generated_at": "2026-10-08T01:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T01:40:01Z",
+ "valid_until": "2026-10-08T02:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,6 +42,18 @@
    "ports_published": false
   },
   {
+   "name": "nice_stonebraker",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T00:52:02Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -63,18 +75,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "trusting_haslett",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T00:38:26Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "nice_stonebraker",
   "serene_elgamal",
-  "trusting_haslett",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -273,6 +273,16 @@
     "secretaire": {
      "queue": 8,
      "at": "2026-10-08T00:38:24Z",
+     "outcome": "finished"
+    },
+    "space-canon": {
+     "queue": 2,
+     "at": "2026-10-08T00:47:00Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 6,
+     "at": "2026-10-08T00:51:58Z",
      "outcome": null
     }
    },
@@ -280,7 +290,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.5
+   "age_h": 2.9
   },
   "passes": [
    {
@@ -394,6 +404,30 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261008T003824Z.log",
+    "result": "success",
+    "turns": 31,
+    "cost_usd": 0.569,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/107",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-08T00:38:24Z"
+   },
+   {
+    "repo": "space-canon",
+    "log": "space-canon.20261008T004700Z.log",
+    "result": "success",
+    "turns": 11,
+    "cost_usd": 0.2776,
+    "rc": 0,
+    "pr": null,
+    "commented": true,
+    "note": null,
+    "at": "2026-10-08T00:47:00Z"
+   },
+   {
+    "repo": "chezz",
+    "log": "chezz.20261008T005158Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -401,31 +435,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T00:38:24Z"
-   },
-   {
-    "repo": "space-canon",
-    "log": "space-canon.20261007T212744Z.log",
-    "result": "success",
-    "turns": 31,
-    "cost_usd": 0.6541,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/space-canon/pull/34",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-07T21:27:44Z"
-   },
-   {
-    "repo": "chezz",
-    "log": "chezz.20261007T213202Z.log",
-    "result": "success",
-    "turns": 56,
-    "cost_usd": 1.4142,
-    "rc": 0,
-    "pr": null,
-    "commented": true,
-    "note": null,
-    "at": "2026-10-07T21:32:02Z"
+    "at": "2026-10-08T00:51:58Z"
    }
   ],
   "dispatch_source": {
@@ -452,6 +462,6 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
+  "chezz: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
