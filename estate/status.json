@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T06:00:02Z",
+ "generated_at": "2026-10-08T06:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T07:00:02Z",
+ "valid_until": "2026-10-08T07:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -33,23 +33,23 @@
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
-   "state": "exited",
-   "health": "unhealthy",
+   "state": "running",
+   "health": "healthy",
    "restarts": 0,
-   "exit_code": 0,
-   "started_at": "2026-10-08T05:55:09Z",
-   "finished_at": "2026-10-08T06:00:01Z",
-   "ports_published": false
+   "exit_code": null,
+   "started_at": "2026-10-08T06:09:18Z",
+   "finished_at": null,
+   "ports_published": true
   },
   {
-   "name": "nostalgic_rosalind",
+   "name": "keen_hawking",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-08T05:43:38Z",
+   "started_at": "2026-10-08T06:00:14Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "nostalgic_rosalind",
+  "keen_hawking",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -228,25 +228,31 @@
    "started_at": "2026-10-08T06:00:01Z",
    "finished_at": null,
    "turns": 150,
-   "image": null,
+   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "crt": {
+     "queue": 21,
+     "at": "2026-10-08T06:00:11Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261008T020708Z.log",
-    "result": "success",
-    "turns": 69,
-    "cost_usd": 2.6693,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/452",
+    "log": "crt.20261008T060011Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T02:07:08Z"
+    "at": "2026-10-08T06:00:11Z"
    },
    {
     "repo": "dog",
@@ -299,12 +305,12 @@
    {
     "repo": "senechal",
     "log": "senechal.20261008T054335Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 68,
+    "cost_usd": 1.7988,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1176",
+    "commented": true,
     "note": null,
     "at": "2026-10-08T05:43:35Z"
    },
@@ -415,7 +421,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
+  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
