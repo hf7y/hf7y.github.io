@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T20:20:01Z",
+ "generated_at": "2026-10-08T20:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T21:20:01Z",
+ "valid_until": "2026-10-08T21:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,18 +42,6 @@
    "ports_published": false
   },
   {
-   "name": "nostalgic_kalam",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T20:08:43Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -75,6 +63,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "stupefied_wiles",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T20:38:32Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "nostalgic_kalam",
   "serene_elgamal",
+  "stupefied_wiles",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -254,6 +254,11 @@
     "senechal": {
      "queue": 30,
      "at": "2026-10-08T20:08:41Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 53,
+     "at": "2026-10-08T20:38:29Z",
      "outcome": null
     }
    },
@@ -261,7 +266,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.2
+   "age_h": 1.6
   },
   "passes": [
    {
@@ -327,26 +332,26 @@
    {
     "repo": "senechal",
     "log": "senechal.20261008T200841Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 103,
+    "cost_usd": 4.6603,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1188",
     "commented": true,
     "note": null,
     "at": "2026-10-08T20:08:41Z"
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261008T173145Z.log",
-    "result": "success",
-    "turns": 31,
-    "cost_usd": 0.8522,
-    "rc": 0,
+    "log": "etalon.20261008T203829Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-08T17:31:45Z"
+    "at": "2026-10-08T20:38:29Z"
    },
    {
     "repo": "realisateur",
@@ -445,6 +450,7 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
+  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
