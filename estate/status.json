@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T03:40:01Z",
+ "generated_at": "2026-10-08T04:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T04:40:01Z",
+ "valid_until": "2026-10-08T05:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -37,8 +37,8 @@
    "health": "unhealthy",
    "restarts": 0,
    "exit_code": 0,
-   "started_at": "2026-10-08T03:10:48Z",
-   "finished_at": "2026-10-08T03:15:01Z",
+   "started_at": "2026-10-08T03:51:20Z",
+   "finished_at": "2026-10-08T03:55:01Z",
    "ports_published": false
   },
   {
@@ -239,7 +239,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.8
+   "age_h": 1.1
   },
   "passes": [
    {
