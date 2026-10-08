@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T11:40:02Z",
+ "generated_at": "2026-10-08T12:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T12:40:02Z",
+ "valid_until": "2026-10-08T13:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "epic_sanderson",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T11:42:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -40,18 +52,6 @@
    "started_at": "2026-10-08T06:52:28Z",
    "finished_at": "2026-10-08T07:15:01Z",
    "ports_published": false
-  },
-  {
-   "name": "kind_torvalds",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T11:25:33Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "kind_torvalds",
+  "epic_sanderson",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -249,12 +249,17 @@
     "groc-mangr": {
      "queue": 29,
      "at": "2026-10-08T11:25:29Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 33,
+     "at": "2026-10-08T11:42:43Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.5
+   "age_h": 2.9
   },
   "passes": [
    {
@@ -296,6 +301,18 @@
    {
     "repo": "groc-mangr",
     "log": "groc-mangr.20261008T112529Z.log",
+    "result": "success",
+    "turns": 56,
+    "cost_usd": 1.9023,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/427",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-08T11:25:29Z"
+   },
+   {
+    "repo": "wtul",
+    "log": "wtul.20261008T114243Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -303,19 +320,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T11:25:29Z"
-   },
-   {
-    "repo": "wtul",
-    "log": "wtul.20261008T064305Z.log",
-    "result": "success",
-    "turns": 70,
-    "cost_usd": 2.5236,
-    "rc": 0,
-    "pr": null,
-    "commented": false,
-    "note": null,
-    "at": "2026-10-08T06:43:05Z"
+    "at": "2026-10-08T11:42:43Z"
    },
    {
     "repo": "senechal",
@@ -436,7 +441,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
