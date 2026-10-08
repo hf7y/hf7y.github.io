@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T22:20:01Z",
+ "generated_at": "2026-10-08T22:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T23:20:01Z",
+ "valid_until": "2026-10-08T23:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -33,37 +33,13 @@
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
-   "state": "running",
-   "health": "healthy",
+   "state": "exited",
+   "health": "unhealthy",
    "restarts": 0,
-   "exit_code": null,
+   "exit_code": 0,
    "started_at": "2026-10-08T22:13:55Z",
-   "finished_at": null,
-   "ports_published": true
-  },
-  {
-   "name": "groc-runner-runner-run-5778a4e0440b",
-   "image": "groc-runner:local",
-   "project": "groc-runner",
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T22:13:57Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "happy_benz",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T22:01:48Z",
-   "finished_at": null,
-   "ports_published": null
+   "finished_at": "2026-10-08T22:35:02Z",
+   "ports_published": false
   },
   {
    "name": "roster",
@@ -213,8 +189,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "groc-runner-runner-run-5778a4e0440b",
-  "happy_benz",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -239,7 +213,7 @@
   "last_run": {
    "log": "nightly.20261008T190702Z.log",
    "started_at": "2026-10-08T19:07:02Z",
-   "finished_at": null,
+   "finished_at": "2026-10-08T22:23:15Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -307,7 +281,7 @@
     "abletim": {
      "queue": 23,
      "at": "2026-10-08T22:01:45Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [
@@ -315,7 +289,7 @@
     "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 3.2
+   "age_h": 3.5
   },
   "passes": [
    {
@@ -495,7 +469,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
