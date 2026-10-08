@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T03:00:01Z",
+ "generated_at": "2026-10-08T03:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T04:00:01Z",
+ "valid_until": "2026-10-08T04:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -36,34 +36,10 @@
    "state": "exited",
    "health": "unhealthy",
    "restarts": 0,
-   "exit_code": 1,
-   "started_at": "2026-10-07T19:43:26Z",
-   "finished_at": "2026-10-07T20:05:01Z",
+   "exit_code": 0,
+   "started_at": "2026-10-08T03:10:48Z",
+   "finished_at": "2026-10-08T03:15:01Z",
    "ports_published": false
-  },
-  {
-   "name": "intelligent_austin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T02:57:06Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "interesting_mclaren",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T02:54:59Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -87,6 +63,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "trusting_feistel",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T03:07:47Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "intelligent_austin",
-  "interesting_mclaren",
   "serene_elgamal",
+  "trusting_feistel",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -239,7 +226,7 @@
   "last_run": {
    "log": "nightly.20261008T025445Z.log",
    "started_at": "2026-10-08T02:54:45Z",
-   "finished_at": null,
+   "finished_at": "2026-10-08T03:04:24Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -247,12 +234,12 @@
     "vim-arcade": {
      "queue": 1,
      "at": "2026-10-08T02:54:56Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.4
   },
   "passes": [
    {
@@ -294,6 +281,18 @@
    {
     "repo": "groc-mangr",
     "log": "groc-mangr.20261008T025702Z.log",
+    "result": "success",
+    "turns": 63,
+    "cost_usd": 1.638,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/404",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-08T02:57:02Z"
+   },
+   {
+    "repo": "wtul",
+    "log": "wtul.20261008T030743Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -301,19 +300,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T02:57:02Z"
-   },
-   {
-    "repo": "wtul",
-    "log": "wtul.20261007T225757Z.log",
-    "result": "success",
-    "turns": 77,
-    "cost_usd": 3.1623,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/wtul/pull/462",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-07T22:57:57Z"
+    "at": "2026-10-08T03:07:43Z"
    },
    {
     "repo": "senechal",
@@ -432,9 +419,8 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
+  "wtul: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
