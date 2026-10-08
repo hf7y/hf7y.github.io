@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T16:00:01Z",
+ "generated_at": "2026-10-08T16:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T17:00:01Z",
+ "valid_until": "2026-10-08T17:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -40,6 +40,18 @@
    "started_at": "2026-10-08T06:52:28Z",
    "finished_at": "2026-10-08T07:15:01Z",
    "ports_published": false
+  },
+  {
+   "name": "infallible_colden",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T16:07:13Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -189,6 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "infallible_colden",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -211,97 +224,35 @@
    "baudin"
   ],
   "last_run": {
-   "log": "nightly.20261008T090702Z.log",
-   "started_at": "2026-10-08T09:07:02Z",
-   "finished_at": "2026-10-08T15:26:24Z",
+   "log": "nightly.20261008T160702Z.log",
+   "started_at": "2026-10-08T16:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "crt": {
      "queue": 23,
-     "at": "2026-10-08T09:07:10Z",
-     "outcome": "finished"
-    },
-    "dog": {
-     "queue": 1,
-     "at": "2026-10-08T10:40:24Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 55,
-     "at": "2026-10-08T10:50:54Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 29,
-     "at": "2026-10-08T11:25:29Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 33,
-     "at": "2026-10-08T11:42:43Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 43,
-     "at": "2026-10-08T12:23:20Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 51,
-     "at": "2026-10-08T12:31:14Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 199,
-     "at": "2026-10-08T14:00:58Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 30,
-     "at": "2026-10-08T14:25:16Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 10,
-     "at": "2026-10-08T14:58:11Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 8,
-     "at": "2026-10-08T15:07:30Z",
-     "outcome": "finished"
-    },
-    "baudin": {
-     "queue": 22,
-     "at": "2026-10-08T15:11:12Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-08T15:24:42Z",
-     "outcome": "finished"
+     "at": "2026-10-08T16:07:09Z",
+     "outcome": null
     }
    },
-   "skipped": [
-    "space-canon"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 6.9
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261008T090710Z.log",
-    "result": "success",
-    "turns": 40,
-    "cost_usd": 1.0856,
-    "rc": 0,
+    "log": "crt.20261008T160709Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-08T09:07:10Z"
+    "at": "2026-10-08T16:07:09Z"
    },
    {
     "repo": "dog",
@@ -468,7 +419,9 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue"
  ]
