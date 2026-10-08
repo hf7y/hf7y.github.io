@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-08T21:00:01Z",
+ "generated_at": "2026-10-08T21:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T22:00:01Z",
+ "valid_until": "2026-10-08T22:20:01Z",
  "containers": [
-  {
-   "name": "admiring_herschel",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T20:54:25Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-08T06:52:28Z",
    "finished_at": "2026-10-08T07:15:01Z",
    "ports_published": false
+  },
+  {
+   "name": "nervous_lovelace",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T21:15:50Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "admiring_herschel",
   "condescending_joliot",
+  "nervous_lovelace",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -264,6 +264,11 @@
     "realisateur": {
      "queue": 199,
      "at": "2026-10-08T20:54:22Z",
+     "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 31,
+     "at": "2026-10-08T21:15:46Z",
      "outcome": null
     }
    },
@@ -271,7 +276,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 2.2
   },
   "passes": [
    {
@@ -361,6 +366,18 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261008T205422Z.log",
+    "result": "success",
+    "turns": 57,
+    "cost_usd": 1.6605,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1667",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-08T20:54:22Z"
+   },
+   {
+    "repo": "bibliothecaire",
+    "log": "bibliothecaire.20261008T211546Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -368,19 +385,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T20:54:22Z"
-   },
-   {
-    "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261008T175618Z.log",
-    "result": "success",
-    "turns": 53,
-    "cost_usd": 1.0446,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/166",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-08T17:56:18Z"
+    "at": "2026-10-08T21:15:46Z"
    },
    {
     "repo": "secretaire",
@@ -455,7 +460,7 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
+  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
