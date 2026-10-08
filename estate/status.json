@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T02:00:01Z",
+ "generated_at": "2026-10-08T02:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T03:00:01Z",
+ "valid_until": "2026-10-08T03:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "epic_jones",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T02:07:11Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -63,18 +75,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "sweet_fermat",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T01:36:39Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "epic_jones",
   "serene_elgamal",
-  "sweet_fermat",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -224,17 +224,17 @@
    "baudin"
   ],
   "last_run": {
-   "log": "nightly.20261008T014641Z.log",
-   "started_at": "2026-10-08T01:46:41Z",
-   "finished_at": "2026-10-08T01:58:58Z",
+   "log": "nightly.20261008T020701Z.log",
+   "started_at": "2026-10-08T02:07:01Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "baudin": {
-     "queue": 1,
-     "at": "2026-10-08T01:46:48Z",
-     "outcome": "finished"
+    "crt": {
+     "queue": 20,
+     "at": "2026-10-08T02:07:08Z",
+     "outcome": null
     }
    },
    "skipped": [],
@@ -244,15 +244,15 @@
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261007T220714Z.log",
-    "result": "success",
-    "turns": 22,
-    "cost_usd": 0.7309,
-    "rc": 0,
+    "log": "crt.20261008T020708Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T22:07:14Z"
+    "at": "2026-10-08T02:07:08Z"
    },
    {
     "repo": "dog",
@@ -305,12 +305,12 @@
    {
     "repo": "senechal",
     "log": "senechal.20261008T013637Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 108,
+    "cost_usd": 4.641,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1164",
+    "commented": true,
     "note": null,
     "at": "2026-10-08T01:36:37Z"
    },
@@ -419,10 +419,10 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
