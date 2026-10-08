@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T04:20:02Z",
+ "generated_at": "2026-10-08T04:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T05:20:02Z",
+ "valid_until": "2026-10-08T05:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "flamboyant_matsumoto",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T04:05:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-08T04:15:17Z",
    "finished_at": "2026-10-08T04:20:01Z",
    "ports_published": false
+  },
+  {
+   "name": "objective_thompson",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T04:21:48Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "flamboyant_matsumoto",
+  "objective_thompson",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -239,7 +239,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.4
+   "age_h": 1.8
   },
   "passes": [
    {
@@ -317,10 +317,10 @@
    {
     "repo": "etalon",
     "log": "etalon.20261008T040457Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 77,
+    "cost_usd": 2.4317,
+    "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
@@ -328,15 +328,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261007T235042Z.log",
-    "result": "success",
-    "turns": 75,
-    "cost_usd": 2.0102,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1643",
+    "log": "realisateur.20261008T042142Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-07T23:50:42Z"
+    "at": "2026-10-08T04:21:42Z"
    },
    {
     "repo": "bibliothecaire",
