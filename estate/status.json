@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-08T14:20:02Z",
+ "generated_at": "2026-10-08T14:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T15:20:02Z",
+ "valid_until": "2026-10-08T15:40:01Z",
  "containers": [
-  {
-   "name": "clever_dhawan",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T14:01:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -38,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "frosty_archimedes",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T14:25:19Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "clever_dhawan",
   "condescending_joliot",
+  "frosty_archimedes",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -269,12 +269,17 @@
     "realisateur": {
      "queue": 199,
      "at": "2026-10-08T14:00:58Z",
+     "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 30,
+     "at": "2026-10-08T14:25:16Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 5.2
+   "age_h": 5.5
   },
   "passes": [
    {
@@ -364,10 +369,10 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261008T140058Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 27,
+    "cost_usd": 0.7103,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -375,15 +380,15 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261008T075326Z.log",
-    "result": "success",
-    "turns": 62,
-    "cost_usd": 1.5436,
-    "rc": 0,
+    "log": "bibliothecaire.20261008T142516Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-08T07:53:26Z"
+    "at": "2026-10-08T14:25:16Z"
    },
    {
     "repo": "secretaire",
@@ -458,6 +463,7 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
+  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
