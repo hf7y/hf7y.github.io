@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-08T09:00:02Z",
+ "generated_at": "2026-10-08T09:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T10:00:02Z",
+ "valid_until": "2026-10-08T10:20:02Z",
  "containers": [
+  {
+   "name": "clever_brattain",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T09:07:13Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -188,6 +200,7 @@
   }
  ],
  "unmanaged": [
+  "clever_brattain",
   "condescending_joliot",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -211,98 +224,35 @@
    "baudin"
   ],
   "last_run": {
-   "log": "nightly.20261008T060001Z.log",
-   "started_at": "2026-10-08T06:00:01Z",
-   "finished_at": "2026-10-08T08:41:46Z",
+   "log": "nightly.20261008T090702Z.log",
+   "started_at": "2026-10-08T09:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "crt": {
-     "queue": 21,
-     "at": "2026-10-08T06:00:11Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 55,
-     "at": "2026-10-08T06:24:55Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 25,
-     "at": "2026-10-08T06:37:13Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 33,
-     "at": "2026-10-08T06:43:05Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 40,
-     "at": "2026-10-08T07:03:03Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 51,
-     "at": "2026-10-08T07:12:08Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 199,
-     "at": "2026-10-08T07:21:42Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 31,
-     "at": "2026-10-08T07:53:26Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 7,
-     "at": "2026-10-08T08:02:48Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 8,
-     "at": "2026-10-08T08:09:57Z",
-     "outcome": "finished"
-    },
-    "baudin": {
-     "queue": 22,
-     "at": "2026-10-08T08:14:03Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-08T08:30:03Z",
-     "outcome": "finished"
-    },
-    "abletim": {
      "queue": 23,
-     "at": "2026-10-08T08:33:43Z",
-     "outcome": "finished"
+     "at": "2026-10-08T09:07:10Z",
+     "outcome": null
     }
    },
-   "skipped": [
-    "dog",
-    "space-canon"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 3.0
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261008T060011Z.log",
-    "result": "success",
-    "turns": 24,
-    "cost_usd": 2.2507,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/454",
-    "commented": true,
+    "log": "crt.20261008T090710Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-08T06:00:11Z"
+    "at": "2026-10-08T09:07:10Z"
    },
    {
     "repo": "dog",
@@ -469,7 +419,9 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
