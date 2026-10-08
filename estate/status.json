@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T08:20:02Z",
+ "generated_at": "2026-10-08T08:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T09:20:02Z",
+ "valid_until": "2026-10-08T09:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "elated_heyrovsky",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T08:33:46Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -40,18 +52,6 @@
    "started_at": "2026-10-08T06:52:28Z",
    "finished_at": "2026-10-08T07:15:01Z",
    "ports_published": false
-  },
-  {
-   "name": "pensive_blackwell",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T08:14:10Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "pensive_blackwell",
+  "elated_heyrovsky",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -284,6 +284,16 @@
     "baudin": {
      "queue": 22,
      "at": "2026-10-08T08:14:03Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-08T08:30:03Z",
+     "outcome": "finished"
+    },
+    "abletim": {
+     "queue": 23,
+     "at": "2026-10-08T08:33:43Z",
      "outcome": null
     }
    },
@@ -292,7 +302,7 @@
     "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 2.3
+   "age_h": 2.7
   },
   "passes": [
    {
@@ -442,11 +452,11 @@
    {
     "repo": "baudin",
     "log": "baudin.20261008T081403Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 64,
+    "cost_usd": 1.9636,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/baudin/pull/124",
     "commented": false,
     "note": null,
     "at": "2026-10-08T08:14:03Z"
@@ -475,7 +485,6 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "baudin: last pass landed nothing -- no PR and no comment on its issue"
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
