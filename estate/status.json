@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T08:00:02Z",
+ "generated_at": "2026-10-08T08:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T09:00:02Z",
+ "valid_until": "2026-10-08T09:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "exciting_satoshi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T07:53:28Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-08T06:52:28Z",
    "finished_at": "2026-10-08T07:15:01Z",
    "ports_published": false
+  },
+  {
+   "name": "pensive_blackwell",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T08:14:10Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "exciting_satoshi",
+  "pensive_blackwell",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -269,14 +269,30 @@
     "bibliothecaire": {
      "queue": 31,
      "at": "2026-10-08T07:53:26Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 7,
+     "at": "2026-10-08T08:02:48Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 8,
+     "at": "2026-10-08T08:09:57Z",
+     "outcome": "finished"
+    },
+    "baudin": {
+     "queue": 22,
+     "at": "2026-10-08T08:14:03Z",
      "outcome": null
     }
    },
    "skipped": [
-    "dog"
+    "dog",
+    "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 2.0
+   "age_h": 2.3
   },
   "passes": [
    {
@@ -378,26 +394,26 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261008T075326Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 62,
+    "cost_usd": 1.5436,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-08T07:53:26Z"
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261008T045659Z.log",
+    "log": "secretaire.20261008T080248Z.log",
     "result": "success",
-    "turns": 85,
-    "cost_usd": 2.4254,
+    "turns": 25,
+    "cost_usd": 0.7889,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/121",
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T04:56:59Z"
+    "at": "2026-10-08T08:02:48Z"
    },
    {
     "repo": "space-canon",
@@ -413,27 +429,27 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261008T051431Z.log",
+    "log": "chezz.20261008T080957Z.log",
     "result": "success",
-    "turns": 62,
-    "cost_usd": 2.1574,
+    "turns": 10,
+    "cost_usd": 0.3394,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/chezz/pull/192",
+    "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-08T05:14:31Z"
+    "at": "2026-10-08T08:09:57Z"
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261008T053133Z.log",
-    "result": "success",
-    "turns": 43,
-    "cost_usd": 1.4271,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/121",
-    "commented": true,
+    "log": "baudin.20261008T081403Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-08T05:31:33Z"
+    "at": "2026-10-08T08:14:03Z"
    }
   ],
   "dispatch_source": {
@@ -459,6 +475,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
+  "baudin: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
