@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T00:00:01Z",
+ "generated_at": "2026-10-08T00:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T01:00:01Z",
+ "valid_until": "2026-10-08T01:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,18 +42,6 @@
    "ports_published": false
   },
   {
-   "name": "magical_williamson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-07T23:50:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -75,6 +63,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "vigorous_feynman",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T00:06:48Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "magical_williamson",
   "serene_elgamal",
+  "vigorous_feynman",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -263,6 +263,11 @@
     "realisateur": {
      "queue": 150,
      "at": "2026-10-07T23:50:42Z",
+     "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 31,
+     "at": "2026-10-08T00:06:46Z",
      "outcome": null
     }
    },
@@ -270,7 +275,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 2.2
   },
   "passes": [
    {
@@ -360,26 +365,26 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261007T235042Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 75,
+    "cost_usd": 2.0102,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1643",
     "commented": true,
     "note": null,
     "at": "2026-10-07T23:50:42Z"
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261007T210536Z.log",
-    "result": "success",
-    "turns": 108,
-    "cost_usd": 3.2913,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/163",
+    "log": "bibliothecaire.20261008T000646Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T21:05:36Z"
+    "at": "2026-10-08T00:06:46Z"
    },
    {
     "repo": "secretaire",
@@ -441,6 +446,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
-  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue"
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
+  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
