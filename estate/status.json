@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T02:40:02Z",
+ "generated_at": "2026-10-08T03:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T03:40:02Z",
+ "valid_until": "2026-10-08T04:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "epic_jones",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T02:07:11Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -52,6 +40,30 @@
    "started_at": "2026-10-07T19:43:26Z",
    "finished_at": "2026-10-07T20:05:01Z",
    "ports_published": false
+  },
+  {
+   "name": "intelligent_austin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T02:57:06Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "interesting_mclaren",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T02:54:59Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -201,7 +213,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "epic_jones",
+  "intelligent_austin",
+  "interesting_mclaren",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -224,32 +237,32 @@
    "baudin"
   ],
   "last_run": {
-   "log": "nightly.20261008T020701Z.log",
-   "started_at": "2026-10-08T02:07:01Z",
+   "log": "nightly.20261008T025445Z.log",
+   "started_at": "2026-10-08T02:54:45Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "crt": {
-     "queue": 20,
-     "at": "2026-10-08T02:07:08Z",
+    "vim-arcade": {
+     "queue": 1,
+     "at": "2026-10-08T02:54:56Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.1
   },
   "passes": [
    {
     "repo": "crt",
     "log": "crt.20261008T020708Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 69,
+    "cost_usd": 2.6693,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/452",
     "commented": false,
     "note": null,
     "at": "2026-10-08T02:07:08Z"
@@ -268,27 +281,27 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261007T221315Z.log",
+    "log": "musc-2300.20261008T024502Z.log",
     "result": "success",
-    "turns": 104,
-    "cost_usd": 2.8096,
+    "turns": 80,
+    "cost_usd": 1.9273,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/250",
-    "commented": false,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/253",
+    "commented": true,
     "note": null,
-    "at": "2026-10-07T22:13:15Z"
+    "at": "2026-10-08T02:45:02Z"
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261007T224716Z.log",
-    "result": "success",
-    "turns": 27,
-    "cost_usd": 1.0738,
-    "rc": 0,
+    "log": "groc-mangr.20261008T025702Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T22:47:16Z"
+    "at": "2026-10-08T02:57:02Z"
    },
    {
     "repo": "wtul",
@@ -421,7 +434,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue"
  ]
