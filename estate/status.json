@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T18:20:01Z",
+ "generated_at": "2026-10-08T18:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T19:20:01Z",
+ "valid_until": "2026-10-08T19:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -40,18 +40,6 @@
    "started_at": "2026-10-08T06:52:28Z",
    "finished_at": "2026-10-08T07:15:01Z",
    "ports_published": false
-  },
-  {
-   "name": "nifty_austin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T18:18:00Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -201,7 +189,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "nifty_austin",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -226,7 +213,7 @@
   "last_run": {
    "log": "nightly.20261008T160702Z.log",
    "started_at": "2026-10-08T16:07:02Z",
-   "finished_at": null,
+   "finished_at": "2026-10-08T18:38:13Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -284,14 +271,24 @@
     "chezz": {
      "queue": 8,
      "at": "2026-10-08T18:17:56Z",
-     "outcome": null
+     "outcome": "finished"
+    },
+    "baudin": {
+     "queue": 23,
+     "at": "2026-10-08T18:24:38Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-08T18:37:40Z",
+     "outcome": "finished"
     }
    },
    "skipped": [
     "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 2.2
+   "age_h": 2.5
   },
   "passes": [
    {
@@ -429,26 +426,26 @@
    {
     "repo": "chezz",
     "log": "chezz.20261008T181756Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 18,
+    "cost_usd": 0.6271,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-08T18:17:56Z"
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261008T151112Z.log",
+    "log": "baudin.20261008T182438Z.log",
     "result": "success",
-    "turns": 49,
-    "cost_usd": 1.3837,
+    "turns": 68,
+    "cost_usd": 1.977,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/125",
-    "commented": true,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-08T15:11:12Z"
+    "at": "2026-10-08T18:24:38Z"
    }
   ],
   "dispatch_source": {
@@ -471,8 +468,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "chezz: last pass landed nothing -- no PR and no comment on its issue"
+  "baudin: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
