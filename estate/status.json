@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T06:20:01Z",
+ "generated_at": "2026-10-08T06:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T07:20:01Z",
+ "valid_until": "2026-10-08T07:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -37,21 +37,9 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-08T06:09:18Z",
+   "started_at": "2026-10-08T06:30:22Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "keen_hawking",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T06:00:14Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -160,6 +148,18 @@
    "started_at": "2026-10-06T23:10:30Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zealous_shamir",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T06:37:15Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -201,9 +201,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "keen_hawking",
   "serene_elgamal",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "zealous_shamir"
  ],
  "nightly": {
   "armed": true,
@@ -234,23 +234,35 @@
     "crt": {
      "queue": 21,
      "at": "2026-10-08T06:00:11Z",
+     "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 55,
+     "at": "2026-10-08T06:24:55Z",
+     "outcome": "finished"
+    },
+    "groc-mangr": {
+     "queue": 25,
+     "at": "2026-10-08T06:37:13Z",
      "outcome": null
     }
    },
-   "skipped": [],
+   "skipped": [
+    "dog"
+   ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
     "repo": "crt",
     "log": "crt.20261008T060011Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 24,
+    "cost_usd": 2.2507,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/454",
+    "commented": true,
     "note": null,
     "at": "2026-10-08T06:00:11Z"
    },
@@ -268,27 +280,27 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261008T024502Z.log",
+    "log": "musc-2300.20261008T062455Z.log",
     "result": "success",
-    "turns": 80,
-    "cost_usd": 1.9273,
+    "turns": 47,
+    "cost_usd": 0.8562,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/253",
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/254",
+    "commented": false,
     "note": null,
-    "at": "2026-10-08T02:45:02Z"
+    "at": "2026-10-08T06:24:55Z"
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261008T025702Z.log",
-    "result": "success",
-    "turns": 63,
-    "cost_usd": 1.638,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/404",
+    "log": "groc-mangr.20261008T063713Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T02:57:02Z"
+    "at": "2026-10-08T06:37:13Z"
    },
    {
     "repo": "wtul",
@@ -421,7 +433,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "crt: last pass landed nothing -- no PR and no comment on its issue",
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
