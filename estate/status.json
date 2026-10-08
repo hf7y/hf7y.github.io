@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-08T07:00:01Z",
+ "generated_at": "2026-10-08T07:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T08:00:01Z",
+ "valid_until": "2026-10-08T08:20:02Z",
  "containers": [
+  {
+   "name": "compassionate_black",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T07:12:11Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -33,37 +45,13 @@
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
-   "state": "running",
-   "health": "healthy",
+   "state": "exited",
+   "health": "unhealthy",
    "restarts": 0,
-   "exit_code": null,
+   "exit_code": 0,
    "started_at": "2026-10-08T06:52:28Z",
-   "finished_at": null,
-   "ports_published": true
-  },
-  {
-   "name": "groc-runner-runner-run-0d8627a1ce55",
-   "image": "groc-runner:local",
-   "project": "groc-runner",
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T06:55:54Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "lucid_franklin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-08T06:43:08Z",
-   "finished_at": null,
-   "ports_published": null
+   "finished_at": "2026-10-08T07:15:01Z",
+   "ports_published": false
   },
   {
    "name": "roster",
@@ -212,9 +200,8 @@
   }
  ],
  "unmanaged": [
+  "compassionate_black",
   "condescending_joliot",
-  "groc-runner-runner-run-0d8627a1ce55",
-  "lucid_franklin",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -262,6 +249,16 @@
     "wtul": {
      "queue": 33,
      "at": "2026-10-08T06:43:05Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 40,
+     "at": "2026-10-08T07:03:03Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 51,
+     "at": "2026-10-08T07:12:08Z",
      "outcome": null
     }
    },
@@ -269,7 +266,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.0
+   "age_h": 1.3
   },
   "passes": [
    {
@@ -323,10 +320,10 @@
    {
     "repo": "wtul",
     "log": "wtul.20261008T064305Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 70,
+    "cost_usd": 2.5236,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -334,27 +331,27 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261008T054335Z.log",
+    "log": "senechal.20261008T070303Z.log",
     "result": "success",
-    "turns": 68,
-    "cost_usd": 1.7988,
+    "turns": 29,
+    "cost_usd": 0.7152,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1176",
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1182",
+    "commented": false,
     "note": null,
-    "at": "2026-10-08T05:43:35Z"
+    "at": "2026-10-08T07:03:03Z"
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261008T040457Z.log",
-    "result": "success",
-    "turns": 77,
-    "cost_usd": 2.4317,
-    "rc": 0,
+    "log": "etalon.20261008T071208Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-08T04:04:57Z"
+    "at": "2026-10-08T07:12:08Z"
    },
    {
     "repo": "realisateur",
@@ -452,6 +449,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "wtul: last pass landed nothing -- no PR and no comment on its issue",
+  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
