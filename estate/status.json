@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T19:40:01Z",
+ "generated_at": "2026-10-08T20:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T20:40:01Z",
+ "valid_until": "2026-10-08T21:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,14 +30,14 @@
    "ports_published": null
   },
   {
-   "name": "eager_fermi",
+   "name": "elegant_agnesi",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-08T19:28:20Z",
+   "started_at": "2026-10-08T19:53:16Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "eager_fermi",
+  "elegant_agnesi",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -239,6 +239,11 @@
     "musc-2300": {
      "queue": 55,
      "at": "2026-10-08T19:28:18Z",
+     "outcome": "finished"
+    },
+    "groc-mangr": {
+     "queue": 28,
+     "at": "2026-10-08T19:53:13Z",
      "outcome": null
     }
    },
@@ -246,7 +251,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -276,6 +281,18 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261008T192818Z.log",
+    "result": "success",
+    "turns": 113,
+    "cost_usd": 3.1482,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/258",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-08T19:28:18Z"
+   },
+   {
+    "repo": "groc-mangr",
+    "log": "groc-mangr.20261008T195313Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -283,19 +300,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T19:28:18Z"
-   },
-   {
-    "repo": "groc-mangr",
-    "log": "groc-mangr.20261008T164439Z.log",
-    "result": "success",
-    "turns": 43,
-    "cost_usd": 1.4032,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/428",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-08T16:44:39Z"
+    "at": "2026-10-08T19:53:13Z"
    },
    {
     "repo": "wtul",
@@ -428,7 +433,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
