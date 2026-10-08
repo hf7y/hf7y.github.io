@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-08T01:20:01Z",
+ "generated_at": "2026-10-08T01:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-08T02:20:01Z",
+ "valid_until": "2026-10-08T02:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -63,6 +63,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "sweet_fermat",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-08T01:36:39Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -190,6 +202,7 @@
  "unmanaged": [
   "condescending_joliot",
   "serene_elgamal",
+  "sweet_fermat",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -210,79 +223,22 @@
    "chezz"
   ],
   "last_run": {
-   "log": "nightly.20261007T220702Z.log",
-   "started_at": "2026-10-07T22:07:02Z",
-   "finished_at": "2026-10-08T01:11:47Z",
+   "log": "nightly.20261008T013627Z.log",
+   "started_at": "2026-10-08T01:36:27Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "crt": {
-     "queue": 19,
-     "at": "2026-10-07T22:07:14Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 53,
-     "at": "2026-10-07T22:13:15Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 11,
-     "at": "2026-10-07T22:47:16Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 32,
-     "at": "2026-10-07T22:57:57Z",
-     "outcome": "finished"
-    },
     "senechal": {
-     "queue": 28,
-     "at": "2026-10-07T23:24:11Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 49,
-     "at": "2026-10-07T23:39:01Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 150,
-     "at": "2026-10-07T23:50:42Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 31,
-     "at": "2026-10-08T00:06:46Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 8,
-     "at": "2026-10-08T00:38:24Z",
-     "outcome": "finished"
-    },
-    "space-canon": {
-     "queue": 2,
-     "at": "2026-10-08T00:47:00Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 6,
-     "at": "2026-10-08T00:51:58Z",
-     "outcome": "finished"
-    },
-    "abc": {
      "queue": 1,
-     "at": "2026-10-08T01:07:58Z",
-     "outcome": "finished"
+     "at": "2026-10-08T01:36:37Z",
+     "outcome": null
     }
    },
-   "skipped": [
-    "dog"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 3.2
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -347,15 +303,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261007T232411Z.log",
-    "result": "success",
-    "turns": 80,
-    "cost_usd": 2.0389,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1157",
+    "log": "senechal.20261008T013637Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-07T23:24:11Z"
+    "at": "2026-10-08T01:36:37Z"
    },
    {
     "repo": "etalon",
@@ -450,9 +406,11 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
