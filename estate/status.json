@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-09T19:00:01Z",
+ "generated_at": "2026-10-09T19:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T20:00:01Z",
+ "valid_until": "2026-10-09T20:20:02Z",
  "containers": [
+  {
+   "name": "blissful_clarke",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T19:07:02Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -42,18 +54,6 @@
    "ports_published": false
   },
   {
-   "name": "nervous_bose",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T18:38:06Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -88,18 +88,6 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "wonderful_visvesvaraya",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T18:22:12Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -212,10 +200,9 @@
   }
  ],
  "unmanaged": [
+  "blissful_clarke",
   "condescending_joliot",
-  "nervous_bose",
   "serene_elgamal",
-  "wonderful_visvesvaraya",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -253,7 +240,7 @@
   "last_run": {
    "log": "nightly.20261009T182201Z.log",
    "started_at": "2026-10-09T18:22:01Z",
-   "finished_at": null,
+   "finished_at": "2026-10-09T19:05:53Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -261,12 +248,12 @@
     "realisateur": {
      "queue": 1,
      "at": "2026-10-09T18:22:09Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 1.0
   },
   "passes": [
    {
@@ -427,23 +414,23 @@
    },
    {
     "repo": "front-door",
-    "log": "front-door.20261005T095714Z.log",
-    "result": "success",
-    "turns": 49,
-    "cost_usd": 1.2796,
-    "rc": 0,
-    "pr": "https://github.com/octocat/Hello-World/pull/1",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-05T09:57:14Z"
-   },
-   {
-    "repo": "gardien",
-    "log": "gardien.20261009T183804Z.log",
+    "log": "front-door.20261009T190659Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
     "rc": null,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T19:06:59Z"
+   },
+   {
+    "repo": "gardien",
+    "log": "gardien.20261009T183804Z.log",
+    "result": "success",
+    "turns": 38,
+    "cost_usd": 1.0293,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -488,12 +475,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261009T182209Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 96,
+    "cost_usd": 3.7805,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-09T18:22:09Z"
    },
@@ -613,11 +600,10 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
+  "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
