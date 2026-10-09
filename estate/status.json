@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-09T12:40:01Z",
+ "generated_at": "2026-10-09T13:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T13:40:01Z",
+ "valid_until": "2026-10-09T14:00:01Z",
  "containers": [
-  {
-   "name": "busy_blackburn",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T12:28:09Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -200,7 +188,6 @@
   }
  ],
  "unmanaged": [
-  "busy_blackburn",
   "condescending_joliot",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -226,7 +213,7 @@
   "last_run": {
    "log": "nightly.20261009T100702Z.log",
    "started_at": "2026-10-09T10:07:02Z",
-   "finished_at": null,
+   "finished_at": "2026-10-09T12:41:33Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -294,7 +281,7 @@
     "abletim": {
      "queue": 24,
      "at": "2026-10-09T12:28:06Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [
@@ -302,7 +289,7 @@
     "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 2.5
+   "age_h": 2.9
   },
   "passes": [
    {
@@ -482,7 +469,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "senechal: last pass landed nothing -- no PR and no comment on its issue"
  ]
