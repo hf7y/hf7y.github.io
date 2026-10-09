@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T05:00:01Z",
+ "generated_at": "2026-10-09T05:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T06:00:01Z",
+ "valid_until": "2026-10-09T06:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,14 +42,14 @@
    "ports_published": false
   },
   {
-   "name": "pedantic_chaplygin",
+   "name": "infallible_borg",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-09T04:49:14Z",
+   "started_at": "2026-10-09T05:19:53Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "pedantic_chaplygin",
+  "infallible_borg",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -244,6 +244,21 @@
     "groc-mangr": {
      "queue": 29,
      "at": "2026-10-09T04:49:12Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 41,
+     "at": "2026-10-09T05:05:24Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 32,
+     "at": "2026-10-09T05:12:49Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 54,
+     "at": "2026-10-09T05:19:51Z",
      "outcome": null
     }
    },
@@ -251,7 +266,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -293,6 +308,42 @@
    {
     "repo": "groc-mangr",
     "log": "groc-mangr.20261009T044912Z.log",
+    "result": "success",
+    "turns": 99,
+    "cost_usd": 3.4484,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/436",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T04:49:12Z"
+   },
+   {
+    "repo": "wtul",
+    "log": "wtul.20261009T050524Z.log",
+    "result": "success",
+    "turns": 41,
+    "cost_usd": 0.8327,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/wtul/pull/484",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T05:05:24Z"
+   },
+   {
+    "repo": "senechal",
+    "log": "senechal.20261009T051249Z.log",
+    "result": "success",
+    "turns": 47,
+    "cost_usd": 1.3423,
+    "rc": 0,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T05:12:49Z"
+   },
+   {
+    "repo": "etalon",
+    "log": "etalon.20261009T051951Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -300,43 +351,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T04:49:12Z"
-   },
-   {
-    "repo": "wtul",
-    "log": "wtul.20261009T005100Z.log",
-    "result": "success",
-    "turns": 53,
-    "cost_usd": 1.2831,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/wtul/pull/472",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-09T00:51:00Z"
-   },
-   {
-    "repo": "senechal",
-    "log": "senechal.20261009T010341Z.log",
-    "result": "success",
-    "turns": 77,
-    "cost_usd": 3.0151,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1196",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-09T01:03:41Z"
-   },
-   {
-    "repo": "etalon",
-    "log": "etalon.20261009T014255Z.log",
-    "result": "success",
-    "turns": 40,
-    "cost_usd": 1.3968,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/etalon/pull/145",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-09T01:42:55Z"
+    "at": "2026-10-09T05:19:51Z"
    },
    {
     "repo": "realisateur",
@@ -433,6 +448,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue"
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
+  "etalon: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
