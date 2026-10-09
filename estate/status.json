@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T10:00:01Z",
+ "generated_at": "2026-10-09T10:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T11:00:01Z",
+ "valid_until": "2026-10-09T11:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "eloquent_lumiere",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T10:07:13Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -189,6 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "eloquent_lumiere",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -211,98 +224,35 @@
    "baudin"
   ],
   "last_run": {
-   "log": "nightly.20261009T070702Z.log",
-   "started_at": "2026-10-09T07:07:02Z",
-   "finished_at": "2026-10-09T09:56:54Z",
+   "log": "nightly.20261009T100702Z.log",
+   "started_at": "2026-10-09T10:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "crt": {
      "queue": 33,
-     "at": "2026-10-09T07:07:09Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 59,
-     "at": "2026-10-09T07:16:39Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 29,
-     "at": "2026-10-09T07:25:02Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 41,
-     "at": "2026-10-09T07:32:37Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 31,
-     "at": "2026-10-09T07:48:08Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 54,
-     "at": "2026-10-09T08:08:42Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 199,
-     "at": "2026-10-09T08:27:32Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 32,
-     "at": "2026-10-09T08:38:52Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 18,
-     "at": "2026-10-09T09:20:03Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 8,
-     "at": "2026-10-09T09:31:05Z",
-     "outcome": "finished"
-    },
-    "baudin": {
-     "queue": 19,
-     "at": "2026-10-09T09:34:24Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-09T09:36:57Z",
-     "outcome": "finished"
-    },
-    "abletim": {
-     "queue": 24,
-     "at": "2026-10-09T09:37:37Z",
-     "outcome": "finished"
+     "at": "2026-10-09T10:07:10Z",
+     "outcome": null
     }
    },
-   "skipped": [
-    "dog",
-    "space-canon"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.9
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261009T070709Z.log",
-    "result": "success",
-    "turns": 25,
-    "cost_usd": 0.636,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/485",
+    "log": "crt.20261009T100710Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T07:07:09Z"
+    "at": "2026-10-09T10:07:10Z"
    },
    {
     "repo": "dog",
@@ -469,6 +419,8 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it"
+  "the last nightly has no `done` line -- still running, or it died",
+  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "crt: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
