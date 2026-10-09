@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T21:20:01Z",
+ "generated_at": "2026-10-09T21:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T22:20:01Z",
+ "valid_until": "2026-10-09T22:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,6 +42,18 @@
    "ports_published": false
   },
   {
+   "name": "objective_galileo",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T21:32:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -63,18 +75,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "suspicious_lamport",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T21:07:38Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "objective_galileo",
   "serene_elgamal",
-  "suspicious_lamport",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -248,6 +248,16 @@
     "musc-2300": {
      "queue": 61,
      "at": "2026-10-09T21:07:36Z",
+     "outcome": "finished"
+    },
+    "groc-mangr": {
+     "queue": 33,
+     "at": "2026-10-09T21:26:35Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 50,
+     "at": "2026-10-09T21:32:44Z",
      "outcome": null
     }
    },
@@ -260,7 +270,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -445,24 +455,24 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261009T135431Z.log",
+    "log": "groc-mangr.20261009T212635Z.log",
     "result": "success",
-    "turns": 57,
-    "cost_usd": 1.534,
+    "turns": 30,
+    "cost_usd": 0.7899,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/442",
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/444",
+    "commented": false,
     "note": null,
-    "at": "2026-10-09T13:54:31Z"
+    "at": "2026-10-09T21:26:35Z"
    },
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261009T210736Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 60,
+    "cost_usd": 1.348,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/279",
     "commented": false,
     "note": null,
     "at": "2026-10-09T21:07:36Z"
@@ -577,15 +587,15 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261009T143950Z.log",
+    "log": "wtul.20261009T213244Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
-    "rc": 1,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T14:39:50Z"
+    "at": "2026-10-09T21:32:44Z"
    }
   ],
   "dispatch_source": {
@@ -612,7 +622,6 @@
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
