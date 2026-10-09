@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T19:40:02Z",
+ "generated_at": "2026-10-09T20:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T20:40:02Z",
+ "valid_until": "2026-10-09T21:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,18 +42,6 @@
    "ports_published": false
   },
   {
-   "name": "magical_hodgkin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T19:31:44Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "musing_sammet",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -87,6 +75,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "thirsty_turing",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T19:45:05Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +213,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "magical_hodgkin",
   "musing_sammet",
   "serene_elgamal",
+  "thirsty_turing",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -266,7 +266,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.6
   },
   "passes": [
    {
@@ -355,15 +355,15 @@
    },
    {
     "repo": "cinema-sanctuary",
-    "log": "cinema-sanctuary.20261005T110354Z.log",
-    "result": "success",
-    "turns": 57,
-    "cost_usd": 1.528,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/18",
-    "commented": true,
+    "log": "cinema-sanctuary.20261009T194457Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-05T11:03:54Z"
+    "at": "2026-10-09T19:44:57Z"
    },
    {
     "repo": "crt",
@@ -536,12 +536,12 @@
    {
     "repo": "sequestria",
     "log": "sequestria.20261009T193141Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 33,
+    "cost_usd": 0.9436,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-09T19:31:41Z"
    },
@@ -615,10 +615,10 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
