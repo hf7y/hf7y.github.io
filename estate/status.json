@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T03:00:01Z",
+ "generated_at": "2026-10-09T03:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T04:00:01Z",
+ "valid_until": "2026-10-09T04:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "focused_ritchie",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T03:12:15Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -40,18 +52,6 @@
    "started_at": "2026-10-08T22:13:55Z",
    "finished_at": "2026-10-08T22:35:02Z",
    "ports_published": false
-  },
-  {
-   "name": "musing_kilby",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T02:37:25Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "musing_kilby",
+  "focused_ritchie",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -269,6 +269,11 @@
     "bibliothecaire": {
      "queue": 30,
      "at": "2026-10-09T02:37:22Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 17,
+     "at": "2026-10-09T03:12:12Z",
      "outcome": null
     }
    },
@@ -276,7 +281,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 3.9
+   "age_h": 4.2
   },
   "passes": [
    {
@@ -378,6 +383,18 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261009T023722Z.log",
+    "result": "success",
+    "turns": 122,
+    "cost_usd": 3.9975,
+    "rc": 0,
+    "pr": null,
+    "commented": true,
+    "note": null,
+    "at": "2026-10-09T02:37:22Z"
+   },
+   {
+    "repo": "secretaire",
+    "log": "secretaire.20261009T031212Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -385,19 +402,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T02:37:22Z"
-   },
-   {
-    "repo": "secretaire",
-    "log": "secretaire.20261008T212940Z.log",
-    "result": "success",
-    "turns": 85,
-    "cost_usd": 2.771,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/142",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-08T21:29:40Z"
+    "at": "2026-10-09T03:12:12Z"
    },
    {
     "repo": "space-canon",
@@ -459,7 +464,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
