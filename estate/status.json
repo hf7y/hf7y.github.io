@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-09T16:00:02Z",
+ "generated_at": "2026-10-09T16:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T17:00:02Z",
+ "valid_until": "2026-10-09T17:20:01Z",
  "containers": [
+  {
+   "name": "amazing_swartz",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T16:17:42Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -26,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "exciting_johnson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T15:54:56Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
+  "amazing_swartz",
   "condescending_joliot",
-  "exciting_johnson",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -287,14 +287,25 @@
     "secretaire": {
      "queue": 18,
      "at": "2026-10-09T15:54:52Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 9,
+     "at": "2026-10-09T16:07:15Z",
+     "outcome": "finished"
+    },
+    "baudin": {
+     "queue": 18,
+     "at": "2026-10-09T16:17:40Z",
      "outcome": null
     }
    },
    "skipped": [
-    "dog"
+    "dog",
+    "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 2.9
+   "age_h": 3.2
   },
   "passes": [
    {
@@ -347,15 +358,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261009T122122Z.log",
-    "result": "success",
-    "turns": 37,
-    "cost_usd": 1.0138,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/144",
-    "commented": true,
+    "log": "baudin.20261009T161740Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-09T12:21:22Z"
+    "at": "2026-10-09T16:17:40Z"
    },
    {
     "repo": "bibliothecaire",
@@ -371,15 +382,15 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261009T120843Z.log",
+    "log": "chezz.20261009T160715Z.log",
     "result": "success",
-    "turns": 55,
-    "cost_usd": 1.3581,
+    "turns": 20,
+    "cost_usd": 0.5164,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/chezz/pull/194",
+    "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-09T12:08:43Z"
+    "at": "2026-10-09T16:07:15Z"
    },
    {
     "repo": "cinema-sanctuary",
@@ -540,11 +551,11 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261009T155452Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 49,
+    "cost_usd": 0.9871,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/154",
     "commented": false,
     "note": null,
     "at": "2026-10-09T15:54:52Z"
@@ -632,9 +643,9 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
