@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-09T03:20:01Z",
+ "generated_at": "2026-10-09T03:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T04:20:01Z",
+ "valid_until": "2026-10-09T04:40:02Z",
  "containers": [
+  {
+   "name": "compassionate_bose",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T03:34:54Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -26,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "focused_ritchie",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T03:12:15Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
+  "compassionate_bose",
   "condescending_joliot",
-  "focused_ritchie",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -274,14 +274,35 @@
     "secretaire": {
      "queue": 17,
      "at": "2026-10-09T03:12:12Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 8,
+     "at": "2026-10-09T03:24:53Z",
+     "outcome": "finished"
+    },
+    "baudin": {
+     "queue": 20,
+     "at": "2026-10-09T03:27:25Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-09T03:34:22Z",
+     "outcome": "finished"
+    },
+    "abletim": {
+     "queue": 24,
+     "at": "2026-10-09T03:34:51Z",
      "outcome": null
     }
    },
    "skipped": [
-    "dog"
+    "dog",
+    "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 4.2
+   "age_h": 4.5
   },
   "passes": [
    {
@@ -395,11 +416,11 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261009T031212Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 103,
+    "cost_usd": 3.846,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/148",
     "commented": false,
     "note": null,
     "at": "2026-10-09T03:12:12Z"
@@ -418,27 +439,27 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261008T214828Z.log",
+    "log": "chezz.20261009T032453Z.log",
     "result": "success",
-    "turns": 25,
-    "cost_usd": 0.7673,
+    "turns": 7,
+    "cost_usd": 0.2972,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-08T21:48:28Z"
+    "at": "2026-10-09T03:24:53Z"
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261008T215429Z.log",
+    "log": "baudin.20261009T032725Z.log",
     "result": "success",
-    "turns": 38,
-    "cost_usd": 1.2984,
+    "turns": 46,
+    "cost_usd": 1.0663,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/141",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-08T21:54:29Z"
+    "at": "2026-10-09T03:27:25Z"
    }
   ],
   "dispatch_source": {
@@ -463,8 +484,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "crt: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "chezz: last pass landed nothing -- no PR and no comment on its issue"
+  "crt: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
