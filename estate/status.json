@@ -1,10 +1,34 @@
 {
- "generated_at": "2026-10-09T22:40:02Z",
+ "generated_at": "2026-10-09T23:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T23:40:02Z",
+ "valid_until": "2026-10-10T00:00:01Z",
  "containers": [
+  {
+   "name": "baudin-ipcam-living",
+   "image": "python:3.12-slim",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T22:55:10Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "competent_bassi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T22:42:04Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -42,26 +66,14 @@
    "ports_published": false
   },
   {
-   "name": "hopeful_kowalevski",
+   "name": "nostalgic_spence",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-09T22:36:24Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "optimistic_khorana",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T22:20:50Z",
+   "started_at": "2026-10-09T22:50:32Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -212,9 +224,10 @@
   }
  ],
  "unmanaged": [
+  "baudin-ipcam-living",
+  "competent_bassi",
   "condescending_joliot",
-  "hopeful_kowalevski",
-  "optimistic_khorana",
+  "nostalgic_spence",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -260,13 +273,13 @@
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-09T22:20:47Z",
+     "at": "2026-10-09T22:42:01Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
@@ -332,12 +345,12 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261009T223621Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 48,
+    "cost_usd": 1.1106,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-09T22:36:21Z"
    },
@@ -487,7 +500,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261009T222047Z.log",
+    "log": "realisateur.20261009T224201Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -495,7 +508,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T22:20:47Z"
+    "at": "2026-10-09T22:42:01Z"
    },
    {
     "repo": "scheduler",
@@ -511,15 +524,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261009T155452Z.log",
-    "result": "success",
-    "turns": 49,
-    "cost_usd": 0.9871,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/154",
+    "log": "secretaire.20261009T225030Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T15:54:52Z"
+    "at": "2026-10-09T22:50:30Z"
    },
    {
     "repo": "senechal",
@@ -615,10 +628,10 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue"
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
