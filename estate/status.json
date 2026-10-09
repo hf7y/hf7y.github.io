@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T08:00:01Z",
+ "generated_at": "2026-10-09T08:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T09:00:01Z",
+ "valid_until": "2026-10-09T09:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,14 +42,14 @@
    "ports_published": false
   },
   {
-   "name": "recursing_wescoff",
+   "name": "loving_chaplygin",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-09T07:48:10Z",
+   "started_at": "2026-10-09T08:08:50Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "recursing_wescoff",
+  "loving_chaplygin",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -254,6 +254,11 @@
     "senechal": {
      "queue": 31,
      "at": "2026-10-09T07:48:08Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 54,
+     "at": "2026-10-09T08:08:42Z",
      "outcome": null
     }
    },
@@ -261,7 +266,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -327,6 +332,18 @@
    {
     "repo": "senechal",
     "log": "senechal.20261009T074808Z.log",
+    "result": "success",
+    "turns": 76,
+    "cost_usd": 3.2351,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1200",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-09T07:48:08Z"
+   },
+   {
+    "repo": "etalon",
+    "log": "etalon.20261009T080842Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -334,19 +351,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T07:48:08Z"
-   },
-   {
-    "repo": "etalon",
-    "log": "etalon.20261009T051951Z.log",
-    "result": "success",
-    "turns": 99,
-    "cost_usd": 3.4295,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/etalon/pull/146",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-09T05:19:51Z"
+    "at": "2026-10-09T08:08:42Z"
    },
    {
     "repo": "realisateur",
@@ -443,6 +448,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue"
+  "etalon: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
