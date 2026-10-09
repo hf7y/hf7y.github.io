@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-09T12:20:01Z",
+ "generated_at": "2026-10-09T12:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T13:20:01Z",
+ "valid_until": "2026-10-09T13:40:01Z",
  "containers": [
+  {
+   "name": "busy_blackburn",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T12:28:09Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -102,18 +114,6 @@
    "ports_published": null
   },
   {
-   "name": "xenodochial_sanderson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T12:08:46Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "xenodochial_wilson",
    "image": "sha256:93e91132a92436e536ed6d98f0a1514821fc58343f66a95f0d444d5bd1720e21",
    "project": null,
@@ -200,9 +200,9 @@
   }
  ],
  "unmanaged": [
+  "busy_blackburn",
   "condescending_joliot",
   "serene_elgamal",
-  "xenodochial_sanderson",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -279,6 +279,21 @@
     "chezz": {
      "queue": 8,
      "at": "2026-10-09T12:08:43Z",
+     "outcome": "finished"
+    },
+    "baudin": {
+     "queue": 18,
+     "at": "2026-10-09T12:21:22Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-09T12:27:21Z",
+     "outcome": "finished"
+    },
+    "abletim": {
+     "queue": 24,
+     "at": "2026-10-09T12:28:06Z",
      "outcome": null
     }
    },
@@ -287,7 +302,7 @@
     "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 2.2
+   "age_h": 2.5
   },
   "passes": [
    {
@@ -425,26 +440,26 @@
    {
     "repo": "chezz",
     "log": "chezz.20261009T120843Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 55,
+    "cost_usd": 1.3581,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/chezz/pull/194",
     "commented": true,
     "note": null,
     "at": "2026-10-09T12:08:43Z"
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261009T093424Z.log",
+    "log": "baudin.20261009T122122Z.log",
     "result": "success",
-    "turns": 12,
-    "cost_usd": 0.3748,
+    "turns": 37,
+    "cost_usd": 1.0138,
     "rc": 0,
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/baudin/pull/144",
     "commented": true,
     "note": null,
-    "at": "2026-10-09T09:34:24Z"
+    "at": "2026-10-09T12:21:22Z"
    }
   ],
   "dispatch_source": {
