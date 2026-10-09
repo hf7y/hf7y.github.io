@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-09T22:00:02Z",
+ "generated_at": "2026-10-09T22:20:03Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T23:00:02Z",
+ "valid_until": "2026-10-09T23:20:03Z",
  "containers": [
+  {
+   "name": "admiring_bose",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T22:02:48Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -40,18 +52,6 @@
    "started_at": "2026-10-08T22:13:55Z",
    "finished_at": "2026-10-08T22:35:02Z",
    "ports_published": false
-  },
-  {
-   "name": "objective_galileo",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T21:32:47Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
+  "admiring_bose",
   "condescending_joliot",
-  "objective_galileo",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -258,6 +258,11 @@
     "wtul": {
      "queue": 50,
      "at": "2026-10-09T21:32:44Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 37,
+     "at": "2026-10-09T22:02:42Z",
      "outcome": null
     }
    },
@@ -270,7 +275,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -527,15 +532,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261009T144429Z.log",
-    "result": "success",
-    "turns": 102,
-    "cost_usd": 4.3633,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1204",
+    "log": "senechal.20261009T220242Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T14:44:29Z"
+    "at": "2026-10-09T22:02:42Z"
    },
    {
     "repo": "sequestria",
@@ -588,11 +593,11 @@
    {
     "repo": "wtul",
     "log": "wtul.20261009T213244Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 114,
+    "cost_usd": 3.1467,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/wtul/pull/510",
     "commented": false,
     "note": null,
     "at": "2026-10-09T21:32:44Z"
@@ -622,6 +627,6 @@
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "wtul: last pass landed nothing -- no PR and no comment on its issue"
+  "senechal: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
