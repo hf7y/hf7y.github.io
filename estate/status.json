@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T05:40:01Z",
+ "generated_at": "2026-10-09T06:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T06:40:01Z",
+ "valid_until": "2026-10-09T07:00:02Z",
  "containers": [
   {
    "name": "awesome_yonath",
@@ -271,7 +271,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.5
+   "age_h": 1.9
   },
   "passes": [
    {
