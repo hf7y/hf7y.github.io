@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T16:40:01Z",
+ "generated_at": "2026-10-09T17:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T17:40:01Z",
+ "valid_until": "2026-10-09T18:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -63,18 +63,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "sharp_nobel",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T16:38:41Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -202,7 +190,6 @@
  "unmanaged": [
   "condescending_joliot",
   "serene_elgamal",
-  "sharp_nobel",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -239,7 +226,7 @@
   "last_run": {
    "log": "nightly.20261009T130702Z.log",
    "started_at": "2026-10-09T13:07:02Z",
-   "finished_at": null,
+   "finished_at": "2026-10-09T16:48:17Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -307,7 +294,7 @@
     "abletim": {
      "queue": 24,
      "at": "2026-10-09T16:38:39Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [
@@ -315,7 +302,7 @@
     "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 3.5
+   "age_h": 3.9
   },
   "passes": [
    {
@@ -333,12 +320,12 @@
    {
     "repo": "abletim",
     "log": "abletim.20261009T163839Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 48,
+    "cost_usd": 1.5436,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-09T16:38:39Z"
    },
@@ -650,9 +637,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
