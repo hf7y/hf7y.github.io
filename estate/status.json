@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T08:20:01Z",
+ "generated_at": "2026-10-09T08:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T09:20:01Z",
+ "valid_until": "2026-10-09T09:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,18 +42,6 @@
    "ports_published": false
   },
   {
-   "name": "loving_chaplygin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T08:08:50Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -75,6 +63,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "stupefied_morse",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T08:38:55Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "loving_chaplygin",
   "serene_elgamal",
+  "stupefied_morse",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -259,6 +259,16 @@
     "etalon": {
      "queue": 54,
      "at": "2026-10-09T08:08:42Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 199,
+     "at": "2026-10-09T08:27:32Z",
+     "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 32,
+     "at": "2026-10-09T08:38:52Z",
      "outcome": null
     }
    },
@@ -266,7 +276,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.2
+   "age_h": 1.6
   },
   "passes": [
    {
@@ -344,6 +354,30 @@
    {
     "repo": "etalon",
     "log": "etalon.20261009T080842Z.log",
+    "result": "success",
+    "turns": 86,
+    "cost_usd": 2.9918,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/147",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T08:08:42Z"
+   },
+   {
+    "repo": "realisateur",
+    "log": "realisateur.20261009T082732Z.log",
+    "result": "success",
+    "turns": 77,
+    "cost_usd": 2.4127,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1672",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-09T08:27:32Z"
+   },
+   {
+    "repo": "bibliothecaire",
+    "log": "bibliothecaire.20261009T083852Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -351,31 +385,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T08:08:42Z"
-   },
-   {
-    "repo": "realisateur",
-    "log": "realisateur.20261009T053626Z.log",
-    "result": "success",
-    "turns": 92,
-    "cost_usd": 4.3242,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1671",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-09T05:36:26Z"
-   },
-   {
-    "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261009T060850Z.log",
-    "result": "success",
-    "turns": 53,
-    "cost_usd": 1.1845,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/170",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-09T06:08:50Z"
+    "at": "2026-10-09T08:38:52Z"
    },
    {
     "repo": "secretaire",
@@ -448,6 +458,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "etalon: last pass landed nothing -- no PR and no comment on its issue"
+  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
