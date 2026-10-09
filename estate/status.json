@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-09T17:00:02Z",
+ "generated_at": "2026-10-09T17:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T18:00:02Z",
+ "valid_until": "2026-10-09T18:20:02Z",
  "containers": [
+  {
+   "name": "compassionate_williamson",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T17:16:57Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -188,6 +200,7 @@
   }
  ],
  "unmanaged": [
+  "compassionate_williamson",
   "condescending_joliot",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -220,89 +233,37 @@
    "senechal",
    "sequestria",
    "space-canon",
+   "vibe-kiosk",
    "vim-arcade",
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261009T130702Z.log",
-   "started_at": "2026-10-09T13:07:02Z",
-   "finished_at": "2026-10-09T16:48:17Z",
+   "log": "nightly.20261009T170702Z.log",
+   "started_at": "2026-10-09T17:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "crt": {
-     "queue": 33,
-     "at": "2026-10-09T13:07:09Z",
+    "vibe-kiosk": {
+     "queue": 2,
+     "at": "2026-10-09T17:07:18Z",
      "outcome": "finished"
     },
-    "musc-2300": {
-     "queue": 59,
-     "at": "2026-10-09T13:25:27Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 33,
-     "at": "2026-10-09T13:54:31Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 43,
-     "at": "2026-10-09T14:39:50Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 34,
-     "at": "2026-10-09T14:44:29Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 54,
-     "at": "2026-10-09T15:15:58Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 199,
-     "at": "2026-10-09T15:20:59Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 31,
-     "at": "2026-10-09T15:33:45Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 18,
-     "at": "2026-10-09T15:54:52Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 9,
-     "at": "2026-10-09T16:07:15Z",
-     "outcome": "finished"
-    },
-    "baudin": {
-     "queue": 18,
-     "at": "2026-10-09T16:17:40Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-09T16:38:03Z",
-     "outcome": "finished"
-    },
-    "abletim": {
-     "queue": 24,
-     "at": "2026-10-09T16:38:39Z",
-     "outcome": "finished"
+    "american-cycle": {
+     "queue": 8,
+     "at": "2026-10-09T17:16:55Z",
+     "outcome": null
     }
    },
    "skipped": [
-    "dog",
-    "space-canon"
+    "inv-redirects",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23"
    ],
    "queue_unreadable": [],
-   "age_h": 3.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -331,15 +292,15 @@
    },
    {
     "repo": "american-cycle",
-    "log": "american-cycle.20261005T082928Z.log",
-    "result": "success",
-    "turns": 80,
-    "cost_usd": 2.678,
-    "rc": 0,
+    "log": "american-cycle.20261009T171655Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-05T08:29:28Z"
+    "at": "2026-10-09T17:16:55Z"
    },
    {
     "repo": "apms-2173",
@@ -594,6 +555,18 @@
     "at": "2026-10-08T05:12:03Z"
    },
    {
+    "repo": "vibe-kiosk",
+    "log": "vibe-kiosk.20261009T170718Z.log",
+    "result": "success",
+    "turns": 53,
+    "cost_usd": 0.8465,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/vibe-kiosk/pull/6",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-09T17:07:18Z"
+   },
+   {
     "repo": "vim-arcade",
     "log": "vim-arcade.20261008T025456Z.log",
     "result": "success",
@@ -637,6 +610,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
