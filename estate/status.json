@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T20:00:01Z",
+ "generated_at": "2026-10-09T20:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T21:00:01Z",
+ "valid_until": "2026-10-09T21:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,18 +42,6 @@
    "ports_published": false
   },
   {
-   "name": "musing_sammet",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T19:25:54Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -75,18 +63,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "thirsty_turing",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T19:45:05Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +189,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "musing_sammet",
   "serene_elgamal",
-  "thirsty_turing",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -253,7 +227,7 @@
   "last_run": {
    "log": "nightly.20261009T192538Z.log",
    "started_at": "2026-10-09T19:25:38Z",
-   "finished_at": null,
+   "finished_at": "2026-10-09T20:03:35Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -261,12 +235,12 @@
     "crt": {
      "queue": 1,
      "at": "2026-10-09T19:25:44Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -356,18 +330,18 @@
    {
     "repo": "cinema-sanctuary",
     "log": "cinema-sanctuary.20261009T194457Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 48,
+    "cost_usd": 1.5348,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/45",
     "commented": false,
     "note": null,
     "at": "2026-10-09T19:44:57Z"
    },
    {
     "repo": "crt",
-    "log": "crt.20261009T192544Z.log",
+    "log": "crt.20261009T201959Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -375,7 +349,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T19:25:44Z"
+    "at": "2026-10-09T20:19:59Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -403,15 +377,15 @@
    },
    {
     "repo": "ecosim",
-    "log": "ecosim.20261006T214038Z.log",
+    "log": "ecosim.20261009T200349Z.log",
     "result": "success",
-    "turns": 94,
-    "cost_usd": 3.0766,
+    "turns": 11,
+    "cost_usd": 0.3226,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/ecosim/pull/128",
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-06T21:40:38Z"
+    "at": "2026-10-09T20:03:49Z"
    },
    {
     "repo": "etalon",
@@ -499,15 +473,15 @@
    },
    {
     "repo": "scheduler",
-    "log": "scheduler.20261008T052019Z.log",
+    "log": "scheduler.20261009T201731Z.log",
     "result": "success",
-    "turns": 33,
-    "cost_usd": 1.9828,
+    "turns": 9,
+    "cost_usd": 0.2969,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/scheduler/pull/801",
+    "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-08T05:20:19Z"
+    "at": "2026-10-09T20:17:31Z"
    },
    {
     "repo": "secretaire",
@@ -571,15 +545,15 @@
    },
    {
     "repo": "vim-arcade",
-    "log": "vim-arcade.20261008T025456Z.log",
+    "log": "vim-arcade.20261009T200621Z.log",
     "result": "success",
-    "turns": 66,
-    "cost_usd": 1.2242,
+    "turns": 14,
+    "cost_usd": 0.2452,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/vim-arcade/pull/329",
+    "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-08T02:54:56Z"
+    "at": "2026-10-09T20:06:21Z"
    },
    {
     "repo": "wtul",
@@ -613,11 +587,10 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
+  "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
