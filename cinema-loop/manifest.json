@@ -14,19 +14,19 @@
   {
    "file": "ordinary/partners.mp4",
    "kind": "ordinary",
-   "sha256": "c706d00e1fc3892dbaed3fe98fd324ea2ab1c2ae4025935da24a8c135c0dce31"
+   "sha256": "8c62022bf57c494b7a99fc32fad8a0145c12163b1d379d1abe343dd49f84296f"
   },
   {
    "file": "proper/next.mp4",
    "kind": "proper",
-   "sha256": "24c46214459abd7651ceee7b6789d5e36d1065e4fc5ca374001a2f7123b12db4",
-   "until": "2026-10-04"
+   "sha256": "05fb713dbbe20f3f26d4b1523facb489e3383f5bf382bc4a4405e984c981fea4",
+   "until": "2026-11-19"
   },
   {
    "file": "proper/samsara-notes.mp4",
    "kind": "proper",
-   "sha256": "52e922d2c0736c58046b92f6ff56d2f4dacb03ca14c515b74f1d83d81c730fef",
-   "until": "2026-10-04"
+   "sha256": "c20101e0f6d03e7033f0cf6f77f3edbf80d7fbe9c20ebf055f86a29d586a896b",
+   "until": "2026-11-19"
   },
   {
    "file": "proper/bigan-kaili-blues.mp4",
