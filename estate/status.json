@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-09T06:40:03Z",
+ "generated_at": "2026-10-09T07:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T07:40:03Z",
+ "valid_until": "2026-10-09T08:00:02Z",
  "containers": [
-  {
-   "name": "bold_williams",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T06:39:45Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-08T22:13:55Z",
    "finished_at": "2026-10-08T22:35:02Z",
    "ports_published": false
+  },
+  {
+   "name": "optimistic_sammet",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T06:49:18Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "bold_williams",
   "condescending_joliot",
+  "optimistic_sammet",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -279,6 +279,21 @@
     "chezz": {
      "queue": 8,
      "at": "2026-10-09T06:39:42Z",
+     "outcome": "finished"
+    },
+    "baudin": {
+     "queue": 19,
+     "at": "2026-10-09T06:43:24Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-09T06:48:40Z",
+     "outcome": "finished"
+    },
+    "abletim": {
+     "queue": 24,
+     "at": "2026-10-09T06:49:14Z",
      "outcome": null
     }
    },
@@ -287,7 +302,7 @@
     "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 2.6
+   "age_h": 2.9
   },
   "passes": [
    {
@@ -425,26 +440,26 @@
    {
     "repo": "chezz",
     "log": "chezz.20261009T063942Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 17,
+    "cost_usd": 0.5079,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-09T06:39:42Z"
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261009T032725Z.log",
+    "log": "baudin.20261009T064324Z.log",
     "result": "success",
-    "turns": 46,
-    "cost_usd": 1.0663,
+    "turns": 34,
+    "cost_usd": 1.0726,
     "rc": 0,
-    "pr": null,
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/baudin/pull/143",
+    "commented": false,
     "note": null,
-    "at": "2026-10-09T03:27:25Z"
+    "at": "2026-10-09T06:43:24Z"
    }
   ],
   "dispatch_source": {
@@ -469,7 +484,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "chezz: last pass landed nothing -- no PR and no comment on its issue"
+  "senechal: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
