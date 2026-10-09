@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-09T11:40:01Z",
+ "generated_at": "2026-10-09T12:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T12:40:01Z",
+ "valid_until": "2026-10-09T13:00:01Z",
  "containers": [
-  {
-   "name": "adoring_dubinsky",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T11:25:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-08T22:13:55Z",
    "finished_at": "2026-10-08T22:35:02Z",
    "ports_published": false
+  },
+  {
+   "name": "hopeful_agnesi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T11:54:29Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "adoring_dubinsky",
   "condescending_joliot",
+  "hopeful_agnesi",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -264,6 +264,16 @@
     "realisateur": {
      "queue": 199,
      "at": "2026-10-09T11:25:52Z",
+     "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 31,
+     "at": "2026-10-09T11:44:26Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 18,
+     "at": "2026-10-09T11:54:27Z",
      "outcome": null
     }
    },
@@ -271,7 +281,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.5
+   "age_h": 1.9
   },
   "passes": [
    {
@@ -361,6 +371,30 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261009T112552Z.log",
+    "result": "success",
+    "turns": 40,
+    "cost_usd": 1.0348,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1673",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T11:25:52Z"
+   },
+   {
+    "repo": "bibliothecaire",
+    "log": "bibliothecaire.20261009T114426Z.log",
+    "result": "success",
+    "turns": 65,
+    "cost_usd": 1.7271,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/171",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T11:44:26Z"
+   },
+   {
+    "repo": "secretaire",
+    "log": "secretaire.20261009T115427Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -368,31 +402,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T11:25:52Z"
-   },
-   {
-    "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261009T083852Z.log",
-    "result": "success",
-    "turns": 149,
-    "cost_usd": 4.681,
-    "rc": 0,
-    "pr": null,
-    "commented": true,
-    "note": null,
-    "at": "2026-10-09T08:38:52Z"
-   },
-   {
-    "repo": "secretaire",
-    "log": "secretaire.20261009T092003Z.log",
-    "result": "success",
-    "turns": 75,
-    "cost_usd": 3.3586,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/151",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-09T09:20:03Z"
+    "at": "2026-10-09T11:54:27Z"
    },
    {
     "repo": "space-canon",
@@ -454,6 +464,6 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue"
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
