@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T01:40:01Z",
+ "generated_at": "2026-10-09T02:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T02:40:01Z",
+ "valid_until": "2026-10-09T03:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "goofy_antonelli",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T01:03:43Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -126,6 +114,18 @@
    "ports_published": null
   },
   {
+   "name": "youthful_bhaskara",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T01:50:44Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "zaxon-gateway",
    "image": "zaxon:crt-40d82c03a4fa",
    "project": "zaxon",
@@ -201,9 +201,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "goofy_antonelli",
   "serene_elgamal",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "youthful_bhaskara"
  ],
  "nightly": {
   "armed": true,
@@ -254,6 +254,16 @@
     "senechal": {
      "queue": 33,
      "at": "2026-10-09T01:03:41Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 54,
+     "at": "2026-10-09T01:42:55Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 199,
+     "at": "2026-10-09T01:50:42Z",
      "outcome": null
     }
    },
@@ -261,7 +271,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.5
+   "age_h": 2.9
   },
   "passes": [
    {
@@ -327,6 +337,30 @@
    {
     "repo": "senechal",
     "log": "senechal.20261009T010341Z.log",
+    "result": "success",
+    "turns": 77,
+    "cost_usd": 3.0151,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1196",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T01:03:41Z"
+   },
+   {
+    "repo": "etalon",
+    "log": "etalon.20261009T014255Z.log",
+    "result": "success",
+    "turns": 40,
+    "cost_usd": 1.3968,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/145",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T01:42:55Z"
+   },
+   {
+    "repo": "realisateur",
+    "log": "realisateur.20261009T015042Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -334,31 +368,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T01:03:41Z"
-   },
-   {
-    "repo": "etalon",
-    "log": "etalon.20261008T203829Z.log",
-    "result": "success",
-    "turns": 69,
-    "cost_usd": 1.7752,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/etalon/pull/143",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-08T20:38:29Z"
-   },
-   {
-    "repo": "realisateur",
-    "log": "realisateur.20261008T205422Z.log",
-    "result": "success",
-    "turns": 57,
-    "cost_usd": 1.6605,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1667",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-08T20:54:22Z"
+    "at": "2026-10-09T01:50:42Z"
    },
    {
     "repo": "bibliothecaire",
@@ -444,7 +454,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
