@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-09T16:20:01Z",
+ "generated_at": "2026-10-09T16:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T17:20:01Z",
+ "valid_until": "2026-10-09T17:40:01Z",
  "containers": [
-  {
-   "name": "amazing_swartz",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T16:17:42Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -75,6 +63,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "sharp_nobel",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T16:38:41Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -200,9 +200,9 @@
   }
  ],
  "unmanaged": [
-  "amazing_swartz",
   "condescending_joliot",
   "serene_elgamal",
+  "sharp_nobel",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -297,6 +297,16 @@
     "baudin": {
      "queue": 18,
      "at": "2026-10-09T16:17:40Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-09T16:38:03Z",
+     "outcome": "finished"
+    },
+    "abletim": {
+     "queue": 24,
+     "at": "2026-10-09T16:38:39Z",
      "outcome": null
     }
    },
@@ -305,32 +315,32 @@
     "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 3.2
+   "age_h": 3.5
   },
   "passes": [
    {
     "repo": "abc",
-    "log": "abc.20261009T122721Z.log",
+    "log": "abc.20261009T163803Z.log",
     "result": "success",
-    "turns": 5,
-    "cost_usd": 0.1219,
+    "turns": 6,
+    "cost_usd": 0.13,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-09T12:27:21Z"
+    "at": "2026-10-09T16:38:03Z"
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261009T122806Z.log",
-    "result": "success",
-    "turns": 72,
-    "cost_usd": 2.2295,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/abletim/pull/108",
-    "commented": true,
+    "log": "abletim.20261009T163839Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-09T12:28:06Z"
+    "at": "2026-10-09T16:38:39Z"
    },
    {
     "repo": "american-cycle",
@@ -359,11 +369,11 @@
    {
     "repo": "baudin",
     "log": "baudin.20261009T161740Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 80,
+    "cost_usd": 2.4872,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/baudin/pull/145",
     "commented": false,
     "note": null,
     "at": "2026-10-09T16:17:40Z"
@@ -642,8 +652,8 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
