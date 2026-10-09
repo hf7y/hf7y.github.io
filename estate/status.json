@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T21:00:02Z",
+ "generated_at": "2026-10-09T21:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T22:00:02Z",
+ "valid_until": "2026-10-09T22:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -63,6 +63,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "suspicious_lamport",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T21:07:38Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -190,6 +202,7 @@
  "unmanaged": [
   "condescending_joliot",
   "serene_elgamal",
+  "suspicious_lamport",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -225,22 +238,29 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261009T192538Z.log",
-   "started_at": "2026-10-09T19:25:38Z",
-   "finished_at": "2026-10-09T20:03:35Z",
+   "log": "nightly.20261009T210703Z.log",
+   "started_at": "2026-10-09T21:07:03Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "crt": {
-     "queue": 1,
-     "at": "2026-10-09T19:25:44Z",
-     "outcome": "finished"
+    "musc-2300": {
+     "queue": 61,
+     "at": "2026-10-09T21:07:36Z",
+     "outcome": null
     }
    },
-   "skipped": [],
+   "skipped": [
+    "inv-redirects",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "space-canon",
+    "dog"
+   ],
    "queue_unreadable": [],
-   "age_h": 1.6
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -437,15 +457,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261009T132527Z.log",
-    "result": "success",
-    "turns": 112,
-    "cost_usd": 3.3943,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/269",
+    "log": "musc-2300.20261009T210736Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T13:25:27Z"
+    "at": "2026-10-09T21:07:36Z"
    },
    {
     "repo": "nine-speakers",
@@ -587,10 +607,12 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
