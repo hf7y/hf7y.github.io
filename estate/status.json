@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T12:00:01Z",
+ "generated_at": "2026-10-09T12:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T13:00:01Z",
+ "valid_until": "2026-10-09T13:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -40,18 +40,6 @@
    "started_at": "2026-10-08T22:13:55Z",
    "finished_at": "2026-10-08T22:35:02Z",
    "ports_published": false
-  },
-  {
-   "name": "hopeful_agnesi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T11:54:29Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -111,6 +99,18 @@
    "exit_code": 1,
    "started_at": "2026-10-05T03:46:05Z",
    "finished_at": "2026-10-05T03:47:47Z",
+   "ports_published": null
+  },
+  {
+   "name": "xenodochial_sanderson",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T12:08:46Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "hopeful_agnesi",
   "serene_elgamal",
+  "xenodochial_sanderson",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -274,14 +274,20 @@
     "secretaire": {
      "queue": 18,
      "at": "2026-10-09T11:54:27Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 8,
+     "at": "2026-10-09T12:08:43Z",
      "outcome": null
     }
    },
    "skipped": [
-    "dog"
+    "dog",
+    "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 2.2
   },
   "passes": [
    {
@@ -395,12 +401,12 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261009T115427Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 64,
+    "cost_usd": 2.5479,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/152",
+    "commented": true,
     "note": null,
     "at": "2026-10-09T11:54:27Z"
    },
@@ -418,15 +424,15 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261009T093105Z.log",
-    "result": "success",
-    "turns": 9,
-    "cost_usd": 0.3747,
-    "rc": 0,
+    "log": "chezz.20261009T120843Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-09T09:31:05Z"
+    "at": "2026-10-09T12:08:43Z"
    },
    {
     "repo": "baudin",
@@ -463,7 +469,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
+  "senechal: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
