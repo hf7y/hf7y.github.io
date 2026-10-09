@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-09T19:20:02Z",
+ "generated_at": "2026-10-09T19:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T20:20:02Z",
+ "valid_until": "2026-10-09T20:40:02Z",
  "containers": [
-  {
-   "name": "blissful_clarke",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T19:07:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -52,6 +40,30 @@
    "started_at": "2026-10-08T22:13:55Z",
    "finished_at": "2026-10-08T22:35:02Z",
    "ports_published": false
+  },
+  {
+   "name": "magical_hodgkin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T19:31:44Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "musing_sammet",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T19:25:54Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +212,9 @@
   }
  ],
  "unmanaged": [
-  "blissful_clarke",
   "condescending_joliot",
+  "magical_hodgkin",
+  "musing_sammet",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -238,22 +251,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261009T182201Z.log",
-   "started_at": "2026-10-09T18:22:01Z",
-   "finished_at": "2026-10-09T19:05:53Z",
+   "log": "nightly.20261009T192538Z.log",
+   "started_at": "2026-10-09T19:25:38Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "realisateur": {
+    "crt": {
      "queue": 1,
-     "at": "2026-10-09T18:22:09Z",
-     "outcome": "finished"
+     "at": "2026-10-09T19:25:44Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.0
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -354,15 +367,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261009T130710Z.log",
-    "result": "success",
-    "turns": 35,
-    "cost_usd": 0.9278,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/487",
-    "commented": true,
+    "log": "crt.20261009T192544Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-09T13:07:10Z"
+    "at": "2026-10-09T19:25:44Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -415,11 +428,11 @@
    {
     "repo": "front-door",
     "log": "front-door.20261009T190659Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 70,
+    "cost_usd": 2.5141,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/front-door/pull/29",
     "commented": false,
     "note": null,
     "at": "2026-10-09T19:06:59Z"
@@ -522,15 +535,15 @@
    },
    {
     "repo": "sequestria",
-    "log": "sequestria.20261005T105726Z.log",
-    "result": "success",
-    "turns": 20,
-    "cost_usd": 0.4716,
-    "rc": 0,
+    "log": "sequestria.20261009T193141Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-05T10:57:26Z"
+    "at": "2026-10-09T19:31:41Z"
    },
    {
     "repo": "space-canon",
@@ -600,9 +613,10 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
-  "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
