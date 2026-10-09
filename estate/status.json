@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T10:20:02Z",
+ "generated_at": "2026-10-09T10:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T11:20:02Z",
+ "valid_until": "2026-10-09T11:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,14 +30,14 @@
    "ports_published": null
   },
   {
-   "name": "eloquent_lumiere",
+   "name": "determined_cohen",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-09T10:07:13Z",
+   "started_at": "2026-10-09T10:34:49Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "eloquent_lumiere",
+  "determined_cohen",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -234,22 +234,29 @@
     "crt": {
      "queue": 33,
      "at": "2026-10-09T10:07:10Z",
+     "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 59,
+     "at": "2026-10-09T10:34:46Z",
      "outcome": null
     }
    },
-   "skipped": [],
+   "skipped": [
+    "dog"
+   ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
     "repo": "crt",
     "log": "crt.20261009T100710Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 66,
+    "cost_usd": 2.2829,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/486",
     "commented": false,
     "note": null,
     "at": "2026-10-09T10:07:10Z"
@@ -268,15 +275,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261009T071639Z.log",
-    "result": "success",
-    "turns": 67,
-    "cost_usd": 1.5695,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/267",
+    "log": "musc-2300.20261009T103446Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T07:16:39Z"
+    "at": "2026-10-09T10:34:46Z"
    },
    {
     "repo": "groc-mangr",
@@ -421,6 +428,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "crt: last pass landed nothing -- no PR and no comment on its issue"
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
