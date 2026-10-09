@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T14:00:02Z",
+ "generated_at": "2026-10-09T14:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T15:00:02Z",
+ "valid_until": "2026-10-09T15:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -151,13 +151,13 @@
   },
   {
    "name": "zaxon-watcher",
-   "image": "zaxon:crt-40d82c03a4fa",
+   "image": "zaxon:crt-13e77fff9ba0",
    "project": "zaxon",
    "state": "running",
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-09T02:09:48Z",
+   "started_at": "2026-10-09T14:15:04Z",
    "finished_at": null,
    "ports_published": null
   }
@@ -209,19 +209,32 @@
   "armed": true,
   "cron_line": "0 1 * * * /srv/agent/nightly.sh # realisateur:agent-nightly:RUNNER",
   "repos": [
-   "crt",
-   "dog",
-   "musc-2300",
-   "groc-mangr",
-   "wtul",
-   "senechal",
-   "etalon",
-   "realisateur",
+   "abc",
+   "abletim",
+   "american-cycle",
+   "apms-2173",
+   "baudin",
    "bibliothecaire",
-   "secretaire",
-   "space-canon",
    "chezz",
-   "baudin"
+   "cinema-sanctuary",
+   "crt",
+   "dcp-gate-site",
+   "dog",
+   "ecosim",
+   "etalon",
+   "front-door",
+   "gardien",
+   "groc-mangr",
+   "musc-2300",
+   "nine-speakers",
+   "realisateur",
+   "scheduler",
+   "secretaire",
+   "senechal",
+   "sequestria",
+   "space-canon",
+   "vim-arcade",
+   "wtul"
   ],
   "last_run": {
    "log": "nightly.20261009T130702Z.log",
@@ -251,104 +264,68 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
-    "repo": "crt",
-    "log": "crt.20261009T130710Z.log",
+    "repo": "abc",
+    "log": "abc.20261009T122721Z.log",
     "result": "success",
-    "turns": 35,
-    "cost_usd": 0.9278,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/487",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-09T13:07:10Z"
-   },
-   {
-    "repo": "dog",
-    "log": "dog.20261008T163031Z.log",
-    "result": "success",
-    "turns": 20,
-    "cost_usd": 0.3119,
+    "turns": 5,
+    "cost_usd": 0.1219,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-08T16:30:31Z"
+    "at": "2026-10-09T12:27:21Z"
    },
    {
-    "repo": "musc-2300",
-    "log": "musc-2300.20261009T132527Z.log",
+    "repo": "abletim",
+    "log": "abletim.20261009T122806Z.log",
     "result": "success",
-    "turns": 112,
-    "cost_usd": 3.3943,
+    "turns": 72,
+    "cost_usd": 2.2295,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/269",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-09T13:25:27Z"
-   },
-   {
-    "repo": "groc-mangr",
-    "log": "groc-mangr.20261009T135431Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
-    "note": null,
-    "at": "2026-10-09T13:54:31Z"
-   },
-   {
-    "repo": "wtul",
-    "log": "wtul.20261009T105355Z.log",
-    "result": "success",
-    "turns": 78,
-    "cost_usd": 1.8281,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/wtul/pull/487",
+    "pr": "https://github.com/hf7y-estate/abletim/pull/108",
     "commented": true,
     "note": null,
-    "at": "2026-10-09T10:53:55Z"
+    "at": "2026-10-09T12:28:06Z"
    },
    {
-    "repo": "senechal",
-    "log": "senechal.20261009T110641Z.log",
+    "repo": "american-cycle",
+    "log": "american-cycle.20261005T082928Z.log",
     "result": "success",
-    "turns": 63,
-    "cost_usd": 1.9037,
+    "turns": 80,
+    "cost_usd": 2.678,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T11:06:41Z"
+    "at": "2026-10-05T08:29:28Z"
    },
    {
-    "repo": "etalon",
-    "log": "etalon.20261009T111712Z.log",
+    "repo": "apms-2173",
+    "log": "apms-2173.20261005T083726Z.log",
     "result": "success",
-    "turns": 52,
-    "cost_usd": 1.4019,
+    "turns": 110,
+    "cost_usd": 3.2977,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/etalon/pull/148",
+    "pr": "https://github.com/hf7y-estate/apms-2173/pull/175",
     "commented": false,
     "note": null,
-    "at": "2026-10-09T11:17:12Z"
+    "at": "2026-10-05T08:37:26Z"
    },
    {
-    "repo": "realisateur",
-    "log": "realisateur.20261009T112552Z.log",
+    "repo": "baudin",
+    "log": "baudin.20261009T122122Z.log",
     "result": "success",
-    "turns": 40,
-    "cost_usd": 1.0348,
+    "turns": 37,
+    "cost_usd": 1.0138,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1673",
-    "commented": false,
+    "pr": "https://github.com/hf7y-estate/baudin/pull/144",
+    "commented": true,
     "note": null,
-    "at": "2026-10-09T11:25:52Z"
+    "at": "2026-10-09T12:21:22Z"
    },
    {
     "repo": "bibliothecaire",
@@ -363,6 +340,174 @@
     "at": "2026-10-09T11:44:26Z"
    },
    {
+    "repo": "chezz",
+    "log": "chezz.20261009T120843Z.log",
+    "result": "success",
+    "turns": 55,
+    "cost_usd": 1.3581,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/chezz/pull/194",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-09T12:08:43Z"
+   },
+   {
+    "repo": "cinema-sanctuary",
+    "log": "cinema-sanctuary.20261005T110354Z.log",
+    "result": "success",
+    "turns": 57,
+    "cost_usd": 1.528,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/18",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-05T11:03:54Z"
+   },
+   {
+    "repo": "crt",
+    "log": "crt.20261009T130710Z.log",
+    "result": "success",
+    "turns": 35,
+    "cost_usd": 0.9278,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/487",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-09T13:07:10Z"
+   },
+   {
+    "repo": "dcp-gate-site",
+    "log": "dcp-gate-site.20261005T085257Z.log",
+    "result": "success",
+    "turns": 7,
+    "cost_usd": 0.1556,
+    "rc": 0,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-05T08:52:57Z"
+   },
+   {
+    "repo": "dog",
+    "log": "dog.20261008T163031Z.log",
+    "result": "success",
+    "turns": 20,
+    "cost_usd": 0.3119,
+    "rc": 0,
+    "pr": null,
+    "commented": true,
+    "note": null,
+    "at": "2026-10-08T16:30:31Z"
+   },
+   {
+    "repo": "ecosim",
+    "log": "ecosim.20261006T214038Z.log",
+    "result": "success",
+    "turns": 94,
+    "cost_usd": 3.0766,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/ecosim/pull/128",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-06T21:40:38Z"
+   },
+   {
+    "repo": "etalon",
+    "log": "etalon.20261009T111712Z.log",
+    "result": "success",
+    "turns": 52,
+    "cost_usd": 1.4019,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/148",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T11:17:12Z"
+   },
+   {
+    "repo": "front-door",
+    "log": "front-door.20261005T095714Z.log",
+    "result": "success",
+    "turns": 49,
+    "cost_usd": 1.2796,
+    "rc": 0,
+    "pr": "https://github.com/octocat/Hello-World/pull/1",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-05T09:57:14Z"
+   },
+   {
+    "repo": "gardien",
+    "log": "gardien.20261005T085519Z.log",
+    "result": "success",
+    "turns": 107,
+    "cost_usd": 3.2125,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/gardien/pull/217",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-05T08:55:19Z"
+   },
+   {
+    "repo": "groc-mangr",
+    "log": "groc-mangr.20261009T135431Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T13:54:31Z"
+   },
+   {
+    "repo": "musc-2300",
+    "log": "musc-2300.20261009T132527Z.log",
+    "result": "success",
+    "turns": 112,
+    "cost_usd": 3.3943,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/269",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T13:25:27Z"
+   },
+   {
+    "repo": "nine-speakers",
+    "log": "nine-speakers.20261005T085048Z.log",
+    "result": "success",
+    "turns": 25,
+    "cost_usd": 0.6029,
+    "rc": 0,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-05T08:50:48Z"
+   },
+   {
+    "repo": "realisateur",
+    "log": "realisateur.20261009T112552Z.log",
+    "result": "success",
+    "turns": 40,
+    "cost_usd": 1.0348,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1673",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T11:25:52Z"
+   },
+   {
+    "repo": "scheduler",
+    "log": "scheduler.20261008T052019Z.log",
+    "result": "success",
+    "turns": 33,
+    "cost_usd": 1.9828,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/scheduler/pull/801",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-08T05:20:19Z"
+   },
+   {
     "repo": "secretaire",
     "log": "secretaire.20261009T115427Z.log",
     "result": "success",
@@ -373,6 +518,30 @@
     "commented": true,
     "note": null,
     "at": "2026-10-09T11:54:27Z"
+   },
+   {
+    "repo": "senechal",
+    "log": "senechal.20261009T110641Z.log",
+    "result": "success",
+    "turns": 63,
+    "cost_usd": 1.9037,
+    "rc": 0,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-09T11:06:41Z"
+   },
+   {
+    "repo": "sequestria",
+    "log": "sequestria.20261005T105726Z.log",
+    "result": "success",
+    "turns": 20,
+    "cost_usd": 0.4716,
+    "rc": 0,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-05T10:57:26Z"
    },
    {
     "repo": "space-canon",
@@ -387,35 +556,34 @@
     "at": "2026-10-08T05:12:03Z"
    },
    {
-    "repo": "chezz",
-    "log": "chezz.20261009T120843Z.log",
+    "repo": "vim-arcade",
+    "log": "vim-arcade.20261008T025456Z.log",
     "result": "success",
-    "turns": 55,
-    "cost_usd": 1.3581,
+    "turns": 66,
+    "cost_usd": 1.2242,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/chezz/pull/194",
+    "pr": "https://github.com/hf7y-estate/vim-arcade/pull/329",
     "commented": true,
     "note": null,
-    "at": "2026-10-09T12:08:43Z"
+    "at": "2026-10-08T02:54:56Z"
    },
    {
-    "repo": "baudin",
-    "log": "baudin.20261009T122122Z.log",
+    "repo": "wtul",
+    "log": "wtul.20261009T105355Z.log",
     "result": "success",
-    "turns": 37,
-    "cost_usd": 1.0138,
+    "turns": 78,
+    "cost_usd": 1.8281,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/144",
+    "pr": "https://github.com/hf7y-estate/wtul/pull/487",
     "commented": true,
     "note": null,
-    "at": "2026-10-09T12:21:22Z"
+    "at": "2026-10-09T10:53:55Z"
    }
   ],
   "dispatch_source": {
    "nightly.sh": "linked",
    "run-agent.sh": "linked",
    "merge-carry.sh": "linked",
-   "repos": "linked",
    "Dockerfile": "linked"
   },
   "dispatch_token": {
@@ -433,7 +601,11 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue"
+  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
+  "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
