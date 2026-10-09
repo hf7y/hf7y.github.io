@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-09T03:40:02Z",
+ "generated_at": "2026-10-09T04:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T04:40:02Z",
+ "valid_until": "2026-10-09T05:00:01Z",
  "containers": [
-  {
-   "name": "compassionate_bose",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T03:34:54Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -75,6 +63,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "weave-pass-04",
+   "image": "python:3.12-slim",
+   "project": null,
+   "state": "exited",
+   "health": null,
+   "restarts": 0,
+   "exit_code": 0,
+   "started_at": "2026-10-09T03:58:14Z",
+   "finished_at": "2026-10-09T03:59:13Z",
    "ports_published": null
   },
   {
@@ -200,9 +200,9 @@
   }
  ],
  "unmanaged": [
-  "compassionate_bose",
   "condescending_joliot",
   "serene_elgamal",
+  "weave-pass-04",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -226,7 +226,7 @@
   "last_run": {
    "log": "nightly.20261008T230702Z.log",
    "started_at": "2026-10-08T23:07:02Z",
-   "finished_at": null,
+   "finished_at": "2026-10-09T03:53:08Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -294,7 +294,7 @@
     "abletim": {
      "queue": 24,
      "at": "2026-10-09T03:34:51Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [
@@ -302,7 +302,7 @@
     "space-canon"
    ],
    "queue_unreadable": [],
-   "age_h": 4.5
+   "age_h": 4.9
   },
   "passes": [
    {
@@ -482,7 +482,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "crt: last pass landed nothing -- no PR and no comment on its issue"
  ]
