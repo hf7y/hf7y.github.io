@@ -1,0 +1,70 @@
+{
+ "clips": [
+  {
+   "file": "ordinary/mark.mp4",
+   "kind": "ordinary",
+   "sha256": "3169dbe2990db38011da7c1f7a715097bdabb09d1cb77e5b7c65e607704caa0b"
+  },
+  {
+   "file": "proper/tonight.mp4",
+   "kind": "proper",
+   "sha256": "b0b1ee1f248c9ab21a400e2c4c3327e6611aa3e94b6ce7127910665c463e410a",
+   "until": "2026-09-20"
+  },
+  {
+   "file": "ordinary/partners.mp4",
+   "kind": "ordinary",
+   "sha256": "c706d00e1fc3892dbaed3fe98fd324ea2ab1c2ae4025935da24a8c135c0dce31"
+  },
+  {
+   "file": "proper/next.mp4",
+   "kind": "proper",
+   "sha256": "24c46214459abd7651ceee7b6789d5e36d1065e4fc5ca374001a2f7123b12db4",
+   "until": "2026-10-04"
+  },
+  {
+   "file": "proper/samsara-notes.mp4",
+   "kind": "proper",
+   "sha256": "52e922d2c0736c58046b92f6ff56d2f4dacb03ca14c515b74f1d83d81c730fef",
+   "until": "2026-10-04"
+  },
+  {
+   "file": "proper/bigan-kaili-blues.mp4",
+   "kind": "proper",
+   "sha256": "61395f40ff39ff0138d425dac17b173518081ed87c0cbc0625cff964efc13b66",
+   "until": "2026-09-20"
+  },
+  {
+   "file": "proper/bigan-a-short-story.mp4",
+   "kind": "proper",
+   "sha256": "64b3d90cb917b265ba779a35f81eb5c8e6e29d85e29f7cac43976ca31dcc5da0",
+   "until": "2026-09-20"
+  },
+  {
+   "file": "proper/bigan-long-days-journey.mp4",
+   "kind": "proper",
+   "sha256": "62785857225cbeafe4074134f914185d66b0338cdab6307f049e9390a8a9bb83",
+   "until": "2026-09-20"
+  },
+  {
+   "file": "ordinary/involved.mp4",
+   "kind": "ordinary",
+   "sha256": "c24d5fa8976d656f6a909448a6a311ae2e97e130d18861b913174a17d18a1566"
+  },
+  {
+   "file": "ordinary/hands.mp4",
+   "kind": "ordinary",
+   "sha256": "23023884e799d8898575675cd845e35362a0d167762323b123b6a1a5ed461adf"
+  },
+  {
+   "file": "ordinary/epigraph.mp4",
+   "kind": "ordinary",
+   "sha256": "583dca4d80ab1cdbcedde458fd60da8063e7edd0d16c5d202e64b9092d150702"
+  },
+  {
+   "file": "ordinary/house.mp4",
+   "kind": "ordinary",
+   "sha256": "cff127006f846f908bda38a135bd4a301d5524aaf854eb02f207b12c834ded78"
+  }
+ ]
+}
