@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-09T06:00:02Z",
+ "generated_at": "2026-10-09T06:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T07:00:02Z",
+ "valid_until": "2026-10-09T07:20:01Z",
  "containers": [
-  {
-   "name": "awesome_yonath",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T05:36:29Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-08T22:13:55Z",
    "finished_at": "2026-10-08T22:35:02Z",
    "ports_published": false
+  },
+  {
+   "name": "hopeful_goldberg",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T06:17:35Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "awesome_yonath",
   "condescending_joliot",
+  "hopeful_goldberg",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -264,6 +264,16 @@
     "realisateur": {
      "queue": 199,
      "at": "2026-10-09T05:36:26Z",
+     "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 32,
+     "at": "2026-10-09T06:08:50Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 18,
+     "at": "2026-10-09T06:17:32Z",
      "outcome": null
     }
    },
@@ -271,7 +281,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 2.2
   },
   "passes": [
    {
@@ -361,38 +371,38 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261009T053626Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 92,
+    "cost_usd": 4.3242,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1671",
     "commented": true,
     "note": null,
     "at": "2026-10-09T05:36:26Z"
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261009T023722Z.log",
+    "log": "bibliothecaire.20261009T060850Z.log",
     "result": "success",
-    "turns": 122,
-    "cost_usd": 3.9975,
+    "turns": 53,
+    "cost_usd": 1.1845,
     "rc": 0,
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/170",
     "commented": true,
     "note": null,
-    "at": "2026-10-09T02:37:22Z"
+    "at": "2026-10-09T06:08:50Z"
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261009T031212Z.log",
-    "result": "success",
-    "turns": 103,
-    "cost_usd": 3.846,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/148",
+    "log": "secretaire.20261009T061732Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T03:12:12Z"
+    "at": "2026-10-09T06:17:32Z"
    },
    {
     "repo": "space-canon",
@@ -453,6 +463,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue"
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
