@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T04:00:01Z",
+ "generated_at": "2026-10-09T04:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T05:00:01Z",
+ "valid_until": "2026-10-09T05:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -40,6 +40,18 @@
    "started_at": "2026-10-08T22:13:55Z",
    "finished_at": "2026-10-08T22:35:02Z",
    "ports_published": false
+  },
+  {
+   "name": "peaceful_ride",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T04:07:12Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -201,6 +213,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "peaceful_ride",
   "serene_elgamal",
   "weave-pass-04",
   "xenodochial_wilson"
@@ -224,98 +237,35 @@
    "baudin"
   ],
   "last_run": {
-   "log": "nightly.20261008T230702Z.log",
-   "started_at": "2026-10-08T23:07:02Z",
-   "finished_at": "2026-10-09T03:53:08Z",
+   "log": "nightly.20261009T040702Z.log",
+   "started_at": "2026-10-09T04:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "crt": {
-     "queue": 28,
-     "at": "2026-10-08T23:07:09Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 56,
-     "at": "2026-10-09T00:22:28Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 29,
-     "at": "2026-10-09T00:41:48Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 36,
-     "at": "2026-10-09T00:51:00Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 33,
-     "at": "2026-10-09T01:03:41Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 54,
-     "at": "2026-10-09T01:42:55Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 199,
-     "at": "2026-10-09T01:50:42Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 30,
-     "at": "2026-10-09T02:37:22Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 17,
-     "at": "2026-10-09T03:12:12Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 8,
-     "at": "2026-10-09T03:24:53Z",
-     "outcome": "finished"
-    },
-    "baudin": {
-     "queue": 20,
-     "at": "2026-10-09T03:27:25Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-09T03:34:22Z",
-     "outcome": "finished"
-    },
-    "abletim": {
-     "queue": 24,
-     "at": "2026-10-09T03:34:51Z",
-     "outcome": "finished"
+     "queue": 32,
+     "at": "2026-10-09T04:07:10Z",
+     "outcome": null
     }
    },
-   "skipped": [
-    "dog",
-    "space-canon"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 4.9
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "crt",
-    "log": "crt.20261008T230709Z.log",
-    "result": "success",
-    "turns": 27,
-    "cost_usd": 0.5271,
-    "rc": 0,
+    "log": "crt.20261009T040710Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-08T23:07:09Z"
+    "at": "2026-10-09T04:07:10Z"
    },
    {
     "repo": "dog",
@@ -482,6 +432,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "crt: last pass landed nothing -- no PR and no comment on its issue"
  ]
