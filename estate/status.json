@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T14:40:02Z",
+ "generated_at": "2026-10-09T15:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-09T15:40:02Z",
+ "valid_until": "2026-10-09T16:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,6 +42,18 @@
    "ports_published": false
   },
   {
+   "name": "nervous_dewdney",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-09T14:44:31Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -63,18 +75,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "stupefied_tu",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T14:39:53Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "nervous_dewdney",
   "serene_elgamal",
-  "stupefied_tu",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -262,6 +262,11 @@
     "wtul": {
      "queue": 43,
      "at": "2026-10-09T14:39:50Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 34,
+     "at": "2026-10-09T14:44:29Z",
      "outcome": null
     }
    },
@@ -269,7 +274,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.6
+   "age_h": 1.9
   },
   "passes": [
    {
@@ -526,15 +531,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261009T110641Z.log",
-    "result": "success",
-    "turns": 63,
-    "cost_usd": 1.9037,
-    "rc": 0,
+    "log": "senechal.20261009T144429Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T11:06:41Z"
+    "at": "2026-10-09T14:44:29Z"
    },
    {
     "repo": "sequestria",
@@ -578,7 +583,7 @@
     "result": null,
     "turns": null,
     "cost_usd": null,
-    "rc": null,
+    "rc": 1,
     "pr": null,
     "commented": false,
     "note": null,
