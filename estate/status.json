@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T08:40:02Z",
+ "generated_at": "2026-10-10T09:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T09:40:02Z",
+ "valid_until": "2026-10-10T10:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "elated_bhabha",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T08:39:42Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +189,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "elated_bhabha",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -240,7 +227,7 @@
   "last_run": {
    "log": "nightly.20261010T070702Z.log",
    "started_at": "2026-10-10T07:07:02Z",
-   "finished_at": null,
+   "finished_at": "2026-10-10T08:51:46Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -303,7 +290,12 @@
     "dcp-gate-site": {
      "queue": 2,
      "at": "2026-10-10T08:39:40Z",
-     "outcome": null
+     "outcome": "finished"
+    },
+    "gardien": {
+     "queue": 9,
+     "at": "2026-10-10T08:45:09Z",
+     "outcome": "finished"
     }
    },
    "skipped": [
@@ -315,7 +307,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.6
+   "age_h": 1.9
   },
   "passes": [
    {
@@ -429,12 +421,12 @@
    {
     "repo": "dcp-gate-site",
     "log": "dcp-gate-site.20261010T083940Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 14,
+    "cost_usd": 0.3244,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-10T08:39:40Z"
    },
@@ -488,15 +480,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261010T051511Z.log",
+    "log": "gardien.20261010T084509Z.log",
     "result": "success",
-    "turns": 27,
-    "cost_usd": 0.7139,
+    "turns": 34,
+    "cost_usd": 0.9373,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-10T05:15:11Z"
+    "at": "2026-10-10T08:45:09Z"
    },
    {
     "repo": "groc-mangr",
@@ -662,12 +654,9 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
-  "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
