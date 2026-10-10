@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T11:00:01Z",
+ "generated_at": "2026-10-10T11:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T12:00:01Z",
+ "valid_until": "2026-10-10T12:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -63,18 +63,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "serene_nash",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T10:58:38Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -202,7 +190,6 @@
  "unmanaged": [
   "condescending_joliot",
   "serene_elgamal",
-  "serene_nash",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -240,7 +227,7 @@
   "last_run": {
    "log": "nightly.20261010T090702Z.log",
    "started_at": "2026-10-10T09:07:02Z",
-   "finished_at": null,
+   "finished_at": "2026-10-10T11:09:28Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -308,7 +295,7 @@
     "etalon": {
      "queue": 52,
      "at": "2026-10-10T10:58:24Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [
@@ -320,7 +307,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 2.2
   },
   "passes": [
    {
@@ -470,11 +457,11 @@
    {
     "repo": "etalon",
     "log": "etalon.20261010T105824Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 58,
+    "cost_usd": 1.6051,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/153",
     "commented": false,
     "note": null,
     "at": "2026-10-10T10:58:24Z"
@@ -667,10 +654,8 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
-  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
