@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T12:20:01Z",
+ "generated_at": "2026-10-10T12:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T13:20:01Z",
+ "valid_until": "2026-10-10T13:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,18 +42,6 @@
    "ports_published": false
   },
   {
-   "name": "quirky_kilby",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T12:07:40Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -75,6 +63,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "sweet_tesla",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T12:30:14Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "quirky_kilby",
   "serene_elgamal",
+  "sweet_tesla",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -248,6 +248,11 @@
     "bibliothecaire": {
      "queue": 39,
      "at": "2026-10-10T12:07:37Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 20,
+     "at": "2026-10-10T12:30:08Z",
      "outcome": null
     }
    },
@@ -260,7 +265,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -326,11 +331,11 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261010T120737Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 80,
+    "cost_usd": 2.2791,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/183",
     "commented": false,
     "note": null,
     "at": "2026-10-10T12:07:37Z"
@@ -505,15 +510,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261010T073412Z.log",
-    "result": "success",
-    "turns": 15,
-    "cost_usd": 0.3657,
-    "rc": 0,
+    "log": "secretaire.20261010T123008Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T07:34:12Z"
+    "at": "2026-10-10T12:30:08Z"
    },
    {
     "repo": "senechal",
@@ -609,9 +614,9 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
