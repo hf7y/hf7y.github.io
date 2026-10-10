@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T23:00:01Z",
+ "generated_at": "2026-10-10T23:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T00:00:01Z",
+ "valid_until": "2026-10-11T00:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,14 +30,14 @@
    "ports_published": null
   },
   {
-   "name": "dreamy_tharp",
+   "name": "goofy_maxwell",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-10T22:29:53Z",
+   "started_at": "2026-10-10T23:17:36Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -213,7 +213,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "dreamy_tharp",
+  "goofy_maxwell",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -286,6 +286,21 @@
     "apms-2173": {
      "queue": 16,
      "at": "2026-10-10T22:29:51Z",
+     "outcome": "finished"
+    },
+    "nine-speakers": {
+     "queue": 11,
+     "at": "2026-10-10T23:03:44Z",
+     "outcome": "finished"
+    },
+    "dcp-gate-site": {
+     "queue": 2,
+     "at": "2026-10-10T23:15:31Z",
+     "outcome": "finished"
+    },
+    "gardien": {
+     "queue": 9,
+     "at": "2026-10-10T23:17:34Z",
      "outcome": null
     }
    },
@@ -298,7 +313,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -340,12 +355,12 @@
    {
     "repo": "apms-2173",
     "log": "apms-2173.20261010T222951Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 114,
+    "cost_usd": 3.3974,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/apms-2173/pull/187",
+    "commented": true,
     "note": null,
     "at": "2026-10-10T22:29:51Z"
    },
@@ -411,15 +426,15 @@
    },
    {
     "repo": "dcp-gate-site",
-    "log": "dcp-gate-site.20261010T140337Z.log",
+    "log": "dcp-gate-site.20261010T231531Z.log",
     "result": "success",
-    "turns": 15,
-    "cost_usd": 0.3836,
+    "turns": 14,
+    "cost_usd": 0.2968,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T14:03:37Z"
+    "at": "2026-10-10T23:15:31Z"
    },
    {
     "repo": "dog",
@@ -471,15 +486,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261010T140647Z.log",
-    "result": "success",
-    "turns": 35,
-    "cost_usd": 0.966,
-    "rc": 0,
+    "log": "gardien.20261010T231734Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T14:06:47Z"
+    "at": "2026-10-10T23:17:34Z"
    },
    {
     "repo": "groc-mangr",
@@ -507,15 +522,15 @@
    },
    {
     "repo": "nine-speakers",
-    "log": "nine-speakers.20261010T134900Z.log",
+    "log": "nine-speakers.20261010T230344Z.log",
     "result": "success",
-    "turns": 46,
-    "cost_usd": 1.219,
+    "turns": 63,
+    "cost_usd": 1.675,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/nine-speakers/pull/95",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-10T13:49:00Z"
+    "at": "2026-10-10T23:03:44Z"
    },
    {
     "repo": "realisateur",
@@ -648,10 +663,10 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
