@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T05:40:01Z",
+ "generated_at": "2026-10-10T06:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T06:40:01Z",
+ "valid_until": "2026-10-10T07:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "focused_gauss",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T05:34:09Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -54,14 +42,14 @@
    "ports_published": false
   },
   {
-   "name": "modest_jemison",
+   "name": "naughty_volhard",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-10T05:27:17Z",
+   "started_at": "2026-10-10T05:48:46Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -213,8 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "focused_gauss",
-  "modest_jemison",
+  "naughty_volhard",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -266,7 +253,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -367,7 +354,7 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261010T052715Z.log",
+    "log": "crt.20261010T054843Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -375,7 +362,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T05:27:15Z"
+    "at": "2026-10-10T05:48:43Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -403,15 +390,15 @@
    },
    {
     "repo": "ecosim",
-    "log": "ecosim.20261010T011144Z.log",
+    "log": "ecosim.20261010T054514Z.log",
     "result": "success",
-    "turns": 8,
-    "cost_usd": 0.2068,
+    "turns": 9,
+    "cost_usd": 0.2501,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T01:11:44Z"
+    "at": "2026-10-10T05:45:14Z"
    },
    {
     "repo": "etalon",
@@ -487,27 +474,27 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261010T005149Z.log",
+    "log": "realisateur.20261010T054147Z.log",
     "result": "success",
-    "turns": 45,
-    "cost_usd": 1.0228,
+    "turns": 35,
+    "cost_usd": 0.8568,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1697",
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1704",
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T00:51:49Z"
+    "at": "2026-10-10T05:41:47Z"
    },
    {
     "repo": "scheduler",
-    "log": "scheduler.20261010T011636Z.log",
+    "log": "scheduler.20261010T054748Z.log",
     "result": "success",
-    "turns": 5,
-    "cost_usd": 0.099,
+    "turns": 6,
+    "cost_usd": 0.1283,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T01:16:36Z"
+    "at": "2026-10-10T05:47:48Z"
    },
    {
     "repo": "secretaire",
@@ -536,10 +523,10 @@
    {
     "repo": "sequestria",
     "log": "sequestria.20261010T053405Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 22,
+    "cost_usd": 0.3904,
+    "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
@@ -571,15 +558,15 @@
    },
    {
     "repo": "vim-arcade",
-    "log": "vim-arcade.20261010T011407Z.log",
+    "log": "vim-arcade.20261010T054633Z.log",
     "result": "success",
-    "turns": 12,
-    "cost_usd": 0.331,
+    "turns": 8,
+    "cost_usd": 0.1777,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T01:14:07Z"
+    "at": "2026-10-10T05:46:33Z"
    },
    {
     "repo": "wtul",
