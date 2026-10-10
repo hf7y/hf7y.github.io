@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-10T17:40:02Z",
+ "generated_at": "2026-10-10T18:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T18:40:02Z",
+ "valid_until": "2026-10-10T19:00:02Z",
  "containers": [
+  {
+   "name": "condescending_golick",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T17:57:59Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -40,18 +52,6 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
-  },
-  {
-   "name": "hopeful_euclid",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T17:17:50Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
+  "condescending_golick",
   "condescending_joliot",
-  "hopeful_euclid",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -253,7 +253,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -439,12 +439,12 @@
    {
     "repo": "groc-mangr",
     "log": "groc-mangr.20261010T171746Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 81,
+    "cost_usd": 2.2225,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/448",
+    "commented": true,
     "note": null,
     "at": "2026-10-10T17:17:46Z"
    },
@@ -570,15 +570,15 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261010T103904Z.log",
+    "log": "wtul.20261010T175757Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
-    "rc": 1,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T10:39:04Z"
+    "at": "2026-10-10T17:57:57Z"
    }
   ],
   "dispatch_source": {
@@ -604,7 +604,6 @@
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
-  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
