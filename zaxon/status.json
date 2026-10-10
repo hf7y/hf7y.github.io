@@ -2,11 +2,11 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-08-25T22:16:28Z",
-  "valid_until": "2026-08-25T23:46:28Z",
+  "generated": "2026-10-10T21:42:23Z",
+  "valid_until": "2026-10-10T23:12:23Z",
   "cadence_minutes": 60,
-  "verdict": "UNANSWERED",
-  "why": "18 question(s) sent in 24h, none answered; 18.0h of the single slot went to tickets that expired",
+  "verdict": "OK",
+  "why": "1 of 5 question(s) answered in 24h",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
@@ -16,59 +16,72 @@
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 2 hours"
+      "status": "Up 2 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
       "state": "running",
-      "status": "Up 2 hours (healthy)"
-    },
-    {
-      "name": "zaxon-whisper",
-      "state": "running",
-      "status": "Up 2 hours (healthy)"
+      "status": "Up 3 days (healthy)"
     },
     {
       "name": "zaxon-gateway",
       "state": "running",
-      "status": "Up 2 hours"
+      "status": "Up 3 days"
     }
   ],
+  "hazards": [],
   "ledger": {
     "readable": true,
     "path": "/srv/zaxon/data/zaxon_relay/tickets.db",
     "ttl_hours": 1.0,
     "window_hours": 24,
     "totals": {
-      "failed": 2,
-      "answered": 15,
-      "stale": 86
+      "failed": 14,
+      "answered": 10,
+      "stale": 283
     },
     "window": {
-      "stale": 18
+      "answered": 1,
+      "stale": 4
     },
-    "window_sent": 18,
-    "stale_slot_hours": 18.0,
+    "window_sent": 5,
+    "stale_slot_hours": 4.0,
     "queued": 0,
-    "slot": null,
-    "last_answered_at": "2026-08-23T02:07:23Z",
+    "slots": [],
+    "last_answered_at": "2026-10-10T05:20:16Z",
+    "inbox": {
+      "count": 37,
+      "window_count": 1,
+      "oldest_age_hours": 982.7,
+      "unfiled": {
+        "count": 0,
+        "oldest_age_hours": null
+      }
+    },
     "senders": [
       {
-        "from": "ausculte-cadence",
-        "sent": 16,
-        "answered": 0,
-        "stale": 16,
+        "from": "monkey-watch-win",
+        "sent": 2,
+        "answered": 1,
+        "stale": 1,
         "failed": 0
       },
       {
-        "from": "test",
+        "from": "groc-mangr",
         "sent": 1,
         "answered": 0,
         "stale": 1,
         "failed": 0
       },
       {
-        "from": "apms-nightly-test",
+        "from": "crt",
+        "sent": 1,
+        "answered": 0,
+        "stale": 1,
+        "failed": 0
+      },
+      {
+        "from": "baudin",
         "sent": 1,
         "answered": 0,
         "stale": 1,
@@ -77,100 +90,100 @@
     ],
     "recent": [
       {
-        "id": "6063168c",
-        "from": "ausculte-cadence",
+        "id": "062842b0",
+        "from": "monkey-watch-win",
         "status": "stale",
-        "created_at": "2026-08-25T20:37:54Z",
+        "created_at": "2026-10-10T16:51:51Z",
         "answered_at": null,
-        "question": "ausculte: fleet DOWN twice. 3 of 14 account(s) stopped without saying why: crt: no-verdict: ran with no verdict writte"
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
       },
       {
-        "id": "7f845854",
-        "from": "ausculte-cadence",
+        "id": "0859e1ba",
+        "from": "baudin",
         "status": "stale",
-        "created_at": "2026-08-25T20:37:53Z",
+        "created_at": "2026-10-10T16:45:56Z",
         "answered_at": null,
-        "question": "ausculte: rot DOWN twice.   scheduler        #43    answered 2026-08-24     1d  mandark->monkey teardown, phase 1: f"
+        "question": "calibrate is merged+built. Swapping the Zaxon watcher on dexter was refused. Run it? yes/no"
       },
       {
-        "id": "a8aefe09",
-        "from": "ausculte-cadence",
+        "id": "1e3aae74",
+        "from": "crt",
         "status": "stale",
-        "created_at": "2026-08-25T20:37:50Z",
+        "created_at": "2026-10-10T16:43:25Z",
         "answered_at": null,
-        "question": "ausculte: propagation DOWN twice. the channel is BLOCKED (1 run(s) running); nothing has propagated since 2026-08-24T03:30:4"
+        "question": "crt#519: deploy main to potato now? potato is 44 commits behind; no-stale tube rides with them. yes/no"
       },
       {
-        "id": "bfd06f56",
-        "from": "apms-nightly-test",
+        "id": "82d76948",
+        "from": "groc-mangr",
         "status": "stale",
-        "created_at": "2026-08-25T19:23:33Z",
+        "created_at": "2026-10-10T16:42:41Z",
         "answered_at": null,
-        "question": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        "question": "Loop cannot buy: no payment path without an errand. Pick? groc-mangr#408"
       },
       {
-        "id": "b3965be5",
-        "from": "test",
-        "status": "stale",
-        "created_at": "2026-08-25T19:23:23Z",
-        "answered_at": null,
-        "question": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        "id": "ff2e943e",
+        "from": "monkey-watch-win",
+        "status": "answered",
+        "created_at": "2026-10-10T04:51:50Z",
+        "answered_at": "2026-10-10T05:20:16Z",
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
       },
       {
-        "id": "9f513344",
-        "from": "ausculte-cadence",
-        "status": "stale",
-        "created_at": "2026-08-25T16:37:59Z",
+        "id": "3bc1ad93",
+        "from": "monkey-watch-win",
+        "status": "failed",
+        "created_at": "2026-10-09T16:51:51Z",
         "answered_at": null,
-        "question": "ausculte: fleet DOWN twice. 3 of 14 account(s) stopped without saying why: crt: no-verdict: ran with no verdict writte"
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
       },
       {
-        "id": "34d5602d",
-        "from": "ausculte-cadence",
+        "id": "1900698d",
+        "from": "monkey-watch-win",
         "status": "stale",
-        "created_at": "2026-08-25T16:37:57Z",
+        "created_at": "2026-10-09T04:51:51Z",
         "answered_at": null,
-        "question": "ausculte: rot DOWN twice.   scheduler        #43    answered 2026-08-24     1d  mandark->monkey teardown, phase 1: f"
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
       },
       {
-        "id": "0f50e7bc",
-        "from": "ausculte-cadence",
+        "id": "97130d32",
+        "from": "apms",
         "status": "stale",
-        "created_at": "2026-08-25T16:37:54Z",
+        "created_at": "2026-10-08T23:27:16Z",
         "answered_at": null,
-        "question": "ausculte: propagation DOWN twice. the channel is BLOCKED (1 run(s) running); nothing has propagated since 2026-08-24T03:30:4"
+        "question": "thinking had stopped = thing had + king stopped"
       },
       {
-        "id": "d6e1acc3",
-        "from": "ausculte-cadence",
+        "id": "bdf8e2c6",
+        "from": "cinema-sanctuary",
         "status": "stale",
-        "created_at": "2026-08-25T12:37:57Z",
+        "created_at": "2026-10-08T22:34:29Z",
         "answered_at": null,
-        "question": "ausculte: fleet DOWN twice. 2 of 14 account(s) stopped without saying why: crt: no-verdict: ran with no verdict writte"
+        "question": "Card in Pi, ethernet + HDMI, power on at home. First boot ~8 min. Is the loop on screen?"
       },
       {
-        "id": "a4a2692e",
-        "from": "ausculte-cadence",
+        "id": "b59b704c",
+        "from": "apms",
         "status": "stale",
-        "created_at": "2026-08-25T12:37:55Z",
+        "created_at": "2026-10-08T22:24:04Z",
         "answered_at": null,
-        "question": "ausculte: rot DOWN twice.   scheduler        #43    answered 2026-08-24     1d  mandark->monkey teardown, phase 1: f"
+        "question": "he liked looking at anne = heat look at + lie king an"
       },
       {
-        "id": "adfde76b",
-        "from": "ausculte-cadence",
+        "id": "5dccf0cc",
+        "from": "apms",
         "status": "stale",
-        "created_at": "2026-08-25T12:37:52Z",
+        "created_at": "2026-10-08T22:24:03Z",
         "answered_at": null,
-        "question": "ausculte: propagation DOWN twice. the channel is BLOCKED (1 run(s) running); nothing has propagated since 2026-08-24T03:30:4"
+        "question": "how long you may stay outside = how you stay side + long may out"
       },
       {
-        "id": "88b7f578",
-        "from": "ausculte-cadence",
+        "id": "531730cb",
+        "from": "apms",
         "status": "stale",
-        "created_at": "2026-08-25T08:37:55Z",
+        "created_at": "2026-10-08T22:23:53Z",
         "answered_at": null,
-        "question": "ausculte: fleet DOWN twice. 2 of 14 account(s) stopped without saying why: crt: no-verdict: ran with no verdict writte"
+        "question": "look old man you go up = look man go + old you up"
       }
     ]
   }
