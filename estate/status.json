@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-10T04:00:01Z",
+ "generated_at": "2026-10-10T04:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T05:00:01Z",
+ "valid_until": "2026-10-10T05:20:02Z",
  "containers": [
+  {
+   "name": "bold_johnson",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T04:15:00Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -63,18 +75,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "stoic_williamson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T03:59:36Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -200,9 +200,9 @@
   }
  ],
  "unmanaged": [
+  "bold_johnson",
   "condescending_joliot",
   "serene_elgamal",
-  "stoic_williamson",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -253,7 +253,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.4
   },
   "passes": [
    {
@@ -282,27 +282,27 @@
    },
    {
     "repo": "american-cycle",
-    "log": "american-cycle.20261009T235507Z.log",
+    "log": "american-cycle.20261010T040258Z.log",
     "result": "success",
-    "turns": 28,
-    "cost_usd": 0.8667,
+    "turns": 43,
+    "cost_usd": 1.1931,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-09T23:55:07Z"
+    "at": "2026-10-10T04:02:58Z"
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261010T000733Z.log",
-    "result": "success",
-    "turns": 74,
-    "cost_usd": 1.5858,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/apms-2173/pull/182",
-    "commented": true,
+    "log": "apms-2173.20261010T041457Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T00:07:33Z"
+    "at": "2026-10-10T04:14:57Z"
    },
    {
     "repo": "baudin",
@@ -547,12 +547,12 @@
    {
     "repo": "vibe-kiosk",
     "log": "vibe-kiosk.20261010T035933Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 9,
+    "cost_usd": 0.1516,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-10T03:59:33Z"
    },
@@ -601,8 +601,9 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "sequestria: last pass landed nothing -- no PR and no comment on its issue",
-  "vibe-kiosk: last pass landed nothing -- no PR and no comment on its issue"
+  "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
