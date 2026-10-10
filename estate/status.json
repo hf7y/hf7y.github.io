@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T15:00:02Z",
+ "generated_at": "2026-10-10T15:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T16:00:02Z",
+ "valid_until": "2026-10-10T16:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -40,6 +40,18 @@
    "started_at": "2026-10-08T22:13:55Z",
    "finished_at": "2026-10-08T22:35:02Z",
    "ports_published": false
+  },
+  {
+   "name": "modest_volhard",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T15:19:10Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -189,6 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "modest_volhard",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -225,77 +238,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261010T120703Z.log",
-   "started_at": "2026-10-10T12:07:03Z",
-   "finished_at": "2026-10-10T14:41:32Z",
+   "log": "nightly.20261010T150702Z.log",
+   "started_at": "2026-10-10T15:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "bibliothecaire": {
-     "queue": 39,
-     "at": "2026-10-10T12:07:37Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 20,
-     "at": "2026-10-10T12:30:08Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 4,
-     "at": "2026-10-10T12:55:53Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-10T12:57:51Z",
-     "outcome": "finished"
-    },
-    "abletim": {
-     "queue": 22,
-     "at": "2026-10-10T12:58:32Z",
-     "outcome": "finished"
-    },
-    "cinema-sanctuary": {
-     "queue": 25,
-     "at": "2026-10-10T13:20:13Z",
-     "outcome": "finished"
-    },
-    "vibe-kiosk": {
-     "queue": 2,
-     "at": "2026-10-10T13:29:02Z",
-     "outcome": "finished"
-    },
-    "american-cycle": {
-     "queue": 12,
-     "at": "2026-10-10T13:31:19Z",
-     "outcome": "finished"
-    },
-    "apms-2173": {
-     "queue": 15,
-     "at": "2026-10-10T13:35:37Z",
-     "outcome": "finished"
-    },
-    "nine-speakers": {
+    "front-door": {
      "queue": 11,
-     "at": "2026-10-10T13:49:00Z",
+     "at": "2026-10-10T15:07:34Z",
      "outcome": "finished"
     },
-    "dcp-gate-site": {
-     "queue": 2,
-     "at": "2026-10-10T14:03:37Z",
-     "outcome": "finished"
-    },
-    "gardien": {
-     "queue": 9,
-     "at": "2026-10-10T14:06:47Z",
-     "outcome": "finished"
-    },
-    "baudin": {
-     "queue": 22,
-     "at": "2026-10-10T14:25:33Z",
-     "outcome": "finished"
+    "sequestria": {
+     "queue": 4,
+     "at": "2026-10-10T15:19:07Z",
+     "outcome": null
     }
    },
    "skipped": [
@@ -307,7 +265,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -468,15 +426,15 @@
    },
    {
     "repo": "front-door",
-    "log": "front-door.20261010T091319Z.log",
+    "log": "front-door.20261010T150734Z.log",
     "result": "success",
-    "turns": 34,
-    "cost_usd": 1.1232,
+    "turns": 37,
+    "cost_usd": 1.0839,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T09:13:19Z"
+    "at": "2026-10-10T15:07:34Z"
    },
    {
     "repo": "gardien",
@@ -576,15 +534,15 @@
    },
    {
     "repo": "sequestria",
-    "log": "sequestria.20261010T092012Z.log",
-    "result": "success",
-    "turns": 40,
-    "cost_usd": 1.0384,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/sequestria/pull/53",
-    "commented": true,
+    "log": "sequestria.20261010T151907Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T09:20:12Z"
+    "at": "2026-10-10T15:19:07Z"
    },
    {
     "repo": "space-canon",
@@ -654,8 +612,11 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "front-door: last pass landed nothing -- no PR and no comment on its issue",
+  "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
