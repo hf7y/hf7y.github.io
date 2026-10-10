@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T05:20:02Z",
+ "generated_at": "2026-10-10T05:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T06:20:02Z",
+ "valid_until": "2026-10-10T06:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "focused_gauss",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T05:34:09Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -42,14 +54,14 @@
    "ports_published": false
   },
   {
-   "name": "recursing_mclean",
+   "name": "modest_jemison",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-10T05:15:13Z",
+   "started_at": "2026-10-10T05:27:17Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +213,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "recursing_mclean",
+  "focused_gauss",
+  "modest_jemison",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -238,32 +251,20 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261010T050702Z.log",
-   "started_at": "2026-10-10T05:07:02Z",
-   "finished_at": null,
+   "log": "nightly.20261010T052713Z.log",
+   "started_at": "2026-10-10T05:27:13Z",
+   "finished_at": "2026-10-10T05:31:16Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "dcp-gate-site": {
-     "queue": 3,
-     "at": "2026-10-10T05:07:45Z",
+    "hf7y-estate/baudin": {
+     "queue": 1,
+     "at": "2026-10-10T05:27:23Z",
      "outcome": "finished"
-    },
-    "gardien": {
-     "queue": 9,
-     "at": "2026-10-10T05:15:11Z",
-     "outcome": null
     }
    },
-   "skipped": [
-    "inv-redirects",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "space-canon",
-    "dog"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
    "age_h": 0.2
   },
@@ -318,15 +319,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261010T043017Z.log",
+    "log": "baudin.20261010T052723Z.log",
     "result": "success",
-    "turns": 73,
-    "cost_usd": 2.2758,
+    "turns": 46,
+    "cost_usd": 0.9311,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/161",
-    "commented": false,
+    "pr": "https://github.com/hf7y-estate/baudin/pull/163",
+    "commented": true,
     "note": null,
-    "at": "2026-10-10T04:30:17Z"
+    "at": "2026-10-10T05:27:23Z"
    },
    {
     "repo": "bibliothecaire",
@@ -366,15 +367,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261010T011719Z.log",
-    "result": "success",
-    "turns": 53,
-    "cost_usd": 1.7868,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/504",
+    "log": "crt.20261010T052715Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T01:17:19Z"
+    "at": "2026-10-10T05:27:15Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -426,23 +427,23 @@
    },
    {
     "repo": "front-door",
-    "log": "front-door.20261010T003844Z.log",
+    "log": "front-door.20261010T052725Z.log",
     "result": "success",
-    "turns": 56,
-    "cost_usd": 1.5678,
+    "turns": 47,
+    "cost_usd": 1.1691,
     "rc": 0,
-    "pr": null,
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/front-door/pull/31",
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T00:38:44Z"
+    "at": "2026-10-10T05:27:25Z"
    },
    {
     "repo": "gardien",
     "log": "gardien.20261010T051511Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 27,
+    "cost_usd": 0.7139,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -534,15 +535,15 @@
    },
    {
     "repo": "sequestria",
-    "log": "sequestria.20261010T004915Z.log",
-    "result": "success",
-    "turns": 27,
-    "cost_usd": 0.7063,
-    "rc": 0,
+    "log": "sequestria.20261010T053405Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-10T00:49:15Z"
+    "at": "2026-10-10T05:34:05Z"
    },
    {
     "repo": "space-canon",
@@ -612,10 +613,9 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "sequestria: last pass landed nothing -- no PR and no comment on its issue"
+  "crt: last pass landed nothing -- no PR and no comment on its issue",
+  "gardien: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
