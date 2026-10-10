@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T12:40:02Z",
+ "generated_at": "2026-10-10T13:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T13:40:02Z",
+ "valid_until": "2026-10-10T14:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -63,18 +63,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "sweet_tesla",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T12:30:14Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -160,6 +148,18 @@
    "started_at": "2026-10-09T14:15:04Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zealous_goldstine",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T12:58:35Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -202,8 +202,8 @@
  "unmanaged": [
   "condescending_joliot",
   "serene_elgamal",
-  "sweet_tesla",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "zealous_goldstine"
  ],
  "nightly": {
   "armed": true,
@@ -253,6 +253,21 @@
     "secretaire": {
      "queue": 20,
      "at": "2026-10-10T12:30:08Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 4,
+     "at": "2026-10-10T12:55:53Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-10T12:57:51Z",
+     "outcome": "finished"
+    },
+    "abletim": {
+     "queue": 22,
+     "at": "2026-10-10T12:58:32Z",
      "outcome": null
     }
    },
@@ -265,32 +280,32 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
     "repo": "abc",
-    "log": "abc.20261010T074331Z.log",
+    "log": "abc.20261010T125751Z.log",
     "result": "success",
-    "turns": 6,
-    "cost_usd": 0.1335,
+    "turns": 5,
+    "cost_usd": 0.1292,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T07:43:31Z"
+    "at": "2026-10-10T12:57:51Z"
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261010T074414Z.log",
-    "result": "success",
-    "turns": 23,
-    "cost_usd": 0.4673,
-    "rc": 0,
+    "log": "abletim.20261010T125832Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T07:44:14Z"
+    "at": "2026-10-10T12:58:32Z"
    },
    {
     "repo": "american-cycle",
@@ -342,15 +357,15 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261010T073733Z.log",
+    "log": "chezz.20261010T125553Z.log",
     "result": "success",
-    "turns": 12,
-    "cost_usd": 0.3523,
+    "turns": 9,
+    "cost_usd": 0.2527,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-10T07:37:33Z"
+    "at": "2026-10-10T12:55:53Z"
    },
    {
     "repo": "cinema-sanctuary",
@@ -511,11 +526,11 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261010T123008Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 82,
+    "cost_usd": 2.182,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/172",
     "commented": false,
     "note": null,
     "at": "2026-10-10T12:30:08Z"
@@ -614,9 +629,8 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "chezz: last pass landed nothing -- no PR and no comment on its issue",
+  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
