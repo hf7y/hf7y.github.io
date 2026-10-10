@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T15:40:02Z",
+ "generated_at": "2026-10-10T16:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T16:40:02Z",
+ "valid_until": "2026-10-10T17:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,14 +42,14 @@
    "ports_published": false
   },
   {
-   "name": "hungry_banach",
+   "name": "quirky_galileo",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-10T15:23:16Z",
+   "started_at": "2026-10-10T15:51:33Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "hungry_banach",
+  "quirky_galileo",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -258,6 +258,26 @@
     "realisateur": {
      "queue": 199,
      "at": "2026-10-10T15:23:08Z",
+     "outcome": "finished"
+    },
+    "ecosim": {
+     "queue": 2,
+     "at": "2026-10-10T15:44:42Z",
+     "outcome": "finished"
+    },
+    "vim-arcade": {
+     "queue": 1,
+     "at": "2026-10-10T15:47:17Z",
+     "outcome": "finished"
+    },
+    "scheduler": {
+     "queue": 1,
+     "at": "2026-10-10T15:49:39Z",
+     "outcome": "finished"
+    },
+    "crt": {
+     "queue": 11,
+     "at": "2026-10-10T15:51:31Z",
      "outcome": null
     }
    },
@@ -270,7 +290,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -371,15 +391,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261010T093622Z.log",
-    "result": "success",
-    "turns": 40,
-    "cost_usd": 0.9998,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/511",
-    "commented": true,
+    "log": "crt.20261010T155131Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T09:36:22Z"
+    "at": "2026-10-10T15:51:31Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -407,15 +427,15 @@
    },
    {
     "repo": "ecosim",
-    "log": "ecosim.20261010T093234Z.log",
+    "log": "ecosim.20261010T154442Z.log",
     "result": "success",
-    "turns": 10,
-    "cost_usd": 0.2354,
+    "turns": 9,
+    "cost_usd": 0.2141,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T09:32:34Z"
+    "at": "2026-10-10T15:44:42Z"
    },
    {
     "repo": "etalon",
@@ -492,26 +512,26 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261010T152308Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 57,
+    "cost_usd": 1.6308,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1706",
+    "commented": true,
     "note": null,
     "at": "2026-10-10T15:23:08Z"
    },
    {
     "repo": "scheduler",
-    "log": "scheduler.20261010T093532Z.log",
+    "log": "scheduler.20261010T154939Z.log",
     "result": "success",
     "turns": 6,
-    "cost_usd": 0.1207,
+    "cost_usd": 0.1476,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T09:35:32Z"
+    "at": "2026-10-10T15:49:39Z"
    },
    {
     "repo": "secretaire",
@@ -575,15 +595,15 @@
    },
    {
     "repo": "vim-arcade",
-    "log": "vim-arcade.20261010T093416Z.log",
+    "log": "vim-arcade.20261010T154717Z.log",
     "result": "success",
-    "turns": 8,
-    "cost_usd": 0.1825,
+    "turns": 9,
+    "cost_usd": 0.176,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T09:34:16Z"
+    "at": "2026-10-10T15:47:17Z"
    },
    {
     "repo": "wtul",
@@ -620,8 +640,8 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
