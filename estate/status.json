@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T16:00:01Z",
+ "generated_at": "2026-10-10T16:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T17:00:01Z",
+ "valid_until": "2026-10-10T17:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,14 +42,14 @@
    "ports_published": false
   },
   {
-   "name": "quirky_galileo",
+   "name": "hopeful_kapitsa",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-10T15:51:33Z",
+   "started_at": "2026-10-10T16:17:32Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "quirky_galileo",
+  "hopeful_kapitsa",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -278,6 +278,11 @@
     "crt": {
      "queue": 11,
      "at": "2026-10-10T15:51:31Z",
+     "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 62,
+     "at": "2026-10-10T16:17:30Z",
      "outcome": null
     }
    },
@@ -290,7 +295,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -392,11 +397,11 @@
    {
     "repo": "crt",
     "log": "crt.20261010T155131Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 77,
+    "cost_usd": 2.1766,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/512",
     "commented": false,
     "note": null,
     "at": "2026-10-10T15:51:31Z"
@@ -487,15 +492,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261010T094654Z.log",
-    "result": "success",
-    "turns": 109,
-    "cost_usd": 3.59,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/296",
-    "commented": true,
+    "log": "musc-2300.20261010T161730Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T09:46:54Z"
+    "at": "2026-10-10T16:17:30Z"
    },
    {
     "repo": "nine-speakers",
@@ -640,8 +645,8 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
