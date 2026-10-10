@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-10T07:40:01Z",
+ "generated_at": "2026-10-10T08:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T08:40:01Z",
+ "valid_until": "2026-10-10T09:00:02Z",
  "containers": [
-  {
-   "name": "compassionate_shannon",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T07:37:35Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -200,7 +188,6 @@
   }
  ],
  "unmanaged": [
-  "compassionate_shannon",
   "condescending_joliot",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -263,7 +250,22 @@
     "chezz": {
      "queue": 4,
      "at": "2026-10-10T07:37:33Z",
-     "outcome": null
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-10T07:43:31Z",
+     "outcome": "finished"
+    },
+    "abletim": {
+     "queue": 23,
+     "at": "2026-10-10T07:44:14Z",
+     "outcome": "finished"
+    },
+    "cinema-sanctuary": {
+     "queue": 25,
+     "at": "2026-10-10T07:47:23Z",
+     "outcome": "finished"
     }
    },
    "skipped": [
@@ -275,32 +277,32 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
     "repo": "abc",
-    "log": "abc.20261010T035118Z.log",
+    "log": "abc.20261010T074331Z.log",
     "result": "success",
-    "turns": 5,
-    "cost_usd": 0.1351,
+    "turns": 6,
+    "cost_usd": 0.1335,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T03:51:18Z"
+    "at": "2026-10-10T07:43:31Z"
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261010T035204Z.log",
+    "log": "abletim.20261010T074414Z.log",
     "result": "success",
-    "turns": 31,
-    "cost_usd": 0.7138,
+    "turns": 23,
+    "cost_usd": 0.4673,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T03:52:04Z"
+    "at": "2026-10-10T07:44:14Z"
    },
    {
     "repo": "american-cycle",
@@ -353,10 +355,10 @@
    {
     "repo": "chezz",
     "log": "chezz.20261010T073733Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 12,
+    "cost_usd": 0.3523,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -364,15 +366,15 @@
    },
    {
     "repo": "cinema-sanctuary",
-    "log": "cinema-sanctuary.20261010T035320Z.log",
+    "log": "cinema-sanctuary.20261010T074723Z.log",
     "result": "success",
-    "turns": 17,
-    "cost_usd": 0.2273,
+    "turns": 57,
+    "cost_usd": 1.876,
     "rc": 0,
-    "pr": null,
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/59",
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T03:53:20Z"
+    "at": "2026-10-10T07:47:23Z"
    },
    {
     "repo": "crt",
