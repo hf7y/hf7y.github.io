@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T19:40:02Z",
+ "generated_at": "2026-10-10T20:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T20:40:02Z",
+ "valid_until": "2026-10-10T21:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "elegant_austin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T19:21:20Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
+  },
+  {
+   "name": "jovial_cori",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T19:53:20Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "elegant_austin",
+  "jovial_cori",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -253,7 +253,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.9
+   "age_h": 3.2
   },
   "passes": [
    {
@@ -318,15 +318,15 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261010T120737Z.log",
-    "result": "success",
-    "turns": 80,
-    "cost_usd": 2.2791,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/183",
+    "log": "bibliothecaire.20261010T195317Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T12:07:37Z"
+    "at": "2026-10-10T19:53:17Z"
    },
    {
     "repo": "chezz",
@@ -403,11 +403,11 @@
    {
     "repo": "etalon",
     "log": "etalon.20261010T192105Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 75,
+    "cost_usd": 2.2896,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/154",
     "commented": false,
     "note": null,
     "at": "2026-10-10T19:21:05Z"
@@ -602,8 +602,8 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
-  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
