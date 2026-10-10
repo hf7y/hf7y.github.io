@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T00:00:01Z",
+ "generated_at": "2026-10-10T00:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T01:00:01Z",
+ "valid_until": "2026-10-10T01:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "determined_goodall",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-09T23:55:09Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -88,6 +76,18 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "wizardly_pascal",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T00:19:53Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -201,8 +201,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "determined_goodall",
   "serene_elgamal",
+  "wizardly_pascal",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -238,22 +238,34 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261009T230132Z.log",
-   "started_at": "2026-10-09T23:01:32Z",
-   "finished_at": "2026-10-09T23:10:16Z",
+   "log": "nightly.20261010T000702Z.log",
+   "started_at": "2026-10-10T00:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "realisateur": {
-     "queue": 1,
-     "at": "2026-10-09T23:01:40Z",
+    "apms-2173": {
+     "queue": 15,
+     "at": "2026-10-10T00:07:33Z",
      "outcome": "finished"
+    },
+    "nine-speakers": {
+     "queue": 11,
+     "at": "2026-10-10T00:19:51Z",
+     "outcome": null
     }
    },
-   "skipped": [],
+   "skipped": [
+    "inv-redirects",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "space-canon",
+    "dog"
+   ],
    "queue_unreadable": [],
-   "age_h": 1.0
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -283,26 +295,26 @@
    {
     "repo": "american-cycle",
     "log": "american-cycle.20261009T235507Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 28,
+    "cost_usd": 0.8667,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-09T23:55:07Z"
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261009T180240Z.log",
+    "log": "apms-2173.20261010T000733Z.log",
     "result": "success",
-    "turns": 66,
-    "cost_usd": 1.9507,
+    "turns": 74,
+    "cost_usd": 1.5858,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/apms-2173/pull/181",
-    "commented": false,
+    "pr": "https://github.com/hf7y-estate/apms-2173/pull/182",
+    "commented": true,
     "note": null,
-    "at": "2026-10-09T18:02:40Z"
+    "at": "2026-10-10T00:07:33Z"
    },
    {
     "repo": "baudin",
@@ -462,15 +474,15 @@
    },
    {
     "repo": "nine-speakers",
-    "log": "nine-speakers.20261009T181639Z.log",
-    "result": "success",
-    "turns": 49,
-    "cost_usd": 1.5282,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/nine-speakers/pull/93",
-    "commented": true,
+    "log": "nine-speakers.20261010T001951Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-09T18:16:39Z"
+    "at": "2026-10-10T00:19:51Z"
    },
    {
     "repo": "realisateur",
@@ -600,11 +612,12 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue"
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
+  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
