@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T09:20:02Z",
+ "generated_at": "2026-10-10T09:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T10:20:02Z",
+ "valid_until": "2026-10-10T10:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,14 +42,14 @@
    "ports_published": false
   },
   {
-   "name": "happy_williamson",
+   "name": "hopeful_ganguly",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-10T09:13:22Z",
+   "started_at": "2026-10-10T09:36:25Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "happy_williamson",
+  "hopeful_ganguly",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -253,6 +253,36 @@
     "front-door": {
      "queue": 12,
      "at": "2026-10-10T09:13:19Z",
+     "outcome": "finished"
+    },
+    "sequestria": {
+     "queue": 4,
+     "at": "2026-10-10T09:20:12Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 199,
+     "at": "2026-10-10T09:27:58Z",
+     "outcome": "finished"
+    },
+    "ecosim": {
+     "queue": 2,
+     "at": "2026-10-10T09:32:34Z",
+     "outcome": "finished"
+    },
+    "vim-arcade": {
+     "queue": 1,
+     "at": "2026-10-10T09:34:16Z",
+     "outcome": "finished"
+    },
+    "scheduler": {
+     "queue": 1,
+     "at": "2026-10-10T09:35:32Z",
+     "outcome": "finished"
+    },
+    "crt": {
+     "queue": 12,
+     "at": "2026-10-10T09:36:22Z",
      "outcome": null
     }
    },
@@ -265,7 +295,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.6
   },
   "passes": [
    {
@@ -366,15 +396,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261010T054843Z.log",
-    "result": "success",
-    "turns": 80,
-    "cost_usd": 2.6292,
-    "rc": 0,
+    "log": "crt.20261010T093622Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T05:48:43Z"
+    "at": "2026-10-10T09:36:22Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -402,15 +432,15 @@
    },
    {
     "repo": "ecosim",
-    "log": "ecosim.20261010T054514Z.log",
+    "log": "ecosim.20261010T093234Z.log",
     "result": "success",
-    "turns": 9,
-    "cost_usd": 0.2501,
+    "turns": 10,
+    "cost_usd": 0.2354,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T05:45:14Z"
+    "at": "2026-10-10T09:32:34Z"
    },
    {
     "repo": "etalon",
@@ -427,10 +457,10 @@
    {
     "repo": "front-door",
     "log": "front-door.20261010T091319Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 34,
+    "cost_usd": 1.1232,
+    "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
@@ -486,27 +516,27 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261010T054147Z.log",
+    "log": "realisateur.20261010T092758Z.log",
     "result": "success",
-    "turns": 35,
-    "cost_usd": 0.8568,
+    "turns": 33,
+    "cost_usd": 0.8609,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1704",
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1705",
     "commented": false,
     "note": null,
-    "at": "2026-10-10T05:41:47Z"
+    "at": "2026-10-10T09:27:58Z"
    },
    {
     "repo": "scheduler",
-    "log": "scheduler.20261010T054748Z.log",
+    "log": "scheduler.20261010T093532Z.log",
     "result": "success",
     "turns": 6,
-    "cost_usd": 0.1283,
+    "cost_usd": 0.1207,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T05:47:48Z"
+    "at": "2026-10-10T09:35:32Z"
    },
    {
     "repo": "secretaire",
@@ -534,15 +564,15 @@
    },
    {
     "repo": "sequestria",
-    "log": "sequestria.20261010T053405Z.log",
+    "log": "sequestria.20261010T092012Z.log",
     "result": "success",
-    "turns": 22,
-    "cost_usd": 0.3904,
+    "turns": 40,
+    "cost_usd": 1.0384,
     "rc": 0,
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/sequestria/pull/53",
     "commented": true,
     "note": null,
-    "at": "2026-10-10T05:34:05Z"
+    "at": "2026-10-10T09:20:12Z"
    },
    {
     "repo": "space-canon",
@@ -570,15 +600,15 @@
    },
    {
     "repo": "vim-arcade",
-    "log": "vim-arcade.20261010T054633Z.log",
+    "log": "vim-arcade.20261010T093416Z.log",
     "result": "success",
     "turns": 8,
-    "cost_usd": 0.1777,
+    "cost_usd": 0.1825,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T05:46:33Z"
+    "at": "2026-10-10T09:34:16Z"
    },
    {
     "repo": "wtul",
