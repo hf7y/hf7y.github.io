@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-10T01:20:02Z",
+ "generated_at": "2026-10-10T01:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T02:20:02Z",
+ "valid_until": "2026-10-10T02:40:01Z",
  "containers": [
-  {
-   "name": "clever_elion",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T01:17:21Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -38,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "elegant_mahavira",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T01:37:04Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "clever_elion",
   "condescending_joliot",
+  "elegant_mahavira",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -253,7 +253,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.8
   },
   "passes": [
    {
@@ -355,11 +355,11 @@
    {
     "repo": "crt",
     "log": "crt.20261010T011719Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 53,
+    "cost_usd": 1.7868,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/504",
     "commented": false,
     "note": null,
     "at": "2026-10-10T01:17:19Z"
@@ -450,15 +450,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261009T210736Z.log",
-    "result": "success",
-    "turns": 60,
-    "cost_usd": 1.348,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/279",
+    "log": "musc-2300.20261010T013701Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T21:07:36Z"
+    "at": "2026-10-10T01:37:01Z"
    },
    {
     "repo": "nine-speakers",
@@ -602,7 +602,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
-  "crt: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
