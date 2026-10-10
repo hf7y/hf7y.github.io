@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T17:00:01Z",
+ "generated_at": "2026-10-10T17:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T18:00:01Z",
+ "valid_until": "2026-10-10T18:20:01Z",
  "containers": [
   {
    "name": "brave_almeida",
@@ -66,14 +66,14 @@
    "ports_published": false
   },
   {
-   "name": "hopeful_kapitsa",
+   "name": "hopeful_euclid",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-10T16:17:32Z",
+   "started_at": "2026-10-10T17:17:50Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -227,7 +227,7 @@
   "brave_almeida",
   "condescending_joliot",
   "eloquent_cannon",
-  "hopeful_kapitsa",
+  "hopeful_euclid",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -279,7 +279,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -464,25 +464,25 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261010T102137Z.log",
-    "result": "success",
-    "turns": 75,
-    "cost_usd": 2.7122,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/447",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-10T10:21:37Z"
-   },
-   {
-    "repo": "musc-2300",
-    "log": "musc-2300.20261010T161730Z.log",
+    "log": "groc-mangr.20261010T171746Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
     "rc": null,
     "pr": null,
     "commented": false,
+    "note": null,
+    "at": "2026-10-10T17:17:46Z"
+   },
+   {
+    "repo": "musc-2300",
+    "log": "musc-2300.20261010T161730Z.log",
+    "result": "success",
+    "turns": 100,
+    "cost_usd": 2.7296,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/297",
+    "commented": true,
     "note": null,
     "at": "2026-10-10T16:17:30Z"
    },
@@ -631,7 +631,7 @@
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
