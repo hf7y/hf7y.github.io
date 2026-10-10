@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T03:20:01Z",
+ "generated_at": "2026-10-10T03:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T04:20:01Z",
+ "valid_until": "2026-10-10T04:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,14 +42,14 @@
    "ports_published": false
   },
   {
-   "name": "keen_hermann",
+   "name": "lucid_jones",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-10T03:05:15Z",
+   "started_at": "2026-10-10T03:28:09Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "keen_hermann",
+  "lucid_jones",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -268,6 +268,11 @@
     "secretaire": {
      "queue": 22,
      "at": "2026-10-10T03:05:00Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 4,
+     "at": "2026-10-10T03:28:06Z",
      "outcome": null
     }
    },
@@ -280,7 +285,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.2
+   "age_h": 1.5
   },
   "passes": [
    {
@@ -357,15 +362,15 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261009T230315Z.log",
-    "result": "success",
-    "turns": 34,
-    "cost_usd": 0.808,
-    "rc": 0,
+    "log": "chezz.20261010T032806Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T23:03:15Z"
+    "at": "2026-10-10T03:28:06Z"
    },
    {
     "repo": "cinema-sanctuary",
@@ -526,12 +531,12 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261010T030500Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 124,
+    "cost_usd": 3.9976,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/168",
+    "commented": true,
     "note": null,
     "at": "2026-10-10T03:05:00Z"
    },
@@ -631,7 +636,6 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
