@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-10T14:00:01Z",
+ "generated_at": "2026-10-10T14:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T15:00:01Z",
+ "valid_until": "2026-10-10T15:20:02Z",
  "containers": [
+  {
+   "name": "bold_cray",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T14:06:49Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -26,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "flamboyant_germain",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T13:49:02Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
+  "bold_cray",
   "condescending_joliot",
-  "flamboyant_germain",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -293,6 +293,16 @@
     "nine-speakers": {
      "queue": 11,
      "at": "2026-10-10T13:49:00Z",
+     "outcome": "finished"
+    },
+    "dcp-gate-site": {
+     "queue": 2,
+     "at": "2026-10-10T14:03:37Z",
+     "outcome": "finished"
+    },
+    "gardien": {
+     "queue": 9,
+     "at": "2026-10-10T14:06:47Z",
      "outcome": null
     }
    },
@@ -305,7 +315,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 2.2
   },
   "passes": [
    {
@@ -418,15 +428,15 @@
    },
    {
     "repo": "dcp-gate-site",
-    "log": "dcp-gate-site.20261010T083940Z.log",
+    "log": "dcp-gate-site.20261010T140337Z.log",
     "result": "success",
-    "turns": 14,
-    "cost_usd": 0.3244,
+    "turns": 15,
+    "cost_usd": 0.3836,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T08:39:40Z"
+    "at": "2026-10-10T14:03:37Z"
    },
    {
     "repo": "dog",
@@ -478,15 +488,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261010T084509Z.log",
-    "result": "success",
-    "turns": 34,
-    "cost_usd": 0.9373,
-    "rc": 0,
+    "log": "gardien.20261010T140647Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T08:45:09Z"
+    "at": "2026-10-10T14:06:47Z"
    },
    {
     "repo": "groc-mangr",
@@ -515,11 +525,11 @@
    {
     "repo": "nine-speakers",
     "log": "nine-speakers.20261010T134900Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 46,
+    "cost_usd": 1.219,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/nine-speakers/pull/95",
     "commented": false,
     "note": null,
     "at": "2026-10-10T13:49:00Z"
@@ -655,7 +665,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
