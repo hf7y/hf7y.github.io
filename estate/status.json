@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-10T16:40:01Z",
+ "generated_at": "2026-10-10T17:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T17:40:01Z",
+ "valid_until": "2026-10-10T18:00:01Z",
  "containers": [
+  {
+   "name": "brave_almeida",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T16:47:45Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -45,25 +57,13 @@
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
-   "state": "running",
-   "health": "healthy",
+   "state": "exited",
+   "health": "unhealthy",
    "restarts": 0,
-   "exit_code": null,
+   "exit_code": 0,
    "started_at": "2026-10-10T16:37:56Z",
-   "finished_at": null,
-   "ports_published": true
-  },
-  {
-   "name": "groc-runner-runner-run-434d41650cd2",
-   "image": "groc-runner:local",
-   "project": "groc-runner",
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T16:37:59Z",
-   "finished_at": null,
-   "ports_published": null
+   "finished_at": "2026-10-10T17:00:01Z",
+   "ports_published": false
   },
   {
    "name": "hopeful_kapitsa",
@@ -224,9 +224,9 @@
   }
  ],
  "unmanaged": [
+  "brave_almeida",
   "condescending_joliot",
   "eloquent_cannon",
-  "groc-runner-runner-run-434d41650cd2",
   "hopeful_kapitsa",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -264,22 +264,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261010T163724Z.log",
-   "started_at": "2026-10-10T16:37:24Z",
+   "log": "nightly.20261010T164727Z.log",
+   "started_at": "2026-10-10T16:47:27Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "secretaire": {
+    "senechal": {
      "queue": 1,
-     "at": "2026-10-10T16:37:38Z",
+     "at": "2026-10-10T16:47:42Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -536,15 +536,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261010T104303Z.log",
-    "result": "success",
-    "turns": 93,
-    "cost_usd": 2.6965,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1231",
+    "log": "senechal.20261010T164742Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T10:43:03Z"
+    "at": "2026-10-10T16:47:42Z"
    },
    {
     "repo": "sequestria",
@@ -633,6 +633,7 @@
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
