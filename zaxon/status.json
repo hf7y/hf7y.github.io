@@ -2,31 +2,31 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-10T21:42:49Z",
-  "valid_until": "2026-10-10T23:12:49Z",
+  "generated": "2026-10-10T22:43:03Z",
+  "valid_until": "2026-10-11T00:13:03Z",
   "cadence_minutes": 60,
   "verdict": "OK",
   "why": "1 of 5 question(s) answered in 24h",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 4
+    "ms": 3
   },
   "containers": [
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 2 hours (healthy)"
+      "status": "Up 3 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
       "state": "running",
-      "status": "Up 3 days (healthy)"
+      "status": "Up 4 days (healthy)"
     },
     {
       "name": "zaxon-gateway",
       "state": "running",
-      "status": "Up 3 days"
+      "status": "Up 4 days"
     }
   ],
   "hazards": [],
@@ -52,7 +52,7 @@
     "inbox": {
       "count": 37,
       "window_count": 1,
-      "oldest_age_hours": 982.7,
+      "oldest_age_hours": 983.7,
       "unfiled": {
         "count": 0,
         "oldest_age_hours": null
