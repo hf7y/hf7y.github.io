@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T01:40:01Z",
+ "generated_at": "2026-10-10T02:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T02:40:01Z",
+ "valid_until": "2026-10-10T03:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "elegant_mahavira",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T01:37:04Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +189,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "elegant_mahavira",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -253,7 +240,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.8
+   "age_h": 1.1
   },
   "passes": [
    {
@@ -438,24 +425,24 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261009T212635Z.log",
+    "log": "groc-mangr.20261010T015105Z.log",
     "result": "success",
-    "turns": 30,
-    "cost_usd": 0.7899,
+    "turns": 59,
+    "cost_usd": 1.387,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/444",
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/445",
     "commented": false,
     "note": null,
-    "at": "2026-10-09T21:26:35Z"
+    "at": "2026-10-10T01:51:05Z"
    },
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261010T013701Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 78,
+    "cost_usd": 2.1543,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/290",
     "commented": false,
     "note": null,
     "at": "2026-10-10T01:37:01Z"
@@ -602,7 +589,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
