@@ -2,15 +2,15 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-10T21:42:38Z",
-  "valid_until": "2026-10-10T23:12:38Z",
+  "generated": "2026-10-10T21:42:49Z",
+  "valid_until": "2026-10-10T23:12:49Z",
   "cadence_minutes": 60,
   "verdict": "OK",
   "why": "1 of 5 question(s) answered in 24h",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 3
+    "ms": 4
   },
   "containers": [
     {
