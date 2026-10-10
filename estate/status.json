@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T22:20:01Z",
+ "generated_at": "2026-10-10T22:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T23:20:01Z",
+ "valid_until": "2026-10-10T23:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "dreamy_tharp",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T22:29:53Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -40,18 +52,6 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
-  },
-  {
-   "name": "naughty_rosalind",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T22:19:22Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -213,7 +213,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "naughty_rosalind",
+  "dreamy_tharp",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -276,6 +276,16 @@
     "vibe-kiosk": {
      "queue": 2,
      "at": "2026-10-10T22:19:19Z",
+     "outcome": "finished"
+    },
+    "american-cycle": {
+     "queue": 11,
+     "at": "2026-10-10T22:21:39Z",
+     "outcome": "finished"
+    },
+    "apms-2173": {
+     "queue": 16,
+     "at": "2026-10-10T22:29:51Z",
      "outcome": null
     }
    },
@@ -288,7 +298,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -317,27 +327,27 @@
    },
    {
     "repo": "american-cycle",
-    "log": "american-cycle.20261010T133119Z.log",
+    "log": "american-cycle.20261010T222139Z.log",
     "result": "success",
-    "turns": 42,
-    "cost_usd": 1.1226,
+    "turns": 39,
+    "cost_usd": 1.1159,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T13:31:19Z"
+    "at": "2026-10-10T22:21:39Z"
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261010T133537Z.log",
-    "result": "success",
-    "turns": 67,
-    "cost_usd": 1.7748,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/apms-2173/pull/185",
+    "log": "apms-2173.20261010T222951Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T13:35:37Z"
+    "at": "2026-10-10T22:29:51Z"
    },
    {
     "repo": "baudin",
@@ -582,12 +592,12 @@
    {
     "repo": "vibe-kiosk",
     "log": "vibe-kiosk.20261010T221919Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 8,
+    "cost_usd": 0.1606,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-10T22:19:19Z"
    },
@@ -638,11 +648,11 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "vibe-kiosk: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
