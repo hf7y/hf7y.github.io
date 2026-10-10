@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T08:00:02Z",
+ "generated_at": "2026-10-10T08:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T09:00:02Z",
+ "valid_until": "2026-10-10T09:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -15,6 +15,18 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
+   "ports_published": null
+  },
+  {
+   "name": "cool_einstein",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T08:18:31Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -189,6 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "cool_einstein",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -266,6 +279,21 @@
      "queue": 25,
      "at": "2026-10-10T07:47:23Z",
      "outcome": "finished"
+    },
+    "vibe-kiosk": {
+     "queue": 2,
+     "at": "2026-10-10T08:00:07Z",
+     "outcome": "finished"
+    },
+    "american-cycle": {
+     "queue": 13,
+     "at": "2026-10-10T08:02:13Z",
+     "outcome": "finished"
+    },
+    "apms-2173": {
+     "queue": 15,
+     "at": "2026-10-10T08:18:28Z",
+     "outcome": null
     }
    },
    "skipped": [
@@ -277,7 +305,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -306,27 +334,27 @@
    },
    {
     "repo": "american-cycle",
-    "log": "american-cycle.20261010T040258Z.log",
+    "log": "american-cycle.20261010T080213Z.log",
     "result": "success",
-    "turns": 43,
-    "cost_usd": 1.1931,
+    "turns": 57,
+    "cost_usd": 1.8089,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-10T04:02:58Z"
+    "at": "2026-10-10T08:02:13Z"
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261010T041457Z.log",
-    "result": "success",
-    "turns": 80,
-    "cost_usd": 2.1339,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/apms-2173/pull/183",
-    "commented": true,
+    "log": "apms-2173.20261010T081828Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T04:14:57Z"
+    "at": "2026-10-10T08:18:28Z"
    },
    {
     "repo": "baudin",
@@ -570,15 +598,15 @@
    },
    {
     "repo": "vibe-kiosk",
-    "log": "vibe-kiosk.20261010T035933Z.log",
+    "log": "vibe-kiosk.20261010T080007Z.log",
     "result": "success",
-    "turns": 9,
-    "cost_usd": 0.1516,
+    "turns": 8,
+    "cost_usd": 0.1509,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T03:59:33Z"
+    "at": "2026-10-10T08:00:07Z"
    },
    {
     "repo": "vim-arcade",
@@ -626,7 +654,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue"
