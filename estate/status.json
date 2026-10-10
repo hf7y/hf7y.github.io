@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T12:00:03Z",
+ "generated_at": "2026-10-10T12:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T13:00:03Z",
+ "valid_until": "2026-10-10T13:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -40,6 +40,18 @@
    "started_at": "2026-10-08T22:13:55Z",
    "finished_at": "2026-10-08T22:35:02Z",
    "ports_published": false
+  },
+  {
+   "name": "quirky_kilby",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T12:07:40Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -189,6 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "quirky_kilby",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -225,77 +238,17 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261010T090702Z.log",
-   "started_at": "2026-10-10T09:07:02Z",
-   "finished_at": "2026-10-10T11:09:28Z",
+   "log": "nightly.20261010T120703Z.log",
+   "started_at": "2026-10-10T12:07:03Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "baudin": {
-     "queue": 22,
-     "at": "2026-10-10T09:07:39Z",
-     "outcome": "finished"
-    },
-    "front-door": {
-     "queue": 12,
-     "at": "2026-10-10T09:13:19Z",
-     "outcome": "finished"
-    },
-    "sequestria": {
-     "queue": 4,
-     "at": "2026-10-10T09:20:12Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 199,
-     "at": "2026-10-10T09:27:58Z",
-     "outcome": "finished"
-    },
-    "ecosim": {
-     "queue": 2,
-     "at": "2026-10-10T09:32:34Z",
-     "outcome": "finished"
-    },
-    "vim-arcade": {
-     "queue": 1,
-     "at": "2026-10-10T09:34:16Z",
-     "outcome": "finished"
-    },
-    "scheduler": {
-     "queue": 1,
-     "at": "2026-10-10T09:35:32Z",
-     "outcome": "finished"
-    },
-    "crt": {
-     "queue": 12,
-     "at": "2026-10-10T09:36:22Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 62,
-     "at": "2026-10-10T09:46:54Z",
-     "outcome": "finished"
-    },
-    "groc-mangr": {
-     "queue": 29,
-     "at": "2026-10-10T10:21:37Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 16,
-     "at": "2026-10-10T10:39:04Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 41,
-     "at": "2026-10-10T10:43:03Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 52,
-     "at": "2026-10-10T10:58:24Z",
-     "outcome": "finished"
+    "bibliothecaire": {
+     "queue": 39,
+     "at": "2026-10-10T12:07:37Z",
+     "outcome": null
     }
    },
    "skipped": [
@@ -307,7 +260,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -372,15 +325,15 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261010T072034Z.log",
-    "result": "success",
-    "turns": 70,
-    "cost_usd": 1.7888,
-    "rc": 0,
+    "log": "bibliothecaire.20261010T120737Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T07:20:34Z"
+    "at": "2026-10-10T12:07:37Z"
    },
    {
     "repo": "chezz",
@@ -654,7 +607,9 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
