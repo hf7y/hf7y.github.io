@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T19:20:01Z",
+ "generated_at": "2026-10-10T19:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T20:20:01Z",
+ "valid_until": "2026-10-10T20:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,14 +30,14 @@
    "ports_published": null
   },
   {
-   "name": "festive_ptolemy",
+   "name": "elegant_austin",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-10T18:01:49Z",
+   "started_at": "2026-10-10T19:21:20Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -151,13 +151,13 @@
   },
   {
    "name": "zaxon-watcher",
-   "image": "zaxon:crt-13e77fff9ba0",
+   "image": "zaxon:crt-2b754fc64209",
    "project": "zaxon",
    "state": "running",
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-09T14:15:04Z",
+   "started_at": "2026-10-10T19:39:39Z",
    "finished_at": null,
    "ports_published": null
   }
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "festive_ptolemy",
+  "elegant_austin",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -253,7 +253,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.5
+   "age_h": 2.9
   },
   "passes": [
    {
@@ -402,15 +402,15 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261010T105824Z.log",
-    "result": "success",
-    "turns": 58,
-    "cost_usd": 1.6051,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/etalon/pull/153",
+    "log": "etalon.20261010T192105Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T10:58:24Z"
+    "at": "2026-10-10T19:21:05Z"
    },
    {
     "repo": "front-door",
@@ -511,10 +511,10 @@
    {
     "repo": "senechal",
     "log": "senechal.20261010T180147Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 98,
+    "cost_usd": 3.0583,
+    "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
@@ -603,6 +603,7 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
+  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
