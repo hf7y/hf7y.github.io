@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-10T17:20:01Z",
+ "generated_at": "2026-10-10T17:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T18:20:01Z",
+ "valid_until": "2026-10-10T18:40:02Z",
  "containers": [
-  {
-   "name": "brave_almeida",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T16:47:45Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -38,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "eloquent_cannon",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T16:37:44Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -224,9 +200,7 @@
   }
  ],
  "unmanaged": [
-  "brave_almeida",
   "condescending_joliot",
-  "eloquent_cannon",
   "hopeful_euclid",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -266,7 +240,7 @@
   "last_run": {
    "log": "nightly.20261010T164727Z.log",
    "started_at": "2026-10-10T16:47:27Z",
-   "finished_at": null,
+   "finished_at": "2026-10-10T17:28:14Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -274,12 +248,12 @@
     "senechal": {
      "queue": 1,
      "at": "2026-10-10T16:47:42Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -500,15 +474,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261010T152308Z.log",
+    "log": "realisateur.20261010T172523Z.log",
     "result": "success",
-    "turns": 57,
-    "cost_usd": 1.6308,
+    "turns": 18,
+    "cost_usd": 0.4678,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1706",
-    "commented": true,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T15:23:08Z"
+    "at": "2026-10-10T17:25:23Z"
    },
    {
     "repo": "scheduler",
@@ -524,25 +498,25 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261010T163738Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "log": "secretaire.20261010T172957Z.log",
+    "result": "success",
+    "turns": 28,
+    "cost_usd": 0.5416,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-10T16:37:38Z"
+    "at": "2026-10-10T17:29:57Z"
    },
    {
     "repo": "senechal",
     "log": "senechal.20261010T164742Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 43,
+    "cost_usd": 1.2553,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1236",
+    "commented": true,
     "note": null,
     "at": "2026-10-10T16:47:42Z"
    },
@@ -626,14 +600,12 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
