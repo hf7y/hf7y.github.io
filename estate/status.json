@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-09T23:40:02Z",
+ "generated_at": "2026-10-10T00:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T00:40:02Z",
+ "valid_until": "2026-10-10T01:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,14 +30,14 @@
    "ports_published": null
   },
   {
-   "name": "friendly_davinci",
+   "name": "determined_goodall",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-09T23:32:25Z",
+   "started_at": "2026-10-09T23:55:09Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,7 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "friendly_davinci",
+  "determined_goodall",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -253,7 +253,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 1.0
   },
   "passes": [
    {
@@ -271,6 +271,18 @@
    {
     "repo": "abletim",
     "log": "abletim.20261009T233222Z.log",
+    "result": "success",
+    "turns": 94,
+    "cost_usd": 3.1025,
+    "rc": 0,
+    "pr": null,
+    "commented": true,
+    "note": null,
+    "at": "2026-10-09T23:32:22Z"
+   },
+   {
+    "repo": "american-cycle",
+    "log": "american-cycle.20261009T235507Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -278,19 +290,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-09T23:32:22Z"
-   },
-   {
-    "repo": "american-cycle",
-    "log": "american-cycle.20261009T171655Z.log",
-    "result": "success",
-    "turns": 77,
-    "cost_usd": 2.277,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/american-cycle/pull/295",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-09T17:16:55Z"
+    "at": "2026-10-09T23:55:07Z"
    },
    {
     "repo": "apms-2173",
@@ -546,15 +546,15 @@
    },
    {
     "repo": "vibe-kiosk",
-    "log": "vibe-kiosk.20261009T170718Z.log",
+    "log": "vibe-kiosk.20261009T235205Z.log",
     "result": "success",
-    "turns": 53,
-    "cost_usd": 0.8465,
+    "turns": 19,
+    "cost_usd": 0.289,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/vibe-kiosk/pull/6",
+    "pr": "https://github.com/hf7y-estate/vibe-kiosk/pull/8",
     "commented": true,
     "note": null,
-    "at": "2026-10-09T17:07:18Z"
+    "at": "2026-10-09T23:52:05Z"
    },
    {
     "repo": "vim-arcade",
@@ -601,7 +601,7 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "abletim: last pass landed nothing -- no PR and no comment on its issue",
+  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
