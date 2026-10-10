@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-10T18:00:02Z",
+ "generated_at": "2026-10-10T18:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T19:00:02Z",
+ "valid_until": "2026-10-10T19:20:01Z",
  "containers": [
-  {
-   "name": "condescending_golick",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T17:57:59Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -38,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "festive_ptolemy",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T18:01:49Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -200,8 +200,8 @@
   }
  ],
  "unmanaged": [
-  "condescending_golick",
   "condescending_joliot",
+  "festive_ptolemy",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -253,7 +253,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.2
+   "age_h": 1.5
   },
   "passes": [
    {
@@ -510,15 +510,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261010T164742Z.log",
-    "result": "success",
-    "turns": 43,
-    "cost_usd": 1.2553,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1236",
-    "commented": true,
+    "log": "senechal.20261010T180147Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T16:47:42Z"
+    "at": "2026-10-10T18:01:47Z"
    },
    {
     "repo": "sequestria",
@@ -574,7 +574,7 @@
     "result": null,
     "turns": null,
     "cost_usd": null,
-    "rc": null,
+    "rc": 1,
     "pr": null,
     "commented": false,
     "note": null,
@@ -605,6 +605,7 @@
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
