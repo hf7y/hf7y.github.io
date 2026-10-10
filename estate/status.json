@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-10T10:40:01Z",
+ "generated_at": "2026-10-10T11:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-10T11:40:01Z",
+ "valid_until": "2026-10-10T12:00:01Z",
  "containers": [
-  {
-   "name": "admiring_borg",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T10:39:07Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -75,6 +63,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "serene_nash",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-10T10:58:38Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -200,9 +200,9 @@
   }
  ],
  "unmanaged": [
-  "admiring_borg",
   "condescending_joliot",
   "serene_elgamal",
+  "serene_nash",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -298,6 +298,16 @@
     "wtul": {
      "queue": 16,
      "at": "2026-10-10T10:39:04Z",
+     "outcome": "finished"
+    },
+    "senechal": {
+     "queue": 41,
+     "at": "2026-10-10T10:43:03Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 52,
+     "at": "2026-10-10T10:58:24Z",
      "outcome": null
     }
    },
@@ -310,7 +320,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.5
+   "age_h": 1.9
   },
   "passes": [
    {
@@ -459,15 +469,15 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261010T070751Z.log",
-    "result": "success",
-    "turns": 68,
-    "cost_usd": 1.7562,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/etalon/pull/152",
+    "log": "etalon.20261010T105824Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T07:07:51Z"
+    "at": "2026-10-10T10:58:24Z"
    },
    {
     "repo": "front-door",
@@ -567,15 +577,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261010T064958Z.log",
+    "log": "senechal.20261010T104303Z.log",
     "result": "success",
-    "turns": 16,
-    "cost_usd": 0.373,
+    "turns": 93,
+    "cost_usd": 2.6965,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1230",
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1231",
     "commented": false,
     "note": null,
-    "at": "2026-10-10T06:49:58Z"
+    "at": "2026-10-10T10:43:03Z"
    },
    {
     "repo": "sequestria",
@@ -631,7 +641,7 @@
     "result": null,
     "turns": null,
     "cost_usd": null,
-    "rc": null,
+    "rc": 1,
     "pr": null,
     "commented": false,
     "note": null,
@@ -660,6 +670,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
+  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
