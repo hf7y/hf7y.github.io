@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-11T12:40:02Z",
+ "generated_at": "2026-10-11T13:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T13:40:02Z",
+ "valid_until": "2026-10-11T14:00:01Z",
  "containers": [
+  {
+   "name": "compassionate_newton",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T12:48:11Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -40,18 +52,6 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
-  },
-  {
-   "name": "keen_yalow",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T12:27:33Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -212,8 +212,8 @@
   }
  ],
  "unmanaged": [
+  "compassionate_newton",
   "condescending_joliot",
-  "keen_yalow",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -266,7 +266,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.5
+   "age_h": 1.8
   },
   "passes": [
    {
@@ -415,15 +415,15 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261011T072659Z.log",
-    "result": "success",
-    "turns": 76,
-    "cost_usd": 2.2783,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/etalon/pull/156",
+    "log": "etalon.20261011T124755Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T07:26:59Z"
+    "at": "2026-10-11T12:47:55Z"
    },
    {
     "repo": "front-door",
@@ -524,11 +524,11 @@
    {
     "repo": "senechal",
     "log": "senechal.20261011T122726Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 72,
+    "cost_usd": 2.5121,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1252",
     "commented": false,
     "note": null,
     "at": "2026-10-11T12:27:26Z"
@@ -616,7 +616,7 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue"
+  "etalon: last pass landed nothing -- no PR and no comment on its issue",
+  "gardien: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
