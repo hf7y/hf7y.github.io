@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T14:00:01Z",
+ "generated_at": "2026-10-11T14:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T15:00:01Z",
+ "valid_until": "2026-10-11T15:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -75,6 +75,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "upbeat_curran",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T14:07:33Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -203,6 +215,7 @@
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
+  "upbeat_curran",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -238,22 +251,28 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261011T111001Z.log",
-   "started_at": "2026-10-11T11:10:01Z",
-   "finished_at": "2026-10-11T11:15:52Z",
+   "log": "nightly.20261011T140702Z.log",
+   "started_at": "2026-10-11T14:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "baudin": {
-     "queue": 1,
-     "at": "2026-10-11T11:10:14Z",
-     "outcome": "finished"
+    "apms-2173": {
+     "queue": 15,
+     "at": "2026-10-11T14:07:31Z",
+     "outcome": null
     }
    },
-   "skipped": [],
+   "skipped": [
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "space-canon",
+    "dog"
+   ],
    "queue_unreadable": [],
-   "age_h": 2.8
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -294,15 +313,15 @@
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261011T081303Z.log",
-    "result": "success",
-    "turns": 23,
-    "cost_usd": 0.3482,
-    "rc": 0,
+    "log": "apms-2173.20261011T140731Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T08:13:03Z"
+    "at": "2026-10-11T14:07:31Z"
    },
    {
     "repo": "baudin",
@@ -600,6 +619,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
