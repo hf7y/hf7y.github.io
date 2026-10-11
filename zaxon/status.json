@@ -2,8 +2,8 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-11T09:46:28Z",
-  "valid_until": "2026-10-11T11:16:28Z",
+  "generated": "2026-10-11T10:46:28Z",
+  "valid_until": "2026-10-11T12:16:28Z",
   "cadence_minutes": 60,
   "verdict": "UNANSWERED",
   "why": "5 question(s) sent in 24h, none answered; 5.0h of the single slot went to tickets that expired",
@@ -16,7 +16,7 @@
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 14 hours (healthy)"
+      "status": "Up 15 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
@@ -51,7 +51,7 @@
     "inbox": {
       "count": 37,
       "window_count": 0,
-      "oldest_age_hours": 994.8,
+      "oldest_age_hours": 995.8,
       "unfiled": {
         "count": 0,
         "oldest_age_hours": null
