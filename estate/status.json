@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T00:20:01Z",
+ "generated_at": "2026-10-11T00:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T01:20:01Z",
+ "valid_until": "2026-10-11T01:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -66,6 +66,18 @@
    "ports_published": true
   },
   {
+   "name": "sad_cori",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T00:29:03Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "serene_elgamal",
    "image": "sha256:6e1a93ea163db68d7caf6fecb48e3fca66143fa333b54117f0480470406772e3",
    "project": null,
@@ -75,18 +87,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "sharp_edison",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T00:07:37Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -214,8 +214,8 @@
  "unmanaged": [
   "condescending_joliot",
   "officejet",
+  "sad_cori",
   "serene_elgamal",
-  "sharp_edison",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -261,6 +261,21 @@
     "vim-arcade": {
      "queue": 1,
      "at": "2026-10-11T00:07:35Z",
+     "outcome": "finished"
+    },
+    "scheduler": {
+     "queue": 1,
+     "at": "2026-10-11T00:23:30Z",
+     "outcome": "finished"
+    },
+    "crt": {
+     "queue": 14,
+     "at": "2026-10-11T00:24:17Z",
+     "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 62,
+     "at": "2026-10-11T00:29:01Z",
      "outcome": null
     }
    },
@@ -273,7 +288,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.6
   },
   "passes": [
    {
@@ -374,15 +389,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261010T155131Z.log",
+    "log": "crt.20261011T002417Z.log",
     "result": "success",
-    "turns": 77,
-    "cost_usd": 2.1766,
+    "turns": 26,
+    "cost_usd": 0.6475,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/512",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-10T15:51:31Z"
+    "at": "2026-10-11T00:24:17Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -470,15 +485,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261010T161730Z.log",
-    "result": "success",
-    "turns": 100,
-    "cost_usd": 2.7296,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/297",
-    "commented": true,
+    "log": "musc-2300.20261011T002901Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T16:17:30Z"
+    "at": "2026-10-11T00:29:01Z"
    },
    {
     "repo": "nine-speakers",
@@ -506,15 +521,15 @@
    },
    {
     "repo": "scheduler",
-    "log": "scheduler.20261010T154939Z.log",
+    "log": "scheduler.20261011T002330Z.log",
     "result": "success",
-    "turns": 6,
-    "cost_usd": 0.1476,
+    "turns": 5,
+    "cost_usd": 0.1219,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T15:49:39Z"
+    "at": "2026-10-11T00:23:30Z"
    },
    {
     "repo": "secretaire",
@@ -579,10 +594,10 @@
    {
     "repo": "vim-arcade",
     "log": "vim-arcade.20261011T000735Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 36,
+    "cost_usd": 0.913,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -628,6 +643,7 @@
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "vim-arcade: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
