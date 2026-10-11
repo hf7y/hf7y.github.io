@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T14:40:01Z",
+ "generated_at": "2026-10-11T15:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T15:40:01Z",
+ "valid_until": "2026-10-11T16:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "funny_curran",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T14:57:02Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -40,18 +52,6 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
-  },
-  {
-   "name": "modest_antonelli",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T14:30:21Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -213,7 +213,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "modest_antonelli",
+  "funny_curran",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -266,6 +266,21 @@
     "nine-speakers": {
      "queue": 11,
      "at": "2026-10-11T14:30:19Z",
+     "outcome": "finished"
+    },
+    "dcp-gate-site": {
+     "queue": 2,
+     "at": "2026-10-11T14:41:46Z",
+     "outcome": "finished"
+    },
+    "gardien": {
+     "queue": 9,
+     "at": "2026-10-11T14:44:15Z",
+     "outcome": "finished"
+    },
+    "cinema-sanctuary": {
+     "queue": 32,
+     "at": "2026-10-11T14:56:59Z",
      "outcome": null
     }
    },
@@ -277,7 +292,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -366,15 +381,15 @@
    },
    {
     "repo": "cinema-sanctuary",
-    "log": "cinema-sanctuary.20261011T085434Z.log",
-    "result": "success",
-    "turns": 84,
-    "cost_usd": 2.81,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/79",
-    "commented": true,
+    "log": "cinema-sanctuary.20261011T145659Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T08:54:34Z"
+    "at": "2026-10-11T14:56:59Z"
    },
    {
     "repo": "crt",
@@ -390,15 +405,15 @@
    },
    {
     "repo": "dcp-gate-site",
-    "log": "dcp-gate-site.20261011T082241Z.log",
+    "log": "dcp-gate-site.20261011T144146Z.log",
     "result": "success",
-    "turns": 16,
-    "cost_usd": 0.3123,
+    "turns": 15,
+    "cost_usd": 0.4095,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-11T08:22:41Z"
+    "at": "2026-10-11T14:41:46Z"
    },
    {
     "repo": "dog",
@@ -450,15 +465,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261011T082415Z.log",
+    "log": "gardien.20261011T144415Z.log",
     "result": "success",
-    "turns": 58,
-    "cost_usd": 1.6184,
+    "turns": 81,
+    "cost_usd": 2.4256,
     "rc": 0,
-    "pr": null,
-    "commented": false,
+    "pr": "https://github.com/hf7y-estate/gardien/pull/223",
+    "commented": true,
     "note": null,
-    "at": "2026-10-11T08:24:15Z"
+    "at": "2026-10-11T14:44:15Z"
    },
    {
     "repo": "groc-mangr",
@@ -487,10 +502,10 @@
    {
     "repo": "nine-speakers",
     "log": "nine-speakers.20261011T143019Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 61,
+    "cost_usd": 1.5726,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -631,7 +646,7 @@
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue",
+  "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
