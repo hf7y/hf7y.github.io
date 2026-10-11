@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T05:40:01Z",
+ "generated_at": "2026-10-11T06:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T06:40:01Z",
+ "valid_until": "2026-10-11T07:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -15,18 +15,6 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
-   "ports_published": null
-  },
-  {
-   "name": "confident_bassi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T05:28:58Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -64,18 +52,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "pensive_solomon",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T05:36:51Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -225,9 +201,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "confident_bassi",
   "officejet",
-  "pensive_solomon",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -266,7 +240,7 @@
   "last_run": {
    "log": "nightly.20261011T051352Z.log",
    "started_at": "2026-10-11T05:13:52Z",
-   "finished_at": null,
+   "finished_at": "2026-10-11T05:42:59Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -274,12 +248,12 @@
     "secretaire": {
      "queue": 1,
      "at": "2026-10-11T05:36:44Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.4
+   "age_h": 0.8
   },
   "passes": [
    {
@@ -525,11 +499,11 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261011T053644Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 45,
+    "cost_usd": 0.991,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/192",
     "commented": false,
     "note": null,
     "at": "2026-10-11T05:36:44Z"
@@ -585,11 +559,11 @@
    {
     "repo": "vim-arcade",
     "log": "vim-arcade.20261011T052855Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 50,
+    "cost_usd": 1.3087,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/vim-arcade/pull/342",
     "commented": false,
     "note": null,
     "at": "2026-10-11T05:28:55Z"
@@ -626,13 +600,10 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
-  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "vim-arcade: last pass landed nothing -- no PR and no comment on its issue"
+  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
