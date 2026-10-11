@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-11T17:40:02Z",
+ "generated_at": "2026-10-11T18:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T18:40:02Z",
+ "valid_until": "2026-10-11T19:00:02Z",
  "containers": [
+  {
+   "name": "condescending_euler",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T17:53:40Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -26,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "gracious_satoshi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T17:32:03Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -212,8 +212,8 @@
   }
  ],
  "unmanaged": [
+  "condescending_euler",
   "condescending_joliot",
-  "gracious_satoshi",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -266,6 +266,11 @@
     "realisateur": {
      "queue": 199,
      "at": "2026-10-11T17:31:56Z",
+     "outcome": "finished"
+    },
+    "crt": {
+     "queue": 20,
+     "at": "2026-10-11T17:53:37Z",
      "outcome": null
     }
    },
@@ -277,7 +282,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -378,15 +383,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261011T120809Z.log",
-    "result": "success",
-    "turns": 60,
-    "cost_usd": 1.286,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/544",
-    "commented": true,
+    "log": "crt.20261011T175337Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T12:08:09Z"
+    "at": "2026-10-11T17:53:37Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -499,12 +504,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261011T173156Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 74,
+    "cost_usd": 3.3787,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1723",
+    "commented": true,
     "note": null,
     "at": "2026-10-11T17:31:56Z"
    },
@@ -631,8 +636,8 @@
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
+  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
-  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue"
+  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
