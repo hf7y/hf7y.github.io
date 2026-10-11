@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T17:20:02Z",
+ "generated_at": "2026-10-11T17:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T18:20:02Z",
+ "valid_until": "2026-10-11T18:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,14 +30,14 @@
    "ports_published": null
   },
   {
-   "name": "gifted_pascal",
+   "name": "gracious_satoshi",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-11T17:07:42Z",
+   "started_at": "2026-10-11T17:32:03Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -213,7 +213,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "gifted_pascal",
+  "gracious_satoshi",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -261,6 +261,11 @@
     "groc-mangr": {
      "queue": 28,
      "at": "2026-10-11T17:07:37Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 199,
+     "at": "2026-10-11T17:31:56Z",
      "outcome": null
     }
    },
@@ -272,7 +277,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.6
   },
   "passes": [
    {
@@ -458,12 +463,12 @@
    {
     "repo": "groc-mangr",
     "log": "groc-mangr.20261011T170737Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 72,
+    "cost_usd": 2.0245,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-11T17:07:37Z"
    },
@@ -493,15 +498,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261011T115416Z.log",
-    "result": "success",
-    "turns": 40,
-    "cost_usd": 2.8839,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1722",
-    "commented": true,
+    "log": "realisateur.20261011T173156Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T11:54:16Z"
+    "at": "2026-10-11T17:31:56Z"
    },
    {
     "repo": "scheduler",
@@ -627,7 +632,7 @@
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
-  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
-  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
+  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
