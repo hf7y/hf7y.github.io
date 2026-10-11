@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T08:40:02Z",
+ "generated_at": "2026-10-11T09:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T09:40:02Z",
+ "valid_until": "2026-10-11T10:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -15,6 +15,18 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
+   "ports_published": null
+  },
+  {
+   "name": "cranky_rhodes",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T08:54:36Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -40,18 +52,6 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
-  },
-  {
-   "name": "kind_ellis",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T08:24:17Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -213,7 +213,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "kind_ellis",
+  "cranky_rhodes",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -281,6 +281,16 @@
     "gardien": {
      "queue": 9,
      "at": "2026-10-11T08:24:15Z",
+     "outcome": "finished"
+    },
+    "baudin": {
+     "queue": 24,
+     "at": "2026-10-11T08:42:49Z",
+     "outcome": "finished"
+    },
+    "cinema-sanctuary": {
+     "queue": 31,
+     "at": "2026-10-11T08:54:34Z",
      "outcome": null
     }
    },
@@ -292,7 +302,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -345,15 +355,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261011T050518Z.log",
+    "log": "baudin.20261011T084249Z.log",
     "result": "success",
-    "turns": 55,
-    "cost_usd": 1.6771,
+    "turns": 70,
+    "cost_usd": 2.4644,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/191",
+    "pr": "https://github.com/hf7y-estate/baudin/pull/192",
     "commented": true,
     "note": null,
-    "at": "2026-10-11T05:05:18Z"
+    "at": "2026-10-11T08:42:49Z"
    },
    {
     "repo": "bibliothecaire",
@@ -381,15 +391,15 @@
    },
    {
     "repo": "cinema-sanctuary",
-    "log": "cinema-sanctuary.20261011T051114Z.log",
-    "result": "success",
-    "turns": 102,
-    "cost_usd": 2.9774,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/78",
+    "log": "cinema-sanctuary.20261011T085434Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T05:11:14Z"
+    "at": "2026-10-11T08:54:34Z"
    },
    {
     "repo": "crt",
@@ -466,10 +476,10 @@
    {
     "repo": "gardien",
     "log": "gardien.20261011T082415Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 58,
+    "cost_usd": 1.6184,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -642,6 +652,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
+  "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue"
  ]
