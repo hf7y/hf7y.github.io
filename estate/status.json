@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T11:00:01Z",
+ "generated_at": "2026-10-11T11:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T12:00:01Z",
+ "valid_until": "2026-10-11T12:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "funny_davinci",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T11:07:43Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,6 +213,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "funny_davinci",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -238,88 +251,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261011T080702Z.log",
-   "started_at": "2026-10-11T08:07:02Z",
-   "finished_at": "2026-10-11T10:09:25Z",
+   "log": "nightly.20261011T111001Z.log",
+   "started_at": "2026-10-11T11:10:01Z",
+   "finished_at": "2026-10-11T11:15:52Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "american-cycle": {
-     "queue": 9,
-     "at": "2026-10-11T08:07:34Z",
-     "outcome": "finished"
-    },
-    "apms-2173": {
-     "queue": 16,
-     "at": "2026-10-11T08:13:03Z",
-     "outcome": "finished"
-    },
-    "nine-speakers": {
-     "queue": 11,
-     "at": "2026-10-11T08:14:57Z",
-     "outcome": "finished"
-    },
-    "dcp-gate-site": {
-     "queue": 2,
-     "at": "2026-10-11T08:22:41Z",
-     "outcome": "finished"
-    },
-    "gardien": {
-     "queue": 9,
-     "at": "2026-10-11T08:24:15Z",
-     "outcome": "finished"
-    },
     "baudin": {
-     "queue": 24,
-     "at": "2026-10-11T08:42:49Z",
-     "outcome": "finished"
-    },
-    "cinema-sanctuary": {
-     "queue": 31,
-     "at": "2026-10-11T08:54:34Z",
-     "outcome": "finished"
-    },
-    "front-door": {
-     "queue": 12,
-     "at": "2026-10-11T09:11:28Z",
-     "outcome": "finished"
-    },
-    "sequestria": {
-     "queue": 4,
-     "at": "2026-10-11T09:26:01Z",
-     "outcome": "finished"
-    },
-    "ecosim": {
-     "queue": 2,
-     "at": "2026-10-11T09:45:19Z",
-     "outcome": "finished"
-    },
-    "vim-arcade": {
-     "queue": 6,
-     "at": "2026-10-11T09:49:17Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 31,
-     "at": "2026-10-11T09:59:10Z",
-     "outcome": "finished"
-    },
-    "scheduler": {
      "queue": 1,
-     "at": "2026-10-11T10:08:38Z",
+     "at": "2026-10-11T11:10:14Z",
      "outcome": "finished"
     }
    },
-   "skipped": [
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "space-canon",
-    "dog"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -372,15 +319,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261011T084249Z.log",
+    "log": "baudin.20261011T111014Z.log",
     "result": "success",
-    "turns": 70,
-    "cost_usd": 2.4644,
+    "turns": 15,
+    "cost_usd": 0.3337,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/192",
+    "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-11T08:42:49Z"
+    "at": "2026-10-11T11:10:14Z"
    },
    {
     "repo": "bibliothecaire",
@@ -516,15 +463,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261011T060824Z.log",
-    "result": "success",
-    "turns": 48,
-    "cost_usd": 1.0243,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/300",
+    "log": "musc-2300.20261011T110741Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T06:08:24Z"
+    "at": "2026-10-11T11:07:41Z"
    },
    {
     "repo": "nine-speakers",
@@ -668,6 +615,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue"
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
