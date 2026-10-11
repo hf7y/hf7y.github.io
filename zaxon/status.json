@@ -2,11 +2,11 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-11T15:47:38Z",
-  "valid_until": "2026-10-11T17:17:38Z",
+  "generated": "2026-10-11T16:48:38Z",
+  "valid_until": "2026-10-11T18:18:38Z",
   "cadence_minutes": 60,
   "verdict": "UNANSWERED",
-  "why": "5 question(s) sent in 24h, none answered; 5.0h of the single slot went to tickets that expired",
+  "why": "2 question(s) sent in 24h, none answered; 2.0h of the single slot went to tickets that expired",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
@@ -16,7 +16,7 @@
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 20 hours (healthy)"
+      "status": "Up 21 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
@@ -41,17 +41,17 @@
       "stale": 284
     },
     "window": {
-      "stale": 5
+      "stale": 2
     },
-    "window_sent": 5,
-    "stale_slot_hours": 5.0,
+    "window_sent": 2,
+    "stale_slot_hours": 2.0,
     "queued": 0,
     "slots": [],
     "last_answered_at": "2026-10-10T05:20:16Z",
     "inbox": {
       "count": 37,
       "window_count": 0,
-      "oldest_age_hours": 1000.8,
+      "oldest_age_hours": 1001.8,
       "unfiled": {
         "count": 0,
         "oldest_age_hours": null
@@ -63,27 +63,6 @@
         "sent": 2,
         "answered": 0,
         "stale": 2,
-        "failed": 0
-      },
-      {
-        "from": "groc-mangr",
-        "sent": 1,
-        "answered": 0,
-        "stale": 1,
-        "failed": 0
-      },
-      {
-        "from": "crt",
-        "sent": 1,
-        "answered": 0,
-        "stale": 1,
-        "failed": 0
-      },
-      {
-        "from": "baudin",
-        "sent": 1,
-        "answered": 0,
-        "stale": 1,
         "failed": 0
       }
     ],
