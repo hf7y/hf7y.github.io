@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T15:40:01Z",
+ "generated_at": "2026-10-11T16:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T16:40:01Z",
+ "valid_until": "2026-10-11T17:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,18 +42,6 @@
    "ports_published": false
   },
   {
-   "name": "nifty_northcutt",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T15:31:10Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -87,6 +75,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "strange_keldysh",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T15:43:48Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +213,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "nifty_northcutt",
   "officejet",
   "serene_elgamal",
+  "strange_keldysh",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -306,6 +306,16 @@
     "secretaire": {
      "queue": 30,
      "at": "2026-10-11T15:31:05Z",
+     "outcome": "finished"
+    },
+    "scheduler": {
+     "queue": 1,
+     "at": "2026-10-11T15:42:48Z",
+     "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 61,
+     "at": "2026-10-11T15:43:46Z",
      "outcome": null
     }
    },
@@ -317,7 +327,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.5
+   "age_h": 1.9
   },
   "passes": [
    {
@@ -514,15 +524,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261011T110741Z.log",
-    "result": "success",
-    "turns": 101,
-    "cost_usd": 2.4335,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/301",
+    "log": "musc-2300.20261011T154346Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T11:07:41Z"
+    "at": "2026-10-11T15:43:46Z"
    },
    {
     "repo": "nine-speakers",
@@ -550,24 +560,24 @@
    },
    {
     "repo": "scheduler",
-    "log": "scheduler.20261011T100838Z.log",
+    "log": "scheduler.20261011T154248Z.log",
     "result": "success",
-    "turns": 6,
-    "cost_usd": 0.1314,
+    "turns": 5,
+    "cost_usd": 0.1269,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-11T10:08:38Z"
+    "at": "2026-10-11T15:42:48Z"
    },
    {
     "repo": "secretaire",
     "log": "secretaire.20261011T153105Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 68,
+    "cost_usd": 1.8742,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/194",
     "commented": false,
     "note": null,
     "at": "2026-10-11T15:31:05Z"
@@ -672,7 +682,7 @@
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
-  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
+  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
