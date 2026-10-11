@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T19:00:01Z",
+ "generated_at": "2026-10-11T19:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T20:00:01Z",
+ "valid_until": "2026-10-11T20:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "eloquent_ramanujan",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T19:09:30Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -75,18 +87,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "upbeat_borg",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T18:57:23Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +213,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "eloquent_ramanujan",
   "officejet",
   "serene_elgamal",
-  "upbeat_borg",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -296,6 +296,26 @@
     "chezz": {
      "queue": 5,
      "at": "2026-10-11T18:57:21Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-11T19:00:50Z",
+     "outcome": "finished"
+    },
+    "abletim": {
+     "queue": 23,
+     "at": "2026-10-11T19:01:32Z",
+     "outcome": "finished"
+    },
+    "vibe-kiosk": {
+     "queue": 1,
+     "at": "2026-10-11T19:08:37Z",
+     "outcome": "finished"
+    },
+    "american-cycle": {
+     "queue": 7,
+     "at": "2026-10-11T19:09:27Z",
      "outcome": null
     }
    },
@@ -307,44 +327,44 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 2.2
   },
   "passes": [
    {
     "repo": "abc",
-    "log": "abc.20261011T130944Z.log",
+    "log": "abc.20261011T190050Z.log",
     "result": "success",
-    "turns": 6,
-    "cost_usd": 0.1408,
+    "turns": 5,
+    "cost_usd": 0.1358,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-11T13:09:44Z"
+    "at": "2026-10-11T19:00:50Z"
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261011T131026Z.log",
+    "log": "abletim.20261011T190132Z.log",
     "result": "success",
-    "turns": 40,
-    "cost_usd": 1.0144,
+    "turns": 51,
+    "cost_usd": 1.3097,
     "rc": 0,
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/abletim/pull/115",
     "commented": false,
     "note": null,
-    "at": "2026-10-11T13:10:26Z"
+    "at": "2026-10-11T19:01:32Z"
    },
    {
     "repo": "american-cycle",
-    "log": "american-cycle.20261011T131751Z.log",
-    "result": "success",
-    "turns": 28,
-    "cost_usd": 0.9875,
-    "rc": 0,
+    "log": "american-cycle.20261011T190927Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T13:17:51Z"
+    "at": "2026-10-11T19:09:27Z"
    },
    {
     "repo": "apms-2173",
@@ -385,12 +405,12 @@
    {
     "repo": "chezz",
     "log": "chezz.20261011T185721Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 10,
+    "cost_usd": 0.3922,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-11T18:57:21Z"
    },
@@ -600,15 +620,15 @@
    },
    {
     "repo": "vibe-kiosk",
-    "log": "vibe-kiosk.20261011T131651Z.log",
+    "log": "vibe-kiosk.20261011T190837Z.log",
     "result": "success",
     "turns": 5,
-    "cost_usd": 0.1012,
+    "cost_usd": 0.1065,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-11T13:16:51Z"
+    "at": "2026-10-11T19:08:37Z"
    },
    {
     "repo": "vim-arcade",
@@ -657,9 +677,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
-  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
