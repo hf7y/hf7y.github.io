@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-10T23:40:02Z",
+ "generated_at": "2026-10-11T00:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T00:40:02Z",
+ "valid_until": "2026-10-11T01:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -15,18 +15,6 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
-   "ports_published": null
-  },
-  {
-   "name": "cool_payne",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-10T23:33:28Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,7 +201,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "cool_payne",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -253,7 +240,7 @@
   "last_run": {
    "log": "nightly.20261010T220702Z.log",
    "started_at": "2026-10-10T22:07:02Z",
-   "finished_at": null,
+   "finished_at": "2026-10-10T23:50:55Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -311,7 +298,17 @@
     "front-door": {
      "queue": 12,
      "at": "2026-10-10T23:33:25Z",
-     "outcome": null
+     "outcome": "finished"
+    },
+    "sequestria": {
+     "queue": 4,
+     "at": "2026-10-10T23:44:00Z",
+     "outcome": "finished"
+    },
+    "ecosim": {
+     "queue": 2,
+     "at": "2026-10-10T23:49:32Z",
+     "outcome": "finished"
     }
    },
    "skipped": [
@@ -323,7 +320,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.6
+   "age_h": 1.9
   },
   "passes": [
    {
@@ -460,15 +457,15 @@
    },
    {
     "repo": "ecosim",
-    "log": "ecosim.20261010T154442Z.log",
+    "log": "ecosim.20261010T234932Z.log",
     "result": "success",
     "turns": 9,
-    "cost_usd": 0.2141,
+    "cost_usd": 0.2179,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T15:44:42Z"
+    "at": "2026-10-10T23:49:32Z"
    },
    {
     "repo": "etalon",
@@ -485,10 +482,10 @@
    {
     "repo": "front-door",
     "log": "front-door.20261010T233325Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 27,
+    "cost_usd": 0.8493,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -592,15 +589,15 @@
    },
    {
     "repo": "sequestria",
-    "log": "sequestria.20261010T151907Z.log",
+    "log": "sequestria.20261010T234400Z.log",
     "result": "success",
-    "turns": 16,
-    "cost_usd": 0.3306,
+    "turns": 31,
+    "cost_usd": 0.7919,
     "rc": 0,
-    "pr": null,
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/sequestria/pull/54",
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T15:19:07Z"
+    "at": "2026-10-10T23:44:00Z"
    },
    {
     "repo": "space-canon",
@@ -670,11 +667,11 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
+  "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
