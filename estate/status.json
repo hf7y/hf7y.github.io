@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T16:00:02Z",
+ "generated_at": "2026-10-11T16:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T17:00:02Z",
+ "valid_until": "2026-10-11T17:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "fervent_cannon",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T16:12:39Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -75,18 +87,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "strange_keldysh",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T15:43:48Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +213,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "fervent_cannon",
   "officejet",
   "serene_elgamal",
-  "strange_keldysh",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -316,6 +316,11 @@
     "musc-2300": {
      "queue": 61,
      "at": "2026-10-11T15:43:46Z",
+     "outcome": "finished"
+    },
+    "baudin": {
+     "queue": 24,
+     "at": "2026-10-11T16:12:37Z",
      "outcome": null
     }
    },
@@ -327,7 +332,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 2.2
   },
   "passes": [
    {
@@ -380,15 +385,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261011T111014Z.log",
-    "result": "success",
-    "turns": 15,
-    "cost_usd": 0.3337,
-    "rc": 0,
+    "log": "baudin.20261011T161237Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T11:10:14Z"
+    "at": "2026-10-11T16:12:37Z"
    },
    {
     "repo": "bibliothecaire",
@@ -525,11 +530,11 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261011T154346Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 62,
+    "cost_usd": 1.2118,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/302",
     "commented": false,
     "note": null,
     "at": "2026-10-11T15:43:46Z"
@@ -679,10 +684,10 @@
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
