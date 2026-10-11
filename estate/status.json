@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T02:20:01Z",
+ "generated_at": "2026-10-11T02:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T03:20:01Z",
+ "valid_until": "2026-10-11T03:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,14 +42,14 @@
    "ports_published": false
   },
   {
-   "name": "hungry_khorana",
+   "name": "jovial_lamport",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-11T02:15:51Z",
+   "started_at": "2026-10-11T02:31:29Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -213,7 +213,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "hungry_khorana",
+  "jovial_lamport",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -266,7 +266,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 1.1
   },
   "passes": [
    {
@@ -512,6 +512,18 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261011T021546Z.log",
+    "result": "success",
+    "turns": 36,
+    "cost_usd": 0.8162,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/184",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-11T02:15:46Z"
+   },
+   {
+    "repo": "senechal",
+    "log": "senechal.20261011T023127Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -519,19 +531,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T02:15:46Z"
-   },
-   {
-    "repo": "senechal",
-    "log": "senechal.20261010T180147Z.log",
-    "result": "success",
-    "turns": 98,
-    "cost_usd": 3.0583,
-    "rc": 0,
-    "pr": null,
-    "commented": true,
-    "note": null,
-    "at": "2026-10-10T18:01:47Z"
+    "at": "2026-10-11T02:31:27Z"
    },
    {
     "repo": "sequestria",
@@ -583,15 +583,15 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261010T175757Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": 1,
+    "log": "wtul.20261011T022242Z.log",
+    "result": "success",
+    "turns": 35,
+    "cost_usd": 0.6441,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-10T17:57:57Z"
+    "at": "2026-10-11T02:22:42Z"
    }
   ],
   "dispatch_source": {
@@ -619,8 +619,7 @@
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "vim-arcade: last pass landed nothing -- no PR and no comment on its issue",
-  "wtul: last pass landed nothing -- no PR and no comment on its issue"
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
+  "vim-arcade: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
