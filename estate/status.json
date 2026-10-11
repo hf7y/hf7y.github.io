@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T00:40:02Z",
+ "generated_at": "2026-10-11T01:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T01:40:02Z",
+ "valid_until": "2026-10-11T02:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -66,18 +66,6 @@
    "ports_published": true
   },
   {
-   "name": "sad_cori",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T00:29:03Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "serene_elgamal",
    "image": "sha256:6e1a93ea163db68d7caf6fecb48e3fca66143fa333b54117f0480470406772e3",
    "project": null,
@@ -87,6 +75,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "silly_lalande",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T00:57:17Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -214,8 +214,8 @@
  "unmanaged": [
   "condescending_joliot",
   "officejet",
-  "sad_cori",
   "serene_elgamal",
+  "silly_lalande",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -276,6 +276,11 @@
     "musc-2300": {
      "queue": 62,
      "at": "2026-10-11T00:29:01Z",
+     "outcome": "finished"
+    },
+    "cinema-sanctuary": {
+     "queue": 29,
+     "at": "2026-10-11T00:57:14Z",
      "outcome": null
     }
    },
@@ -288,7 +293,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -377,7 +382,7 @@
    },
    {
     "repo": "cinema-sanctuary",
-    "log": "cinema-sanctuary.20261010T162701Z.log",
+    "log": "cinema-sanctuary.20261011T005714Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -385,7 +390,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T16:27:01Z"
+    "at": "2026-10-11T00:57:14Z"
    },
    {
     "repo": "crt",
@@ -486,11 +491,11 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261011T002901Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 103,
+    "cost_usd": 3.1557,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/298",
     "commented": false,
     "note": null,
     "at": "2026-10-11T00:29:01Z"
@@ -643,7 +648,6 @@
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "vim-arcade: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
