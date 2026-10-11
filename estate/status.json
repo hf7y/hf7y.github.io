@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T09:40:02Z",
+ "generated_at": "2026-10-11T10:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T10:40:02Z",
+ "valid_until": "2026-10-11T11:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "gifted_swartz",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T09:26:04Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -52,6 +40,18 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
+  },
+  {
+   "name": "modest_chebyshev",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T09:59:20Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -213,7 +213,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "gifted_swartz",
+  "modest_chebyshev",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -301,6 +301,21 @@
     "sequestria": {
      "queue": 4,
      "at": "2026-10-11T09:26:01Z",
+     "outcome": "finished"
+    },
+    "ecosim": {
+     "queue": 2,
+     "at": "2026-10-11T09:45:19Z",
+     "outcome": "finished"
+    },
+    "vim-arcade": {
+     "queue": 6,
+     "at": "2026-10-11T09:49:17Z",
+     "outcome": "finished"
+    },
+    "secretaire": {
+     "queue": 31,
+     "at": "2026-10-11T09:59:10Z",
      "outcome": null
     }
    },
@@ -312,7 +327,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.6
+   "age_h": 1.9
   },
   "passes": [
    {
@@ -449,15 +464,15 @@
    },
    {
     "repo": "ecosim",
-    "log": "ecosim.20261011T052740Z.log",
+    "log": "ecosim.20261011T094519Z.log",
     "result": "success",
-    "turns": 7,
-    "cost_usd": 0.1868,
+    "turns": 12,
+    "cost_usd": 0.3252,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-11T05:27:40Z"
+    "at": "2026-10-11T09:45:19Z"
    },
    {
     "repo": "etalon",
@@ -557,15 +572,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261011T053644Z.log",
-    "result": "success",
-    "turns": 45,
-    "cost_usd": 0.991,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/192",
+    "log": "secretaire.20261011T095910Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T05:36:44Z"
+    "at": "2026-10-11T09:59:10Z"
    },
    {
     "repo": "senechal",
@@ -582,12 +597,12 @@
    {
     "repo": "sequestria",
     "log": "sequestria.20261011T092601Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 29,
+    "cost_usd": 0.7035,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-11T09:26:01Z"
    },
@@ -617,15 +632,15 @@
    },
    {
     "repo": "vim-arcade",
-    "log": "vim-arcade.20261011T052855Z.log",
+    "log": "vim-arcade.20261011T094917Z.log",
     "result": "success",
-    "turns": 50,
-    "cost_usd": 1.3087,
+    "turns": 48,
+    "cost_usd": 1.2302,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/vim-arcade/pull/342",
+    "pr": "https://github.com/hf7y-estate/vim-arcade/pull/343",
     "commented": false,
     "note": null,
-    "at": "2026-10-11T05:28:55Z"
+    "at": "2026-10-11T09:49:17Z"
    },
    {
     "repo": "wtul",
@@ -662,8 +677,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
-  "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "sequestria: last pass landed nothing -- no PR and no comment on its issue"
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
