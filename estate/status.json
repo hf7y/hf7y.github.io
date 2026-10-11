@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T03:40:02Z",
+ "generated_at": "2026-10-11T04:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T04:40:02Z",
+ "valid_until": "2026-10-11T05:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -75,18 +75,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "stoic_easley",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T03:27:33Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -215,7 +203,6 @@
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
-  "stoic_easley",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -266,7 +253,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.1
+   "age_h": 2.4
   },
   "passes": [
    {
@@ -332,26 +319,26 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261011T032730Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 80,
+    "cost_usd": 2.0538,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-11T03:27:30Z"
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261010T220735Z.log",
+    "log": "chezz.20261011T034248Z.log",
     "result": "success",
-    "turns": 5,
-    "cost_usd": 0.1693,
+    "turns": 9,
+    "cost_usd": 0.3527,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T22:07:35Z"
+    "at": "2026-10-11T03:42:48Z"
    },
    {
     "repo": "cinema-sanctuary",
@@ -615,7 +602,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
