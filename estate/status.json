@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T05:00:01Z",
+ "generated_at": "2026-10-11T05:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T06:00:01Z",
+ "valid_until": "2026-10-11T06:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "ecstatic_haibt",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T05:14:17Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -42,14 +54,26 @@
    "ports_published": false
   },
   {
-   "name": "heuristic_sanderson",
+   "name": "hopeful_morse",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-11T04:56:44Z",
+   "started_at": "2026-10-11T05:11:17Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "hungry_davinci",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T05:14:29Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -213,7 +237,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "heuristic_sanderson",
+  "ecstatic_haibt",
+  "hopeful_morse",
+  "hungry_davinci",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -251,22 +277,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261011T044406Z.log",
-   "started_at": "2026-10-11T04:44:06Z",
-   "finished_at": "2026-10-11T04:48:22Z",
+   "log": "nightly.20261011T051352Z.log",
+   "started_at": "2026-10-11T05:13:52Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "baudin": {
+    "secretaire": {
      "queue": 1,
-     "at": "2026-10-11T04:44:13Z",
-     "outcome": "finished"
+     "at": "2026-10-11T05:14:05Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -319,15 +345,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261011T044413Z.log",
+    "log": "baudin.20261011T050518Z.log",
     "result": "success",
-    "turns": 14,
-    "cost_usd": 0.3182,
+    "turns": 55,
+    "cost_usd": 1.6771,
     "rc": 0,
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/baudin/pull/191",
     "commented": true,
     "note": null,
-    "at": "2026-10-11T04:44:13Z"
+    "at": "2026-10-11T05:05:18Z"
    },
    {
     "repo": "bibliothecaire",
@@ -355,15 +381,15 @@
    },
    {
     "repo": "cinema-sanctuary",
-    "log": "cinema-sanctuary.20261011T005714Z.log",
-    "result": "success",
-    "turns": 60,
-    "cost_usd": 2.2685,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/71",
+    "log": "cinema-sanctuary.20261011T051114Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T00:57:14Z"
+    "at": "2026-10-11T05:11:14Z"
    },
    {
     "repo": "crt",
@@ -427,25 +453,25 @@
    },
    {
     "repo": "front-door",
-    "log": "front-door.20261010T233325Z.log",
-    "result": "success",
-    "turns": 27,
-    "cost_usd": 0.8493,
-    "rc": 0,
-    "pr": null,
-    "commented": false,
-    "note": null,
-    "at": "2026-10-10T23:33:25Z"
-   },
-   {
-    "repo": "gardien",
-    "log": "gardien.20261011T045641Z.log",
+    "log": "front-door.20261011T051426Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
     "rc": null,
     "pr": null,
     "commented": false,
+    "note": null,
+    "at": "2026-10-11T05:14:26Z"
+   },
+   {
+    "repo": "gardien",
+    "log": "gardien.20261011T045641Z.log",
+    "result": "success",
+    "turns": 49,
+    "cost_usd": 1.6223,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/gardien/pull/221",
+    "commented": true,
     "note": null,
     "at": "2026-10-11T04:56:41Z"
    },
@@ -511,15 +537,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261011T021546Z.log",
-    "result": "success",
-    "turns": 36,
-    "cost_usd": 0.8162,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/184",
+    "log": "secretaire.20261011T051405Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T02:15:46Z"
+    "at": "2026-10-11T05:14:05Z"
    },
    {
     "repo": "senechal",
@@ -613,13 +639,15 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "vim-arcade: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
