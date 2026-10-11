@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T01:40:01Z",
+ "generated_at": "2026-10-11T02:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T02:40:01Z",
+ "valid_until": "2026-10-11T03:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -52,18 +52,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "peaceful_leavitt",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T01:22:15Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -226,7 +214,6 @@
  "unmanaged": [
   "condescending_joliot",
   "officejet",
-  "peaceful_leavitt",
   "serene_elgamal",
   "vigorous_yalow",
   "xenodochial_wilson"
@@ -279,7 +266,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.4
   },
   "passes": [
    {
@@ -345,12 +332,12 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261011T012211Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 69,
+    "cost_usd": 2.2753,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-11T01:22:11Z"
    },
@@ -628,7 +615,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
