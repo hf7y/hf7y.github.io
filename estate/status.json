@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T01:00:01Z",
+ "generated_at": "2026-10-11T01:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T02:00:01Z",
+ "valid_until": "2026-10-11T02:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,6 +42,18 @@
    "ports_published": false
   },
   {
+   "name": "intelligent_feynman",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T01:13:31Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -75,18 +87,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "silly_lalande",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T00:57:17Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +213,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "intelligent_feynman",
   "officejet",
   "serene_elgamal",
-  "silly_lalande",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -281,6 +281,11 @@
     "cinema-sanctuary": {
      "queue": 29,
      "at": "2026-10-11T00:57:14Z",
+     "outcome": "finished"
+    },
+    "groc-mangr": {
+     "queue": 29,
+     "at": "2026-10-11T01:13:26Z",
      "outcome": null
     }
    },
@@ -293,7 +298,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -383,11 +388,11 @@
    {
     "repo": "cinema-sanctuary",
     "log": "cinema-sanctuary.20261011T005714Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 60,
+    "cost_usd": 2.2685,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/71",
     "commented": false,
     "note": null,
     "at": "2026-10-11T00:57:14Z"
@@ -478,15 +483,15 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261010T171746Z.log",
-    "result": "success",
-    "turns": 81,
-    "cost_usd": 2.2225,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/448",
-    "commented": true,
+    "log": "groc-mangr.20261011T011326Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T17:17:46Z"
+    "at": "2026-10-11T01:13:26Z"
    },
    {
     "repo": "musc-2300",
@@ -644,10 +649,10 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
-  "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "vim-arcade: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
