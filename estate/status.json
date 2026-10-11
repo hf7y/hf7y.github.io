@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T05:20:02Z",
+ "generated_at": "2026-10-11T05:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T06:20:02Z",
+ "valid_until": "2026-10-11T06:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -18,6 +18,18 @@
    "ports_published": null
   },
   {
+   "name": "confident_bassi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T05:28:58Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -26,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "ecstatic_haibt",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T05:14:17Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,30 +54,6 @@
    "ports_published": false
   },
   {
-   "name": "hopeful_morse",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T05:11:17Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "hungry_davinci",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T05:14:29Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -88,6 +64,18 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "pensive_solomon",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T05:36:51Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -237,10 +225,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "ecstatic_haibt",
-  "hopeful_morse",
-  "hungry_davinci",
+  "confident_bassi",
   "officejet",
+  "pensive_solomon",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -286,13 +273,13 @@
    "dispatched": {
     "secretaire": {
      "queue": 1,
-     "at": "2026-10-11T05:14:05Z",
+     "at": "2026-10-11T05:36:44Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.4
   },
   "passes": [
    {
@@ -382,11 +369,11 @@
    {
     "repo": "cinema-sanctuary",
     "log": "cinema-sanctuary.20261011T051114Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 102,
+    "cost_usd": 2.9774,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/78",
     "commented": false,
     "note": null,
     "at": "2026-10-11T05:11:14Z"
@@ -429,15 +416,15 @@
    },
    {
     "repo": "ecosim",
-    "log": "ecosim.20261010T234932Z.log",
+    "log": "ecosim.20261011T052740Z.log",
     "result": "success",
-    "turns": 9,
-    "cost_usd": 0.2179,
+    "turns": 7,
+    "cost_usd": 0.1868,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T23:49:32Z"
+    "at": "2026-10-11T05:27:40Z"
    },
    {
     "repo": "etalon",
@@ -454,12 +441,12 @@
    {
     "repo": "front-door",
     "log": "front-door.20261011T051426Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 51,
+    "cost_usd": 1.2558,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/front-door/pull/34",
+    "commented": true,
     "note": null,
     "at": "2026-10-11T05:14:26Z"
    },
@@ -537,7 +524,7 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261011T051405Z.log",
+    "log": "secretaire.20261011T053644Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -545,7 +532,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T05:14:05Z"
+    "at": "2026-10-11T05:36:44Z"
    },
    {
     "repo": "senechal",
@@ -561,15 +548,15 @@
    },
    {
     "repo": "sequestria",
-    "log": "sequestria.20261010T234400Z.log",
+    "log": "sequestria.20261011T052345Z.log",
     "result": "success",
-    "turns": 31,
-    "cost_usd": 0.7919,
+    "turns": 21,
+    "cost_usd": 0.5788,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/sequestria/pull/54",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-10T23:44:00Z"
+    "at": "2026-10-11T05:23:45Z"
    },
    {
     "repo": "space-canon",
@@ -597,15 +584,15 @@
    },
    {
     "repo": "vim-arcade",
-    "log": "vim-arcade.20261011T000735Z.log",
-    "result": "success",
-    "turns": 36,
-    "cost_usd": 0.913,
-    "rc": 0,
+    "log": "vim-arcade.20261011T052855Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T00:07:35Z"
+    "at": "2026-10-11T05:28:55Z"
    },
    {
     "repo": "wtul",
@@ -642,10 +629,8 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
-  "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "vim-arcade: last pass landed nothing -- no PR and no comment on its issue"
