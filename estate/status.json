@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T00:00:02Z",
+ "generated_at": "2026-10-11T00:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T01:00:02Z",
+ "valid_until": "2026-10-11T01:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -49,7 +49,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-10T20:11:36Z",
+   "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -75,6 +75,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "sharp_edison",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T00:07:37Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -203,6 +215,7 @@
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
+  "sharp_edison",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -238,77 +251,17 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261010T220702Z.log",
-   "started_at": "2026-10-10T22:07:02Z",
-   "finished_at": "2026-10-10T23:50:55Z",
+   "log": "nightly.20261011T000702Z.log",
+   "started_at": "2026-10-11T00:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "chezz": {
-     "queue": 4,
-     "at": "2026-10-10T22:07:35Z",
-     "outcome": "finished"
-    },
-    "abc": {
+    "vim-arcade": {
      "queue": 1,
-     "at": "2026-10-10T22:08:37Z",
-     "outcome": "finished"
-    },
-    "abletim": {
-     "queue": 22,
-     "at": "2026-10-10T22:09:23Z",
-     "outcome": "finished"
-    },
-    "vibe-kiosk": {
-     "queue": 2,
-     "at": "2026-10-10T22:19:19Z",
-     "outcome": "finished"
-    },
-    "american-cycle": {
-     "queue": 11,
-     "at": "2026-10-10T22:21:39Z",
-     "outcome": "finished"
-    },
-    "apms-2173": {
-     "queue": 16,
-     "at": "2026-10-10T22:29:51Z",
-     "outcome": "finished"
-    },
-    "nine-speakers": {
-     "queue": 11,
-     "at": "2026-10-10T23:03:44Z",
-     "outcome": "finished"
-    },
-    "dcp-gate-site": {
-     "queue": 2,
-     "at": "2026-10-10T23:15:31Z",
-     "outcome": "finished"
-    },
-    "gardien": {
-     "queue": 9,
-     "at": "2026-10-10T23:17:34Z",
-     "outcome": "finished"
-    },
-    "baudin": {
-     "queue": 24,
-     "at": "2026-10-10T23:30:01Z",
-     "outcome": "finished"
-    },
-    "front-door": {
-     "queue": 12,
-     "at": "2026-10-10T23:33:25Z",
-     "outcome": "finished"
-    },
-    "sequestria": {
-     "queue": 4,
-     "at": "2026-10-10T23:44:00Z",
-     "outcome": "finished"
-    },
-    "ecosim": {
-     "queue": 2,
-     "at": "2026-10-10T23:49:32Z",
-     "outcome": "finished"
+     "at": "2026-10-11T00:07:35Z",
+     "outcome": null
     }
    },
    "skipped": [
@@ -320,7 +273,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -625,15 +578,15 @@
    },
    {
     "repo": "vim-arcade",
-    "log": "vim-arcade.20261010T154717Z.log",
-    "result": "success",
-    "turns": 9,
-    "cost_usd": 0.176,
-    "rc": 0,
+    "log": "vim-arcade.20261011T000735Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T15:47:17Z"
+    "at": "2026-10-11T00:07:35Z"
    },
    {
     "repo": "wtul",
@@ -667,6 +620,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
@@ -675,6 +629,7 @@
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
+  "vim-arcade: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
