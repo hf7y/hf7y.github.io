@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T11:40:01Z",
+ "generated_at": "2026-10-11T12:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T12:40:01Z",
+ "valid_until": "2026-10-11T13:00:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "funny_davinci",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T11:07:43Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -87,6 +75,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "tender_greider",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T11:54:23Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +213,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "funny_davinci",
   "officejet",
   "serene_elgamal",
+  "tender_greider",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -266,7 +266,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.8
   },
   "passes": [
    {
@@ -451,24 +451,24 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261011T061407Z.log",
+    "log": "groc-mangr.20261011T114325Z.log",
     "result": "success",
-    "turns": 26,
-    "cost_usd": 0.6323,
+    "turns": 80,
+    "cost_usd": 2.6529,
     "rc": 0,
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/453",
     "commented": true,
     "note": null,
-    "at": "2026-10-11T06:14:07Z"
+    "at": "2026-10-11T11:43:25Z"
    },
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261011T110741Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 101,
+    "cost_usd": 2.4335,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/301",
     "commented": false,
     "note": null,
     "at": "2026-10-11T11:07:41Z"
@@ -487,15 +487,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261011T061826Z.log",
-    "result": "success",
-    "turns": 71,
-    "cost_usd": 2.6915,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1721",
-    "commented": false,
+    "log": "realisateur.20261011T115416Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-11T06:18:26Z"
+    "at": "2026-10-11T11:54:16Z"
    },
    {
     "repo": "scheduler",
@@ -614,8 +614,8 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue"
+  "gardien: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
