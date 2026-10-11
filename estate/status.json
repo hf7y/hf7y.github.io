@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T03:00:02Z",
+ "generated_at": "2026-10-11T03:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T04:00:02Z",
+ "valid_until": "2026-10-11T04:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,18 +42,6 @@
    "ports_published": false
   },
   {
-   "name": "jovial_lamport",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T02:31:29Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -64,6 +52,18 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "quizzical_ardinghelli",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T03:03:33Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -213,8 +213,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "jovial_lamport",
   "officejet",
+  "quizzical_ardinghelli",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -266,7 +266,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.4
+   "age_h": 1.7
   },
   "passes": [
    {
@@ -415,15 +415,15 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261010T192105Z.log",
-    "result": "success",
-    "turns": 75,
-    "cost_usd": 2.2896,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/etalon/pull/154",
+    "log": "etalon.20261011T030317Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-10T19:21:05Z"
+    "at": "2026-10-11T03:03:17Z"
    },
    {
     "repo": "front-door",
@@ -524,12 +524,12 @@
    {
     "repo": "senechal",
     "log": "senechal.20261011T023127Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 91,
+    "cost_usd": 3.129,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1246",
+    "commented": true,
     "note": null,
     "at": "2026-10-11T02:31:27Z"
    },
@@ -617,9 +617,9 @@
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
+  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "vim-arcade: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
