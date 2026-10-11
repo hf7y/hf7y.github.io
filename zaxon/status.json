@@ -2,11 +2,11 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-11T04:44:57Z",
-  "valid_until": "2026-10-11T06:14:57Z",
+  "generated": "2026-10-11T05:45:01Z",
+  "valid_until": "2026-10-11T07:15:01Z",
   "cadence_minutes": 60,
-  "verdict": "OK",
-  "why": "1 of 5 question(s) answered in 24h",
+  "verdict": "UNANSWERED",
+  "why": "5 question(s) sent in 24h, none answered; 4.0h of the single slot went to tickets that expired",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
@@ -16,7 +16,7 @@
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 9 hours (healthy)"
+      "status": "Up 10 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
@@ -38,21 +38,29 @@
     "totals": {
       "failed": 14,
       "answered": 10,
-      "stale": 283
+      "stale": 283,
+      "pending": 1
     },
     "window": {
-      "answered": 1,
-      "stale": 4
+      "stale": 4,
+      "pending": 1
     },
     "window_sent": 5,
     "stale_slot_hours": 4.0,
     "queued": 0,
-    "slots": [],
+    "slots": [
+      {
+        "id": "051c37d3",
+        "from": "monkey-watch-win",
+        "age_hours": 0.9,
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
+      }
+    ],
     "last_answered_at": "2026-10-10T05:20:16Z",
     "inbox": {
       "count": 37,
-      "window_count": 1,
-      "oldest_age_hours": 989.7,
+      "window_count": 0,
+      "oldest_age_hours": 990.7,
       "unfiled": {
         "count": 0,
         "oldest_age_hours": null
@@ -62,7 +70,7 @@
       {
         "from": "monkey-watch-win",
         "sent": 2,
-        "answered": 1,
+        "answered": 0,
         "stale": 1,
         "failed": 0
       },
@@ -89,6 +97,14 @@
       }
     ],
     "recent": [
+      {
+        "id": "051c37d3",
+        "from": "monkey-watch-win",
+        "status": "pending",
+        "created_at": "2026-10-11T04:51:51Z",
+        "answered_at": null,
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
+      },
       {
         "id": "062842b0",
         "from": "monkey-watch-win",
@@ -176,14 +192,6 @@
         "created_at": "2026-10-08T22:24:03Z",
         "answered_at": null,
         "question": "how long you may stay outside = how you stay side + long may out"
-      },
-      {
-        "id": "531730cb",
-        "from": "apms",
-        "status": "stale",
-        "created_at": "2026-10-08T22:23:53Z",
-        "answered_at": null,
-        "question": "look old man you go up = look man go + old you up"
       }
     ]
   }
