@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T17:00:03Z",
+ "generated_at": "2026-10-11T17:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T18:00:03Z",
+ "valid_until": "2026-10-11T18:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "gifted_pascal",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T17:07:42Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -201,6 +213,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "gifted_pascal",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -238,77 +251,17 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261011T140702Z.log",
-   "started_at": "2026-10-11T14:07:02Z",
-   "finished_at": "2026-10-11T16:23:46Z",
+   "log": "nightly.20261011T170702Z.log",
+   "started_at": "2026-10-11T17:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "apms-2173": {
-     "queue": 15,
-     "at": "2026-10-11T14:07:31Z",
-     "outcome": "finished"
-    },
-    "nine-speakers": {
-     "queue": 11,
-     "at": "2026-10-11T14:30:19Z",
-     "outcome": "finished"
-    },
-    "dcp-gate-site": {
-     "queue": 2,
-     "at": "2026-10-11T14:41:46Z",
-     "outcome": "finished"
-    },
-    "gardien": {
-     "queue": 9,
-     "at": "2026-10-11T14:44:15Z",
-     "outcome": "finished"
-    },
-    "cinema-sanctuary": {
-     "queue": 32,
-     "at": "2026-10-11T14:56:59Z",
-     "outcome": "finished"
-    },
-    "front-door": {
-     "queue": 12,
-     "at": "2026-10-11T15:03:01Z",
-     "outcome": "finished"
-    },
-    "sequestria": {
-     "queue": 4,
-     "at": "2026-10-11T15:08:11Z",
-     "outcome": "finished"
-    },
-    "ecosim": {
-     "queue": 2,
-     "at": "2026-10-11T15:12:52Z",
-     "outcome": "finished"
-    },
-    "vim-arcade": {
-     "queue": 5,
-     "at": "2026-10-11T15:14:21Z",
-     "outcome": "finished"
-    },
-    "secretaire": {
-     "queue": 30,
-     "at": "2026-10-11T15:31:05Z",
-     "outcome": "finished"
-    },
-    "scheduler": {
-     "queue": 1,
-     "at": "2026-10-11T15:42:48Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 61,
-     "at": "2026-10-11T15:43:46Z",
-     "outcome": "finished"
-    },
-    "baudin": {
-     "queue": 24,
-     "at": "2026-10-11T16:12:37Z",
-     "outcome": "finished"
+    "groc-mangr": {
+     "queue": 28,
+     "at": "2026-10-11T17:07:37Z",
+     "outcome": null
     }
    },
    "skipped": [
@@ -319,7 +272,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -504,15 +457,15 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261011T114325Z.log",
-    "result": "success",
-    "turns": 80,
-    "cost_usd": 2.6529,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/453",
-    "commented": true,
+    "log": "groc-mangr.20261011T170737Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T11:43:25Z"
+    "at": "2026-10-11T17:07:37Z"
    },
    {
     "repo": "musc-2300",
@@ -666,6 +619,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
@@ -673,6 +627,7 @@
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
