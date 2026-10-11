@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T04:20:02Z",
+ "generated_at": "2026-10-11T04:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T05:20:02Z",
+ "valid_until": "2026-10-11T05:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "great_payne",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T04:30:59Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -88,18 +100,6 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "wonderful_lovelace",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T04:08:16Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -213,9 +213,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "great_payne",
   "officejet",
   "serene_elgamal",
-  "wonderful_lovelace",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -266,7 +266,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.4
   },
   "passes": [
    {
@@ -284,6 +284,30 @@
    {
     "repo": "abletim",
     "log": "abletim.20261011T040813Z.log",
+    "result": "success",
+    "turns": 56,
+    "cost_usd": 1.429,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/abletim/pull/110",
+    "commented": true,
+    "note": null,
+    "at": "2026-10-11T04:08:13Z"
+   },
+   {
+    "repo": "american-cycle",
+    "log": "american-cycle.20261011T042301Z.log",
+    "result": "success",
+    "turns": 58,
+    "cost_usd": 1.5334,
+    "rc": 0,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-11T04:23:01Z"
+   },
+   {
+    "repo": "apms-2173",
+    "log": "apms-2173.20261011T043056Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -291,31 +315,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T04:08:13Z"
-   },
-   {
-    "repo": "american-cycle",
-    "log": "american-cycle.20261010T222139Z.log",
-    "result": "success",
-    "turns": 39,
-    "cost_usd": 1.1159,
-    "rc": 0,
-    "pr": null,
-    "commented": false,
-    "note": null,
-    "at": "2026-10-10T22:21:39Z"
-   },
-   {
-    "repo": "apms-2173",
-    "log": "apms-2173.20261010T222951Z.log",
-    "result": "success",
-    "turns": 114,
-    "cost_usd": 3.3974,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/apms-2173/pull/187",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-10T22:29:51Z"
+    "at": "2026-10-11T04:30:56Z"
    },
    {
     "repo": "baudin",
@@ -559,15 +559,15 @@
    },
    {
     "repo": "vibe-kiosk",
-    "log": "vibe-kiosk.20261010T221919Z.log",
+    "log": "vibe-kiosk.20261011T042043Z.log",
     "result": "success",
-    "turns": 8,
-    "cost_usd": 0.1606,
+    "turns": 19,
+    "cost_usd": 0.3516,
     "rc": 0,
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/vibe-kiosk/pull/9",
     "commented": true,
     "note": null,
-    "at": "2026-10-10T22:19:19Z"
+    "at": "2026-10-11T04:20:43Z"
    },
    {
     "repo": "vim-arcade",
@@ -614,8 +614,8 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
