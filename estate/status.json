@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T14:20:01Z",
+ "generated_at": "2026-10-11T14:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T15:20:01Z",
+ "valid_until": "2026-10-11T15:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -42,6 +42,18 @@
    "ports_published": false
   },
   {
+   "name": "modest_antonelli",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T14:30:21Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -75,18 +87,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "upbeat_curran",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T14:07:33Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +213,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "modest_antonelli",
   "officejet",
   "serene_elgamal",
-  "upbeat_curran",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -261,6 +261,11 @@
     "apms-2173": {
      "queue": 15,
      "at": "2026-10-11T14:07:31Z",
+     "outcome": "finished"
+    },
+    "nine-speakers": {
+     "queue": 11,
+     "at": "2026-10-11T14:30:19Z",
      "outcome": null
     }
    },
@@ -272,7 +277,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -314,11 +319,11 @@
    {
     "repo": "apms-2173",
     "log": "apms-2173.20261011T140731Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 130,
+    "cost_usd": 4.3214,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/apms-2173/pull/189",
     "commented": false,
     "note": null,
     "at": "2026-10-11T14:07:31Z"
@@ -481,15 +486,15 @@
    },
    {
     "repo": "nine-speakers",
-    "log": "nine-speakers.20261011T081457Z.log",
-    "result": "success",
-    "turns": 64,
-    "cost_usd": 1.4861,
-    "rc": 0,
+    "log": "nine-speakers.20261011T143019Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T08:14:57Z"
+    "at": "2026-10-11T14:30:19Z"
    },
    {
     "repo": "realisateur",
@@ -624,9 +629,9 @@
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue"
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
+  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
