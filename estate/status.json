@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T03:20:02Z",
+ "generated_at": "2026-10-11T03:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T04:20:02Z",
+ "valid_until": "2026-10-11T04:40:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -54,18 +54,6 @@
    "ports_published": true
   },
   {
-   "name": "quizzical_ardinghelli",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T03:03:33Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -87,6 +75,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "stoic_easley",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T03:27:33Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -214,8 +214,8 @@
  "unmanaged": [
   "condescending_joliot",
   "officejet",
-  "quizzical_ardinghelli",
   "serene_elgamal",
+  "stoic_easley",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -266,7 +266,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.7
+   "age_h": 2.1
   },
   "passes": [
    {
@@ -331,15 +331,15 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261011T012211Z.log",
-    "result": "success",
-    "turns": 69,
-    "cost_usd": 2.2753,
-    "rc": 0,
+    "log": "bibliothecaire.20261011T032730Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T01:22:11Z"
+    "at": "2026-10-11T03:27:30Z"
    },
    {
     "repo": "chezz",
@@ -416,11 +416,11 @@
    {
     "repo": "etalon",
     "log": "etalon.20261011T030317Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 106,
+    "cost_usd": 3.5341,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/155",
     "commented": false,
     "note": null,
     "at": "2026-10-11T03:03:17Z"
@@ -615,9 +615,9 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
-  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "vim-arcade: last pass landed nothing -- no PR and no comment on its issue"
