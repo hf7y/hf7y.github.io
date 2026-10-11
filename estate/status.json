@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-11T06:40:02Z",
+ "generated_at": "2026-10-11T07:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T07:40:02Z",
+ "valid_until": "2026-10-11T08:00:01Z",
  "containers": [
-  {
-   "name": "beautiful_jemison",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T06:18:38Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -27,6 +15,18 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
+   "ports_published": null
+  },
+  {
+   "name": "cool_visvesvaraya",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T06:55:23Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -212,8 +212,8 @@
   }
  ],
  "unmanaged": [
-  "beautiful_jemison",
   "condescending_joliot",
+  "cool_visvesvaraya",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -276,6 +276,16 @@
     "realisateur": {
      "queue": 199,
      "at": "2026-10-11T06:18:26Z",
+     "outcome": "finished"
+    },
+    "crt": {
+     "queue": 21,
+     "at": "2026-10-11T06:45:08Z",
+     "outcome": "finished"
+    },
+    "wtul": {
+     "queue": 15,
+     "at": "2026-10-11T06:55:21Z",
      "outcome": null
     }
    },
@@ -287,7 +297,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -388,15 +398,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261011T013526Z.log",
+    "log": "crt.20261011T064508Z.log",
     "result": "success",
-    "turns": 17,
-    "cost_usd": 0.3066,
+    "turns": 27,
+    "cost_usd": 0.7392,
     "rc": 0,
-    "pr": null,
+    "pr": "https://github.com/hf7y-estate/crt/pull/543",
     "commented": false,
     "note": null,
-    "at": "2026-10-11T01:35:26Z"
+    "at": "2026-10-11T06:45:08Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -509,11 +519,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261011T061826Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 71,
+    "cost_usd": 2.6915,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1721",
     "commented": false,
     "note": null,
     "at": "2026-10-11T06:18:26Z"
@@ -604,15 +614,15 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261011T022242Z.log",
-    "result": "success",
-    "turns": 35,
-    "cost_usd": 0.6441,
-    "rc": 0,
+    "log": "wtul.20261011T065521Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T02:22:42Z"
+    "at": "2026-10-11T06:55:21Z"
    }
   ],
   "dispatch_source": {
@@ -637,9 +647,8 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue"
+  "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
