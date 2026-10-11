@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T07:40:01Z",
+ "generated_at": "2026-10-11T08:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T08:40:01Z",
+ "valid_until": "2026-10-11T09:00:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -52,6 +52,18 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "optimistic_murdock",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T07:54:55Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -111,18 +123,6 @@
    "exit_code": 1,
    "started_at": "2026-10-05T03:46:05Z",
    "finished_at": "2026-10-05T03:47:47Z",
-   "ports_published": null
-  },
-  {
-   "name": "xenodochial_lichterman",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T07:39:16Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -214,8 +214,8 @@
  "unmanaged": [
   "condescending_joliot",
   "officejet",
+  "optimistic_murdock",
   "serene_elgamal",
-  "xenodochial_lichterman",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -301,6 +301,21 @@
     "bibliothecaire": {
      "queue": 36,
      "at": "2026-10-11T07:39:12Z",
+     "outcome": "finished"
+    },
+    "chezz": {
+     "queue": 5,
+     "at": "2026-10-11T07:52:15Z",
+     "outcome": "finished"
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-11T07:54:04Z",
+     "outcome": "finished"
+    },
+    "abletim": {
+     "queue": 22,
+     "at": "2026-10-11T07:54:52Z",
      "outcome": null
     }
    },
@@ -312,32 +327,32 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.5
+   "age_h": 1.9
   },
   "passes": [
    {
     "repo": "abc",
-    "log": "abc.20261011T040732Z.log",
+    "log": "abc.20261011T075404Z.log",
     "result": "success",
-    "turns": 5,
-    "cost_usd": 0.1293,
+    "turns": 6,
+    "cost_usd": 0.1401,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-11T04:07:32Z"
+    "at": "2026-10-11T07:54:04Z"
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261011T040813Z.log",
-    "result": "success",
-    "turns": 56,
-    "cost_usd": 1.429,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/abletim/pull/110",
-    "commented": true,
+    "log": "abletim.20261011T075452Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T04:08:13Z"
+    "at": "2026-10-11T07:54:52Z"
    },
    {
     "repo": "american-cycle",
@@ -378,26 +393,26 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261011T073912Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 74,
+    "cost_usd": 2.1632,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-11T07:39:12Z"
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261011T034248Z.log",
+    "log": "chezz.20261011T075215Z.log",
     "result": "success",
-    "turns": 9,
-    "cost_usd": 0.3527,
+    "turns": 6,
+    "cost_usd": 0.2314,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-11T03:42:48Z"
+    "at": "2026-10-11T07:52:15Z"
    },
    {
     "repo": "cinema-sanctuary",
@@ -661,8 +676,8 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
  ]
