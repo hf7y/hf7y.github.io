@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T04:00:01Z",
+ "generated_at": "2026-10-11T04:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T05:00:01Z",
+ "valid_until": "2026-10-11T05:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -88,6 +88,18 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "wonderful_lovelace",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T04:08:16Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -203,6 +215,7 @@
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
+  "wonderful_lovelace",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -238,47 +251,47 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261011T013518Z.log",
-   "started_at": "2026-10-11T01:35:18Z",
-   "finished_at": "2026-10-11T01:39:08Z",
+   "log": "nightly.20261011T041541Z.log",
+   "started_at": "2026-10-11T04:15:41Z",
+   "finished_at": "2026-10-11T04:18:14Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "crt": {
+    "baudin": {
      "queue": 1,
-     "at": "2026-10-11T01:35:26Z",
+     "at": "2026-10-11T04:15:50Z",
      "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.4
+   "age_h": 0.1
   },
   "passes": [
    {
     "repo": "abc",
-    "log": "abc.20261010T220837Z.log",
+    "log": "abc.20261011T040732Z.log",
     "result": "success",
     "turns": 5,
-    "cost_usd": 0.1314,
+    "cost_usd": 0.1293,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-10T22:08:37Z"
+    "at": "2026-10-11T04:07:32Z"
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261010T220923Z.log",
-    "result": "success",
-    "turns": 35,
-    "cost_usd": 1.0491,
-    "rc": 0,
+    "log": "abletim.20261011T040813Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-10T22:09:23Z"
+    "at": "2026-10-11T04:08:13Z"
    },
    {
     "repo": "american-cycle",
@@ -306,15 +319,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261010T233001Z.log",
+    "log": "baudin.20261011T041550Z.log",
     "result": "success",
-    "turns": 26,
-    "cost_usd": 0.6109,
+    "turns": 7,
+    "cost_usd": 0.1189,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/179",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-10T23:30:01Z"
+    "at": "2026-10-11T04:15:50Z"
    },
    {
     "repo": "bibliothecaire",
@@ -601,6 +614,7 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
