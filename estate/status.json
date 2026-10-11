@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T12:00:02Z",
+ "generated_at": "2026-10-11T12:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T13:00:02Z",
+ "valid_until": "2026-10-11T13:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -15,6 +15,18 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
+   "ports_published": null
+  },
+  {
+   "name": "crazy_grothendieck",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T12:08:12Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -75,18 +87,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "tender_greider",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T11:54:23Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +213,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "crazy_grothendieck",
   "officejet",
   "serene_elgamal",
-  "tender_greider",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -266,7 +266,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.8
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -367,15 +367,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261011T064508Z.log",
-    "result": "success",
-    "turns": 27,
-    "cost_usd": 0.7392,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/543",
-    "commented": false,
+    "log": "crt.20261011T120809Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-11T06:45:08Z"
+    "at": "2026-10-11T12:08:09Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -488,11 +488,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261011T115416Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 40,
+    "cost_usd": 2.8839,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1722",
     "commented": true,
     "note": null,
     "at": "2026-10-11T11:54:16Z"
