@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T08:00:01Z",
+ "generated_at": "2026-10-11T08:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T09:00:01Z",
+ "valid_until": "2026-10-11T09:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "funny_lederberg",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T08:15:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -52,18 +64,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "optimistic_murdock",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T07:54:55Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -213,8 +213,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "funny_lederberg",
   "officejet",
-  "optimistic_murdock",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -251,71 +251,26 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261011T060702Z.log",
-   "started_at": "2026-10-11T06:07:02Z",
+   "log": "nightly.20261011T080702Z.log",
+   "started_at": "2026-10-11T08:07:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "scheduler": {
-     "queue": 1,
-     "at": "2026-10-11T06:07:33Z",
+    "american-cycle": {
+     "queue": 9,
+     "at": "2026-10-11T08:07:34Z",
      "outcome": "finished"
     },
-    "musc-2300": {
-     "queue": 62,
-     "at": "2026-10-11T06:08:24Z",
+    "apms-2173": {
+     "queue": 16,
+     "at": "2026-10-11T08:13:03Z",
      "outcome": "finished"
     },
-    "groc-mangr": {
-     "queue": 29,
-     "at": "2026-10-11T06:14:07Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 199,
-     "at": "2026-10-11T06:18:26Z",
-     "outcome": "finished"
-    },
-    "crt": {
-     "queue": 21,
-     "at": "2026-10-11T06:45:08Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 15,
-     "at": "2026-10-11T06:55:21Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 41,
-     "at": "2026-10-11T07:06:02Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 51,
-     "at": "2026-10-11T07:26:59Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 36,
-     "at": "2026-10-11T07:39:12Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 5,
-     "at": "2026-10-11T07:52:15Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-11T07:54:04Z",
-     "outcome": "finished"
-    },
-    "abletim": {
-     "queue": 22,
-     "at": "2026-10-11T07:54:52Z",
+    "nine-speakers": {
+     "queue": 11,
+     "at": "2026-10-11T08:14:57Z",
      "outcome": null
     }
    },
@@ -327,7 +282,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -345,38 +300,38 @@
    {
     "repo": "abletim",
     "log": "abletim.20261011T075452Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 63,
+    "cost_usd": 1.7092,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-11T07:54:52Z"
    },
    {
     "repo": "american-cycle",
-    "log": "american-cycle.20261011T042301Z.log",
+    "log": "american-cycle.20261011T080734Z.log",
     "result": "success",
-    "turns": 58,
-    "cost_usd": 1.5334,
+    "turns": 50,
+    "cost_usd": 1.2989,
+    "rc": 0,
+    "pr": null,
+    "commented": true,
+    "note": null,
+    "at": "2026-10-11T08:07:34Z"
+   },
+   {
+    "repo": "apms-2173",
+    "log": "apms-2173.20261011T081303Z.log",
+    "result": "success",
+    "turns": 23,
+    "cost_usd": 0.3482,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T04:23:01Z"
-   },
-   {
-    "repo": "apms-2173",
-    "log": "apms-2173.20261011T043056Z.log",
-    "result": "success",
-    "turns": 67,
-    "cost_usd": 1.9688,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/apms-2173/pull/188",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-11T04:30:56Z"
+    "at": "2026-10-11T08:13:03Z"
    },
    {
     "repo": "baudin",
@@ -536,15 +491,15 @@
    },
    {
     "repo": "nine-speakers",
-    "log": "nine-speakers.20261011T044842Z.log",
-    "result": "success",
-    "turns": 60,
-    "cost_usd": 1.637,
-    "rc": 0,
+    "log": "nine-speakers.20261011T081457Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T04:48:42Z"
+    "at": "2026-10-11T08:14:57Z"
    },
    {
     "repo": "realisateur",
@@ -620,15 +575,15 @@
    },
    {
     "repo": "vibe-kiosk",
-    "log": "vibe-kiosk.20261011T042043Z.log",
+    "log": "vibe-kiosk.20261011T080450Z.log",
     "result": "success",
-    "turns": 19,
-    "cost_usd": 0.3516,
+    "turns": 6,
+    "cost_usd": 0.1036,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/vibe-kiosk/pull/9",
+    "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-11T04:20:43Z"
+    "at": "2026-10-11T08:04:50Z"
    },
    {
     "repo": "vim-arcade",
@@ -676,8 +631,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "abletim: last pass landed nothing -- no PR and no comment on its issue",
-  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
  ]
