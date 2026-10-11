@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T21:00:02Z",
+ "generated_at": "2026-10-11T21:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T22:00:02Z",
+ "valid_until": "2026-10-11T22:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "eloquent_ramanujan",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T19:09:30Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -213,7 +201,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "eloquent_ramanujan",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -253,7 +240,7 @@
   "last_run": {
    "log": "nightly.20261011T170702Z.log",
    "started_at": "2026-10-11T17:07:02Z",
-   "finished_at": null,
+   "finished_at": "2026-10-11T21:10:14Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -316,7 +303,12 @@
     "american-cycle": {
      "queue": 7,
      "at": "2026-10-11T19:09:27Z",
-     "outcome": null
+     "outcome": "finished"
+    },
+    "apms-2173": {
+     "queue": 15,
+     "at": "2026-10-11T21:01:14Z",
+     "outcome": "finished"
     }
    },
    "skipped": [
@@ -327,7 +319,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 3.9
+   "age_h": 4.2
   },
   "passes": [
    {
@@ -357,26 +349,26 @@
    {
     "repo": "american-cycle",
     "log": "american-cycle.20261011T190927Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 129,
+    "cost_usd": 4.1178,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-11T19:09:27Z"
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261011T140731Z.log",
+    "log": "apms-2173.20261011T210114Z.log",
     "result": "success",
-    "turns": 130,
-    "cost_usd": 4.3214,
+    "turns": 59,
+    "cost_usd": 1.4417,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/apms-2173/pull/189",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-11T14:07:31Z"
+    "at": "2026-10-11T21:01:14Z"
    },
    {
     "repo": "baudin",
@@ -674,10 +666,8 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
-  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
