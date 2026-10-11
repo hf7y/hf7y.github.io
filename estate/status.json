@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-11T15:00:02Z",
+ "generated_at": "2026-10-11T15:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T16:00:02Z",
+ "valid_until": "2026-10-11T16:20:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -26,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "funny_curran",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T14:57:02Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -87,6 +75,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "trusting_swirles",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T15:14:23Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +213,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "funny_curran",
   "officejet",
   "serene_elgamal",
+  "trusting_swirles",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -281,6 +281,26 @@
     "cinema-sanctuary": {
      "queue": 32,
      "at": "2026-10-11T14:56:59Z",
+     "outcome": "finished"
+    },
+    "front-door": {
+     "queue": 12,
+     "at": "2026-10-11T15:03:01Z",
+     "outcome": "finished"
+    },
+    "sequestria": {
+     "queue": 4,
+     "at": "2026-10-11T15:08:11Z",
+     "outcome": "finished"
+    },
+    "ecosim": {
+     "queue": 2,
+     "at": "2026-10-11T15:12:52Z",
+     "outcome": "finished"
+    },
+    "vim-arcade": {
+     "queue": 5,
+     "at": "2026-10-11T15:14:21Z",
      "outcome": null
     }
    },
@@ -292,7 +312,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -382,11 +402,11 @@
    {
     "repo": "cinema-sanctuary",
     "log": "cinema-sanctuary.20261011T145659Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 43,
+    "cost_usd": 1.1983,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/80",
     "commented": false,
     "note": null,
     "at": "2026-10-11T14:56:59Z"
@@ -429,15 +449,15 @@
    },
    {
     "repo": "ecosim",
-    "log": "ecosim.20261011T094519Z.log",
+    "log": "ecosim.20261011T151252Z.log",
     "result": "success",
-    "turns": 12,
-    "cost_usd": 0.3252,
+    "turns": 9,
+    "cost_usd": 0.2129,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-11T09:45:19Z"
+    "at": "2026-10-11T15:12:52Z"
    },
    {
     "repo": "etalon",
@@ -453,15 +473,15 @@
    },
    {
     "repo": "front-door",
-    "log": "front-door.20261011T091128Z.log",
+    "log": "front-door.20261011T150301Z.log",
     "result": "success",
-    "turns": 51,
-    "cost_usd": 1.5681,
+    "turns": 30,
+    "cost_usd": 0.6885,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/front-door/pull/35",
-    "commented": true,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T09:11:28Z"
+    "at": "2026-10-11T15:03:01Z"
    },
    {
     "repo": "gardien",
@@ -561,15 +581,15 @@
    },
    {
     "repo": "sequestria",
-    "log": "sequestria.20261011T092601Z.log",
+    "log": "sequestria.20261011T150811Z.log",
     "result": "success",
-    "turns": 29,
-    "cost_usd": 0.7035,
+    "turns": 21,
+    "cost_usd": 0.5713,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-11T09:26:01Z"
+    "at": "2026-10-11T15:08:11Z"
    },
    {
     "repo": "space-canon",
@@ -597,15 +617,15 @@
    },
    {
     "repo": "vim-arcade",
-    "log": "vim-arcade.20261011T094917Z.log",
-    "result": "success",
-    "turns": 48,
-    "cost_usd": 1.2302,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/vim-arcade/pull/343",
+    "log": "vim-arcade.20261011T151421Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T09:49:17Z"
+    "at": "2026-10-11T15:14:21Z"
    },
    {
     "repo": "wtul",
@@ -646,7 +666,8 @@
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
-  "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
-  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue"
+  "front-door: last pass landed nothing -- no PR and no comment on its issue",
+  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "vim-arcade: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
