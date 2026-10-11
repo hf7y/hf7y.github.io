@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-11T22:00:01Z",
+ "generated_at": "2026-10-11T22:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-11T23:00:01Z",
+ "valid_until": "2026-10-11T23:20:01Z",
  "containers": [
+  {
+   "name": "clever_bhabha",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T22:16:26Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -200,6 +212,7 @@
   }
  ],
  "unmanaged": [
+  "clever_bhabha",
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
@@ -238,77 +251,27 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261011T170702Z.log",
-   "started_at": "2026-10-11T17:07:02Z",
-   "finished_at": "2026-10-11T21:10:14Z",
+   "log": "nightly.20261011T220702Z.log",
+   "started_at": "2026-10-11T22:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "groc-mangr": {
-     "queue": 28,
-     "at": "2026-10-11T17:07:37Z",
+    "nine-speakers": {
+     "queue": 11,
+     "at": "2026-10-11T22:07:34Z",
      "outcome": "finished"
     },
-    "realisateur": {
-     "queue": 199,
-     "at": "2026-10-11T17:31:56Z",
+    "dcp-gate-site": {
+     "queue": 2,
+     "at": "2026-10-11T22:14:19Z",
      "outcome": "finished"
     },
-    "crt": {
-     "queue": 20,
-     "at": "2026-10-11T17:53:37Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 14,
-     "at": "2026-10-11T18:04:33Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 39,
-     "at": "2026-10-11T18:07:34Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 51,
-     "at": "2026-10-11T18:16:39Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 36,
-     "at": "2026-10-11T18:45:55Z",
-     "outcome": "finished"
-    },
-    "chezz": {
-     "queue": 5,
-     "at": "2026-10-11T18:57:21Z",
-     "outcome": "finished"
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-11T19:00:50Z",
-     "outcome": "finished"
-    },
-    "abletim": {
-     "queue": 23,
-     "at": "2026-10-11T19:01:32Z",
-     "outcome": "finished"
-    },
-    "vibe-kiosk": {
-     "queue": 1,
-     "at": "2026-10-11T19:08:37Z",
-     "outcome": "finished"
-    },
-    "american-cycle": {
-     "queue": 7,
-     "at": "2026-10-11T19:09:27Z",
-     "outcome": "finished"
-    },
-    "apms-2173": {
-     "queue": 15,
-     "at": "2026-10-11T21:01:14Z",
-     "outcome": "finished"
+    "gardien": {
+     "queue": 9,
+     "at": "2026-10-11T22:16:24Z",
+     "outcome": null
     }
    },
    "skipped": [
@@ -319,7 +282,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 4.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -432,15 +395,15 @@
    },
    {
     "repo": "dcp-gate-site",
-    "log": "dcp-gate-site.20261011T144146Z.log",
+    "log": "dcp-gate-site.20261011T221419Z.log",
     "result": "success",
-    "turns": 15,
-    "cost_usd": 0.4095,
+    "turns": 12,
+    "cost_usd": 0.29,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-11T14:41:46Z"
+    "at": "2026-10-11T22:14:19Z"
    },
    {
     "repo": "dog",
@@ -492,15 +455,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261011T144415Z.log",
-    "result": "success",
-    "turns": 81,
-    "cost_usd": 2.4256,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/gardien/pull/223",
-    "commented": true,
+    "log": "gardien.20261011T221624Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T14:44:15Z"
+    "at": "2026-10-11T22:16:24Z"
    },
    {
     "repo": "groc-mangr",
@@ -528,15 +491,15 @@
    },
    {
     "repo": "nine-speakers",
-    "log": "nine-speakers.20261011T143019Z.log",
+    "log": "nine-speakers.20261011T220734Z.log",
     "result": "success",
-    "turns": 61,
-    "cost_usd": 1.5726,
+    "turns": 50,
+    "cost_usd": 1.2468,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-11T14:30:19Z"
+    "at": "2026-10-11T22:07:34Z"
    },
    {
     "repo": "realisateur",
@@ -666,10 +629,11 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
-  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
