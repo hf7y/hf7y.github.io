@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-12T08:00:01Z",
+ "generated_at": "2026-10-12T08:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T09:00:01Z",
+ "valid_until": "2026-10-12T09:20:01Z",
  "containers": [
+  {
+   "name": "affectionate_meninsky",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T08:06:41Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "charming_stonebraker",
    "image": "ghcr.io/hf7y-estate/agent:latest",
@@ -78,18 +90,6 @@
    "ports_published": true
   },
   {
-   "name": "pensive_torvalds",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T07:47:11Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "quirky_elbakyan",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -98,6 +98,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T07:43:41Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "relaxed_fermat",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T08:12:09Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -208,18 +220,6 @@
    "started_at": "2026-10-10T19:39:39Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zen_williams",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T07:59:35Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -260,15 +260,15 @@
   }
  ],
  "unmanaged": [
+  "affectionate_meninsky",
   "charming_stonebraker",
   "condescending_joliot",
   "loving_taussig",
   "officejet",
-  "pensive_torvalds",
   "quirky_elbakyan",
+  "relaxed_fermat",
   "serene_elgamal",
-  "xenodochial_wilson",
-  "zen_williams"
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -327,7 +327,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -392,7 +392,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261012T075931Z.log",
+    "log": "bibliothecaire.20261012T081205Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -400,7 +400,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T07:59:31Z"
+    "at": "2026-10-12T08:12:05Z"
    },
    {
     "repo": "chezz",
@@ -476,7 +476,7 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261012T074656Z.log",
+    "log": "etalon.20261012T080626Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -484,7 +484,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T07:46:56Z"
+    "at": "2026-10-12T08:06:26Z"
    },
    {
     "repo": "front-door",
