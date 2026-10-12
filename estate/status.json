@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-12T18:00:01Z",
+ "generated_at": "2026-10-12T18:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T19:00:01Z",
+ "valid_until": "2026-10-12T19:20:02Z",
  "containers": [
-  {
-   "name": "angry_sammet",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T17:55:56Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -42,14 +30,26 @@
    "ports_published": null
   },
   {
-   "name": "goofy_jackson",
+   "name": "fervent_gates",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T17:54:00Z",
+   "started_at": "2026-10-12T18:17:19Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "gallant_golick",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T18:19:47Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,18 +66,6 @@
    "ports_published": false
   },
   {
-   "name": "loving_tharp",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T17:27:22Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -88,30 +76,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "practical_pasteur",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T17:42:25Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "quirky_saha",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T17:59:38Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -135,18 +99,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "sleepy_fermi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T17:53:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -210,18 +162,6 @@
    "ports_published": null
   },
   {
-   "name": "youthful_hopper",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T17:42:16Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "zaxon-gateway",
    "image": "zaxon:crt-40d82c03a4fa",
    "project": "zaxon",
@@ -254,6 +194,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-10T19:39:39Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "zen_wilson",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T18:18:03Z",
    "finished_at": null,
    "ports_published": null
   }
@@ -296,18 +248,14 @@
   }
  ],
  "unmanaged": [
-  "angry_sammet",
   "condescending_joliot",
-  "goofy_jackson",
-  "loving_tharp",
+  "fervent_gates",
+  "gallant_golick",
   "officejet",
-  "practical_pasteur",
-  "quirky_saha",
   "serene_elgamal",
-  "sleepy_fermi",
   "wizardly_buck",
   "xenodochial_wilson",
-  "youthful_hopper"
+  "zen_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -347,7 +295,7 @@
   "last_run": {
    "log": "nightly.20261012T173211Z.log",
    "started_at": "2026-10-12T17:32:11Z",
-   "finished_at": null,
+   "finished_at": "2026-10-12T18:06:56Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -355,12 +303,12 @@
     "realisateur": {
      "queue": 1,
      "at": "2026-10-12T17:32:42Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.8
   },
   "passes": [
    {
@@ -390,11 +338,11 @@
    {
     "repo": "american-cycle",
     "log": "american-cycle.20261012T174212Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 27,
+    "cost_usd": 0.4959,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/american-cycle/pull/304",
     "commented": false,
     "note": null,
     "at": "2026-10-12T17:42:12Z"
@@ -414,11 +362,11 @@
    {
     "repo": "baudin",
     "log": "baudin.20261012T174222Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 75,
+    "cost_usd": 2.1048,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/baudin/pull/234",
     "commented": false,
     "note": null,
     "at": "2026-10-12T17:42:22Z"
@@ -617,7 +565,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261012T174134Z.log",
+    "log": "realisateur.20261012T181743Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -625,7 +573,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T17:41:34Z"
+    "at": "2026-10-12T18:17:43Z"
    },
    {
     "repo": "scheduler",
@@ -702,26 +650,26 @@
    {
     "repo": "vim-arcade",
     "log": "vim-arcade.20261012T175258Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 73,
+    "cost_usd": 1.6006,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/vim-arcade/pull/354",
     "commented": false,
     "note": null,
     "at": "2026-10-12T17:52:58Z"
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261012T042740Z.log",
-    "result": "success",
-    "turns": 15,
-    "cost_usd": 0.347,
-    "rc": 0,
+    "log": "wtul.20261012T181350Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": 1,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-12T04:27:40Z"
+    "at": "2026-10-12T18:13:50Z"
    }
   ],
   "dispatch_source": {
@@ -743,11 +691,8 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
-  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
@@ -755,6 +700,6 @@
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
-  "vim-arcade: last pass landed nothing -- no PR and no comment on its issue"
+  "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
