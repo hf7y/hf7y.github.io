@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T09:20:01Z",
+ "generated_at": "2026-10-12T09:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T10:20:01Z",
+ "valid_until": "2026-10-12T10:40:02Z",
  "containers": [
   {
    "name": "affectionate_golick",
@@ -98,18 +98,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T09:05:28Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "trusting_bassi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T08:26:38Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -241,7 +229,6 @@
   "officejet",
   "serene_elgamal",
   "serene_pasteur",
-  "trusting_bassi",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -301,7 +288,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.2
+   "age_h": 2.5
   },
   "passes": [
    {
@@ -331,10 +318,10 @@
    {
     "repo": "american-cycle",
     "log": "american-cycle.20261012T082636Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 101,
+    "cost_usd": 2.5315,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
