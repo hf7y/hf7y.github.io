@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T16:00:01Z",
+ "generated_at": "2026-10-12T16:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T17:00:01Z",
+ "valid_until": "2026-10-12T17:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -18,6 +18,18 @@
    "ports_published": null
   },
   {
+   "name": "confident_shtern",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T16:05:15Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -26,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "dreamy_solomon",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T16:07:25Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,6 +78,30 @@
    "ports_published": true
   },
   {
+   "name": "optimistic_kalam",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T16:17:41Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "romantic_wozniak",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T16:16:41Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -75,18 +123,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "strange_torvalds",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T15:51:36Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -213,9 +249,12 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "confident_shtern",
+  "dreamy_solomon",
   "officejet",
+  "optimistic_kalam",
+  "romantic_wozniak",
   "serene_elgamal",
-  "strange_torvalds",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -254,8 +293,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261012T154220Z.log",
-   "started_at": "2026-10-12T15:42:20Z",
+   "log": "nightly.20261012T161614Z.log",
+   "started_at": "2026-10-12T16:16:14Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -263,13 +302,13 @@
    "dispatched": {
     "etalon": {
      "queue": 1,
-     "at": "2026-10-12T15:51:33Z",
+     "at": "2026-10-12T16:16:23Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -418,7 +457,7 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261012T155133Z.log",
+    "log": "etalon.20261012T161729Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -426,7 +465,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T15:51:33Z"
+    "at": "2026-10-12T16:17:29Z"
    },
    {
     "repo": "front-door",
@@ -454,15 +493,15 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261012T055650Z.log",
+    "log": "groc-mangr.20261012T160106Z.log",
     "result": "success",
-    "turns": 52,
-    "cost_usd": 1.5664,
+    "turns": 29,
+    "cost_usd": 0.482,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-12T05:56:50Z"
+    "at": "2026-10-12T16:01:06Z"
    },
    {
     "repo": "media-arts-collective.grants",
@@ -526,15 +565,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261012T095727Z.log",
-    "result": "success",
-    "turns": 102,
-    "cost_usd": 2.8579,
-    "rc": 0,
+    "log": "realisateur.20261012T160701Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T09:57:27Z"
+    "at": "2026-10-12T16:07:01Z"
    },
    {
     "repo": "scheduler",
@@ -660,7 +699,6 @@
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
