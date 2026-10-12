@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-12T07:40:01Z",
+ "generated_at": "2026-10-12T08:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T08:40:01Z",
+ "valid_until": "2026-10-12T09:00:01Z",
  "containers": [
-  {
-   "name": "boring_perlman",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T07:29:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "charming_stonebraker",
    "image": "ghcr.io/hf7y-estate/agent:latest",
@@ -50,30 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "ecstatic_visvesvaraya",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T07:01:59Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "funny_rubin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T07:30:34Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -112,6 +76,30 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "pensive_torvalds",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T07:47:11Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "quirky_elbakyan",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T07:43:41Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -220,6 +208,18 @@
    "started_at": "2026-10-10T19:39:39Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zen_williams",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T07:59:35Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -260,15 +260,15 @@
   }
  ],
  "unmanaged": [
-  "boring_perlman",
   "charming_stonebraker",
   "condescending_joliot",
-  "ecstatic_visvesvaraya",
-  "funny_rubin",
   "loving_taussig",
   "officejet",
+  "pensive_torvalds",
+  "quirky_elbakyan",
   "serene_elgamal",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "zen_williams"
  ],
  "nightly": {
   "armed": true,
@@ -327,7 +327,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -392,7 +392,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261012T073030Z.log",
+    "log": "bibliothecaire.20261012T075931Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -400,7 +400,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T07:30:30Z"
+    "at": "2026-10-12T07:59:31Z"
    },
    {
     "repo": "chezz",
@@ -476,7 +476,7 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261012T072939Z.log",
+    "log": "etalon.20261012T074656Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -484,7 +484,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T07:29:39Z"
+    "at": "2026-10-12T07:46:56Z"
    },
    {
     "repo": "front-door",
@@ -584,15 +584,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261012T070153Z.log",
+    "log": "realisateur.20261012T074335Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
     "rc": null,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-12T07:01:53Z"
+    "at": "2026-10-12T07:43:35Z"
    },
    {
     "repo": "scheduler",
@@ -720,7 +720,6 @@
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
