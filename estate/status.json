@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-12T09:40:02Z",
+ "generated_at": "2026-10-12T10:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T10:40:02Z",
+ "valid_until": "2026-10-12T11:00:02Z",
  "containers": [
-  {
-   "name": "affectionate_golick",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T09:09:08Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -54,6 +42,18 @@
    "ports_published": false
   },
   {
+   "name": "loving_snyder",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T09:57:33Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -64,6 +64,18 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "practical_cerf",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T09:51:26Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -87,18 +99,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "serene_pasteur",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T09:05:28Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -224,11 +224,11 @@
   }
  ],
  "unmanaged": [
-  "affectionate_golick",
   "condescending_joliot",
+  "loving_snyder",
   "officejet",
+  "practical_cerf",
   "serene_elgamal",
-  "serene_pasteur",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -288,7 +288,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 2.5
+   "age_h": 2.9
   },
   "passes": [
    {
@@ -341,7 +341,7 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261012T090906Z.log",
+    "log": "baudin.20261012T095123Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -349,7 +349,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T09:09:06Z"
+    "at": "2026-10-12T09:51:23Z"
    },
    {
     "repo": "bibliothecaire",
@@ -545,7 +545,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261012T090522Z.log",
+    "log": "realisateur.20261012T095727Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -553,7 +553,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T09:05:22Z"
+    "at": "2026-10-12T09:57:27Z"
    },
    {
     "repo": "scheduler",
