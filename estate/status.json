@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-12T10:40:01Z",
+ "generated_at": "2026-10-12T11:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T11:40:01Z",
+ "valid_until": "2026-10-12T12:00:01Z",
  "containers": [
+  {
+   "name": "compassionate_yonath",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T10:50:29Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -42,18 +54,6 @@
    "ports_published": false
   },
   {
-   "name": "loving_snyder",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T09:57:33Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -64,18 +64,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "quizzical_joliot",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T10:36:11Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -224,10 +212,9 @@
   }
  ],
  "unmanaged": [
+  "compassionate_yonath",
   "condescending_joliot",
-  "loving_snyder",
   "officejet",
-  "quizzical_joliot",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -288,7 +275,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 3.5
+   "age_h": 3.9
   },
   "passes": [
    {
@@ -341,7 +328,7 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261012T103608Z.log",
+    "log": "baudin.20261012T105026Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -349,7 +336,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T10:36:08Z"
+    "at": "2026-10-12T10:50:26Z"
    },
    {
     "repo": "bibliothecaire",
@@ -546,10 +533,10 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261012T095727Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 102,
+    "cost_usd": 2.8579,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
