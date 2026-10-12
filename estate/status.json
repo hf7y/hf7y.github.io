@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-12T06:40:02Z",
+ "generated_at": "2026-10-12T07:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T07:40:02Z",
+ "valid_until": "2026-10-12T08:00:01Z",
  "containers": [
+  {
+   "name": "competent_lehmann",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T06:52:48Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -26,6 +38,30 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "gallant_khorana",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T06:40:57Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "goofy_bassi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T06:40:10Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,18 +90,6 @@
    "ports_published": null
   },
   {
-   "name": "loving_vaughan",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T06:35:30Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "musing_merkle",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -78,14 +102,14 @@
    "ports_published": null
   },
   {
-   "name": "mystifying_blackwell",
+   "name": "objective_sinoussi",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T06:27:36Z",
+   "started_at": "2026-10-12T06:43:43Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -126,26 +150,14 @@
    "ports_published": null
   },
   {
-   "name": "serene_ride",
+   "name": "vigilant_merkle",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T06:27:31Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "vigilant_roentgen",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T06:24:54Z",
+   "started_at": "2026-10-12T06:40:59Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -272,15 +284,16 @@
   }
  ],
  "unmanaged": [
+  "competent_lehmann",
   "condescending_joliot",
+  "gallant_khorana",
+  "goofy_bassi",
   "inspiring_swartz",
-  "loving_vaughan",
   "musing_merkle",
-  "mystifying_blackwell",
+  "objective_sinoussi",
   "officejet",
   "serene_elgamal",
-  "serene_ride",
-  "vigilant_roentgen",
+  "vigilant_merkle",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -340,7 +353,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -393,19 +406,7 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261012T062733Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/219",
-    "commented": false,
-    "note": null,
-    "at": "2026-10-12T06:27:33Z"
-   },
-   {
-    "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261012T062727Z.log",
+    "log": "baudin.20261012T064057Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -413,7 +414,19 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T06:27:27Z"
+    "at": "2026-10-12T06:40:57Z"
+   },
+   {
+    "repo": "bibliothecaire",
+    "log": "bibliothecaire.20261012T064338Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-12T06:43:38Z"
    },
    {
     "repo": "chezz",
@@ -621,7 +634,7 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261012T062447Z.log",
+    "log": "secretaire.20261012T064050Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -629,11 +642,11 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T06:24:47Z"
+    "at": "2026-10-12T06:40:50Z"
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261012T063526Z.log",
+    "log": "senechal.20261012T065243Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -641,7 +654,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T06:35:26Z"
+    "at": "2026-10-12T06:52:43Z"
    },
    {
     "repo": "sequestria",
@@ -726,6 +739,7 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
