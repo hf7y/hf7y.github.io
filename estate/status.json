@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T10:20:02Z",
+ "generated_at": "2026-10-12T10:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T11:20:02Z",
+ "valid_until": "2026-10-12T11:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -66,14 +66,14 @@
    "ports_published": true
   },
   {
-   "name": "practical_cerf",
+   "name": "quizzical_joliot",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T09:51:26Z",
+   "started_at": "2026-10-12T10:36:11Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -227,7 +227,7 @@
   "condescending_joliot",
   "loving_snyder",
   "officejet",
-  "practical_cerf",
+  "quizzical_joliot",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -288,7 +288,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 3.2
+   "age_h": 3.5
   },
   "passes": [
    {
@@ -341,7 +341,7 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261012T095123Z.log",
+    "log": "baudin.20261012T103608Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -349,7 +349,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T09:51:23Z"
+    "at": "2026-10-12T10:36:08Z"
    },
    {
     "repo": "bibliothecaire",
