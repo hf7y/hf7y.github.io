@@ -1,10 +1,34 @@
 {
- "generated_at": "2026-10-12T18:20:02Z",
+ "generated_at": "2026-10-12T18:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T19:20:02Z",
+ "valid_until": "2026-10-12T19:40:02Z",
  "containers": [
+  {
+   "name": "aedile-tube",
+   "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
+   "project": "aedile",
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T18:33:20Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "blissful_fermat",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T18:39:41Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -30,26 +54,14 @@
    "ports_published": null
   },
   {
-   "name": "fervent_gates",
+   "name": "dreamy_haibt",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T18:17:19Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "gallant_golick",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T18:19:47Z",
+   "started_at": "2026-10-12T18:37:31Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,6 +78,30 @@
    "ports_published": false
   },
   {
+   "name": "hopeful_joliot",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T18:37:31Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "hungry_villani",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T18:33:37Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -76,6 +112,18 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "quizzical_golick",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T18:32:08Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -99,6 +147,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "weave-class-gen",
+   "image": "python:3.12-slim",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T18:39:56Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -196,21 +256,14 @@
    "started_at": "2026-10-10T19:39:39Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zen_wilson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T18:18:03Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
+  {
+   "name": "aedile",
+   "dir": "/srv/aedile",
+   "on_demand": false
+  },
   {
    "name": "groc-browser",
    "dir": "/srv/groc-browser",
@@ -248,14 +301,17 @@
   }
  ],
  "unmanaged": [
+  "blissful_fermat",
   "condescending_joliot",
-  "fervent_gates",
-  "gallant_golick",
+  "dreamy_haibt",
+  "hopeful_joliot",
+  "hungry_villani",
   "officejet",
+  "quizzical_golick",
   "serene_elgamal",
+  "weave-class-gen",
   "wizardly_buck",
-  "xenodochial_wilson",
-  "zen_wilson"
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -308,7 +364,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.8
+   "age_h": 1.1
   },
   "passes": [
    {
@@ -565,7 +621,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261012T181743Z.log",
+    "log": "realisateur.20261012T183317Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -573,7 +629,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T18:17:43Z"
+    "at": "2026-10-12T18:33:17Z"
    },
    {
     "repo": "scheduler",
