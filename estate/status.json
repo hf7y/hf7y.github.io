@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T02:40:02Z",
+ "generated_at": "2026-10-12T03:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T03:40:02Z",
+ "valid_until": "2026-10-12T04:00:01Z",
  "containers": [
   {
    "name": "awesome_shannon",
@@ -18,26 +18,26 @@
    "ports_published": null
   },
   {
-   "name": "blissful_varahamihira",
+   "name": "busy_montalcini",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T02:07:37Z",
+   "started_at": "2026-10-12T02:54:29Z",
    "finished_at": null,
    "ports_published": null
   },
   {
-   "name": "competent_kowalevski",
+   "name": "compassionate_albattani",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T02:38:20Z",
+   "started_at": "2026-10-12T02:52:02Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,6 +66,42 @@
    "ports_published": null
   },
   {
+   "name": "dreamy_moore",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T02:57:54Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "epic_yonath",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T02:57:14Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "goofy_merkle",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T02:48:56Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -78,38 +114,14 @@
    "ports_published": false
   },
   {
-   "name": "interesting_pascal",
+   "name": "mystifying_lamarr",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T02:29:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "laughing_goodall",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T02:04:08Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "laughing_nobel",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T02:20:46Z",
+   "started_at": "2026-10-12T02:52:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -124,18 +136,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "pensive_tharp",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T02:38:27Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -172,6 +172,18 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "wonderful_poitras",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T02:49:53Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -285,15 +297,16 @@
  ],
  "unmanaged": [
   "awesome_shannon",
-  "blissful_varahamihira",
-  "competent_kowalevski",
+  "busy_montalcini",
+  "compassionate_albattani",
   "condescending_joliot",
-  "interesting_pascal",
-  "laughing_goodall",
-  "laughing_nobel",
+  "dreamy_moore",
+  "epic_yonath",
+  "goofy_merkle",
+  "mystifying_lamarr",
   "officejet",
-  "pensive_tharp",
   "serene_elgamal",
+  "wonderful_poitras",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -329,22 +342,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261012T023400Z.log",
-   "started_at": "2026-10-12T02:34:00Z",
-   "finished_at": "2026-10-12T02:39:28Z",
+   "log": "nightly.20261012T025737Z.log",
+   "started_at": "2026-10-12T02:57:37Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "senechal": {
      "queue": 1,
-     "at": "2026-10-12T02:34:12Z",
-     "outcome": "finished"
+     "at": "2026-10-12T02:57:52Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -373,39 +386,39 @@
    },
    {
     "repo": "american-cycle",
-    "log": "american-cycle.20261011T231536Z.log",
+    "log": "american-cycle.20261012T024511Z.log",
     "result": "success",
-    "turns": 54,
-    "cost_usd": 1.6778,
+    "turns": 28,
+    "cost_usd": 0.5574,
     "rc": 0,
-    "pr": null,
-    "commented": false,
+    "pr": "https://github.com/hf7y-estate/american-cycle/pull/302",
+    "commented": true,
     "note": null,
-    "at": "2026-10-11T23:15:36Z"
+    "at": "2026-10-12T02:45:11Z"
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261011T223559Z.log",
+    "log": "apms-2173.20261012T024817Z.log",
     "result": "success",
-    "turns": 46,
-    "cost_usd": 1.3529,
+    "turns": 30,
+    "cost_usd": 0.4895,
     "rc": 0,
-    "pr": null,
-    "commented": false,
+    "pr": "https://github.com/hf7y-estate/apms-2173/pull/190",
+    "commented": true,
     "note": null,
-    "at": "2026-10-11T22:35:59Z"
+    "at": "2026-10-12T02:48:17Z"
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261012T022913Z.log",
-    "result": "success",
-    "turns": 25,
-    "cost_usd": 0.6256,
-    "rc": 0,
+    "log": "baudin.20261012T024950Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T02:29:13Z"
+    "at": "2026-10-12T02:49:50Z"
    },
    {
     "repo": "bibliothecaire",
@@ -445,7 +458,7 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261012T022043Z.log",
+    "log": "crt.20261012T025711Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -453,7 +466,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T02:20:43Z"
+    "at": "2026-10-12T02:57:11Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -529,15 +542,15 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261012T012124Z.log",
+    "log": "groc-mangr.20261012T024519Z.log",
     "result": "success",
-    "turns": 18,
-    "cost_usd": 0.478,
+    "turns": 15,
+    "cost_usd": 0.4312,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-12T01:21:24Z"
+    "at": "2026-10-12T02:45:19Z"
    },
    {
     "repo": "musc-2300",
@@ -589,7 +602,7 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261012T023813Z.log",
+    "log": "secretaire.20261012T025422Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -597,19 +610,19 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T02:38:13Z"
+    "at": "2026-10-12T02:54:22Z"
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261012T023851Z.log",
-    "result": "success",
-    "turns": 4,
-    "cost_usd": 0.0951,
-    "rc": 0,
+    "log": "senechal.20261012T025752Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T02:38:51Z"
+    "at": "2026-10-12T02:57:52Z"
    },
    {
     "repo": "sequestria",
@@ -661,15 +674,15 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261011T232651Z.log",
+    "log": "wtul.20261012T024520Z.log",
     "result": "success",
-    "turns": 74,
-    "cost_usd": 2.3162,
+    "turns": 42,
+    "cost_usd": 0.8965,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/wtul/pull/535",
+    "pr": "https://github.com/hf7y-estate/wtul/pull/536",
     "commented": true,
     "note": null,
-    "at": "2026-10-11T23:26:51Z"
+    "at": "2026-10-12T02:45:20Z"
    }
   ],
   "dispatch_source": {
@@ -691,14 +704,14 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
-  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
