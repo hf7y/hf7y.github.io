@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T19:00:01Z",
+ "generated_at": "2026-10-12T19:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T20:00:01Z",
+ "valid_until": "2026-10-12T20:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,6 +42,18 @@
    "ports_published": null
   },
   {
+   "name": "festive_beaver",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T19:15:13Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -54,14 +66,14 @@
    "ports_published": false
   },
   {
-   "name": "hungry_villani",
+   "name": "laughing_burnell",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T18:33:37Z",
+   "started_at": "2026-10-12T19:16:04Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -76,18 +88,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "quizzical_golick",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T18:32:08Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -242,9 +242,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "hungry_villani",
+  "festive_beaver",
+  "laughing_burnell",
   "officejet",
-  "quizzical_golick",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -299,7 +299,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.5
+   "age_h": 1.8
   },
   "passes": [
    {
@@ -556,15 +556,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261012T183317Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "log": "realisateur.20261012T190924Z.log",
+    "result": "success",
+    "turns": 34,
+    "cost_usd": 0.8665,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T18:33:17Z"
+    "at": "2026-10-12T19:09:24Z"
    },
    {
     "repo": "scheduler",
@@ -592,15 +592,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261012T170431Z.log",
-    "result": "success",
-    "turns": 120,
-    "cost_usd": 3.4074,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1350",
+    "log": "senechal.20261012T191546Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T17:04:31Z"
+    "at": "2026-10-12T19:15:46Z"
    },
    {
     "repo": "sequestria",
@@ -690,6 +690,7 @@
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
