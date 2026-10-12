@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T21:20:01Z",
+ "generated_at": "2026-10-12T21:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T22:20:01Z",
+ "valid_until": "2026-10-12T22:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -273,7 +273,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 3.8
+   "age_h": 4.1
   },
   "passes": [
    {
