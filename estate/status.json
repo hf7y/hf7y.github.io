@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-12T00:00:02Z",
+ "generated_at": "2026-10-12T00:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T01:00:02Z",
+ "valid_until": "2026-10-12T01:20:02Z",
  "containers": [
-  {
-   "name": "bold_hawking",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T23:39:49Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "compassionate_jemison",
    "image": "ghcr.io/hf7y-estate/agent:latest",
@@ -54,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "great_booth",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T23:54:12Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -90,14 +66,14 @@
    "ports_published": null
   },
   {
-   "name": "objective_jepsen",
+   "name": "nice_dirac",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-11T23:57:39Z",
+   "started_at": "2026-10-12T00:19:40Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -138,14 +114,14 @@
    "ports_published": null
   },
   {
-   "name": "upbeat_bardeen",
+   "name": "trusting_jennings",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-11T23:50:17Z",
+   "started_at": "2026-10-12T00:11:33Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -232,6 +208,18 @@
    "started_at": "2026-10-10T19:39:39Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zealous_brahmagupta",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T00:15:07Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -272,16 +260,15 @@
   }
  ],
  "unmanaged": [
-  "bold_hawking",
   "compassionate_jemison",
   "condescending_joliot",
-  "great_booth",
   "magical_shirley",
-  "objective_jepsen",
+  "nice_dirac",
   "officejet",
   "serene_elgamal",
-  "upbeat_bardeen",
-  "xenodochial_wilson"
+  "trusting_jennings",
+  "xenodochial_wilson",
+  "zealous_brahmagupta"
  ],
  "nightly": {
   "armed": true,
@@ -325,13 +312,13 @@
    "dispatched": {
     "front-door": {
      "queue": 12,
-     "at": "2026-10-11T23:57:35Z",
+     "at": "2026-10-12T00:11:29Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.2
+   "age_h": 1.5
   },
   "passes": [
    {
@@ -420,7 +407,7 @@
    },
    {
     "repo": "cinema-sanctuary",
-    "log": "cinema-sanctuary.20261011T235012Z.log",
+    "log": "cinema-sanctuary.20261012T001458Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -428,7 +415,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T23:50:12Z"
+    "at": "2026-10-12T00:14:58Z"
    },
    {
     "repo": "crt",
@@ -492,7 +479,7 @@
    },
    {
     "repo": "front-door",
-    "log": "front-door.20261011T235735Z.log",
+    "log": "front-door.20261012T001129Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -500,19 +487,19 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T23:57:35Z"
+    "at": "2026-10-12T00:11:29Z"
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261011T235410Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "log": "gardien.20261012T000352Z.log",
+    "result": "success",
+    "turns": 25,
+    "cost_usd": 0.5546,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-11T23:54:10Z"
+    "at": "2026-10-12T00:03:52Z"
    },
    {
     "repo": "groc-mangr",
@@ -553,11 +540,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261011T233938Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 84,
+    "cost_usd": 3.072,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1734",
     "commented": false,
     "note": null,
     "at": "2026-10-11T23:39:38Z"
@@ -588,15 +575,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261011T230511Z.log",
-    "result": "success",
-    "turns": 43,
-    "cost_usd": 1.2735,
-    "rc": 0,
+    "log": "senechal.20261012T001938Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T23:05:11Z"
+    "at": "2026-10-12T00:19:38Z"
    },
    {
     "repo": "sequestria",
@@ -687,9 +674,8 @@
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue"
+  "senechal: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
