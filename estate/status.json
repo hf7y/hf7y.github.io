@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-12T17:00:01Z",
+ "generated_at": "2026-10-12T17:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T18:00:01Z",
+ "valid_until": "2026-10-12T18:20:01Z",
  "containers": [
+  {
+   "name": "agitated_swirles",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T17:00:54Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -42,14 +54,26 @@
    "ports_published": false
   },
   {
-   "name": "objective_wing",
+   "name": "hungry_golick",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T16:59:21Z",
+   "started_at": "2026-10-12T17:19:12Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "musing_yonath",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T17:20:00Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -78,6 +102,18 @@
    "ports_published": true
   },
   {
+   "name": "sad_hamilton",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T17:04:50Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "serene_elgamal",
    "image": "sha256:6e1a93ea163db68d7caf6fecb48e3fca66143fa333b54117f0480470406772e3",
    "project": null,
@@ -87,18 +123,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "upbeat_khayyam",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T16:49:33Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -236,11 +260,13 @@
   }
  ],
  "unmanaged": [
+  "agitated_swirles",
   "condescending_joliot",
-  "objective_wing",
+  "hungry_golick",
+  "musing_yonath",
   "officejet",
+  "sad_hamilton",
   "serene_elgamal",
-  "upbeat_khayyam",
   "xenodochial_wilson",
   "youthful_lumiere"
  ],
@@ -280,8 +306,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261012T164911Z.log",
-   "started_at": "2026-10-12T16:49:11Z",
+   "log": "nightly.20261012T171248Z.log",
+   "started_at": "2026-10-12T17:12:48Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -289,13 +315,18 @@
    "dispatched": {
     "etalon": {
      "queue": 1,
-     "at": "2026-10-12T16:49:20Z",
+     "at": "2026-10-12T17:13:02Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-12T17:19:50Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -444,15 +475,15 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261012T164920Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "log": "etalon.20261012T171302Z.log",
+    "result": "success",
+    "turns": 62,
+    "cost_usd": 1.1243,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/188",
     "commented": false,
     "note": null,
-    "at": "2026-10-12T16:49:20Z"
+    "at": "2026-10-12T17:13:02Z"
    },
    {
     "repo": "front-door",
@@ -552,15 +583,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261012T164842Z.log",
-    "result": "success",
-    "turns": 29,
-    "cost_usd": 0.8593,
-    "rc": 0,
+    "log": "realisateur.20261012T171950Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T16:48:42Z"
+    "at": "2026-10-12T17:19:50Z"
    },
    {
     "repo": "scheduler",
@@ -588,7 +619,7 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261012T164247Z.log",
+    "log": "senechal.20261012T170431Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -596,7 +627,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T16:42:47Z"
+    "at": "2026-10-12T17:04:31Z"
    },
    {
     "repo": "sequestria",
@@ -684,7 +715,6 @@
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "apms-2173: last pass ended `error_max_turns`",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
-  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
