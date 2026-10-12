@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-11T23:40:01Z",
+ "generated_at": "2026-10-12T00:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T00:40:01Z",
+ "valid_until": "2026-10-12T01:00:02Z",
  "containers": [
-  {
-   "name": "beautiful_lamarr",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T23:38:34Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "bold_hawking",
    "image": "ghcr.io/hf7y-estate/agent:latest",
@@ -26,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-11T23:39:49Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "compassionate_jemison",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T23:57:28Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,6 +54,18 @@
    "ports_published": null
   },
   {
+   "name": "great_booth",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T23:54:12Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -66,62 +78,26 @@
    "ports_published": false
   },
   {
-   "name": "heuristic_dubinsky",
+   "name": "magical_shirley",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-11T23:34:26Z",
+   "started_at": "2026-10-11T23:58:10Z",
    "finished_at": null,
    "ports_published": null
   },
   {
-   "name": "intelligent_noyce",
+   "name": "objective_jepsen",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-11T23:36:19Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "musing_banzai",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T23:16:42Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "mystifying_bhabha",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T23:27:25Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "mystifying_moser",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-11T23:35:14Z",
+   "started_at": "2026-10-11T23:57:39Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -159,6 +135,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "upbeat_bardeen",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-11T23:50:17Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -284,16 +272,15 @@
   }
  ],
  "unmanaged": [
-  "beautiful_lamarr",
   "bold_hawking",
+  "compassionate_jemison",
   "condescending_joliot",
-  "heuristic_dubinsky",
-  "intelligent_noyce",
-  "musing_banzai",
-  "mystifying_bhabha",
-  "mystifying_moser",
+  "great_booth",
+  "magical_shirley",
+  "objective_jepsen",
   "officejet",
   "serene_elgamal",
+  "upbeat_bardeen",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -337,14 +324,14 @@
    "pull_failed": null,
    "dispatched": {
     "front-door": {
-     "queue": 13,
-     "at": "2026-10-11T23:27:21Z",
+     "queue": 12,
+     "at": "2026-10-11T23:57:35Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.8
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -433,7 +420,7 @@
    },
    {
     "repo": "cinema-sanctuary",
-    "log": "cinema-sanctuary.20261011T231639Z.log",
+    "log": "cinema-sanctuary.20261011T235012Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -441,7 +428,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T23:16:39Z"
+    "at": "2026-10-11T23:50:12Z"
    },
    {
     "repo": "crt",
@@ -505,7 +492,7 @@
    },
    {
     "repo": "front-door",
-    "log": "front-door.20261011T232721Z.log",
+    "log": "front-door.20261011T235735Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -513,11 +500,11 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T23:27:21Z"
+    "at": "2026-10-11T23:57:35Z"
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261011T233512Z.log",
+    "log": "gardien.20261011T235410Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -525,7 +512,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T23:35:12Z"
+    "at": "2026-10-11T23:54:10Z"
    },
    {
     "repo": "groc-mangr",
@@ -541,7 +528,7 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261011T233612Z.log",
+    "log": "musc-2300.20261011T235725Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -549,11 +536,11 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T23:36:12Z"
+    "at": "2026-10-11T23:57:25Z"
    },
    {
     "repo": "nine-speakers",
-    "log": "nine-speakers.20261011T233832Z.log",
+    "log": "nine-speakers.20261011T235808Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -561,7 +548,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T23:38:32Z"
+    "at": "2026-10-11T23:58:08Z"
    },
    {
     "repo": "realisateur",
