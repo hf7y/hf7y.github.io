@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T16:20:02Z",
+ "generated_at": "2026-10-12T16:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T17:20:02Z",
+ "valid_until": "2026-10-12T17:40:01Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -15,18 +15,6 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
-   "ports_published": null
-  },
-  {
-   "name": "confident_shtern",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T16:05:15Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -76,30 +64,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "optimistic_kalam",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T16:17:41Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "romantic_wozniak",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T16:16:41Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -249,11 +213,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "confident_shtern",
   "dreamy_solomon",
   "officejet",
-  "optimistic_kalam",
-  "romantic_wozniak",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -293,22 +254,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261012T161614Z.log",
-   "started_at": "2026-10-12T16:16:14Z",
-   "finished_at": null,
+   "log": "nightly.20261012T162242Z.log",
+   "started_at": "2026-10-12T16:22:42Z",
+   "finished_at": "2026-10-12T16:33:43Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "etalon": {
      "queue": 1,
-     "at": "2026-10-12T16:16:23Z",
-     "outcome": null
+     "at": "2026-10-12T16:22:51Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -457,15 +418,15 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261012T161729Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "log": "etalon.20261012T162251Z.log",
+    "result": "success",
+    "turns": 48,
+    "cost_usd": 1.1977,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/185",
     "commented": false,
     "note": null,
-    "at": "2026-10-12T16:17:29Z"
+    "at": "2026-10-12T16:22:51Z"
    },
    {
     "repo": "front-door",
@@ -691,13 +652,11 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "apms-2173: last pass ended `error_max_turns`",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
-  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
