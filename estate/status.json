@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-12T11:00:01Z",
+ "generated_at": "2026-10-12T11:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T12:00:01Z",
+ "valid_until": "2026-10-12T12:20:01Z",
  "containers": [
   {
-   "name": "compassionate_yonath",
+   "name": "clever_fermat",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T10:50:29Z",
+   "started_at": "2026-10-12T11:13:16Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -212,7 +212,7 @@
   }
  ],
  "unmanaged": [
-  "compassionate_yonath",
+  "clever_fermat",
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
@@ -275,7 +275,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 3.9
+   "age_h": 4.2
   },
   "passes": [
    {
@@ -328,7 +328,7 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261012T105026Z.log",
+    "log": "baudin.20261012T111313Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -336,7 +336,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T10:50:26Z"
+    "at": "2026-10-12T11:13:13Z"
    },
    {
     "repo": "bibliothecaire",
