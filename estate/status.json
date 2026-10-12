@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T15:00:02Z",
+ "generated_at": "2026-10-12T15:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T16:00:02Z",
+ "valid_until": "2026-10-12T16:20:02Z",
  "containers": [
   {
    "name": "condescending_joliot",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "friendly_pare",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T15:09:04Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -40,6 +52,30 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
+  },
+  {
+   "name": "laughing_brattain",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T15:08:09Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "loving_lewin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T15:09:18Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -201,6 +237,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "friendly_pare",
+  "laughing_brattain",
+  "loving_lewin",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -241,16 +280,51 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261012T070701Z.log",
-   "started_at": "2026-10-12T07:07:02Z",
-   "finished_at": "2026-10-12T07:07:43Z",
+   "log": "nightly.20261012T150702Z.log",
+   "started_at": "2026-10-12T15:07:02Z",
+   "finished_at": "2026-10-12T15:09:20Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "sequestria": {
+    "ecosim": {
+     "queue": 3,
+     "at": "2026-10-12T15:07:51Z",
+     "outcome": null
+    },
+    "chezz": {
+     "queue": 6,
+     "at": "2026-10-12T15:07:58Z",
+     "outcome": null
+    },
+    "gardien": {
      "queue": 4,
-     "at": "2026-10-12T07:07:37Z",
+     "at": "2026-10-12T15:08:07Z",
+     "outcome": null
+    },
+    "front-door": {
+     "queue": 12,
+     "at": "2026-10-12T15:08:16Z",
+     "outcome": null
+    },
+    "nine-speakers": {
+     "queue": 10,
+     "at": "2026-10-12T15:08:26Z",
+     "outcome": null
+    },
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-12T15:08:34Z",
+     "outcome": null
+    },
+    "vim-arcade": {
+     "queue": 6,
+     "at": "2026-10-12T15:08:53Z",
+     "outcome": null
+    },
+    "apms-2173": {
+     "queue": 21,
+     "at": "2026-10-12T15:09:04Z",
      "outcome": null
     }
    },
@@ -259,23 +333,24 @@
     "verbs",
     "vkv23",
     "space-canon",
-    "dog"
+    "dog",
+    "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 7.9
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "abc",
-    "log": "abc.20261012T010758Z.log",
+    "log": "abc.20261012T150842Z.log",
     "result": "success",
-    "turns": 6,
-    "cost_usd": 0.1477,
+    "turns": 38,
+    "cost_usd": 0.659,
     "rc": 0,
-    "pr": null,
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/abc/pull/23",
+    "commented": false,
     "note": null,
-    "at": "2026-10-12T01:07:58Z"
+    "at": "2026-10-12T15:08:42Z"
    },
    {
     "repo": "abletim",
@@ -303,15 +378,15 @@
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261012T024817Z.log",
-    "result": "success",
-    "turns": 30,
-    "cost_usd": 0.4895,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/apms-2173/pull/190",
-    "commented": true,
+    "log": "apms-2173.20261012T150916Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-12T02:48:17Z"
+    "at": "2026-10-12T15:09:16Z"
    },
    {
     "repo": "baudin",
@@ -339,15 +414,15 @@
    },
    {
     "repo": "chezz",
-    "log": "chezz.20261011T225354Z.log",
-    "result": "success",
-    "turns": 93,
-    "cost_usd": 2.7127,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/chezz/pull/197",
+    "log": "chezz.20261012T150806Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T22:53:54Z"
+    "at": "2026-10-12T15:08:06Z"
    },
    {
     "repo": "cinema-sanctuary",
@@ -399,15 +474,15 @@
    },
    {
     "repo": "ecosim",
-    "log": "ecosim.20261011T224300Z.log",
+    "log": "ecosim.20261012T150759Z.log",
     "result": "success",
-    "turns": 12,
-    "cost_usd": 0.2587,
+    "turns": 34,
+    "cost_usd": 0.7362,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T22:43:00Z"
+    "at": "2026-10-12T15:07:59Z"
    },
    {
     "repo": "etalon",
@@ -423,27 +498,27 @@
    },
    {
     "repo": "front-door",
-    "log": "front-door.20261012T002122Z.log",
+    "log": "front-door.20261012T150825Z.log",
     "result": "success",
-    "turns": 14,
-    "cost_usd": 0.3203,
+    "turns": 27,
+    "cost_usd": 0.4785,
     "rc": 0,
-    "pr": null,
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/front-door/pull/42",
+    "commented": false,
     "note": null,
-    "at": "2026-10-12T00:21:22Z"
+    "at": "2026-10-12T15:08:25Z"
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261012T000352Z.log",
+    "log": "gardien.20261012T150816Z.log",
     "result": "success",
-    "turns": 25,
-    "cost_usd": 0.5546,
+    "turns": 30,
+    "cost_usd": 0.5062,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-12T00:03:52Z"
+    "at": "2026-10-12T15:08:16Z"
    },
    {
     "repo": "groc-mangr",
@@ -507,15 +582,15 @@
    },
    {
     "repo": "nine-speakers",
-    "log": "nine-speakers.20261012T004007Z.log",
+    "log": "nine-speakers.20261012T150838Z.log",
     "result": "success",
-    "turns": 44,
-    "cost_usd": 1.3636,
+    "turns": 30,
+    "cost_usd": 0.4796,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-12T00:40:07Z"
+    "at": "2026-10-12T15:08:38Z"
    },
    {
     "repo": "realisateur",
@@ -603,15 +678,15 @@
    },
    {
     "repo": "vim-arcade",
-    "log": "vim-arcade.20261012T022221Z.log",
-    "result": "success",
-    "turns": 36,
-    "cost_usd": 0.651,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/vim-arcade/pull/351",
-    "commented": true,
+    "log": "vim-arcade.20261012T150901Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-12T02:22:21Z"
+    "at": "2026-10-12T15:09:01Z"
    },
    {
     "repo": "wtul",
@@ -648,12 +723,18 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
+  "chezz: last pass landed nothing -- no PR and no comment on its issue",
+  "ecosim: last pass landed nothing -- no PR and no comment on its issue",
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
+  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "sequestria: last pass landed nothing -- no PR and no comment on its issue"
+  "sequestria: last pass landed nothing -- no PR and no comment on its issue",
+  "vim-arcade: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
