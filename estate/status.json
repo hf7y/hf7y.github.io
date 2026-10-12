@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T07:00:01Z",
+ "generated_at": "2026-10-12T07:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T08:00:01Z",
+ "valid_until": "2026-10-12T08:20:01Z",
  "containers": [
   {
    "name": "competent_lehmann",
@@ -30,6 +30,18 @@
    "ports_published": null
   },
   {
+   "name": "crazy_hoover",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T07:00:33Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -38,6 +50,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "ecstatic_visvesvaraya",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T07:01:59Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -86,30 +110,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T04:49:26Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "musing_merkle",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T06:23:13Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "objective_sinoussi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T06:43:43Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -286,11 +286,11 @@
  "unmanaged": [
   "competent_lehmann",
   "condescending_joliot",
+  "crazy_hoover",
+  "ecstatic_visvesvaraya",
   "gallant_khorana",
   "goofy_bassi",
   "inspiring_swartz",
-  "musing_merkle",
-  "objective_sinoussi",
   "officejet",
   "serene_elgamal",
   "vigilant_merkle",
@@ -332,16 +332,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261012T060702Z.log",
-   "started_at": "2026-10-12T06:07:02Z",
-   "finished_at": "2026-10-12T06:07:49Z",
+   "log": "nightly.20261012T070701Z.log",
+   "started_at": "2026-10-12T07:07:02Z",
+   "finished_at": "2026-10-12T07:07:43Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "dcp-gate-site": {
-     "queue": 2,
-     "at": "2026-10-12T06:07:40Z",
+    "sequestria": {
+     "queue": 4,
+     "at": "2026-10-12T07:07:37Z",
      "outcome": null
     }
    },
@@ -353,7 +353,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -418,7 +418,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261012T064338Z.log",
+    "log": "bibliothecaire.20261012T070029Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -426,7 +426,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T06:43:38Z"
+    "at": "2026-10-12T07:00:29Z"
    },
    {
     "repo": "chezz",
@@ -610,7 +610,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261012T062307Z.log",
+    "log": "realisateur.20261012T070153Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -618,7 +618,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T06:23:07Z"
+    "at": "2026-10-12T07:01:53Z"
    },
    {
     "repo": "scheduler",
@@ -652,21 +652,21 @@
     "cost_usd": null,
     "rc": null,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-12T06:52:43Z"
    },
    {
     "repo": "sequestria",
-    "log": "sequestria.20261011T223708Z.log",
+    "log": "sequestria.20261012T070744Z.log",
     "result": "success",
-    "turns": 8,
-    "cost_usd": 0.2394,
+    "turns": 35,
+    "cost_usd": 0.5511,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-11T22:37:08Z"
+    "at": "2026-10-12T07:07:44Z"
    },
    {
     "repo": "space-canon",
@@ -748,6 +748,6 @@
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue"
+  "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
