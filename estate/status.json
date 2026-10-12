@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-12T11:20:01Z",
+ "generated_at": "2026-10-12T11:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T12:20:01Z",
+ "valid_until": "2026-10-12T12:40:01Z",
  "containers": [
-  {
-   "name": "clever_fermat",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T11:13:16Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
@@ -100,6 +88,18 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "wizardly_cartwright",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T11:37:11Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -212,10 +212,10 @@
   }
  ],
  "unmanaged": [
-  "clever_fermat",
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
+  "wizardly_cartwright",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -275,7 +275,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 4.2
+   "age_h": 4.5
   },
   "passes": [
    {
@@ -328,7 +328,7 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261012T111313Z.log",
+    "log": "baudin.20261012T113708Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -336,7 +336,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T11:13:13Z"
+    "at": "2026-10-12T11:37:08Z"
    },
    {
     "repo": "bibliothecaire",
