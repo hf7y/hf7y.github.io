@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T18:40:02Z",
+ "generated_at": "2026-10-12T19:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T19:40:02Z",
+ "valid_until": "2026-10-12T20:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "blissful_fermat",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T18:39:41Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "dreamy_haibt",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T18:37:31Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -76,18 +52,6 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
-  },
-  {
-   "name": "hopeful_joliot",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T18:37:31Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "hungry_villani",
@@ -150,18 +114,6 @@
    "ports_published": null
   },
   {
-   "name": "weave-class-gen",
-   "image": "python:3.12-slim",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T18:39:56Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -172,18 +124,6 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "wizardly_buck",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T17:41:53Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -301,16 +241,11 @@
   }
  ],
  "unmanaged": [
-  "blissful_fermat",
   "condescending_joliot",
-  "dreamy_haibt",
-  "hopeful_joliot",
   "hungry_villani",
   "officejet",
   "quizzical_golick",
   "serene_elgamal",
-  "weave-class-gen",
-  "wizardly_buck",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -364,7 +299,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.1
+   "age_h": 1.5
   },
   "passes": [
    {
