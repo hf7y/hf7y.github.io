@@ -1,31 +1,19 @@
 {
- "generated_at": "2026-10-12T03:40:01Z",
+ "generated_at": "2026-10-12T04:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T04:40:01Z",
+ "valid_until": "2026-10-12T05:00:02Z",
  "containers": [
   {
-   "name": "adoring_hypatia",
+   "name": "adoring_cartwright",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T03:09:09Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "awesome_aryabhata",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T03:32:09Z",
+   "started_at": "2026-10-12T03:52:36Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -97,31 +85,79 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T03:08:46Z",
+   "started_at": "2026-10-12T03:59:56Z",
    "finished_at": null,
    "ports_published": null
   },
   {
-   "name": "frosty_sinoussi",
+   "name": "elastic_gould",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T03:14:07Z",
+   "started_at": "2026-10-12T03:58:57Z",
    "finished_at": null,
    "ports_published": null
   },
   {
-   "name": "gifted_kilby",
+   "name": "elastic_noyce",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T03:16:39Z",
+   "started_at": "2026-10-12T03:47:49Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "festive_blackburn",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T03:51:16Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "frosty_black",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T03:50:24Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "gallant_cray",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T03:58:54Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "gracious_noyce",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T03:56:16Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -138,26 +174,50 @@
    "ports_published": false
   },
   {
-   "name": "happy_joliot",
+   "name": "jolly_curran",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T03:20:51Z",
+   "started_at": "2026-10-12T03:45:12Z",
    "finished_at": null,
    "ports_published": null
   },
   {
-   "name": "nice_tharp",
+   "name": "jolly_raman",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T03:28:06Z",
+   "started_at": "2026-10-12T03:51:14Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "keen_burnell",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T03:45:30Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "naughty_snyder",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-12T03:51:22Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -170,18 +230,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T03:21:35Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "nifty_roentgen",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T03:33:28Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -222,14 +270,14 @@
    "ports_published": null
   },
   {
-   "name": "sharp_bartik",
+   "name": "upbeat_mclean",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T03:08:53Z",
+   "started_at": "2026-10-12T03:42:52Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -316,18 +364,6 @@
    "started_at": "2026-10-10T19:39:39Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zen_keller",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-12T03:16:22Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -368,24 +404,27 @@
   }
  ],
  "unmanaged": [
-  "adoring_hypatia",
-  "awesome_aryabhata",
+  "adoring_cartwright",
   "blissful_proskuriakova",
   "brave_hertz",
   "condescending_joliot",
   "confident_curie",
   "ecstatic_edison",
-  "frosty_sinoussi",
-  "gifted_kilby",
-  "happy_joliot",
-  "nice_tharp",
+  "elastic_gould",
+  "elastic_noyce",
+  "festive_blackburn",
+  "frosty_black",
+  "gallant_cray",
+  "gracious_noyce",
+  "jolly_curran",
+  "jolly_raman",
+  "keen_burnell",
+  "naughty_snyder",
   "nifty_mendel",
-  "nifty_roentgen",
   "officejet",
   "serene_elgamal",
-  "sharp_bartik",
-  "xenodochial_wilson",
-  "zen_keller"
+  "upbeat_mclean",
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -422,27 +461,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261012T033128Z.log",
-   "started_at": "2026-10-12T03:31:28Z",
+   "log": "nightly.20261012T035841Z.log",
+   "started_at": "2026-10-12T03:58:41Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "etalon": {
+    "media-arts-collective/inventory-app": {
      "queue": 1,
-     "at": "2026-10-12T03:31:50Z",
-     "outcome": null
-    },
-    "realisateur": {
-     "queue": 1,
-     "at": "2026-10-12T03:31:56Z",
+     "at": "2026-10-12T03:58:50Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -459,15 +493,15 @@
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261011T224553Z.log",
-    "result": "success",
-    "turns": 53,
-    "cost_usd": 1.3991,
-    "rc": 0,
+    "log": "abletim.20261012T035612Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-11T22:45:53Z"
+    "at": "2026-10-12T03:56:12Z"
    },
    {
     "repo": "american-cycle",
@@ -495,7 +529,7 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261012T032803Z.log",
+    "log": "baudin.20261012T035114Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -503,7 +537,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T03:28:03Z"
+    "at": "2026-10-12T03:51:14Z"
    },
    {
     "repo": "bibliothecaire",
@@ -531,7 +565,7 @@
    },
    {
     "repo": "cinema-sanctuary",
-    "log": "cinema-sanctuary.20261012T031614Z.log",
+    "log": "cinema-sanctuary.20261012T035952Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -539,19 +573,19 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T03:16:14Z"
+    "at": "2026-10-12T03:59:52Z"
    },
    {
     "repo": "crt",
-    "log": "crt.20261012T031404Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "log": "crt.20261012T035110Z.log",
+    "result": "success",
+    "turns": 24,
+    "cost_usd": 0.8782,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T03:14:04Z"
+    "at": "2026-10-12T03:51:10Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -592,11 +626,11 @@
    {
     "repo": "etalon",
     "log": "etalon.20261012T033150Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 50,
+    "cost_usd": 1.0665,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/160",
     "commented": false,
     "note": null,
     "at": "2026-10-12T03:31:50Z"
@@ -627,19 +661,19 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261012T032046Z.log",
+    "log": "groc-mangr.20261012T034247Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
     "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-12T03:20:46Z"
+    "at": "2026-10-12T03:42:47Z"
    },
    {
     "repo": "media-arts-collective.inventory-app",
-    "log": "media-arts-collective.inventory-app.20261012T030834Z.log",
+    "log": "media-arts-collective.inventory-app.20261012T035850Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -647,11 +681,11 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T03:08:34Z"
+    "at": "2026-10-12T03:58:50Z"
    },
    {
     "repo": "media-arts-collective.wavebucks",
-    "log": "media-arts-collective.wavebucks.20261012T030828Z.log",
+    "log": "media-arts-collective.wavebucks.20261012T035847Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -659,11 +693,11 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T03:08:28Z"
+    "at": "2026-10-12T03:58:47Z"
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261012T033331Z.log",
+    "log": "musc-2300.20261012T035111Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -671,7 +705,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T03:33:31Z"
+    "at": "2026-10-12T03:51:11Z"
    },
    {
     "repo": "nine-speakers",
@@ -687,15 +721,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261012T033156Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "log": "realisateur.20261012T035039Z.log",
+    "result": "success",
+    "turns": 23,
+    "cost_usd": 0.6625,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T03:31:56Z"
+    "at": "2026-10-12T03:50:39Z"
    },
    {
     "repo": "scheduler",
@@ -711,7 +745,7 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261012T033321Z.log",
+    "log": "secretaire.20261012T035230Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -719,19 +753,19 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T03:33:21Z"
+    "at": "2026-10-12T03:52:30Z"
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261012T031115Z.log",
-    "result": "success",
-    "turns": 37,
-    "cost_usd": 1.1415,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1298",
-    "commented": true,
+    "log": "senechal.20261012T035113Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-12T03:11:15Z"
+    "at": "2026-10-12T03:51:13Z"
    },
    {
     "repo": "sequestria",
@@ -822,11 +856,12 @@
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
-  "etalon: last pass landed nothing -- no PR and no comment on its issue",
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue"
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
