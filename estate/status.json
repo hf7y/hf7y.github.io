@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-12T19:40:01Z",
+ "generated_at": "2026-10-12T20:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-12T20:40:01Z",
+ "valid_until": "2026-10-12T21:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -18,14 +18,14 @@
    "ports_published": null
   },
   {
-   "name": "clever_vaughan",
+   "name": "boring_aryabhata",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-12T19:23:02Z",
+   "started_at": "2026-10-12T19:53:07Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -229,7 +229,7 @@
   }
  ],
  "unmanaged": [
-  "clever_vaughan",
+  "boring_aryabhata",
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
@@ -286,7 +286,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.1
+   "age_h": 2.5
   },
   "passes": [
    {
@@ -544,11 +544,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261012T192241Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 58,
+    "cost_usd": 1.7382,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1863",
     "commented": false,
     "note": null,
     "at": "2026-10-12T19:22:41Z"
@@ -579,15 +579,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261012T191546Z.log",
-    "result": "success",
-    "turns": 61,
-    "cost_usd": 2.402,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1352",
+    "log": "senechal.20261012T195249Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-12T19:15:46Z"
+    "at": "2026-10-12T19:52:49Z"
    },
    {
     "repo": "sequestria",
@@ -675,8 +675,8 @@
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
