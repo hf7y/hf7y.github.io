@@ -2,21 +2,21 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-12T04:50:11Z",
-  "valid_until": "2026-10-12T06:20:11Z",
+  "generated": "2026-10-12T05:50:21Z",
+  "valid_until": "2026-10-12T07:20:21Z",
   "cadence_minutes": 60,
   "verdict": "FILING-STUCK",
-  "why": "3 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 6.2h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
+  "why": "3 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 7.2h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 12
+    "ms": 5
   },
   "containers": [
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 33 hours (healthy)"
+      "status": "Up 34 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
@@ -38,23 +38,32 @@
     "totals": {
       "failed": 14,
       "answered": 10,
-      "stale": 285
+      "stale": 285,
+      "pending": 1
     },
     "window": {
-      "stale": 2
+      "stale": 1,
+      "pending": 1
     },
     "window_sent": 2,
-    "stale_slot_hours": 2.0,
+    "stale_slot_hours": 1.0,
     "queued": 0,
-    "slots": [],
+    "slots": [
+      {
+        "id": "9745bf66",
+        "from": "monkey-watch-win",
+        "age_hours": 0.7,
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
+      }
+    ],
     "last_answered_at": "2026-10-10T05:20:16Z",
     "inbox": {
       "count": 44,
       "window_count": 7,
-      "oldest_age_hours": 1013.8,
+      "oldest_age_hours": 1014.8,
       "unfiled": {
         "count": 3,
-        "oldest_age_hours": 6.2
+        "oldest_age_hours": 7.2
       }
     },
     "senders": [
@@ -62,11 +71,19 @@
         "from": "monkey-watch-win",
         "sent": 2,
         "answered": 0,
-        "stale": 2,
+        "stale": 1,
         "failed": 0
       }
     ],
     "recent": [
+      {
+        "id": "9745bf66",
+        "from": "monkey-watch-win",
+        "status": "pending",
+        "created_at": "2026-10-12T05:06:51Z",
+        "answered_at": null,
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
+      },
       {
         "id": "93bef019",
         "from": "monkey-watch-win",
@@ -154,14 +171,6 @@
         "created_at": "2026-10-08T22:34:29Z",
         "answered_at": null,
         "question": "Card in Pi, ethernet + HDMI, power on at home. First boot ~8 min. Is the loop on screen?"
-      },
-      {
-        "id": "b59b704c",
-        "from": "apms",
-        "status": "stale",
-        "created_at": "2026-10-08T22:24:04Z",
-        "answered_at": null,
-        "question": "he liked looking at anne = heat look at + lie king an"
       }
     ]
   }
