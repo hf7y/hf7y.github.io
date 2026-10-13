@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T02:40:01Z",
+ "generated_at": "2026-10-13T03:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T03:40:01Z",
+ "valid_until": "2026-10-13T04:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -50,18 +50,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-13T02:08:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "funny_borg",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T02:08:24Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -255,7 +243,6 @@
  "unmanaged": [
   "condescending_joliot",
   "elegant_fermi",
-  "funny_borg",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson",
@@ -354,7 +341,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -408,11 +395,11 @@
    {
     "repo": "baudin",
     "log": "baudin.20261013T020820Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 74,
+    "cost_usd": 2.8959,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/baudin/pull/235",
     "commented": false,
     "note": null,
     "at": "2026-10-13T02:08:20Z"
@@ -742,7 +729,6 @@
   "abc: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
-  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
