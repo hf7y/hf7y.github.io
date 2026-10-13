@@ -28,7 +28,7 @@ button:focus-visible{outline:2px solid var(--b);outline-offset:2px}
 [hidden]{display:none!important}
 @media (prefers-reduced-motion:reduce){#card{transition:none!important}}
 </style></head><body>
-<div id="top"><span id="n"></span><button id="out" type="button">results</button></div>
+<div id="top"><span id="n"></span><span id="net"></span><button id="out" type="button">results</button></div>
 <div id="stage">
   <div id="card"><span id="stamp"></span>
     <div id="w"></div>
@@ -48,7 +48,13 @@ const DECK=[["and the following","and owing","the fall"],["not be repressed","no
 let st={v:{},o:[]};
 try{st=JSON.parse(localStorage.getItem(KEY))||st}catch(e){}
 const $=id=>document.getElementById(id), card=$("card"), stamp=$("stamp");
-const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const PUSH="https://ntfy.sh/apms-weave-5a605d88334691a5";
+let pt=0,last=0,dirty=false;
+function send(){clearTimeout(pt);pt=0;if(!dirty)return;dirty=false;last=Date.now();
+  fetch(PUSH,{method:"POST",body:text(),keepalive:true}).then(r=>{if(!dirty)$("net").textContent=r.ok?"sent":"not sent"},()=>{dirty=true;$("net").textContent="not sent"})}
+function push(){dirty=true;$("net").textContent="\u2026";if(!pt)pt=setTimeout(send,Math.max(300,last+6000-Date.now()))}
+addEventListener("visibilitychange",()=>{if(document.hidden)send()});addEventListener("pagehide",send);
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}push()};
 const cur=()=>{for(let i=0;i<DECK.length;i++)if(!(i in st.v))return i;return -1};
 function text(){const h=[],n=[];st.o.forEach(i=>(st.v[i]=="h"?h:n).push(i));return "weave hot-or-not v1\nhot: "+h.join(" ")+"\nnot: "+n.join(" ")}
 function show(){
@@ -60,7 +66,7 @@ function show(){
 }
 function results(){
   const h=st.o.filter(i=>st.v[i]=="h").length;
-  $("sum").textContent=h+" hot, "+(st.o.length-h)+" not, "+(DECK.length-st.o.length)+" left. Copy and paste this to Claude.";
+  $("sum").textContent=h+" hot, "+(st.o.length-h)+" not, "+(DECK.length-st.o.length)+" left. Each swipe is sent on its own. If the top bar says not sent, copy this and paste it to Claude.";
   $("txt").value=text();card.hidden=true;$("bar").hidden=true;$("end").hidden=false;
   $("back").hidden=cur()<0;
 }
