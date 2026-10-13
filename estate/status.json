@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T02:20:01Z",
+ "generated_at": "2026-10-13T02:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T03:20:01Z",
+ "valid_until": "2026-10-13T03:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,30 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "affectionate_chaplygin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T02:08:39Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "condescending_blackwell",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T02:09:55Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -112,18 +88,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "optimistic_hawking",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T02:08:35Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -244,18 +208,6 @@
    "started_at": "2026-10-10T19:39:39Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zealous_rosalind",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T02:10:01Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -301,17 +253,13 @@
   }
  ],
  "unmanaged": [
-  "affectionate_chaplygin",
-  "condescending_blackwell",
   "condescending_joliot",
   "elegant_fermi",
   "funny_borg",
   "officejet",
-  "optimistic_hawking",
   "serene_elgamal",
   "xenodochial_wilson",
-  "youthful_mccarthy",
-  "zealous_rosalind"
+  "youthful_mccarthy"
  ],
  "nightly": {
   "armed": true,
@@ -406,7 +354,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -652,10 +600,10 @@
    {
     "repo": "nine-speakers",
     "log": "nine-speakers.20261013T020830Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 34,
+    "cost_usd": 1.0361,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -664,11 +612,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261013T020940Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 24,
+    "cost_usd": 0.839,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1864",
     "commented": false,
     "note": null,
     "at": "2026-10-13T02:09:40Z"
@@ -700,11 +648,11 @@
    {
     "repo": "senechal",
     "log": "senechal.20261013T020937Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 89,
+    "cost_usd": 3.018,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1354",
     "commented": false,
     "note": null,
     "at": "2026-10-13T02:09:37Z"
@@ -748,11 +696,11 @@
    {
     "repo": "vim-arcade",
     "log": "vim-arcade.20261013T020835Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 84,
+    "cost_usd": 2.2114,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/vim-arcade/pull/355",
     "commented": false,
     "note": null,
     "at": "2026-10-13T02:08:35Z"
@@ -800,9 +748,6 @@
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "vim-arcade: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
