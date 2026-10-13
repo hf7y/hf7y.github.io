@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T22:40:01Z",
+ "generated_at": "2026-10-13T23:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T23:40:01Z",
+ "valid_until": "2026-10-14T00:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -54,18 +54,6 @@
    "ports_published": null
   },
   {
-   "name": "gifted_heisenberg",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T21:08:40Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -86,18 +74,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-13T21:18:11Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "nostalgic_cori",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T21:09:15Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -279,9 +255,7 @@
  "unmanaged": [
   "blissful_leavitt",
   "condescending_joliot",
-  "gifted_heisenberg",
   "heuristic_dubinsky",
-  "nostalgic_cori",
   "officejet",
   "serene_elgamal",
   "wizardly_turing",
@@ -346,7 +320,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -376,10 +350,10 @@
    {
     "repo": "american-cycle",
     "log": "american-cycle.20261013T210836Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 31,
+    "cost_usd": 0.8182,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -604,10 +578,10 @@
    {
     "repo": "nine-speakers",
     "log": "nine-speakers.20261013T210902Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 72,
+    "cost_usd": 2.1255,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
