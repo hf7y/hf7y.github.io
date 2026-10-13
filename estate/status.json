@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T13:00:02Z",
+ "generated_at": "2026-10-13T13:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T14:00:02Z",
+ "valid_until": "2026-10-13T14:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "clever_gould",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T13:08:47Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,6 +66,30 @@
    "ports_published": false
   },
   {
+   "name": "keen_chaplygin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T13:09:19Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "mystifying_meninsky",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T13:09:04Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -64,6 +100,18 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "quizzical_bartik",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T13:08:38Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -87,6 +135,42 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "strange_proskuriakova",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T13:09:37Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "tender_raman",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T13:08:50Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "vigilant_knuth",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T13:09:45Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -217,9 +301,16 @@
   }
  ],
  "unmanaged": [
+  "clever_gould",
   "condescending_joliot",
+  "keen_chaplygin",
+  "mystifying_meninsky",
   "officejet",
+  "quizzical_bartik",
   "serene_elgamal",
+  "strange_proskuriakova",
+  "tender_raman",
+  "vigilant_knuth",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -258,51 +349,51 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261013T120702Z.log",
-   "started_at": "2026-10-13T12:07:02Z",
-   "finished_at": "2026-10-13T12:09:21Z",
+   "log": "nightly.20261013T130703Z.log",
+   "started_at": "2026-10-13T13:07:03Z",
+   "finished_at": "2026-10-13T13:09:56Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "front-door": {
-     "queue": 12,
-     "at": "2026-10-13T12:07:54Z",
+    "abletim": {
+     "queue": 19,
+     "at": "2026-10-13T13:08:16Z",
      "outcome": null
     },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-13T12:08:02Z",
+    "bibliothecaire": {
+     "queue": 11,
+     "at": "2026-10-13T13:08:26Z",
      "outcome": null
     },
-    "groc-mangr": {
-     "queue": 23,
-     "at": "2026-10-13T12:08:14Z",
+    "apms-2173": {
+     "queue": 11,
+     "at": "2026-10-13T13:08:36Z",
      "outcome": null
     },
-    "etalon": {
-     "queue": 39,
-     "at": "2026-10-13T12:08:24Z",
-     "outcome": null
-    },
-    "chezz": {
+    "american-cycle": {
      "queue": 5,
-     "at": "2026-10-13T12:08:32Z",
+     "at": "2026-10-13T13:08:48Z",
      "outcome": null
     },
-    "gardien": {
-     "queue": 4,
-     "at": "2026-10-13T12:08:40Z",
+    "baudin": {
+     "queue": 20,
+     "at": "2026-10-13T13:09:01Z",
      "outcome": null
     },
-    "scheduler": {
-     "queue": 9,
-     "at": "2026-10-13T12:08:51Z",
+    "nine-speakers": {
+     "queue": 13,
+     "at": "2026-10-13T13:09:15Z",
      "outcome": null
     },
-    "musc-2300": {
-     "queue": 53,
-     "at": "2026-10-13T12:09:06Z",
+    "vim-arcade": {
+     "queue": 3,
+     "at": "2026-10-13T13:09:24Z",
+     "outcome": null
+    },
+    "wtul": {
+     "queue": 18,
+     "at": "2026-10-13T13:09:40Z",
      "outcome": null
     }
    },
@@ -315,7 +406,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -332,63 +423,63 @@
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261013T090901Z.log",
-    "result": "success",
-    "turns": 94,
-    "cost_usd": 3.2683,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/abletim/pull/122",
-    "commented": true,
+    "log": "abletim.20261013T130832Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-13T09:09:01Z"
+    "at": "2026-10-13T13:08:32Z"
    },
    {
     "repo": "american-cycle",
-    "log": "american-cycle.20261013T090934Z.log",
-    "result": "success",
-    "turns": 112,
-    "cost_usd": 3.6854,
-    "rc": 0,
+    "log": "american-cycle.20261013T130900Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T09:09:34Z"
+    "at": "2026-10-13T13:09:00Z"
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261013T090917Z.log",
-    "result": "success",
-    "turns": 29,
-    "cost_usd": 0.8136,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/apms-2173/pull/200",
+    "log": "apms-2173.20261013T130846Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T09:09:17Z"
+    "at": "2026-10-13T13:08:46Z"
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261013T100807Z.log",
-    "result": "success",
-    "turns": 37,
-    "cost_usd": 1.0855,
-    "rc": 0,
-    "pr": null,
-    "commented": true,
-    "note": null,
-    "at": "2026-10-13T10:08:07Z"
-   },
-   {
-    "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261013T090908Z.log",
-    "result": "success",
-    "turns": 35,
-    "cost_usd": 1.1681,
-    "rc": 0,
+    "log": "baudin.20261013T130913Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T09:09:08Z"
+    "at": "2026-10-13T13:09:13Z"
+   },
+   {
+    "repo": "bibliothecaire",
+    "log": "bibliothecaire.20261013T130840Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-13T13:08:40Z"
    },
    {
     "repo": "chezz",
@@ -560,15 +651,15 @@
    },
    {
     "repo": "nine-speakers",
-    "log": "nine-speakers.20261013T100819Z.log",
-    "result": "success",
-    "turns": 66,
-    "cost_usd": 1.8703,
-    "rc": 0,
+    "log": "nine-speakers.20261013T130929Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-13T10:08:19Z"
+    "at": "2026-10-13T13:09:29Z"
    },
    {
     "repo": "realisateur",
@@ -656,19 +747,19 @@
    },
    {
     "repo": "vim-arcade",
-    "log": "vim-arcade.20261013T100823Z.log",
-    "result": "success",
-    "turns": 95,
-    "cost_usd": 2.5273,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/vim-arcade/pull/357",
+    "log": "vim-arcade.20261013T130934Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T10:08:23Z"
+    "at": "2026-10-13T13:09:34Z"
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261013T100845Z.log",
+    "log": "wtul.20261013T130956Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -676,7 +767,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T10:08:45Z"
+    "at": "2026-10-13T13:09:56Z"
    }
   ],
   "dispatch_source": {
@@ -701,7 +792,10 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abc: last pass landed nothing -- no PR and no comment on its issue",
+  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
+  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
+  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
@@ -709,7 +803,9 @@
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
+  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
+  "vim-arcade: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
