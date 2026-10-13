@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T19:40:01Z",
+ "generated_at": "2026-10-13T20:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T20:40:01Z",
+ "valid_until": "2026-10-13T21:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -64,18 +64,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "pensive_pare",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T19:08:47Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -231,7 +219,6 @@
  "unmanaged": [
   "condescending_joliot",
   "officejet",
-  "pensive_pare",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -328,7 +315,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -622,10 +609,10 @@
    {
     "repo": "senechal",
     "log": "senechal.20261013T190827Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 97,
+    "cost_usd": 4.0768,
+    "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
