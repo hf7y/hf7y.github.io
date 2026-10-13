@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T23:20:02Z",
+ "generated_at": "2026-10-13T23:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T00:20:02Z",
+ "valid_until": "2026-10-14T00:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "agitated_hamilton",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T23:39:48Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,30 +66,6 @@
    "ports_published": null
   },
   {
-   "name": "distracted_elion",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T23:01:51Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "friendly_euclid",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T23:15:37Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -90,38 +78,38 @@
    "ports_published": false
   },
   {
-   "name": "heuristic_lichterman",
+   "name": "hungry_shannon",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-13T23:08:46Z",
+   "started_at": "2026-10-13T23:32:22Z",
    "finished_at": null,
    "ports_published": null
   },
   {
-   "name": "jolly_bhaskara",
+   "name": "hungry_snyder",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-13T23:09:57Z",
+   "started_at": "2026-10-13T23:34:30Z",
    "finished_at": null,
    "ports_published": null
   },
   {
-   "name": "keen_panini",
+   "name": "intelligent_feistel",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-13T23:09:48Z",
+   "started_at": "2026-10-13T23:32:21Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -184,18 +172,6 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "wizardly_turing",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T21:09:12Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -313,17 +289,15 @@
   }
  ],
  "unmanaged": [
+  "agitated_hamilton",
   "blissful_leavitt",
   "condescending_joliot",
-  "distracted_elion",
-  "friendly_euclid",
-  "heuristic_lichterman",
-  "jolly_bhaskara",
-  "keen_panini",
+  "hungry_shannon",
+  "hungry_snyder",
+  "intelligent_feistel",
   "officejet",
   "serene_elgamal",
   "unruffled_lewin",
-  "wizardly_turing",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -365,22 +339,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261013T230942Z.log",
-   "started_at": "2026-10-13T23:09:42Z",
+   "log": "nightly.20261013T233203Z.log",
+   "started_at": "2026-10-13T23:32:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "crt": {
+    "realisateur": {
      "queue": 1,
-     "at": "2026-10-13T23:09:54Z",
+     "at": "2026-10-13T23:32:37Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -590,10 +564,10 @@
    {
     "repo": "media-arts-collective.grants",
     "log": "media-arts-collective.grants.20261013T230952Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 18,
+    "cost_usd": 0.4707,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -602,11 +576,11 @@
    {
     "repo": "media-arts-collective.inventory-app",
     "log": "media-arts-collective.inventory-app.20261013T230942Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 30,
+    "cost_usd": 0.6911,
+    "rc": 0,
+    "pr": "https://github.com/media-arts-collective/inventory-app/pull/58",
     "commented": false,
     "note": null,
     "at": "2026-10-13T23:09:42Z"
@@ -626,18 +600,18 @@
    {
     "repo": "media-arts-collective.office",
     "log": "media-arts-collective.office.20261013T230842Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 26,
+    "cost_usd": 0.3981,
+    "rc": 0,
+    "pr": "https://github.com/media-arts-collective/office/pull/11",
     "commented": false,
     "note": null,
     "at": "2026-10-13T23:08:42Z"
    },
    {
     "repo": "media-arts-collective.wavebucks",
-    "log": "media-arts-collective.wavebucks.20261013T231530Z.log",
+    "log": "media-arts-collective.wavebucks.20261013T233215Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -645,7 +619,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T23:15:30Z"
+    "at": "2026-10-13T23:32:15Z"
    },
    {
     "repo": "musc-2300",
@@ -673,15 +647,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261013T191030Z.log",
+    "log": "realisateur.20261013T233237Z.log",
     "result": "success",
-    "turns": 51,
-    "cost_usd": 1.6367,
+    "turns": 21,
+    "cost_usd": 0.5779,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1870",
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1873",
     "commented": false,
     "note": null,
-    "at": "2026-10-13T19:10:30Z"
+    "at": "2026-10-13T23:32:37Z"
    },
    {
     "repo": "scheduler",
@@ -697,15 +671,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261013T203521Z.log",
-    "result": "success",
-    "turns": 21,
-    "cost_usd": 0.6089,
-    "rc": 0,
+    "log": "secretaire.20261013T233212Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-13T20:35:21Z"
+    "at": "2026-10-13T23:32:12Z"
    },
    {
     "repo": "senechal",
@@ -758,10 +732,10 @@
    {
     "repo": "vim-arcade",
     "log": "vim-arcade.20261013T210908Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 78,
+    "cost_usd": 2.1826,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -809,12 +783,11 @@
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "vim-arcade: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
