@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T00:20:01Z",
+ "generated_at": "2026-10-13T00:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T01:20:01Z",
+ "valid_until": "2026-10-13T01:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,30 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "distracted_wilson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T00:08:17Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "festive_matsumoto",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T00:08:43Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -88,18 +64,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "relaxed_rubin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T00:08:16Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -254,10 +218,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "distracted_wilson",
-  "festive_matsumoto",
   "officejet",
-  "relaxed_rubin",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -354,7 +315,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -444,11 +405,11 @@
    {
     "repo": "cinema-sanctuary",
     "log": "cinema-sanctuary.20261013T000812Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 58,
+    "cost_usd": 1.5703,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/127",
     "commented": false,
     "note": null,
     "at": "2026-10-13T00:08:12Z"
@@ -456,11 +417,11 @@
    {
     "repo": "crt",
     "log": "crt.20261013T000806Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 30,
+    "cost_usd": 0.7742,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/581",
     "commented": false,
     "note": null,
     "at": "2026-10-13T00:08:06Z"
@@ -636,12 +597,12 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261013T000835Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 61,
+    "cost_usd": 1.8711,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-13T00:08:35Z"
    },
@@ -740,13 +701,10 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abc: last pass landed nothing -- no PR and no comment on its issue",
-  "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
-  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
