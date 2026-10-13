@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T23:00:02Z",
+ "generated_at": "2026-10-13T23:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T00:00:02Z",
+ "valid_until": "2026-10-14T00:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -54,6 +54,30 @@
    "ports_published": null
   },
   {
+   "name": "distracted_elion",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T23:01:51Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "friendly_euclid",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T23:15:37Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -66,14 +90,38 @@
    "ports_published": false
   },
   {
-   "name": "heuristic_dubinsky",
+   "name": "heuristic_lichterman",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-13T21:18:11Z",
+   "started_at": "2026-10-13T23:08:46Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "jolly_bhaskara",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T23:09:57Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "keen_panini",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T23:09:48Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -111,6 +159,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "unruffled_lewin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T23:10:05Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -255,9 +315,14 @@
  "unmanaged": [
   "blissful_leavitt",
   "condescending_joliot",
-  "heuristic_dubinsky",
+  "distracted_elion",
+  "friendly_euclid",
+  "heuristic_lichterman",
+  "jolly_bhaskara",
+  "keen_panini",
   "officejet",
   "serene_elgamal",
+  "unruffled_lewin",
   "wizardly_turing",
   "xenodochial_wilson"
  ],
@@ -284,6 +349,8 @@
    "media-arts-collective.cinema-sanctuary",
    "media-arts-collective.grants",
    "media-arts-collective.inventory-app",
+   "media-arts-collective.kreweofvaporwave.github.io",
+   "media-arts-collective.office",
    "media-arts-collective.wavebucks",
    "musc-2300",
    "nine-speakers",
@@ -298,29 +365,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261013T220702Z.log",
-   "started_at": "2026-10-13T22:07:02Z",
-   "finished_at": "2026-10-13T22:08:08Z",
+   "log": "nightly.20261013T230942Z.log",
+   "started_at": "2026-10-13T23:09:42Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "crt": {
-     "queue": 18,
-     "at": "2026-10-13T22:08:00Z",
+     "queue": 1,
+     "at": "2026-10-13T23:09:54Z",
      "outcome": null
     }
    },
-   "skipped": [
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "space-canon",
-    "dog",
-    "vibe-kiosk"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -421,7 +481,7 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261013T220812Z.log",
+    "log": "crt.20261013T230954Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -429,7 +489,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T22:08:12Z"
+    "at": "2026-10-13T23:09:54Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -529,31 +589,7 @@
    },
    {
     "repo": "media-arts-collective.grants",
-    "log": "media-arts-collective.grants.20261012T045051Z.log",
-    "result": "success",
-    "turns": 1,
-    "cost_usd": 0.0,
-    "rc": 1,
-    "pr": null,
-    "commented": false,
-    "note": null,
-    "at": "2026-10-12T04:50:51Z"
-   },
-   {
-    "repo": "media-arts-collective.inventory-app",
-    "log": "media-arts-collective.inventory-app.20261012T045011Z.log",
-    "result": "success",
-    "turns": 1,
-    "cost_usd": 0.0,
-    "rc": 1,
-    "pr": null,
-    "commented": false,
-    "note": null,
-    "at": "2026-10-12T04:50:11Z"
-   },
-   {
-    "repo": "media-arts-collective.wavebucks",
-    "log": "media-arts-collective.wavebucks.20261013T211804Z.log",
+    "log": "media-arts-collective.grants.20261013T230952Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -561,7 +597,55 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T21:18:04Z"
+    "at": "2026-10-13T23:09:52Z"
+   },
+   {
+    "repo": "media-arts-collective.inventory-app",
+    "log": "media-arts-collective.inventory-app.20261013T230942Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-13T23:09:42Z"
+   },
+   {
+    "repo": "media-arts-collective.kreweofvaporwave.github.io",
+    "log": "media-arts-collective.kreweofvaporwave.github.io.20261013T230804Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": 1,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-13T23:08:04Z"
+   },
+   {
+    "repo": "media-arts-collective.office",
+    "log": "media-arts-collective.office.20261013T230842Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-13T23:08:42Z"
+   },
+   {
+    "repo": "media-arts-collective.wavebucks",
+    "log": "media-arts-collective.wavebucks.20261013T231530Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-13T23:15:30Z"
    },
    {
     "repo": "musc-2300",
@@ -715,6 +799,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
@@ -725,6 +810,8 @@
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
+  "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
+  "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
