@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T07:20:01Z",
+ "generated_at": "2026-10-13T07:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T08:20:01Z",
+ "valid_until": "2026-10-13T08:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -62,18 +62,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "determined_grothendieck",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T07:09:04Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -280,7 +268,6 @@
   "busy_galileo",
   "condescending_joliot",
   "dazzling_lewin",
-  "determined_grothendieck",
   "distracted_yalow",
   "officejet",
   "serene_elgamal",
@@ -380,7 +367,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -482,11 +469,11 @@
    {
     "repo": "crt",
     "log": "crt.20261013T070854Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 36,
+    "cost_usd": 1.1465,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/583",
     "commented": false,
     "note": null,
     "at": "2026-10-13T07:08:54Z"
@@ -768,7 +755,6 @@
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
-  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
