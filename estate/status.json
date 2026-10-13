@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T19:20:02Z",
+ "generated_at": "2026-10-13T19:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T20:20:02Z",
+ "valid_until": "2026-10-13T20:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "ecstatic_panini",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T19:08:49Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -64,30 +52,6 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
-  },
-  {
-   "name": "jolly_dhawan",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T19:10:54Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "jovial_germain",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T19:08:49Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -266,9 +230,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "ecstatic_panini",
-  "jolly_dhawan",
-  "jovial_germain",
   "officejet",
   "pensive_pare",
   "serene_elgamal",
@@ -367,7 +328,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -457,23 +418,23 @@
    {
     "repo": "cinema-sanctuary",
     "log": "cinema-sanctuary.20261013T190845Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 78,
+    "cost_usd": 2.3828,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/131",
+    "commented": true,
     "note": null,
     "at": "2026-10-13T19:08:45Z"
    },
    {
     "repo": "crt",
     "log": "crt.20261013T190836Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 49,
+    "cost_usd": 1.3529,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/585",
     "commented": false,
     "note": null,
     "at": "2026-10-13T19:08:36Z"
@@ -625,11 +586,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261013T191030Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 51,
+    "cost_usd": 1.6367,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1870",
     "commented": false,
     "note": null,
     "at": "2026-10-13T19:10:30Z"
@@ -753,12 +714,9 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
-  "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
-  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
