@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T11:40:02Z",
+ "generated_at": "2026-10-13T12:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T12:40:02Z",
+ "valid_until": "2026-10-13T13:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,30 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "amazing_ritchie",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T09:09:37Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "angry_pascal",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T11:09:29Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -76,18 +52,6 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
-  },
-  {
-   "name": "hopeful_chaplygin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T10:09:21Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -253,10 +217,7 @@
   }
  ],
  "unmanaged": [
-  "amazing_ritchie",
-  "angry_pascal",
   "condescending_joliot",
-  "hopeful_chaplygin",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -339,7 +300,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -369,10 +330,10 @@
    {
     "repo": "american-cycle",
     "log": "american-cycle.20261013T090934Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 112,
+    "cost_usd": 3.6854,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -441,10 +402,10 @@
    {
     "repo": "crt",
     "log": "crt.20261013T100911Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 121,
+    "cost_usd": 5.5899,
+    "rc": 1,
     "pr": null,
     "commented": false,
     "note": null,
@@ -597,11 +558,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261013T110856Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 110,
+    "cost_usd": 4.5623,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1868",
     "commented": false,
     "note": null,
     "at": "2026-10-13T11:08:56Z"
@@ -731,7 +692,6 @@
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
