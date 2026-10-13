@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T10:20:01Z",
+ "generated_at": "2026-10-13T10:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T11:20:01Z",
+ "valid_until": "2026-10-13T11:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -50,18 +50,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "frosty_einstein",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T10:08:12Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -303,7 +291,6 @@
  "unmanaged": [
   "amazing_ritchie",
   "condescending_joliot",
-  "frosty_einstein",
   "gifted_robinson",
   "hopeful_chaplygin",
   "modest_torvalds",
@@ -401,7 +388,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.6
   },
   "passes": [
    {
@@ -455,12 +442,12 @@
    {
     "repo": "baudin",
     "log": "baudin.20261013T100807Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 37,
+    "cost_usd": 1.0855,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-13T10:08:07Z"
    },
@@ -787,7 +774,6 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
