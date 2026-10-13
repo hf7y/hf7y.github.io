@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T08:00:01Z",
+ "generated_at": "2026-10-13T08:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T09:00:01Z",
+ "valid_until": "2026-10-13T09:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "busy_galileo",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T07:09:03Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,14 +54,26 @@
    "ports_published": null
   },
   {
-   "name": "distracted_yalow",
+   "name": "friendly_visvesvaraya",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-13T07:09:28Z",
+   "started_at": "2026-10-13T08:08:45Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "gracious_bassi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T08:08:10Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -88,6 +88,18 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
+  },
+  {
+   "name": "interesting_yalow",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T08:08:43Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -265,10 +277,11 @@
   }
  ],
  "unmanaged": [
-  "busy_galileo",
   "condescending_joliot",
   "dazzling_lewin",
-  "distracted_yalow",
+  "friendly_visvesvaraya",
+  "gracious_bassi",
+  "interesting_yalow",
   "officejet",
   "serene_elgamal",
   "vigilant_hamilton",
@@ -310,51 +323,31 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261013T070702Z.log",
-   "started_at": "2026-10-13T07:07:02Z",
-   "finished_at": "2026-10-13T07:09:34Z",
+   "log": "nightly.20261013T080702Z.log",
+   "started_at": "2026-10-13T08:07:02Z",
+   "finished_at": "2026-10-13T08:08:34Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "senechal": {
-     "queue": 34,
-     "at": "2026-10-13T07:07:58Z",
+    "front-door": {
+     "queue": 12,
+     "at": "2026-10-13T08:07:56Z",
      "outcome": null
     },
-    "realisateur": {
-     "queue": 181,
-     "at": "2026-10-13T07:08:29Z",
+    "abc": {
+     "queue": 1,
+     "at": "2026-10-13T08:08:04Z",
      "outcome": null
     },
-    "crt": {
-     "queue": 19,
-     "at": "2026-10-13T07:08:41Z",
+    "groc-mangr": {
+     "queue": 23,
+     "at": "2026-10-13T08:08:17Z",
      "outcome": null
     },
-    "cinema-sanctuary": {
-     "queue": 27,
-     "at": "2026-10-13T07:08:50Z",
-     "outcome": null
-    },
-    "dcp-gate-site": {
-     "queue": 2,
-     "at": "2026-10-13T07:08:58Z",
-     "outcome": null
-    },
-    "secretaire": {
-     "queue": 14,
-     "at": "2026-10-13T07:09:09Z",
-     "outcome": null
-    },
-    "sequestria": {
-     "queue": 4,
-     "at": "2026-10-13T07:09:17Z",
-     "outcome": null
-    },
-    "ecosim": {
-     "queue": 3,
-     "at": "2026-10-13T07:09:25Z",
+    "etalon": {
+     "queue": 39,
+     "at": "2026-10-13T08:08:27Z",
      "outcome": null
     }
    },
@@ -367,20 +360,20 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "abc",
-    "log": "abc.20261013T050806Z.log",
+    "log": "abc.20261013T080816Z.log",
     "result": "success",
-    "turns": 12,
-    "cost_usd": 0.2896,
+    "turns": 8,
+    "cost_usd": 0.1626,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-13T05:08:06Z"
+    "at": "2026-10-13T08:08:16Z"
    },
    {
     "repo": "abletim",
@@ -457,11 +450,11 @@
    {
     "repo": "cinema-sanctuary",
     "log": "cinema-sanctuary.20261013T070859Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 114,
+    "cost_usd": 4.9921,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/cinema-sanctuary/pull/129",
     "commented": false,
     "note": null,
     "at": "2026-10-13T07:08:59Z"
@@ -516,27 +509,27 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261013T050833Z.log",
-    "result": "success",
-    "turns": 21,
-    "cost_usd": 0.5527,
-    "rc": 0,
-    "pr": null,
-    "commented": true,
-    "note": null,
-    "at": "2026-10-13T05:08:33Z"
-   },
-   {
-    "repo": "front-door",
-    "log": "front-door.20261013T050800Z.log",
-    "result": "success",
-    "turns": 13,
-    "cost_usd": 0.3189,
-    "rc": 0,
+    "log": "etalon.20261013T080838Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T05:08:00Z"
+    "at": "2026-10-13T08:08:38Z"
+   },
+   {
+    "repo": "front-door",
+    "log": "front-door.20261013T080806Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-13T08:08:06Z"
    },
    {
     "repo": "gardien",
@@ -552,15 +545,15 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261013T050824Z.log",
-    "result": "success",
-    "turns": 45,
-    "cost_usd": 1.3262,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/470",
+    "log": "groc-mangr.20261013T080830Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T05:08:24Z"
+    "at": "2026-10-13T08:08:30Z"
    },
    {
     "repo": "media-arts-collective.grants",
@@ -649,10 +642,10 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261013T070920Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 82,
+    "cost_usd": 2.6117,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -754,8 +747,9 @@
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
-  "cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
+  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
