@@ -2,8 +2,8 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-13T17:58:28Z",
-  "valid_until": "2026-10-13T19:28:28Z",
+  "generated": "2026-10-13T18:58:28Z",
+  "valid_until": "2026-10-13T20:28:28Z",
   "cadence_minutes": 60,
   "verdict": "DOWN",
   "why": "1 send(s) failed in 24h -- the relay accepts questions and WhatsApp does not take them",
@@ -38,36 +38,34 @@
     "totals": {
       "failed": 15,
       "answered": 11,
-      "stale": 288,
-      "pending": 1,
-      "queued": 1
+      "stale": 289,
+      "pending": 1
     },
     "window": {
       "answered": 1,
       "failed": 1,
-      "stale": 1,
-      "pending": 1,
-      "queued": 1
+      "stale": 2,
+      "pending": 1
     },
     "window_sent": 5,
-    "stale_slot_hours": 1.0,
-    "queued": 1,
+    "stale_slot_hours": 2.0,
+    "queued": 0,
     "slots": [
       {
-        "id": "7ee6b056",
+        "id": "966cc1a6",
         "from": "monkey-watch-win",
-        "age_hours": 0.9,
-        "question": "monkey-win: STALE -> UNREACHABLE\ncannot read status.json: The operation has timed out\nhttps://hf7y.com/monkey/"
+        "age_hours": 1.6,
+        "question": "monkey-win: UNREACHABLE -> STALE\nstatus.json is past its own valid_until 2026-09-25T0\nhttps://hf7y.com/monkey/"
       }
     ],
     "last_answered_at": "2026-10-13T05:09:14Z",
     "inbox": {
-      "count": 47,
-      "window_count": 2,
-      "oldest_age_hours": 1051.0,
+      "count": 48,
+      "window_count": 3,
+      "oldest_age_hours": 1052.0,
       "unfiled": {
         "count": 6,
-        "oldest_age_hours": 43.3
+        "oldest_age_hours": 44.3
       }
     },
     "senders": [
@@ -75,7 +73,7 @@
         "from": "monkey-watch-win",
         "sent": 5,
         "answered": 1,
-        "stale": 1,
+        "stale": 2,
         "failed": 1
       }
     ],
@@ -83,7 +81,7 @@
       {
         "id": "966cc1a6",
         "from": "monkey-watch-win",
-        "status": "queued",
+        "status": "pending",
         "created_at": "2026-10-13T17:21:51Z",
         "answered_at": null,
         "question": "monkey-win: UNREACHABLE -> STALE\nstatus.json is past its own valid_until 2026-09-25T0\nhttps://hf7y.com/monkey/"
@@ -91,7 +89,7 @@
       {
         "id": "7ee6b056",
         "from": "monkey-watch-win",
-        "status": "pending",
+        "status": "stale",
         "created_at": "2026-10-13T17:07:21Z",
         "answered_at": null,
         "question": "monkey-win: STALE -> UNREACHABLE\ncannot read status.json: The operation has timed out\nhttps://hf7y.com/monkey/"
