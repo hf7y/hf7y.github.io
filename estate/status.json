@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-13T20:40:01Z",
+ "generated_at": "2026-10-13T21:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T21:40:01Z",
+ "valid_until": "2026-10-13T22:00:01Z",
  "containers": [
-  {
-   "name": "adoring_carver",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T20:35:31Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "aedile-tube",
    "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
@@ -42,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "clever_clarke",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T20:35:38Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
    "project": null,
@@ -63,18 +39,6 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
-   "ports_published": null
-  },
-  {
-   "name": "cool_driscoll",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T20:09:37Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -135,18 +99,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "trusting_northcutt",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T20:35:31Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -277,14 +229,10 @@
   }
  ],
  "unmanaged": [
-  "adoring_carver",
   "awesome_nightingale",
-  "clever_clarke",
   "condescending_joliot",
-  "cool_driscoll",
   "officejet",
   "serene_elgamal",
-  "trusting_northcutt",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -326,7 +274,7 @@
   "last_run": {
    "log": "nightly.20261013T203514Z.log",
    "started_at": "2026-10-13T20:35:14Z",
-   "finished_at": null,
+   "finished_at": "2026-10-13T20:54:18Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -334,12 +282,12 @@
     "musc-2300": {
      "queue": 1,
      "at": "2026-10-13T20:35:27Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.4
   },
   "passes": [
    {
@@ -585,12 +533,12 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261013T203527Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 25,
+    "cost_usd": 0.4026,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-13T20:35:27Z"
    },
@@ -633,12 +581,12 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261013T203521Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 21,
+    "cost_usd": 0.6089,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-13T20:35:21Z"
    },
@@ -704,15 +652,15 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261013T203526Z.log",
+    "log": "wtul.20261013T204117Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
-    "rc": null,
+    "rc": 1,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T20:35:26Z"
+    "at": "2026-10-13T20:41:17Z"
    }
   ],
   "dispatch_source": {
@@ -734,7 +682,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
@@ -743,9 +690,7 @@
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
