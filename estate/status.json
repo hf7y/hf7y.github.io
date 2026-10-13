@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T14:40:02Z",
+ "generated_at": "2026-10-13T15:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T15:40:02Z",
+ "valid_until": "2026-10-13T16:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "compassionate_wu",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T14:56:15Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -52,18 +64,6 @@
    "started_at": "2026-10-10T16:37:56Z",
    "finished_at": "2026-10-10T17:00:01Z",
    "ports_published": false
-  },
-  {
-   "name": "kind_babbage",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T14:10:33Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -229,8 +229,8 @@
   }
  ],
  "unmanaged": [
+  "compassionate_wu",
   "condescending_joliot",
-  "kind_babbage",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -328,7 +328,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -586,11 +586,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261013T141009Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 120,
+    "cost_usd": 4.5637,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1869",
     "commented": false,
     "note": null,
     "at": "2026-10-13T14:10:09Z"
@@ -722,7 +722,6 @@
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
