@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-13T20:20:02Z",
+ "generated_at": "2026-10-13T20:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-13T21:20:02Z",
+ "valid_until": "2026-10-13T21:40:01Z",
  "containers": [
+  {
+   "name": "adoring_carver",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T20:35:31Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "aedile-tube",
    "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
@@ -14,6 +26,30 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "awesome_nightingale",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T20:35:33Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "clever_clarke",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T20:35:38Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -99,6 +135,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "trusting_northcutt",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T20:35:31Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -229,10 +277,14 @@
   }
  ],
  "unmanaged": [
+  "adoring_carver",
+  "awesome_nightingale",
+  "clever_clarke",
   "condescending_joliot",
   "cool_driscoll",
   "officejet",
   "serene_elgamal",
+  "trusting_northcutt",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -255,6 +307,7 @@
    "front-door",
    "gardien",
    "groc-mangr",
+   "media-arts-collective.cinema-sanctuary",
    "media-arts-collective.grants",
    "media-arts-collective.inventory-app",
    "media-arts-collective.wavebucks",
@@ -271,64 +324,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261013T200702Z.log",
-   "started_at": "2026-10-13T20:07:02Z",
-   "finished_at": "2026-10-13T20:09:28Z",
+   "log": "nightly.20261013T203514Z.log",
+   "started_at": "2026-10-13T20:35:14Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "front-door": {
-     "queue": 12,
-     "at": "2026-10-13T20:08:00Z",
-     "outcome": null
-    },
-    "abc": {
-     "queue": 1,
-     "at": "2026-10-13T20:08:09Z",
-     "outcome": null
-    },
-    "etalon": {
-     "queue": 37,
-     "at": "2026-10-13T20:08:20Z",
-     "outcome": null
-    },
-    "chezz": {
-     "queue": 5,
-     "at": "2026-10-13T20:08:28Z",
-     "outcome": null
-    },
-    "gardien": {
-     "queue": 4,
-     "at": "2026-10-13T20:08:37Z",
-     "outcome": null
-    },
-    "groc-mangr": {
-     "queue": 24,
-     "at": "2026-10-13T20:08:49Z",
-     "outcome": null
-    },
-    "scheduler": {
-     "queue": 7,
-     "at": "2026-10-13T20:09:01Z",
-     "outcome": null
-    },
     "musc-2300": {
-     "queue": 52,
-     "at": "2026-10-13T20:09:14Z",
+     "queue": 1,
+     "at": "2026-10-13T20:35:27Z",
      "outcome": null
     }
    },
-   "skipped": [
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "space-canon",
-    "dog",
-    "vibe-kiosk"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -369,15 +380,15 @@
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261013T180841Z.log",
+    "log": "apms-2173.20261013T203523Z.log",
     "result": "success",
-    "turns": 24,
-    "cost_usd": 0.6031,
+    "turns": 11,
+    "cost_usd": 0.2662,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-13T18:08:41Z"
+    "at": "2026-10-13T20:35:23Z"
    },
    {
     "repo": "baudin",
@@ -524,6 +535,18 @@
     "at": "2026-10-13T20:09:03Z"
    },
    {
+    "repo": "media-arts-collective.cinema-sanctuary",
+    "log": "media-arts-collective.cinema-sanctuary.20261013T203522Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": 1,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-13T20:35:22Z"
+   },
+   {
     "repo": "media-arts-collective.grants",
     "log": "media-arts-collective.grants.20261012T045051Z.log",
     "result": "success",
@@ -549,19 +572,7 @@
    },
    {
     "repo": "media-arts-collective.wavebucks",
-    "log": "media-arts-collective.wavebucks.20261012T045022Z.log",
-    "result": "success",
-    "turns": 1,
-    "cost_usd": 0.0,
-    "rc": 1,
-    "pr": null,
-    "commented": false,
-    "note": null,
-    "at": "2026-10-12T04:50:22Z"
-   },
-   {
-    "repo": "musc-2300",
-    "log": "musc-2300.20261013T200927Z.log",
+    "log": "media-arts-collective.wavebucks.20261013T203526Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -569,7 +580,19 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T20:09:27Z"
+    "at": "2026-10-13T20:35:26Z"
+   },
+   {
+    "repo": "musc-2300",
+    "log": "musc-2300.20261013T203527Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-13T20:35:27Z"
    },
    {
     "repo": "nine-speakers",
@@ -609,15 +632,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261013T190911Z.log",
-    "result": "success",
-    "turns": 33,
-    "cost_usd": 1.0546,
-    "rc": 0,
+    "log": "secretaire.20261013T203521Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-13T19:09:11Z"
+    "at": "2026-10-13T20:35:21Z"
    },
    {
     "repo": "senechal",
@@ -681,15 +704,15 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261013T180956Z.log",
-    "result": "success",
-    "turns": 45,
-    "cost_usd": 0.9605,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/wtul/pull/545",
+    "log": "wtul.20261013T203526Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T18:09:56Z"
+    "at": "2026-10-13T20:35:26Z"
    }
   ],
   "dispatch_source": {
@@ -711,14 +734,18 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
+  "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
-  "scheduler: last pass landed nothing -- no PR and no comment on its issue"
+  "scheduler: last pass landed nothing -- no PR and no comment on its issue",
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
+  "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
