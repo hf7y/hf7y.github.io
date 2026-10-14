@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-14T15:00:01Z",
+ "generated_at": "2026-10-14T15:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T16:00:01Z",
+ "valid_until": "2026-10-14T16:20:01Z",
  "containers": [
+  {
+   "name": "admiring_panini",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T15:09:37Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "aedile-tube",
    "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
@@ -18,14 +30,14 @@
    "ports_published": null
   },
   {
-   "name": "condescending_hellman",
-   "image": "senechal-puller:02459d4c21ab",
+   "name": "awesome_cray",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T15:00:01Z",
+   "started_at": "2026-10-14T15:10:09Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -50,6 +62,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "fervent_robinson",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T15:09:48Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -241,8 +265,10 @@
   }
  ],
  "unmanaged": [
-  "condescending_hellman",
+  "admiring_panini",
+  "awesome_cray",
   "condescending_joliot",
+  "fervent_robinson",
   "jovial_moore",
   "officejet",
   "serene_elgamal",
@@ -288,31 +314,46 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261014T140702Z.log",
-   "started_at": "2026-10-14T14:07:02Z",
-   "finished_at": "2026-10-14T14:09:45Z",
+   "log": "nightly.20261014T150702Z.log",
+   "started_at": "2026-10-14T15:07:02Z",
+   "finished_at": "2026-10-14T15:10:11Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "baudin": {
-     "queue": 20,
-     "at": "2026-10-14T14:08:52Z",
+    "media-arts-collective/kreweofvaporwave.github.io": {
+     "queue": 2,
+     "at": "2026-10-14T15:08:56Z",
      "outcome": null
     },
-    "nine-speakers": {
-     "queue": 13,
-     "at": "2026-10-14T14:09:05Z",
-     "outcome": null
-    },
-    "vim-arcade": {
+    "media-arts-collective/office": {
      "queue": 1,
-     "at": "2026-10-14T14:09:18Z",
+     "at": "2026-10-14T15:09:05Z",
      "outcome": null
     },
-    "wtul": {
-     "queue": 20,
-     "at": "2026-10-14T14:09:33Z",
+    "media-arts-collective/inventory-app": {
+     "queue": 12,
+     "at": "2026-10-14T15:09:18Z",
+     "outcome": null
+    },
+    "media-arts-collective/grants": {
+     "queue": 13,
+     "at": "2026-10-14T15:09:30Z",
+     "outcome": null
+    },
+    "media-arts-collective/treasury": {
+     "queue": 7,
+     "at": "2026-10-14T15:09:41Z",
+     "outcome": null
+    },
+    "dcp-gate-site": {
+     "queue": 2,
+     "at": "2026-10-14T15:09:52Z",
+     "outcome": null
+    },
+    "sequestria": {
+     "queue": 4,
+     "at": "2026-10-14T15:10:01Z",
      "outcome": null
     }
    },
@@ -328,7 +369,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -441,15 +482,15 @@
    },
    {
     "repo": "dcp-gate-site",
-    "log": "dcp-gate-site.20261014T100904Z.log",
-    "result": "success",
-    "turns": 26,
-    "cost_usd": 0.4967,
-    "rc": 0,
+    "log": "dcp-gate-site.20261014T151005Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-14T10:09:04Z"
+    "at": "2026-10-14T15:10:05Z"
    },
    {
     "repo": "dog",
@@ -537,63 +578,63 @@
    },
    {
     "repo": "media-arts-collective.grants",
-    "log": "media-arts-collective.grants.20261014T091026Z.log",
-    "result": "success",
-    "turns": 41,
-    "cost_usd": 0.9109,
-    "rc": 0,
-    "pr": "https://github.com/media-arts-collective/grants/pull/16",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-14T09:10:26Z"
-   },
-   {
-    "repo": "media-arts-collective.inventory-app",
-    "log": "media-arts-collective.inventory-app.20261014T091017Z.log",
-    "result": "success",
-    "turns": 84,
-    "cost_usd": 2.2702,
-    "rc": 0,
-    "pr": null,
-    "commented": false,
-    "note": null,
-    "at": "2026-10-14T09:10:17Z"
-   },
-   {
-    "repo": "media-arts-collective.kreweofvaporwave.github.io",
-    "log": "media-arts-collective.kreweofvaporwave.github.io.20261014T090947Z.log",
+    "log": "media-arts-collective.grants.20261014T150942Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
-    "rc": 1,
+    "rc": null,
+    "pr": null,
+    "commented": true,
+    "note": null,
+    "at": "2026-10-14T15:09:42Z"
+   },
+   {
+    "repo": "media-arts-collective.inventory-app",
+    "log": "media-arts-collective.inventory-app.20261014T150931Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-14T09:09:47Z"
+    "at": "2026-10-14T15:09:31Z"
+   },
+   {
+    "repo": "media-arts-collective.kreweofvaporwave.github.io",
+    "log": "media-arts-collective.kreweofvaporwave.github.io.20261014T150905Z.log",
+    "result": "success",
+    "turns": 26,
+    "cost_usd": 0.4164,
+    "rc": 0,
+    "pr": "https://github.com/media-arts-collective/kreweofvaporwave.github.io/pull/9",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-14T15:09:05Z"
    },
    {
     "repo": "media-arts-collective.office",
-    "log": "media-arts-collective.office.20261014T090958Z.log",
+    "log": "media-arts-collective.office.20261014T150914Z.log",
     "result": "success",
-    "turns": 26,
-    "cost_usd": 0.6028,
+    "turns": 10,
+    "cost_usd": 0.2482,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-14T09:09:58Z"
+    "at": "2026-10-14T15:09:14Z"
    },
    {
     "repo": "media-arts-collective.treasury",
-    "log": "media-arts-collective.treasury.20261014T100856Z.log",
+    "log": "media-arts-collective.treasury.20261014T150953Z.log",
     "result": "success",
-    "turns": 15,
-    "cost_usd": 0.4121,
+    "turns": 14,
+    "cost_usd": 0.3189,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-14T10:08:56Z"
+    "at": "2026-10-14T15:09:53Z"
    },
    {
     "repo": "media-arts-collective.wavebucks",
@@ -681,15 +722,15 @@
    },
    {
     "repo": "sequestria",
-    "log": "sequestria.20261014T100914Z.log",
+    "log": "sequestria.20261014T151012Z.log",
     "result": "success",
-    "turns": 55,
-    "cost_usd": 1.4925,
+    "turns": 14,
+    "cost_usd": 0.3448,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/sequestria/pull/56",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-14T10:09:14Z"
+    "at": "2026-10-14T15:10:12Z"
    },
    {
     "repo": "space-canon",
@@ -766,11 +807,11 @@
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
+  "dcp-gate-site: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue"
