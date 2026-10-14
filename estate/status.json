@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T23:40:01Z",
+ "generated_at": "2026-10-14T00:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T00:40:01Z",
+ "valid_until": "2026-10-14T01:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,30 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "agitated_hamilton",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T23:39:48Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "blissful_leavitt",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T22:08:22Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -90,18 +66,6 @@
    "ports_published": null
   },
   {
-   "name": "hungry_snyder",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T23:34:30Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "intelligent_feistel",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -110,6 +74,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-13T23:32:21Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "objective_jennings",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-13T23:53:04Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -147,18 +123,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "unruffled_lewin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-13T23:10:05Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -289,15 +253,12 @@
   }
  ],
  "unmanaged": [
-  "agitated_hamilton",
-  "blissful_leavitt",
   "condescending_joliot",
   "hungry_shannon",
-  "hungry_snyder",
   "intelligent_feistel",
+  "objective_jennings",
   "officejet",
   "serene_elgamal",
-  "unruffled_lewin",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -341,7 +302,7 @@
   "last_run": {
    "log": "nightly.20261013T233203Z.log",
    "started_at": "2026-10-13T23:32:03Z",
-   "finished_at": null,
+   "finished_at": "2026-10-13T23:46:55Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -349,12 +310,12 @@
     "realisateur": {
      "queue": 1,
      "at": "2026-10-13T23:32:37Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -456,10 +417,10 @@
    {
     "repo": "crt",
     "log": "crt.20261013T230954Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 50,
+    "cost_usd": 1.6551,
+    "rc": 1,
     "pr": null,
     "commented": false,
     "note": null,
@@ -773,7 +734,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
