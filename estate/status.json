@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T23:20:02Z",
+ "generated_at": "2026-10-14T23:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T00:20:02Z",
+ "valid_until": "2026-10-15T00:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "affectionate_haibt",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T23:25:08Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -87,18 +99,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "stupefied_raman",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T23:19:05Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -229,10 +229,10 @@
   }
  ],
  "unmanaged": [
+  "affectionate_haibt",
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
-  "stupefied_raman",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -275,40 +275,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261014T230702Z.log",
-   "started_at": "2026-10-14T23:07:03Z",
+   "log": "nightly.20261014T232359Z.log",
+   "started_at": "2026-10-14T23:23:59Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-14T23:24:39Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
-   "queue_unreadable": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "space-canon",
-    "dog",
-    "vibe-kiosk",
-    "vim-arcade",
-    "baudin",
-    "nine-speakers",
-    "wtul",
-    "media-arts-collective/kreweofvaporwave.github.io",
-    "media-arts-collective/office",
-    "media-arts-collective/inventory-app",
-    "media-arts-collective/grants",
-    "media-arts-collective/treasury",
-    "dcp-gate-site",
-    "sequestria",
-    "ecosim",
-    "front-door",
-    "realisateur"
-   ],
-   "age_h": 0.2
+   "queue_unreadable": [],
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -613,15 +595,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261014T193525Z.log",
-    "result": "success",
-    "turns": 35,
-    "cost_usd": 0.966,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1904",
-    "commented": true,
+    "log": "realisateur.20261014T232439Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-14T19:35:25Z"
+    "at": "2026-10-14T23:24:39Z"
    },
    {
     "repo": "scheduler",
@@ -740,29 +722,6 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
-  "media-arts-collective/CodeDumpster: the nightly could not read its queue and skipped it",
-  "media-arts-collective/inv-redirects: the nightly could not read its queue and skipped it",
-  "media-arts-collective/nomac.org: the nightly could not read its queue and skipped it",
-  "selfdev-permission-witness-scratch: the nightly could not read its queue and skipped it",
-  "verbs: the nightly could not read its queue and skipped it",
-  "vkv23: the nightly could not read its queue and skipped it",
-  "space-canon: the nightly could not read its queue and skipped it",
-  "dog: the nightly could not read its queue and skipped it",
-  "vibe-kiosk: the nightly could not read its queue and skipped it",
-  "vim-arcade: the nightly could not read its queue and skipped it",
-  "baudin: the nightly could not read its queue and skipped it",
-  "nine-speakers: the nightly could not read its queue and skipped it",
-  "wtul: the nightly could not read its queue and skipped it",
-  "media-arts-collective/kreweofvaporwave.github.io: the nightly could not read its queue and skipped it",
-  "media-arts-collective/office: the nightly could not read its queue and skipped it",
-  "media-arts-collective/inventory-app: the nightly could not read its queue and skipped it",
-  "media-arts-collective/grants: the nightly could not read its queue and skipped it",
-  "media-arts-collective/treasury: the nightly could not read its queue and skipped it",
-  "dcp-gate-site: the nightly could not read its queue and skipped it",
-  "sequestria: the nightly could not read its queue and skipped it",
-  "ecosim: the nightly could not read its queue and skipped it",
-  "front-door: the nightly could not read its queue and skipped it",
-  "realisateur: the nightly could not read its queue and skipped it",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
@@ -770,6 +729,7 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
