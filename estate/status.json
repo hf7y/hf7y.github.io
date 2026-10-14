@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T10:20:01Z",
+ "generated_at": "2026-10-14T10:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T11:20:01Z",
+ "valid_until": "2026-10-14T11:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -66,18 +66,6 @@
    "ports_published": null
   },
   {
-   "name": "funny_shannon",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T09:09:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -88,18 +76,6 @@
    "started_at": "2026-10-14T04:25:17Z",
    "finished_at": "2026-10-14T04:45:01Z",
    "ports_published": false
-  },
-  {
-   "name": "hardcore_elgamal",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T09:10:23Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "inspiring_jennings",
@@ -124,18 +100,6 @@
    "started_at": "2026-10-11T00:19:24Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "pensive_kalam",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T10:09:25Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -292,11 +256,8 @@
   "condescending_joliot",
   "confident_yonath",
   "distracted_golick",
-  "funny_shannon",
-  "hardcore_elgamal",
   "inspiring_jennings",
   "officejet",
-  "pensive_kalam",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -390,7 +351,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -444,10 +405,10 @@
    {
     "repo": "baudin",
     "log": "baudin.20261014T090857Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 82,
+    "cost_usd": 2.5354,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -528,12 +489,12 @@
    {
     "repo": "ecosim",
     "log": "ecosim.20261014T100921Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 11,
+    "cost_usd": 0.2101,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-14T10:09:21Z"
    },
@@ -612,10 +573,10 @@
    {
     "repo": "media-arts-collective.inventory-app",
     "log": "media-arts-collective.inventory-app.20261014T091017Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 84,
+    "cost_usd": 2.2702,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -825,7 +786,6 @@
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
-  "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
