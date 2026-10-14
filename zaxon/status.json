@@ -2,15 +2,15 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-14T13:58:50Z",
-  "valid_until": "2026-10-14T15:28:50Z",
+  "generated": "2026-10-14T14:58:51Z",
+  "valid_until": "2026-10-14T16:28:51Z",
   "cadence_minutes": 60,
   "verdict": "DOWN",
   "why": "1 send(s) failed in 24h -- the relay accepts questions and WhatsApp does not take them",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 6
+    "ms": 4
   },
   "containers": [
     {
@@ -52,10 +52,10 @@
     "inbox": {
       "count": 50,
       "window_count": 4,
-      "oldest_age_hours": 1071.0,
+      "oldest_age_hours": 1072.0,
       "unfiled": {
         "count": 7,
-        "oldest_age_hours": 63.3
+        "oldest_age_hours": 64.3
       }
     },
     "senders": [
