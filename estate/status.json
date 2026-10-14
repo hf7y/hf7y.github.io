@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T03:40:01Z",
+ "generated_at": "2026-10-14T04:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T04:40:01Z",
+ "valid_until": "2026-10-14T05:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "angry_keller",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T03:39:47Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,6 +54,18 @@
    "ports_published": null
   },
   {
+   "name": "gallant_euclid",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T04:00:02Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -73,7 +73,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T03:26:37Z",
+   "started_at": "2026-10-14T03:53:41Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -111,18 +111,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "stoic_mendel",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T03:29:17Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -253,12 +241,11 @@
   }
  ],
  "unmanaged": [
-  "angry_keller",
   "condescending_joliot",
   "elastic_darwin",
+  "gallant_euclid",
   "officejet",
   "serene_elgamal",
-  "stoic_mendel",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -303,7 +290,7 @@
   "last_run": {
    "log": "nightly.20261014T032824Z.log",
    "started_at": "2026-10-14T03:28:24Z",
-   "finished_at": null,
+   "finished_at": "2026-10-14T03:54:14Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -311,12 +298,12 @@
     "senechal": {
      "queue": 1,
      "at": "2026-10-14T03:28:37Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -658,10 +645,10 @@
    {
     "repo": "senechal",
     "log": "senechal.20261014T032837Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 34,
+    "cost_usd": 0.8643,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -747,7 +734,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
