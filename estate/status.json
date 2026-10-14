@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T19:20:01Z",
+ "generated_at": "2026-10-14T19:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T20:20:01Z",
+ "valid_until": "2026-10-14T20:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "beautiful_fermi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T19:12:44Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "elated_khayyam",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T19:17:50Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -90,6 +66,18 @@
    "ports_published": true
   },
   {
+   "name": "priceless_khayyam",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T19:35:46Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -111,6 +99,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "vigilant_solomon",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T19:39:28Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -241,11 +241,11 @@
   }
  ],
  "unmanaged": [
-  "beautiful_fermi",
   "condescending_joliot",
-  "elated_khayyam",
   "officejet",
+  "priceless_khayyam",
   "serene_elgamal",
+  "vigilant_solomon",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -297,13 +297,13 @@
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-14T19:12:20Z",
+     "at": "2026-10-14T19:35:25Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -608,7 +608,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261014T191220Z.log",
+    "log": "realisateur.20261014T193525Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -616,7 +616,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-14T19:12:20Z"
+    "at": "2026-10-14T19:35:25Z"
    },
    {
     "repo": "scheduler",
