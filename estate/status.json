@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T12:40:02Z",
+ "generated_at": "2026-10-14T13:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T13:40:02Z",
+ "valid_until": "2026-10-14T14:00:01Z",
  "containers": [
   {
    "name": "admiring_brattain",
@@ -66,18 +66,6 @@
    "ports_published": false
   },
   {
-   "name": "jolly_rosalind",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T11:10:36Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "jovial_moore",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -126,6 +114,18 @@
    "ports_published": null
   },
   {
+   "name": "sweet_pasteur",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T13:00:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "trusting_cohen",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -148,18 +148,6 @@
    "started_at": "2026-10-05T04:32:35Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "wizardly_joliot",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T12:09:01Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -279,12 +267,11 @@
  "unmanaged": [
   "admiring_brattain",
   "condescending_joliot",
-  "jolly_rosalind",
   "jovial_moore",
   "officejet",
   "serene_elgamal",
+  "sweet_pasteur",
   "trusting_cohen",
-  "wizardly_joliot",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -362,7 +349,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -404,12 +391,12 @@
    {
     "repo": "apms-2173",
     "log": "apms-2173.20261014T120857Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 36,
+    "cost_usd": 0.7342,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-14T12:08:57Z"
    },
@@ -464,10 +451,10 @@
    {
     "repo": "crt",
     "log": "crt.20261014T111017Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 78,
+    "cost_usd": 2.574,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -797,7 +784,6 @@
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
-  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
