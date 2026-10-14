@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T23:00:02Z",
+ "generated_at": "2026-10-14T23:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T00:00:02Z",
+ "valid_until": "2026-10-15T00:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "dreamy_panini",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T23:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -99,6 +87,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "stupefied_raman",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T23:19:05Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -230,9 +230,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "dreamy_panini",
   "officejet",
   "serene_elgamal",
+  "stupefied_raman",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -275,8 +275,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261014T220702Z.log",
-   "started_at": "2026-10-14T22:07:02Z",
+   "log": "nightly.20261014T230702Z.log",
+   "started_at": "2026-10-14T23:07:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -295,9 +295,20 @@
     "vibe-kiosk",
     "vim-arcade",
     "baudin",
-    "nine-speakers"
+    "nine-speakers",
+    "wtul",
+    "media-arts-collective/kreweofvaporwave.github.io",
+    "media-arts-collective/office",
+    "media-arts-collective/inventory-app",
+    "media-arts-collective/grants",
+    "media-arts-collective/treasury",
+    "dcp-gate-site",
+    "sequestria",
+    "ecosim",
+    "front-door",
+    "realisateur"
    ],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -741,6 +752,17 @@
   "vim-arcade: the nightly could not read its queue and skipped it",
   "baudin: the nightly could not read its queue and skipped it",
   "nine-speakers: the nightly could not read its queue and skipped it",
+  "wtul: the nightly could not read its queue and skipped it",
+  "media-arts-collective/kreweofvaporwave.github.io: the nightly could not read its queue and skipped it",
+  "media-arts-collective/office: the nightly could not read its queue and skipped it",
+  "media-arts-collective/inventory-app: the nightly could not read its queue and skipped it",
+  "media-arts-collective/grants: the nightly could not read its queue and skipped it",
+  "media-arts-collective/treasury: the nightly could not read its queue and skipped it",
+  "dcp-gate-site: the nightly could not read its queue and skipped it",
+  "sequestria: the nightly could not read its queue and skipped it",
+  "ecosim: the nightly could not read its queue and skipped it",
+  "front-door: the nightly could not read its queue and skipped it",
+  "realisateur: the nightly could not read its queue and skipped it",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
