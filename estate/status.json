@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T16:40:02Z",
+ "generated_at": "2026-10-14T17:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T17:40:02Z",
+ "valid_until": "2026-10-14T18:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -52,6 +52,18 @@
    "started_at": "2026-10-14T04:25:17Z",
    "finished_at": "2026-10-14T04:45:01Z",
    "ports_published": false
+  },
+  {
+   "name": "laughing_franklin",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T17:00:02Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -218,6 +230,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "laughing_franklin",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -322,7 +335,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
