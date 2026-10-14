@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T13:40:01Z",
+ "generated_at": "2026-10-14T14:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T14:40:01Z",
+ "valid_until": "2026-10-14T15:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -26,6 +26,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T13:10:41Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "compassionate_mestorf",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T14:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -290,6 +302,7 @@
  ],
  "unmanaged": [
   "affectionate_shaw",
+  "compassionate_mestorf",
   "condescending_joliot",
   "jovial_moore",
   "nifty_euler",
@@ -385,7 +398,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -696,7 +709,7 @@
     "cost_usd": null,
     "rc": null,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-14T13:10:17Z"
    },
@@ -720,7 +733,7 @@
     "cost_usd": null,
     "rc": null,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-14T13:09:05Z"
    },
@@ -834,9 +847,7 @@
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
