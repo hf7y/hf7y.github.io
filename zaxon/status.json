@@ -2,15 +2,15 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-14T17:58:54Z",
-  "valid_until": "2026-10-14T19:28:54Z",
+  "generated": "2026-10-14T18:58:55Z",
+  "valid_until": "2026-10-14T20:28:55Z",
   "cadence_minutes": 60,
   "verdict": "FILING-STUCK",
-  "why": "9 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 67.3h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
+  "why": "9 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 68.3h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 5
+    "ms": 3
   },
   "containers": [
     {
@@ -38,32 +38,23 @@
     "totals": {
       "failed": 15,
       "answered": 11,
-      "stale": 292,
-      "pending": 1
+      "stale": 293
     },
     "window": {
-      "stale": 2,
-      "pending": 1
+      "stale": 3
     },
     "window_sent": 3,
-    "stale_slot_hours": 2.0,
+    "stale_slot_hours": 3.0,
     "queued": 0,
-    "slots": [
-      {
-        "id": "b154116a",
-        "from": "monkey-watch-win",
-        "age_hours": 0.4,
-        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
-      }
-    ],
+    "slots": [],
     "last_answered_at": "2026-10-13T05:09:14Z",
     "inbox": {
       "count": 52,
-      "window_count": 5,
-      "oldest_age_hours": 1075.0,
+      "window_count": 4,
+      "oldest_age_hours": 1076.0,
       "unfiled": {
         "count": 9,
-        "oldest_age_hours": 67.3
+        "oldest_age_hours": 68.3
       }
     },
     "senders": [
@@ -71,7 +62,7 @@
         "from": "monkey-watch-win",
         "sent": 2,
         "answered": 0,
-        "stale": 1,
+        "stale": 2,
         "failed": 0
       },
       {
@@ -86,7 +77,7 @@
       {
         "id": "b154116a",
         "from": "monkey-watch-win",
-        "status": "pending",
+        "status": "stale",
         "created_at": "2026-10-14T17:36:51Z",
         "answered_at": null,
         "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
