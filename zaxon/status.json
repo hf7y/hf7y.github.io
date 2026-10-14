@@ -2,8 +2,8 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-14T04:58:44Z",
-  "valid_until": "2026-10-14T06:28:44Z",
+  "generated": "2026-10-14T05:58:45Z",
+  "valid_until": "2026-10-14T07:28:45Z",
   "cadence_minutes": 60,
   "verdict": "DOWN",
   "why": "1 send(s) failed in 24h -- the relay accepts questions and WhatsApp does not take them",
@@ -38,32 +38,40 @@
     "totals": {
       "failed": 15,
       "answered": 11,
-      "stale": 291
+      "stale": 291,
+      "pending": 1
     },
     "window": {
-      "answered": 1,
       "failed": 1,
-      "stale": 4
+      "stale": 4,
+      "pending": 1
     },
     "window_sent": 6,
     "stale_slot_hours": 4.0,
     "queued": 0,
-    "slots": [],
+    "slots": [
+      {
+        "id": "8d786827",
+        "from": "monkey-watch-win",
+        "age_hours": 0.4,
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
+      }
+    ],
     "last_answered_at": "2026-10-13T05:09:14Z",
     "inbox": {
-      "count": 48,
-      "window_count": 2,
-      "oldest_age_hours": 1062.0,
+      "count": 49,
+      "window_count": 3,
+      "oldest_age_hours": 1063.0,
       "unfiled": {
         "count": 6,
-        "oldest_age_hours": 54.3
+        "oldest_age_hours": 55.3
       }
     },
     "senders": [
       {
         "from": "monkey-watch-win",
         "sent": 5,
-        "answered": 1,
+        "answered": 0,
         "stale": 3,
         "failed": 1
       },
@@ -76,6 +84,14 @@
       }
     ],
     "recent": [
+      {
+        "id": "8d786827",
+        "from": "monkey-watch-win",
+        "status": "pending",
+        "created_at": "2026-10-14T05:36:50Z",
+        "answered_at": null,
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
+      },
       {
         "id": "08ea64df",
         "from": "groc-mangr",
@@ -163,14 +179,6 @@
         "created_at": "2026-10-10T16:51:51Z",
         "answered_at": null,
         "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
-      },
-      {
-        "id": "0859e1ba",
-        "from": "baudin",
-        "status": "stale",
-        "created_at": "2026-10-10T16:45:56Z",
-        "answered_at": null,
-        "question": "calibrate is merged+built. Swapping the Zaxon watcher on dexter was refused. Run it? yes/no"
       }
     ]
   }
