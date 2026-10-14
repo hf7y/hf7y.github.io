@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T03:20:02Z",
+ "generated_at": "2026-10-14T03:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T04:20:02Z",
+ "valid_until": "2026-10-14T04:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "angry_keller",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T03:39:47Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -42,14 +54,14 @@
    "ports_published": null
   },
   {
-   "name": "elated_wright",
+   "name": "elastic_darwin",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T03:19:11Z",
+   "started_at": "2026-10-14T03:38:31Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -57,25 +69,13 @@
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
-   "state": "exited",
-   "health": "unhealthy",
-   "restarts": 0,
-   "exit_code": 0,
-   "started_at": "2026-10-14T02:18:55Z",
-   "finished_at": "2026-10-14T02:35:01Z",
-   "ports_published": false
-  },
-  {
-   "name": "nifty_herschel",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
    "state": "running",
-   "health": null,
+   "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T02:46:18Z",
+   "started_at": "2026-10-14T03:26:37Z",
    "finished_at": null,
-   "ports_published": null
+   "ports_published": true
   },
   {
    "name": "officejet",
@@ -114,14 +114,14 @@
    "ports_published": null
   },
   {
-   "name": "strange_satoshi",
+   "name": "stoic_mendel",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T02:20:12Z",
+   "started_at": "2026-10-14T03:29:17Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -253,12 +253,12 @@
   }
  ],
  "unmanaged": [
+  "angry_keller",
   "condescending_joliot",
-  "elated_wright",
-  "nifty_herschel",
+  "elastic_darwin",
   "officejet",
   "serene_elgamal",
-  "strange_satoshi",
+  "stoic_mendel",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -301,22 +301,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261014T024607Z.log",
-   "started_at": "2026-10-14T02:46:07Z",
-   "finished_at": "2026-10-14T03:09:48Z",
+   "log": "nightly.20261014T032824Z.log",
+   "started_at": "2026-10-14T03:28:24Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "senechal": {
      "queue": 1,
-     "at": "2026-10-14T02:46:21Z",
-     "outcome": "finished"
+     "at": "2026-10-14T03:28:37Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -621,7 +621,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261014T021944Z.log",
+    "log": "realisateur.20261014T033808Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -629,7 +629,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-14T02:19:44Z"
+    "at": "2026-10-14T03:38:08Z"
    },
    {
     "repo": "scheduler",
@@ -657,15 +657,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261014T025131Z.log",
-    "result": "success",
-    "turns": 41,
-    "cost_usd": 1.1481,
-    "rc": 0,
+    "log": "senechal.20261014T032837Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-14T02:51:31Z"
+    "at": "2026-10-14T03:28:37Z"
    },
    {
     "repo": "sequestria",
@@ -747,6 +747,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
@@ -757,6 +758,7 @@
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "vim-arcade: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
