@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T17:40:02Z",
+ "generated_at": "2026-10-14T18:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T18:40:02Z",
+ "valid_until": "2026-10-14T19:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -99,6 +99,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "stupefied_booth",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T18:00:01Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -233,6 +245,7 @@
   "officejet",
   "pedantic_sutherland",
   "serene_elgamal",
+  "stupefied_booth",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -275,67 +288,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261014T170702Z.log",
-   "started_at": "2026-10-14T17:07:03Z",
-   "finished_at": "2026-10-14T17:10:27Z",
+   "log": "nightly.20261014T175920Z.log",
+   "started_at": "2026-10-14T17:59:20Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "bibliothecaire": {
-     "queue": 12,
-     "at": "2026-10-14T17:08:43Z",
-     "outcome": null
-    },
-    "american-cycle": {
-     "queue": 9,
-     "at": "2026-10-14T17:08:54Z",
-     "outcome": null
-    },
-    "crt": {
-     "queue": 26,
-     "at": "2026-10-14T17:09:07Z",
-     "outcome": null
-    },
-    "apms-2173": {
-     "queue": 9,
-     "at": "2026-10-14T17:09:17Z",
-     "outcome": null
-    },
-    "scheduler": {
-     "queue": 5,
-     "at": "2026-10-14T17:09:30Z",
-     "outcome": null
-    },
-    "musc-2300": {
-     "queue": 49,
-     "at": "2026-10-14T17:09:44Z",
-     "outcome": null
-    },
-    "secretaire": {
-     "queue": 19,
-     "at": "2026-10-14T17:09:56Z",
-     "outcome": null
-    },
-    "senechal": {
-     "queue": 36,
-     "at": "2026-10-14T17:10:13Z",
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-14T17:59:54Z",
      "outcome": null
     }
    },
-   "skipped": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "space-canon",
-    "dog",
-    "vibe-kiosk"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -437,9 +405,9 @@
    {
     "repo": "crt",
     "log": "crt.20261014T170922Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
+    "result": "success",
+    "turns": 7,
+    "cost_usd": 2.6376,
     "rc": null,
     "pr": null,
     "commented": false,
@@ -640,15 +608,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261014T131017Z.log",
-    "result": "success",
-    "turns": 41,
-    "cost_usd": 1.0974,
-    "rc": 0,
+    "log": "realisateur.20261014T175954Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-14T13:10:17Z"
+    "at": "2026-10-14T17:59:54Z"
    },
    {
     "repo": "scheduler",
@@ -766,6 +734,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
@@ -774,6 +743,7 @@
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
