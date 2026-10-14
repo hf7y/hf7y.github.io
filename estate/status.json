@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-14T18:00:02Z",
+ "generated_at": "2026-10-14T18:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T19:00:02Z",
+ "valid_until": "2026-10-14T19:20:02Z",
  "containers": [
+  {
+   "name": "admiring_chatterjee",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T18:00:18Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "aedile-tube",
    "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
@@ -78,6 +90,18 @@
    "ports_published": null
   },
   {
+   "name": "practical_torvalds",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T18:10:23Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -99,18 +123,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "stupefied_booth",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T18:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -241,11 +253,12 @@
   }
  ],
  "unmanaged": [
+  "admiring_chatterjee",
   "condescending_joliot",
   "officejet",
   "pedantic_sutherland",
+  "practical_torvalds",
   "serene_elgamal",
-  "stupefied_booth",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -288,22 +301,58 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261014T175920Z.log",
-   "started_at": "2026-10-14T17:59:20Z",
-   "finished_at": null,
+   "log": "nightly.20261014T180702Z.log",
+   "started_at": "2026-10-14T18:07:03Z",
+   "finished_at": "2026-10-14T18:10:20Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "realisateur": {
-     "queue": 1,
-     "at": "2026-10-14T17:59:54Z",
+    "groc-mangr": {
+     "queue": 11,
+     "at": "2026-10-14T18:08:51Z",
+     "outcome": null
+    },
+    "media-arts-collective/wavebucks": {
+     "queue": 83,
+     "at": "2026-10-14T18:09:06Z",
+     "outcome": null
+    },
+    "baudin": {
+     "queue": 21,
+     "at": "2026-10-14T18:09:19Z",
+     "outcome": null
+    },
+    "nine-speakers": {
+     "queue": 13,
+     "at": "2026-10-14T18:09:30Z",
+     "outcome": null
+    },
+    "wtul": {
+     "queue": 19,
+     "at": "2026-10-14T18:10:02Z",
+     "outcome": null
+    },
+    "media-arts-collective/kreweofvaporwave.github.io": {
+     "queue": 2,
+     "at": "2026-10-14T18:10:12Z",
      "outcome": null
     }
    },
-   "skipped": [],
+   "skipped": [
+    "media-arts-collective/CodeDumpster",
+    "media-arts-collective/inv-redirects",
+    "media-arts-collective/nomac.org",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "space-canon",
+    "dog",
+    "vibe-kiosk",
+    "vim-arcade"
+   ],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -356,15 +405,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261014T140904Z.log",
+    "log": "baudin.20261014T180931Z.log",
     "result": "success",
-    "turns": 66,
-    "cost_usd": 2.0045,
+    "turns": 58,
+    "cost_usd": 1.8206,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/239",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-14T14:09:04Z"
+    "at": "2026-10-14T18:09:31Z"
    },
    {
     "repo": "bibliothecaire",
@@ -488,15 +537,15 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261014T131007Z.log",
+    "log": "groc-mangr.20261014T180903Z.log",
     "result": "success",
-    "turns": 106,
-    "cost_usd": 4.0282,
+    "turns": 62,
+    "cost_usd": 1.829,
     "rc": 0,
-    "pr": null,
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/494",
+    "commented": false,
     "note": null,
-    "at": "2026-10-14T13:10:07Z"
+    "at": "2026-10-14T18:09:03Z"
    },
    {
     "repo": "media-arts-collective.cinema-sanctuary",
@@ -536,15 +585,15 @@
    },
    {
     "repo": "media-arts-collective.kreweofvaporwave.github.io",
-    "log": "media-arts-collective.kreweofvaporwave.github.io.20261014T150905Z.log",
+    "log": "media-arts-collective.kreweofvaporwave.github.io.20261014T181022Z.log",
     "result": "success",
-    "turns": 26,
-    "cost_usd": 0.4164,
+    "turns": 19,
+    "cost_usd": 0.4248,
     "rc": 0,
-    "pr": "https://github.com/media-arts-collective/kreweofvaporwave.github.io/pull/9",
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-14T15:09:05Z"
+    "at": "2026-10-14T18:10:22Z"
    },
    {
     "repo": "media-arts-collective.office",
@@ -572,15 +621,15 @@
    },
    {
     "repo": "media-arts-collective.wavebucks",
-    "log": "media-arts-collective.wavebucks.20261014T131031Z.log",
+    "log": "media-arts-collective.wavebucks.20261014T180924Z.log",
     "result": "success",
-    "turns": 67,
-    "cost_usd": 2.8518,
+    "turns": 17,
+    "cost_usd": 0.6941,
     "rc": 0,
-    "pr": "https://github.com/media-arts-collective/wavebucks/pull/151",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-14T13:10:31Z"
+    "at": "2026-10-14T18:09:24Z"
    },
    {
     "repo": "musc-2300",
@@ -596,15 +645,15 @@
    },
    {
     "repo": "nine-speakers",
-    "log": "nine-speakers.20261014T140918Z.log",
+    "log": "nine-speakers.20261014T180942Z.log",
     "result": "success",
-    "turns": 55,
-    "cost_usd": 1.6723,
+    "turns": 20,
+    "cost_usd": 0.7359,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-14T14:09:18Z"
+    "at": "2026-10-14T18:09:42Z"
    },
    {
     "repo": "realisateur",
@@ -704,15 +753,15 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261014T140948Z.log",
-    "result": "success",
-    "turns": 36,
-    "cost_usd": 1.4151,
-    "rc": 0,
+    "log": "wtul.20261014T181018Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-14T14:09:48Z"
+    "at": "2026-10-14T18:10:18Z"
    }
   ],
   "dispatch_source": {
@@ -734,16 +783,17 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
+  "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue"
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
+  "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
