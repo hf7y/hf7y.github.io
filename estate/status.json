@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T04:00:02Z",
+ "generated_at": "2026-10-14T04:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T05:00:02Z",
+ "valid_until": "2026-10-14T05:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -54,28 +54,16 @@
    "ports_published": null
   },
   {
-   "name": "gallant_euclid",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T04:00:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
-   "state": "running",
-   "health": "healthy",
+   "state": "exited",
+   "health": "unhealthy",
    "restarts": 0,
-   "exit_code": null,
+   "exit_code": 0,
    "started_at": "2026-10-14T03:53:41Z",
-   "finished_at": null,
-   "ports_published": true
+   "finished_at": "2026-10-14T04:15:01Z",
+   "ports_published": false
   },
   {
    "name": "officejet",
@@ -111,6 +99,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "stupefied_booth",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T04:16:53Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -243,9 +243,9 @@
  "unmanaged": [
   "condescending_joliot",
   "elastic_darwin",
-  "gallant_euclid",
   "officejet",
   "serene_elgamal",
+  "stupefied_booth",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -288,22 +288,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261014T032824Z.log",
-   "started_at": "2026-10-14T03:28:24Z",
-   "finished_at": "2026-10-14T03:54:14Z",
+   "log": "nightly.20261014T041600Z.log",
+   "started_at": "2026-10-14T04:16:00Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "senechal": {
+    "realisateur": {
      "queue": 1,
-     "at": "2026-10-14T03:28:37Z",
-     "outcome": "finished"
+     "at": "2026-10-14T04:16:30Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -608,7 +608,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261014T033808Z.log",
+    "log": "realisateur.20261014T041630Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -616,7 +616,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-14T03:38:08Z"
+    "at": "2026-10-14T04:16:30Z"
    },
    {
     "repo": "scheduler",
@@ -734,6 +734,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
