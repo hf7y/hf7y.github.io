@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T10:40:02Z",
+ "generated_at": "2026-10-14T11:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T11:40:02Z",
+ "valid_until": "2026-10-14T12:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "confident_yonath",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T10:09:18Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "desk",
    "image": "ghcr.io/hf7y/secretaire:latest",
    "project": "secretaire",
@@ -50,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-05T03:45:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "distracted_golick",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T10:09:39Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -78,14 +54,14 @@
    "ports_published": false
   },
   {
-   "name": "inspiring_jennings",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "name": "hardcore_khayyam",
+   "image": "senechal-puller:02459d4c21ab",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T10:09:00Z",
+   "started_at": "2026-10-14T11:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -254,9 +230,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "confident_yonath",
-  "distracted_golick",
-  "inspiring_jennings",
+  "hardcore_khayyam",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -351,7 +325,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -513,11 +487,11 @@
    {
     "repo": "front-door",
     "log": "front-door.20261014T100934Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 20,
+    "cost_usd": 0.3165,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/front-door/pull/42",
     "commented": false,
     "note": null,
     "at": "2026-10-14T10:09:34Z"
@@ -609,12 +583,12 @@
    {
     "repo": "media-arts-collective.treasury",
     "log": "media-arts-collective.treasury.20261014T100856Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 15,
+    "cost_usd": 0.4121,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-14T10:08:56Z"
    },
@@ -705,11 +679,11 @@
    {
     "repo": "sequestria",
     "log": "sequestria.20261014T100914Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 55,
+    "cost_usd": 1.4925,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/sequestria/pull/56",
     "commented": false,
     "note": null,
     "at": "2026-10-14T10:09:14Z"
@@ -786,15 +760,12 @@
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
-  "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
