@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T08:40:01Z",
+ "generated_at": "2026-10-14T09:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T09:40:01Z",
+ "valid_until": "2026-10-14T10:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "boring_panini",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T09:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -217,6 +229,7 @@
   }
  ],
  "unmanaged": [
+  "boring_panini",
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
@@ -277,7 +290,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 3.4
+   "age_h": 3.8
   },
   "passes": [
    {
