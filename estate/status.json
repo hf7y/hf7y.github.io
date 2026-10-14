@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T04:20:01Z",
+ "generated_at": "2026-10-14T04:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T05:20:01Z",
+ "valid_until": "2026-10-14T05:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,28 +42,16 @@
    "ports_published": null
   },
   {
-   "name": "elastic_darwin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T03:38:31Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
-   "state": "exited",
-   "health": "unhealthy",
+   "state": "running",
+   "health": "healthy",
    "restarts": 0,
-   "exit_code": 0,
-   "started_at": "2026-10-14T03:53:41Z",
-   "finished_at": "2026-10-14T04:15:01Z",
-   "ports_published": false
+   "exit_code": null,
+   "started_at": "2026-10-14T04:25:17Z",
+   "finished_at": null,
+   "ports_published": true
   },
   {
    "name": "officejet",
@@ -242,7 +230,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "elastic_darwin",
   "officejet",
   "serene_elgamal",
   "stupefied_booth",
@@ -303,7 +290,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.4
   },
   "passes": [
    {
