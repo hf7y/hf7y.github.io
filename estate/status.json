@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T09:00:01Z",
+ "generated_at": "2026-10-14T09:20:03Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T10:00:01Z",
+ "valid_until": "2026-10-14T10:20:03Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-12T18:33:20Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "boring_panini",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T09:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,6 +42,30 @@
    "ports_published": null
   },
   {
+   "name": "festive_keldysh",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T09:10:03Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "funny_shannon",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T09:09:02Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -64,6 +76,42 @@
    "started_at": "2026-10-14T04:25:17Z",
    "finished_at": "2026-10-14T04:45:01Z",
    "ports_published": false
+  },
+  {
+   "name": "hardcore_elgamal",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T09:10:23Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "hungry_bouman",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T09:10:32Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "nervous_khayyam",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T09:09:21Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -99,6 +147,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "thirsty_cori",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T09:09:23Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -229,10 +289,15 @@
   }
  ],
  "unmanaged": [
-  "boring_panini",
   "condescending_joliot",
+  "festive_keldysh",
+  "funny_shannon",
+  "hardcore_elgamal",
+  "hungry_bouman",
+  "nervous_khayyam",
   "officejet",
   "serene_elgamal",
+  "thirsty_cori",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -275,22 +340,67 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261014T051323Z.log",
-   "started_at": "2026-10-14T05:13:23Z",
-   "finished_at": "2026-10-14T06:14:25Z",
+   "log": "nightly.20261014T090702Z.log",
+   "started_at": "2026-10-14T09:07:02Z",
+   "finished_at": "2026-10-14T09:10:28Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "groc-mangr": {
-     "queue": 1,
-     "at": "2026-10-14T05:32:55Z",
-     "outcome": "finished"
+    "baudin": {
+     "queue": 20,
+     "at": "2026-10-14T09:08:45Z",
+     "outcome": null
+    },
+    "nine-speakers": {
+     "queue": 13,
+     "at": "2026-10-14T09:08:57Z",
+     "outcome": null
+    },
+    "vim-arcade": {
+     "queue": 3,
+     "at": "2026-10-14T09:09:08Z",
+     "outcome": null
+    },
+    "wtul": {
+     "queue": 20,
+     "at": "2026-10-14T09:09:25Z",
+     "outcome": null
+    },
+    "media-arts-collective/kreweofvaporwave.github.io": {
+     "queue": 2,
+     "at": "2026-10-14T09:09:36Z",
+     "outcome": null
+    },
+    "media-arts-collective/office": {
+     "queue": 2,
+     "at": "2026-10-14T09:09:46Z",
+     "outcome": null
+    },
+    "media-arts-collective/inventory-app": {
+     "queue": 12,
+     "at": "2026-10-14T09:10:01Z",
+     "outcome": null
+    },
+    "media-arts-collective/grants": {
+     "queue": 13,
+     "at": "2026-10-14T09:10:15Z",
+     "outcome": null
     }
    },
-   "skipped": [],
+   "skipped": [
+    "media-arts-collective/CodeDumpster",
+    "media-arts-collective/inv-redirects",
+    "media-arts-collective/nomac.org",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "space-canon",
+    "dog",
+    "vibe-kiosk"
+   ],
    "queue_unreadable": [],
-   "age_h": 3.8
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -343,15 +453,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261013T210849Z.log",
-    "result": "success",
-    "turns": 23,
-    "cost_usd": 0.5874,
-    "rc": 0,
+    "log": "baudin.20261014T090857Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T21:08:49Z"
+    "at": "2026-10-14T09:08:57Z"
    },
    {
     "repo": "bibliothecaire",
@@ -499,31 +609,31 @@
    },
    {
     "repo": "media-arts-collective.grants",
-    "log": "media-arts-collective.grants.20261013T230952Z.log",
-    "result": "success",
-    "turns": 18,
-    "cost_usd": 0.4707,
-    "rc": 0,
+    "log": "media-arts-collective.grants.20261014T091026Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T23:09:52Z"
+    "at": "2026-10-14T09:10:26Z"
    },
    {
     "repo": "media-arts-collective.inventory-app",
-    "log": "media-arts-collective.inventory-app.20261013T230942Z.log",
-    "result": "success",
-    "turns": 30,
-    "cost_usd": 0.6911,
-    "rc": 0,
-    "pr": "https://github.com/media-arts-collective/inventory-app/pull/58",
+    "log": "media-arts-collective.inventory-app.20261014T091017Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T23:09:42Z"
+    "at": "2026-10-14T09:10:17Z"
    },
    {
     "repo": "media-arts-collective.kreweofvaporwave.github.io",
-    "log": "media-arts-collective.kreweofvaporwave.github.io.20261013T230804Z.log",
+    "log": "media-arts-collective.kreweofvaporwave.github.io.20261014T090947Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -531,19 +641,19 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T23:08:04Z"
+    "at": "2026-10-14T09:09:47Z"
    },
    {
     "repo": "media-arts-collective.office",
-    "log": "media-arts-collective.office.20261013T230842Z.log",
-    "result": "success",
-    "turns": 26,
-    "cost_usd": 0.3981,
-    "rc": 0,
-    "pr": "https://github.com/media-arts-collective/office/pull/11",
+    "log": "media-arts-collective.office.20261014T090958Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T23:08:42Z"
+    "at": "2026-10-14T09:09:58Z"
    },
    {
     "repo": "media-arts-collective.treasury",
@@ -583,15 +693,15 @@
    },
    {
     "repo": "nine-speakers",
-    "log": "nine-speakers.20261013T210902Z.log",
-    "result": "success",
-    "turns": 72,
-    "cost_usd": 2.1255,
-    "rc": 0,
+    "log": "nine-speakers.20261014T090911Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T21:09:02Z"
+    "at": "2026-10-14T09:09:11Z"
    },
    {
     "repo": "realisateur",
@@ -679,19 +789,19 @@
    },
    {
     "repo": "vim-arcade",
-    "log": "vim-arcade.20261013T210908Z.log",
-    "result": "success",
-    "turns": 78,
-    "cost_usd": 2.1826,
-    "rc": 0,
+    "log": "vim-arcade.20261014T090918Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T21:09:08Z"
+    "at": "2026-10-14T09:09:18Z"
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261013T214142Z.log",
+    "log": "wtul.20261014T090943Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -699,7 +809,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-13T21:41:42Z"
+    "at": "2026-10-14T09:09:43Z"
    }
   ],
   "dispatch_source": {
@@ -728,7 +838,9 @@
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
+  "media-arts-collective.inventory-app: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
+  "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "vim-arcade: last pass landed nothing -- no PR and no comment on its issue",
