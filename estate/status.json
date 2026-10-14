@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T22:00:01Z",
+ "generated_at": "2026-10-14T22:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T23:00:01Z",
+ "valid_until": "2026-10-14T23:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -27,6 +27,18 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
+   "ports_published": null
+  },
+  {
+   "name": "condescending_mestorf",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T22:13:37Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -66,30 +78,6 @@
    "ports_published": true
   },
   {
-   "name": "practical_bassi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T21:59:31Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "recursing_lehmann",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T22:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -111,18 +99,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "tender_lalande",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T21:09:00Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -254,11 +230,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "condescending_mestorf",
   "officejet",
-  "practical_bassi",
-  "recursing_lehmann",
   "serene_elgamal",
-  "tender_lalande",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -301,55 +275,15 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261014T210702Z.log",
-   "started_at": "2026-10-14T21:07:03Z",
-   "finished_at": "2026-10-14T21:10:24Z",
+   "log": "nightly.20261014T220702Z.log",
+   "started_at": "2026-10-14T22:07:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "american-cycle": {
-     "queue": 9,
-     "at": "2026-10-14T21:08:46Z",
-     "outcome": null
-    },
-    "crt": {
-     "queue": 29,
-     "at": "2026-10-14T21:08:59Z",
-     "outcome": null
-    },
-    "apms-2173": {
-     "queue": 8,
-     "at": "2026-10-14T21:09:07Z",
-     "outcome": null
-    },
-    "scheduler": {
-     "queue": 4,
-     "at": "2026-10-14T21:09:17Z",
-     "outcome": null
-    },
-    "musc-2300": {
-     "queue": 51,
-     "at": "2026-10-14T21:09:32Z",
-     "outcome": null
-    },
-    "secretaire": {
-     "queue": 20,
-     "at": "2026-10-14T21:09:43Z",
-     "outcome": null
-    },
-    "groc-mangr": {
-     "queue": 10,
-     "at": "2026-10-14T21:09:55Z",
-     "outcome": null
-    },
-    "media-arts-collective/wavebucks": {
-     "queue": 83,
-     "at": "2026-10-14T21:10:13Z",
-     "outcome": null
-    }
-   },
-   "skipped": [
+   "dispatched": {},
+   "skipped": [],
+   "queue_unreadable": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
     "media-arts-collective/nomac.org",
@@ -359,10 +293,11 @@
     "space-canon",
     "dog",
     "vibe-kiosk",
-    "vim-arcade"
+    "vim-arcade",
+    "baudin",
+    "nine-speakers"
    ],
-   "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -392,11 +327,11 @@
    {
     "repo": "american-cycle",
     "log": "american-cycle.20261014T210857Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 78,
+    "cost_usd": 2.505,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/american-cycle/pull/309",
     "commented": false,
     "note": null,
     "at": "2026-10-14T21:08:57Z"
@@ -793,10 +728,22 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
+  "media-arts-collective/CodeDumpster: the nightly could not read its queue and skipped it",
+  "media-arts-collective/inv-redirects: the nightly could not read its queue and skipped it",
+  "media-arts-collective/nomac.org: the nightly could not read its queue and skipped it",
+  "selfdev-permission-witness-scratch: the nightly could not read its queue and skipped it",
+  "verbs: the nightly could not read its queue and skipped it",
+  "vkv23: the nightly could not read its queue and skipped it",
+  "space-canon: the nightly could not read its queue and skipped it",
+  "dog: the nightly could not read its queue and skipped it",
+  "vibe-kiosk: the nightly could not read its queue and skipped it",
+  "vim-arcade: the nightly could not read its queue and skipped it",
+  "baudin: the nightly could not read its queue and skipped it",
+  "nine-speakers: the nightly could not read its queue and skipped it",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
-  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
