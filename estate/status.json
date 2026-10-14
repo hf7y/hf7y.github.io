@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-14T11:40:02Z",
+ "generated_at": "2026-10-14T12:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-14T12:40:02Z",
+ "valid_until": "2026-10-14T13:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -62,6 +62,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T11:10:36Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "jovial_fermat",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-14T12:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -279,6 +291,7 @@
  "unmanaged": [
   "condescending_joliot",
   "jolly_rosalind",
+  "jovial_fermat",
   "jovial_moore",
   "lucid_pascal",
   "mystifying_nobel",
@@ -387,7 +400,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
