@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T06:00:02Z",
+ "generated_at": "2026-10-15T06:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T07:00:02Z",
+ "valid_until": "2026-10-15T07:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "clever_visvesvaraya",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T06:18:07Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -42,14 +54,14 @@
    "ports_published": null
   },
   {
-   "name": "funny_lovelace",
-   "image": "senechal-puller:02459d4c21ab",
+   "name": "eager_goldwasser",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-15T06:00:01Z",
+   "started_at": "2026-10-15T06:01:49Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -78,18 +90,6 @@
    "ports_published": null
   },
   {
-   "name": "modest_hermann",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T05:59:42Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -100,18 +100,6 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "peaceful_ardinghelli",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T05:40:31Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -265,12 +253,11 @@
   }
  ],
  "unmanaged": [
+  "clever_visvesvaraya",
   "condescending_joliot",
-  "funny_lovelace",
+  "eager_goldwasser",
   "loving_swartz",
-  "modest_hermann",
   "officejet",
-  "peaceful_ardinghelli",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -320,10 +307,21 @@
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "secretaire": {
+     "queue": 1,
+     "at": "2026-10-15T06:00:04Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-15T06:17:40Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -628,7 +626,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261015T054004Z.log",
+    "log": "realisateur.20261015T061740Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -636,7 +634,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T05:40:04Z"
+    "at": "2026-10-15T06:17:40Z"
    },
    {
     "repo": "scheduler",
@@ -652,15 +650,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261015T042940Z.log",
+    "log": "secretaire.20261015T060004Z.log",
     "result": "success",
-    "turns": 37,
-    "cost_usd": 0.8975,
+    "turns": 49,
+    "cost_usd": 1.3472,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/241",
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/248",
+    "commented": false,
     "note": null,
-    "at": "2026-10-15T04:29:40Z"
+    "at": "2026-10-15T06:00:04Z"
    },
    {
     "repo": "senechal",
