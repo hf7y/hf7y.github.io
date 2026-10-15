@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T06:20:02Z",
+ "generated_at": "2026-10-15T06:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T07:20:02Z",
+ "valid_until": "2026-10-15T07:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "clever_visvesvaraya",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T06:18:07Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,14 +42,14 @@
    "ports_published": null
   },
   {
-   "name": "eager_goldwasser",
+   "name": "epic_allen",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-15T06:01:49Z",
+   "started_at": "2026-10-15T06:37:38Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -253,9 +241,8 @@
   }
  ],
  "unmanaged": [
-  "clever_visvesvaraya",
   "condescending_joliot",
-  "eager_goldwasser",
+  "epic_allen",
   "loving_swartz",
   "officejet",
   "serene_elgamal",
@@ -310,18 +297,23 @@
    "dispatched": {
     "secretaire": {
      "queue": 1,
-     "at": "2026-10-15T06:00:04Z",
+     "at": "2026-10-15T06:30:11Z",
      "outcome": "finished"
     },
     "realisateur": {
      "queue": 1,
      "at": "2026-10-15T06:17:40Z",
+     "outcome": "finished"
+    },
+    "etalon": {
+     "queue": 1,
+     "at": "2026-10-15T06:37:33Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
@@ -470,15 +462,15 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261015T043651Z.log",
-    "result": "success",
-    "turns": 63,
-    "cost_usd": 1.9674,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/etalon/pull/204",
+    "log": "etalon.20261015T063733Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T04:36:51Z"
+    "at": "2026-10-15T06:37:33Z"
    },
    {
     "repo": "front-door",
@@ -627,12 +619,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261015T061740Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 25,
+    "cost_usd": 0.5651,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1921",
+    "commented": true,
     "note": null,
     "at": "2026-10-15T06:17:40Z"
    },
@@ -650,15 +642,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261015T060004Z.log",
+    "log": "secretaire.20261015T063011Z.log",
     "result": "success",
-    "turns": 49,
-    "cost_usd": 1.3472,
+    "turns": 58,
+    "cost_usd": 1.1591,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/248",
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/250",
     "commented": false,
     "note": null,
-    "at": "2026-10-15T06:00:04Z"
+    "at": "2026-10-15T06:30:11Z"
    },
    {
     "repo": "senechal",
@@ -757,11 +749,11 @@
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
+  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
