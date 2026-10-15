@@ -2,11 +2,11 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-15T05:18:01Z",
-  "valid_until": "2026-10-15T06:48:01Z",
+  "generated": "2026-10-15T06:18:01Z",
+  "valid_until": "2026-10-15T07:48:01Z",
   "cadence_minutes": 60,
   "verdict": "FILING-STUCK",
-  "why": "12 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 78.7h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
+  "why": "12 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 79.7h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
@@ -16,17 +16,17 @@
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 10 hours (healthy)"
+      "status": "Up 11 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
       "state": "running",
-      "status": "Up 10 hours (healthy)"
+      "status": "Up 11 hours (healthy)"
     },
     {
       "name": "zaxon-gateway",
       "state": "running",
-      "status": "Up 10 hours"
+      "status": "Up 11 hours"
     }
   ],
   "hazards": [
@@ -43,23 +43,32 @@
     "totals": {
       "failed": 15,
       "answered": 11,
-      "stale": 293
+      "stale": 293,
+      "pending": 1
     },
     "window": {
-      "stale": 2
+      "stale": 1,
+      "pending": 1
     },
     "window_sent": 2,
-    "stale_slot_hours": 2.0,
+    "stale_slot_hours": 1.0,
     "queued": 0,
-    "slots": [],
+    "slots": [
+      {
+        "id": "71cdbdd1",
+        "from": "monkey-watch-win",
+        "age_hours": 0.7,
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
+      }
+    ],
     "last_answered_at": "2026-10-13T05:09:14Z",
     "inbox": {
       "count": 59,
-      "window_count": 11,
-      "oldest_age_hours": 1086.3,
+      "window_count": 9,
+      "oldest_age_hours": 1087.3,
       "unfiled": {
         "count": 12,
-        "oldest_age_hours": 78.7
+        "oldest_age_hours": 79.7
       }
     },
     "senders": [
@@ -67,11 +76,19 @@
         "from": "monkey-watch-win",
         "sent": 2,
         "answered": 0,
-        "stale": 2,
+        "stale": 1,
         "failed": 0
       }
     ],
     "recent": [
+      {
+        "id": "71cdbdd1",
+        "from": "monkey-watch-win",
+        "status": "pending",
+        "created_at": "2026-10-15T05:36:50Z",
+        "answered_at": null,
+        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
+      },
       {
         "id": "b154116a",
         "from": "monkey-watch-win",
@@ -157,14 +174,6 @@
         "from": "monkey-watch-win",
         "status": "stale",
         "created_at": "2026-10-11T17:06:51Z",
-        "answered_at": null,
-        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
-      },
-      {
-        "id": "051c37d3",
-        "from": "monkey-watch-win",
-        "status": "stale",
-        "created_at": "2026-10-11T04:51:51Z",
         "answered_at": null,
         "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
       }
