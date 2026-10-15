@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-15T12:40:03Z",
+ "generated_at": "2026-10-15T13:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T13:40:03Z",
+ "valid_until": "2026-10-15T14:00:02Z",
  "containers": [
-  {
-   "name": "admiring_beaver",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T12:28:37Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "aedile-tube",
    "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
@@ -26,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "competent_hoover",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T12:44:30Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -74,6 +74,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-15T00:22:05Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "nice_euclid",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T13:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -241,9 +253,10 @@
   }
  ],
  "unmanaged": [
-  "admiring_beaver",
+  "competent_hoover",
   "condescending_joliot",
   "loving_swartz",
+  "nice_euclid",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -288,8 +301,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261015T121933Z.log",
-   "started_at": "2026-10-15T12:19:33Z",
+   "log": "nightly.20261015T124309Z.log",
+   "started_at": "2026-10-15T12:43:09Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -297,7 +310,7 @@
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-15T12:28:06Z",
+     "at": "2026-10-15T12:43:56Z",
      "outcome": null
     }
    },
@@ -608,7 +621,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261015T122806Z.log",
+    "log": "realisateur.20261015T124356Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -616,7 +629,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T12:28:06Z"
+    "at": "2026-10-15T12:43:56Z"
    },
    {
     "repo": "scheduler",
