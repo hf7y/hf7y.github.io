@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T20:20:02Z",
+ "generated_at": "2026-10-15T20:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T21:20:02Z",
+ "valid_until": "2026-10-15T21:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "amazing_ishizaka",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T20:33:44Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -42,28 +54,28 @@
    "ports_published": null
   },
   {
-   "name": "groc-browser",
-   "image": "ghcr.io/hf7y/groc-browser:latest",
-   "project": "groc-browser",
-   "state": "running",
-   "health": "healthy",
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T20:15:44Z",
-   "finished_at": null,
-   "ports_published": true
-  },
-  {
-   "name": "groc-runner-runner-run-4e2cfa067f86",
-   "image": "groc-runner:local",
-   "project": "groc-runner",
+   "name": "distracted_knuth",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-15T20:19:56Z",
+   "started_at": "2026-10-15T20:39:26Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "groc-browser",
+   "image": "ghcr.io/hf7y/groc-browser:latest",
+   "project": "groc-browser",
+   "state": "exited",
+   "health": "unhealthy",
+   "restarts": 0,
+   "exit_code": 0,
+   "started_at": "2026-10-15T20:15:44Z",
+   "finished_at": "2026-10-15T20:35:01Z",
+   "ports_published": false
   },
   {
    "name": "loving_swartz",
@@ -88,6 +100,18 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "recursing_mayer",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T20:39:04Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -265,10 +289,12 @@
   }
  ],
  "unmanaged": [
+  "amazing_ishizaka",
   "condescending_joliot",
-  "groc-runner-runner-run-4e2cfa067f86",
+  "distracted_knuth",
   "loving_swartz",
   "officejet",
+  "recursing_mayer",
   "sad_kepler",
   "serene_elgamal",
   "stupefied_sanderson",
@@ -314,22 +340,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261015T200230Z.log",
-   "started_at": "2026-10-15T20:02:30Z",
-   "finished_at": "2026-10-15T20:15:43Z",
+   "log": "nightly.20261015T203830Z.log",
+   "started_at": "2026-10-15T20:38:30Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "media-arts-collective/treasury": {
+    "hf7y-estate/secretaire": {
      "queue": 1,
-     "at": "2026-10-15T20:02:40Z",
-     "outcome": "finished"
+     "at": "2026-10-15T20:38:44Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -658,27 +684,27 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261015T200159Z.log",
-    "result": "success",
-    "turns": 83,
-    "cost_usd": 2.0963,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/286",
+    "log": "secretaire.20261015T203844Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T20:01:59Z"
+    "at": "2026-10-15T20:38:44Z"
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261015T175713Z.log",
-    "result": "success",
-    "turns": 41,
-    "cost_usd": 1.2534,
-    "rc": 0,
+    "log": "senechal.20261015T203837Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-15T17:57:13Z"
+    "at": "2026-10-15T20:38:37Z"
    },
    {
     "repo": "sequestria",
@@ -760,6 +786,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
@@ -768,6 +795,8 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
