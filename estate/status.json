@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T05:40:02Z",
+ "generated_at": "2026-10-15T06:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T06:40:02Z",
+ "valid_until": "2026-10-15T07:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,6 +42,18 @@
    "ports_published": null
   },
   {
+   "name": "funny_lovelace",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T06:00:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -66,6 +78,18 @@
    "ports_published": null
   },
   {
+   "name": "modest_hermann",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T05:59:42Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -76,6 +100,18 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "peaceful_ardinghelli",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T05:40:31Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -230,8 +266,11 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "funny_lovelace",
   "loving_swartz",
+  "modest_hermann",
   "officejet",
+  "peaceful_ardinghelli",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -275,22 +314,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261015T043642Z.log",
-   "started_at": "2026-10-15T04:36:42Z",
-   "finished_at": "2026-10-15T05:32:17Z",
+   "log": "nightly.20261015T055929Z.log",
+   "started_at": "2026-10-15T05:59:29Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "etalon": {
-     "queue": 1,
-     "at": "2026-10-15T04:36:51Z",
-     "outcome": "finished"
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.1
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -595,15 +628,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261015T014407Z.log",
-    "result": "success",
-    "turns": 72,
-    "cost_usd": 1.9676,
-    "rc": 0,
+    "log": "realisateur.20261015T054004Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-15T01:44:07Z"
+    "at": "2026-10-15T05:40:04Z"
    },
    {
     "repo": "scheduler",
@@ -721,6 +754,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
@@ -729,6 +763,7 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
