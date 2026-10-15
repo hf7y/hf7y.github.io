@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T06:40:02Z",
+ "generated_at": "2026-10-15T07:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T07:40:02Z",
+ "valid_until": "2026-10-15T08:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "epic_allen",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T06:37:38Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -88,6 +76,30 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "pedantic_moore",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T07:00:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "recursing_bohr",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T06:58:40Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "roster",
@@ -242,9 +254,10 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "epic_allen",
   "loving_swartz",
   "officejet",
+  "pedantic_moore",
+  "recursing_bohr",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -308,12 +321,17 @@
     "etalon": {
      "queue": 1,
      "at": "2026-10-15T06:37:33Z",
-     "outcome": null
+     "outcome": "finished"
+    },
+    "musc-2300": {
+     "queue": 1,
+     "at": "2026-10-15T06:48:16Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 1.0
   },
   "passes": [
    {
@@ -463,11 +481,11 @@
    {
     "repo": "etalon",
     "log": "etalon.20261015T063733Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 27,
+    "cost_usd": 0.87,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/205",
     "commented": false,
     "note": null,
     "at": "2026-10-15T06:37:33Z"
@@ -594,15 +612,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261015T025913Z.log",
+    "log": "musc-2300.20261015T064816Z.log",
     "result": "success",
-    "turns": 44,
-    "cost_usd": 0.7215,
+    "turns": 64,
+    "cost_usd": 1.4207,
     "rc": 0,
-    "pr": null,
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/343",
+    "commented": false,
     "note": null,
-    "at": "2026-10-15T02:59:13Z"
+    "at": "2026-10-15T06:48:16Z"
    },
    {
     "repo": "nine-speakers",
@@ -749,7 +767,6 @@
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
-  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
