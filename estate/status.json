@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T21:00:02Z",
+ "generated_at": "2026-10-15T21:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T22:00:02Z",
+ "valid_until": "2026-10-15T22:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "boring_black",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T21:00:02Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "distracted_knuth",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T20:39:26Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -90,6 +66,18 @@
    "ports_published": null
   },
   {
+   "name": "lucid_chaum",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T21:11:59Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -100,18 +88,6 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "recursing_mayer",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T20:39:04Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "roster",
@@ -289,12 +265,10 @@
   }
  ],
  "unmanaged": [
-  "boring_black",
   "condescending_joliot",
-  "distracted_knuth",
   "loving_swartz",
+  "lucid_chaum",
   "officejet",
-  "recursing_mayer",
   "sad_kepler",
   "serene_elgamal",
   "stupefied_sanderson",
@@ -340,22 +314,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261015T203830Z.log",
-   "started_at": "2026-10-15T20:38:30Z",
+   "log": "nightly.20261015T210056Z.log",
+   "started_at": "2026-10-15T21:00:56Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "hf7y-estate/secretaire": {
+    "secretaire": {
      "queue": 1,
-     "at": "2026-10-15T20:38:44Z",
-     "outcome": null
+     "at": "2026-10-15T21:09:43Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.4
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -684,24 +658,24 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261015T203844Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "log": "secretaire.20261015T210943Z.log",
+    "result": "success",
+    "turns": 11,
+    "cost_usd": 0.3052,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-15T20:38:44Z"
+    "at": "2026-10-15T21:09:43Z"
    },
    {
     "repo": "senechal",
     "log": "senechal.20261015T203837Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 32,
+    "cost_usd": 0.8632,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1411",
     "commented": false,
     "note": null,
     "at": "2026-10-15T20:38:37Z"
@@ -795,8 +769,6 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
