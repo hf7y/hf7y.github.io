@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T11:20:02Z",
+ "generated_at": "2026-10-15T11:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T12:20:02Z",
+ "valid_until": "2026-10-15T12:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "brave_swirles",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T11:20:37Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -42,18 +54,6 @@
    "ports_published": null
   },
   {
-   "name": "eloquent_mcclintock",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T11:18:59Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -74,6 +74,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-15T00:22:05Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "nice_herschel",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T11:34:16Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -111,6 +123,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "tender_sammet",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T11:38:42Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -241,11 +265,13 @@
   }
  ],
  "unmanaged": [
+  "brave_swirles",
   "condescending_joliot",
-  "eloquent_mcclintock",
   "loving_swartz",
+  "nice_herschel",
   "officejet",
   "serene_elgamal",
+  "tender_sammet",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -294,10 +320,16 @@
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-15T11:20:06Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -447,10 +479,10 @@
    {
     "repo": "etalon",
     "log": "etalon.20261015T111854Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 68,
+    "cost_usd": 1.9222,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -602,15 +634,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261015T110811Z.log",
-    "result": "success",
-    "turns": 9,
-    "cost_usd": 0.1816,
-    "rc": 0,
+    "log": "realisateur.20261015T113345Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-15T11:08:11Z"
+    "at": "2026-10-15T11:33:45Z"
    },
    {
     "repo": "scheduler",
@@ -737,6 +769,7 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
