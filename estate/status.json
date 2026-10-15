@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T05:20:02Z",
+ "generated_at": "2026-10-15T05:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T06:20:02Z",
+ "valid_until": "2026-10-15T06:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -54,18 +54,6 @@
    "ports_published": false
   },
   {
-   "name": "hopeful_montalcini",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T04:08:11Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "loving_swartz",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -111,18 +99,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "sweet_kepler",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T04:36:57Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -254,11 +230,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "hopeful_montalcini",
   "loving_swartz",
   "officejet",
   "serene_elgamal",
-  "sweet_kepler",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -303,7 +277,7 @@
   "last_run": {
    "log": "nightly.20261015T043642Z.log",
    "started_at": "2026-10-15T04:36:42Z",
-   "finished_at": null,
+   "finished_at": "2026-10-15T05:32:17Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -311,12 +285,12 @@
     "etalon": {
      "queue": 1,
      "at": "2026-10-15T04:36:51Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 1.1
   },
   "passes": [
    {
@@ -382,10 +356,10 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261015T040803Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 119,
+    "cost_usd": 4.0694,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -466,11 +440,11 @@
    {
     "repo": "etalon",
     "log": "etalon.20261015T043651Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 63,
+    "cost_usd": 1.9674,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/etalon/pull/204",
     "commented": false,
     "note": null,
     "at": "2026-10-15T04:36:51Z"
@@ -747,12 +721,10 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
-  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
