@@ -2,31 +2,31 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-15T01:16:17Z",
-  "valid_until": "2026-10-15T02:46:17Z",
+  "generated": "2026-10-15T02:17:02Z",
+  "valid_until": "2026-10-15T03:47:02Z",
   "cadence_minutes": 60,
   "verdict": "FILING-STUCK",
-  "why": "12 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 74.6h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
+  "why": "12 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 75.6h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 5
+    "ms": 3
   },
   "containers": [
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 6 hours (healthy)"
+      "status": "Up 7 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
       "state": "running",
-      "status": "Up 6 hours (healthy)"
+      "status": "Up 7 hours (healthy)"
     },
     {
       "name": "zaxon-gateway",
       "state": "running",
-      "status": "Up 6 hours"
+      "status": "Up 7 hours"
     }
   ],
   "hazards": [
@@ -46,20 +46,20 @@
       "stale": 293
     },
     "window": {
-      "stale": 3
+      "stale": 2
     },
-    "window_sent": 3,
-    "stale_slot_hours": 3.0,
+    "window_sent": 2,
+    "stale_slot_hours": 2.0,
     "queued": 0,
     "slots": [],
     "last_answered_at": "2026-10-13T05:09:14Z",
     "inbox": {
       "count": 59,
       "window_count": 11,
-      "oldest_age_hours": 1082.3,
+      "oldest_age_hours": 1083.3,
       "unfiled": {
         "count": 12,
-        "oldest_age_hours": 74.6
+        "oldest_age_hours": 75.6
       }
     },
     "senders": [
@@ -68,13 +68,6 @@
         "sent": 2,
         "answered": 0,
         "stale": 2,
-        "failed": 0
-      },
-      {
-        "from": "groc-mangr",
-        "sent": 1,
-        "answered": 0,
-        "stale": 1,
         "failed": 0
       }
     ],
