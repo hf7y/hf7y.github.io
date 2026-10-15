@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T02:00:02Z",
+ "generated_at": "2026-10-15T02:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T03:00:02Z",
+ "valid_until": "2026-10-15T03:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "goofy_euclid",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T02:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -254,7 +242,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "goofy_euclid",
   "loving_swartz",
   "officejet",
   "pensive_swirles",
@@ -341,7 +328,7 @@
     "bibliothecaire",
     "american-cycle"
    ],
-   "age_h": 1.9
+   "age_h": 2.2
   },
   "passes": [
    {
