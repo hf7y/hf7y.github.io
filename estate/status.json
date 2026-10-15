@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T09:40:01Z",
+ "generated_at": "2026-10-15T10:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T10:40:01Z",
+ "valid_until": "2026-10-15T11:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "eager_mayer",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T09:39:48Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -64,6 +52,18 @@
    "started_at": "2026-10-14T04:25:17Z",
    "finished_at": "2026-10-14T04:45:01Z",
    "ports_published": false
+  },
+  {
+   "name": "keen_varahamihira",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T10:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "loving_swartz",
@@ -196,6 +196,18 @@
    "started_at": "2026-10-14T19:05:51Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zealous_tharp",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T09:52:13Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -242,11 +254,12 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "eager_mayer",
+  "keen_varahamihira",
   "loving_swartz",
   "officejet",
   "serene_elgamal",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "zealous_tharp"
  ],
  "nightly": {
   "armed": true,
@@ -297,8 +310,8 @@
    "dispatched": {
     "secretaire": {
      "queue": 1,
-     "at": "2026-10-15T06:30:11Z",
-     "outcome": "finished"
+     "at": "2026-10-15T09:52:02Z",
+     "outcome": null
     },
     "realisateur": {
      "queue": 1,
@@ -317,13 +330,13 @@
     },
     "media-arts-collective/cinema-sanctuary": {
      "queue": 1,
-     "at": "2026-10-15T09:39:42Z",
-     "outcome": null
+     "at": "2026-10-15T09:44:17Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 3.7
+   "age_h": 4.0
   },
   "passes": [
    {
@@ -520,15 +533,15 @@
    },
    {
     "repo": "media-arts-collective.cinema-sanctuary",
-    "log": "media-arts-collective.cinema-sanctuary.20261015T093942Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "log": "media-arts-collective.cinema-sanctuary.20261015T094417Z.log",
+    "result": "success",
+    "turns": 40,
+    "cost_usd": 1.2861,
+    "rc": 0,
+    "pr": "https://github.com/media-arts-collective/cinema-sanctuary/pull/159",
     "commented": false,
     "note": null,
-    "at": "2026-10-15T09:39:42Z"
+    "at": "2026-10-15T09:44:17Z"
    },
    {
     "repo": "media-arts-collective.grants",
@@ -652,15 +665,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261015T063011Z.log",
-    "result": "success",
-    "turns": 58,
-    "cost_usd": 1.1591,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/250",
+    "log": "secretaire.20261015T095202Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T06:30:11Z"
+    "at": "2026-10-15T09:52:02Z"
    },
    {
     "repo": "senechal",
@@ -761,9 +774,9 @@
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
