@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T08:40:01Z",
+ "generated_at": "2026-10-15T09:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T09:40:01Z",
+ "valid_until": "2026-10-15T10:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -18,14 +18,14 @@
    "ports_published": null
   },
   {
-   "name": "bold_pascal",
+   "name": "competent_rosalind",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-15T08:38:36Z",
+   "started_at": "2026-10-15T08:53:51Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -74,6 +74,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-15T00:22:05Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "magical_curran",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T09:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -241,9 +253,10 @@
   }
  ],
  "unmanaged": [
-  "bold_pascal",
+  "competent_rosalind",
   "condescending_joliot",
   "loving_swartz",
+  "magical_curran",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -303,7 +316,7 @@
     "realisateur": {
      "queue": 1,
      "at": "2026-10-15T08:11:52Z",
-     "outcome": null
+     "outcome": "finished"
     },
     "etalon": {
      "queue": 1,
@@ -317,13 +330,13 @@
     },
     "media-arts-collective/cinema-sanctuary": {
      "queue": 1,
-     "at": "2026-10-15T07:26:47Z",
-     "outcome": "finished"
+     "at": "2026-10-15T08:53:47Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.7
+   "age_h": 3.0
   },
   "passes": [
    {
@@ -520,15 +533,15 @@
    },
    {
     "repo": "media-arts-collective.cinema-sanctuary",
-    "log": "media-arts-collective.cinema-sanctuary.20261015T072647Z.log",
-    "result": "success",
-    "turns": 31,
-    "cost_usd": 1.0241,
-    "rc": 0,
+    "log": "media-arts-collective.cinema-sanctuary.20261015T085347Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-15T07:26:47Z"
+    "at": "2026-10-15T08:53:47Z"
    },
    {
     "repo": "media-arts-collective.grants",
@@ -761,6 +774,7 @@
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
+  "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
