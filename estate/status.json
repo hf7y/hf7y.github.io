@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T13:00:02Z",
+ "generated_at": "2026-10-15T13:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T14:00:02Z",
+ "valid_until": "2026-10-15T14:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "competent_hoover",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T12:44:30Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -74,18 +62,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-15T00:22:05Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "nice_euclid",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T13:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -253,10 +229,8 @@
   }
  ],
  "unmanaged": [
-  "competent_hoover",
   "condescending_joliot",
   "loving_swartz",
-  "nice_euclid",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -311,12 +285,12 @@
     "realisateur": {
      "queue": 1,
      "at": "2026-10-15T12:43:56Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.6
   },
   "passes": [
    {
@@ -622,11 +596,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261015T124356Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 61,
+    "cost_usd": 2.9773,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1930",
     "commented": false,
     "note": null,
     "at": "2026-10-15T12:43:56Z"
@@ -756,7 +730,6 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
