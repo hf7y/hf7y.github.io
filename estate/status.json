@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T13:20:01Z",
+ "generated_at": "2026-10-15T13:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T14:20:01Z",
+ "valid_until": "2026-10-15T14:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "competent_jackson",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T13:29:17Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -229,6 +241,7 @@
   }
  ],
  "unmanaged": [
+  "competent_jackson",
   "condescending_joliot",
   "loving_swartz",
   "officejet",
@@ -284,13 +297,13 @@
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-15T12:43:56Z",
-     "outcome": "finished"
+     "at": "2026-10-15T13:28:46Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -595,15 +608,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261015T124356Z.log",
-    "result": "success",
-    "turns": 61,
-    "cost_usd": 2.9773,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1930",
+    "log": "realisateur.20261015T132846Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T12:43:56Z"
+    "at": "2026-10-15T13:28:46Z"
    },
    {
     "repo": "scheduler",
@@ -730,6 +743,7 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
