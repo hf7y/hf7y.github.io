@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T10:00:01Z",
+ "generated_at": "2026-10-15T10:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T11:00:01Z",
+ "valid_until": "2026-10-15T11:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -54,18 +54,6 @@
    "ports_published": false
   },
   {
-   "name": "keen_varahamihira",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T10:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "loving_swartz",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -111,6 +99,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "sweet_cartwright",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T10:01:27Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -196,18 +196,6 @@
    "started_at": "2026-10-14T19:05:51Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zealous_tharp",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T09:52:13Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -254,12 +242,11 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "keen_varahamihira",
   "loving_swartz",
   "officejet",
   "serene_elgamal",
-  "xenodochial_wilson",
-  "zealous_tharp"
+  "sweet_cartwright",
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -311,7 +298,7 @@
     "secretaire": {
      "queue": 1,
      "at": "2026-10-15T09:52:02Z",
-     "outcome": null
+     "outcome": "finished"
     },
     "realisateur": {
      "queue": 1,
@@ -332,11 +319,16 @@
      "queue": 1,
      "at": "2026-10-15T09:44:17Z",
      "outcome": "finished"
+    },
+    "bibliothecaire": {
+     "queue": 1,
+     "at": "2026-10-15T10:01:18Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 4.0
+   "age_h": 4.3
   },
   "passes": [
    {
@@ -401,15 +393,15 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261015T040803Z.log",
-    "result": "success",
-    "turns": 119,
-    "cost_usd": 4.0694,
-    "rc": 0,
+    "log": "bibliothecaire.20261015T100118Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T04:08:03Z"
+    "at": "2026-10-15T10:01:18Z"
    },
    {
     "repo": "chezz",
@@ -666,11 +658,11 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261015T095202Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 57,
+    "cost_usd": 1.5773,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/251",
     "commented": false,
     "note": null,
     "at": "2026-10-15T09:52:02Z"
@@ -776,7 +768,6 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
