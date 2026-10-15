@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T03:00:01Z",
+ "generated_at": "2026-10-15T03:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T04:00:01Z",
+ "valid_until": "2026-10-15T04:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -27,18 +27,6 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
-   "ports_published": null
-  },
-  {
-   "name": "cool_pike",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T03:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -66,6 +54,18 @@
    "ports_published": false
   },
   {
+   "name": "intelligent_pascal",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T03:07:15Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "loving_swartz",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -74,18 +74,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-15T00:22:05Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "musing_einstein",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T02:59:23Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -254,9 +242,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "cool_pike",
+  "intelligent_pascal",
   "loving_swartz",
-  "musing_einstein",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -341,7 +328,7 @@
     "bibliothecaire",
     "american-cycle"
    ],
-   "age_h": 2.9
+   "age_h": 3.2
   },
   "passes": [
    {
@@ -610,25 +597,25 @@
    },
    {
     "repo": "media-arts-collective.wavebucks",
-    "log": "media-arts-collective.wavebucks.20261014T211028Z.log",
-    "result": "success",
-    "turns": 39,
-    "cost_usd": 1.167,
-    "rc": 0,
-    "pr": "https://github.com/media-arts-collective/wavebucks/pull/152",
-    "commented": true,
-    "note": null,
-    "at": "2026-10-14T21:10:28Z"
-   },
-   {
-    "repo": "musc-2300",
-    "log": "musc-2300.20261015T025913Z.log",
+    "log": "media-arts-collective.wavebucks.20261015T030702Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
     "rc": null,
     "pr": null,
     "commented": false,
+    "note": null,
+    "at": "2026-10-15T03:07:02Z"
+   },
+   {
+    "repo": "musc-2300",
+    "log": "musc-2300.20261015T025913Z.log",
+    "result": "success",
+    "turns": 44,
+    "cost_usd": 0.7215,
+    "rc": 0,
+    "pr": null,
+    "commented": true,
     "note": null,
     "at": "2026-10-15T02:59:13Z"
    },
@@ -811,7 +798,7 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
+  "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
