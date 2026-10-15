@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T13:40:02Z",
+ "generated_at": "2026-10-15T14:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T14:40:02Z",
+ "valid_until": "2026-10-15T15:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "competent_jackson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T13:29:17Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -50,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "gracious_khayyam",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T14:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -150,6 +150,18 @@
    "ports_published": null
   },
   {
+   "name": "xenodochial_haslett",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T13:43:02Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "xenodochial_wilson",
    "image": "sha256:93e91132a92436e536ed6d98f0a1514821fc58343f66a95f0d444d5bd1720e21",
    "project": null,
@@ -241,11 +253,12 @@
   }
  ],
  "unmanaged": [
-  "competent_jackson",
   "condescending_joliot",
+  "gracious_khayyam",
   "loving_swartz",
   "officejet",
   "serene_elgamal",
+  "xenodochial_haslett",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -298,12 +311,17 @@
     "realisateur": {
      "queue": 1,
      "at": "2026-10-15T13:28:46Z",
+     "outcome": "finished"
+    },
+    "media-arts-collective/cinema-sanctuary": {
+     "queue": 1,
+     "at": "2026-10-15T13:42:57Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.3
   },
   "passes": [
    {
@@ -500,15 +518,15 @@
    },
    {
     "repo": "media-arts-collective.cinema-sanctuary",
-    "log": "media-arts-collective.cinema-sanctuary.20261015T094417Z.log",
-    "result": "success",
-    "turns": 40,
-    "cost_usd": 1.2861,
-    "rc": 0,
-    "pr": "https://github.com/media-arts-collective/cinema-sanctuary/pull/159",
+    "log": "media-arts-collective.cinema-sanctuary.20261015T134257Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T09:44:17Z"
+    "at": "2026-10-15T13:42:57Z"
    },
    {
     "repo": "media-arts-collective.grants",
@@ -609,12 +627,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261015T132846Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 50,
+    "cost_usd": 0.9909,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-15T13:28:46Z"
    },
@@ -741,9 +759,9 @@
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
+  "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
