@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-15T12:20:01Z",
+ "generated_at": "2026-10-15T12:40:03Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T13:20:01Z",
+ "valid_until": "2026-10-15T13:40:03Z",
  "containers": [
+  {
+   "name": "admiring_beaver",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T12:28:37Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "aedile-tube",
    "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
@@ -14,18 +26,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "beautiful_mcnulty",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T12:13:16Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -241,7 +241,7 @@
   }
  ],
  "unmanaged": [
-  "beautiful_mcnulty",
+  "admiring_beaver",
   "condescending_joliot",
   "loving_swartz",
   "officejet",
@@ -294,10 +294,16 @@
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-15T12:28:06Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -602,15 +608,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261015T113345Z.log",
-    "result": "success",
-    "turns": 58,
-    "cost_usd": 1.3463,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1927",
+    "log": "realisateur.20261015T122806Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T11:33:45Z"
+    "at": "2026-10-15T12:28:06Z"
    },
    {
     "repo": "scheduler",
@@ -737,6 +743,7 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
