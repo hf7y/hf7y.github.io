@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T23:00:02Z",
+ "generated_at": "2026-10-15T23:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-16T00:00:02Z",
+ "valid_until": "2026-10-16T00:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "funny_ride",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T23:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -232,6 +220,18 @@
    "started_at": "2026-10-14T19:05:51Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zealous_bardeen",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T23:18:44Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -278,14 +278,14 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "funny_ride",
   "loving_swartz",
   "lucid_chaum",
   "officejet",
   "sad_kepler",
   "serene_elgamal",
   "stupefied_sanderson",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "zealous_bardeen"
  ],
  "nightly": {
   "armed": true,
@@ -327,8 +327,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261015T210056Z.log",
-   "started_at": "2026-10-15T21:00:56Z",
+   "log": "nightly.20261015T231226Z.log",
+   "started_at": "2026-10-15T23:12:26Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -336,13 +336,13 @@
    "dispatched": {
     "secretaire": {
      "queue": 1,
-     "at": "2026-10-15T21:09:43Z",
-     "outcome": "finished"
+     "at": "2026-10-15T23:18:22Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.0
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -671,15 +671,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261015T210943Z.log",
-    "result": "success",
-    "turns": 11,
-    "cost_usd": 0.3052,
-    "rc": 0,
+    "log": "secretaire.20261015T231822Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-15T21:09:43Z"
+    "at": "2026-10-15T23:18:22Z"
    },
    {
     "repo": "senechal",
@@ -782,6 +782,7 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
