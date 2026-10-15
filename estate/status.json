@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T10:20:01Z",
+ "generated_at": "2026-10-15T10:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T11:20:01Z",
+ "valid_until": "2026-10-15T11:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -102,14 +102,14 @@
    "ports_published": null
   },
   {
-   "name": "sweet_cartwright",
+   "name": "silly_khorana",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-15T10:01:27Z",
+   "started_at": "2026-10-15T10:39:46Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -245,7 +245,7 @@
   "loving_swartz",
   "officejet",
   "serene_elgamal",
-  "sweet_cartwright",
+  "silly_khorana",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -288,47 +288,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261015T055929Z.log",
-   "started_at": "2026-10-15T05:59:29Z",
+   "log": "nightly.20261015T103106Z.log",
+   "started_at": "2026-10-15T10:31:06Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "secretaire": {
-     "queue": 1,
-     "at": "2026-10-15T09:52:02Z",
-     "outcome": "finished"
-    },
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-15T08:11:52Z",
-     "outcome": "finished"
-    },
-    "etalon": {
-     "queue": 1,
-     "at": "2026-10-15T06:37:33Z",
-     "outcome": "finished"
-    },
-    "musc-2300": {
-     "queue": 1,
-     "at": "2026-10-15T06:48:16Z",
-     "outcome": "finished"
-    },
-    "media-arts-collective/cinema-sanctuary": {
-     "queue": 1,
-     "at": "2026-10-15T09:44:17Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 1,
-     "at": "2026-10-15T10:01:18Z",
+     "at": "2026-10-15T10:39:19Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 4.3
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -394,12 +369,12 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261015T100118Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 104,
+    "cost_usd": 3.2969,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/199",
+    "commented": true,
     "note": null,
     "at": "2026-10-15T10:01:18Z"
    },
@@ -633,15 +608,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261015T081152Z.log",
-    "result": "success",
-    "turns": 68,
-    "cost_usd": 2.1433,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1924",
-    "commented": true,
+    "log": "realisateur.20261015T103919Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-15T08:11:52Z"
+    "at": "2026-10-15T10:39:19Z"
    },
    {
     "repo": "scheduler",
@@ -763,11 +738,11 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
