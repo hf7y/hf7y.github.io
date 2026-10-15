@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T23:20:01Z",
+ "generated_at": "2026-10-15T23:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-16T00:20:01Z",
+ "valid_until": "2026-10-16T00:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -220,18 +220,6 @@
    "started_at": "2026-10-14T19:05:51Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zealous_bardeen",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T23:18:44Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -284,8 +272,7 @@
   "sad_kepler",
   "serene_elgamal",
   "stupefied_sanderson",
-  "xenodochial_wilson",
-  "zealous_bardeen"
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -329,20 +316,20 @@
   "last_run": {
    "log": "nightly.20261015T231226Z.log",
    "started_at": "2026-10-15T23:12:26Z",
-   "finished_at": null,
+   "finished_at": "2026-10-15T23:33:45Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "secretaire": {
      "queue": 1,
-     "at": "2026-10-15T23:18:22Z",
-     "outcome": null
+     "at": "2026-10-15T23:27:14Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -671,15 +658,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261015T231822Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "log": "secretaire.20261015T232714Z.log",
+    "result": "success",
+    "turns": 42,
+    "cost_usd": 1.0062,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/300",
     "commented": false,
     "note": null,
-    "at": "2026-10-15T23:18:22Z"
+    "at": "2026-10-15T23:27:14Z"
    },
    {
     "repo": "senechal",
@@ -773,7 +760,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
@@ -782,7 +768,6 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
