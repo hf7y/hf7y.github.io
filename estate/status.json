@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T09:20:02Z",
+ "generated_at": "2026-10-15T09:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T10:20:02Z",
+ "valid_until": "2026-10-15T10:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "competent_rosalind",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T08:53:51Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -50,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "eager_mayer",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T09:39:48Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -241,8 +241,8 @@
   }
  ],
  "unmanaged": [
-  "competent_rosalind",
   "condescending_joliot",
+  "eager_mayer",
   "loving_swartz",
   "officejet",
   "serene_elgamal",
@@ -317,13 +317,13 @@
     },
     "media-arts-collective/cinema-sanctuary": {
      "queue": 1,
-     "at": "2026-10-15T08:53:47Z",
+     "at": "2026-10-15T09:39:42Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 3.3
+   "age_h": 3.7
   },
   "passes": [
    {
@@ -520,7 +520,7 @@
    },
    {
     "repo": "media-arts-collective.cinema-sanctuary",
-    "log": "media-arts-collective.cinema-sanctuary.20261015T085347Z.log",
+    "log": "media-arts-collective.cinema-sanctuary.20261015T093942Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -528,7 +528,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T08:53:47Z"
+    "at": "2026-10-15T09:39:42Z"
    },
    {
     "repo": "media-arts-collective.grants",
