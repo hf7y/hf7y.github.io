@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T04:20:01Z",
+ "generated_at": "2026-10-15T04:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T05:20:01Z",
+ "valid_until": "2026-10-15T05:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -111,6 +111,30 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "stoic_fermat",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T04:29:50Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "sweet_kepler",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T04:36:57Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -246,6 +270,8 @@
   "loving_swartz",
   "officejet",
   "serene_elgamal",
+  "stoic_fermat",
+  "sweet_kepler",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -288,8 +314,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261015T035209Z.log",
-   "started_at": "2026-10-15T03:52:09Z",
+   "log": "nightly.20261015T043642Z.log",
+   "started_at": "2026-10-15T04:36:42Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -297,18 +323,13 @@
    "dispatched": {
     "etalon": {
      "queue": 1,
-     "at": "2026-10-15T03:52:19Z",
-     "outcome": "finished"
-    },
-    "bibliothecaire": {
-     "queue": 1,
-     "at": "2026-10-15T04:08:03Z",
+     "at": "2026-10-15T04:36:51Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -457,15 +478,15 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261015T035219Z.log",
-    "result": "success",
-    "turns": 39,
-    "cost_usd": 1.2854,
-    "rc": 0,
+    "log": "etalon.20261015T043651Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T03:52:19Z"
+    "at": "2026-10-15T04:36:51Z"
    },
    {
     "repo": "front-door",
@@ -637,15 +658,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261014T210955Z.log",
-    "result": "success",
-    "turns": 70,
-    "cost_usd": 1.9616,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/238",
+    "log": "secretaire.20261015T042940Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-14T21:09:55Z"
+    "at": "2026-10-15T04:29:40Z"
    },
    {
     "repo": "senechal",
@@ -749,6 +770,7 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
