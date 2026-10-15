@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T11:40:02Z",
+ "generated_at": "2026-10-15T12:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T12:40:02Z",
+ "valid_until": "2026-10-15T13:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -18,14 +18,14 @@
    "ports_published": null
   },
   {
-   "name": "brave_swirles",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "name": "agitated_mirzakhani",
+   "image": "senechal-puller:02459d4c21ab",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-15T11:20:37Z",
+   "started_at": "2026-10-15T12:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -78,18 +78,6 @@
    "ports_published": null
   },
   {
-   "name": "nice_herschel",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T11:34:16Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -126,14 +114,14 @@
    "ports_published": null
   },
   {
-   "name": "tender_sammet",
+   "name": "vigilant_dhawan",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-15T11:38:42Z",
+   "started_at": "2026-10-15T11:59:07Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -265,13 +253,12 @@
   }
  ],
  "unmanaged": [
-  "brave_swirles",
+  "agitated_mirzakhani",
   "condescending_joliot",
   "loving_swartz",
-  "nice_herschel",
   "officejet",
   "serene_elgamal",
-  "tender_sammet",
+  "vigilant_dhawan",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -316,7 +303,7 @@
   "last_run": {
    "log": "nightly.20261015T111930Z.log",
    "started_at": "2026-10-15T11:19:30Z",
-   "finished_at": null,
+   "finished_at": "2026-10-15T11:59:37Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -324,12 +311,12 @@
     "realisateur": {
      "queue": 1,
      "at": "2026-10-15T11:20:06Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
@@ -635,11 +622,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261015T113345Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 58,
+    "cost_usd": 1.3463,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1927",
     "commented": false,
     "note": null,
     "at": "2026-10-15T11:33:45Z"
@@ -760,7 +747,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
@@ -769,7 +755,6 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
