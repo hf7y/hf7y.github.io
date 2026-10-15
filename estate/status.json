@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T07:20:01Z",
+ "generated_at": "2026-10-15T07:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T08:20:01Z",
+ "valid_until": "2026-10-15T08:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -78,6 +78,18 @@
    "ports_published": true
   },
   {
+   "name": "romantic_fermi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T07:35:13Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -147,18 +159,6 @@
    "exit_code": 1,
    "started_at": "2026-09-25T02:11:31Z",
    "finished_at": "2026-09-25T02:11:44Z",
-   "ports_published": null
-  },
-  {
-   "name": "youthful_kapitsa",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T07:18:53Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -244,9 +244,9 @@
   "condescending_joliot",
   "loving_swartz",
   "officejet",
+  "romantic_fermi",
   "serene_elgamal",
-  "xenodochial_wilson",
-  "youthful_kapitsa"
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -302,7 +302,7 @@
     },
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-15T07:06:04Z",
+     "at": "2026-10-15T07:34:45Z",
      "outcome": null
     },
     "etalon": {
@@ -314,11 +314,16 @@
      "queue": 1,
      "at": "2026-10-15T06:48:16Z",
      "outcome": "finished"
+    },
+    "media-arts-collective/cinema-sanctuary": {
+     "queue": 1,
+     "at": "2026-10-15T07:26:47Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.3
+   "age_h": 1.7
   },
   "passes": [
    {
@@ -515,15 +520,15 @@
    },
    {
     "repo": "media-arts-collective.cinema-sanctuary",
-    "log": "media-arts-collective.cinema-sanctuary.20261014T200944Z.log",
+    "log": "media-arts-collective.cinema-sanctuary.20261015T072647Z.log",
     "result": "success",
-    "turns": 86,
-    "cost_usd": 2.275,
+    "turns": 31,
+    "cost_usd": 1.0241,
     "rc": 0,
-    "pr": "https://github.com/media-arts-collective/cinema-sanctuary/pull/144",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-14T20:09:44Z"
+    "at": "2026-10-15T07:26:47Z"
    },
    {
     "repo": "media-arts-collective.grants",
@@ -623,15 +628,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261015T070604Z.log",
-    "result": "success",
-    "turns": 55,
-    "cost_usd": 1.7372,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1922",
+    "log": "realisateur.20261015T073445Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T07:06:04Z"
+    "at": "2026-10-15T07:34:45Z"
    },
    {
     "repo": "scheduler",
@@ -758,6 +763,7 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
