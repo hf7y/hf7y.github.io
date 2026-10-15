@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-15T07:00:01Z",
+ "generated_at": "2026-10-15T07:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-15T08:00:01Z",
+ "valid_until": "2026-10-15T08:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -78,30 +78,6 @@
    "ports_published": true
   },
   {
-   "name": "pedantic_moore",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T07:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "recursing_bohr",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-15T06:58:40Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -171,6 +147,18 @@
    "exit_code": 1,
    "started_at": "2026-09-25T02:11:31Z",
    "finished_at": "2026-09-25T02:11:44Z",
+   "ports_published": null
+  },
+  {
+   "name": "youthful_kapitsa",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-15T07:18:53Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -256,10 +244,9 @@
   "condescending_joliot",
   "loving_swartz",
   "officejet",
-  "pedantic_moore",
-  "recursing_bohr",
   "serene_elgamal",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "youthful_kapitsa"
  ],
  "nightly": {
   "armed": true,
@@ -315,8 +302,8 @@
     },
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-15T06:17:40Z",
-     "outcome": "finished"
+     "at": "2026-10-15T07:06:04Z",
+     "outcome": null
     },
     "etalon": {
      "queue": 1,
@@ -331,7 +318,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.0
+   "age_h": 1.3
   },
   "passes": [
    {
@@ -636,15 +623,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261015T061740Z.log",
+    "log": "realisateur.20261015T070604Z.log",
     "result": "success",
-    "turns": 25,
-    "cost_usd": 0.5651,
+    "turns": 55,
+    "cost_usd": 1.7372,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1921",
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1922",
+    "commented": false,
     "note": null,
-    "at": "2026-10-15T06:17:40Z"
+    "at": "2026-10-15T07:06:04Z"
    },
    {
     "repo": "scheduler",
