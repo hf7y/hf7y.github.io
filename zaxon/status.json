@@ -2,31 +2,31 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-16T13:20:14Z",
-  "valid_until": "2026-10-16T14:50:14Z",
+  "generated": "2026-10-16T14:20:14Z",
+  "valid_until": "2026-10-16T15:50:14Z",
   "cadence_minutes": 60,
   "verdict": "DOWN",
   "why": "1 send(s) failed in 24h -- the relay accepts questions and WhatsApp does not take them",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 13
+    "ms": 4
   },
   "containers": [
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 42 hours (healthy)"
+      "status": "Up 43 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
       "state": "running",
-      "status": "Up 42 hours (healthy)"
+      "status": "Up 43 hours (healthy)"
     },
     {
       "name": "zaxon-gateway",
       "state": "running",
-      "status": "Up 42 hours"
+      "status": "Up 43 hours"
     }
   ],
   "hazards": [
@@ -57,10 +57,10 @@
     "inbox": {
       "count": 60,
       "window_count": 1,
-      "oldest_age_hours": 1118.3,
+      "oldest_age_hours": 1119.3,
       "unfiled": {
         "count": 13,
-        "oldest_age_hours": 110.7
+        "oldest_age_hours": 111.7
       }
     },
     "senders": [
