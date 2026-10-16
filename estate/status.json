@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-16T05:00:06Z",
+ "generated_at": "2026-10-16T05:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-16T06:00:06Z",
+ "valid_until": "2026-10-16T06:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -123,18 +123,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "strange_saha",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-16T05:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -283,7 +271,6 @@
   "officejet",
   "sad_kepler",
   "serene_elgamal",
-  "strange_saha",
   "stupefied_sanderson",
   "xenodochial_wilson"
  ],
@@ -342,7 +329,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 5.8
+   "age_h": 6.1
   },
   "passes": [
    {
