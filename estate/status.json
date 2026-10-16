@@ -1,10 +1,22 @@
 {
- "generated_at": "2026-10-16T19:20:04Z",
+ "generated_at": "2026-10-16T19:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-16T20:20:04Z",
+ "valid_until": "2026-10-16T20:40:02Z",
  "containers": [
+  {
+   "name": "adoring_moore",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T19:35:19Z",
+   "finished_at": null,
+   "ports_published": null
+  },
   {
    "name": "aedile-tube",
    "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
@@ -18,14 +30,14 @@
    "ports_published": null
   },
   {
-   "name": "clever_blackwell",
+   "name": "amazing_euler",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-16T18:46:10Z",
+   "started_at": "2026-10-16T19:39:22Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -42,14 +54,14 @@
    "ports_published": null
   },
   {
-   "name": "cranky_kilby",
+   "name": "confident_beaver",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-16T19:06:30Z",
+   "started_at": "2026-10-16T19:33:22Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,26 +78,26 @@
    "ports_published": null
   },
   {
-   "name": "distracted_dhawan",
+   "name": "flamboyant_goldwasser",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-16T19:00:08Z",
+   "started_at": "2026-10-16T19:38:16Z",
    "finished_at": null,
    "ports_published": null
   },
   {
-   "name": "epic_nightingale",
+   "name": "gifted_joliot",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-16T19:04:21Z",
+   "started_at": "2026-10-16T19:39:36Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -102,6 +114,18 @@
    "ports_published": false
   },
   {
+   "name": "modest_bohr",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T19:35:30Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -114,18 +138,6 @@
    "ports_published": true
   },
   {
-   "name": "pensive_matsumoto",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-16T18:51:48Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "potato-push",
    "image": "secretaire:3dcb7d5",
    "project": "secretaire",
@@ -134,6 +146,30 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T17:30:17Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "quirky_hodgkin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T19:38:37Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "reverent_dijkstra",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T19:26:54Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -150,18 +186,6 @@
    "ports_published": true
   },
   {
-   "name": "sad_kirch",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-16T19:12:39Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "serene_elgamal",
    "image": "sha256:6e1a93ea163db68d7caf6fecb48e3fca66143fa333b54117f0480470406772e3",
    "project": null,
@@ -174,14 +198,14 @@
    "ports_published": null
   },
   {
-   "name": "vibrant_jepsen",
+   "name": "upbeat_mahavira",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-16T19:12:03Z",
+   "started_at": "2026-10-16T19:34:28Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -219,6 +243,18 @@
    "exit_code": 1,
    "started_at": "2026-10-14T19:05:53Z",
    "finished_at": "2026-10-14T19:06:08Z",
+   "ports_published": null
+  },
+  {
+   "name": "xenodochial_lalande",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T19:36:21Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -313,16 +349,19 @@
   }
  ],
  "unmanaged": [
-  "clever_blackwell",
+  "adoring_moore",
+  "amazing_euler",
   "condescending_joliot",
-  "cranky_kilby",
-  "distracted_dhawan",
-  "epic_nightingale",
+  "confident_beaver",
+  "flamboyant_goldwasser",
+  "gifted_joliot",
+  "modest_bohr",
   "officejet",
-  "pensive_matsumoto",
-  "sad_kirch",
+  "quirky_hodgkin",
+  "reverent_dijkstra",
   "serene_elgamal",
-  "vibrant_jepsen",
+  "upbeat_mahavira",
+  "xenodochial_lalande",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -365,22 +404,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261016T191437Z.log",
-   "started_at": "2026-10-16T19:14:37Z",
+   "log": "nightly.20261016T192157Z.log",
+   "started_at": "2026-10-16T19:21:57Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "wtul": {
-     "queue": 1,
-     "at": "2026-10-16T19:19:44Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -434,11 +467,11 @@
    {
     "repo": "baudin",
     "log": "baudin.20261016T185956Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 52,
+    "cost_usd": 1.1965,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/baudin/pull/247",
     "commented": false,
     "note": null,
     "at": "2026-10-16T18:59:56Z"
@@ -482,12 +515,12 @@
    {
     "repo": "crt",
     "log": "crt.20261016T190340Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 54,
+    "cost_usd": 1.62,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/614",
+    "commented": true,
     "note": null,
     "at": "2026-10-16T19:03:40Z"
    },
@@ -685,15 +718,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261016T181741Z.log",
-    "result": "success",
-    "turns": 19,
-    "cost_usd": 0.4172,
-    "rc": 0,
+    "log": "realisateur.20261016T193417Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-16T18:17:41Z"
+    "at": "2026-10-16T19:34:17Z"
    },
    {
     "repo": "scheduler",
@@ -722,11 +755,11 @@
    {
     "repo": "senechal",
     "log": "senechal.20261016T190335Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 53,
+    "cost_usd": 1.3328,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1433",
     "commented": false,
     "note": null,
     "at": "2026-10-16T19:03:35Z"
@@ -781,7 +814,7 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261016T191944Z.log",
+    "log": "wtul.20261016T193922Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -789,7 +822,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-16T19:19:44Z"
+    "at": "2026-10-16T19:39:22Z"
    }
   ],
   "dispatch_source": {
@@ -815,14 +848,12 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
-  "baudin: last pass landed nothing -- no PR and no comment on its issue",
-  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
