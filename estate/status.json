@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-16T16:40:02Z",
+ "generated_at": "2026-10-16T17:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-16T17:40:02Z",
+ "valid_until": "2026-10-16T18:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "fervent_lumiere",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-16T16:33:17Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -64,6 +52,30 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "laughing_euclid",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T17:00:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "loving_jepsen",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T16:59:53Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "loving_swartz",
@@ -278,7 +290,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "fervent_lumiere",
+  "laughing_euclid",
+  "loving_jepsen",
   "loving_swartz",
   "lucid_chaum",
   "officejet",
@@ -327,22 +340,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261016T162417Z.log",
-   "started_at": "2026-10-16T16:24:17Z",
+   "log": "nightly.20261016T165932Z.log",
+   "started_at": "2026-10-16T16:59:32Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "realisateur": {
-     "queue": 1,
-     "at": "2026-10-16T16:32:44Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -648,12 +655,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261016T163244Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 34,
+    "cost_usd": 0.8629,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1951",
+    "commented": true,
     "note": null,
     "at": "2026-10-16T16:32:44Z"
    },
@@ -671,15 +678,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261015T232714Z.log",
+    "log": "secretaire.20261016T164209Z.log",
     "result": "success",
     "turns": 42,
-    "cost_usd": 1.0062,
+    "cost_usd": 1.0846,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/300",
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/303",
     "commented": false,
     "note": null,
-    "at": "2026-10-15T23:27:14Z"
+    "at": "2026-10-16T16:42:09Z"
    },
    {
     "repo": "senechal",
@@ -782,7 +789,6 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
