@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-16T21:40:02Z",
+ "generated_at": "2026-10-16T22:00:03Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-16T22:40:02Z",
+ "valid_until": "2026-10-16T23:00:03Z",
  "containers": [
   {
    "name": "adoring_moore",
@@ -66,6 +66,18 @@
    "ports_published": null
   },
   {
+   "name": "gallant_torvalds",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T22:00:02Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -86,18 +98,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T20:14:42Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "nervous_kowalevski",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-16T21:17:39Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -292,8 +292,8 @@
   "adoring_moore",
   "condescending_franklin",
   "condescending_joliot",
+  "gallant_torvalds",
   "magical_sammet",
-  "nervous_kowalevski",
   "officejet",
   "reverent_dijkstra",
   "serene_elgamal",
@@ -341,7 +341,7 @@
   "last_run": {
    "log": "nightly.20261016T211712Z.log",
    "started_at": "2026-10-16T21:17:12Z",
-   "finished_at": null,
+   "finished_at": "2026-10-16T21:43:57Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -349,12 +349,12 @@
     "hf7y-estate/abletim": {
      "queue": 1,
      "at": "2026-10-16T21:17:27Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.4
+   "age_h": 0.7
   },
   "passes": [
    {
@@ -372,12 +372,12 @@
    {
     "repo": "abletim",
     "log": "abletim.20261016T211727Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 11,
+    "cost_usd": 3.6505,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-16T21:17:27Z"
    },
@@ -785,10 +785,8 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
-  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
