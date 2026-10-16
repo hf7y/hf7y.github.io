@@ -2,31 +2,31 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-16T06:20:05Z",
-  "valid_until": "2026-10-16T07:50:05Z",
+  "generated": "2026-10-16T07:20:06Z",
+  "valid_until": "2026-10-16T08:50:06Z",
   "cadence_minutes": 60,
   "verdict": "DOWN",
   "why": "1 send(s) failed in 24h -- the relay accepts questions and WhatsApp does not take them",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 4
+    "ms": 17
   },
   "containers": [
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 35 hours (healthy)"
+      "status": "Up 36 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
       "state": "running",
-      "status": "Up 35 hours (healthy)"
+      "status": "Up 36 hours (healthy)"
     },
     {
       "name": "zaxon-gateway",
       "state": "running",
-      "status": "Up 35 hours"
+      "status": "Up 36 hours"
     }
   ],
   "hazards": [
@@ -43,33 +43,24 @@
     "totals": {
       "failed": 16,
       "answered": 11,
-      "stale": 295,
-      "pending": 1
+      "stale": 296
     },
     "window": {
       "failed": 1,
-      "stale": 1,
-      "pending": 1
+      "stale": 2
     },
     "window_sent": 3,
-    "stale_slot_hours": 1.0,
+    "stale_slot_hours": 2.0,
     "queued": 0,
-    "slots": [
-      {
-        "id": "cbcd0d13",
-        "from": "monkey-watch-win",
-        "age_hours": 1.0,
-        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
-      }
-    ],
+    "slots": [],
     "last_answered_at": "2026-10-13T05:09:14Z",
     "inbox": {
       "count": 60,
       "window_count": 1,
-      "oldest_age_hours": 1111.3,
+      "oldest_age_hours": 1112.3,
       "unfiled": {
         "count": 13,
-        "oldest_age_hours": 103.7
+        "oldest_age_hours": 104.7
       }
     },
     "senders": [
@@ -77,7 +68,7 @@
         "from": "monkey-watch-win",
         "sent": 3,
         "answered": 0,
-        "stale": 1,
+        "stale": 2,
         "failed": 1
       }
     ],
@@ -85,7 +76,7 @@
       {
         "id": "cbcd0d13",
         "from": "monkey-watch-win",
-        "status": "pending",
+        "status": "stale",
         "created_at": "2026-10-16T05:21:51Z",
         "answered_at": null,
         "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
