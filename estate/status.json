@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-16T18:20:01Z",
+ "generated_at": "2026-10-16T18:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-16T19:20:01Z",
+ "valid_until": "2026-10-16T19:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -31,13 +31,37 @@
   },
   {
    "name": "desk",
-   "image": "ghcr.io/hf7y/secretaire:latest",
+   "image": "secretaire:3dcb7d5",
    "project": "secretaire",
    "state": "running",
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T19:05:47Z",
+   "started_at": "2026-10-16T18:38:50Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "flamboyant_archimedes",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T18:29:27Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "great_hypatia",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T18:28:46Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -78,14 +102,14 @@
    "ports_published": null
   },
   {
-   "name": "objective_sammet",
+   "name": "nifty_hofstadter",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-16T18:15:10Z",
+   "started_at": "2026-10-16T18:36:44Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -110,18 +134,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T17:30:17Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "quirky_mirzakhani",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-16T18:19:14Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -302,11 +314,12 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "flamboyant_archimedes",
+  "great_hypatia",
   "loving_swartz",
   "lucid_chaum",
-  "objective_sammet",
+  "nifty_hofstadter",
   "officejet",
-  "quirky_mirzakhani",
   "sad_kepler",
   "serene_elgamal",
   "stupefied_sanderson",
@@ -352,22 +365,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261016T181451Z.log",
-   "started_at": "2026-10-16T18:14:51Z",
+   "log": "nightly.20261016T182911Z.log",
+   "started_at": "2026-10-16T18:29:11Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "baudin": {
-     "queue": 1,
-     "at": "2026-10-16T18:15:04Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -421,11 +428,11 @@
    {
     "repo": "baudin",
     "log": "baudin.20261016T181504Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 62,
+    "cost_usd": 1.4739,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/baudin/pull/242",
     "commented": false,
     "note": null,
     "at": "2026-10-16T18:15:04Z"
@@ -673,12 +680,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261016T181741Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 19,
+    "cost_usd": 0.4172,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-16T18:17:41Z"
    },
@@ -696,27 +703,27 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261016T164209Z.log",
+    "log": "secretaire.20261016T182923Z.log",
     "result": "success",
-    "turns": 42,
-    "cost_usd": 1.0846,
+    "turns": 31,
+    "cost_usd": 0.6668,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/303",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-16T16:42:09Z"
+    "at": "2026-10-16T18:29:23Z"
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261016T174005Z.log",
+    "log": "senechal.20261016T182054Z.log",
     "result": "success",
-    "turns": 75,
-    "cost_usd": 2.4244,
+    "turns": 38,
+    "cost_usd": 0.8132,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1419",
-    "commented": true,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-16T17:40:05Z"
+    "at": "2026-10-16T18:20:54Z"
    },
    {
     "repo": "sequestria",
@@ -802,13 +809,12 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
-  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue",
   "wtul: last pass landed nothing -- no PR and no comment on its issue"
  ]
