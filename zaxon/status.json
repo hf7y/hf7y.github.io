@@ -2,39 +2,34 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-16T16:20:20Z",
-  "valid_until": "2026-10-16T17:50:20Z",
+  "generated": "2026-10-16T17:20:33Z",
+  "valid_until": "2026-10-16T18:50:33Z",
   "cadence_minutes": 60,
-  "verdict": "DOWN",
-  "why": "1 send(s) failed in 24h -- the relay accepts questions and WhatsApp does not take them",
+  "verdict": "FILING-STUCK",
+  "why": "13 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 114.7h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 17
+    "ms": 47
   },
   "containers": [
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 45 hours (healthy)"
+      "status": "Up 46 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
       "state": "running",
-      "status": "Up 45 hours (healthy)"
+      "status": "Up 46 hours (healthy)"
     },
     {
       "name": "zaxon-gateway",
       "state": "running",
-      "status": "Up 45 hours"
+      "status": "Up 46 hours"
     }
   ],
-  "hazards": [
-    {
-      "distro": "vaporwave",
-      "why": "a registered WSL distro boots hermes-gateway.service and seizes the linked-device session"
-    }
-  ],
+  "hazards": [],
   "ledger": {
     "readable": true,
     "path": "/srv/zaxon/data/zaxon_relay/tickets.db",
@@ -46,10 +41,9 @@
       "stale": 296
     },
     "window": {
-      "failed": 1,
       "stale": 2
     },
-    "window_sent": 3,
+    "window_sent": 2,
     "stale_slot_hours": 2.0,
     "queued": 0,
     "slots": [],
@@ -57,19 +51,19 @@
     "inbox": {
       "count": 60,
       "window_count": 1,
-      "oldest_age_hours": 1121.3,
+      "oldest_age_hours": 1122.3,
       "unfiled": {
         "count": 13,
-        "oldest_age_hours": 113.7
+        "oldest_age_hours": 114.7
       }
     },
     "senders": [
       {
         "from": "monkey-watch-win",
-        "sent": 3,
+        "sent": 2,
         "answered": 0,
         "stale": 2,
-        "failed": 1
+        "failed": 0
       }
     ],
     "recent": [
