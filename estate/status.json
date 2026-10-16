@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-16T08:00:02Z",
+ "generated_at": "2026-10-16T08:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-16T09:00:02Z",
+ "valid_until": "2026-10-16T09:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -52,18 +52,6 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
-  },
-  {
-   "name": "jolly_fermi",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-16T08:00:02Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "loving_swartz",
@@ -278,7 +266,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "jolly_fermi",
   "loving_swartz",
   "lucid_chaum",
   "officejet",
@@ -342,7 +329,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 8.8
+   "age_h": 9.1
   },
   "passes": [
    {
