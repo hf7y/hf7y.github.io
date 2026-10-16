@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-16T17:20:03Z",
+ "generated_at": "2026-10-16T17:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-16T18:20:03Z",
+ "valid_until": "2026-10-16T18:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,14 +42,14 @@
    "ports_published": null
   },
   {
-   "name": "ecstatic_lovelace",
+   "name": "friendly_khorana",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-16T17:03:42Z",
+   "started_at": "2026-10-16T17:34:10Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -102,6 +102,18 @@
    "ports_published": true
   },
   {
+   "name": "potato-push",
+   "image": "secretaire:3dcb7d5",
+   "project": "secretaire",
+   "state": "running",
+   "health": "healthy",
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T17:30:17Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -135,6 +147,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "sleepy_elgamal",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-16T17:34:48Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -278,12 +302,13 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "ecstatic_lovelace",
+  "friendly_khorana",
   "loving_swartz",
   "lucid_chaum",
   "officejet",
   "sad_kepler",
   "serene_elgamal",
+  "sleepy_elgamal",
   "stupefied_sanderson",
   "xenodochial_wilson"
  ],
@@ -327,22 +352,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261016T170502Z.log",
-   "started_at": "2026-10-16T17:05:02Z",
-   "finished_at": "2026-10-16T17:11:24Z",
+   "log": "nightly.20261016T173257Z.log",
+   "started_at": "2026-10-16T17:32:57Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "realisateur": {
-     "queue": 1,
-     "at": "2026-10-16T17:05:44Z",
-     "outcome": "finished"
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -683,15 +702,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261016T170247Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "log": "senechal.20261016T172303Z.log",
+    "result": "success",
+    "turns": 35,
+    "cost_usd": 0.9613,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-16T17:02:47Z"
+    "at": "2026-10-16T17:23:03Z"
    },
    {
     "repo": "sequestria",
@@ -773,6 +792,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
