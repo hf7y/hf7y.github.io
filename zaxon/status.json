@@ -2,34 +2,39 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-16T18:20:33Z",
-  "valid_until": "2026-10-16T19:50:33Z",
+  "generated": "2026-10-16T19:20:25Z",
+  "valid_until": "2026-10-16T20:50:25Z",
   "cadence_minutes": 60,
   "verdict": "FILING-STUCK",
-  "why": "13 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 115.7h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
+  "why": "13 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 116.7h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 23
+    "ms": 255
   },
   "containers": [
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 47 hours (healthy)"
+      "status": "Up 2 days (healthy)"
     },
     {
       "name": "zaxon-relay",
       "state": "running",
-      "status": "Up 47 hours (healthy)"
+      "status": "Up 2 days (healthy)"
     },
     {
       "name": "zaxon-gateway",
       "state": "running",
-      "status": "Up 47 hours"
+      "status": "Up 2 days"
     }
   ],
-  "hazards": [],
+  "hazards": [
+    {
+      "distro": "vaporwave",
+      "why": "a registered WSL distro boots hermes-gateway.service and seizes the linked-device session"
+    }
+  ],
   "ledger": {
     "readable": true,
     "path": "/srv/zaxon/data/zaxon_relay/tickets.db",
@@ -38,32 +43,23 @@
     "totals": {
       "failed": 16,
       "answered": 11,
-      "stale": 296,
-      "pending": 1
+      "stale": 297
     },
     "window": {
-      "stale": 1,
-      "pending": 1
+      "stale": 2
     },
     "window_sent": 2,
-    "stale_slot_hours": 1.0,
+    "stale_slot_hours": 2.0,
     "queued": 0,
-    "slots": [
-      {
-        "id": "3728b333",
-        "from": "monkey-watch-win",
-        "age_hours": 1.0,
-        "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
-      }
-    ],
+    "slots": [],
     "last_answered_at": "2026-10-13T05:09:14Z",
     "inbox": {
       "count": 60,
       "window_count": 1,
-      "oldest_age_hours": 1123.3,
+      "oldest_age_hours": 1124.3,
       "unfiled": {
         "count": 13,
-        "oldest_age_hours": 115.7
+        "oldest_age_hours": 116.7
       }
     },
     "senders": [
@@ -71,7 +67,7 @@
         "from": "monkey-watch-win",
         "sent": 2,
         "answered": 0,
-        "stale": 1,
+        "stale": 2,
         "failed": 0
       }
     ],
@@ -79,7 +75,7 @@
       {
         "id": "3728b333",
         "from": "monkey-watch-win",
-        "status": "pending",
+        "status": "stale",
         "created_at": "2026-10-16T17:21:55Z",
         "answered_at": null,
         "question": "monkey-win: still STALE, unread past 12h\nstatus.json is past its own valid_until 2026\nhttps://hf7y.com/monkey/"
