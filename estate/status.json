@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-17T19:00:02Z",
+ "generated_at": "2026-10-17T19:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T20:00:02Z",
+ "valid_until": "2026-10-17T20:20:01Z",
  "containers": [
-  {
-   "name": "adoring_hoover",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T19:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "aedile-tube",
    "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
@@ -241,7 +229,6 @@
   }
  ],
  "unmanaged": [
-  "adoring_hoover",
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
@@ -287,16 +274,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261017T180704Z.log",
-   "started_at": "2026-10-17T18:07:05Z",
-   "finished_at": "2026-10-17T18:15:37Z",
+   "log": "nightly.20261017T190702Z.log",
+   "started_at": "2026-10-17T19:07:02Z",
+   "finished_at": "2026-10-17T19:15:21Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-17T18:15:29Z",
+     "at": "2026-10-17T19:15:21Z",
      "outcome": null
     }
    },
@@ -341,7 +328,7 @@
     "senechal",
     "vim-arcade"
    ],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -646,15 +633,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261017T181558Z.log",
+    "log": "realisateur.20261017T191553Z.log",
     "result": "success",
-    "turns": 10,
-    "cost_usd": 0.2404,
+    "turns": 6,
+    "cost_usd": 0.2606,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-17T18:15:58Z"
+    "at": "2026-10-17T19:15:53Z"
    },
    {
     "repo": "scheduler",
