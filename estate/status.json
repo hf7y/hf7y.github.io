@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T00:20:02Z",
+ "generated_at": "2026-10-17T00:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T01:20:02Z",
+ "valid_until": "2026-10-17T01:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -66,18 +66,6 @@
    "ports_published": null
   },
   {
-   "name": "dreamy_hawking",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T00:15:43Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "epic_sutherland",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -86,18 +74,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-17T00:18:34Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "gallant_brattain",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T00:18:07Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -112,6 +88,30 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "happy_lewin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-17T00:38:45Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "kind_davinci",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-17T00:39:31Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "nice_greider",
@@ -174,18 +174,6 @@
    "ports_published": null
   },
   {
-   "name": "tender_colden",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T00:13:12Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -219,18 +207,6 @@
    "exit_code": 1,
    "started_at": "2026-10-14T19:05:53Z",
    "finished_at": "2026-10-14T19:06:08Z",
-   "ports_published": null
-  },
-  {
-   "name": "xenodochial_jang",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T00:18:35Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -328,14 +304,12 @@
   "angry_volhard",
   "condescending_joliot",
   "determined_cartwright",
-  "dreamy_hawking",
   "epic_sutherland",
-  "gallant_brattain",
+  "happy_lewin",
+  "kind_davinci",
   "nice_greider",
   "officejet",
   "serene_elgamal",
-  "tender_colden",
-  "xenodochial_jang",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -384,7 +358,13 @@
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-17T00:39:28Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
    "queue_unreadable": [
     "media-arts-collective/CodeDumpster",
@@ -424,7 +404,7 @@
     "wtul",
     "abletim"
    ],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -729,7 +709,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261017T001723Z.log",
+    "log": "realisateur.20261017T003954Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -737,7 +717,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-17T00:17:23Z"
+    "at": "2026-10-17T00:39:54Z"
    },
    {
     "repo": "scheduler",
