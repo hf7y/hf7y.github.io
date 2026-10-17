@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T00:40:01Z",
+ "generated_at": "2026-10-17T01:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T01:40:01Z",
+ "valid_until": "2026-10-17T02:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -18,14 +18,38 @@
    "ports_published": null
   },
   {
-   "name": "angry_volhard",
+   "name": "amazing_haibt",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-17T00:19:18Z",
+   "started_at": "2026-10-17T00:52:57Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "busy_poincare",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-17T00:53:27Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "compassionate_yalow",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-17T00:59:09Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,30 +78,6 @@
    "ports_published": null
   },
   {
-   "name": "determined_cartwright",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T00:19:23Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "epic_sutherland",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T00:18:34Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -90,38 +90,26 @@
    "ports_published": false
   },
   {
-   "name": "happy_lewin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "name": "keen_ardinghelli",
+   "image": "senechal-puller:02459d4c21ab",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-17T00:38:45Z",
+   "started_at": "2026-10-17T01:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
   {
-   "name": "kind_davinci",
+   "name": "nostalgic_dhawan",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-17T00:39:31Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "nice_greider",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T00:02:44Z",
+   "started_at": "2026-10-17T00:55:54Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -171,6 +159,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "trusting_dewdney",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-17T00:58:21Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -301,15 +301,15 @@
   }
  ],
  "unmanaged": [
-  "angry_volhard",
+  "amazing_haibt",
+  "busy_poincare",
+  "compassionate_yalow",
   "condescending_joliot",
-  "determined_cartwright",
-  "epic_sutherland",
-  "happy_lewin",
-  "kind_davinci",
-  "nice_greider",
+  "keen_ardinghelli",
+  "nostalgic_dhawan",
   "officejet",
   "serene_elgamal",
+  "trusting_dewdney",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -354,7 +354,7 @@
   "last_run": {
    "log": "nightly.20261017T000702Z.log",
    "started_at": "2026-10-17T00:07:03Z",
-   "finished_at": null,
+   "finished_at": "2026-10-17T00:46:46Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -402,9 +402,11 @@
     "secretaire",
     "baudin",
     "wtul",
-    "abletim"
+    "abletim",
+    "senechal",
+    "crt"
    ],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -710,11 +712,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261017T003954Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 33,
+    "cost_usd": 1.1342,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1992",
     "commented": false,
     "note": null,
     "at": "2026-10-17T00:39:54Z"
@@ -746,12 +748,12 @@
    {
     "repo": "senechal",
     "log": "senechal.20261017T000043Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 64,
+    "cost_usd": 2.9442,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1457",
+    "commented": true,
     "note": null,
     "at": "2026-10-17T00:00:43Z"
    },
@@ -835,7 +837,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "media-arts-collective/CodeDumpster: the nightly could not read its queue and skipped it",
   "media-arts-collective/inv-redirects: the nightly could not read its queue and skipped it",
   "media-arts-collective/nomac.org: the nightly could not read its queue and skipped it",
@@ -872,6 +873,8 @@
   "baudin: the nightly could not read its queue and skipped it",
   "wtul: the nightly could not read its queue and skipped it",
   "abletim: the nightly could not read its queue and skipped it",
+  "senechal: the nightly could not read its queue and skipped it",
+  "crt: the nightly could not read its queue and skipped it",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
@@ -880,8 +883,6 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
