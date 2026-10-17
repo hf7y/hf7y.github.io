@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T21:20:02Z",
+ "generated_at": "2026-10-17T21:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T22:20:02Z",
+ "valid_until": "2026-10-17T22:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -99,18 +99,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "unruffled_lamport",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T21:17:30Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -244,7 +232,6 @@
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
-  "unruffled_lamport",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -289,7 +276,7 @@
   "last_run": {
    "log": "nightly.20261017T211711Z.log",
    "started_at": "2026-10-17T21:17:11Z",
-   "finished_at": null,
+   "finished_at": "2026-10-17T21:32:24Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -297,12 +284,12 @@
     "media-arts-collective/cinema-sanctuary": {
      "queue": 1,
      "at": "2026-10-17T21:17:26Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.4
   },
   "passes": [
    {
@@ -500,12 +487,12 @@
    {
     "repo": "media-arts-collective.cinema-sanctuary",
     "log": "media-arts-collective.cinema-sanctuary.20261017T211726Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 46,
+    "cost_usd": 2.2535,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-17T21:17:26Z"
    },
@@ -733,14 +720,12 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
