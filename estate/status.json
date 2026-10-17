@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T09:00:02Z",
+ "generated_at": "2026-10-17T09:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T10:00:02Z",
+ "valid_until": "2026-10-17T10:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "cranky_edison",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T09:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "desk",
    "image": "secretaire:3dcb7d5",
    "project": "secretaire",
@@ -64,6 +52,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "jovial_bohr",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-17T09:17:53Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -242,7 +242,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "cranky_edison",
+  "jovial_bohr",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -287,61 +287,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261017T080702Z.log",
-   "started_at": "2026-10-17T08:07:02Z",
-   "finished_at": "2026-10-17T08:15:20Z",
+   "log": "nightly.20261017T091717Z.log",
+   "started_at": "2026-10-17T09:17:17Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "realisateur": {
+    "hf7y-estate/musc-2300": {
      "queue": 1,
-     "at": "2026-10-17T08:15:20Z",
+     "at": "2026-10-17T09:17:36Z",
      "outcome": null
     }
    },
    "skipped": [],
-   "queue_unreadable": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "space-canon",
-    "dog",
-    "vibe-kiosk",
-    "vim-arcade",
-    "nine-speakers",
-    "media-arts-collective/kreweofvaporwave.github.io",
-    "media-arts-collective/office",
-    "media-arts-collective/inventory-app",
-    "dcp-gate-site",
-    "sequestria",
-    "abc",
-    "chezz",
-    "gardien",
-    "american-cycle",
-    "scheduler",
-    "groc-mangr",
-    "media-arts-collective/wavebucks",
-    "front-door",
-    "musc-2300",
-    "media-arts-collective/cinema-sanctuary",
-    "apms-2173",
-    "etalon",
-    "media-arts-collective/grants",
-    "media-arts-collective/treasury",
-    "secretaire",
-    "baudin",
-    "wtul",
-    "abletim",
-    "senechal",
-    "crt",
-    "bibliothecaire",
-    "ecosim"
-   ],
-   "age_h": 0.9
+   "queue_unreadable": [],
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -622,15 +583,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261015T064816Z.log",
-    "result": "success",
-    "turns": 64,
-    "cost_usd": 1.4207,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/343",
+    "log": "musc-2300.20261017T091736Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-15T06:48:16Z"
+    "at": "2026-10-17T09:17:36Z"
    },
    {
     "repo": "nine-speakers",
@@ -646,15 +607,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261017T081549Z.log",
+    "log": "realisateur.20261017T091547Z.log",
     "result": "success",
     "turns": 6,
-    "cost_usd": 0.1138,
+    "cost_usd": 0.1153,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-17T08:15:49Z"
+    "at": "2026-10-17T09:15:47Z"
    },
    {
     "repo": "scheduler",
@@ -772,44 +733,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "media-arts-collective/CodeDumpster: the nightly could not read its queue and skipped it",
-  "media-arts-collective/inv-redirects: the nightly could not read its queue and skipped it",
-  "media-arts-collective/nomac.org: the nightly could not read its queue and skipped it",
-  "selfdev-permission-witness-scratch: the nightly could not read its queue and skipped it",
-  "verbs: the nightly could not read its queue and skipped it",
-  "vkv23: the nightly could not read its queue and skipped it",
-  "space-canon: the nightly could not read its queue and skipped it",
-  "dog: the nightly could not read its queue and skipped it",
-  "vibe-kiosk: the nightly could not read its queue and skipped it",
-  "vim-arcade: the nightly could not read its queue and skipped it",
-  "nine-speakers: the nightly could not read its queue and skipped it",
-  "media-arts-collective/kreweofvaporwave.github.io: the nightly could not read its queue and skipped it",
-  "media-arts-collective/office: the nightly could not read its queue and skipped it",
-  "media-arts-collective/inventory-app: the nightly could not read its queue and skipped it",
-  "dcp-gate-site: the nightly could not read its queue and skipped it",
-  "sequestria: the nightly could not read its queue and skipped it",
-  "abc: the nightly could not read its queue and skipped it",
-  "chezz: the nightly could not read its queue and skipped it",
-  "gardien: the nightly could not read its queue and skipped it",
-  "american-cycle: the nightly could not read its queue and skipped it",
-  "scheduler: the nightly could not read its queue and skipped it",
-  "groc-mangr: the nightly could not read its queue and skipped it",
-  "media-arts-collective/wavebucks: the nightly could not read its queue and skipped it",
-  "front-door: the nightly could not read its queue and skipped it",
-  "musc-2300: the nightly could not read its queue and skipped it",
-  "media-arts-collective/cinema-sanctuary: the nightly could not read its queue and skipped it",
-  "apms-2173: the nightly could not read its queue and skipped it",
-  "etalon: the nightly could not read its queue and skipped it",
-  "media-arts-collective/grants: the nightly could not read its queue and skipped it",
-  "media-arts-collective/treasury: the nightly could not read its queue and skipped it",
-  "secretaire: the nightly could not read its queue and skipped it",
-  "baudin: the nightly could not read its queue and skipped it",
-  "wtul: the nightly could not read its queue and skipped it",
-  "abletim: the nightly could not read its queue and skipped it",
-  "senechal: the nightly could not read its queue and skipped it",
-  "crt: the nightly could not read its queue and skipped it",
-  "bibliothecaire: the nightly could not read its queue and skipped it",
-  "ecosim: the nightly could not read its queue and skipped it",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
@@ -818,6 +742,7 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
