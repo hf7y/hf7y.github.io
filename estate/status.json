@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T15:40:01Z",
+ "generated_at": "2026-10-17T16:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T16:40:01Z",
+ "valid_until": "2026-10-17T17:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -64,6 +64,18 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "pedantic_tharp",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-17T16:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "potato-push",
@@ -231,6 +243,7 @@
  "unmanaged": [
   "condescending_joliot",
   "officejet",
+  "pedantic_tharp",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -328,7 +341,7 @@
     "musc-2300",
     "senechal"
    ],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
