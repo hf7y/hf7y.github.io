@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T10:40:03Z",
+ "generated_at": "2026-10-17T11:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T11:40:03Z",
+ "valid_until": "2026-10-17T12:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "condescending_heisenberg",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-17T11:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -229,6 +241,7 @@
   }
  ],
  "unmanaged": [
+  "condescending_heisenberg",
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
@@ -328,7 +341,7 @@
     "ecosim",
     "musc-2300"
    ],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
