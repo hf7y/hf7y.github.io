@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T04:00:01Z",
+ "generated_at": "2026-10-17T04:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T05:00:01Z",
+ "valid_until": "2026-10-17T05:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -99,18 +99,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "stupefied_murdock",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T04:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -244,7 +232,6 @@
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
-  "stupefied_murdock",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -287,16 +274,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261017T030702Z.log",
-   "started_at": "2026-10-17T03:07:02Z",
-   "finished_at": "2026-10-17T03:15:51Z",
+   "log": "nightly.20261017T040702Z.log",
+   "started_at": "2026-10-17T04:07:02Z",
+   "finished_at": "2026-10-17T04:15:34Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-17T03:15:51Z",
+     "at": "2026-10-17T04:15:34Z",
      "outcome": null
     }
    },
@@ -341,7 +328,7 @@
     "crt",
     "bibliothecaire"
    ],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -646,15 +633,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261017T031624Z.log",
+    "log": "realisateur.20261017T041611Z.log",
     "result": "success",
     "turns": 4,
-    "cost_usd": 0.0929,
+    "cost_usd": 0.1305,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-17T03:16:24Z"
+    "at": "2026-10-17T04:16:11Z"
    },
    {
     "repo": "scheduler",
@@ -818,7 +805,6 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
