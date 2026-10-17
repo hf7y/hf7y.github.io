@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T12:20:02Z",
+ "generated_at": "2026-10-17T12:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T13:20:02Z",
+ "valid_until": "2026-10-17T13:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -52,18 +52,6 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
-  },
-  {
-   "name": "nervous_fermi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T12:19:02Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -242,7 +230,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "nervous_fermi",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -341,7 +328,7 @@
     "ecosim",
     "musc-2300"
    ],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -647,12 +634,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261017T121713Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 5,
+    "cost_usd": 0.1751,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-17T12:17:13Z"
    },
@@ -818,7 +805,6 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
