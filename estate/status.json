@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T01:20:02Z",
+ "generated_at": "2026-10-17T01:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T02:20:02Z",
+ "valid_until": "2026-10-17T02:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "clever_almeida",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T01:17:36Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -50,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T18:38:50Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "elated_babbage",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T01:18:34Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -253,9 +229,7 @@
   }
  ],
  "unmanaged": [
-  "clever_almeida",
   "condescending_joliot",
-  "elated_babbage",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -302,7 +276,7 @@
   "last_run": {
    "log": "nightly.20261017T011711Z.log",
    "started_at": "2026-10-17T01:17:11Z",
-   "finished_at": null,
+   "finished_at": "2026-10-17T01:27:48Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -310,12 +284,12 @@
     "hf7y-estate/bibliothecaire": {
      "queue": 1,
      "at": "2026-10-17T01:17:26Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.4
   },
   "passes": [
    {
@@ -381,12 +355,12 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261017T011726Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 41,
+    "cost_usd": 1.3999,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-17T01:17:26Z"
    },
@@ -621,12 +595,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261017T011645Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 9,
+    "cost_usd": 0.2244,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-17T01:16:45Z"
    },
@@ -746,17 +720,14 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
