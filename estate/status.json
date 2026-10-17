@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T05:20:01Z",
+ "generated_at": "2026-10-17T05:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T06:20:01Z",
+ "valid_until": "2026-10-17T06:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -184,18 +184,6 @@
    "started_at": "2026-10-16T23:12:52Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zealous_agnesi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T05:17:25Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -244,8 +232,7 @@
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
-  "xenodochial_wilson",
-  "zealous_agnesi"
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -289,7 +276,7 @@
   "last_run": {
    "log": "nightly.20261017T051711Z.log",
    "started_at": "2026-10-17T05:17:11Z",
-   "finished_at": null,
+   "finished_at": "2026-10-17T05:24:05Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -297,12 +284,12 @@
     "hf7y-estate/ecosim": {
      "queue": 1,
      "at": "2026-10-17T05:17:19Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.4
   },
   "passes": [
    {
@@ -440,12 +427,12 @@
    {
     "repo": "ecosim",
     "log": "ecosim.20261017T051719Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 24,
+    "cost_usd": 0.8343,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-17T05:17:19Z"
    },
@@ -608,12 +595,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261017T051848Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 5,
+    "cost_usd": 0.1602,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-17T05:18:48Z"
    },
@@ -733,17 +720,14 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
-  "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
