@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T11:00:02Z",
+ "generated_at": "2026-10-17T11:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T12:00:02Z",
+ "valid_until": "2026-10-17T12:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "condescending_heisenberg",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T11:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -50,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T18:38:50Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "great_leavitt",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-17T11:17:49Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -241,8 +241,8 @@
   }
  ],
  "unmanaged": [
-  "condescending_heisenberg",
   "condescending_joliot",
+  "great_leavitt",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -287,16 +287,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261017T100702Z.log",
-   "started_at": "2026-10-17T10:07:03Z",
-   "finished_at": "2026-10-17T10:15:28Z",
+   "log": "nightly.20261017T110702Z.log",
+   "started_at": "2026-10-17T11:07:03Z",
+   "finished_at": "2026-10-17T11:15:22Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-17T10:15:06Z",
+     "at": "2026-10-17T11:15:22Z",
      "outcome": null
     }
    },
@@ -341,7 +341,7 @@
     "ecosim",
     "musc-2300"
    ],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -646,15 +646,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261017T101537Z.log",
-    "result": "success",
-    "turns": 5,
-    "cost_usd": 0.1129,
-    "rc": 0,
+    "log": "realisateur.20261017T111552Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-17T10:15:37Z"
+    "at": "2026-10-17T11:15:52Z"
    },
    {
     "repo": "scheduler",
@@ -818,6 +818,7 @@
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
