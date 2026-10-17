@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T08:00:02Z",
+ "generated_at": "2026-10-17T08:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T09:00:02Z",
+ "valid_until": "2026-10-17T09:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "bold_sinoussi",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T08:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -241,7 +229,6 @@
   }
  ],
  "unmanaged": [
-  "bold_sinoussi",
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
@@ -287,16 +274,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261017T070702Z.log",
-   "started_at": "2026-10-17T07:07:02Z",
-   "finished_at": "2026-10-17T07:15:24Z",
+   "log": "nightly.20261017T080702Z.log",
+   "started_at": "2026-10-17T08:07:02Z",
+   "finished_at": "2026-10-17T08:15:20Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-17T07:15:24Z",
+     "at": "2026-10-17T08:15:20Z",
      "outcome": null
     }
    },
@@ -341,7 +328,7 @@
     "bibliothecaire",
     "ecosim"
    ],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -646,15 +633,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261017T071554Z.log",
+    "log": "realisateur.20261017T081549Z.log",
     "result": "success",
-    "turns": 5,
-    "cost_usd": 0.1134,
+    "turns": 6,
+    "cost_usd": 0.1138,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-17T07:15:54Z"
+    "at": "2026-10-17T08:15:49Z"
    },
    {
     "repo": "scheduler",
