@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-17T12:00:02Z",
+ "generated_at": "2026-10-17T12:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-17T13:00:02Z",
+ "valid_until": "2026-10-17T13:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "compassionate_kalam",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-17T12:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -64,6 +52,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "nervous_fermi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-17T12:19:02Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -241,8 +241,8 @@
   }
  ],
  "unmanaged": [
-  "compassionate_kalam",
   "condescending_joliot",
+  "nervous_fermi",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -287,16 +287,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261017T110702Z.log",
-   "started_at": "2026-10-17T11:07:03Z",
-   "finished_at": "2026-10-17T11:15:22Z",
+   "log": "nightly.20261017T120704Z.log",
+   "started_at": "2026-10-17T12:07:04Z",
+   "finished_at": "2026-10-17T12:16:41Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-17T11:15:22Z",
+     "at": "2026-10-17T12:16:41Z",
      "outcome": null
     }
    },
@@ -341,7 +341,7 @@
     "ecosim",
     "musc-2300"
    ],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -646,15 +646,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261017T111552Z.log",
-    "result": "success",
-    "turns": 15,
-    "cost_usd": 0.4482,
-    "rc": 0,
+    "log": "realisateur.20261017T121713Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-17T11:15:52Z"
+    "at": "2026-10-17T12:17:13Z"
    },
    {
     "repo": "scheduler",
