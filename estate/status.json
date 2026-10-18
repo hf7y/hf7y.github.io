@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T12:40:02Z",
+ "generated_at": "2026-10-18T13:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T13:40:02Z",
+ "valid_until": "2026-10-18T14:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "boring_hellman",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T13:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -74,18 +86,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T17:30:17Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "romantic_mayer",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T12:14:23Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -241,9 +241,9 @@
   }
  ],
  "unmanaged": [
+  "boring_hellman",
   "condescending_joliot",
   "officejet",
-  "romantic_mayer",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -348,7 +348,7 @@
     "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -450,11 +450,11 @@
    {
     "repo": "crt",
     "log": "crt.20261018T121354Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 77,
+    "cost_usd": 2.2078,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/crt/pull/628",
     "commented": true,
     "note": null,
     "at": "2026-10-18T12:13:54Z"
