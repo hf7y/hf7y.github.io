@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T14:20:02Z",
+ "generated_at": "2026-10-18T14:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T15:20:02Z",
+ "valid_until": "2026-10-18T15:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,30 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T18:38:50Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "distracted_mirzakhani",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T14:19:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "festive_boyd",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T14:19:11Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -220,18 +196,6 @@
    "started_at": "2026-10-18T11:03:52Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zealous_dijkstra",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T14:18:27Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -278,13 +242,10 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "distracted_mirzakhani",
-  "festive_boyd",
   "infallible_napier",
   "officejet",
   "serene_elgamal",
-  "xenodochial_wilson",
-  "zealous_dijkstra"
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -387,7 +348,7 @@
     "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -573,11 +534,11 @@
    {
     "repo": "groc-mangr",
     "log": "groc-mangr.20261018T141839Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 55,
+    "cost_usd": 1.2938,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/498",
     "commented": false,
     "note": null,
     "at": "2026-10-18T14:18:39Z"
@@ -657,11 +618,11 @@
    {
     "repo": "media-arts-collective.wavebucks",
     "log": "media-arts-collective.wavebucks.20261018T141901Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 38,
+    "cost_usd": 0.9766,
+    "rc": 0,
+    "pr": "https://github.com/media-arts-collective/wavebucks/pull/161",
     "commented": false,
     "note": null,
     "at": "2026-10-18T14:19:01Z"
@@ -705,12 +666,12 @@
    {
     "repo": "scheduler",
     "log": "scheduler.20261018T141818Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 29,
+    "cost_usd": 1.083,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-18T14:18:18Z"
    },
@@ -822,11 +783,8 @@
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
-  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
-  "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
