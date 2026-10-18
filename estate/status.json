@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T20:40:02Z",
+ "generated_at": "2026-10-18T21:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T21:40:02Z",
+ "valid_until": "2026-10-18T22:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,6 +42,18 @@
    "ports_published": null
   },
   {
+   "name": "gracious_bassi",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T20:58:54Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -54,14 +66,26 @@
    "ports_published": false
   },
   {
+   "name": "happy_bassi",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T21:00:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
-   "image": "officejet:0a29183ae792",
+   "image": "officejet:local",
    "project": "officejet",
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-18T20:38:54Z",
+   "started_at": "2026-10-18T20:48:29Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -150,18 +174,6 @@
    "ports_published": null
   },
   {
-   "name": "youthful_kepler",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T20:36:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "zaxon-gateway",
    "image": "zaxon:crt-1d1dda472fba",
    "project": "zaxon",
@@ -247,9 +259,10 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "gracious_bassi",
+  "happy_bassi",
   "serene_elgamal",
-  "xenodochial_wilson",
-  "youthful_kepler"
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -352,7 +365,7 @@
     "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
