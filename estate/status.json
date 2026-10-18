@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T15:00:02Z",
+ "generated_at": "2026-10-18T15:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T16:00:02Z",
+ "valid_until": "2026-10-18T16:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "brave_mclaren",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T15:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -42,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "condescending_wozniak",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T14:51:50Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "desk",
    "image": "secretaire:3dcb7d5",
    "project": "secretaire",
@@ -62,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T18:38:50Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "goofy_lovelace",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T15:14:57Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -88,6 +76,18 @@
    "started_at": "2026-10-18T04:13:40Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "pedantic_joliot",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T15:14:53Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "potato-push",
@@ -253,10 +253,10 @@
   }
  ],
  "unmanaged": [
-  "brave_mclaren",
   "condescending_joliot",
-  "condescending_wozniak",
+  "goofy_lovelace",
   "officejet",
+  "pedantic_joliot",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -300,51 +300,51 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261018T140702Z.log",
-   "started_at": "2026-10-18T14:07:02Z",
-   "finished_at": "2026-10-18T14:18:54Z",
+   "log": "nightly.20261018T150702Z.log",
+   "started_at": "2026-10-18T15:07:03Z",
+   "finished_at": "2026-10-18T15:14:46Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "dcp-gate-site": {
-     "queue": 2,
-     "at": "2026-10-18T14:09:07Z",
+    "front-door": {
+     "queue": 12,
+     "at": "2026-10-18T15:09:06Z",
      "outcome": null
     },
-    "sequestria": {
-     "queue": 5,
-     "at": "2026-10-18T14:09:17Z",
+    "apms-2173": {
+     "queue": 13,
+     "at": "2026-10-18T15:09:25Z",
      "outcome": null
     },
-    "abc": {
-     "queue": 2,
-     "at": "2026-10-18T14:09:30Z",
+    "media-arts-collective/grants": {
+     "queue": 12,
+     "at": "2026-10-18T15:09:37Z",
      "outcome": null
     },
-    "gardien": {
-     "queue": 9,
-     "at": "2026-10-18T14:09:43Z",
-     "outcome": null
-    },
-    "american-cycle": {
-     "queue": 7,
-     "at": "2026-10-18T14:17:50Z",
-     "outcome": null
-    },
-    "scheduler": {
-     "queue": 4,
-     "at": "2026-10-18T14:18:04Z",
-     "outcome": null
-    },
-    "groc-mangr": {
+    "media-arts-collective/treasury": {
      "queue": 10,
-     "at": "2026-10-18T14:18:25Z",
+     "at": "2026-10-18T15:09:48Z",
      "outcome": null
     },
-    "media-arts-collective/wavebucks": {
-     "queue": 86,
-     "at": "2026-10-18T14:18:43Z",
+    "baudin": {
+     "queue": 1,
+     "at": "2026-10-18T15:10:00Z",
+     "outcome": null
+    },
+    "wtul": {
+     "queue": 27,
+     "at": "2026-10-18T15:10:23Z",
+     "outcome": null
+    },
+    "crt": {
+     "queue": 31,
+     "at": "2026-10-18T15:14:10Z",
+     "outcome": null
+    },
+    "bibliothecaire": {
+     "queue": 1,
+     "at": "2026-10-18T15:14:31Z",
      "outcome": null
     }
    },
@@ -361,7 +361,7 @@
     "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -402,39 +402,39 @@
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261018T111111Z.log",
+    "log": "apms-2173.20261018T150937Z.log",
     "result": "success",
-    "turns": 70,
-    "cost_usd": 1.7389,
+    "turns": 39,
+    "cost_usd": 1.0883,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/apms-2173/pull/237",
+    "pr": "https://github.com/hf7y-estate/apms-2173/pull/238",
     "commented": false,
     "note": null,
-    "at": "2026-10-18T11:11:11Z"
+    "at": "2026-10-18T15:09:37Z"
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261018T120922Z.log",
+    "log": "baudin.20261018T151011Z.log",
     "result": "success",
-    "turns": 12,
-    "cost_usd": 0.2455,
+    "turns": 8,
+    "cost_usd": 0.168,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-18T12:09:22Z"
+    "at": "2026-10-18T15:10:11Z"
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261018T121411Z.log",
-    "result": "success",
-    "turns": 99,
-    "cost_usd": 2.7027,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/bibliothecaire/pull/203",
-    "commented": true,
+    "log": "bibliothecaire.20261018T151446Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-18T12:14:11Z"
+    "at": "2026-10-18T15:14:46Z"
    },
    {
     "repo": "chezz",
@@ -462,15 +462,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261018T121354Z.log",
-    "result": "success",
-    "turns": 77,
-    "cost_usd": 2.2078,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/crt/pull/628",
-    "commented": true,
+    "log": "crt.20261018T151428Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-18T12:13:54Z"
+    "at": "2026-10-18T15:14:28Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -522,15 +522,15 @@
    },
    {
     "repo": "front-door",
-    "log": "front-door.20261018T111049Z.log",
+    "log": "front-door.20261018T150917Z.log",
     "result": "success",
-    "turns": 30,
-    "cost_usd": 0.908,
+    "turns": 23,
+    "cost_usd": 0.4427,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-18T11:10:49Z"
+    "at": "2026-10-18T15:09:17Z"
    },
    {
     "repo": "gardien",
@@ -570,15 +570,15 @@
    },
    {
     "repo": "media-arts-collective.grants",
-    "log": "media-arts-collective.grants.20261018T111121Z.log",
+    "log": "media-arts-collective.grants.20261018T150949Z.log",
     "result": "success",
-    "turns": 51,
-    "cost_usd": 1.4463,
+    "turns": 44,
+    "cost_usd": 1.1827,
     "rc": 0,
-    "pr": "https://github.com/media-arts-collective/grants/pull/26",
+    "pr": "https://github.com/media-arts-collective/grants/pull/27",
     "commented": false,
     "note": null,
-    "at": "2026-10-18T11:11:21Z"
+    "at": "2026-10-18T15:09:49Z"
    },
    {
     "repo": "media-arts-collective.inventory-app",
@@ -618,15 +618,15 @@
    },
    {
     "repo": "media-arts-collective.treasury",
-    "log": "media-arts-collective.treasury.20261018T111208Z.log",
+    "log": "media-arts-collective.treasury.20261018T150958Z.log",
     "result": "success",
-    "turns": 29,
-    "cost_usd": 0.6858,
+    "turns": 33,
+    "cost_usd": 0.8558,
     "rc": 0,
-    "pr": null,
-    "commented": true,
+    "pr": "https://github.com/media-arts-collective/treasury/pull/30",
+    "commented": false,
     "note": null,
-    "at": "2026-10-18T11:12:08Z"
+    "at": "2026-10-18T15:09:58Z"
    },
    {
     "repo": "media-arts-collective.wavebucks",
@@ -794,7 +794,8 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
-  "front-door: last pass landed nothing -- no PR and no comment on its issue",
+  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
+  "crt: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
