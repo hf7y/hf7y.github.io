@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T03:00:01Z",
+ "generated_at": "2026-10-18T03:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T04:00:01Z",
+ "valid_until": "2026-10-18T04:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -54,18 +54,6 @@
    "ports_published": false
   },
   {
-   "name": "nervous_almeida",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T03:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -73,7 +61,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T19:05:47Z",
+   "started_at": "2026-10-18T03:00:37Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -242,7 +230,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "nervous_almeida",
   "officejet",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -287,16 +274,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261018T020702Z.log",
-   "started_at": "2026-10-18T02:07:02Z",
-   "finished_at": "2026-10-18T02:15:31Z",
+   "log": "nightly.20261018T030703Z.log",
+   "started_at": "2026-10-18T03:07:03Z",
+   "finished_at": "2026-10-18T03:19:16Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-18T02:15:19Z",
+     "at": "2026-10-18T03:19:16Z",
      "outcome": null
     }
    },
@@ -341,7 +328,7 @@
     "media-arts-collective/cinema-sanctuary",
     "media-arts-collective/office"
    ],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -646,15 +633,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261018T021550Z.log",
-    "result": "success",
-    "turns": 9,
-    "cost_usd": 0.3021,
-    "rc": 0,
+    "log": "realisateur.20261018T031947Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-18T02:15:50Z"
+    "at": "2026-10-18T03:19:47Z"
    },
    {
     "repo": "scheduler",
