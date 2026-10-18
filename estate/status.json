@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T13:40:02Z",
+ "generated_at": "2026-10-18T14:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T14:40:02Z",
+ "valid_until": "2026-10-18T15:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T18:38:50Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "frosty_goldwasser",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T14:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -99,18 +111,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "sleepy_khorana",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T13:20:11Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -242,9 +242,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "frosty_goldwasser",
   "officejet",
   "serene_elgamal",
-  "sleepy_khorana",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -302,7 +302,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.4
+   "age_h": 0.7
   },
   "passes": [
    {
@@ -608,11 +608,11 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261018T131845Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 48,
+    "cost_usd": 1.4041,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1998",
     "commented": false,
     "note": null,
     "at": "2026-10-18T13:18:45Z"
@@ -741,7 +741,6 @@
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.wavebucks: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
