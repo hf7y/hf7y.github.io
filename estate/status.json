@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T03:40:02Z",
+ "generated_at": "2026-10-18T04:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T04:40:02Z",
+ "valid_until": "2026-10-18T05:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -88,6 +88,18 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "sad_buck",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T04:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "serene_elgamal",
@@ -231,6 +243,7 @@
  "unmanaged": [
   "condescending_joliot",
   "officejet",
+  "sad_buck",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -328,7 +341,7 @@
     "media-arts-collective/cinema-sanctuary",
     "media-arts-collective/office"
    ],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
