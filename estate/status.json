@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T01:20:01Z",
+ "generated_at": "2026-10-18T01:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T02:20:01Z",
+ "valid_until": "2026-10-18T02:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "angry_swartz",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T01:17:23Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -241,7 +229,6 @@
   }
  ],
  "unmanaged": [
-  "angry_swartz",
   "condescending_joliot",
   "officejet",
   "serene_elgamal",
@@ -289,7 +276,7 @@
   "last_run": {
    "log": "nightly.20261018T011710Z.log",
    "started_at": "2026-10-18T01:17:10Z",
-   "finished_at": null,
+   "finished_at": "2026-10-18T01:31:40Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -297,12 +284,12 @@
     "media-arts-collective/office": {
      "queue": 1,
      "at": "2026-10-18T01:17:18Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.4
   },
   "passes": [
    {
@@ -548,11 +535,11 @@
    {
     "repo": "media-arts-collective.office",
     "log": "media-arts-collective.office.20261018T011718Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 39,
+    "cost_usd": 0.9628,
+    "rc": 0,
+    "pr": "https://github.com/media-arts-collective/office/pull/13",
     "commented": false,
     "note": null,
     "at": "2026-10-18T01:17:18Z"
@@ -733,7 +720,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
@@ -741,7 +727,6 @@
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "sequestria: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
