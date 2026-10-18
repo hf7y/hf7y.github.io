@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T07:20:02Z",
+ "generated_at": "2026-10-18T07:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T08:20:02Z",
+ "valid_until": "2026-10-18T08:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -66,18 +66,6 @@
    "ports_published": true
   },
   {
-   "name": "pedantic_dewdney",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T07:09:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "potato-push",
    "image": "secretaire:3dcb7d5",
    "project": "secretaire",
@@ -112,18 +100,6 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "sad_chandrasekhar",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T07:10:32Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "serene_elgamal",
@@ -267,9 +243,7 @@
  "unmanaged": [
   "condescending_joliot",
   "officejet",
-  "pedantic_dewdney",
   "quirky_bardeen",
-  "sad_chandrasekhar",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -363,7 +337,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -549,11 +523,11 @@
    {
     "repo": "groc-mangr",
     "log": "groc-mangr.20261018T071002Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 118,
+    "cost_usd": 4.609,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/497",
     "commented": false,
     "note": null,
     "at": "2026-10-18T07:10:02Z"
@@ -681,12 +655,12 @@
    {
     "repo": "scheduler",
     "log": "scheduler.20261018T070947Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 51,
+    "cost_usd": 2.6001,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-18T07:09:47Z"
    },
@@ -803,8 +777,6 @@
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
-  "scheduler: last pass landed nothing -- no PR and no comment on its issue"
+  "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
