@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T11:40:02Z",
+ "generated_at": "2026-10-18T12:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T12:40:02Z",
+ "valid_until": "2026-10-18T13:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -52,6 +52,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "objective_cori",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T12:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -112,6 +124,18 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "wonderful_nobel",
+   "image": "musc-2300:local",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T12:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -230,8 +254,10 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "objective_cori",
   "officejet",
   "serene_elgamal",
+  "wonderful_nobel",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -330,7 +356,7 @@
     "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
