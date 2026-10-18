@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T04:00:01Z",
+ "generated_at": "2026-10-18T04:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T05:00:01Z",
+ "valid_until": "2026-10-18T05:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -61,7 +61,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-18T03:00:37Z",
+   "started_at": "2026-10-18T04:13:40Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -88,18 +88,6 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "sad_buck",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T04:00:01Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "serene_elgamal",
@@ -243,7 +231,6 @@
  "unmanaged": [
   "condescending_joliot",
   "officejet",
-  "sad_buck",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -287,16 +274,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261018T030703Z.log",
-   "started_at": "2026-10-18T03:07:03Z",
-   "finished_at": "2026-10-18T03:19:16Z",
+   "log": "nightly.20261018T040702Z.log",
+   "started_at": "2026-10-18T04:07:02Z",
+   "finished_at": "2026-10-18T04:19:30Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "realisateur": {
      "queue": 1,
-     "at": "2026-10-18T03:19:16Z",
+     "at": "2026-10-18T04:19:30Z",
      "outcome": null
     }
    },
@@ -341,7 +328,7 @@
     "media-arts-collective/cinema-sanctuary",
     "media-arts-collective/office"
    ],
-   "age_h": 0.9
+   "age_h": 0.2
   },
   "passes": [
    {
