@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T07:40:01Z",
+ "generated_at": "2026-10-18T08:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T08:40:01Z",
+ "valid_until": "2026-10-18T09:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -54,6 +54,18 @@
    "ports_published": false
   },
   {
+   "name": "nifty_knuth",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T07:52:28Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:local",
    "project": "officejet",
@@ -74,18 +86,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T17:30:17Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "quirky_bardeen",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T07:09:35Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -111,6 +111,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "thirsty_liskov",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T08:00:01Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -242,9 +254,10 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "nifty_knuth",
   "officejet",
-  "quirky_bardeen",
   "serene_elgamal",
+  "thirsty_liskov",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -337,7 +350,7 @@
     "vibe-kiosk"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -367,11 +380,11 @@
    {
     "repo": "american-cycle",
     "log": "american-cycle.20261018T070925Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 100,
+    "cost_usd": 2.4193,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/american-cycle/pull/311",
     "commented": false,
     "note": null,
     "at": "2026-10-18T07:09:25Z"
@@ -771,7 +784,6 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
-  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
