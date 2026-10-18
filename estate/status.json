@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T18:40:02Z",
+ "generated_at": "2026-10-18T19:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T19:40:02Z",
+ "valid_until": "2026-10-18T20:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "elegant_golick",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T18:19:58Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -64,6 +52,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "happy_wu",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T19:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -86,6 +86,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T17:30:17Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "priceless_mcclintock",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T18:58:43Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -196,6 +208,18 @@
    "started_at": "2026-10-18T17:39:39Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zealous_shirley",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T18:53:25Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -242,10 +266,12 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "elegant_golick",
+  "happy_wu",
   "officejet",
+  "priceless_mcclintock",
   "serene_elgamal",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "zealous_shirley"
  ],
  "nightly": {
   "armed": true,
@@ -348,7 +374,7 @@
     "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -378,11 +404,11 @@
    {
     "repo": "american-cycle",
     "log": "american-cycle.20261018T181952Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 61,
+    "cost_usd": 1.821,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/american-cycle/pull/314",
     "commented": false,
     "note": null,
     "at": "2026-10-18T18:19:52Z"
@@ -781,7 +807,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh run-agent.sh merge-carry.sh Dockerfile are symlinks into a checkout -- ruled out, hf7y-estate/realisateur#1379.",
-  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "ecosim: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
