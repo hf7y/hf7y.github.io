@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T09:20:02Z",
+ "generated_at": "2026-10-18T09:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T10:20:02Z",
+ "valid_until": "2026-10-18T10:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,30 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T18:38:50Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "frosty_williamson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T09:10:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "goofy_jennings",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T09:19:39Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -102,18 +78,6 @@
    "ports_published": true
   },
   {
-   "name": "optimistic_clarke",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T09:10:44Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "potato-push",
    "image": "secretaire:3dcb7d5",
    "project": "secretaire",
@@ -122,18 +86,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T17:30:17Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "reverent_napier",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T09:12:02Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -290,12 +242,8 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "frosty_williamson",
-  "goofy_jennings",
   "modest_cray",
   "officejet",
-  "optimistic_clarke",
-  "reverent_napier",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -354,7 +302,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.4
   },
   "passes": [
    {
@@ -552,11 +500,11 @@
    {
     "repo": "media-arts-collective.cinema-sanctuary",
     "log": "media-arts-collective.cinema-sanctuary.20261018T091033Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 80,
+    "cost_usd": 2.9483,
+    "rc": 0,
+    "pr": "https://github.com/media-arts-collective/cinema-sanctuary/pull/181",
     "commented": false,
     "note": null,
     "at": "2026-10-18T09:10:33Z"
@@ -636,11 +584,11 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261018T090942Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 83,
+    "cost_usd": 2.6303,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/musc-2300/pull/346",
     "commented": false,
     "note": null,
     "at": "2026-10-18T09:09:42Z"
@@ -696,11 +644,11 @@
    {
     "repo": "senechal",
     "log": "senechal.20261018T091024Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 65,
+    "cost_usd": 2.9695,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1475",
     "commented": false,
     "note": null,
     "at": "2026-10-18T09:10:24Z"
@@ -790,10 +738,7 @@
   "chezz: last pass landed nothing -- no PR and no comment on its issue",
   "front-door: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.kreweofvaporwave.github.io: last pass landed nothing -- no PR and no comment on its issue",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue"
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
