@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T02:20:02Z",
+ "generated_at": "2026-10-18T02:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-18T03:20:02Z",
+ "valid_until": "2026-10-18T03:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -151,37 +151,37 @@
   },
   {
    "name": "zaxon-gateway",
-   "image": "zaxon:crt-40d82c03a4fa",
+   "image": "zaxon:crt-1d1dda472fba",
    "project": "zaxon",
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T19:05:47Z",
+   "started_at": "2026-10-18T02:33:45Z",
    "finished_at": null,
    "ports_published": true
   },
   {
    "name": "zaxon-relay",
-   "image": "zaxon:crt-40d82c03a4fa",
+   "image": "zaxon:crt-1d1dda472fba",
    "project": "zaxon",
    "state": "running",
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T19:05:51Z",
+   "started_at": "2026-10-18T02:37:06Z",
    "finished_at": null,
    "ports_published": null
   },
   {
    "name": "zaxon-watcher",
-   "image": "zaxon:crt-2b754fc64209",
+   "image": "zaxon:crt-1d1dda472fba",
    "project": "zaxon",
    "state": "running",
    "health": "healthy",
-   "restarts": 2,
+   "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-17T20:27:03Z",
+   "started_at": "2026-10-18T02:37:06Z",
    "finished_at": null,
    "ports_published": null
   }
@@ -328,7 +328,7 @@
     "media-arts-collective/cinema-sanctuary",
     "media-arts-collective/office"
    ],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
