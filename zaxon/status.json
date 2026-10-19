@@ -2,34 +2,39 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-19T00:29:11Z",
-  "valid_until": "2026-10-19T01:59:11Z",
+  "generated": "2026-10-19T01:29:01Z",
+  "valid_until": "2026-10-19T02:59:01Z",
   "cadence_minutes": 60,
   "verdict": "FILING-STUCK",
-  "why": "13 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 169.9h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
+  "why": "13 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 170.8h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 5
+    "ms": 14
   },
   "containers": [
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 21 minutes (healthy)"
+      "status": "Up About an hour (healthy)"
     },
     {
       "name": "zaxon-relay",
       "state": "running",
-      "status": "Up 22 hours (healthy)"
+      "status": "Up 23 hours (healthy)"
     },
     {
       "name": "zaxon-gateway",
       "state": "running",
-      "status": "Up 22 hours"
+      "status": "Up 23 hours"
     }
   ],
-  "hazards": [],
+  "hazards": [
+    {
+      "distro": "vaporwave",
+      "why": "a registered WSL distro boots hermes-gateway.service and seizes the linked-device session"
+    }
+  ],
   "ledger": {
     "readable": true,
     "path": "/srv/zaxon/data/zaxon_relay/tickets.db",
@@ -49,10 +54,10 @@
     "inbox": {
       "count": 62,
       "window_count": 0,
-      "oldest_age_hours": 1177.5,
+      "oldest_age_hours": 1178.5,
       "unfiled": {
         "count": 13,
-        "oldest_age_hours": 169.9
+        "oldest_age_hours": 170.8
       }
     },
     "senders": [],
