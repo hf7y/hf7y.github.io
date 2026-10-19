@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-18T23:40:02Z",
+ "generated_at": "2026-10-19T00:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T00:40:02Z",
+ "valid_until": "2026-10-19T01:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "angry_mclaren",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T23:39:49Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -78,30 +66,6 @@
    "ports_published": null
   },
   {
-   "name": "epic_jackson",
-   "image": "baudin:branchtest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T23:37:55Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "festive_edison",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T23:32:43Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -126,18 +90,6 @@
    "ports_published": null
   },
   {
-   "name": "mystifying_neumann",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T23:33:28Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -148,6 +100,18 @@
    "started_at": "2026-10-18T21:47:56Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "pensive_cori",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-18T23:53:51Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "potato-push",
@@ -186,14 +150,26 @@
    "ports_published": null
   },
   {
-   "name": "stupefied_hawking",
+   "name": "sharp_yonath",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T00:00:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "trusting_noether",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-18T23:21:56Z",
+   "started_at": "2026-10-18T23:51:14Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -330,16 +306,14 @@
   }
  ],
  "unmanaged": [
-  "angry_mclaren",
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
-  "epic_jackson",
-  "festive_edison",
   "lucid_albattani",
-  "mystifying_neumann",
+  "pensive_cori",
   "serene_elgamal",
-  "stupefied_hawking",
+  "sharp_yonath",
+  "trusting_noether",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -383,33 +357,27 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261018T233002Z.log",
-   "started_at": "2026-10-18T23:30:03Z",
-   "finished_at": null,
+   "log": "nightly.20261018T234312Z.log",
+   "started_at": "2026-10-18T23:43:12Z",
+   "finished_at": "2026-10-18T23:57:13Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "musc-2300": {
-     "queue": 61,
-     "at": "2026-10-18T23:32:38Z",
+    "senechal": {
+     "queue": 1,
+     "at": "2026-10-18T23:43:48Z",
      "outcome": null
+    },
+    "crt": {
+     "queue": 1,
+     "at": "2026-10-18T23:51:36Z",
+     "outcome": "finished"
     }
    },
-   "skipped": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "space-canon",
-    "dog",
-    "vibe-kiosk",
-    "vim-arcade"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -510,15 +478,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261018T232131Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "log": "crt.20261018T235136Z.log",
+    "result": "success",
+    "turns": 9,
+    "cost_usd": 0.1753,
+    "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-18T23:21:31Z"
+    "at": "2026-10-18T23:51:36Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -691,10 +659,10 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261018T233309Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 61,
+    "cost_usd": 1.8392,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -852,7 +820,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh hold bytes that were never on `main` -- somebody edited the host. `bin/wire-agent-dispatch.sh --check`",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
