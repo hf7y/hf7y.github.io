@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T11:40:02Z",
+ "generated_at": "2026-10-19T12:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T12:40:02Z",
+ "valid_until": "2026-10-19T13:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -88,6 +88,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "interesting_jennings",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T12:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -274,6 +286,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "interesting_jennings",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -320,11 +333,17 @@
   "last_run": {
    "log": "nightly.20261019T113002Z.log",
    "started_at": "2026-10-19T11:30:03Z",
-   "finished_at": null,
+   "finished_at": "2026-10-19T11:52:40Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "senechal": {
+     "queue": 42,
+     "at": "2026-10-19T11:52:40Z",
+     "outcome": null
+    }
+   },
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -338,7 +357,7 @@
     "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -691,15 +710,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261019T082441Z.log",
+    "log": "senechal.20261019T115309Z.log",
     "result": "success",
-    "turns": 7,
-    "cost_usd": 0.2962,
+    "turns": 11,
+    "cost_usd": 0.3922,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-19T08:24:41Z"
+    "at": "2026-10-19T11:53:09Z"
    },
    {
     "repo": "sequestria",
@@ -781,7 +800,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh hold bytes that were never on `main` -- somebody edited the host. `bin/wire-agent-dispatch.sh --check`",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
@@ -791,7 +809,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "scheduler: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue"
+  "scheduler: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
