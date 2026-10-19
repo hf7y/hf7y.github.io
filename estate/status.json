@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T03:20:01Z",
+ "generated_at": "2026-10-19T03:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T04:20:01Z",
+ "valid_until": "2026-10-19T04:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -66,30 +66,6 @@
    "ports_published": null
   },
   {
-   "name": "exciting_burnell",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T03:18:53Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "gallant_raman",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T03:19:52Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -114,6 +90,18 @@
    "ports_published": null
   },
   {
+   "name": "nifty_rosalind",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T03:38:49Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -124,6 +112,18 @@
    "started_at": "2026-10-18T21:47:56Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "pensive_mclean",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T03:33:16Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "potato-push",
@@ -309,16 +309,16 @@
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
-  "exciting_burnell",
-  "gallant_raman",
   "hopeful_bartik",
+  "nifty_rosalind",
+  "pensive_mclean",
   "serene_elgamal",
   "stupefied_wright",
   "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
-  "cron_line": "*/10 * * * * /srv/agent/rel/5488a29fc134d587b8d7d278bd22deed6f93a32c/agent/acted.sh # realisateur:agent-burn:RUNNER",
+  "cron_line": "*/10 * * * * /srv/agent/rel/c0c0f42fa14afc57dedee4749d563924399118ee/agent/acted.sh # realisateur:agent-burn:RUNNER",
   "repos": [
    "abc",
    "abletim",
@@ -357,22 +357,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261019T025838Z.log",
-   "started_at": "2026-10-19T02:58:38Z",
+   "log": "nightly.20261019T033844Z.log",
+   "started_at": "2026-10-19T03:38:44Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "realisateur": {
-     "queue": 1,
-     "at": "2026-10-19T03:16:15Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.4
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -725,15 +719,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261019T025151Z.log",
-    "result": "success",
-    "turns": 21,
-    "cost_usd": 0.5808,
-    "rc": 0,
+    "log": "senechal.20261019T033127Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-19T02:51:51Z"
+    "at": "2026-10-19T03:31:27Z"
    },
    {
     "repo": "sequestria",
