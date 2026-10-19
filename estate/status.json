@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T19:40:01Z",
+ "generated_at": "2026-10-19T20:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T20:40:01Z",
+ "valid_until": "2026-10-19T21:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -66,30 +66,6 @@
    "ports_published": null
   },
   {
-   "name": "epic_engelbart",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T19:32:33Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "festive_wozniak",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T19:32:20Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "goofy_poincare",
    "image": "sha256:0824f615c6d1b40f7292075e63c8a38e26b33aed2a3e2fefe11977dcc6e960c6",
    "project": null,
@@ -112,6 +88,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "nifty_swanson",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T20:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -297,9 +285,8 @@
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
-  "epic_engelbart",
-  "festive_wozniak",
   "goofy_poincare",
+  "nifty_swanson",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -380,7 +367,7 @@
     "abletim"
    ],
    "queue_unreadable": [],
-   "age_h": 0.8
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -697,15 +684,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261019T073141Z.log",
+    "log": "realisateur.20261019T194114Z.log",
     "result": "success",
-    "turns": 17,
-    "cost_usd": 0.5525,
+    "turns": 31,
+    "cost_usd": 0.524,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-19T07:31:41Z"
+    "at": "2026-10-19T19:41:14Z"
    },
    {
     "repo": "scheduler",
