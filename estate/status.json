@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T08:00:02Z",
+ "generated_at": "2026-10-19T08:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T09:00:02Z",
+ "valid_until": "2026-10-19T09:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -18,26 +18,14 @@
    "ports_published": null
   },
   {
-   "name": "affectionate_babbage",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T08:00:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "blissful_solomon",
+   "name": "condescending_gates",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-19T07:53:37Z",
+   "started_at": "2026-10-19T08:19:41Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -90,18 +78,6 @@
    "ports_published": null
   },
   {
-   "name": "elegant_lewin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T07:59:07Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "goofy_poincare",
    "image": "sha256:0824f615c6d1b40f7292075e63c8a38e26b33aed2a3e2fefe11977dcc6e960c6",
    "project": null,
@@ -136,18 +112,6 @@
    "started_at": "2026-10-18T21:47:56Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "pensive_cray",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T07:52:58Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "potato-push",
@@ -186,26 +150,14 @@
    "ports_published": null
   },
   {
-   "name": "tender_pasteur",
+   "name": "stoic_jepsen",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-19T07:31:43Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "trusting_chatterjee",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T07:58:00Z",
+   "started_at": "2026-10-19T08:18:09Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -342,17 +294,13 @@
   }
  ],
  "unmanaged": [
-  "affectionate_babbage",
-  "blissful_solomon",
+  "condescending_gates",
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
-  "elegant_lewin",
   "goofy_poincare",
-  "pensive_cray",
   "serene_elgamal",
-  "tender_pasteur",
-  "trusting_chatterjee",
+  "stoic_jepsen",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -398,11 +346,17 @@
   "last_run": {
    "log": "nightly.20261019T073903Z.log",
    "started_at": "2026-10-19T07:39:03Z",
-   "finished_at": null,
+   "finished_at": "2026-10-19T08:12:21Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "senechal": {
+     "queue": 41,
+     "at": "2026-10-19T08:12:21Z",
+     "outcome": null
+    }
+   },
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -416,7 +370,7 @@
     "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
@@ -859,7 +813,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh hold bytes that were never on `main` -- somebody edited the host. `bin/wire-agent-dispatch.sh --check`",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
