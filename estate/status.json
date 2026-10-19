@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T11:20:02Z",
+ "generated_at": "2026-10-19T11:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T12:20:02Z",
+ "valid_until": "2026-10-19T12:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -318,19 +318,13 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261019T073903Z.log",
-   "started_at": "2026-10-19T07:39:03Z",
-   "finished_at": "2026-10-19T08:12:21Z",
+   "log": "nightly.20261019T113002Z.log",
+   "started_at": "2026-10-19T11:30:03Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "senechal": {
-     "queue": 41,
-     "at": "2026-10-19T08:12:21Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -344,7 +338,7 @@
     "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 3.7
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -787,6 +781,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh hold bytes that were never on `main` -- somebody edited the host. `bin/wire-agent-dispatch.sh --check`",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
