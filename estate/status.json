@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T18:20:02Z",
+ "generated_at": "2026-10-19T18:40:03Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T19:20:02Z",
+ "valid_until": "2026-10-19T19:40:03Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -66,6 +66,18 @@
    "ports_published": null
   },
   {
+   "name": "focused_haslett",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T18:40:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "goofy_poincare",
    "image": "sha256:0824f615c6d1b40f7292075e63c8a38e26b33aed2a3e2fefe11977dcc6e960c6",
    "project": null,
@@ -88,6 +100,30 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "laughing_ptolemy",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T18:39:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "nice_ardinghelli",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T18:39:10Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -135,6 +171,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "silly_elgamal",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T18:39:00Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -273,8 +321,12 @@
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
+  "focused_haslett",
   "goofy_poincare",
+  "laughing_ptolemy",
+  "nice_ardinghelli",
   "serene_elgamal",
+  "silly_elgamal",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -318,27 +370,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261019T181016Z.log",
-   "started_at": "2026-10-19T18:10:17Z",
+   "log": "nightly.20261019T183444Z.log",
+   "started_at": "2026-10-19T18:34:44Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {},
-   "skipped": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "space-canon",
-    "dog",
-    "vibe-kiosk",
-    "vim-arcade"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -619,15 +660,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261019T070117Z.log",
-    "result": "success",
-    "turns": 17,
-    "cost_usd": 0.2653,
-    "rc": 0,
+    "log": "musc-2300.20261019T183846Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-19T07:01:17Z"
+    "at": "2026-10-19T18:38:46Z"
    },
    {
     "repo": "nine-speakers",
@@ -790,6 +831,7 @@
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
