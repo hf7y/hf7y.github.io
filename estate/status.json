@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T13:00:01Z",
+ "generated_at": "2026-10-19T13:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T14:00:01Z",
+ "valid_until": "2026-10-19T14:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -88,18 +88,6 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
-  },
-  {
-   "name": "naughty_einstein",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T13:00:01Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -286,7 +274,6 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "naughty_einstein",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -331,16 +318,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261019T124002Z.log",
-   "started_at": "2026-10-19T12:40:03Z",
-   "finished_at": "2026-10-19T12:54:56Z",
+   "log": "nightly.20261019T130002Z.log",
+   "started_at": "2026-10-19T13:00:02Z",
+   "finished_at": "2026-10-19T13:15:22Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "secretaire": {
      "queue": 37,
-     "at": "2026-10-19T12:54:56Z",
+     "at": "2026-10-19T13:15:22Z",
      "outcome": null
     }
    },
@@ -698,15 +685,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261019T125509Z.log",
+    "log": "secretaire.20261019T131536Z.log",
     "result": "success",
-    "turns": 11,
-    "cost_usd": 0.164,
+    "turns": 7,
+    "cost_usd": 0.1289,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-19T12:55:09Z"
+    "at": "2026-10-19T13:15:36Z"
    },
    {
     "repo": "senechal",
