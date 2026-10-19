@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T16:20:03Z",
+ "generated_at": "2026-10-19T16:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T17:20:03Z",
+ "valid_until": "2026-10-19T17:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -27,6 +27,18 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
+   "ports_published": null
+  },
+  {
+   "name": "cranky_banzai",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T16:29:58Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -63,18 +75,6 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:07Z",
    "finished_at": "2026-10-18T21:41:12Z",
-   "ports_published": null
-  },
-  {
-   "name": "friendly_leavitt",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T16:04:02Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -283,9 +283,9 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "cranky_banzai",
   "elastic_antonelli",
   "elated_mccarthy",
-  "friendly_leavitt",
   "goofy_poincare",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -331,8 +331,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261019T161004Z.log",
-   "started_at": "2026-10-19T16:10:04Z",
+   "log": "nightly.20261019T163002Z.log",
+   "started_at": "2026-10-19T16:30:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -704,7 +704,7 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261019T160236Z.log",
+    "log": "senechal.20261019T162837Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -712,7 +712,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-19T16:02:36Z"
+    "at": "2026-10-19T16:28:37Z"
    },
    {
     "repo": "sequestria",
