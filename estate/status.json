@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T17:40:02Z",
+ "generated_at": "2026-10-19T18:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T18:40:02Z",
+ "valid_until": "2026-10-19T19:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "clever_tu",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T17:28:29Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -54,6 +42,18 @@
    "ports_published": null
   },
   {
+   "name": "eager_allen",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T17:59:19Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "elastic_antonelli",
    "image": "sha256:95d303a0fc03c6746ef95616ba0fb3329914eacfde3bbb62da6313bd53a78e36",
    "project": null,
@@ -63,18 +63,6 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:27Z",
    "finished_at": "2026-10-18T21:41:37Z",
-   "ports_published": null
-  },
-  {
-   "name": "elated_black",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T17:31:07Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -138,6 +126,18 @@
    "ports_published": null
   },
   {
+   "name": "romantic_jennings",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T17:59:49Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "roster",
    "image": "ghcr.io/hf7y/roster:latest",
    "project": "roster",
@@ -195,6 +195,18 @@
    "exit_code": 1,
    "started_at": "2026-10-14T19:05:53Z",
    "finished_at": "2026-10-14T19:06:08Z",
+   "ports_published": null
+  },
+  {
+   "name": "xenodochial_agnesi",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T18:00:01Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -294,13 +306,14 @@
   }
  ],
  "unmanaged": [
-  "clever_tu",
   "condescending_joliot",
+  "eager_allen",
   "elastic_antonelli",
-  "elated_black",
   "elated_mccarthy",
   "goofy_poincare",
+  "romantic_jennings",
   "serene_elgamal",
+  "xenodochial_agnesi",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -344,19 +357,13 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261019T172801Z.log",
-   "started_at": "2026-10-19T17:28:01Z",
+   "log": "nightly.20261019T174944Z.log",
+   "started_at": "2026-10-19T17:49:44Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "bibliothecaire": {
-     "queue": 14,
-     "at": "2026-10-19T17:28:18Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
    "age_h": 0.2
@@ -425,10 +432,10 @@
    {
     "repo": "bibliothecaire",
     "log": "bibliothecaire.20261019T172818Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 29,
+    "cost_usd": 0.7069,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -713,11 +720,11 @@
    {
     "repo": "senechal",
     "log": "senechal.20261019T172949Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 14,
+    "cost_usd": 0.5899,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1522",
     "commented": false,
     "note": null,
     "at": "2026-10-19T17:29:49Z"
@@ -813,7 +820,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "scheduler: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue"
+  "scheduler: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
