@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T14:20:02Z",
+ "generated_at": "2026-10-19T14:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T15:20:02Z",
+ "valid_until": "2026-10-19T15:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -318,16 +318,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261019T140002Z.log",
-   "started_at": "2026-10-19T14:00:03Z",
-   "finished_at": "2026-10-19T14:14:57Z",
+   "log": "nightly.20261019T142002Z.log",
+   "started_at": "2026-10-19T14:20:03Z",
+   "finished_at": "2026-10-19T14:35:13Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "secretaire": {
      "queue": 37,
-     "at": "2026-10-19T14:14:57Z",
+     "at": "2026-10-19T14:35:13Z",
      "outcome": null
     }
    },
@@ -685,15 +685,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261019T141511Z.log",
+    "log": "secretaire.20261019T143527Z.log",
     "result": "success",
-    "turns": 6,
-    "cost_usd": 0.1246,
+    "turns": 8,
+    "cost_usd": 0.2067,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-19T14:15:11Z"
+    "at": "2026-10-19T14:35:27Z"
    },
    {
     "repo": "senechal",
