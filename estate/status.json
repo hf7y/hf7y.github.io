@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T12:00:01Z",
+ "generated_at": "2026-10-19T12:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T13:00:01Z",
+ "valid_until": "2026-10-19T13:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -88,18 +88,6 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
-  },
-  {
-   "name": "interesting_jennings",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T12:00:01Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -286,7 +274,6 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "interesting_jennings",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -331,16 +318,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261019T113002Z.log",
-   "started_at": "2026-10-19T11:30:03Z",
-   "finished_at": "2026-10-19T11:52:40Z",
+   "log": "nightly.20261019T120002Z.log",
+   "started_at": "2026-10-19T12:00:02Z",
+   "finished_at": "2026-10-19T12:15:04Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "senechal": {
-     "queue": 42,
-     "at": "2026-10-19T11:52:40Z",
+    "secretaire": {
+     "queue": 37,
+     "at": "2026-10-19T12:15:04Z",
      "outcome": null
     }
    },
@@ -357,7 +344,7 @@
     "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -698,15 +685,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261019T070107Z.log",
+    "log": "secretaire.20261019T121517Z.log",
     "result": "success",
-    "turns": 13,
-    "cost_usd": 0.2656,
+    "turns": 7,
+    "cost_usd": 0.2027,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-19T07:01:07Z"
+    "at": "2026-10-19T12:15:17Z"
    },
    {
     "repo": "senechal",
