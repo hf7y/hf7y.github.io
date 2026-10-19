@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T22:20:02Z",
+ "generated_at": "2026-10-19T22:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T23:20:02Z",
+ "valid_until": "2026-10-19T23:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -90,18 +90,6 @@
    "ports_published": false
   },
   {
-   "name": "laughing_blackburn",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T22:10:38Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -122,6 +110,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T17:30:17Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "romantic_shaw",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T22:34:35Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -286,7 +286,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "laughing_blackburn",
+  "romantic_shaw",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -340,13 +340,13 @@
    "dispatched": {
     "bibliothecaire": {
      "queue": 1,
-     "at": "2026-10-19T22:10:29Z",
+     "at": "2026-10-19T22:34:27Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.9
+   "age_h": 1.2
   },
   "passes": [
    {
@@ -411,7 +411,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261019T221029Z.log",
+    "log": "bibliothecaire.20261019T223427Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -419,7 +419,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-19T22:10:29Z"
+    "at": "2026-10-19T22:34:27Z"
    },
    {
     "repo": "chezz",
