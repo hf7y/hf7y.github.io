@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T14:00:02Z",
+ "generated_at": "2026-10-19T14:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T15:00:02Z",
+ "valid_until": "2026-10-19T15:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -63,18 +63,6 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:07Z",
    "finished_at": "2026-10-18T21:41:12Z",
-   "ports_published": null
-  },
-  {
-   "name": "flamboyant_easley",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T14:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -285,7 +273,6 @@
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
-  "flamboyant_easley",
   "goofy_poincare",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -331,16 +318,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261019T134003Z.log",
-   "started_at": "2026-10-19T13:40:03Z",
-   "finished_at": "2026-10-19T13:55:40Z",
+   "log": "nightly.20261019T140002Z.log",
+   "started_at": "2026-10-19T14:00:03Z",
+   "finished_at": "2026-10-19T14:14:57Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
     "secretaire": {
      "queue": 37,
-     "at": "2026-10-19T13:55:40Z",
+     "at": "2026-10-19T14:14:57Z",
      "outcome": null
     }
    },
@@ -698,15 +685,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261019T135553Z.log",
+    "log": "secretaire.20261019T141511Z.log",
     "result": "success",
     "turns": 6,
-    "cost_usd": 0.1561,
+    "cost_usd": 0.1246,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-19T13:55:53Z"
+    "at": "2026-10-19T14:15:11Z"
    },
    {
     "repo": "senechal",
