@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T15:20:02Z",
+ "generated_at": "2026-10-19T15:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T16:20:02Z",
+ "valid_until": "2026-10-19T16:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -135,6 +135,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "upbeat_zhukovsky",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T15:39:46Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -275,6 +287,7 @@
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
+  "upbeat_zhukovsky",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -318,8 +331,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261019T151003Z.log",
-   "started_at": "2026-10-19T15:10:04Z",
+   "log": "nightly.20261019T153002Z.log",
+   "started_at": "2026-10-19T15:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -679,15 +692,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261019T145654Z.log",
+    "log": "secretaire.20261019T152544Z.log",
     "result": "success",
-    "turns": 7,
-    "cost_usd": 0.1539,
+    "turns": 5,
+    "cost_usd": 0.1672,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-19T14:56:54Z"
+    "at": "2026-10-19T15:25:44Z"
    },
    {
     "repo": "senechal",
