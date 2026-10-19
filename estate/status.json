@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T22:00:02Z",
+ "generated_at": "2026-10-19T22:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T23:00:02Z",
+ "valid_until": "2026-10-19T23:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -27,18 +27,6 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
-   "ports_published": null
-  },
-  {
-   "name": "cranky_sutherland",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T22:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -102,14 +90,14 @@
    "ports_published": false
   },
   {
-   "name": "modest_noether",
+   "name": "laughing_blackburn",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-19T21:55:15Z",
+   "started_at": "2026-10-19T22:10:38Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -295,11 +283,10 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "cranky_sutherland",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "modest_noether",
+  "laughing_blackburn",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -353,13 +340,13 @@
    "dispatched": {
     "bibliothecaire": {
      "queue": 1,
-     "at": "2026-10-19T21:55:04Z",
+     "at": "2026-10-19T22:10:29Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -424,7 +411,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261019T215504Z.log",
+    "log": "bibliothecaire.20261019T221029Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -432,7 +419,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-19T21:55:04Z"
+    "at": "2026-10-19T22:10:29Z"
    },
    {
     "repo": "chezz",
