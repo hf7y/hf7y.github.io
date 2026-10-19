@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T08:20:02Z",
+ "generated_at": "2026-10-19T08:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T09:20:02Z",
+ "valid_until": "2026-10-19T09:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -18,18 +18,6 @@
    "ports_published": null
   },
   {
-   "name": "condescending_gates",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T08:19:41Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "condescending_joliot",
    "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
    "project": null,
@@ -39,6 +27,18 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
+   "ports_published": null
+  },
+  {
+   "name": "dazzling_babbage",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T08:39:28Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -147,18 +147,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "stoic_jepsen",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T08:18:09Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -294,13 +282,12 @@
   }
  ],
  "unmanaged": [
-  "condescending_gates",
   "condescending_joliot",
+  "dazzling_babbage",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
-  "stoic_jepsen",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -370,7 +357,7 @@
     "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 1.0
   },
   "passes": [
    {
@@ -723,15 +710,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261019T071146Z.log",
+    "log": "senechal.20261019T082441Z.log",
     "result": "success",
-    "turns": 42,
-    "cost_usd": 1.5629,
+    "turns": 7,
+    "cost_usd": 0.2962,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1511",
-    "commented": true,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-19T07:11:46Z"
+    "at": "2026-10-19T08:24:41Z"
    },
    {
     "repo": "sequestria",
@@ -822,6 +809,7 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "scheduler: last pass landed nothing -- no PR and no comment on its issue"
+  "scheduler: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
