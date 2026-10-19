@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-19T07:40:02Z",
+ "generated_at": "2026-10-19T08:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T08:40:02Z",
+ "valid_until": "2026-10-19T09:00:02Z",
  "containers": [
-  {
-   "name": "adoring_chaum",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T06:41:03Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "aedile-tube",
    "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
@@ -30,14 +18,26 @@
    "ports_published": null
   },
   {
-   "name": "bold_montalcini",
+   "name": "affectionate_babbage",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T08:00:02Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "blissful_solomon",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-19T07:36:09Z",
+   "started_at": "2026-10-19T07:53:37Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,18 +66,6 @@
    "ports_published": null
   },
   {
-   "name": "distracted_rubin",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T07:31:42Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "elastic_antonelli",
    "image": "sha256:95d303a0fc03c6746ef95616ba0fb3329914eacfde3bbb62da6313bd53a78e36",
    "project": null,
@@ -102,14 +90,14 @@
    "ports_published": null
   },
   {
-   "name": "eloquent_carver",
+   "name": "elegant_lewin",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-19T06:48:09Z",
+   "started_at": "2026-10-19T07:59:07Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -138,30 +126,6 @@
    "ports_published": false
   },
   {
-   "name": "hardcore_nightingale",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T07:29:19Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "loving_lichterman",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T07:31:27Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -174,6 +138,18 @@
    "ports_published": true
   },
   {
+   "name": "pensive_cray",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T07:52:58Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "potato-push",
    "image": "secretaire:3dcb7d5",
    "project": "secretaire",
@@ -182,18 +158,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T17:30:17Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "quizzical_shtern",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T07:33:29Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -222,18 +186,6 @@
    "ports_published": null
   },
   {
-   "name": "suspicious_heisenberg",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T06:56:43Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "tender_pasteur",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -242,6 +194,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-19T07:31:43Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "trusting_chatterjee",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-19T07:58:00Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -378,20 +342,17 @@
   }
  ],
  "unmanaged": [
-  "adoring_chaum",
-  "bold_montalcini",
+  "affectionate_babbage",
+  "blissful_solomon",
   "condescending_joliot",
-  "distracted_rubin",
   "elastic_antonelli",
   "elated_mccarthy",
-  "eloquent_carver",
+  "elegant_lewin",
   "goofy_poincare",
-  "hardcore_nightingale",
-  "loving_lichterman",
-  "quizzical_shtern",
+  "pensive_cray",
   "serene_elgamal",
-  "suspicious_heisenberg",
   "tender_pasteur",
+  "trusting_chatterjee",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -445,10 +406,17 @@
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org"
+    "media-arts-collective/nomac.org",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "space-canon",
+    "dog",
+    "vibe-kiosk",
+    "vim-arcade"
    ],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -766,10 +734,10 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261019T073141Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 17,
+    "cost_usd": 0.5525,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -886,6 +854,7 @@
   },
   "max_age_h": 26
  },
+ "guarded_holds": [],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
