@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-19T19:00:02Z",
+ "generated_at": "2026-10-19T19:20:03Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-19T20:00:02Z",
+ "valid_until": "2026-10-19T20:20:03Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,42 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "beautiful_agnesi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T18:58:46Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "charming_keller",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T19:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "compassionate_hamilton",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T18:59:48Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -126,26 +90,14 @@
    "ports_published": false
   },
   {
-   "name": "modest_morse",
+   "name": "inspiring_einstein",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-19T18:43:26Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "nervous_haibt",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-19T18:43:15Z",
+   "started_at": "2026-10-19T19:18:29Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -330,15 +282,11 @@
   }
  ],
  "unmanaged": [
-  "beautiful_agnesi",
-  "charming_keller",
-  "compassionate_hamilton",
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "modest_morse",
-  "nervous_haibt",
+  "inspiring_einstein",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -413,7 +361,7 @@
     "abletim"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -767,10 +715,10 @@
    {
     "repo": "senechal",
     "log": "senechal.20261019T184218Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 64,
+    "cost_usd": 1.7297,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
