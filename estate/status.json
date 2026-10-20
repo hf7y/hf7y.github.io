@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T07:40:02Z",
+ "generated_at": "2026-10-20T08:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T08:40:02Z",
+ "valid_until": "2026-10-20T09:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -100,6 +100,18 @@
    "started_at": "2026-10-18T21:47:56Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "peaceful_mcnulty",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-20T08:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "potato-push",
@@ -274,6 +286,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "peaceful_mcnulty",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -333,7 +346,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.5
+   "age_h": 1.8
   },
   "passes": [
    {
