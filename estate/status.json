@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T20:20:02Z",
+ "generated_at": "2026-10-20T20:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T21:20:02Z",
+ "valid_until": "2026-10-20T21:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T18:38:50Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "eager_ishizaka",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-20T20:38:40Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -88,6 +100,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "modest_mcclintock",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-20T20:38:43Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -271,9 +295,11 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "eager_ishizaka",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "modest_mcclintock",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -340,7 +366,7 @@
     "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
