@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T09:00:02Z",
+ "generated_at": "2026-10-20T09:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T10:00:02Z",
+ "valid_until": "2026-10-20T10:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -51,18 +51,6 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:27Z",
    "finished_at": "2026-10-18T21:41:37Z",
-   "ports_published": null
-  },
-  {
-   "name": "elastic_bell",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T09:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -284,7 +272,6 @@
  "unmanaged": [
   "condescending_joliot",
   "elastic_antonelli",
-  "elastic_bell",
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
@@ -346,7 +333,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.8
+   "age_h": 3.2
   },
   "passes": [
    {
