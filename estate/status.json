@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T21:20:02Z",
+ "generated_at": "2026-10-20T21:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T22:20:02Z",
+ "valid_until": "2026-10-20T22:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -88,6 +88,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "loving_wilson",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-20T21:27:10Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -274,6 +286,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "loving_wilson",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -318,8 +331,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261020T205002Z.log",
-   "started_at": "2026-10-20T20:50:03Z",
+   "log": "nightly.20261020T213002Z.log",
+   "started_at": "2026-10-20T21:30:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -341,7 +354,7 @@
     "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -694,15 +707,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261020T195355Z.log",
-    "result": "success",
-    "turns": 52,
-    "cost_usd": 0.9966,
-    "rc": 0,
+    "log": "senechal.20261020T212419Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-20T19:53:55Z"
+    "at": "2026-10-20T21:24:19Z"
    },
    {
     "repo": "sequestria",
