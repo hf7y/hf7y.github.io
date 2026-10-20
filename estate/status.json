@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T05:00:03Z",
+ "generated_at": "2026-10-20T05:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T06:00:03Z",
+ "valid_until": "2026-10-20T06:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "blissful_murdock",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-20T05:05:57Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -220,18 +232,6 @@
    "started_at": "2026-10-19T00:07:13Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zen_chebyshev",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T05:00:01Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -282,13 +282,13 @@
   }
  ],
  "unmanaged": [
+  "blissful_murdock",
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
-  "xenodochial_wilson",
-  "zen_chebyshev"
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -331,22 +331,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261020T023019Z.log",
-   "started_at": "2026-10-20T02:30:19Z",
-   "finished_at": "2026-10-20T02:48:59Z",
+   "log": "nightly.20261020T050544Z.log",
+   "started_at": "2026-10-20T05:05:44Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "musc-2300": {
+    "hf7y-estate/officejet": {
      "queue": 1,
-     "at": "2026-10-20T02:42:13Z",
-     "outcome": "finished"
+     "at": "2026-10-20T05:05:52Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.5
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -651,15 +651,15 @@
    },
    {
     "repo": "officejet",
-    "log": "officejet.20261019T003126Z.log",
-    "result": "success",
-    "turns": 13,
-    "cost_usd": 0.283,
-    "rc": 0,
+    "log": "officejet.20261020T050552Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-19T00:31:26Z"
+    "at": "2026-10-20T05:05:52Z"
    },
    {
     "repo": "realisateur",
@@ -789,6 +789,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh hold bytes that were never on `main` -- somebody edited the host. `bin/wire-agent-dispatch.sh --check`",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
@@ -797,6 +798,7 @@
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "officejet: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue"
