@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T21:00:01Z",
+ "generated_at": "2026-10-20T21:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T22:00:01Z",
+ "valid_until": "2026-10-20T22:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -135,18 +135,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "vigorous_bardeen",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T21:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -287,7 +275,6 @@
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
-  "vigorous_bardeen",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -354,7 +341,7 @@
     "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
