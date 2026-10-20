@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T23:20:01Z",
+ "generated_at": "2026-10-20T23:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T00:20:01Z",
+ "valid_until": "2026-10-21T00:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -331,8 +331,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261020T230002Z.log",
-   "started_at": "2026-10-20T23:00:03Z",
+   "log": "nightly.20261020T233030Z.log",
+   "started_at": "2026-10-20T23:30:31Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -354,7 +354,7 @@
     "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.2
   },
   "passes": [
    {
