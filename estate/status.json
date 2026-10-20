@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T16:00:02Z",
+ "generated_at": "2026-10-20T16:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T17:00:02Z",
+ "valid_until": "2026-10-20T17:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "affectionate_sutherland",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T16:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -282,7 +270,6 @@
   }
  ],
  "unmanaged": [
-  "affectionate_sutherland",
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
@@ -346,7 +333,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 9.8
+   "age_h": 10.2
   },
   "passes": [
    {
