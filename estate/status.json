@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T06:00:02Z",
+ "generated_at": "2026-10-20T06:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T07:00:02Z",
+ "valid_until": "2026-10-20T07:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -66,18 +66,6 @@
    "ports_published": null
   },
   {
-   "name": "epic_leavitt",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T05:57:18Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "goofy_poincare",
    "image": "sha256:0824f615c6d1b40f7292075e63c8a38e26b33aed2a3e2fefe11977dcc6e960c6",
    "project": null,
@@ -100,18 +88,6 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
-  },
-  {
-   "name": "happy_sutherland",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T05:58:20Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -159,18 +135,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "sleepy_varahamihira",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T06:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -256,6 +220,18 @@
    "started_at": "2026-10-19T00:07:13Z",
    "finished_at": null,
    "ports_published": null
+  },
+  {
+   "name": "zealous_proskuriakova",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-20T06:12:32Z",
+   "finished_at": null,
+   "ports_published": null
   }
  ],
  "services": [
@@ -309,12 +285,10 @@
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
-  "epic_leavitt",
   "goofy_poincare",
-  "happy_sutherland",
   "serene_elgamal",
-  "sleepy_varahamihira",
-  "xenodochial_wilson"
+  "xenodochial_wilson",
+  "zealous_proskuriakova"
  ],
  "nightly": {
   "armed": true,
@@ -357,22 +331,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261020T055703Z.log",
-   "started_at": "2026-10-20T05:57:03Z",
-   "finished_at": null,
+   "log": "nightly.20261020T061037Z.log",
+   "started_at": "2026-10-20T06:10:37Z",
+   "finished_at": "2026-10-20T06:19:37Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "hf7y-estate/officejet": {
+    "hf7y-estate/secretaire": {
      "queue": 1,
-     "at": "2026-10-20T05:57:14Z",
-     "outcome": null
+     "at": "2026-10-20T06:12:02Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -678,12 +652,12 @@
    {
     "repo": "officejet",
     "log": "officejet.20261020T055714Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 19,
+    "cost_usd": 0.3899,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-20T05:57:14Z"
    },
@@ -713,15 +687,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261020T055709Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": true,
+    "log": "secretaire.20261020T061202Z.log",
+    "result": "success",
+    "turns": 33,
+    "cost_usd": 0.8069,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/346",
+    "commented": false,
     "note": null,
-    "at": "2026-10-20T05:57:09Z"
+    "at": "2026-10-20T06:12:02Z"
    },
    {
     "repo": "senechal",
@@ -815,7 +789,6 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh hold bytes that were never on `main` -- somebody edited the host. `bin/wire-agent-dispatch.sh --check`",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
@@ -824,7 +797,6 @@
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "officejet: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue"
