@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T03:00:03Z",
+ "generated_at": "2026-10-20T03:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T04:00:03Z",
+ "valid_until": "2026-10-20T04:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -150,18 +150,6 @@
    "ports_published": true
   },
   {
-   "name": "wizardly_proskuriakova",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T03:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "wtul-dexter-promote-promote-1",
    "image": "ghcr.io/hf7y-estate/wtul-dexter-promote:latest",
    "project": "wtul-dexter-promote",
@@ -287,7 +275,6 @@
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
-  "wizardly_proskuriakova",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -346,7 +333,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.8
   },
   "passes": [
    {
