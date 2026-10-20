@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T19:00:02Z",
+ "generated_at": "2026-10-20T19:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T20:00:02Z",
+ "valid_until": "2026-10-20T20:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -90,6 +90,18 @@
    "ports_published": false
   },
   {
+   "name": "objective_shaw",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-20T19:10:04Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -110,18 +122,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T17:30:17Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "reverent_mahavira",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T19:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -286,7 +286,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "reverent_mahavira",
+  "objective_shaw",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -331,29 +331,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261020T183002Z.log",
-   "started_at": "2026-10-20T18:30:02Z",
+   "log": "nightly.20261020T190837Z.log",
+   "started_at": "2026-10-20T19:08:37Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
-   "skipped": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "weave",
-    "space-canon",
-    "dog",
-    "vibe-kiosk",
-    "abc",
-    "media-arts-collective/kreweofvaporwave.github.io"
-   ],
+   "dispatched": {
+    "musc-2300": {
+     "queue": 1,
+     "at": "2026-10-20T19:09:33Z",
+     "outcome": null
+    }
+   },
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -634,15 +627,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261020T024213Z.log",
-    "result": "success",
-    "turns": 48,
-    "cost_usd": 0.9401,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/359",
-    "commented": true,
+    "log": "musc-2300.20261020T190933Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-20T02:42:13Z"
+    "at": "2026-10-20T19:09:33Z"
    },
    {
     "repo": "nine-speakers",
@@ -670,15 +663,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261019T194114Z.log",
+    "log": "realisateur.20261020T190337Z.log",
     "result": "success",
-    "turns": 31,
-    "cost_usd": 0.524,
+    "turns": 25,
+    "cost_usd": 0.6468,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-19T19:41:14Z"
+    "at": "2026-10-20T19:03:37Z"
    },
    {
     "repo": "scheduler",
@@ -804,8 +797,8 @@
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue"
  ]
