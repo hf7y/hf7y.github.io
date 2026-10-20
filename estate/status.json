@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T12:40:01Z",
+ "generated_at": "2026-10-20T13:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T13:40:01Z",
+ "valid_until": "2026-10-20T14:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -88,6 +88,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "heuristic_newton",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-20T13:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -274,6 +286,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "heuristic_newton",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -333,7 +346,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 6.5
+   "age_h": 6.8
   },
   "passes": [
    {
