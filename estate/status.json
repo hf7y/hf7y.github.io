@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T20:40:02Z",
+ "generated_at": "2026-10-20T21:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T21:40:02Z",
+ "valid_until": "2026-10-20T22:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-16T18:38:50Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "eager_ishizaka",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T20:38:40Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -102,18 +90,6 @@
    "ports_published": false
   },
   {
-   "name": "modest_mcclintock",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T20:38:43Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -159,6 +135,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "vigorous_bardeen",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-20T21:00:01Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -295,12 +283,11 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "eager_ishizaka",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "modest_mcclintock",
   "serene_elgamal",
+  "vigorous_bardeen",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -344,14 +331,15 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261020T200002Z.log",
-   "started_at": "2026-10-20T20:00:02Z",
+   "log": "nightly.20261020T205002Z.log",
+   "started_at": "2026-10-20T20:50:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {},
    "skipped": [
+    "candidature",
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
     "media-arts-collective/nomac.org",
@@ -366,7 +354,7 @@
     "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -683,15 +671,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261020T190337Z.log",
+    "log": "realisateur.20261020T204751Z.log",
     "result": "success",
-    "turns": 25,
-    "cost_usd": 0.6468,
+    "turns": 23,
+    "cost_usd": 0.5884,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-20T19:03:37Z"
+    "at": "2026-10-20T20:47:51Z"
    },
    {
     "repo": "scheduler",
