@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T17:40:01Z",
+ "generated_at": "2026-10-20T18:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T18:40:01Z",
+ "valid_until": "2026-10-20T19:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "blissful_moser",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-20T18:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -270,6 +282,7 @@
   }
  ],
  "unmanaged": [
+  "blissful_moser",
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
@@ -318,22 +331,29 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261020T061037Z.log",
-   "started_at": "2026-10-20T06:10:37Z",
-   "finished_at": "2026-10-20T06:19:37Z",
+   "log": "nightly.20261020T174002Z.log",
+   "started_at": "2026-10-20T17:40:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "hf7y-estate/secretaire": {
-     "queue": 1,
-     "at": "2026-10-20T06:12:02Z",
-     "outcome": "finished"
-    }
-   },
-   "skipped": [],
+   "dispatched": {},
+   "skipped": [
+    "media-arts-collective/CodeDumpster",
+    "media-arts-collective/inv-redirects",
+    "media-arts-collective/nomac.org",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "weave",
+    "space-canon",
+    "dog",
+    "vibe-kiosk",
+    "abc",
+    "media-arts-collective/kreweofvaporwave.github.io"
+   ],
    "queue_unreadable": [],
-   "age_h": 11.5
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -776,6 +796,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh hold bytes that were never on `main` -- somebody edited the host. `bin/wire-agent-dispatch.sh --check`",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
