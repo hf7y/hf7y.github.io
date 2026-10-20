@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T20:00:02Z",
+ "generated_at": "2026-10-20T20:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T21:00:02Z",
+ "valid_until": "2026-10-20T21:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -88,30 +88,6 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
-  },
-  {
-   "name": "heuristic_shaw",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T19:56:21Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "musing_archimedes",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T20:00:01Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -298,8 +274,6 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "heuristic_shaw",
-  "musing_archimedes",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -344,19 +318,13 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261020T192002Z.log",
-   "started_at": "2026-10-20T19:20:03Z",
-   "finished_at": "2026-10-20T19:53:01Z",
+   "log": "nightly.20261020T200002Z.log",
+   "started_at": "2026-10-20T20:00:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "senechal": {
-     "queue": 43,
-     "at": "2026-10-20T19:53:01Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -372,7 +340,7 @@
     "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -726,10 +694,10 @@
    {
     "repo": "senechal",
     "log": "senechal.20261020T195355Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 52,
+    "cost_usd": 0.9966,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -815,6 +783,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh hold bytes that were never on `main` -- somebody edited the host. `bin/wire-agent-dispatch.sh --check`",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
