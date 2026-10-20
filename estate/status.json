@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T18:20:01Z",
+ "generated_at": "2026-10-20T18:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T19:20:01Z",
+ "valid_until": "2026-10-20T19:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -318,8 +318,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261020T174002Z.log",
-   "started_at": "2026-10-20T17:40:02Z",
+   "log": "nightly.20261020T183002Z.log",
+   "started_at": "2026-10-20T18:30:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -340,7 +340,7 @@
     "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -693,15 +693,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261019T184218Z.log",
+    "log": "senechal.20261020T182941Z.log",
     "result": "success",
-    "turns": 64,
-    "cost_usd": 1.7297,
+    "turns": 12,
+    "cost_usd": 0.2988,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-19T18:42:18Z"
+    "at": "2026-10-20T18:29:41Z"
    },
    {
     "repo": "sequestria",
