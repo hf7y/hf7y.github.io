@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-20T22:00:01Z",
+ "generated_at": "2026-10-20T22:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-20T23:00:01Z",
+ "valid_until": "2026-10-20T23:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "boring_bartik",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-20T22:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -75,6 +63,18 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:07Z",
    "finished_at": "2026-10-18T21:41:12Z",
+   "ports_published": null
+  },
+  {
+   "name": "flamboyant_chandrasekhar",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-20T22:11:02Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -282,10 +282,10 @@
   }
  ],
  "unmanaged": [
-  "boring_bartik",
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
+  "flamboyant_chandrasekhar",
   "goofy_poincare",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -331,8 +331,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261020T213002Z.log",
-   "started_at": "2026-10-20T21:30:02Z",
+   "log": "nightly.20261020T221002Z.log",
+   "started_at": "2026-10-20T22:10:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -354,7 +354,7 @@
     "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -671,15 +671,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261020T204751Z.log",
-    "result": "success",
-    "turns": 23,
-    "cost_usd": 0.5884,
-    "rc": 0,
+    "log": "realisateur.20261020T220231Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-20T20:47:51Z"
+    "at": "2026-10-20T22:02:31Z"
    },
    {
     "repo": "scheduler",
@@ -806,6 +806,7 @@
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue"
  ]
 }
