@@ -53,11 +53,6 @@
   &ldquo;nothing finishable from here&rdquo; also exits 0. When the agent writes no report at
   all, <code>run-agent.sh</code> writes one and signs it; that pass reads <i>landed nothing</i>,
   and is a finding only if the container exited non-zero or left a dirty tree.
-  <b>Dispatcher source</b> asks whether what dexter executes is what <code>main</code> holds,
-  and whether it will stay so: only a symlink into a pulled clone survives the next merge, and
-  <code>bin/wire-agent-dispatch.sh</code> is what makes one. <i>Behind</i> is a real earlier
-  version of the same file and links cleanly; bytes that were <i>never on main</i> mean somebody
-  edited the host, and that is refused rather than overwritten.
   <b>Push credential</b> is what the nightly's containers push with, asked on dexter by the
   cron row that publishes this page. The credential never leaves the host and its scope list is
   never published; only whether the API accepts it, and whether it may push
@@ -107,21 +102,6 @@ const servicesHTML=d=>{
   }).join("");
   return `<div class="wrap"><table><tr><th>service</th><th>state</th><th>up</th>
     <th>declared ports</th><th>restarts</th></tr>${rows}</table></div>`;
-};
-
-// The four files under /srv/agent ARE the dispatcher. Only `linked` survives
-// the next merge: a plain copy agrees today and nothing refreshes it, which is
-// a merged fix that reaches the host on no path. #1332.
-const dispatchCell=src=>{
-  if(!src) return '<span class="blind">not read</span>';
-  const n=Object.values(src);
-  const bad=n.filter(v=>v==="drifted"||v==="not-in-clone").length;
-  const behind=n.filter(v=>v==="behind").length;
-  const copy=n.filter(v=>v==="copy"||v==="absent").length;
-  if(bad)    return `<span class="bad">${bad} of ${n.length} were never on main</span>`;
-  if(behind) return `<span class="warn">running an earlier ${behind} of ${n.length}</span>`;
-  if(copy)   return `<span class="warn">${copy} of ${n.length} are unrefreshed copies</span>`;
-  return '<span class="ok">linked to the clone</span>';
 };
 
 // What the nightly pushes with, asked on dexter by a cron row and answered
@@ -197,7 +177,6 @@ fetch("status.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
       <div class="fact"><b>image</b>${imageCell(d.nightly.last_run)}</div>
       <div class="fact"><b>passes that left a PR</b>${withPR} / ${passes.length}</div>
       <div class="fact"><b>last night cost</b>$${cost.toFixed(2)}</div>
-      <div class="fact"><b>dispatcher source</b>${dispatchCell(d.nightly.dispatch_source)}</div>
       <div class="fact"><b>push credential</b>${tokenCell(d.nightly.dispatch_token)}</div>
     </div>
     <h2>services <span>&mdash; one per <code>/srv/&lt;name&gt;/compose.yaml</code></span></h2>
