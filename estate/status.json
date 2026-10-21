@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T21:00:02Z",
+ "generated_at": "2026-10-21T21:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T22:00:02Z",
+ "valid_until": "2026-10-21T22:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -90,18 +90,6 @@
    "ports_published": false
   },
   {
-   "name": "hardcore_chatterjee",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T21:00:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -122,6 +110,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-21T18:30:18Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "recursing_wing",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T21:07:36Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -286,7 +286,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "hardcore_chatterjee",
+  "recursing_wing",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -332,8 +332,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T205002Z.log",
-   "started_at": "2026-10-21T20:50:03Z",
+   "log": "nightly.20261021T211002Z.log",
+   "started_at": "2026-10-21T21:10:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -406,15 +406,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261021T153716Z.log",
-    "result": "success",
-    "turns": 9,
-    "cost_usd": 0.1694,
-    "rc": 0,
+    "log": "baudin.20261021T210717Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-21T15:37:16Z"
+    "at": "2026-10-21T21:07:17Z"
    },
    {
     "repo": "bibliothecaire",
@@ -538,7 +538,7 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261021T203540Z.log",
+    "log": "gardien.20261021T210541Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -546,7 +546,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-21T20:35:40Z"
+    "at": "2026-10-21T21:05:41Z"
    },
    {
     "repo": "groc-mangr",
@@ -804,21 +804,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 16.6
+   "age_h": 16.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 16.1
+   "age_h": 16.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 15.0
+   "age_h": 15.4
   }
  ],
  "verdict": "DOWN",
@@ -838,6 +838,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 16.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 16.9h"
  ]
 }
