@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T06:20:02Z",
+ "generated_at": "2026-10-21T06:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T07:20:02Z",
+ "valid_until": "2026-10-21T07:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -27,18 +27,6 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
-   "ports_published": null
-  },
-  {
-   "name": "cool_wiles",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T06:15:20Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -283,7 +271,6 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "cool_wiles",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
@@ -292,7 +279,7 @@
  ],
  "nightly": {
   "armed": true,
-  "cron_line": "*/10 * * * * /srv/agent/rel/5be781573ffbc3b3084cb108a73b265bee1e19a6/agent/acted.sh # realisateur:agent-burn:RUNNER",
+  "cron_line": "*/10 * * * * /srv/agent/rel/0c982ddf858dfddc96134e9acd80b574b811b99c/agent/acted.sh # realisateur:agent-burn:RUNNER",
   "repos": [
    "abc",
    "abletim",
@@ -332,49 +319,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T054058Z.log",
-   "started_at": "2026-10-21T05:40:59Z",
+   "log": "nightly.20261021T062018Z.log",
+   "started_at": "2026-10-21T06:20:18Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-21T06:33:52Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
-   "queue_unreadable": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "weave",
-    "zach.audio-apply",
-    "space-canon",
-    "vibe-kiosk",
-    "vim-arcade",
-    "media-arts-collective/treasury",
-    "chezz",
-    "media-arts-collective/inventory-app",
-    "dcp-gate-site",
-    "abc",
-    "front-door",
-    "media-arts-collective/kreweofvaporwave.github.io",
-    "apms-2173",
-    "nine-speakers",
-    "media-arts-collective/office",
-    "gardien",
-    "media-arts-collective/grants",
-    "wtul",
-    "ecosim",
-    "sequestria",
-    "american-cycle",
-    "groc-mangr",
-    "abletim",
-    "media-arts-collective/wavebucks",
-    "bibliothecaire",
-    "officejet"
-   ],
-   "age_h": 0.7
+   "queue_unreadable": [],
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -703,15 +663,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261021T035724Z.log",
-    "result": "success",
-    "turns": 113,
-    "cost_usd": 5.7733,
-    "rc": 0,
+    "log": "realisateur.20261021T063352Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-21T03:57:24Z"
+    "at": "2026-10-21T06:33:52Z"
    },
    {
     "repo": "scheduler",
@@ -825,21 +785,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 1.9
+   "age_h": 2.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 1.4
+   "age_h": 1.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 0.4
+   "age_h": 0.7
   }
  ],
  "verdict": "DOWN",
@@ -847,47 +807,16 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
-  "media-arts-collective/CodeDumpster: the nightly could not read its queue and skipped it",
-  "media-arts-collective/inv-redirects: the nightly could not read its queue and skipped it",
-  "media-arts-collective/nomac.org: the nightly could not read its queue and skipped it",
-  "selfdev-permission-witness-scratch: the nightly could not read its queue and skipped it",
-  "verbs: the nightly could not read its queue and skipped it",
-  "vkv23: the nightly could not read its queue and skipped it",
-  "weave: the nightly could not read its queue and skipped it",
-  "zach.audio-apply: the nightly could not read its queue and skipped it",
-  "space-canon: the nightly could not read its queue and skipped it",
-  "vibe-kiosk: the nightly could not read its queue and skipped it",
-  "vim-arcade: the nightly could not read its queue and skipped it",
-  "media-arts-collective/treasury: the nightly could not read its queue and skipped it",
-  "chezz: the nightly could not read its queue and skipped it",
-  "media-arts-collective/inventory-app: the nightly could not read its queue and skipped it",
-  "dcp-gate-site: the nightly could not read its queue and skipped it",
-  "abc: the nightly could not read its queue and skipped it",
-  "front-door: the nightly could not read its queue and skipped it",
-  "media-arts-collective/kreweofvaporwave.github.io: the nightly could not read its queue and skipped it",
-  "apms-2173: the nightly could not read its queue and skipped it",
-  "nine-speakers: the nightly could not read its queue and skipped it",
-  "media-arts-collective/office: the nightly could not read its queue and skipped it",
-  "gardien: the nightly could not read its queue and skipped it",
-  "media-arts-collective/grants: the nightly could not read its queue and skipped it",
-  "wtul: the nightly could not read its queue and skipped it",
-  "ecosim: the nightly could not read its queue and skipped it",
-  "sequestria: the nightly could not read its queue and skipped it",
-  "american-cycle: the nightly could not read its queue and skipped it",
-  "groc-mangr: the nightly could not read its queue and skipped it",
-  "abletim: the nightly could not read its queue and skipped it",
-  "media-arts-collective/wavebucks: the nightly could not read its queue and skipped it",
-  "bibliothecaire: the nightly could not read its queue and skipped it",
-  "officejet: the nightly could not read its queue and skipped it",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 1.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 2.3h"
  ]
 }
