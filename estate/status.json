@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T18:20:02Z",
+ "generated_at": "2026-10-21T18:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T19:20:02Z",
+ "valid_until": "2026-10-21T19:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -31,13 +31,25 @@
   },
   {
    "name": "desk",
-   "image": "secretaire:b937cfdec4bfcfd75d8f6fcb231b0cf3de47e70e",
+   "image": "secretaire:c5a1ccba687bf1603493f75a95bf87feb0f4aa1b",
    "project": "secretaire",
    "state": "running",
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-21T06:15:18Z",
+   "started_at": "2026-10-21T18:30:18Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "distracted_mclaren",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T18:40:02Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -103,13 +115,13 @@
   },
   {
    "name": "potato-push",
-   "image": "secretaire:b937cfdec4bfcfd75d8f6fcb231b0cf3de47e70e",
+   "image": "secretaire:c5a1ccba687bf1603493f75a95bf87feb0f4aa1b",
    "project": "secretaire",
    "state": "running",
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-21T06:15:18Z",
+   "started_at": "2026-10-21T18:30:18Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -271,6 +283,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "distracted_mclaren",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
@@ -323,12 +336,25 @@
    "started_at": "2026-10-21T18:20:00Z",
    "finished_at": null,
    "turns": 150,
-   "image": null,
+   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {},
-   "skipped": [],
+   "skipped": [
+    "media-arts-collective/CodeDumpster",
+    "media-arts-collective/inv-redirects",
+    "media-arts-collective/nomac.org",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "weave",
+    "space-canon",
+    "vibe-kiosk",
+    "abc",
+    "media-arts-collective/kreweofvaporwave.github.io",
+    "dog"
+   ],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -513,15 +539,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261021T180543Z.log",
+    "log": "gardien.20261021T183543Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
-    "rc": null,
+    "rc": 1,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-21T18:05:43Z"
+    "at": "2026-10-21T18:35:43Z"
    },
    {
     "repo": "groc-mangr",
@@ -779,21 +805,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 13.9
+   "age_h": 14.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 13.4
+   "age_h": 13.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 12.4
+   "age_h": 12.7
   }
  ],
  "verdict": "DOWN",
@@ -814,6 +840,6 @@
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 13.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 14.3h"
  ]
 }
