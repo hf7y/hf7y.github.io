@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T09:40:02Z",
+ "generated_at": "2026-10-21T10:00:03Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T10:40:02Z",
+ "valid_until": "2026-10-21T11:00:03Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -135,6 +135,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "thirsty_heyrovsky",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T10:00:01Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -275,6 +287,7 @@
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
+  "thirsty_heyrovsky",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -319,8 +332,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T092608Z.log",
-   "started_at": "2026-10-21T09:26:09Z",
+   "log": "nightly.20261021T095010Z.log",
+   "started_at": "2026-10-21T09:50:11Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -791,21 +804,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 5.3
+   "age_h": 5.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 4.8
+   "age_h": 5.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 3.7
+   "age_h": 4.0
   }
  ],
  "verdict": "DOWN",
@@ -823,6 +836,6 @@
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 5.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 5.6h"
  ]
 }
