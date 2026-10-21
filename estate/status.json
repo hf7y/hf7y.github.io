@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T19:00:02Z",
+ "generated_at": "2026-10-21T19:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T20:00:02Z",
+ "valid_until": "2026-10-21T20:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "competent_bartik",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T18:50:28Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -42,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "dazzling_hopper",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T19:00:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "desk",
    "image": "secretaire:c5a1ccba687bf1603493f75a95bf87feb0f4aa1b",
    "project": "secretaire",
@@ -62,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-21T18:30:18Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "distracted_mclean",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T19:13:05Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -294,9 +282,8 @@
   }
  ],
  "unmanaged": [
-  "competent_bartik",
   "condescending_joliot",
-  "dazzling_hopper",
+  "distracted_mclean",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
@@ -305,7 +292,7 @@
  ],
  "nightly": {
   "armed": true,
-  "cron_line": "*/10 * * * * /srv/agent/rel/1ec0e9c96b9b807996e0df0654329df367d47dbd/agent/acted.sh # realisateur:agent-burn:RUNNER",
+  "cron_line": "*/10 * * * * /srv/agent/rel/bcb96520c8ab968f9d897ff31815dc3d64e7d748/agent/acted.sh # realisateur:agent-burn:RUNNER",
   "repos": [
    "abc",
    "abletim",
@@ -345,8 +332,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T185002Z.log",
-   "started_at": "2026-10-21T18:50:03Z",
+   "log": "nightly.20261021T191002Z.log",
+   "started_at": "2026-10-21T19:10:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -551,15 +538,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261021T183543Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": 1,
+    "log": "gardien.20261021T190543Z.log",
+    "result": "success",
+    "turns": 5,
+    "cost_usd": 0.0879,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-21T18:35:43Z"
+    "at": "2026-10-21T19:05:43Z"
    },
    {
     "repo": "groc-mangr",
@@ -696,12 +683,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261021T184134Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 7,
+    "cost_usd": 0.2454,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-21T18:41:34Z"
    },
@@ -731,15 +718,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261021T140848Z.log",
-    "result": "success",
-    "turns": 49,
-    "cost_usd": 0.9463,
-    "rc": 0,
+    "log": "senechal.20261021T191012Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-21T14:08:48Z"
+    "at": "2026-10-21T19:10:12Z"
    },
    {
     "repo": "sequestria",
@@ -817,21 +804,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 14.6
+   "age_h": 14.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 14.1
+   "age_h": 14.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 13.0
+   "age_h": 13.4
   }
  ],
  "verdict": "DOWN",
@@ -843,15 +830,13 @@
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 14.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 14.9h"
  ]
 }
