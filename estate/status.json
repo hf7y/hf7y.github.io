@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T16:40:02Z",
+ "generated_at": "2026-10-21T17:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T17:40:02Z",
+ "valid_until": "2026-10-21T18:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -51,6 +51,18 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:27Z",
    "finished_at": "2026-10-18T21:41:37Z",
+   "ports_published": null
+  },
+  {
+   "name": "elastic_edison",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T17:00:01Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -272,6 +284,7 @@
  "unmanaged": [
   "condescending_joliot",
   "elastic_antonelli",
+  "elastic_edison",
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
@@ -319,13 +332,19 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T161927Z.log",
-   "started_at": "2026-10-21T16:19:28Z",
-   "finished_at": "2026-10-21T16:36:24Z",
+   "log": "nightly.20261021T164002Z.log",
+   "started_at": "2026-10-21T16:40:03Z",
+   "finished_at": "2026-10-21T16:57:42Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "scheduler": {
+     "queue": 1,
+     "at": "2026-10-21T16:57:42Z",
+     "outcome": null
+    }
+   },
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -682,15 +701,15 @@
    },
    {
     "repo": "scheduler",
-    "log": "scheduler.20261019T054134Z.log",
-    "result": "success",
-    "turns": 24,
-    "cost_usd": 0.6926,
-    "rc": 0,
+    "log": "scheduler.20261021T165944Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-19T05:41:34Z"
+    "at": "2026-10-21T16:59:44Z"
    },
    {
     "repo": "secretaire",
@@ -792,21 +811,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 12.3
+   "age_h": 12.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 11.8
+   "age_h": 12.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 10.7
+   "age_h": 11.0
   }
  ],
  "verdict": "DOWN",
@@ -826,6 +845,6 @@
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 12.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 12.6h"
  ]
 }
