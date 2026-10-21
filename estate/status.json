@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T10:00:03Z",
+ "generated_at": "2026-10-21T10:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T11:00:03Z",
+ "valid_until": "2026-10-21T11:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -135,18 +135,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "thirsty_heyrovsky",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T10:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -287,7 +275,6 @@
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
-  "thirsty_heyrovsky",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -332,8 +319,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T095010Z.log",
-   "started_at": "2026-10-21T09:50:11Z",
+   "log": "nightly.20261021T101002Z.log",
+   "started_at": "2026-10-21T10:10:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -538,15 +525,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261021T093540Z.log",
-    "result": "success",
-    "turns": 4,
-    "cost_usd": 0.088,
-    "rc": 0,
+    "log": "gardien.20261021T100655Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-21T09:35:40Z"
+    "at": "2026-10-21T10:06:55Z"
    },
    {
     "repo": "groc-mangr",
@@ -804,21 +791,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 5.6
+   "age_h": 5.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 5.1
+   "age_h": 5.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 4.0
+   "age_h": 4.4
   }
  ],
  "verdict": "DOWN",
@@ -828,6 +815,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
@@ -836,6 +824,6 @@
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 5.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 5.9h"
  ]
 }
