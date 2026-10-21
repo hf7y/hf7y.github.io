@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T17:20:01Z",
+ "generated_at": "2026-10-21T17:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T18:20:01Z",
+ "valid_until": "2026-10-21T18:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "busy_elbakyan",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T17:28:10Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -135,6 +147,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "stoic_kare",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T17:39:22Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -270,11 +294,13 @@
   }
  ],
  "unmanaged": [
+  "busy_elbakyan",
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
+  "stoic_kare",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -319,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T171002Z.log",
-   "started_at": "2026-10-21T17:10:03Z",
+   "log": "nightly.20261021T173002Z.log",
+   "started_at": "2026-10-21T17:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -525,15 +551,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261021T163546Z.log",
+    "log": "gardien.20261021T173543Z.log",
     "result": "success",
     "turns": 5,
-    "cost_usd": 0.0932,
+    "cost_usd": 0.0951,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-21T16:35:46Z"
+    "at": "2026-10-21T17:35:43Z"
    },
    {
     "repo": "groc-mangr",
@@ -633,15 +659,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261020T190933Z.log",
-    "result": "success",
-    "turns": 138,
-    "cost_usd": 4.1157,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/musc-2300/pull/365",
+    "log": "musc-2300.20261021T172732Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-20T19:09:33Z"
+    "at": "2026-10-21T17:27:32Z"
    },
    {
     "repo": "nine-speakers",
@@ -791,21 +817,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 12.9
+   "age_h": 13.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 12.4
+   "age_h": 12.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 11.4
+   "age_h": 11.7
   }
  ],
  "verdict": "DOWN",
@@ -821,10 +847,11 @@
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 12.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 13.3h"
  ]
 }
