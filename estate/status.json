@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T15:40:02Z",
+ "generated_at": "2026-10-21T16:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T16:40:02Z",
+ "valid_until": "2026-10-21T17:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-21T06:15:18Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "ecstatic_poincare",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T16:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -271,6 +283,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "ecstatic_poincare",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
@@ -279,7 +292,7 @@
  ],
  "nightly": {
   "armed": true,
-  "cron_line": "*/10 * * * * /srv/agent/rel/c8afe3a495b5b1d4fd025de49654e1a3504a06b9/agent/acted.sh # realisateur:agent-burn:RUNNER",
+  "cron_line": "*/10 * * * * /srv/agent/rel/98cebdd7f942024ff381607705ca22844d885a59/agent/acted.sh # realisateur:agent-burn:RUNNER",
   "repos": [
    "abc",
    "abletim",
@@ -319,13 +332,19 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T151002Z.log",
-   "started_at": "2026-10-21T15:10:03Z",
-   "finished_at": "2026-10-21T15:39:11Z",
+   "log": "nightly.20261021T154002Z.log",
+   "started_at": "2026-10-21T15:40:03Z",
+   "finished_at": "2026-10-21T15:59:24Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "etalon": {
+     "queue": 1,
+     "at": "2026-10-21T15:59:24Z",
+     "outcome": null
+    }
+   },
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -341,7 +360,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -502,15 +521,15 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261019T054051Z.log",
-    "result": "success",
-    "turns": 14,
-    "cost_usd": 0.3505,
-    "rc": 0,
+    "log": "etalon.20261021T155943Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-19T05:40:51Z"
+    "at": "2026-10-21T15:59:43Z"
    },
    {
     "repo": "front-door",
@@ -792,21 +811,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 11.3
+   "age_h": 11.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 10.8
+   "age_h": 11.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 9.7
+   "age_h": 10.0
   }
  ],
  "verdict": "DOWN",
@@ -816,6 +835,7 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
+  "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
@@ -825,6 +845,6 @@
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 11.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 11.6h"
  ]
 }
