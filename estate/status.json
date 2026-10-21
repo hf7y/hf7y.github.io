@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T12:00:02Z",
+ "generated_at": "2026-10-21T12:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T13:00:02Z",
+ "valid_until": "2026-10-21T13:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -174,18 +174,6 @@
    "ports_published": null
   },
   {
-   "name": "xenodochial_hofstadter",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T12:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "xenodochial_wilson",
    "image": "sha256:93e91132a92436e536ed6d98f0a1514821fc58343f66a95f0d444d5bd1720e21",
    "project": null,
@@ -287,7 +275,6 @@
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
-  "xenodochial_hofstadter",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -332,8 +319,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T115002Z.log",
-   "started_at": "2026-10-21T11:50:03Z",
+   "log": "nightly.20261021T121002Z.log",
+   "started_at": "2026-10-21T12:10:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -804,21 +791,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 7.6
+   "age_h": 7.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 7.1
+   "age_h": 7.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 6.0
+   "age_h": 6.4
   }
  ],
  "verdict": "DOWN",
@@ -836,6 +823,6 @@
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 7.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 7.9h"
  ]
 }
