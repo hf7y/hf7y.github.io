@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T15:20:02Z",
+ "generated_at": "2026-10-21T15:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T16:20:02Z",
+ "valid_until": "2026-10-21T16:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -279,7 +279,7 @@
  ],
  "nightly": {
   "armed": true,
-  "cron_line": "*/10 * * * * /srv/agent/rel/d1c0ccbc0c00345a294d175826f9ae1599470580/agent/acted.sh # realisateur:agent-burn:RUNNER",
+  "cron_line": "*/10 * * * * /srv/agent/rel/c8afe3a495b5b1d4fd025de49654e1a3504a06b9/agent/acted.sh # realisateur:agent-burn:RUNNER",
   "repos": [
    "abc",
    "abletim",
@@ -321,7 +321,7 @@
   "last_run": {
    "log": "nightly.20261021T151002Z.log",
    "started_at": "2026-10-21T15:10:03Z",
-   "finished_at": null,
+   "finished_at": "2026-10-21T15:39:11Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -337,10 +337,11 @@
     "space-canon",
     "vibe-kiosk",
     "abc",
-    "media-arts-collective/kreweofvaporwave.github.io"
+    "media-arts-collective/kreweofvaporwave.github.io",
+    "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -393,15 +394,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261021T150559Z.log",
+    "log": "baudin.20261021T153716Z.log",
     "result": "success",
-    "turns": 7,
-    "cost_usd": 0.1537,
+    "turns": 9,
+    "cost_usd": 0.1694,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-21T15:05:59Z"
+    "at": "2026-10-21T15:37:16Z"
    },
    {
     "repo": "bibliothecaire",
@@ -791,30 +792,30 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 10.9
+   "age_h": 11.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 10.4
+   "age_h": 10.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 9.4
+   "age_h": 9.7
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
+  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
@@ -824,6 +825,6 @@
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 10.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 11.3h"
  ]
 }
