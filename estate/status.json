@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T19:20:01Z",
+ "generated_at": "2026-10-21T19:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T20:20:01Z",
+ "valid_until": "2026-10-21T20:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -50,6 +50,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-21T19:13:05Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "dreamy_engelbart",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T19:38:54Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -147,6 +159,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "strange_khayyam",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T19:38:25Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -284,10 +308,12 @@
  "unmanaged": [
   "condescending_joliot",
   "distracted_mclean",
+  "dreamy_engelbart",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
+  "strange_khayyam",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -350,10 +376,11 @@
     "space-canon",
     "vibe-kiosk",
     "abc",
-    "media-arts-collective/kreweofvaporwave.github.io"
+    "media-arts-collective/kreweofvaporwave.github.io",
+    "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -538,15 +565,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261021T190543Z.log",
-    "result": "success",
-    "turns": 5,
-    "cost_usd": 0.0879,
-    "rc": 0,
+    "log": "gardien.20261021T193541Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": 1,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-21T19:05:43Z"
+    "at": "2026-10-21T19:35:41Z"
    },
    {
     "repo": "groc-mangr",
@@ -804,21 +831,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 14.9
+   "age_h": 15.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 14.4
+   "age_h": 14.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 13.4
+   "age_h": 13.7
   }
  ],
  "verdict": "DOWN",
@@ -830,6 +857,7 @@
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
@@ -837,6 +865,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 14.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 15.3h"
  ]
 }
