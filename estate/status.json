@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T03:00:02Z",
+ "generated_at": "2026-10-21T03:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T04:00:02Z",
+ "valid_until": "2026-10-21T04:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -63,18 +63,6 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:07Z",
    "finished_at": "2026-10-18T21:41:12Z",
-   "ports_published": null
-  },
-  {
-   "name": "eloquent_nobel",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T03:00:02Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -285,7 +273,6 @@
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
-  "eloquent_nobel",
   "goofy_poincare",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -331,8 +318,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T022004Z.log",
-   "started_at": "2026-10-21T02:20:04Z",
+   "log": "nightly.20261021T031002Z.log",
+   "started_at": "2026-10-21T03:10:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -354,7 +341,7 @@
     "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 0.2
   },
   "passes": [
    {
