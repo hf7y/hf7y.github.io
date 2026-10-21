@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T04:00:02Z",
+ "generated_at": "2026-10-21T04:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T05:00:02Z",
+ "valid_until": "2026-10-21T05:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "boring_montalcini",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T04:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -150,6 +138,18 @@
    "ports_published": null
   },
   {
+   "name": "silly_diffie",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T04:00:53Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -183,18 +183,6 @@
    "exit_code": 1,
    "started_at": "2026-10-14T19:05:53Z",
    "finished_at": "2026-10-14T19:06:08Z",
-   "ports_published": null
-  },
-  {
-   "name": "xenodochial_buck",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T03:57:09Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -294,18 +282,17 @@
   }
  ],
  "unmanaged": [
-  "boring_montalcini",
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
-  "xenodochial_buck",
+  "silly_diffie",
   "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
-  "cron_line": "*/10 * * * * /srv/agent/rel/ad0b9d59f4616776f5c8d7bd674ffa0f14aee0df/agent/acted.sh # realisateur:agent-burn:RUNNER",
+  "cron_line": "*/10 * * * * /srv/agent/rel/b8bd7117341e087334bccd75b2231e094a2f7464/agent/acted.sh # realisateur:agent-burn:RUNNER",
   "repos": [
    "abc",
    "abletim",
@@ -359,7 +346,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
