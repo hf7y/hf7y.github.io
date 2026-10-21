@@ -1,22 +1,10 @@
 {
- "generated_at": "2026-10-21T18:00:03Z",
+ "generated_at": "2026-10-21T18:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T19:00:03Z",
+ "valid_until": "2026-10-21T19:20:02Z",
  "containers": [
-  {
-   "name": "admiring_almeida",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T18:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
   {
    "name": "aedile-tube",
    "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
@@ -87,30 +75,6 @@
    "exit_code": 152,
    "started_at": "2026-10-19T06:12:19Z",
    "finished_at": "2026-10-19T06:12:28Z",
-   "ports_published": null
-  },
-  {
-   "name": "gracious_hypatia",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T17:58:39Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "great_keldysh",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T17:52:14Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -306,13 +270,10 @@
   }
  ],
  "unmanaged": [
-  "admiring_almeida",
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "gracious_hypatia",
-  "great_keldysh",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -358,8 +319,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T180002Z.log",
-   "started_at": "2026-10-21T18:00:03Z",
+   "log": "nightly.20261021T181959Z.log",
+   "started_at": "2026-10-21T18:20:00Z",
    "finished_at": null,
    "turns": 150,
    "image": null,
@@ -552,15 +513,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261021T173543Z.log",
-    "result": "success",
-    "turns": 5,
-    "cost_usd": 0.0951,
-    "rc": 0,
+    "log": "gardien.20261021T180543Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-21T17:35:43Z"
+    "at": "2026-10-21T18:05:43Z"
    },
    {
     "repo": "groc-mangr",
@@ -721,10 +682,10 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261021T175107Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 70,
+    "cost_usd": 1.5263,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -818,21 +779,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 13.6
+   "age_h": 13.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 13.1
+   "age_h": 13.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 12.0
+   "age_h": 12.4
   }
  ],
  "verdict": "DOWN",
@@ -844,6 +805,7 @@
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
@@ -852,6 +814,6 @@
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 13.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 13.9h"
  ]
 }
