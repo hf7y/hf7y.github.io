@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T08:20:02Z",
+ "generated_at": "2026-10-21T08:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T09:20:02Z",
+ "valid_until": "2026-10-21T09:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -341,7 +341,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 1.2
+   "age_h": 1.5
   },
   "passes": [
    {
@@ -792,21 +792,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 3.9
+   "age_h": 4.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 3.4
+   "age_h": 3.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 2.4
+   "age_h": 2.7
   }
  ],
  "verdict": "DOWN",
@@ -823,6 +823,6 @@
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 3.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 4.3h"
  ]
 }
