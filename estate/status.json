@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T06:40:02Z",
+ "generated_at": "2026-10-21T07:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T07:40:02Z",
+ "valid_until": "2026-10-21T08:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -110,6 +110,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-21T06:15:18Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "quizzical_visvesvaraya",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-21T07:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -274,12 +286,13 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "quizzical_visvesvaraya",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
-  "cron_line": "*/10 * * * * /srv/agent/rel/0c982ddf858dfddc96134e9acd80b574b811b99c/agent/acted.sh # realisateur:agent-burn:RUNNER",
+  "cron_line": "*/10 * * * * /srv/agent/rel/d3ecd1984140d4e9a2ce5e4cc29bb4baf0c6e70c/agent/acted.sh # realisateur:agent-burn:RUNNER",
   "repos": [
    "abc",
    "abletim",
@@ -321,7 +334,7 @@
   "last_run": {
    "log": "nightly.20261021T062018Z.log",
    "started_at": "2026-10-21T06:20:18Z",
-   "finished_at": null,
+   "finished_at": "2026-10-21T06:46:09Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -329,12 +342,12 @@
     "realisateur": {
      "queue": 1,
      "at": "2026-10-21T06:33:52Z",
-     "outcome": null
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
@@ -664,10 +677,10 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261021T063352Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 19,
+    "cost_usd": 0.655,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -785,28 +798,27 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 2.3
+   "age_h": 2.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 1.8
+   "age_h": 2.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 0.7
+   "age_h": 1.0
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
@@ -817,6 +829,6 @@
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 2.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 2.6h"
  ]
 }
