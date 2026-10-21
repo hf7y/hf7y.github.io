@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T02:20:02Z",
+ "generated_at": "2026-10-21T02:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T03:20:02Z",
+ "valid_until": "2026-10-21T03:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -88,18 +88,6 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
-  },
-  {
-   "name": "keen_ramanujan",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "removing",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T02:19:58Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -286,7 +274,6 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "keen_ramanujan",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -331,19 +318,13 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T014134Z.log",
-   "started_at": "2026-10-21T01:41:34Z",
-   "finished_at": "2026-10-21T02:15:50Z",
+   "log": "nightly.20261021T022004Z.log",
+   "started_at": "2026-10-21T02:20:04Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "crt": {
-     "queue": 31,
-     "at": "2026-10-21T02:15:50Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [
     "candidature",
     "media-arts-collective/CodeDumpster",
@@ -360,7 +341,7 @@
     "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
-   "age_h": 0.6
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -803,6 +784,7 @@
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "/srv/agent: nightly.sh hold bytes that were never on `main` -- somebody edited the host. `bin/wire-agent-dispatch.sh --check`",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
