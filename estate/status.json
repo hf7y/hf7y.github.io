@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-21T05:00:02Z",
+ "generated_at": "2026-10-21T05:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-21T06:00:02Z",
+ "valid_until": "2026-10-21T06:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,30 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "beautiful_archimedes",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T04:54:58Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "beautiful_chaum",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-21T05:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -294,8 +270,6 @@
   }
  ],
  "unmanaged": [
-  "beautiful_archimedes",
-  "beautiful_chaum",
   "condescending_joliot",
   "elastic_antonelli",
   "elated_mccarthy",
@@ -305,7 +279,7 @@
  ],
  "nightly": {
   "armed": true,
-  "cron_line": "*/10 * * * * /srv/agent/rel/b8bd7117341e087334bccd75b2231e094a2f7464/agent/acted.sh # realisateur:agent-burn:RUNNER",
+  "cron_line": "*/10 * * * * /srv/agent/rel/c7f18fd07eebe5e02b7a2a468647495201c315a9/agent/acted.sh # realisateur:agent-burn:RUNNER",
   "repos": [
    "abc",
    "abletim",
@@ -345,22 +319,28 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261021T045156Z.log",
-   "started_at": "2026-10-21T04:51:56Z",
-   "finished_at": "2026-10-21T04:54:20Z",
+   "log": "nightly.20261021T051002Z.log",
+   "started_at": "2026-10-21T05:10:03Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "candidature": {
-     "queue": 1,
-     "at": "2026-10-21T04:52:10Z",
-     "outcome": "finished"
-    }
-   },
-   "skipped": [],
+   "dispatched": {},
+   "skipped": [
+    "media-arts-collective/CodeDumpster",
+    "media-arts-collective/inv-redirects",
+    "media-arts-collective/nomac.org",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "weave",
+    "space-canon",
+    "vibe-kiosk",
+    "abc",
+    "media-arts-collective/kreweofvaporwave.github.io"
+   ],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -497,15 +477,15 @@
    },
    {
     "repo": "dog",
-    "log": "dog.20261008T163031Z.log",
+    "log": "dog.20261021T050140Z.log",
     "result": "success",
-    "turns": 20,
-    "cost_usd": 0.3119,
+    "turns": 58,
+    "cost_usd": 1.0058,
     "rc": 0,
-    "pr": null,
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/dog/pull/16",
+    "commented": false,
     "note": null,
-    "at": "2026-10-08T16:30:31Z"
+    "at": "2026-10-21T05:01:40Z"
    },
    {
     "repo": "ecosim",
@@ -811,20 +791,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 0.6
+   "age_h": 0.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 0.1
+   "age_h": 0.4
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
@@ -834,6 +815,6 @@
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "2 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 0.6h"
+  "2 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 0.9h"
  ]
 }
