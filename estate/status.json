@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T05:40:02Z",
+ "generated_at": "2026-10-22T06:00:03Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T06:40:02Z",
+ "valid_until": "2026-10-22T07:00:03Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "affectionate_edison",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-22T06:00:02Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -75,6 +87,18 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:07Z",
    "finished_at": "2026-10-18T21:41:12Z",
+   "ports_published": null
+  },
+  {
+   "name": "gallant_shamir",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-22T05:52:12Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -282,10 +306,12 @@
   }
  ],
  "unmanaged": [
+  "affectionate_edison",
   "condescending_joliot",
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
   "elated_mccarthy",
+  "gallant_shamir",
   "goofy_poincare",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -332,28 +358,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T053232Z.log",
-   "started_at": "2026-10-22T05:32:33Z",
+   "log": "nightly.20261022T060002Z.log",
+   "started_at": "2026-10-22T06:00:03Z",
    "finished_at": null,
    "turns": 150,
-   "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
+   "image": null,
    "pull_failed": null,
    "dispatched": {},
-   "skipped": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "weave",
-    "space-canon",
-    "vibe-kiosk",
-    "abc",
-    "media-arts-collective/kreweofvaporwave.github.io"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -682,15 +696,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261021T184134Z.log",
-    "result": "success",
-    "turns": 7,
-    "cost_usd": 0.2454,
-    "rc": 0,
+    "log": "realisateur.20261022T055127Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-21T18:41:34Z"
+    "at": "2026-10-22T05:51:27Z"
    },
    {
     "repo": "scheduler",
@@ -804,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 25.3
+   "age_h": 25.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 24.8
+   "age_h": 25.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 23.7
+   "age_h": 24.0
   }
  ],
  "verdict": "DOWN",
@@ -836,8 +850,9 @@
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 25.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 25.6h"
  ]
 }
