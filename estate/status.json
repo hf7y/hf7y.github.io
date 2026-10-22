@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T03:00:01Z",
+ "generated_at": "2026-10-22T03:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T04:00:01Z",
+ "valid_until": "2026-10-22T04:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -135,18 +135,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "thirsty_neumann",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-22T03:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -287,7 +275,6 @@
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
-  "thirsty_neumann",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -332,9 +319,9 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T024451Z.log",
-   "started_at": "2026-10-22T02:44:52Z",
-   "finished_at": "2026-10-22T02:59:11Z",
+   "log": "nightly.20261022T031002Z.log",
+   "started_at": "2026-10-22T03:10:02Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -350,11 +337,10 @@
     "space-canon",
     "vibe-kiosk",
     "abc",
-    "media-arts-collective/kreweofvaporwave.github.io",
-    "dog"
+    "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -805,27 +791,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 22.6
+   "age_h": 22.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 22.1
+   "age_h": 22.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 21.0
+   "age_h": 21.4
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
@@ -838,6 +825,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 22.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 22.9h"
  ]
 }
