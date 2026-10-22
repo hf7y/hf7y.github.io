@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T04:00:02Z",
+ "generated_at": "2026-10-22T04:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T05:00:02Z",
+ "valid_until": "2026-10-22T05:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-21T18:30:18Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "dreamy_easley",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-22T04:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -147,6 +135,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "sweet_carver",
+   "image": "baudin:6cfe8edf192b805cfb6870c1d646ba93f5c231d8",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-22T04:19:01Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -283,11 +283,11 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "dreamy_easley",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
+  "sweet_carver",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -346,13 +346,18 @@
     "selfdev-permission-witness-scratch",
     "verbs",
     "space-canon",
-    "vibe-kiosk"
+    "vibe-kiosk",
+    "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [
     "vkv23",
-    "weave"
+    "weave",
+    "vim-arcade",
+    "media-arts-collective/inventory-app",
+    "abc",
+    "wtul"
    ],
-   "age_h": 0.2
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -417,7 +422,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261022T033540Z.log",
+    "log": "bibliothecaire.20261022T040636Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -425,7 +430,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-22T03:35:40Z"
+    "at": "2026-10-22T04:06:36Z"
    },
    {
     "repo": "candidature",
@@ -803,21 +808,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 23.6
+   "age_h": 23.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 23.1
+   "age_h": 23.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 22.0
+   "age_h": 22.4
   }
  ],
  "verdict": "DOWN",
@@ -827,6 +832,10 @@
   "the last nightly has no `done` line -- still running, or it died",
   "vkv23: the nightly could not read its queue and skipped it",
   "weave: the nightly could not read its queue and skipped it",
+  "vim-arcade: the nightly could not read its queue and skipped it",
+  "media-arts-collective/inventory-app: the nightly could not read its queue and skipped it",
+  "abc: the nightly could not read its queue and skipped it",
+  "wtul: the nightly could not read its queue and skipped it",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
@@ -839,6 +848,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 23.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 23.9h"
  ]
 }
