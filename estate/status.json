@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T03:40:02Z",
+ "generated_at": "2026-10-22T04:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T04:40:02Z",
+ "valid_until": "2026-10-22T05:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,6 +38,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-21T18:30:18Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "dreamy_easley",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-22T04:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -271,6 +283,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "dreamy_easley",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
@@ -319,8 +332,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T033003Z.log",
-   "started_at": "2026-10-22T03:30:03Z",
+   "log": "nightly.20261022T035002Z.log",
+   "started_at": "2026-10-22T03:50:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -332,14 +345,13 @@
     "media-arts-collective/nomac.org",
     "selfdev-permission-witness-scratch",
     "verbs",
-    "vkv23",
-    "weave",
     "space-canon",
-    "vibe-kiosk",
-    "abc",
-    "media-arts-collective/kreweofvaporwave.github.io"
+    "vibe-kiosk"
    ],
-   "queue_unreadable": [],
+   "queue_unreadable": [
+    "vkv23",
+    "weave"
+   ],
    "age_h": 0.2
   },
   "passes": [
@@ -791,21 +803,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 23.3
+   "age_h": 23.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 22.8
+   "age_h": 23.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 21.7
+   "age_h": 22.0
   }
  ],
  "verdict": "DOWN",
@@ -813,6 +825,8 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
+  "vkv23: the nightly could not read its queue and skipped it",
+  "weave: the nightly could not read its queue and skipped it",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
@@ -825,6 +839,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 23.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 23.6h"
  ]
 }
