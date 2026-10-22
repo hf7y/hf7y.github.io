@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T14:20:01Z",
+ "generated_at": "2026-10-22T14:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T15:20:01Z",
+ "valid_until": "2026-10-22T15:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -66,6 +66,18 @@
    "ports_published": null
   },
   {
+   "name": "elated_goodall",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-22T14:37:43Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "elated_mccarthy",
    "image": "sha256:95d303a0fc03c6746ef95616ba0fb3329914eacfde3bbb62da6313bd53a78e36",
    "project": null,
@@ -100,18 +112,6 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
-  },
-  {
-   "name": "loving_cray",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-22T14:18:02Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -297,9 +297,9 @@
   "condescending_joliot",
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
+  "elated_goodall",
   "elated_mccarthy",
   "goofy_poincare",
-  "loving_cray",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -345,16 +345,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T140003Z.log",
-   "started_at": "2026-10-22T14:00:03Z",
-   "finished_at": "2026-10-22T14:17:17Z",
+   "log": "nightly.20261022T142002Z.log",
+   "started_at": "2026-10-22T14:20:02Z",
+   "finished_at": "2026-10-22T14:37:12Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "media-arts-collective/cinema-sanctuary": {
+    "baudin": {
      "queue": 1,
-     "at": "2026-10-22T14:17:17Z",
+     "at": "2026-10-22T14:37:12Z",
      "outcome": null
     }
    },
@@ -370,7 +370,6 @@
     "vibe-kiosk",
     "abc",
     "media-arts-collective/kreweofvaporwave.github.io",
-    "nine-speakers",
     "dog"
    ],
    "queue_unreadable": [],
@@ -427,19 +426,19 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261021T210717Z.log",
-    "result": "success",
-    "turns": 39,
-    "cost_usd": 1.014,
-    "rc": 0,
+    "log": "baudin.20261022T143722Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-21T21:07:17Z"
+    "at": "2026-10-22T14:37:22Z"
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261022T140558Z.log",
+    "log": "bibliothecaire.20261022T143558Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -447,7 +446,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-22T14:05:58Z"
+    "at": "2026-10-22T14:35:58Z"
    },
    {
     "repo": "candidature",
@@ -584,10 +583,10 @@
    {
     "repo": "media-arts-collective.cinema-sanctuary",
     "log": "media-arts-collective.cinema-sanctuary.20261022T141727Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 55,
+    "cost_usd": 1.1932,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -825,21 +824,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 33.9
+   "age_h": 34.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 33.4
+   "age_h": 33.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 32.4
+   "age_h": 32.7
   }
  ],
  "verdict": "DOWN",
@@ -856,6 +855,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 33.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 34.3h"
  ]
 }
