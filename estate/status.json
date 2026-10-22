@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T13:40:02Z",
+ "generated_at": "2026-10-22T14:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T14:40:02Z",
+ "valid_until": "2026-10-22T15:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -87,6 +87,18 @@
    "exit_code": 152,
    "started_at": "2026-10-19T06:12:19Z",
    "finished_at": "2026-10-19T06:12:28Z",
+   "ports_published": null
+  },
+  {
+   "name": "gracious_lewin",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-22T14:00:01Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -287,6 +299,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "gracious_lewin",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -332,26 +345,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T133720Z.log",
-   "started_at": "2026-10-22T13:37:20Z",
+   "log": "nightly.20261022T135404Z.log",
+   "started_at": "2026-10-22T13:54:04Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
-   "skipped": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "weave",
-    "space-canon",
-    "vibe-kiosk"
-   ],
+   "dispatched": {
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-22T13:54:29Z",
+     "outcome": null
+    }
+   },
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -680,15 +689,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261022T131120Z.log",
-    "result": "success",
-    "turns": 17,
-    "cost_usd": 0.6659,
-    "rc": 0,
+    "log": "realisateur.20261022T135429Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-22T13:11:20Z"
+    "at": "2026-10-22T13:54:29Z"
    },
    {
     "repo": "scheduler",
@@ -802,21 +811,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 33.3
+   "age_h": 33.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 32.8
+   "age_h": 33.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 31.7
+   "age_h": 32.0
   }
  ],
  "verdict": "DOWN",
@@ -835,6 +844,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 33.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 33.6h"
  ]
 }
