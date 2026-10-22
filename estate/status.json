@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T17:20:02Z",
+ "generated_at": "2026-10-22T17:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T18:20:02Z",
+ "valid_until": "2026-10-22T18:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -332,9 +332,9 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T170003Z.log",
-   "started_at": "2026-10-22T17:00:03Z",
-   "finished_at": "2026-10-22T17:15:57Z",
+   "log": "nightly.20261022T172002Z.log",
+   "started_at": "2026-10-22T17:20:02Z",
+   "finished_at": "2026-10-22T17:35:56Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -539,7 +539,7 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261022T170539Z.log",
+    "log": "gardien.20261022T173539Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -547,7 +547,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-22T17:05:39Z"
+    "at": "2026-10-22T17:35:39Z"
    },
    {
     "repo": "groc-mangr",
@@ -805,21 +805,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 36.9
+   "age_h": 37.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 36.4
+   "age_h": 36.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 35.4
+   "age_h": 35.7
   }
  ],
  "verdict": "DOWN",
@@ -837,6 +837,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 36.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 37.3h"
  ]
 }
