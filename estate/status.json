@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T22:40:02Z",
+ "generated_at": "2026-10-22T23:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T23:40:02Z",
+ "valid_until": "2026-10-23T00:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -102,14 +102,14 @@
    "ports_published": false
   },
   {
-   "name": "interesting_goldberg",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "name": "musing_mendeleev",
+   "image": "senechal-puller:02459d4c21ab",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-22T21:47:31Z",
+   "started_at": "2026-10-22T23:00:02Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -159,6 +159,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "strange_ritchie",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-22T22:58:54Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -299,8 +311,9 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "interesting_goldberg",
+  "musing_mendeleev",
   "serene_elgamal",
+  "strange_ritchie",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -345,8 +358,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T223002Z.log",
-   "started_at": "2026-10-22T22:30:03Z",
+   "log": "nightly.20261022T224324Z.log",
+   "started_at": "2026-10-22T22:43:25Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -367,7 +380,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -733,10 +746,10 @@
    {
     "repo": "senechal",
     "log": "senechal.20261022T214454Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 125,
+    "cost_usd": 2.9517,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -818,21 +831,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 42.3
+   "age_h": 42.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 41.8
+   "age_h": 42.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 40.7
+   "age_h": 41.0
   }
  ],
  "verdict": "DOWN",
@@ -851,6 +864,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 42.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 42.6h"
  ]
 }
