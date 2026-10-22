@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T19:20:02Z",
+ "generated_at": "2026-10-22T19:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T20:20:02Z",
+ "valid_until": "2026-10-22T20:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -332,8 +332,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T191002Z.log",
-   "started_at": "2026-10-22T19:10:03Z",
+   "log": "nightly.20261022T193002Z.log",
+   "started_at": "2026-10-22T19:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -539,15 +539,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261022T190537Z.log",
-    "result": "success",
-    "turns": 5,
-    "cost_usd": 0.1017,
-    "rc": 0,
+    "log": "gardien.20261022T193538Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": 1,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-22T19:05:37Z"
+    "at": "2026-10-22T19:35:38Z"
    },
    {
     "repo": "groc-mangr",
@@ -805,21 +805,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 38.9
+   "age_h": 39.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 38.4
+   "age_h": 38.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 37.4
+   "age_h": 37.7
   }
  ],
  "verdict": "DOWN",
@@ -831,6 +831,7 @@
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
@@ -838,6 +839,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 38.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 39.3h"
  ]
 }
