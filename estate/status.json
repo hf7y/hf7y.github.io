@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T21:20:01Z",
+ "generated_at": "2026-10-22T21:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T22:20:01Z",
+ "valid_until": "2026-10-22T22:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -332,8 +332,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T211002Z.log",
-   "started_at": "2026-10-22T21:10:02Z",
+   "log": "nightly.20261022T213003Z.log",
+   "started_at": "2026-10-22T21:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -539,15 +539,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261022T210536Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": 1,
+    "log": "gardien.20261022T213537Z.log",
+    "result": "success",
+    "turns": 5,
+    "cost_usd": 0.1001,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-22T21:05:36Z"
+    "at": "2026-10-22T21:35:37Z"
    },
    {
     "repo": "groc-mangr",
@@ -647,15 +647,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261022T145750Z.log",
+    "log": "musc-2300.20261022T212527Z.log",
     "result": "success",
-    "turns": 19,
-    "cost_usd": 0.35,
+    "turns": 9,
+    "cost_usd": 0.2902,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-22T14:57:50Z"
+    "at": "2026-10-22T21:25:27Z"
    },
    {
     "repo": "nine-speakers",
@@ -805,21 +805,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 40.9
+   "age_h": 41.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 40.4
+   "age_h": 40.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 39.4
+   "age_h": 39.7
   }
  ],
  "verdict": "DOWN",
@@ -831,7 +831,6 @@
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
@@ -839,6 +838,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 40.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 41.3h"
  ]
 }
