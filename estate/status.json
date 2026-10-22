@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T00:20:02Z",
+ "generated_at": "2026-10-22T00:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T01:20:02Z",
+ "valid_until": "2026-10-22T01:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -319,8 +319,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T000528Z.log",
-   "started_at": "2026-10-22T00:05:28Z",
+   "log": "nightly.20261022T003002Z.log",
+   "started_at": "2026-10-22T00:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -337,8 +337,7 @@
     "space-canon",
     "vibe-kiosk",
     "abc",
-    "media-arts-collective/kreweofvaporwave.github.io",
-    "dog"
+    "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
    "age_h": 0.2
@@ -406,7 +405,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261022T000537Z.log",
+    "log": "bibliothecaire.20261022T003538Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -414,7 +413,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-22T00:05:37Z"
+    "at": "2026-10-22T00:35:38Z"
    },
    {
     "repo": "candidature",
@@ -792,21 +791,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 19.9
+   "age_h": 20.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 19.4
+   "age_h": 19.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 18.4
+   "age_h": 18.7
   }
  ],
  "verdict": "DOWN",
@@ -826,6 +825,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 19.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 20.3h"
  ]
 }
