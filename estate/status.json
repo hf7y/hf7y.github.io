@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T21:40:02Z",
+ "generated_at": "2026-10-22T22:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T22:40:02Z",
+ "valid_until": "2026-10-22T23:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -100,6 +100,30 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "interesting_goldberg",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-22T21:47:31Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "nostalgic_bell",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-22T22:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -287,6 +311,8 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "interesting_goldberg",
+  "nostalgic_bell",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -332,8 +358,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T213003Z.log",
-   "started_at": "2026-10-22T21:30:03Z",
+   "log": "nightly.20261022T215002Z.log",
+   "started_at": "2026-10-22T21:50:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -719,15 +745,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261022T155944Z.log",
-    "result": "success",
-    "turns": 59,
-    "cost_usd": 1.4281,
-    "rc": 0,
+    "log": "senechal.20261022T214454Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-22T15:59:44Z"
+    "at": "2026-10-22T21:44:54Z"
    },
    {
     "repo": "sequestria",
@@ -805,21 +831,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 41.3
+   "age_h": 41.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 40.8
+   "age_h": 41.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 39.7
+   "age_h": 40.0
   }
  ],
  "verdict": "DOWN",
@@ -838,6 +864,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 41.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 41.6h"
  ]
 }
