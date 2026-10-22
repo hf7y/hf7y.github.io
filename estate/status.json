@@ -1,251 +1,10 @@
 {
- "generated_at": "2026-10-22T16:00:02Z",
+ "generated_at": "2026-10-22T16:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T17:00:02Z",
- "containers": [
-  {
-   "name": "aedile-tube",
-   "image": "ghcr.io/media-arts-collective/aedile-tube:latest",
-   "project": "aedile",
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "condescending_joliot",
-   "image": "sha256:4392e6ca8adaf1d9ad35082eaeec55391427ccbe0ab72890ea49625ffd4a4558",
-   "project": null,
-   "state": "exited",
-   "health": null,
-   "restarts": 0,
-   "exit_code": 56,
-   "started_at": "2026-09-23T06:23:20Z",
-   "finished_at": "2026-09-23T06:24:30Z",
-   "ports_published": null
-  },
-  {
-   "name": "container-bibliothecaire-intake-1",
-   "image": "container-bibliothecaire-intake",
-   "project": "container",
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-22T05:09:00Z",
-   "finished_at": null,
-   "ports_published": true
-  },
-  {
-   "name": "desk",
-   "image": "secretaire:6e368da1e6a55626440977257b47a4150d2a1ce6",
-   "project": "secretaire",
-   "state": "running",
-   "health": "healthy",
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-22T06:00:18Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "elastic_antonelli",
-   "image": "sha256:95d303a0fc03c6746ef95616ba0fb3329914eacfde3bbb62da6313bd53a78e36",
-   "project": null,
-   "state": "exited",
-   "health": null,
-   "restarts": 0,
-   "exit_code": 152,
-   "started_at": "2026-10-18T21:41:27Z",
-   "finished_at": "2026-10-18T21:41:37Z",
-   "ports_published": null
-  },
-  {
-   "name": "elated_mccarthy",
-   "image": "sha256:95d303a0fc03c6746ef95616ba0fb3329914eacfde3bbb62da6313bd53a78e36",
-   "project": null,
-   "state": "exited",
-   "health": null,
-   "restarts": 0,
-   "exit_code": 152,
-   "started_at": "2026-10-18T21:41:07Z",
-   "finished_at": "2026-10-18T21:41:12Z",
-   "ports_published": null
-  },
-  {
-   "name": "goofy_poincare",
-   "image": "sha256:0824f615c6d1b40f7292075e63c8a38e26b33aed2a3e2fefe11977dcc6e960c6",
-   "project": null,
-   "state": "exited",
-   "health": null,
-   "restarts": 0,
-   "exit_code": 152,
-   "started_at": "2026-10-19T06:12:19Z",
-   "finished_at": "2026-10-19T06:12:28Z",
-   "ports_published": null
-  },
-  {
-   "name": "groc-browser",
-   "image": "ghcr.io/hf7y/groc-browser:latest",
-   "project": "groc-browser",
-   "state": "exited",
-   "health": "unhealthy",
-   "restarts": 0,
-   "exit_code": 0,
-   "started_at": "2026-10-15T20:15:44Z",
-   "finished_at": "2026-10-15T20:35:01Z",
-   "ports_published": false
-  },
-  {
-   "name": "magical_goldstine",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-22T16:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "officejet",
-   "image": "officejet:458e004fc243",
-   "project": "officejet",
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T21:47:56Z",
-   "finished_at": null,
-   "ports_published": true
-  },
-  {
-   "name": "potato-push",
-   "image": "secretaire:6e368da1e6a55626440977257b47a4150d2a1ce6",
-   "project": "secretaire",
-   "state": "running",
-   "health": "healthy",
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-22T06:00:18Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "roster",
-   "image": "ghcr.io/hf7y/roster:latest",
-   "project": "roster",
-   "state": "running",
-   "health": "healthy",
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": true
-  },
-  {
-   "name": "serene_elgamal",
-   "image": "sha256:6e1a93ea163db68d7caf6fecb48e3fca66143fa333b54117f0480470406772e3",
-   "project": null,
-   "state": "exited",
-   "health": null,
-   "restarts": 0,
-   "exit_code": 1,
-   "started_at": "2026-09-28T04:13:52Z",
-   "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "whisper",
-   "image": "ghcr.io/hf7y/whisper:latest",
-   "project": "whisper",
-   "state": "running",
-   "health": "healthy",
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": true
-  },
-  {
-   "name": "wtul-dexter-promote-promote-1",
-   "image": "ghcr.io/hf7y-estate/wtul-dexter-promote:latest",
-   "project": "wtul-dexter-promote",
-   "state": "exited",
-   "health": null,
-   "restarts": 0,
-   "exit_code": 0,
-   "started_at": "2026-10-14T19:05:52Z",
-   "finished_at": "2026-10-14T19:05:58Z",
-   "ports_published": null
-  },
-  {
-   "name": "wtul-ready-ready-1",
-   "image": "ghcr.io/hf7y-estate/wtul-dexter-promote:latest",
-   "project": "wtul-ready",
-   "state": "exited",
-   "health": null,
-   "restarts": 0,
-   "exit_code": 1,
-   "started_at": "2026-10-14T19:05:53Z",
-   "finished_at": "2026-10-14T19:06:08Z",
-   "ports_published": null
-  },
-  {
-   "name": "xenodochial_wilson",
-   "image": "sha256:93e91132a92436e536ed6d98f0a1514821fc58343f66a95f0d444d5bd1720e21",
-   "project": null,
-   "state": "exited",
-   "health": null,
-   "restarts": 0,
-   "exit_code": 1,
-   "started_at": "2026-09-25T02:11:31Z",
-   "finished_at": "2026-09-25T02:11:44Z",
-   "ports_published": null
-  },
-  {
-   "name": "zaxon-gateway",
-   "image": "zaxon:crt-1d1dda472fba",
-   "project": "zaxon",
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T02:33:45Z",
-   "finished_at": null,
-   "ports_published": true
-  },
-  {
-   "name": "zaxon-relay",
-   "image": "zaxon:crt-1d1dda472fba",
-   "project": "zaxon",
-   "state": "running",
-   "health": "healthy",
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-18T02:37:06Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "zaxon-watcher",
-   "image": "zaxon:crt-1d1dda472fba",
-   "project": "zaxon",
-   "state": "running",
-   "health": "healthy",
-   "restarts": 3,
-   "exit_code": null,
-   "started_at": "2026-10-19T00:07:13Z",
-   "finished_at": null,
-   "ports_published": null
-  }
- ],
+ "valid_until": "2026-10-22T17:20:02Z",
+ "containers": null,
  "services": [
   {
    "name": "aedile",
@@ -293,16 +52,7 @@
    "on_demand": false
   }
  ],
- "unmanaged": [
-  "condescending_joliot",
-  "container-bibliothecaire-intake-1",
-  "elastic_antonelli",
-  "elated_mccarthy",
-  "goofy_poincare",
-  "magical_goldstine",
-  "serene_elgamal",
-  "xenodochial_wilson"
- ],
+ "unmanaged": null,
  "nightly": {
   "armed": true,
   "cron_line": "*/10 * * * * /srv/agent/rel/18da3e64e270f05bb780fa6f3122ca69bd3f2f63/agent/acted.sh # realisateur:agent-burn:RUNNER",
@@ -345,19 +95,13 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T154440Z.log",
-   "started_at": "2026-10-22T15:44:41Z",
-   "finished_at": "2026-10-22T15:59:20Z",
+   "log": "nightly.20261022T160003Z.log",
+   "started_at": "2026-10-22T16:00:03Z",
+   "finished_at": "2026-10-22T16:11:15Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "senechal": {
-     "queue": 1,
-     "at": "2026-10-22T15:59:20Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -368,9 +112,14 @@
     "weave",
     "space-canon",
     "vibe-kiosk",
-    "media-arts-collective/inventory-app",
+    "chezz",
     "abc",
     "media-arts-collective/kreweofvaporwave.github.io",
+    "wtul",
+    "ecosim",
+    "american-cycle",
+    "officejet",
+    "crt",
     "dog"
    ],
    "queue_unreadable": [],
@@ -391,15 +140,15 @@
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261019T070107Z.log",
+    "log": "abletim.20261022T160608Z.log",
     "result": "success",
     "turns": 8,
-    "cost_usd": 0.1422,
+    "cost_usd": 0.145,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-19T07:01:07Z"
+    "at": "2026-10-22T16:06:08Z"
    },
    {
     "repo": "american-cycle",
@@ -825,37 +574,25 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 35.6
+   "age_h": 35.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 35.1
+   "age_h": 35.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 34.0
+   "age_h": 34.4
   }
  ],
  "verdict": "DOWN",
  "findings": [
-  "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
-  "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
-  "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
-  "bibliothecaire: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
-  "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 35.6h"
+  "the docker daemon did not answer -- nothing below was read"
  ]
 }
