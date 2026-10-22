@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T19:00:02Z",
+ "generated_at": "2026-10-22T19:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T20:00:02Z",
+ "valid_until": "2026-10-22T20:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -150,18 +150,6 @@
    "ports_published": null
   },
   {
-   "name": "suspicious_shirley",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-22T19:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -300,7 +288,6 @@
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
-  "suspicious_shirley",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -345,8 +332,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T185002Z.log",
-   "started_at": "2026-10-22T18:50:03Z",
+   "log": "nightly.20261022T191002Z.log",
+   "started_at": "2026-10-22T19:10:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -552,15 +539,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261022T183537Z.log",
+    "log": "gardien.20261022T190537Z.log",
     "result": "success",
     "turns": 5,
-    "cost_usd": 0.149,
+    "cost_usd": 0.1017,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-22T18:35:37Z"
+    "at": "2026-10-22T19:05:37Z"
    },
    {
     "repo": "groc-mangr",
@@ -818,21 +805,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 38.6
+   "age_h": 38.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 38.1
+   "age_h": 38.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 37.0
+   "age_h": 37.4
   }
  ],
  "verdict": "DOWN",
@@ -851,6 +838,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 38.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 38.9h"
  ]
 }
