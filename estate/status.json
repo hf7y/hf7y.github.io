@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T11:20:02Z",
+ "generated_at": "2026-10-22T11:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-22T12:20:02Z",
+ "valid_until": "2026-10-22T12:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -332,8 +332,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261022T111002Z.log",
-   "started_at": "2026-10-22T11:10:02Z",
+   "log": "nightly.20261022T113002Z.log",
+   "started_at": "2026-10-22T11:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -418,7 +418,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261022T110538Z.log",
+    "log": "bibliothecaire.20261022T113538Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -426,7 +426,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-22T11:05:38Z"
+    "at": "2026-10-22T11:35:38Z"
    },
    {
     "repo": "candidature",
@@ -646,15 +646,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261021T172732Z.log",
+    "log": "musc-2300.20261022T112521Z.log",
     "result": "success",
-    "turns": 33,
-    "cost_usd": 0.6874,
+    "turns": 39,
+    "cost_usd": 0.7708,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-21T17:27:32Z"
+    "at": "2026-10-22T11:25:21Z"
    },
    {
     "repo": "nine-speakers",
@@ -804,21 +804,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 30.9
+   "age_h": 31.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 30.4
+   "age_h": 30.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 29.4
+   "age_h": 29.7
   }
  ],
  "verdict": "DOWN",
@@ -838,6 +838,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 30.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 31.3h"
  ]
 }
