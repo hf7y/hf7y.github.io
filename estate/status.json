@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T08:00:02Z",
+ "generated_at": "2026-10-23T08:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T09:00:02Z",
+ "valid_until": "2026-10-23T09:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "condescending_mccarthy",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-23T07:57:15Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "container-bibliothecaire-intake-1",
    "image": "container-bibliothecaire-intake",
    "project": "container",
@@ -55,13 +43,13 @@
   },
   {
    "name": "desk",
-   "image": "secretaire:dc913a572965d0735c303a14e67a4708c33f1672",
+   "image": "secretaire:c30c6017706f31090b4309dd5863f25b0ff79efe",
    "project": "secretaire",
    "state": "running",
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-23T07:30:18Z",
+   "started_at": "2026-10-23T08:00:20Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -127,13 +115,13 @@
   },
   {
    "name": "potato-push",
-   "image": "secretaire:dc913a572965d0735c303a14e67a4708c33f1672",
+   "image": "secretaire:c30c6017706f31090b4309dd5863f25b0ff79efe",
    "project": "secretaire",
    "state": "running",
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-23T07:30:18Z",
+   "started_at": "2026-10-23T08:00:20Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -159,18 +147,6 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
-   "ports_published": null
-  },
-  {
-   "name": "serene_khorana",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-23T08:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -319,13 +295,11 @@
  ],
  "unmanaged": [
   "condescending_joliot",
-  "condescending_mccarthy",
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
-  "serene_khorana",
   "silly_jones",
   "xenodochial_wilson"
  ],
@@ -371,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T075002Z.log",
-   "started_at": "2026-10-23T07:50:02Z",
+   "log": "nightly.20261023T081002Z.log",
+   "started_at": "2026-10-23T08:10:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -389,8 +363,7 @@
     "space-canon",
     "vibe-kiosk",
     "abc",
-    "media-arts-collective/kreweofvaporwave.github.io",
-    "dog"
+    "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
    "age_h": 0.2
@@ -458,15 +431,15 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261023T073538Z.log",
+    "log": "bibliothecaire.20261023T080538Z.log",
     "result": "success",
-    "turns": 11,
-    "cost_usd": 0.1504,
+    "turns": 6,
+    "cost_usd": 0.108,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-23T07:35:38Z"
+    "at": "2026-10-23T08:05:38Z"
    },
    {
     "repo": "candidature",
@@ -687,12 +660,12 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261023T075644Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 24,
+    "cost_usd": 0.5236,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-23T07:56:44Z"
    },
@@ -844,21 +817,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 51.6
+   "age_h": 51.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 51.1
+   "age_h": 51.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 50.0
+   "age_h": 50.4
   }
  ],
  "verdict": "DOWN",
@@ -874,9 +847,8 @@
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 51.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 51.9h"
  ]
 }
