@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T16:20:01Z",
+ "generated_at": "2026-10-23T16:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T17:20:01Z",
+ "valid_until": "2026-10-23T17:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -345,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T161002Z.log",
-   "started_at": "2026-10-23T16:10:03Z",
+   "log": "nightly.20261023T163002Z.log",
+   "started_at": "2026-10-23T16:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -384,15 +384,15 @@
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261023T093708Z.log",
+    "log": "abletim.20261023T163708Z.log",
     "result": "success",
-    "turns": 11,
-    "cost_usd": 0.1843,
+    "turns": 8,
+    "cost_usd": 0.1375,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/abletim/pull/136",
+    "pr": "https://github.com/hf7y-estate/abletim/pull/137",
     "commented": false,
     "note": null,
-    "at": "2026-10-23T09:37:08Z"
+    "at": "2026-10-23T16:37:08Z"
    },
    {
     "repo": "american-cycle",
@@ -424,9 +424,9 @@
     "result": "success",
     "turns": 12,
     "cost_usd": 0.264,
-    "rc": 0,
+    "rc": 1,
     "pr": "https://github.com/hf7y-estate/baudin/pull/277",
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-23T16:07:13Z"
    },
@@ -660,15 +660,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261023T112647Z.log",
+    "log": "musc-2300.20261023T163015Z.log",
     "result": "success",
-    "turns": 17,
-    "cost_usd": 0.4096,
+    "turns": 19,
+    "cost_usd": 0.4388,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-23T11:26:47Z"
+    "at": "2026-10-23T16:30:15Z"
    },
    {
     "repo": "nine-speakers",
@@ -700,9 +700,9 @@
     "result": null,
     "turns": null,
     "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "rc": 1,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/1717",
+    "commented": true,
     "note": null,
     "at": "2026-10-23T16:19:11Z"
    },
@@ -818,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 59.9
+   "age_h": 60.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 59.4
+   "age_h": 59.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 58.4
+   "age_h": 58.7
   }
  ],
  "verdict": "DOWN",
@@ -848,8 +848,7 @@
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 59.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 60.3h"
  ]
 }
