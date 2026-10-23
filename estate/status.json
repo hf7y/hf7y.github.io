@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T20:00:02Z",
+ "generated_at": "2026-10-23T20:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T21:00:02Z",
+ "valid_until": "2026-10-23T21:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "charming_mayer",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-23T19:58:59Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -114,18 +102,6 @@
    "ports_published": false
   },
   {
-   "name": "modest_wozniak",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-23T20:00:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -182,18 +158,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-23T04:45:12Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "suspicious_hertz",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-23T19:58:57Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -330,16 +294,13 @@
   }
  ],
  "unmanaged": [
-  "charming_mayer",
   "condescending_joliot",
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "modest_wozniak",
   "serene_elgamal",
   "silly_jones",
-  "suspicious_hertz",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -384,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T194003Z.log",
-   "started_at": "2026-10-23T19:40:04Z",
+   "log": "nightly.20261023T201003Z.log",
+   "started_at": "2026-10-23T20:10:04Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -406,7 +367,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -591,15 +552,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261023T193540Z.log",
-    "result": "success",
-    "turns": 5,
-    "cost_usd": 0.1181,
-    "rc": 0,
+    "log": "gardien.20261023T200541Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": 1,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-23T19:35:40Z"
+    "at": "2026-10-23T20:05:41Z"
    },
    {
     "repo": "groc-mangr",
@@ -857,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 63.6
+   "age_h": 63.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 63.1
+   "age_h": 63.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 62.0
+   "age_h": 62.4
   }
  ],
  "verdict": "DOWN",
@@ -882,12 +843,13 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
+  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 63.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 63.9h"
  ]
 }
