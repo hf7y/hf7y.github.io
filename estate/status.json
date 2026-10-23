@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T13:20:02Z",
+ "generated_at": "2026-10-23T13:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T14:20:02Z",
+ "valid_until": "2026-10-23T14:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -345,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T131003Z.log",
-   "started_at": "2026-10-23T13:10:03Z",
+   "log": "nightly.20261023T132639Z.log",
+   "started_at": "2026-10-23T13:26:40Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -480,7 +480,7 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261023T130540Z.log",
+    "log": "crt.20261023T133542Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -488,7 +488,7 @@
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-23T13:05:40Z"
+    "at": "2026-10-23T13:35:42Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -818,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 56.9
+   "age_h": 57.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 56.4
+   "age_h": 56.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 55.4
+   "age_h": 55.7
   }
  ],
  "verdict": "DOWN",
@@ -850,6 +850,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 56.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 57.3h"
  ]
 }
