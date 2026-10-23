@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T23:20:02Z",
+ "generated_at": "2026-10-23T23:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T00:20:02Z",
+ "valid_until": "2026-10-24T00:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -78,18 +78,6 @@
    "ports_published": null
   },
   {
-   "name": "eloquent_payne",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-23T22:30:59Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "goofy_poincare",
    "image": "sha256:0824f615c6d1b40f7292075e63c8a38e26b33aed2a3e2fefe11977dcc6e960c6",
    "project": null,
@@ -112,6 +100,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "nice_zhukovsky",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-23T23:38:40Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -310,8 +310,8 @@
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
   "elated_mccarthy",
-  "eloquent_payne",
   "goofy_poincare",
+  "nice_zhukovsky",
   "serene_elgamal",
   "silly_jones",
   "xenodochial_wilson"
@@ -358,8 +358,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T231002Z.log",
-   "started_at": "2026-10-23T23:10:03Z",
+   "log": "nightly.20261023T233002Z.log",
+   "started_at": "2026-10-23T23:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -577,15 +577,15 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261023T183539Z.log",
+    "log": "groc-mangr.20261023T233536Z.log",
     "result": "success",
-    "turns": 12,
-    "cost_usd": 0.1622,
+    "turns": 5,
+    "cost_usd": 0.0947,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/505",
-    "commented": false,
+    "pr": null,
+    "commented": true,
     "note": null,
-    "at": "2026-10-23T18:35:39Z"
+    "at": "2026-10-23T23:35:36Z"
    },
    {
     "repo": "media-arts-collective.cinema-sanctuary",
@@ -710,12 +710,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261023T222836Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 108,
+    "cost_usd": 4.672,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/2081",
+    "commented": true,
     "note": null,
     "at": "2026-10-23T22:28:36Z"
    },
@@ -831,21 +831,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 66.9
+   "age_h": 67.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 66.4
+   "age_h": 66.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 65.4
+   "age_h": 65.7
   }
  ],
  "verdict": "DOWN",
@@ -862,8 +862,7 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 66.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 67.3h"
  ]
 }
