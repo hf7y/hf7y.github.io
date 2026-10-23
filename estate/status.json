@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T04:40:01Z",
+ "generated_at": "2026-10-23T05:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T05:40:01Z",
+ "valid_until": "2026-10-23T06:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -102,6 +102,18 @@
    "ports_published": false
   },
   {
+   "name": "hungry_payne",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-23T05:00:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -147,6 +159,18 @@
    "exit_code": 1,
    "started_at": "2026-09-28T04:13:52Z",
    "finished_at": "2026-09-28T04:14:09Z",
+   "ports_published": null
+  },
+  {
+   "name": "silly_jones",
+   "image": "node:22",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-23T04:45:12Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -287,7 +311,9 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "hungry_payne",
   "serene_elgamal",
+  "silly_jones",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -332,8 +358,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T043003Z.log",
-   "started_at": "2026-10-23T04:30:04Z",
+   "log": "nightly.20261023T045002Z.log",
+   "started_at": "2026-10-23T04:50:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -350,8 +376,7 @@
     "space-canon",
     "vibe-kiosk",
     "abc",
-    "media-arts-collective/kreweofvaporwave.github.io",
-    "dog"
+    "media-arts-collective/kreweofvaporwave.github.io"
    ],
    "queue_unreadable": [],
    "age_h": 0.2
@@ -805,21 +830,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 48.3
+   "age_h": 48.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 47.8
+   "age_h": 48.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 46.7
+   "age_h": 47.0
   }
  ],
  "verdict": "DOWN",
@@ -839,6 +864,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 48.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 48.6h"
  ]
 }
