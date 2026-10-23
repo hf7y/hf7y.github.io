@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T06:40:01Z",
+ "generated_at": "2026-10-23T07:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T07:40:01Z",
+ "valid_until": "2026-10-23T08:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -162,6 +162,18 @@
    "ports_published": null
   },
   {
+   "name": "upbeat_kalam",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-23T06:46:04Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -172,6 +184,18 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "wizardly_aryabhata",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-23T07:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "wtul-dexter-promote-promote-1",
@@ -301,6 +325,8 @@
   "goofy_poincare",
   "serene_elgamal",
   "silly_jones",
+  "upbeat_kalam",
+  "wizardly_aryabhata",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -345,28 +371,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T063002Z.log",
-   "started_at": "2026-10-23T06:30:03Z",
-   "finished_at": null,
+   "log": "nightly.20261023T065722Z.log",
+   "started_at": "2026-10-23T06:57:22Z",
+   "finished_at": "2026-10-23T06:58:16Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
-   "skipped": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "weave",
-    "space-canon",
-    "vibe-kiosk",
-    "abc",
-    "media-arts-collective/kreweofvaporwave.github.io"
-   ],
+   "dispatched": {
+    "hf7y-estate/secretaire": {
+     "queue": 1,
+     "at": "2026-10-23T06:58:16Z",
+     "outcome": null
+    }
+   },
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -719,15 +739,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261022T045312Z.log",
-    "result": "success",
-    "turns": 32,
-    "cost_usd": 0.4658,
-    "rc": 0,
+    "log": "secretaire.20261023T064455Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-22T04:53:12Z"
+    "at": "2026-10-23T06:44:55Z"
    },
    {
     "repo": "senechal",
@@ -817,28 +837,27 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 50.3
+   "age_h": 50.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 49.8
+   "age_h": 50.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 48.7
+   "age_h": 49.0
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
@@ -851,6 +870,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 50.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 50.6h"
  ]
 }
