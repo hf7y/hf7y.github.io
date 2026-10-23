@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T10:00:02Z",
+ "generated_at": "2026-10-23T10:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T11:00:02Z",
+ "valid_until": "2026-10-23T11:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "affectionate_booth",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-23T10:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -306,7 +294,6 @@
   }
  ],
  "unmanaged": [
-  "affectionate_booth",
   "condescending_joliot",
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
@@ -358,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T095002Z.log",
-   "started_at": "2026-10-23T09:50:03Z",
+   "log": "nightly.20261023T101002Z.log",
+   "started_at": "2026-10-23T10:10:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -376,7 +363,8 @@
     "space-canon",
     "vibe-kiosk",
     "abc",
-    "media-arts-collective/kreweofvaporwave.github.io"
+    "media-arts-collective/kreweofvaporwave.github.io",
+    "dog"
    ],
    "queue_unreadable": [],
    "age_h": 0.2
@@ -504,15 +492,15 @@
    },
    {
     "repo": "dcp-gate-site",
-    "log": "dcp-gate-site.20261019T003044Z.log",
+    "log": "dcp-gate-site.20261023T100551Z.log",
     "result": "success",
-    "turns": 20,
-    "cost_usd": 0.4852,
+    "turns": 10,
+    "cost_usd": 0.1476,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-19T00:30:44Z"
+    "at": "2026-10-23T10:05:51Z"
    },
    {
     "repo": "dog",
@@ -540,15 +528,15 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261022T182511Z.log",
+    "log": "etalon.20261023T100804Z.log",
     "result": "success",
-    "turns": 21,
-    "cost_usd": 0.5599,
+    "turns": 4,
+    "cost_usd": 0.1853,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-22T18:25:11Z"
+    "at": "2026-10-23T10:08:04Z"
    },
    {
     "repo": "front-door",
@@ -830,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 53.6
+   "age_h": 53.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 53.1
+   "age_h": 53.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 52.0
+   "age_h": 52.4
   }
  ],
  "verdict": "DOWN",
@@ -862,6 +850,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 53.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 53.9h"
  ]
 }
