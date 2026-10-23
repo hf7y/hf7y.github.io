@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T21:40:01Z",
+ "generated_at": "2026-10-23T22:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T22:40:01Z",
+ "valid_until": "2026-10-23T23:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -78,14 +78,14 @@
    "ports_published": null
   },
   {
-   "name": "festive_volhard",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "name": "friendly_panini",
+   "image": "senechal-puller:02459d4c21ab",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-23T21:38:53Z",
+   "started_at": "2026-10-23T22:00:02Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -310,7 +310,7 @@
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
   "elated_mccarthy",
-  "festive_volhard",
+  "friendly_panini",
   "goofy_poincare",
   "serene_elgamal",
   "silly_jones",
@@ -358,19 +358,13 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T212003Z.log",
-   "started_at": "2026-10-23T21:20:03Z",
-   "finished_at": "2026-10-23T21:37:57Z",
+   "log": "nightly.20261023T214002Z.log",
+   "started_at": "2026-10-23T21:40:03Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "etalon": {
-     "queue": 1,
-     "at": "2026-10-23T21:37:57Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -548,10 +542,10 @@
    {
     "repo": "etalon",
     "log": "etalon.20261023T213813Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 10,
+    "cost_usd": 0.2325,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -837,27 +831,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 65.3
+   "age_h": 65.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 64.8
+   "age_h": 65.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 63.7
+   "age_h": 64.0
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
@@ -868,6 +863,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 65.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 65.6h"
  ]
 }
