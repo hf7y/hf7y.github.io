@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T14:40:02Z",
+ "generated_at": "2026-10-23T15:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T15:40:02Z",
+ "valid_until": "2026-10-23T16:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -102,6 +102,18 @@
    "ports_published": false
   },
   {
+   "name": "infallible_pare",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-23T15:00:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -158,6 +170,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-23T04:45:12Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "trusting_aryabhata",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-23T14:59:41Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -299,8 +323,10 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "infallible_pare",
   "serene_elgamal",
   "silly_jones",
+  "trusting_aryabhata",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -345,16 +371,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T142002Z.log",
-   "started_at": "2026-10-23T14:20:02Z",
-   "finished_at": "2026-10-23T14:34:48Z",
+   "log": "nightly.20261023T144003Z.log",
+   "started_at": "2026-10-23T14:40:04Z",
+   "finished_at": "2026-10-23T14:56:37Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "etalon": {
+    "senechal": {
      "queue": 1,
-     "at": "2026-10-23T14:34:48Z",
+     "at": "2026-10-23T14:56:37Z",
      "outcome": null
     }
    },
@@ -738,15 +764,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261023T102628Z.log",
-    "result": "success",
-    "turns": 87,
-    "cost_usd": 2.0961,
-    "rc": 0,
+    "log": "senechal.20261023T145657Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-23T10:26:28Z"
+    "at": "2026-10-23T14:56:57Z"
    },
    {
     "repo": "sequestria",
@@ -824,21 +850,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 58.3
+   "age_h": 58.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 57.8
+   "age_h": 58.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 56.7
+   "age_h": 57.0
   }
  ],
  "verdict": "DOWN",
@@ -855,6 +881,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 58.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 58.6h"
  ]
 }
