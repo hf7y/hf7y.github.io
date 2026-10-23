@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T17:20:02Z",
+ "generated_at": "2026-10-23T17:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T18:20:02Z",
+ "valid_until": "2026-10-23T18:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -102,14 +102,14 @@
    "ports_published": false
   },
   {
-   "name": "hungry_mclaren",
+   "name": "infallible_turing",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-23T17:19:48Z",
+   "started_at": "2026-10-23T17:23:05Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -311,7 +311,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "hungry_mclaren",
+  "infallible_turing",
   "serene_elgamal",
   "silly_jones",
   "xenodochial_wilson"
@@ -358,35 +358,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T170002Z.log",
-   "started_at": "2026-10-23T17:00:03Z",
-   "finished_at": "2026-10-23T17:19:17Z",
+   "log": "nightly.20261023T172517Z.log",
+   "started_at": "2026-10-23T17:25:17Z",
+   "finished_at": "2026-10-23T17:38:50Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "baudin": {
+    "hf7y-estate/secretaire": {
      "queue": 1,
-     "at": "2026-10-23T17:19:17Z",
-     "outcome": null
+     "at": "2026-10-23T17:26:10Z",
+     "outcome": "finished"
     }
    },
-   "skipped": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "weave",
-    "space-canon",
-    "vibe-kiosk",
-    "abc",
-    "media-arts-collective/kreweofvaporwave.github.io",
-    "dog"
-   ],
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -440,12 +427,12 @@
    {
     "repo": "baudin",
     "log": "baudin.20261023T171927Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 11,
+    "cost_usd": 0.372,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-23T17:19:27Z"
    },
@@ -571,15 +558,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261023T150542Z.log",
+    "log": "gardien.20261023T173538Z.log",
     "result": "success",
-    "turns": 8,
-    "cost_usd": 0.1348,
+    "turns": 5,
+    "cost_usd": 0.1115,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-23T15:05:42Z"
+    "at": "2026-10-23T17:35:38Z"
    },
    {
     "repo": "groc-mangr",
@@ -739,15 +726,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261023T072058Z.log",
+    "log": "secretaire.20261023T172610Z.log",
     "result": "success",
-    "turns": 95,
-    "cost_usd": 3.6463,
+    "turns": 51,
+    "cost_usd": 1.0056,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/secretaire/pull/379",
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/382",
     "commented": false,
     "note": null,
-    "at": "2026-10-23T07:20:58Z"
+    "at": "2026-10-23T17:26:10Z"
    },
    {
     "repo": "senechal",
@@ -811,15 +798,15 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261019T045823Z.log",
-    "result": "success",
-    "turns": 16,
-    "cost_usd": 0.5567,
-    "rc": 0,
+    "log": "wtul.20261023T172212Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-19T04:58:23Z"
+    "at": "2026-10-23T17:22:12Z"
    }
   ],
   "dispatch_token": {
@@ -837,21 +824,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 60.9
+   "age_h": 61.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 60.4
+   "age_h": 60.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 59.4
+   "age_h": 59.7
   }
  ],
  "verdict": "DOWN",
@@ -860,7 +847,6 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
-  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
@@ -868,6 +854,7 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 60.9h"
+  "wtul: last pass landed nothing -- no PR and no comment on its issue",
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 61.3h"
  ]
 }
