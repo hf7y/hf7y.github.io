@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T21:00:02Z",
+ "generated_at": "2026-10-23T21:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T22:00:02Z",
+ "valid_until": "2026-10-23T22:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -78,18 +78,6 @@
    "ports_published": null
   },
   {
-   "name": "goofy_liskov",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-23T21:00:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "goofy_poincare",
    "image": "sha256:0824f615c6d1b40f7292075e63c8a38e26b33aed2a3e2fefe11977dcc6e960c6",
    "project": null,
@@ -112,6 +100,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "interesting_spence",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-23T21:18:47Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -310,8 +310,8 @@
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
   "elated_mccarthy",
-  "goofy_liskov",
   "goofy_poincare",
+  "interesting_spence",
   "serene_elgamal",
   "silly_jones",
   "xenodochial_wilson"
@@ -358,16 +358,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T203218Z.log",
-   "started_at": "2026-10-23T20:32:19Z",
-   "finished_at": "2026-10-23T20:50:31Z",
+   "log": "nightly.20261023T210003Z.log",
+   "started_at": "2026-10-23T21:00:03Z",
+   "finished_at": "2026-10-23T21:17:53Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "baudin": {
+    "musc-2300": {
      "queue": 1,
-     "at": "2026-10-23T20:50:31Z",
+     "at": "2026-10-23T21:17:53Z",
      "outcome": null
     }
    },
@@ -386,7 +386,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -571,15 +571,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261023T203538Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": 1,
+    "log": "gardien.20261023T210537Z.log",
+    "result": "success",
+    "turns": 6,
+    "cost_usd": 0.1715,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-23T20:35:38Z"
+    "at": "2026-10-23T21:05:37Z"
    },
    {
     "repo": "groc-mangr",
@@ -679,15 +679,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261023T180101Z.log",
-    "result": "success",
-    "turns": 14,
-    "cost_usd": 0.3315,
-    "rc": 0,
+    "log": "musc-2300.20261023T211816Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-23T18:01:01Z"
+    "at": "2026-10-23T21:18:16Z"
    },
    {
     "repo": "nine-speakers",
@@ -837,21 +837,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 64.6
+   "age_h": 64.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 64.1
+   "age_h": 64.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 63.0
+   "age_h": 63.4
   }
  ],
  "verdict": "DOWN",
@@ -861,13 +861,13 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
-  "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
+  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 64.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 64.9h"
  ]
 }
