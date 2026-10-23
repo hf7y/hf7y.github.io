@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T17:00:02Z",
+ "generated_at": "2026-10-23T17:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T18:00:02Z",
+ "valid_until": "2026-10-23T18:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -102,14 +102,14 @@
    "ports_published": false
   },
   {
-   "name": "musing_galileo",
-   "image": "senechal-puller:02459d4c21ab",
+   "name": "hungry_mclaren",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-23T17:00:01Z",
+   "started_at": "2026-10-23T17:19:48Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -311,7 +311,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "musing_galileo",
+  "hungry_mclaren",
   "serene_elgamal",
   "silly_jones",
   "xenodochial_wilson"
@@ -358,16 +358,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T163002Z.log",
-   "started_at": "2026-10-23T16:30:03Z",
-   "finished_at": "2026-10-23T16:54:35Z",
+   "log": "nightly.20261023T170002Z.log",
+   "started_at": "2026-10-23T17:00:03Z",
+   "finished_at": "2026-10-23T17:19:17Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "etalon": {
+    "baudin": {
      "queue": 1,
-     "at": "2026-10-23T16:54:35Z",
+     "at": "2026-10-23T17:19:17Z",
      "outcome": null
     }
    },
@@ -386,7 +386,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -439,15 +439,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261023T160713Z.log",
-    "result": "success",
-    "turns": 12,
-    "cost_usd": 0.264,
-    "rc": 1,
-    "pr": "https://github.com/hf7y-estate/baudin/pull/277",
-    "commented": true,
+    "log": "baudin.20261023T171927Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-23T16:07:13Z"
+    "at": "2026-10-23T17:19:27Z"
    },
    {
     "repo": "bibliothecaire",
@@ -715,15 +715,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261023T161911Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": 1,
+    "log": "realisateur.20261023T170805Z.log",
+    "result": "success",
+    "turns": 5,
+    "cost_usd": 0.2367,
+    "rc": 0,
     "pr": "https://github.com/hf7y-estate/realisateur/pull/1717",
     "commented": true,
     "note": null,
-    "at": "2026-10-23T16:19:11Z"
+    "at": "2026-10-23T17:08:05Z"
    },
    {
     "repo": "scheduler",
@@ -837,21 +837,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 60.6
+   "age_h": 60.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 60.1
+   "age_h": 60.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 59.0
+   "age_h": 59.4
   }
  ],
  "verdict": "DOWN",
@@ -860,6 +860,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
+  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
@@ -867,6 +868,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 60.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 60.9h"
  ]
 }
