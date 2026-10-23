@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T11:20:02Z",
+ "generated_at": "2026-10-23T11:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T12:20:02Z",
+ "valid_until": "2026-10-23T12:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -40,18 +40,6 @@
    "started_at": "2026-10-23T07:36:50Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "dazzling_euler",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-23T11:08:41Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "desk",
@@ -308,7 +296,6 @@
  "unmanaged": [
   "condescending_joliot",
   "container-bibliothecaire-intake-1",
-  "dazzling_euler",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
@@ -358,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T111002Z.log",
-   "started_at": "2026-10-23T11:10:02Z",
+   "log": "nightly.20261023T113003Z.log",
+   "started_at": "2026-10-23T11:30:04Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -434,10 +421,10 @@
    {
     "repo": "baudin",
     "log": "baudin.20261023T110821Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 18,
+    "cost_usd": 0.6089,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -493,15 +480,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261021T021606Z.log",
+    "log": "crt.20261023T113538Z.log",
     "result": "success",
-    "turns": 19,
-    "cost_usd": 0.3767,
+    "turns": 8,
+    "cost_usd": 0.1836,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-21T02:16:06Z"
+    "at": "2026-10-23T11:35:38Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -673,15 +660,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261023T075644Z.log",
+    "log": "musc-2300.20261023T112647Z.log",
     "result": "success",
-    "turns": 24,
-    "cost_usd": 0.5236,
+    "turns": 17,
+    "cost_usd": 0.4096,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-23T07:56:44Z"
+    "at": "2026-10-23T11:26:47Z"
    },
    {
     "repo": "nine-speakers",
@@ -831,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 54.9
+   "age_h": 55.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 54.4
+   "age_h": 54.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 53.4
+   "age_h": 53.7
   }
  ],
  "verdict": "DOWN",
@@ -863,6 +850,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 54.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 55.3h"
  ]
 }
