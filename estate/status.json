@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T20:40:02Z",
+ "generated_at": "2026-10-23T21:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T21:40:02Z",
+ "valid_until": "2026-10-23T22:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -75,6 +75,18 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:07Z",
    "finished_at": "2026-10-18T21:41:12Z",
+   "ports_published": null
+  },
+  {
+   "name": "goofy_liskov",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-23T21:00:02Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -298,6 +310,7 @@
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
   "elated_mccarthy",
+  "goofy_liskov",
   "goofy_poincare",
   "serene_elgamal",
   "silly_jones",
@@ -347,11 +360,17 @@
   "last_run": {
    "log": "nightly.20261023T203218Z.log",
    "started_at": "2026-10-23T20:32:19Z",
-   "finished_at": null,
+   "finished_at": "2026-10-23T20:50:31Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "baudin": {
+     "queue": 1,
+     "at": "2026-10-23T20:50:31Z",
+     "outcome": null
+    }
+   },
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -367,7 +386,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.5
   },
   "passes": [
    {
@@ -420,15 +439,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261023T171927Z.log",
+    "log": "baudin.20261023T205040Z.log",
     "result": "success",
-    "turns": 11,
-    "cost_usd": 0.372,
+    "turns": 6,
+    "cost_usd": 0.2473,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-23T17:19:27Z"
+    "at": "2026-10-23T20:50:40Z"
    },
    {
     "repo": "bibliothecaire",
@@ -818,28 +837,27 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 64.3
+   "age_h": 64.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 63.8
+   "age_h": 64.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 62.7
+   "age_h": 63.0
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
@@ -850,6 +868,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 64.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 64.6h"
  ]
 }
