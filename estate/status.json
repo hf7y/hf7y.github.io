@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-23T22:00:02Z",
+ "generated_at": "2026-10-23T22:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-23T23:00:02Z",
+ "valid_until": "2026-10-23T23:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -75,18 +75,6 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:07Z",
    "finished_at": "2026-10-18T21:41:12Z",
-   "ports_published": null
-  },
-  {
-   "name": "friendly_panini",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-23T22:00:02Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -310,7 +298,6 @@
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
   "elated_mccarthy",
-  "friendly_panini",
   "goofy_poincare",
   "serene_elgamal",
   "silly_jones",
@@ -358,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261023T214002Z.log",
-   "started_at": "2026-10-23T21:40:03Z",
+   "log": "nightly.20261023T221002Z.log",
+   "started_at": "2026-10-23T22:10:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -380,7 +367,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -565,15 +552,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261023T213539Z.log",
+    "log": "gardien.20261023T220542Z.log",
     "result": "success",
-    "turns": 7,
-    "cost_usd": 0.147,
+    "turns": 5,
+    "cost_usd": 0.1146,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-23T21:35:39Z"
+    "at": "2026-10-23T22:05:42Z"
    },
    {
     "repo": "groc-mangr",
@@ -831,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 65.6
+   "age_h": 65.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 65.1
+   "age_h": 65.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 64.0
+   "age_h": 64.4
   }
  ],
  "verdict": "DOWN",
@@ -863,6 +850,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 65.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 65.9h"
  ]
 }
