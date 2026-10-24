@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T19:20:02Z",
+ "generated_at": "2026-10-24T19:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T20:20:02Z",
+ "valid_until": "2026-10-24T20:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -75,18 +75,6 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:07Z",
    "finished_at": "2026-10-18T21:41:12Z",
-   "ports_published": null
-  },
-  {
-   "name": "elated_sanderson",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-24T19:18:22Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -310,7 +298,6 @@
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
   "elated_mccarthy",
-  "elated_sanderson",
   "goofy_poincare",
   "serene_elgamal",
   "silly_jones",
@@ -358,16 +345,16 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T190002Z.log",
-   "started_at": "2026-10-24T19:00:03Z",
-   "finished_at": "2026-10-24T19:17:31Z",
+   "log": "nightly.20261024T192002Z.log",
+   "started_at": "2026-10-24T19:20:02Z",
+   "finished_at": "2026-10-24T19:36:56Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "musc-2300": {
+    "realisateur": {
      "queue": 1,
-     "at": "2026-10-24T19:17:31Z",
+     "at": "2026-10-24T19:36:56Z",
      "outcome": null
     }
    },
@@ -439,7 +426,7 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261024T190535Z.log",
+    "log": "baudin.20261024T193536Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -447,7 +434,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-24T19:05:35Z"
+    "at": "2026-10-24T19:35:36Z"
    },
    {
     "repo": "bibliothecaire",
@@ -680,12 +667,12 @@
    {
     "repo": "musc-2300",
     "log": "musc-2300.20261024T191752Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 15,
+    "cost_usd": 0.306,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-24T19:17:52Z"
    },
@@ -715,15 +702,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261024T183535Z.log",
-    "result": "success",
-    "turns": 9,
-    "cost_usd": 0.553,
-    "rc": 0,
+    "log": "realisateur.20261024T193719Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-24T18:35:35Z"
+    "at": "2026-10-24T19:37:19Z"
    },
    {
     "repo": "scheduler",
@@ -837,21 +824,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 86.9
+   "age_h": 87.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 86.4
+   "age_h": 86.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 85.4
+   "age_h": 85.7
   }
  ],
  "verdict": "DOWN",
@@ -866,9 +853,9 @@
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
-  "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 86.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 87.3h"
  ]
 }
