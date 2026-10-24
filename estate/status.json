@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T01:20:02Z",
+ "generated_at": "2026-10-24T01:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T02:20:02Z",
+ "valid_until": "2026-10-24T02:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-14T19:05:47Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "blissful_goldstine",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-24T01:02:22Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -306,7 +294,6 @@
   }
  ],
  "unmanaged": [
-  "blissful_goldstine",
   "condescending_joliot",
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
@@ -358,20 +345,27 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T010210Z.log",
-   "started_at": "2026-10-24T01:02:10Z",
+   "log": "nightly.20261024T012002Z.log",
+   "started_at": "2026-10-24T01:20:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "vim-arcade": {
-     "queue": 1,
-     "at": "2026-10-24T01:02:15Z",
-     "outcome": null
-    }
-   },
-   "skipped": [],
+   "dispatched": {},
+   "skipped": [
+    "media-arts-collective/CodeDumpster",
+    "media-arts-collective/inv-redirects",
+    "media-arts-collective/nomac.org",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "weave",
+    "space-canon",
+    "vibe-kiosk",
+    "abc",
+    "media-arts-collective/kreweofvaporwave.github.io",
+    "dog"
+   ],
    "queue_unreadable": [],
    "age_h": 0.3
   },
@@ -726,15 +720,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261023T193801Z.log",
+    "log": "secretaire.20261024T013536Z.log",
     "result": "success",
-    "turns": 18,
-    "cost_usd": 0.4898,
+    "turns": 22,
+    "cost_usd": 0.3321,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-23T19:38:01Z"
+    "at": "2026-10-24T01:35:36Z"
    },
    {
     "repo": "senechal",
@@ -787,12 +781,12 @@
    {
     "repo": "vim-arcade",
     "log": "vim-arcade.20261024T010215Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 53,
+    "cost_usd": 2.0128,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/vim-arcade/pull/364",
+    "commented": true,
     "note": null,
     "at": "2026-10-24T01:02:15Z"
    },
@@ -824,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 68.9
+   "age_h": 69.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 68.4
+   "age_h": 68.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 67.4
+   "age_h": 67.7
   }
  ],
  "verdict": "DOWN",
@@ -856,7 +850,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "vim-arcade: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 68.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 69.3h"
  ]
 }
