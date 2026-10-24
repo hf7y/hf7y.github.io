@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T06:00:02Z",
+ "generated_at": "2026-10-24T06:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T07:00:02Z",
+ "valid_until": "2026-10-24T07:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -100,18 +100,6 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
-  },
-  {
-   "name": "modest_pasteur",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-24T06:00:01Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -311,7 +299,6 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "modest_pasteur",
   "serene_elgamal",
   "silly_jones",
   "xenodochial_wilson"
@@ -358,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T055002Z.log",
-   "started_at": "2026-10-24T05:50:03Z",
+   "log": "nightly.20261024T061002Z.log",
+   "started_at": "2026-10-24T06:10:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -445,15 +432,15 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261023T080538Z.log",
+    "log": "bibliothecaire.20261024T060536Z.log",
     "result": "success",
-    "turns": 6,
-    "cost_usd": 0.108,
+    "turns": 5,
+    "cost_usd": 0.0777,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-23T08:05:38Z"
+    "at": "2026-10-24T06:05:36Z"
    },
    {
     "repo": "candidature",
@@ -831,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 73.6
+   "age_h": 73.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 73.1
+   "age_h": 73.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 72.0
+   "age_h": 72.4
   }
  ],
  "verdict": "DOWN",
@@ -863,6 +850,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 73.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 73.9h"
  ]
 }
