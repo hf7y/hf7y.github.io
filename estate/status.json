@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T05:20:01Z",
+ "generated_at": "2026-10-24T05:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T06:20:01Z",
+ "valid_until": "2026-10-24T06:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -345,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T051002Z.log",
-   "started_at": "2026-10-24T05:10:02Z",
+   "log": "nightly.20261024T053002Z.log",
+   "started_at": "2026-10-24T05:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -564,15 +564,15 @@
    },
    {
     "repo": "groc-mangr",
-    "log": "groc-mangr.20261024T003537Z.log",
+    "log": "groc-mangr.20261024T053536Z.log",
     "result": "success",
-    "turns": 5,
-    "cost_usd": 0.097,
+    "turns": 8,
+    "cost_usd": 0.1388,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-24T00:35:37Z"
+    "at": "2026-10-24T05:35:36Z"
    },
    {
     "repo": "media-arts-collective.cinema-sanctuary",
@@ -818,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 72.9
+   "age_h": 73.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 72.4
+   "age_h": 72.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 71.4
+   "age_h": 71.7
   }
  ],
  "verdict": "DOWN",
@@ -843,12 +843,13 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
+  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.cinema-sanctuary: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.grants: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 72.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 73.3h"
  ]
 }
