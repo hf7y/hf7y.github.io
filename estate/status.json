@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T02:40:02Z",
+ "generated_at": "2026-10-24T03:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T03:40:02Z",
+ "valid_until": "2026-10-24T04:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -40,6 +40,18 @@
    "started_at": "2026-10-23T07:36:50Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "cranky_proskuriakova",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-24T03:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "desk",
@@ -296,6 +308,7 @@
  "unmanaged": [
   "condescending_joliot",
   "container-bibliothecaire-intake-1",
+  "cranky_proskuriakova",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
@@ -345,8 +358,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T023003Z.log",
-   "started_at": "2026-10-24T02:30:03Z",
+   "log": "nightly.20261024T025002Z.log",
+   "started_at": "2026-10-24T02:50:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -721,12 +734,12 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261024T023733Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
+    "result": "success",
+    "turns": 18,
+    "cost_usd": 0.2818,
     "rc": null,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-24T02:37:33Z"
    },
@@ -818,21 +831,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 70.3
+   "age_h": 70.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 69.8
+   "age_h": 70.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 68.7
+   "age_h": 69.0
   }
  ],
  "verdict": "DOWN",
@@ -849,7 +862,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 70.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 70.6h"
  ]
 }
