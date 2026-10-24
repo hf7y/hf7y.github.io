@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T13:40:01Z",
+ "generated_at": "2026-10-24T14:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T14:40:01Z",
+ "valid_until": "2026-10-24T15:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -27,6 +27,18 @@
    "exit_code": 56,
    "started_at": "2026-09-23T06:23:20Z",
    "finished_at": "2026-09-23T06:24:30Z",
+   "ports_published": null
+  },
+  {
+   "name": "condescending_mirzakhani",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-24T14:00:01Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -295,6 +307,7 @@
  ],
  "unmanaged": [
   "condescending_joliot",
+  "condescending_mirzakhani",
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
   "elated_mccarthy",
@@ -345,9 +358,9 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T132002Z.log",
-   "started_at": "2026-10-24T13:20:03Z",
-   "finished_at": "2026-10-24T13:33:34Z",
+   "log": "nightly.20261024T135215Z.log",
+   "started_at": "2026-10-24T13:52:15Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -367,7 +380,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -818,27 +831,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 81.3
+   "age_h": 81.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 80.8
+   "age_h": 81.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 79.7
+   "age_h": 80.0
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
@@ -850,6 +864,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 81.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 81.6h"
  ]
 }
