@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T21:20:02Z",
+ "generated_at": "2026-10-24T21:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T22:20:02Z",
+ "valid_until": "2026-10-24T22:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -345,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T211002Z.log",
-   "started_at": "2026-10-24T21:10:03Z",
+   "log": "nightly.20261024T212623Z.log",
+   "started_at": "2026-10-24T21:26:24Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -552,15 +552,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261024T210537Z.log",
+    "log": "gardien.20261024T213536Z.log",
     "result": "success",
     "turns": 5,
-    "cost_usd": 0.1305,
+    "cost_usd": 0.1279,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-24T21:05:37Z"
+    "at": "2026-10-24T21:35:36Z"
    },
    {
     "repo": "groc-mangr",
@@ -818,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 88.9
+   "age_h": 89.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 88.4
+   "age_h": 88.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 87.4
+   "age_h": 87.7
   }
  ],
  "verdict": "DOWN",
@@ -850,6 +850,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 88.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 89.3h"
  ]
 }
