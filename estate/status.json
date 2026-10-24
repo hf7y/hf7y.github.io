@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T11:00:02Z",
+ "generated_at": "2026-10-24T11:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T12:00:02Z",
+ "valid_until": "2026-10-24T12:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -162,6 +162,18 @@
    "ports_published": null
   },
   {
+   "name": "upbeat_ganguly",
+   "image": "baudin:2bc75a70a647e148f70c967942ab67ddcacb8514",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-24T11:19:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -244,18 +256,6 @@
    "started_at": "2026-10-19T00:07:13Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zealous_euclid",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-24T11:00:01Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -313,8 +313,8 @@
   "goofy_poincare",
   "serene_elgamal",
   "silly_jones",
-  "xenodochial_wilson",
-  "zealous_euclid"
+  "upbeat_ganguly",
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -358,8 +358,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T105002Z.log",
-   "started_at": "2026-10-24T10:50:02Z",
+   "log": "nightly.20261024T111002Z.log",
+   "started_at": "2026-10-24T11:10:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -397,7 +397,7 @@
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261024T103848Z.log",
+    "log": "abletim.20261024T110535Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -405,7 +405,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-24T10:38:48Z"
+    "at": "2026-10-24T11:05:35Z"
    },
    {
     "repo": "american-cycle",
@@ -831,21 +831,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 78.6
+   "age_h": 78.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 78.1
+   "age_h": 78.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 77.0
+   "age_h": 77.4
   }
  ],
  "verdict": "DOWN",
@@ -864,6 +864,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 78.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 78.9h"
  ]
 }
