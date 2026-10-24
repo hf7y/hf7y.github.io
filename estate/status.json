@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T14:20:01Z",
+ "generated_at": "2026-10-24T14:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T15:20:01Z",
+ "valid_until": "2026-10-24T15:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -136,6 +136,18 @@
    "started_at": "2026-10-14T19:05:47Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "sad_ganguly",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-24T14:38:44Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "serene_elgamal",
@@ -299,6 +311,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "sad_ganguly",
   "serene_elgamal",
   "silly_jones",
   "xenodochial_wilson"
@@ -345,13 +358,19 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T141002Z.log",
-   "started_at": "2026-10-24T14:10:02Z",
-   "finished_at": null,
+   "log": "nightly.20261024T142407Z.log",
+   "started_at": "2026-10-24T14:24:08Z",
+   "finished_at": "2026-10-24T14:37:54Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "musc-2300": {
+     "queue": 1,
+     "at": "2026-10-24T14:37:54Z",
+     "outcome": null
+    }
+   },
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -367,7 +386,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -384,7 +403,7 @@
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261024T140635Z.log",
+    "log": "abletim.20261024T143535Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -392,7 +411,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-24T14:06:35Z"
+    "at": "2026-10-24T14:35:35Z"
    },
    {
     "repo": "american-cycle",
@@ -660,15 +679,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261024T005500Z.log",
-    "result": "success",
-    "turns": 32,
-    "cost_usd": 0.5798,
-    "rc": 0,
+    "log": "musc-2300.20261024T143815Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-24T00:55:00Z"
+    "at": "2026-10-24T14:38:15Z"
    },
    {
     "repo": "nine-speakers",
@@ -818,28 +837,27 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 81.9
+   "age_h": 82.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 81.4
+   "age_h": 81.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 80.4
+   "age_h": 80.7
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
@@ -851,6 +869,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 81.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 82.3h"
  ]
 }
