@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T18:20:01Z",
+ "generated_at": "2026-10-24T18:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T19:20:01Z",
+ "valid_until": "2026-10-24T19:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -345,26 +345,22 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T181817Z.log",
-   "started_at": "2026-10-24T18:18:17Z",
+   "log": "nightly.20261024T183513Z.log",
+   "started_at": "2026-10-24T18:35:13Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
-   "skipped": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "weave",
-    "space-canon",
-    "vibe-kiosk"
-   ],
+   "dispatched": {
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-24T18:35:35Z",
+     "outcome": null
+    }
+   },
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -417,7 +413,7 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261024T180535Z.log",
+    "log": "baudin.20261024T183535Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -425,7 +421,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-24T18:05:35Z"
+    "at": "2026-10-24T18:35:35Z"
    },
    {
     "repo": "bibliothecaire",
@@ -693,15 +689,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261024T160749Z.log",
-    "result": "success",
-    "turns": 7,
-    "cost_usd": 0.1382,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/1717",
-    "commented": true,
+    "log": "realisateur.20261024T183535Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-24T16:07:49Z"
+    "at": "2026-10-24T18:35:35Z"
    },
    {
     "repo": "scheduler",
@@ -815,21 +811,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 85.9
+   "age_h": 86.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 85.4
+   "age_h": 85.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 84.4
+   "age_h": 84.7
   }
  ],
  "verdict": "DOWN",
@@ -845,7 +841,8 @@
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 85.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 86.3h"
  ]
 }
