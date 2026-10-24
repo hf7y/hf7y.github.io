@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T02:20:02Z",
+ "generated_at": "2026-10-24T02:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T03:20:02Z",
+ "valid_until": "2026-10-24T03:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -345,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T020804Z.log",
-   "started_at": "2026-10-24T02:08:05Z",
+   "log": "nightly.20261024T023003Z.log",
+   "started_at": "2026-10-24T02:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -720,15 +720,15 @@
    },
    {
     "repo": "secretaire",
-    "log": "secretaire.20261024T020536Z.log",
-    "result": "success",
-    "turns": 7,
-    "cost_usd": 0.1487,
-    "rc": 0,
+    "log": "secretaire.20261024T023733Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-24T02:05:36Z"
+    "at": "2026-10-24T02:37:33Z"
    },
    {
     "repo": "senechal",
@@ -818,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 69.9
+   "age_h": 70.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 69.4
+   "age_h": 69.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 68.4
+   "age_h": 68.7
   }
  ],
  "verdict": "DOWN",
@@ -850,6 +850,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 69.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 70.3h"
  ]
 }
