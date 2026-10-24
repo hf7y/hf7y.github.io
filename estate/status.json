@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T10:20:01Z",
+ "generated_at": "2026-10-24T10:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T11:20:01Z",
+ "valid_until": "2026-10-24T11:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -345,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T101002Z.log",
-   "started_at": "2026-10-24T10:10:03Z",
+   "log": "nightly.20261024T103002Z.log",
+   "started_at": "2026-10-24T10:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -384,15 +384,15 @@
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261023T185819Z.log",
-    "result": "success",
-    "turns": 17,
-    "cost_usd": 0.2823,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/abletim/pull/138",
-    "commented": true,
+    "log": "abletim.20261024T103848Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": 1,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-23T18:58:19Z"
+    "at": "2026-10-24T10:38:48Z"
    },
    {
     "repo": "american-cycle",
@@ -818,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 77.9
+   "age_h": 78.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 77.4
+   "age_h": 77.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 76.4
+   "age_h": 76.7
   }
  ],
  "verdict": "DOWN",
@@ -841,6 +841,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
@@ -850,6 +851,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 77.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 78.3h"
  ]
 }
