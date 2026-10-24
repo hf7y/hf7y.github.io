@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T04:20:02Z",
+ "generated_at": "2026-10-24T04:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T05:20:02Z",
+ "valid_until": "2026-10-24T05:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -345,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T041002Z.log",
-   "started_at": "2026-10-24T04:10:03Z",
+   "log": "nightly.20261024T043002Z.log",
+   "started_at": "2026-10-24T04:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -480,15 +480,15 @@
    },
    {
     "repo": "crt",
-    "log": "crt.20261024T040535Z.log",
+    "log": "crt.20261024T043537Z.log",
     "result": "success",
     "turns": 5,
-    "cost_usd": 0.1261,
+    "cost_usd": 0.1314,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-24T04:05:35Z"
+    "at": "2026-10-24T04:35:37Z"
    },
    {
     "repo": "dcp-gate-site",
@@ -818,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 71.9
+   "age_h": 72.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 71.4
+   "age_h": 71.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 70.4
+   "age_h": 70.7
   }
  ],
  "verdict": "DOWN",
@@ -849,6 +849,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 71.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 72.3h"
  ]
 }
