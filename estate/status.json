@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T08:00:01Z",
+ "generated_at": "2026-10-24T08:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-24T09:00:01Z",
+ "valid_until": "2026-10-24T09:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -162,6 +162,18 @@
    "ports_published": null
   },
   {
+   "name": "upbeat_hertz",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-24T08:15:51Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -244,18 +256,6 @@
    "started_at": "2026-10-19T00:07:13Z",
    "finished_at": null,
    "ports_published": null
-  },
-  {
-   "name": "zealous_dubinsky",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-24T08:00:01Z",
-   "finished_at": null,
-   "ports_published": null
   }
  ],
  "services": [
@@ -313,8 +313,8 @@
   "goofy_poincare",
   "serene_elgamal",
   "silly_jones",
-  "xenodochial_wilson",
-  "zealous_dubinsky"
+  "upbeat_hertz",
+  "xenodochial_wilson"
  ],
  "nightly": {
   "armed": true,
@@ -358,8 +358,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261024T075003Z.log",
-   "started_at": "2026-10-24T07:50:04Z",
+   "log": "nightly.20261024T081003Z.log",
+   "started_at": "2026-10-24T08:10:04Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -445,7 +445,7 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261024T073536Z.log",
+    "log": "bibliothecaire.20261024T080537Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -453,7 +453,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-24T07:35:36Z"
+    "at": "2026-10-24T08:05:37Z"
    },
    {
     "repo": "candidature",
@@ -709,15 +709,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261023T222836Z.log",
-    "result": "success",
-    "turns": 108,
-    "cost_usd": 4.672,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/2081",
-    "commented": true,
+    "log": "realisateur.20261024T080745Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-23T22:28:36Z"
+    "at": "2026-10-24T08:07:45Z"
    },
    {
     "repo": "scheduler",
@@ -831,21 +831,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 75.6
+   "age_h": 75.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 75.1
+   "age_h": 75.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 74.0
+   "age_h": 74.4
   }
  ],
  "verdict": "DOWN",
@@ -863,6 +863,7 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 75.6h"
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 75.9h"
  ]
 }
