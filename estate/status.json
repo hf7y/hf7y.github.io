@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-25T15:40:02Z",
+ "generated_at": "2026-10-25T16:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-25T16:40:02Z",
+ "valid_until": "2026-10-25T17:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -100,6 +100,18 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
+  },
+  {
+   "name": "mystifying_lovelace",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-25T16:00:01Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "officejet",
@@ -299,6 +311,7 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
+  "mystifying_lovelace",
   "serene_elgamal",
   "silly_jones",
   "xenodochial_wilson"
@@ -345,8 +358,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261025T153002Z.log",
-   "started_at": "2026-10-25T15:30:02Z",
+   "log": "nightly.20261025T154706Z.log",
+   "started_at": "2026-10-25T15:47:06Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -818,21 +831,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 107.3
+   "age_h": 107.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 106.8
+   "age_h": 107.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 105.7
+   "age_h": 106.0
   }
  ],
  "verdict": "DOWN",
@@ -851,6 +864,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 107.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 107.6h"
  ]
 }
