@@ -2,11 +2,11 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-25T06:37:17Z",
-  "valid_until": "2026-10-25T08:07:17Z",
+  "generated": "2026-10-25T07:37:26Z",
+  "valid_until": "2026-10-25T09:07:26Z",
   "cadence_minutes": 60,
   "verdict": "FILING-STUCK",
-  "why": "17 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 320.0h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
+  "why": "17 inbox entries are tagged for a repo but never filed as a pointer issue, oldest 321.0h -- nothing here retries it; secretaire's ventile has not called mark_filed (crt#306, crt#309)",
   "relay": {
     "answers": true,
     "url": "http://127.0.0.1:8643/mcp",
@@ -54,10 +54,10 @@
     "inbox": {
       "count": 73,
       "window_count": 0,
-      "oldest_age_hours": 1327.6,
+      "oldest_age_hours": 1328.6,
       "unfiled": {
         "count": 17,
-        "oldest_age_hours": 320.0
+        "oldest_age_hours": 321.0
       }
     },
     "senders": [],
