@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-25T20:20:01Z",
+ "generated_at": "2026-10-25T21:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-25T21:20:01Z",
+ "valid_until": "2026-10-25T22:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -13,7 +13,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T19:05:47Z",
+   "started_at": "2026-10-25T20:50:30Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -37,7 +37,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-23T07:36:50Z",
+   "started_at": "2026-10-25T20:50:30Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -49,7 +49,19 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-23T19:45:19Z",
+   "started_at": "2026-10-25T20:50:30Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "ecstatic_varahamihira",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-25T21:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -109,9 +121,9 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-18T21:47:56Z",
+   "started_at": "2026-10-25T20:50:37Z",
    "finished_at": null,
-   "ports_published": true
+   "ports_published": false
   },
   {
    "name": "potato-push",
@@ -121,7 +133,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-23T19:45:19Z",
+   "started_at": "2026-10-25T20:50:30Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -133,7 +145,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T19:05:47Z",
+   "started_at": "2026-10-25T20:52:34Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -150,18 +162,6 @@
    "ports_published": null
   },
   {
-   "name": "silly_jones",
-   "image": "node:22",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-23T04:45:12Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -169,7 +169,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-14T19:05:47Z",
+   "started_at": "2026-10-25T20:52:54Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -181,8 +181,8 @@
    "health": null,
    "restarts": 0,
    "exit_code": 0,
-   "started_at": "2026-10-14T19:05:52Z",
-   "finished_at": "2026-10-14T19:05:58Z",
+   "started_at": "2026-10-25T20:50:39Z",
+   "finished_at": "2026-10-25T20:50:48Z",
    "ports_published": null
   },
   {
@@ -193,8 +193,8 @@
    "health": null,
    "restarts": 0,
    "exit_code": 1,
-   "started_at": "2026-10-14T19:05:53Z",
-   "finished_at": "2026-10-14T19:06:08Z",
+   "started_at": "2026-10-25T20:50:40Z",
+   "finished_at": "2026-10-25T20:53:27Z",
    "ports_published": null
   },
   {
@@ -217,7 +217,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-18T02:33:45Z",
+   "started_at": "2026-10-25T20:53:18Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -229,7 +229,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-18T02:37:06Z",
+   "started_at": "2026-10-25T20:53:19Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -239,9 +239,9 @@
    "project": "zaxon",
    "state": "running",
    "health": "healthy",
-   "restarts": 3,
+   "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-19T00:07:13Z",
+   "started_at": "2026-10-25T20:53:19Z",
    "finished_at": null,
    "ports_published": null
   }
@@ -296,11 +296,11 @@
  "unmanaged": [
   "condescending_joliot",
   "container-bibliothecaire-intake-1",
+  "ecstatic_varahamihira",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
   "serene_elgamal",
-  "silly_jones",
   "xenodochial_wilson"
  ],
  "nightly": {
@@ -345,9 +345,9 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261025T201003Z.log",
-   "started_at": "2026-10-25T20:10:03Z",
-   "finished_at": null,
+   "log": "nightly.20261025T202541Z.log",
+   "started_at": "2026-10-25T20:25:41Z",
+   "finished_at": "2026-10-25T20:41:51Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -366,10 +366,8 @@
     "media-arts-collective/kreweofvaporwave.github.io",
     "dog"
    ],
-   "queue_unreadable": [
-    "sequestria"
-   ],
-   "age_h": 0.2
+   "queue_unreadable": [],
+   "age_h": 0.6
   },
   "passes": [
    {
@@ -422,7 +420,7 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261025T200537Z.log",
+    "log": "baudin.20261025T203534Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -430,7 +428,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-25T20:05:37Z"
+    "at": "2026-10-25T20:35:34Z"
    },
    {
     "repo": "bibliothecaire",
@@ -820,29 +818,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 111.9
+   "age_h": 112.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 111.4
+   "age_h": 112.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 110.4
+   "age_h": 111.0
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
-  "sequestria: the nightly could not read its queue and skipped it",
+  "officejet: running with NONE of its declared ports published",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
@@ -855,6 +852,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 111.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 112.6h"
  ]
 }
