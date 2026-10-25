@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-25T22:00:02Z",
+ "generated_at": "2026-10-25T22:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-25T23:00:02Z",
+ "valid_until": "2026-10-25T23:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -122,18 +122,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-25T20:50:30Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "reverent_boyd",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-25T22:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -299,7 +287,6 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "reverent_boyd",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -345,8 +332,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261025T215002Z.log",
-   "started_at": "2026-10-25T21:50:03Z",
+   "log": "nightly.20261025T220610Z.log",
+   "started_at": "2026-10-25T22:06:11Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -420,15 +407,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261025T213634Z.log",
+    "log": "baudin.20261025T220639Z.log",
     "result": "success",
     "turns": 9,
-    "cost_usd": 0.1618,
+    "cost_usd": 0.1778,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-25T21:36:34Z"
+    "at": "2026-10-25T22:06:39Z"
    },
    {
     "repo": "bibliothecaire",
@@ -818,21 +805,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 113.6
+   "age_h": 113.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 113.1
+   "age_h": 113.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 112.0
+   "age_h": 112.4
   }
  ],
  "verdict": "DOWN",
@@ -851,6 +838,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 113.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 113.9h"
  ]
 }
