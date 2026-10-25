@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-25T22:40:01Z",
+ "generated_at": "2026-10-25T23:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-25T23:40:01Z",
+ "valid_until": "2026-10-26T00:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -75,6 +75,18 @@
    "exit_code": 152,
    "started_at": "2026-10-18T21:41:07Z",
    "finished_at": "2026-10-18T21:41:12Z",
+   "ports_published": null
+  },
+  {
+   "name": "focused_lehmann",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-25T23:00:01Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -286,6 +298,7 @@
   "container-bibliothecaire-intake-1",
   "elastic_antonelli",
   "elated_mccarthy",
+  "focused_lehmann",
   "goofy_poincare",
   "serene_elgamal",
   "xenodochial_wilson"
@@ -332,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261025T223003Z.log",
-   "started_at": "2026-10-25T22:30:03Z",
+   "log": "nightly.20261025T225002Z.log",
+   "started_at": "2026-10-25T22:50:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -805,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 114.3
+   "age_h": 114.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 113.8
+   "age_h": 114.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 112.7
+   "age_h": 113.0
   }
  ],
  "verdict": "DOWN",
@@ -839,6 +852,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 114.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 114.6h"
  ]
 }
