@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-25T10:20:02Z",
+ "generated_at": "2026-10-25T10:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-25T11:20:02Z",
+ "valid_until": "2026-10-25T11:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -345,9 +345,9 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261025T101001Z.log",
-   "started_at": "2026-10-25T10:10:02Z",
-   "finished_at": null,
+   "log": "nightly.20261025T102400Z.log",
+   "started_at": "2026-10-25T10:24:01Z",
+   "finished_at": "2026-10-25T10:39:59Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -367,7 +367,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -552,7 +552,7 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261025T100537Z.log",
+    "log": "gardien.20261025T103604Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -560,7 +560,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-25T10:05:37Z"
+    "at": "2026-10-25T10:36:04Z"
    },
    {
     "repo": "groc-mangr",
@@ -818,28 +818,27 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 101.9
+   "age_h": 102.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 101.4
+   "age_h": 101.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 100.4
+   "age_h": 100.7
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
@@ -851,6 +850,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 101.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 102.3h"
  ]
 }
