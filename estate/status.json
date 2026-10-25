@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-25T22:20:01Z",
+ "generated_at": "2026-10-25T22:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-25T23:20:01Z",
+ "valid_until": "2026-10-25T23:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -332,8 +332,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261025T220610Z.log",
-   "started_at": "2026-10-25T22:06:11Z",
+   "log": "nightly.20261025T223003Z.log",
+   "started_at": "2026-10-25T22:30:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -407,15 +407,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261025T220639Z.log",
-    "result": "success",
-    "turns": 9,
-    "cost_usd": 0.1778,
-    "rc": 0,
+    "log": "baudin.20261025T223643Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-25T22:06:39Z"
+    "at": "2026-10-25T22:36:43Z"
    },
    {
     "repo": "bibliothecaire",
@@ -515,15 +515,15 @@
    },
    {
     "repo": "etalon",
-    "log": "etalon.20261025T190632Z.log",
+    "log": "etalon.20261025T222157Z.log",
     "result": "success",
-    "turns": 43,
-    "cost_usd": 0.9947,
+    "turns": 37,
+    "cost_usd": 0.7618,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-25T19:06:32Z"
+    "at": "2026-10-25T22:21:57Z"
    },
    {
     "repo": "front-door",
@@ -805,21 +805,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 113.9
+   "age_h": 114.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 113.4
+   "age_h": 113.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 112.4
+   "age_h": 112.7
   }
  ],
  "verdict": "DOWN",
@@ -830,6 +830,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
+  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "gardien: last pass landed nothing -- no PR and no comment on its issue",
   "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
@@ -838,6 +839,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 113.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 114.3h"
  ]
 }
