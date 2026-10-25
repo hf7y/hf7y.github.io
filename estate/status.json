@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-25T01:20:02Z",
+ "generated_at": "2026-10-25T01:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-25T02:20:02Z",
+ "valid_until": "2026-10-25T02:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -345,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261025T011002Z.log",
-   "started_at": "2026-10-25T01:10:02Z",
+   "log": "nightly.20261025T012625Z.log",
+   "started_at": "2026-10-25T01:26:26Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -552,7 +552,7 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261025T003534Z.log",
+    "log": "gardien.20261025T013540Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -560,7 +560,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-25T00:35:34Z"
+    "at": "2026-10-25T01:35:40Z"
    },
    {
     "repo": "groc-mangr",
@@ -818,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 92.9
+   "age_h": 93.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 92.4
+   "age_h": 92.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 91.4
+   "age_h": 91.7
   }
  ],
  "verdict": "DOWN",
@@ -851,6 +851,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 92.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 93.3h"
  ]
 }
