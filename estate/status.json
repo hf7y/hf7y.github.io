@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-25T14:00:01Z",
+ "generated_at": "2026-10-25T14:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-25T15:00:01Z",
+ "valid_until": "2026-10-25T15:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -50,18 +50,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-23T19:45:19Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "distracted_rubin",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-25T14:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -308,7 +296,6 @@
  "unmanaged": [
   "condescending_joliot",
   "container-bibliothecaire-intake-1",
-  "distracted_rubin",
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
@@ -358,8 +345,8 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261025T135002Z.log",
-   "started_at": "2026-10-25T13:50:03Z",
+   "log": "nightly.20261025T141002Z.log",
+   "started_at": "2026-10-25T14:10:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -565,7 +552,7 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261025T133537Z.log",
+    "log": "gardien.20261025T140535Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -573,7 +560,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-25T13:35:37Z"
+    "at": "2026-10-25T14:05:35Z"
    },
    {
     "repo": "groc-mangr",
@@ -831,21 +818,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 105.6
+   "age_h": 105.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 105.1
+   "age_h": 105.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 104.0
+   "age_h": 104.4
   }
  ],
  "verdict": "DOWN",
@@ -864,6 +851,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 105.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 105.9h"
  ]
 }
