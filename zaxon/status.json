@@ -2,8 +2,8 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-26T14:00:48Z",
-  "valid_until": "2026-10-26T15:30:48Z",
+  "generated": "2026-10-26T15:00:48Z",
+  "valid_until": "2026-10-26T16:30:48Z",
   "cadence_minutes": 60,
   "verdict": "DOWN",
   "why": "the relay does not answer -- no question can reach Zach",
@@ -16,17 +16,17 @@
     {
       "name": "zaxon-watcher",
       "state": "exited",
-      "status": "Exited (1) 5 hours ago"
+      "status": "Exited (1) 6 hours ago"
     },
     {
       "name": "zaxon-relay",
       "state": "exited",
-      "status": "Exited (1) 5 hours ago"
+      "status": "Exited (1) 6 hours ago"
     },
     {
       "name": "zaxon-gateway",
       "state": "restarting",
-      "status": "Restarting (137) 1 second ago"
+      "status": "Restarting (137) 55 seconds ago"
     }
   ],
   "hazards": [
@@ -54,10 +54,10 @@
     "inbox": {
       "count": 73,
       "window_count": 0,
-      "oldest_age_hours": 1359.0,
+      "oldest_age_hours": 1360.0,
       "unfiled": {
         "count": 17,
-        "oldest_age_hours": 351.4
+        "oldest_age_hours": 352.4
       }
     },
     "senders": [],
