@@ -2,34 +2,39 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-26T08:37:05Z",
-  "valid_until": "2026-10-26T10:07:05Z",
+  "generated": "2026-10-26T09:00:47Z",
+  "valid_until": "2026-10-26T10:30:47Z",
   "cadence_minutes": 60,
   "verdict": "DOWN",
   "why": "the relay does not answer -- no question can reach Zach",
   "relay": {
     "answers": false,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 10138
+    "ms": 0
   },
   "containers": [
     {
       "name": "zaxon-watcher",
-      "state": "running",
-      "status": "Up 12 hours (healthy)"
+      "state": "exited",
+      "status": "Exited (1) 10 minutes ago"
     },
     {
       "name": "zaxon-relay",
-      "state": "running",
-      "status": "Up 12 hours (healthy)"
+      "state": "exited",
+      "status": "Exited (1) 10 minutes ago"
     },
     {
       "name": "zaxon-gateway",
-      "state": "running",
-      "status": "Up 12 hours"
+      "state": "restarting",
+      "status": "Restarting (137) 46 seconds ago"
     }
   ],
-  "hazards": [],
+  "hazards": [
+    {
+      "distro": "vaporwave",
+      "why": "a registered WSL distro boots hermes-gateway.service and seizes the linked-device session"
+    }
+  ],
   "ledger": {
     "readable": true,
     "path": "/srv/zaxon/data/zaxon_relay/tickets.db",
@@ -49,10 +54,10 @@
     "inbox": {
       "count": 73,
       "window_count": 0,
-      "oldest_age_hours": 1353.6,
+      "oldest_age_hours": 1354.0,
       "unfiled": {
         "count": 17,
-        "oldest_age_hours": 346.0
+        "oldest_age_hours": 346.4
       }
     },
     "senders": [],
