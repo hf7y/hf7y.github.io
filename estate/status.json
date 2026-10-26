@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T03:20:02Z",
+ "generated_at": "2026-10-26T03:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-26T04:20:02Z",
+ "valid_until": "2026-10-26T04:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,30 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-25T20:50:30Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "beautiful_elbakyan",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-26T03:03:42Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "boring_khayyam",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-26T03:05:23Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -66,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "dreamy_snyder",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-26T03:09:11Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -98,18 +62,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-25T20:50:30Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "priceless_colden",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-26T03:03:28Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -222,15 +174,11 @@
   }
  ],
  "unmanaged": [
-  "beautiful_elbakyan",
-  "boring_khayyam",
-  "container-bibliothecaire-intake-1",
-  "dreamy_snyder",
-  "priceless_colden"
+  "container-bibliothecaire-intake-1"
  ],
  "nightly": {
   "armed": true,
-  "cron_line": "*/10 * * * * /srv/agent/rel/18da3e64e270f05bb780fa6f3122ca69bd3f2f63/agent/acted.sh # realisateur:agent-burn:RUNNER",
+  "cron_line": "*/10 * * * * /srv/agent/rel/d7116c4e1ae4b878373480b18e4d8fea42ba100d/agent/acted.sh # realisateur:agent-burn:RUNNER",
   "repos": [
    "abc",
    "abletim",
@@ -267,11 +215,12 @@
    "space-canon",
    "vibe-kiosk",
    "vim-arcade",
-   "wtul"
+   "wtul",
+   "zach.audio-apply"
   ],
   "last_run": {
-   "log": "nightly.20261026T031002Z.log",
-   "started_at": "2026-10-26T03:10:02Z",
+   "log": "nightly.20261026T033002Z.log",
+   "started_at": "2026-10-26T03:30:02Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -357,15 +306,15 @@
    },
    {
     "repo": "bibliothecaire",
-    "log": "bibliothecaire.20261026T030537Z.log",
+    "log": "bibliothecaire.20261026T033536Z.log",
     "result": "success",
-    "turns": 14,
-    "cost_usd": 0.2201,
+    "turns": 8,
+    "cost_usd": 0.1612,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-26T03:05:37Z"
+    "at": "2026-10-26T03:35:36Z"
    },
    {
     "repo": "candidature",
@@ -490,38 +439,38 @@
    {
     "repo": "groc-mangr",
     "log": "groc-mangr.20261026T030450Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 109,
+    "cost_usd": 4.5677,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/groc-mangr/pull/506",
     "commented": false,
     "note": null,
     "at": "2026-10-26T03:04:50Z"
    },
    {
     "repo": "media-arts-collective.cinema-sanctuary",
-    "log": "media-arts-collective.cinema-sanctuary.20261026T030449Z.log",
+    "log": "media-arts-collective.cinema-sanctuary.20261026T032142Z.log",
     "result": "success",
-    "turns": 25,
-    "cost_usd": 0.6775,
+    "turns": 28,
+    "cost_usd": 0.913,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-26T03:04:49Z"
+    "at": "2026-10-26T03:21:42Z"
    },
    {
     "repo": "media-arts-collective.grants",
-    "log": "media-arts-collective.grants.20261024T062451Z.log",
+    "log": "media-arts-collective.grants.20261026T032141Z.log",
     "result": "success",
-    "turns": 45,
-    "cost_usd": 1.1424,
+    "turns": 64,
+    "cost_usd": 2.3852,
     "rc": 0,
-    "pr": "https://github.com/media-arts-collective/grants/pull/36",
-    "commented": false,
+    "pr": "https://github.com/media-arts-collective/grants/pull/39",
+    "commented": true,
     "note": null,
-    "at": "2026-10-24T06:24:51Z"
+    "at": "2026-10-26T03:21:41Z"
    },
    {
     "repo": "media-arts-collective.inventory-app",
@@ -585,15 +534,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261026T030500Z.log",
+    "log": "musc-2300.20261026T032158Z.log",
     "result": "success",
-    "turns": 19,
-    "cost_usd": 0.4876,
+    "turns": 15,
+    "cost_usd": 0.3824,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-26T03:05:00Z"
+    "at": "2026-10-26T03:21:58Z"
    },
    {
     "repo": "nine-speakers",
@@ -621,24 +570,24 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261026T030501Z.log",
+    "log": "realisateur.20261026T032200Z.log",
     "result": "success",
-    "turns": 7,
-    "cost_usd": 0.3864,
+    "turns": 8,
+    "cost_usd": 0.3406,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-26T03:05:01Z"
+    "at": "2026-10-26T03:22:00Z"
    },
    {
     "repo": "scheduler",
     "log": "scheduler.20261026T030833Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 44,
+    "cost_usd": 1.4452,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/scheduler/pull/865",
     "commented": false,
     "note": null,
     "at": "2026-10-26T03:08:33Z"
@@ -646,11 +595,11 @@
    {
     "repo": "secretaire",
     "log": "secretaire.20261026T030242Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 60,
+    "cost_usd": 3.1021,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/secretaire/pull/385",
     "commented": false,
     "note": null,
     "at": "2026-10-26T03:02:42Z"
@@ -658,11 +607,11 @@
    {
     "repo": "senechal",
     "log": "senechal.20261026T030057Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 112,
+    "cost_usd": 4.7169,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1591",
     "commented": false,
     "note": null,
     "at": "2026-10-26T03:00:57Z"
@@ -726,6 +675,18 @@
     "commented": false,
     "note": null,
     "at": "2026-10-26T03:00:53Z"
+   },
+   {
+    "repo": "zach.audio-apply",
+    "log": "zach.audio-apply.20261026T032140Z.log",
+    "result": "success",
+    "turns": 29,
+    "cost_usd": 0.791,
+    "rc": 0,
+    "pr": null,
+    "commented": false,
+    "note": null,
+    "at": "2026-10-26T03:21:40Z"
    }
   ],
   "dispatch_token": {
@@ -743,21 +704,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 118.9
+   "age_h": 119.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 118.4
+   "age_h": 118.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 117.4
+   "age_h": 117.7
   }
  ],
  "verdict": "DOWN",
@@ -769,14 +730,11 @@
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
-  "groc-mangr: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "scheduler: last pass landed nothing -- no PR and no comment on its issue",
-  "secretaire: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 118.9h"
+  "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 119.3h"
  ]
 }
