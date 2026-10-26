@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T07:00:02Z",
+ "generated_at": "2026-10-26T07:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-26T08:00:02Z",
+ "valid_until": "2026-10-26T08:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-26T03:45:35Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "nervous_lalande",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-26T07:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -186,8 +174,7 @@
   }
  ],
  "unmanaged": [
-  "container-bibliothecaire-intake-1",
-  "nervous_lalande"
+  "container-bibliothecaire-intake-1"
  ],
  "nightly": {
   "armed": true,
@@ -232,8 +219,8 @@
    "zach.audio-apply"
   ],
   "last_run": {
-   "log": "nightly.20261026T064002Z.log",
-   "started_at": "2026-10-26T06:40:02Z",
+   "log": "nightly.20261026T071002Z.log",
+   "started_at": "2026-10-26T07:10:03Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -254,7 +241,7 @@
     "candidature"
    ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -271,15 +258,15 @@
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261026T063822Z.log",
+    "log": "abletim.20261026T070852Z.log",
     "result": "success",
-    "turns": 9,
-    "cost_usd": 0.1593,
+    "turns": 8,
+    "cost_usd": 0.1555,
     "rc": 0,
-    "pr": "https://github.com/hf7y-estate/abletim/pull/141",
-    "commented": true,
+    "pr": "https://github.com/hf7y-estate/abletim/pull/142",
+    "commented": false,
     "note": null,
-    "at": "2026-10-26T06:38:22Z"
+    "at": "2026-10-26T07:08:52Z"
    },
    {
     "repo": "american-cycle",
@@ -307,15 +294,15 @@
    },
    {
     "repo": "baudin",
-    "log": "baudin.20261026T035420Z.log",
+    "log": "baudin.20261026T070748Z.log",
     "result": "success",
-    "turns": 11,
-    "cost_usd": 0.387,
+    "turns": 15,
+    "cost_usd": 0.5029,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-26T03:54:20Z"
+    "at": "2026-10-26T07:07:48Z"
    },
    {
     "repo": "bibliothecaire",
@@ -717,21 +704,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 122.6
+   "age_h": 122.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 122.1
+   "age_h": 122.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 121.0
+   "age_h": 121.4
   }
  ],
  "verdict": "DOWN",
@@ -742,11 +729,12 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
+  "baudin: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 122.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 122.9h"
  ]
 }
