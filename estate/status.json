@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T12:20:02Z",
+ "generated_at": "2026-10-26T12:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-26T13:20:02Z",
+ "valid_until": "2026-10-26T13:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -83,9 +83,9 @@
    "project": "whisper",
    "state": "restarting",
    "health": "unhealthy",
-   "restarts": 212,
+   "restarts": 231,
    "exit_code": null,
-   "started_at": "2026-10-26T12:19:23Z",
+   "started_at": "2026-10-26T12:39:26Z",
    "finished_at": null,
    "ports_published": false
   },
@@ -95,9 +95,9 @@
    "project": "zaxon",
    "state": "restarting",
    "health": null,
-   "restarts": 212,
+   "restarts": 231,
    "exit_code": null,
-   "started_at": "2026-10-26T12:19:24Z",
+   "started_at": "2026-10-26T12:39:27Z",
    "finished_at": null,
    "ports_published": false
   },
@@ -264,7 +264,7 @@
    "queue_unreadable": [
     "abletim"
    ],
-   "age_h": 5.2
+   "age_h": 5.5
   },
   "passes": [
    {
@@ -727,21 +727,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 127.9
+   "age_h": 128.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 127.4
+   "age_h": 127.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 126.4
+   "age_h": 126.7
   }
  ],
  "verdict": "DOWN",
@@ -761,6 +761,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 127.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 128.3h"
  ]
 }
