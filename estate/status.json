@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T02:00:02Z",
+ "generated_at": "2026-10-26T02:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-26T03:00:02Z",
+ "valid_until": "2026-10-26T03:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -30,18 +30,6 @@
    "ports_published": null
   },
   {
-   "name": "focused_allen",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-26T01:57:03Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -62,18 +50,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-25T20:50:30Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "reverent_rosalind",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-26T02:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -185,10 +161,7 @@
    "on_demand": false
   }
  ],
- "unmanaged": [
-  "focused_allen",
-  "reverent_rosalind"
- ],
+ "unmanaged": [],
  "nightly": {
   "armed": true,
   "cron_line": "*/10 * * * * /srv/agent/rel/18da3e64e270f05bb780fa6f3122ca69bd3f2f63/agent/acted.sh # realisateur:agent-burn:RUNNER",
@@ -231,19 +204,13 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261026T014002Z.log",
-   "started_at": "2026-10-26T01:40:02Z",
-   "finished_at": "2026-10-26T01:56:21Z",
+   "log": "nightly.20261026T021002Z.log",
+   "started_at": "2026-10-26T02:10:03Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "etalon": {
-     "queue": 1,
-     "at": "2026-10-26T01:56:21Z",
-     "outcome": null
-    }
-   },
+   "dispatched": {},
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -259,7 +226,7 @@
     "dog"
    ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -421,10 +388,10 @@
    {
     "repo": "etalon",
     "log": "etalon.20261026T015630Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 37,
+    "cost_usd": 0.8429,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -710,21 +677,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 117.6
+   "age_h": 117.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 117.1
+   "age_h": 117.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 116.0
+   "age_h": 116.4
   }
  ],
  "verdict": "DOWN",
@@ -732,6 +699,7 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "officejet: running with NONE of its declared ports published",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
@@ -742,6 +710,6 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 117.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 117.9h"
  ]
 }
