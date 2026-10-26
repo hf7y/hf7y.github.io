@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T13:00:02Z",
+ "generated_at": "2026-10-26T13:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-26T14:00:02Z",
+ "valid_until": "2026-10-26T14:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-26T03:45:35Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "eager_torvalds",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-26T13:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -95,9 +83,9 @@
    "project": "whisper",
    "state": "restarting",
    "health": "unhealthy",
-   "restarts": 250,
+   "restarts": 269,
    "exit_code": null,
-   "started_at": "2026-10-26T12:59:29Z",
+   "started_at": "2026-10-26T13:19:32Z",
    "finished_at": null,
    "ports_published": false
   },
@@ -107,9 +95,9 @@
    "project": "zaxon",
    "state": "restarting",
    "health": null,
-   "restarts": 250,
+   "restarts": 269,
    "exit_code": null,
-   "started_at": "2026-10-26T12:59:30Z",
+   "started_at": "2026-10-26T13:19:33Z",
    "finished_at": null,
    "ports_published": false
   },
@@ -186,8 +174,7 @@
   }
  ],
  "unmanaged": [
-  "container-bibliothecaire-intake-1",
-  "eager_torvalds"
+  "container-bibliothecaire-intake-1"
  ],
  "nightly": {
   "armed": true,
@@ -277,7 +264,7 @@
    "queue_unreadable": [
     "abletim"
    ],
-   "age_h": 5.8
+   "age_h": 6.2
   },
   "passes": [
    {
@@ -740,21 +727,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 128.6
+   "age_h": 128.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 128.1
+   "age_h": 128.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 127.0
+   "age_h": 127.4
   }
  ],
  "verdict": "DOWN",
@@ -774,6 +761,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 128.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 128.9h"
  ]
 }
