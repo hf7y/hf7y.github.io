@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T09:40:02Z",
+ "generated_at": "2026-10-26T10:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-26T10:40:02Z",
+ "valid_until": "2026-10-26T11:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-25T20:50:30Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "compassionate_mahavira",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-26T10:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -38,6 +50,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-26T03:45:35Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "intelligent_elgamal",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-26T09:55:03Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -95,9 +119,9 @@
    "project": "whisper",
    "state": "restarting",
    "health": "unhealthy",
-   "restarts": 60,
+   "restarts": 79,
    "exit_code": null,
-   "started_at": "2026-10-26T09:39:00Z",
+   "started_at": "2026-10-26T09:59:03Z",
    "finished_at": null,
    "ports_published": false
   },
@@ -107,9 +131,9 @@
    "project": "zaxon",
    "state": "restarting",
    "health": null,
-   "restarts": 60,
+   "restarts": 79,
    "exit_code": null,
-   "started_at": "2026-10-26T09:39:00Z",
+   "started_at": "2026-10-26T09:59:03Z",
    "finished_at": null,
    "ports_published": false
   },
@@ -186,7 +210,9 @@
   }
  ],
  "unmanaged": [
+  "compassionate_mahavira",
   "container-bibliothecaire-intake-1",
+  "intelligent_elgamal",
   "suspicious_jemison"
  ],
  "nightly": {
@@ -277,7 +303,7 @@
    "queue_unreadable": [
     "abletim"
    ],
-   "age_h": 2.5
+   "age_h": 2.8
   },
   "passes": [
    {
@@ -740,21 +766,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 125.3
+   "age_h": 125.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 124.8
+   "age_h": 125.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 123.7
+   "age_h": 124.0
   }
  ],
  "verdict": "DOWN",
@@ -775,6 +801,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 125.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 125.6h"
  ]
 }
