@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T06:20:01Z",
+ "generated_at": "2026-10-26T06:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-26T07:20:01Z",
+ "valid_until": "2026-10-26T07:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,14 +42,26 @@
    "ports_published": null
   },
   {
-   "name": "frosty_heisenberg",
+   "name": "eager_borg",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-26T06:18:24Z",
+   "started_at": "2026-10-26T06:39:32Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "modest_kowalevski",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-26T06:32:21Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -187,7 +199,8 @@
  ],
  "unmanaged": [
   "container-bibliothecaire-intake-1",
-  "frosty_heisenberg"
+  "eager_borg",
+  "modest_kowalevski"
  ],
  "nightly": {
   "armed": true,
@@ -234,11 +247,17 @@
   "last_run": {
    "log": "nightly.20261026T060002Z.log",
    "started_at": "2026-10-26T06:00:03Z",
-   "finished_at": null,
+   "finished_at": "2026-10-26T06:31:39Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "musc-2300": {
+     "queue": 1,
+     "at": "2026-10-26T06:31:39Z",
+     "outcome": null
+    }
+   },
    "skipped": [
     "media-arts-collective/CodeDumpster",
     "media-arts-collective/inv-redirects",
@@ -254,7 +273,7 @@
     "candidature"
    ],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.7
   },
   "passes": [
    {
@@ -271,15 +290,15 @@
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261026T030451Z.log",
-    "result": "success",
-    "turns": 50,
-    "cost_usd": 1.8557,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/abletim/pull/140",
-    "commented": true,
+    "log": "abletim.20261026T063822Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-26T03:04:51Z"
+    "at": "2026-10-26T06:38:22Z"
    },
    {
     "repo": "american-cycle",
@@ -547,15 +566,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261026T032158Z.log",
-    "result": "success",
-    "turns": 15,
-    "cost_usd": 0.3824,
-    "rc": 0,
+    "log": "musc-2300.20261026T063154Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-26T03:21:58Z"
+    "at": "2026-10-26T06:31:54Z"
    },
    {
     "repo": "nine-speakers",
@@ -717,21 +736,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 121.9
+   "age_h": 122.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 121.4
+   "age_h": 121.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 120.4
+   "age_h": 120.7
   }
  ],
  "verdict": "DOWN",
@@ -739,8 +758,8 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "officejet: running with NONE of its declared ports published",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
@@ -748,6 +767,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 121.9h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 122.3h"
  ]
 }
