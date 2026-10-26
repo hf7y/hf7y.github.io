@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T04:40:02Z",
+ "generated_at": "2026-10-26T05:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-26T05:40:02Z",
+ "valid_until": "2026-10-26T06:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -62,6 +62,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-26T03:45:35Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "reverent_sammet",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-26T05:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -174,7 +186,8 @@
   }
  ],
  "unmanaged": [
-  "container-bibliothecaire-intake-1"
+  "container-bibliothecaire-intake-1",
+  "reverent_sammet"
  ],
  "nightly": {
   "armed": true,
@@ -234,7 +247,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.9
   },
   "passes": [
    {
@@ -697,21 +710,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 120.3
+   "age_h": 120.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 119.8
+   "age_h": 120.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 118.7
+   "age_h": 119.0
   }
  ],
  "verdict": "DOWN",
@@ -727,6 +740,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 120.3h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 120.6h"
  ]
 }
