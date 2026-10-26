@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T01:00:02Z",
+ "generated_at": "2026-10-26T01:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-26T02:00:02Z",
+ "valid_until": "2026-10-26T02:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -100,18 +100,6 @@
    "started_at": "2026-10-15T20:15:44Z",
    "finished_at": "2026-10-15T20:35:01Z",
    "ports_published": false
-  },
-  {
-   "name": "jovial_tharp",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-26T01:00:01Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -299,7 +287,6 @@
   "elastic_antonelli",
   "elated_mccarthy",
   "goofy_poincare",
-  "jovial_tharp",
   "serene_elgamal",
   "xenodochial_wilson"
  ],
@@ -345,22 +332,29 @@
    "wtul"
   ],
   "last_run": {
-   "log": "nightly.20261026T005308Z.log",
-   "started_at": "2026-10-26T00:53:08Z",
-   "finished_at": null,
+   "log": "nightly.20261026T010003Z.log",
+   "started_at": "2026-10-26T01:00:04Z",
+   "finished_at": "2026-10-26T01:17:02Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "realisateur": {
-     "queue": 1,
-     "at": "2026-10-26T00:53:30Z",
-     "outcome": null
-    }
-   },
-   "skipped": [],
+   "dispatched": {},
+   "skipped": [
+    "media-arts-collective/CodeDumpster",
+    "media-arts-collective/inv-redirects",
+    "media-arts-collective/nomac.org",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "weave",
+    "space-canon",
+    "vibe-kiosk",
+    "abc",
+    "media-arts-collective/kreweofvaporwave.github.io",
+    "dog"
+   ],
    "queue_unreadable": [],
-   "age_h": 0.1
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -545,15 +539,15 @@
    },
    {
     "repo": "gardien",
-    "log": "gardien.20261026T003535Z.log",
+    "log": "gardien.20261026T010534Z.log",
     "result": "success",
-    "turns": 6,
-    "cost_usd": 0.1016,
+    "turns": 5,
+    "cost_usd": 0.127,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-26T00:35:35Z"
+    "at": "2026-10-26T01:05:34Z"
    },
    {
     "repo": "groc-mangr",
@@ -690,10 +684,10 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261026T005330Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 15,
+    "cost_usd": 0.5714,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -811,21 +805,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 116.6
+   "age_h": 116.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 116.1
+   "age_h": 116.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 115.0
+   "age_h": 115.4
   }
  ],
  "verdict": "DOWN",
@@ -833,7 +827,6 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "officejet: running with NONE of its declared ports published",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "baudin: last pass landed nothing -- no PR and no comment on its issue",
@@ -845,6 +838,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 116.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 116.9h"
  ]
 }
