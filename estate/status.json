@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T14:00:02Z",
+ "generated_at": "2026-10-26T14:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-26T15:00:02Z",
+ "valid_until": "2026-10-26T15:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -42,18 +42,6 @@
    "ports_published": null
   },
   {
-   "name": "fervent_pascal",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-26T14:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -61,9 +49,9 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-25T20:50:37Z",
+   "started_at": "2026-10-26T14:05:09Z",
    "finished_at": null,
-   "ports_published": false
+   "ports_published": true
   },
   {
    "name": "potato-push",
@@ -95,9 +83,9 @@
    "project": "whisper",
    "state": "restarting",
    "health": "unhealthy",
-   "restarts": 307,
+   "restarts": 326,
    "exit_code": null,
-   "started_at": "2026-10-26T13:59:39Z",
+   "started_at": "2026-10-26T14:19:42Z",
    "finished_at": null,
    "ports_published": false
   },
@@ -107,9 +95,9 @@
    "project": "zaxon",
    "state": "restarting",
    "health": null,
-   "restarts": 307,
+   "restarts": 326,
    "exit_code": null,
-   "started_at": "2026-10-26T13:59:39Z",
+   "started_at": "2026-10-26T14:19:42Z",
    "finished_at": null,
    "ports_published": false
   },
@@ -186,8 +174,7 @@
   }
  ],
  "unmanaged": [
-  "container-bibliothecaire-intake-1",
-  "fervent_pascal"
+  "container-bibliothecaire-intake-1"
  ],
  "nightly": {
   "armed": true,
@@ -277,7 +264,7 @@
    "queue_unreadable": [
     "abletim"
    ],
-   "age_h": 6.8
+   "age_h": 7.2
   },
   "passes": [
    {
@@ -740,21 +727,21 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 129.6
+   "age_h": 129.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 129.1
+   "age_h": 129.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 128.0
+   "age_h": 128.4
   }
  ],
  "verdict": "DOWN",
@@ -763,7 +750,6 @@
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "zaxon: declared in /srv/zaxon/compose.yaml and NOT running",
-  "officejet: running with NONE of its declared ports published",
   "abletim: the nightly could not read its queue and skipped it",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
@@ -774,6 +760,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 129.6h"
+  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 129.9h"
  ]
 }
