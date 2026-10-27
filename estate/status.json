@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T20:00:02Z",
+ "generated_at": "2026-10-27T20:20:03Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T21:00:02Z",
+ "valid_until": "2026-10-27T21:20:03Z",
  "containers": [
   {
    "name": "admiring_hamilton",
@@ -66,18 +66,6 @@
    "ports_published": true
   },
   {
-   "name": "cranky_chatterjee",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T19:54:06Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "desk",
    "image": "secretaire:dafcb9983246ca5664ecc2280e18b7a9d5441859",
    "project": "secretaire",
@@ -85,7 +73,19 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T19:48:13Z",
+   "started_at": "2026-10-27T20:18:41Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "eager_margulis",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T20:17:28Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -126,6 +126,30 @@
    "ports_published": false
   },
   {
+   "name": "hardcore_hodgkin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T20:15:46Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "intelligent_kirch",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T20:19:13Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "loving_hertz",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
@@ -157,31 +181,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T19:48:13Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "serene_mcnulty",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T20:00:01Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "vigilant_bouman",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T19:34:55Z",
+   "started_at": "2026-10-27T20:18:41Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -293,16 +293,16 @@
   "admiring_rubin",
   "boring_taussig",
   "container-bibliothecaire-intake-1",
-  "cranky_chatterjee",
+  "eager_margulis",
   "festive_bose",
   "gracious_hertz",
-  "loving_hertz",
-  "serene_mcnulty",
-  "vigilant_bouman"
+  "hardcore_hodgkin",
+  "intelligent_kirch",
+  "loving_hertz"
  ],
  "nightly": {
   "armed": true,
-  "cron_line": "*/10 * * * * /srv/agent/rel/c9afe6e343dc51a5bdf964fe6c6bef07792f42b1/agent/acted.sh # realisateur:agent-burn:RUNNER",
+  "cron_line": "*/10 * * * * /srv/agent/rel/a4c9fc2c3f73dcdeb5d6257e2be2c4f7fa62c497/agent/acted.sh # realisateur:agent-burn:RUNNER",
   "repos": [
    "abc",
    "abletim",
@@ -343,22 +343,22 @@
    "zach.audio-apply"
   ],
   "last_run": {
-   "log": "nightly.20261027T194600Z.log",
-   "started_at": "2026-10-27T19:46:00Z",
+   "log": "nightly.20261027T201511Z.log",
+   "started_at": "2026-10-27T20:15:11Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "senechal": {
+    "musc-2300": {
      "queue": 1,
-     "at": "2026-10-27T19:49:39Z",
+     "at": "2026-10-27T20:17:01Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.2
+   "age_h": 0.1
   },
   "passes": [
    {
@@ -651,7 +651,7 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261027T194210Z.log",
+    "log": "musc-2300.20261027T201701Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -659,7 +659,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-27T19:42:10Z"
+    "at": "2026-10-27T20:17:01Z"
    },
    {
     "repo": "nine-speakers",
@@ -821,35 +821,42 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 159.6
+   "age_h": 159.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 159.1
+   "age_h": 159.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 158.0
+   "age_h": 158.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 15.3
+   "age_h": 15.7
+  },
+  {
+   "owner": "hf7y-estate",
+   "repo": "realisateur",
+   "pr": 2107,
+   "since": "2026-10-27T20:01:05Z",
+   "age_h": 0.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "senechal",
    "pr": 1598,
    "since": "2026-10-27T17:23:41Z",
-   "age_h": 2.6
+   "age_h": 2.9
   }
  ],
  "verdict": "DOWN",
@@ -871,6 +878,6 @@
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "5 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 159.6h"
+  "6 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 159.9h"
  ]
 }
