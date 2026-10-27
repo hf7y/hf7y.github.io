@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T18:00:01Z",
+ "generated_at": "2026-10-27T18:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T19:00:01Z",
+ "valid_until": "2026-10-27T19:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,30 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-27T04:20:46Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "competent_euclid",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T17:57:21Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "competent_wozniak",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T17:56:03Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -61,19 +37,19 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T04:20:59Z",
+   "started_at": "2026-10-27T18:18:05Z",
    "finished_at": null,
    "ports_published": null
   },
   {
-   "name": "gallant_williams",
+   "name": "distracted_merkle",
    "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T17:52:55Z",
+   "started_at": "2026-10-27T18:18:03Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -90,6 +66,18 @@
    "ports_published": null
   },
   {
+   "name": "great_brown",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T18:15:18Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "groc-browser",
    "image": "ghcr.io/hf7y/groc-browser:latest",
    "project": "groc-browser",
@@ -100,18 +88,6 @@
    "started_at": "2026-10-27T17:38:35Z",
    "finished_at": "2026-10-27T17:38:55Z",
    "ports_published": false
-  },
-  {
-   "name": "nifty_sanderson",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T18:00:01Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "officejet",
@@ -126,6 +102,18 @@
    "ports_published": true
   },
   {
+   "name": "optimistic_taussig",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T18:16:21Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "potato-push",
    "image": "secretaire:dafcb9983246ca5664ecc2280e18b7a9d5441859",
    "project": "secretaire",
@@ -133,7 +121,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T04:20:59Z",
+   "started_at": "2026-10-27T18:18:05Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -158,6 +146,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-27T04:21:00Z",
+   "finished_at": null,
+   "ports_published": true
+  },
+  {
+   "name": "whisper-large-oneoff",
+   "image": "ghcr.io/hf7y/whisper:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T18:09:01Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -258,12 +258,12 @@
   }
  ],
  "unmanaged": [
-  "competent_euclid",
-  "competent_wozniak",
   "container-bibliothecaire-intake-1",
-  "gallant_williams",
+  "distracted_merkle",
   "gracious_hertz",
-  "nifty_sanderson"
+  "great_brown",
+  "optimistic_taussig",
+  "whisper-large-oneoff"
  ],
  "nightly": {
   "armed": true,
@@ -308,31 +308,31 @@
    "zach.audio-apply"
   ],
   "last_run": {
-   "log": "nightly.20261027T174039Z.log",
-   "started_at": "2026-10-27T17:40:39Z",
+   "log": "nightly.20261027T181534Z.log",
+   "started_at": "2026-10-27T18:15:34Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
    "dispatched": {
-    "hf7y-estate/realisateur": {
+    "scheduler": {
      "queue": 1,
-     "at": "2026-10-27T17:47:54Z",
+     "at": "2026-10-27T18:15:41Z",
      "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.3
+   "age_h": 0.1
   },
   "passes": [
    {
     "repo": "abc",
     "log": "abc.20261027T180000Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 22,
+    "cost_usd": 0.4737,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -593,12 +593,12 @@
    {
     "repo": "media-arts-collective.treasury",
     "log": "media-arts-collective.treasury.20261027T180000Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 11,
+    "cost_usd": 0.1914,
+    "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
     "at": "2026-10-27T18:00:00Z"
    },
@@ -653,6 +653,18 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261027T174754Z.log",
+    "result": "success",
+    "turns": 47,
+    "cost_usd": 1.8899,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/2100",
+    "commented": false,
+    "note": null,
+    "at": "2026-10-27T17:47:54Z"
+   },
+   {
+    "repo": "scheduler",
+    "log": "scheduler.20261027T181541Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -660,19 +672,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-27T17:47:54Z"
-   },
-   {
-    "repo": "scheduler",
-    "log": "scheduler.20261027T055939Z.log",
-    "result": "success",
-    "turns": 27,
-    "cost_usd": 1.1074,
-    "rc": 0,
-    "pr": null,
-    "commented": false,
-    "note": null,
-    "at": "2026-10-27T05:59:39Z"
+    "at": "2026-10-27T18:15:41Z"
    },
    {
     "repo": "secretaire",
@@ -764,7 +764,7 @@
     "result": null,
     "turns": null,
     "cost_usd": null,
-    "rc": null,
+    "rc": 1,
     "pr": null,
     "commented": false,
     "note": null,
@@ -786,35 +786,35 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 157.6
+   "age_h": 157.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 157.1
+   "age_h": 157.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 156.0
+   "age_h": 156.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 13.3
+   "age_h": 13.7
   },
   {
    "owner": "hf7y-estate",
    "repo": "senechal",
    "pr": 1598,
    "since": "2026-10-27T17:23:41Z",
-   "age_h": 0.6
+   "age_h": 0.9
   }
  ],
  "verdict": "DOWN",
@@ -830,12 +830,10 @@
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "5 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 157.6h"
+  "5 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 157.9h"
  ]
 }
