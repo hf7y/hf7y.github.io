@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T19:40:02Z",
+ "generated_at": "2026-10-27T20:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T20:40:02Z",
+ "valid_until": "2026-10-27T21:00:02Z",
  "containers": [
   {
    "name": "admiring_hamilton",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-27T19:32:32Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "admiring_rubin",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T19:52:18Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -30,6 +42,18 @@
    "ports_published": null
   },
   {
+   "name": "boring_taussig",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T19:42:32Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "container-bibliothecaire-intake-1",
    "image": "container-bibliothecaire-intake",
    "project": "container",
@@ -42,6 +66,18 @@
    "ports_published": true
   },
   {
+   "name": "cranky_chatterjee",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T19:54:06Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "desk",
    "image": "secretaire:dafcb9983246ca5664ecc2280e18b7a9d5441859",
    "project": "secretaire",
@@ -49,7 +85,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T19:33:06Z",
+   "started_at": "2026-10-27T19:48:13Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -121,31 +157,19 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T19:33:06Z",
+   "started_at": "2026-10-27T19:48:13Z",
    "finished_at": null,
    "ports_published": null
   },
   {
-   "name": "roster",
-   "image": "ghcr.io/hf7y/roster:latest",
-   "project": "roster",
-   "state": "exited",
-   "health": "unhealthy",
-   "restarts": 0,
-   "exit_code": 137,
-   "started_at": "2026-10-27T04:20:48Z",
-   "finished_at": "2026-10-27T19:30:54Z",
-   "ports_published": false
-  },
-  {
-   "name": "silly_lamarr",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "name": "serene_mcnulty",
+   "image": "senechal-puller:02459d4c21ab",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T19:39:41Z",
+   "started_at": "2026-10-27T20:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -239,11 +263,6 @@
    "on_demand": false
   },
   {
-   "name": "roster",
-   "dir": "/srv/roster",
-   "on_demand": true
-  },
-  {
    "name": "secretaire",
    "dir": "/srv/secretaire",
    "on_demand": false
@@ -271,11 +290,14 @@
  ],
  "unmanaged": [
   "admiring_hamilton",
+  "admiring_rubin",
+  "boring_taussig",
   "container-bibliothecaire-intake-1",
+  "cranky_chatterjee",
   "festive_bose",
   "gracious_hertz",
   "loving_hertz",
-  "silly_lamarr",
+  "serene_mcnulty",
   "vigilant_bouman"
  ],
  "nightly": {
@@ -321,16 +343,22 @@
    "zach.audio-apply"
   ],
   "last_run": {
-   "log": "nightly.20261027T193931Z.log",
-   "started_at": "2026-10-27T19:39:31Z",
+   "log": "nightly.20261027T194600Z.log",
+   "started_at": "2026-10-27T19:46:00Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "senechal": {
+     "queue": 1,
+     "at": "2026-10-27T19:49:39Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -623,15 +651,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261027T164021Z.log",
-    "result": "success",
-    "turns": 8,
-    "cost_usd": 0.1618,
-    "rc": 0,
+    "log": "musc-2300.20261027T194210Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-27T16:40:21Z"
+    "at": "2026-10-27T19:42:10Z"
    },
    {
     "repo": "nine-speakers",
@@ -695,7 +723,7 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261027T193252Z.log",
+    "log": "senechal.20261027T194939Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -703,7 +731,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-27T19:32:52Z"
+    "at": "2026-10-27T19:49:39Z"
    },
    {
     "repo": "sequestria",
@@ -793,35 +821,35 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 159.3
+   "age_h": 159.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 158.8
+   "age_h": 159.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 157.7
+   "age_h": 158.0
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 15.0
+   "age_h": 15.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "senechal",
    "pr": 1598,
    "since": "2026-10-27T17:23:41Z",
-   "age_h": 2.3
+   "age_h": 2.6
   }
  ],
  "verdict": "DOWN",
@@ -843,6 +871,6 @@
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "5 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 159.3h"
+  "5 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 159.6h"
  ]
 }
