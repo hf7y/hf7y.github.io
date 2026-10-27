@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T16:00:02Z",
+ "generated_at": "2026-10-27T16:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T17:00:02Z",
+ "valid_until": "2026-10-27T17:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,18 +14,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-27T04:20:46Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "blissful_cerf",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T16:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -222,7 +210,6 @@
   }
  ],
  "unmanaged": [
-  "blissful_cerf",
   "container-bibliothecaire-intake-1",
   "gracious_hertz"
  ],
@@ -269,47 +256,28 @@
    "zach.audio-apply"
   ],
   "last_run": {
-   "log": "nightly.20261027T054538Z.log",
-   "started_at": "2026-10-27T05:45:38Z",
-   "finished_at": "2026-10-27T08:46:26Z",
+   "log": "nightly.20261027T160003Z.log",
+   "started_at": "2026-10-27T16:00:04Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "scheduler": {
-     "queue": 1,
-     "at": "2026-10-27T05:59:39Z",
-     "outcome": "finished"
-    },
-    "senechal": {
-     "queue": 1,
-     "at": "2026-10-27T07:00:27Z",
-     "outcome": "finished"
-    },
-    "wtul": {
-     "queue": 1,
-     "at": "2026-10-27T07:27:26Z",
-     "outcome": "finished"
-    },
-    "american-cycle": {
-     "queue": 1,
-     "at": "2026-10-27T08:01:33Z",
-     "outcome": "finished"
-    },
-    "realisateur": {
-     "queue": 1,
-     "at": "2026-10-27T08:14:22Z",
-     "outcome": "finished"
-    },
-    "apms-2173": {
-     "queue": 1,
-     "at": "2026-10-27T08:45:24Z",
-     "outcome": "finished"
-    }
-   },
-   "skipped": [],
+   "dispatched": {},
+   "skipped": [
+    "media-arts-collective/CodeDumpster",
+    "media-arts-collective/inv-redirects",
+    "media-arts-collective/nomac.org",
+    "selfdev-permission-witness-scratch",
+    "verbs",
+    "vkv23",
+    "weave",
+    "space-canon",
+    "vibe-kiosk",
+    "media-arts-collective/kreweofvaporwave.github.io",
+    "candidature"
+   ],
    "queue_unreadable": [],
-   "age_h": 10.2
+   "age_h": 0.3
   },
   "passes": [
    {
@@ -674,15 +642,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261027T070027Z.log",
-    "result": "success",
-    "turns": 55,
-    "cost_usd": 1.9662,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/senechal/pull/1597",
-    "commented": true,
+    "log": "senechal.20261027T160543Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": 1,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-27T07:00:27Z"
+    "at": "2026-10-27T16:05:43Z"
    },
    {
     "repo": "sequestria",
@@ -772,34 +740,35 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 155.6
+   "age_h": 155.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 155.1
+   "age_h": 155.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 154.0
+   "age_h": 154.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 11.3
+   "age_h": 11.7
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
@@ -811,7 +780,8 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 155.6h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 155.9h"
  ]
 }
