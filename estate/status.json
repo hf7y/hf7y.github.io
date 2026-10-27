@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T04:40:02Z",
+ "generated_at": "2026-10-27T05:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T05:40:02Z",
+ "valid_until": "2026-10-27T06:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,6 +38,30 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-27T04:20:59Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "infallible_matsumoto",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T05:00:01Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "nice_goldstine",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T04:41:44Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -198,11 +222,13 @@
   }
  ],
  "unmanaged": [
-  "container-bibliothecaire-intake-1"
+  "container-bibliothecaire-intake-1",
+  "infallible_matsumoto",
+  "nice_goldstine"
  ],
  "nightly": {
   "armed": true,
-  "cron_line": "*/10 * * * * /srv/agent/rel/5552cc0cfc6bcd03d310cef9aa5194843c97e3a7/agent/acted.sh # realisateur:agent-burn:RUNNER",
+  "cron_line": "*/10 * * * * /srv/agent/rel/c6f6d90f3469c4e150c8570a89cdb5d1221801b1/agent/acted.sh # realisateur:agent-burn:RUNNER",
   "repos": [
    "abc",
    "abletim",
@@ -288,7 +314,7 @@
    "queue_unreadable": [
     "abletim"
    ],
-   "age_h": 21.5
+   "age_h": 21.8
   },
   "passes": [
    {
@@ -751,28 +777,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 144.3
+   "age_h": 144.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 143.8
+   "age_h": 144.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 142.7
+   "age_h": 143.0
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 0.0
+   "age_h": 0.3
   }
  ],
  "verdict": "DOWN",
@@ -789,6 +815,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 144.3h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 144.6h"
  ]
 }
