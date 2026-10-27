@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T05:20:02Z",
+ "generated_at": "2026-10-27T05:40:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T06:20:02Z",
+ "valid_until": "2026-10-27T06:40:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,18 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-27T04:20:59Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "heuristic_golick",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T05:03:32Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -210,8 +198,7 @@
   }
  ],
  "unmanaged": [
-  "container-bibliothecaire-intake-1",
-  "heuristic_golick"
+  "container-bibliothecaire-intake-1"
  ],
  "nightly": {
   "armed": true,
@@ -301,7 +288,7 @@
    "queue_unreadable": [
     "abletim"
    ],
-   "age_h": 22.2
+   "age_h": 22.5
   },
   "passes": [
    {
@@ -318,15 +305,15 @@
    },
    {
     "repo": "abletim",
-    "log": "abletim.20261026T070852Z.log",
-    "result": "success",
-    "turns": 8,
-    "cost_usd": 0.1555,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/abletim/pull/142",
+    "log": "abletim.20261027T053558Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": 1,
+    "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-26T07:08:52Z"
+    "at": "2026-10-27T05:35:58Z"
    },
    {
     "repo": "american-cycle",
@@ -764,28 +751,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 144.9
+   "age_h": 145.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 144.4
+   "age_h": 144.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 143.4
+   "age_h": 143.7
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 0.7
+   "age_h": 1.0
   }
  ],
  "verdict": "DOWN",
@@ -794,6 +781,7 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "abletim: the nightly could not read its queue and skipped it",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
@@ -802,6 +790,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 144.9h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 145.3h"
  ]
 }
