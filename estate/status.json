@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T12:00:01Z",
+ "generated_at": "2026-10-27T12:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T13:00:01Z",
+ "valid_until": "2026-10-27T13:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -51,18 +51,6 @@
    "exit_code": 152,
    "started_at": "2026-10-27T05:40:56Z",
    "finished_at": "2026-10-27T05:41:05Z",
-   "ports_published": null
-  },
-  {
-   "name": "nice_elion",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T12:00:01Z",
-   "finished_at": null,
    "ports_published": null
   },
   {
@@ -223,8 +211,7 @@
  ],
  "unmanaged": [
   "container-bibliothecaire-intake-1",
-  "gracious_hertz",
-  "nice_elion"
+  "gracious_hertz"
  ],
  "nightly": {
   "armed": true,
@@ -309,7 +296,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 6.2
+   "age_h": 6.6
   },
   "passes": [
    {
@@ -772,28 +759,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 151.6
+   "age_h": 151.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 151.1
+   "age_h": 151.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 150.0
+   "age_h": 150.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 7.3
+   "age_h": 7.7
   }
  ],
  "verdict": "DOWN",
@@ -812,6 +799,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 151.6h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 151.9h"
  ]
 }
