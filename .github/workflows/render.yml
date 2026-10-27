@@ -1,0 +1,29 @@
+name: Render index
+
+on:
+  push:
+    branches: [master]
+    paths: [portfolio.json, bin/render.py]
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 bin/render.py site > index.html
+      - name: Commit changed index
+        run: |
+          set -euo pipefail
+          git diff --quiet -- index.html && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Render index"
+          git push
