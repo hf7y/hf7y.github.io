@@ -2,31 +2,31 @@
   "schema": 1,
   "service": "zaxon",
   "host": "dexter",
-  "generated": "2026-10-27T09:30:28Z",
-  "valid_until": "2026-10-27T11:00:28Z",
+  "generated": "2026-10-27T10:30:29Z",
+  "valid_until": "2026-10-27T12:00:29Z",
   "cadence_minutes": 60,
   "verdict": "DOWN",
   "why": "the relay does not answer -- no question can reach Zach",
   "relay": {
     "answers": false,
     "url": "http://127.0.0.1:8643/mcp",
-    "ms": 10002
+    "ms": 10003
   },
   "containers": [
     {
       "name": "zaxon-watcher",
       "state": "running",
-      "status": "Up 5 hours (healthy)"
+      "status": "Up 6 hours (healthy)"
     },
     {
       "name": "zaxon-relay",
       "state": "running",
-      "status": "Up 5 hours (healthy)"
+      "status": "Up 6 hours (healthy)"
     },
     {
       "name": "zaxon-gateway",
       "state": "running",
-      "status": "Up 5 hours"
+      "status": "Up 6 hours"
     }
   ],
   "hazards": [
@@ -54,10 +54,10 @@
     "inbox": {
       "count": 73,
       "window_count": 0,
-      "oldest_age_hours": 1378.5,
+      "oldest_age_hours": 1379.5,
       "unfiled": {
         "count": 17,
-        "oldest_age_hours": 370.9
+        "oldest_age_hours": 371.9
       }
     },
     "senders": [],
