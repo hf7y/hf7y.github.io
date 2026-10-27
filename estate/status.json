@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T08:40:02Z",
+ "generated_at": "2026-10-27T09:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T09:40:02Z",
+ "valid_until": "2026-10-27T10:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -54,14 +54,14 @@
    "ports_published": null
   },
   {
-   "name": "keen_beaver",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "name": "gracious_lamarr",
+   "image": "senechal-puller:02459d4c21ab",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T08:38:49Z",
+   "started_at": "2026-10-27T09:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -224,7 +224,7 @@
  "unmanaged": [
   "container-bibliothecaire-intake-1",
   "gracious_hertz",
-  "keen_beaver"
+  "gracious_lamarr"
  ],
  "nightly": {
   "armed": true,
@@ -271,7 +271,7 @@
   "last_run": {
    "log": "nightly.20261027T054538Z.log",
    "started_at": "2026-10-27T05:45:38Z",
-   "finished_at": null,
+   "finished_at": "2026-10-27T08:46:26Z",
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
@@ -299,12 +299,17 @@
     "realisateur": {
      "queue": 1,
      "at": "2026-10-27T08:14:22Z",
-     "outcome": null
+     "outcome": "finished"
+    },
+    "apms-2173": {
+     "queue": 1,
+     "at": "2026-10-27T08:45:24Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.9
+   "age_h": 3.2
   },
   "passes": [
    {
@@ -345,15 +350,15 @@
    },
    {
     "repo": "apms-2173",
-    "log": "apms-2173.20261019T044554Z.log",
+    "log": "apms-2173.20261027T084524Z.log",
     "result": "success",
-    "turns": 29,
-    "cost_usd": 0.8777,
+    "turns": 5,
+    "cost_usd": 0.1266,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-19T04:45:54Z"
+    "at": "2026-10-27T08:45:24Z"
    },
    {
     "repo": "baudin",
@@ -767,35 +772,34 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 148.3
+   "age_h": 148.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 147.8
+   "age_h": 148.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 146.7
+   "age_h": 147.0
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 4.0
+   "age_h": 4.3
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
@@ -808,6 +812,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 148.3h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 148.6h"
  ]
 }
