@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T08:00:02Z",
+ "generated_at": "2026-10-27T08:20:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T09:00:02Z",
+ "valid_until": "2026-10-27T09:20:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -38,30 +38,6 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-27T04:20:59Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "ecstatic_nightingale",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T08:00:02Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "exciting_blackburn",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T07:40:08Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -235,8 +211,6 @@
  ],
  "unmanaged": [
   "container-bibliothecaire-intake-1",
-  "ecstatic_nightingale",
-  "exciting_blackburn",
   "gracious_hertz"
  ],
  "nightly": {
@@ -303,11 +277,21 @@
      "queue": 1,
      "at": "2026-10-27T07:27:26Z",
      "outcome": "finished"
+    },
+    "american-cycle": {
+     "queue": 1,
+     "at": "2026-10-27T08:01:33Z",
+     "outcome": "finished"
+    },
+    "realisateur": {
+     "queue": 1,
+     "at": "2026-10-27T08:14:22Z",
+     "outcome": null
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.2
+   "age_h": 2.6
   },
   "passes": [
    {
@@ -336,15 +320,15 @@
    },
    {
     "repo": "american-cycle",
-    "log": "american-cycle.20261019T061144Z.log",
+    "log": "american-cycle.20261027T080133Z.log",
     "result": "success",
-    "turns": 10,
-    "cost_usd": 0.3658,
+    "turns": 13,
+    "cost_usd": 0.234,
     "rc": 0,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-19T06:11:44Z"
+    "at": "2026-10-27T08:01:33Z"
    },
    {
     "repo": "apms-2173",
@@ -636,15 +620,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261026T084744Z.log",
-    "result": "success",
-    "turns": 45,
-    "cost_usd": 1.586,
-    "rc": 0,
+    "log": "realisateur.20261027T081422Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-26T08:47:44Z"
+    "at": "2026-10-27T08:14:22Z"
    },
    {
     "repo": "scheduler",
@@ -770,28 +754,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 147.6
+   "age_h": 147.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 147.1
+   "age_h": 147.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 146.0
+   "age_h": 146.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 3.3
+   "age_h": 3.7
   }
  ],
  "verdict": "DOWN",
@@ -801,6 +785,7 @@
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
+  "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
@@ -808,8 +793,9 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 147.6h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 147.9h"
  ]
 }
