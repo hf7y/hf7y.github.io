@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T17:20:02Z",
+ "generated_at": "2026-10-27T17:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T18:20:02Z",
+ "valid_until": "2026-10-27T18:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -54,6 +54,30 @@
    "ports_published": null
   },
   {
+   "name": "groc-browser",
+   "image": "ghcr.io/hf7y/groc-browser:latest",
+   "project": "groc-browser",
+   "state": "exited",
+   "health": "unhealthy",
+   "restarts": 0,
+   "exit_code": 0,
+   "started_at": "2026-10-27T17:38:35Z",
+   "finished_at": "2026-10-27T17:38:55Z",
+   "ports_published": false
+  },
+  {
+   "name": "nervous_wiles",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T17:34:23Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "officejet",
    "image": "officejet:458e004fc243",
    "project": "officejet",
@@ -64,18 +88,6 @@
    "started_at": "2026-10-27T04:20:47Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "pensive_sinoussi",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T17:16:53Z",
-   "finished_at": null,
-   "ports_published": null
   },
   {
    "name": "potato-push",
@@ -100,6 +112,18 @@
    "started_at": "2026-10-27T04:20:48Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "vibrant_lamport",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T17:31:22Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "whisper",
@@ -224,7 +248,8 @@
  "unmanaged": [
   "container-bibliothecaire-intake-1",
   "gracious_hertz",
-  "pensive_sinoussi"
+  "nervous_wiles",
+  "vibrant_lamport"
  ],
  "nightly": {
   "armed": true,
@@ -269,44 +294,16 @@
    "zach.audio-apply"
   ],
   "last_run": {
-   "log": "nightly.20261027T165003Z.log",
-   "started_at": "2026-10-27T16:50:04Z",
-   "finished_at": "2026-10-27T17:16:45Z",
+   "log": "nightly.20261027T173950Z.log",
+   "started_at": "2026-10-27T17:39:50Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "abc": {
-     "queue": 3,
-     "at": "2026-10-27T17:16:45Z",
-     "outcome": null
-    },
-    "zach.audio-apply": {
-     "queue": 9,
-     "at": "2026-10-27T17:16:45Z",
-     "outcome": null
-    },
-    "media-arts-collective/treasury": {
-     "queue": 9,
-     "at": "2026-10-27T17:16:45Z",
-     "outcome": null
-    }
-   },
-   "skipped": [
-    "media-arts-collective/CodeDumpster",
-    "media-arts-collective/inv-redirects",
-    "media-arts-collective/nomac.org",
-    "selfdev-permission-witness-scratch",
-    "verbs",
-    "vkv23",
-    "weave",
-    "space-canon",
-    "vibe-kiosk",
-    "media-arts-collective/kreweofvaporwave.github.io",
-    "candidature"
-   ],
+   "dispatched": {},
+   "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.5
+   "age_h": 0.0
   },
   "passes": [
    {
@@ -635,15 +632,15 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261027T081422Z.log",
-    "result": "success",
-    "turns": 54,
-    "cost_usd": 1.8701,
-    "rc": 0,
-    "pr": "https://github.com/hf7y-estate/realisateur/pull/2093",
-    "commented": true,
+    "log": "realisateur.20261027T173959Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
+    "pr": null,
+    "commented": false,
     "note": null,
-    "at": "2026-10-27T08:14:22Z"
+    "at": "2026-10-27T17:39:59Z"
    },
    {
     "repo": "scheduler",
@@ -671,15 +668,15 @@
    },
    {
     "repo": "senechal",
-    "log": "senechal.20261027T170541Z.log",
-    "result": "success",
-    "turns": 8,
-    "cost_usd": 0.1957,
-    "rc": 0,
+    "log": "senechal.20261027T172847Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-27T17:05:41Z"
+    "at": "2026-10-27T17:28:47Z"
    },
    {
     "repo": "sequestria",
@@ -744,10 +741,10 @@
    {
     "repo": "zach.audio-apply",
     "log": "zach.audio-apply.20261027T171650Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
+    "result": "success",
+    "turns": 23,
+    "cost_usd": 0.5178,
+    "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
@@ -769,34 +766,42 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 156.9
+   "age_h": 157.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 156.4
+   "age_h": 156.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 155.4
+   "age_h": 155.7
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 12.7
+   "age_h": 13.0
+  },
+  {
+   "owner": "hf7y-estate",
+   "repo": "senechal",
+   "pr": 1598,
+   "since": "2026-10-27T17:23:41Z",
+   "age_h": 0.3
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
@@ -806,8 +811,10 @@
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
+  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
+  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 156.9h"
+  "5 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 157.3h"
  ]
 }
