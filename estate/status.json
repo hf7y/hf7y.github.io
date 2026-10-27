@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T17:40:02Z",
+ "generated_at": "2026-10-27T18:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T18:40:02Z",
+ "valid_until": "2026-10-27T19:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,30 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-27T04:20:46Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "competent_euclid",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T17:57:21Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "competent_wozniak",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T17:56:03Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -42,6 +66,18 @@
    "ports_published": null
   },
   {
+   "name": "gallant_williams",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T17:52:55Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
    "name": "gracious_hertz",
    "image": "sha256:8696bb50e65f7399996e844ac25583ff5065b148cd68f7a68a7f4b61e8f007b7",
    "project": null,
@@ -66,14 +102,14 @@
    "ports_published": false
   },
   {
-   "name": "nervous_wiles",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "name": "nifty_sanderson",
+   "image": "senechal-puller:02459d4c21ab",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T17:34:23Z",
+   "started_at": "2026-10-27T18:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -114,18 +150,6 @@
    "ports_published": true
   },
   {
-   "name": "vibrant_lamport",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T17:31:22Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
@@ -136,18 +160,6 @@
    "started_at": "2026-10-27T04:21:00Z",
    "finished_at": null,
    "ports_published": true
-  },
-  {
-   "name": "wtul-dexter-promote-promote-1",
-   "image": "ghcr.io/hf7y-estate/wtul-dexter-promote:latest",
-   "project": "wtul-dexter-promote",
-   "state": "exited",
-   "health": null,
-   "restarts": 0,
-   "exit_code": 0,
-   "started_at": "2026-10-27T04:21:01Z",
-   "finished_at": "2026-10-27T04:21:12Z",
-   "ports_published": null
   },
   {
    "name": "wtul-ready-ready-1",
@@ -246,10 +258,12 @@
   }
  ],
  "unmanaged": [
+  "competent_euclid",
+  "competent_wozniak",
   "container-bibliothecaire-intake-1",
+  "gallant_williams",
   "gracious_hertz",
-  "nervous_wiles",
-  "vibrant_lamport"
+  "nifty_sanderson"
  ],
  "nightly": {
   "armed": true,
@@ -294,29 +308,35 @@
    "zach.audio-apply"
   ],
   "last_run": {
-   "log": "nightly.20261027T173950Z.log",
-   "started_at": "2026-10-27T17:39:50Z",
+   "log": "nightly.20261027T174039Z.log",
+   "started_at": "2026-10-27T17:40:39Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {},
+   "dispatched": {
+    "hf7y-estate/realisateur": {
+     "queue": 1,
+     "at": "2026-10-27T17:47:54Z",
+     "outcome": null
+    }
+   },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.0
+   "age_h": 0.3
   },
   "passes": [
    {
     "repo": "abc",
-    "log": "abc.20261027T171651Z.log",
-    "result": "success",
-    "turns": 8,
-    "cost_usd": 0.1608,
-    "rc": 0,
+    "log": "abc.20261027T180000Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-27T17:16:51Z"
+    "at": "2026-10-27T18:00:00Z"
    },
    {
     "repo": "abletim",
@@ -572,15 +592,15 @@
    },
    {
     "repo": "media-arts-collective.treasury",
-    "log": "media-arts-collective.treasury.20261027T171651Z.log",
-    "result": "success",
-    "turns": 17,
-    "cost_usd": 0.3026,
-    "rc": 0,
+    "log": "media-arts-collective.treasury.20261027T180000Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
-    "commented": true,
+    "commented": false,
     "note": null,
-    "at": "2026-10-27T17:16:51Z"
+    "at": "2026-10-27T18:00:00Z"
    },
    {
     "repo": "media-arts-collective.wavebucks",
@@ -632,7 +652,7 @@
    },
    {
     "repo": "realisateur",
-    "log": "realisateur.20261027T173959Z.log",
+    "log": "realisateur.20261027T174754Z.log",
     "result": null,
     "turns": null,
     "cost_usd": null,
@@ -640,7 +660,7 @@
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-27T17:39:59Z"
+    "at": "2026-10-27T17:47:54Z"
    },
    {
     "repo": "scheduler",
@@ -669,11 +689,11 @@
    {
     "repo": "senechal",
     "log": "senechal.20261027T172847Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
+    "result": "success",
+    "turns": 94,
+    "cost_usd": 3.4193,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/senechal/pull/1599",
     "commented": false,
     "note": null,
     "at": "2026-10-27T17:28:47Z"
@@ -740,15 +760,15 @@
    },
    {
     "repo": "zach.audio-apply",
-    "log": "zach.audio-apply.20261027T171650Z.log",
-    "result": "success",
-    "turns": 23,
-    "cost_usd": 0.5178,
-    "rc": 0,
+    "log": "zach.audio-apply.20261027T180000Z.log",
+    "result": null,
+    "turns": null,
+    "cost_usd": null,
+    "rc": null,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-27T17:16:50Z"
+    "at": "2026-10-27T18:00:00Z"
    }
   ],
   "dispatch_token": {
@@ -766,35 +786,35 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 157.3
+   "age_h": 157.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 156.8
+   "age_h": 157.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 155.7
+   "age_h": 156.0
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 13.0
+   "age_h": 13.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "senechal",
    "pr": 1598,
    "since": "2026-10-27T17:23:41Z",
-   "age_h": 0.3
+   "age_h": 0.6
   }
  ],
  "verdict": "DOWN",
@@ -803,18 +823,19 @@
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
   "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
+  "abc: last pass landed nothing -- no PR and no comment on its issue",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
   "american-cycle: last pass landed nothing -- no PR and no comment on its issue",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
+  "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
-  "senechal: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "5 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 157.3h"
+  "5 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 157.6h"
  ]
 }
