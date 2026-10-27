@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T07:20:02Z",
+ "generated_at": "2026-10-27T07:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T08:20:02Z",
+ "valid_until": "2026-10-27T08:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -275,13 +275,13 @@
     },
     "wtul": {
      "queue": 1,
-     "at": "2026-10-27T07:19:44Z",
-     "outcome": null
+     "at": "2026-10-27T07:27:26Z",
+     "outcome": "finished"
     }
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 1.6
+   "age_h": 1.9
   },
   "passes": [
    {
@@ -706,15 +706,15 @@
    },
    {
     "repo": "wtul",
-    "log": "wtul.20261027T071944Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "log": "wtul.20261027T072726Z.log",
+    "result": "success",
+    "turns": 68,
+    "cost_usd": 2.1211,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/wtul/pull/609",
+    "commented": true,
     "note": null,
-    "at": "2026-10-27T07:19:44Z"
+    "at": "2026-10-27T07:27:26Z"
    },
    {
     "repo": "zach.audio-apply",
@@ -744,28 +744,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 146.9
+   "age_h": 147.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 146.4
+   "age_h": 146.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 145.4
+   "age_h": 145.7
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 2.7
+   "age_h": 3.0
   }
  ],
  "verdict": "DOWN",
@@ -783,8 +783,7 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
-  "wtul: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 146.9h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 147.3h"
  ]
 }
