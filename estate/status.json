@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T08:20:01Z",
+ "generated_at": "2026-10-27T08:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T09:20:01Z",
+ "valid_until": "2026-10-27T09:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -51,6 +51,18 @@
    "exit_code": 152,
    "started_at": "2026-10-27T05:40:56Z",
    "finished_at": "2026-10-27T05:41:05Z",
+   "ports_published": null
+  },
+  {
+   "name": "keen_beaver",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T08:38:49Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
@@ -211,7 +223,8 @@
  ],
  "unmanaged": [
   "container-bibliothecaire-intake-1",
-  "gracious_hertz"
+  "gracious_hertz",
+  "keen_beaver"
  ],
  "nightly": {
   "armed": true,
@@ -291,7 +304,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 2.6
+   "age_h": 2.9
   },
   "passes": [
    {
@@ -621,12 +634,12 @@
    {
     "repo": "realisateur",
     "log": "realisateur.20261027T081422Z.log",
-    "result": null,
-    "turns": null,
-    "cost_usd": null,
-    "rc": null,
-    "pr": null,
-    "commented": false,
+    "result": "success",
+    "turns": 54,
+    "cost_usd": 1.8701,
+    "rc": 0,
+    "pr": "https://github.com/hf7y-estate/realisateur/pull/2093",
+    "commented": true,
     "note": null,
     "at": "2026-10-27T08:14:22Z"
    },
@@ -754,28 +767,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 147.9
+   "age_h": 148.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 147.4
+   "age_h": 147.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 146.4
+   "age_h": 146.7
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 3.7
+   "age_h": 4.0
   }
  ],
  "verdict": "DOWN",
@@ -793,9 +806,8 @@
   "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
-  "realisateur: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 147.9h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 148.3h"
  ]
 }
