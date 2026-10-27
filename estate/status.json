@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T13:40:02Z",
+ "generated_at": "2026-10-27T14:00:03Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T14:40:02Z",
+ "valid_until": "2026-10-27T15:00:03Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-27T04:20:46Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "confident_allen",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T14:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -210,6 +222,7 @@
   }
  ],
  "unmanaged": [
+  "confident_allen",
   "container-bibliothecaire-intake-1",
   "gracious_hertz"
  ],
@@ -296,7 +309,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 7.9
+   "age_h": 8.2
   },
   "passes": [
    {
@@ -759,28 +772,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 153.3
+   "age_h": 153.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 152.8
+   "age_h": 153.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 151.7
+   "age_h": 152.0
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 9.0
+   "age_h": 9.3
   }
  ],
  "verdict": "DOWN",
@@ -799,6 +812,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 153.3h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 153.6h"
  ]
 }
