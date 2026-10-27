@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T19:00:02Z",
+ "generated_at": "2026-10-27T19:20:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T20:00:02Z",
+ "valid_until": "2026-10-27T20:20:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -37,19 +37,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T18:48:06Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "elated_murdock",
-   "image": "ghcr.io/hf7y-estate/agent:latest",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-27T18:58:00Z",
+   "started_at": "2026-10-27T19:18:10Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -78,14 +66,14 @@
    "ports_published": false
   },
   {
-   "name": "musing_colden",
-   "image": "senechal-puller:02459d4c21ab",
+   "name": "hungry_meninsky",
+   "image": "ghcr.io/hf7y-estate/agent:latest",
    "project": null,
    "state": "running",
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T19:00:01Z",
+   "started_at": "2026-10-27T19:15:22Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -109,7 +97,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-27T18:48:06Z",
+   "started_at": "2026-10-27T19:18:10Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -235,9 +223,8 @@
  ],
  "unmanaged": [
   "container-bibliothecaire-intake-1",
-  "elated_murdock",
   "gracious_hertz",
-  "musing_colden"
+  "hungry_meninsky"
  ],
  "nightly": {
   "armed": true,
@@ -282,22 +269,16 @@
    "zach.audio-apply"
   ],
   "last_run": {
-   "log": "nightly.20261027T181534Z.log",
-   "started_at": "2026-10-27T18:15:34Z",
-   "finished_at": "2026-10-27T18:46:07Z",
+   "log": "nightly.20261027T190759Z.log",
+   "started_at": "2026-10-27T19:07:59Z",
+   "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
    "pull_failed": null,
-   "dispatched": {
-    "scheduler": {
-     "queue": 1,
-     "at": "2026-10-27T18:15:41Z",
-     "outcome": "finished"
-    }
-   },
+   "dispatched": {},
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 0.2
   },
   "passes": [
    {
@@ -760,41 +741,42 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 158.6
+   "age_h": 158.9
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 158.1
+   "age_h": 158.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 157.0
+   "age_h": 157.4
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 14.3
+   "age_h": 14.7
   },
   {
    "owner": "hf7y-estate",
    "repo": "senechal",
    "pr": 1598,
    "since": "2026-10-27T17:23:41Z",
-   "age_h": 1.6
+   "age_h": 1.9
   }
  ],
  "verdict": "DOWN",
  "findings": [
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
+  "the last nightly has no `done` line -- still running, or it died",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "abc: last pass landed nothing -- no PR and no comment on its issue",
   "abletim: last pass landed nothing -- no PR and no comment on its issue",
@@ -806,6 +788,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "5 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 158.6h"
+  "5 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 158.9h"
  ]
 }
