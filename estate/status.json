@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T09:40:01Z",
+ "generated_at": "2026-10-27T10:00:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T10:40:01Z",
+ "valid_until": "2026-10-27T11:00:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -88,6 +88,18 @@
    "started_at": "2026-10-27T04:20:48Z",
    "finished_at": null,
    "ports_published": true
+  },
+  {
+   "name": "tender_shockley",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T10:00:02Z",
+   "finished_at": null,
+   "ports_published": null
   },
   {
    "name": "whisper",
@@ -211,7 +223,8 @@
  ],
  "unmanaged": [
   "container-bibliothecaire-intake-1",
-  "gracious_hertz"
+  "gracious_hertz",
+  "tender_shockley"
  ],
  "nightly": {
   "armed": true,
@@ -296,7 +309,7 @@
    },
    "skipped": [],
    "queue_unreadable": [],
-   "age_h": 3.9
+   "age_h": 4.2
   },
   "passes": [
    {
@@ -759,28 +772,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 149.3
+   "age_h": 149.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 148.8
+   "age_h": 149.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 147.7
+   "age_h": 148.0
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 5.0
+   "age_h": 5.3
   }
  ],
  "verdict": "DOWN",
@@ -799,6 +812,6 @@
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 149.3h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 149.6h"
  ]
 }
