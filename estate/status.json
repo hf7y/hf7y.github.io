@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-27T16:40:02Z",
+ "generated_at": "2026-10-27T17:00:01Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-27T17:40:02Z",
+ "valid_until": "2026-10-27T18:00:01Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -14,6 +14,18 @@
    "restarts": 0,
    "exit_code": null,
    "started_at": "2026-10-27T04:20:46Z",
+   "finished_at": null,
+   "ports_published": null
+  },
+  {
+   "name": "bold_ramanujan",
+   "image": "senechal-puller:02459d4c21ab",
+   "project": null,
+   "state": "running",
+   "health": null,
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T17:00:01Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -210,6 +222,7 @@
   }
  ],
  "unmanaged": [
+  "bold_ramanujan",
   "container-bibliothecaire-intake-1",
   "gracious_hertz"
  ],
@@ -256,8 +269,8 @@
    "zach.audio-apply"
   ],
   "last_run": {
-   "log": "nightly.20261027T160003Z.log",
-   "started_at": "2026-10-27T16:00:04Z",
+   "log": "nightly.20261027T165003Z.log",
+   "started_at": "2026-10-27T16:50:04Z",
    "finished_at": null,
    "turns": 150,
    "image": "ghcr.io/hf7y-estate/agent@sha256:5b54277abad36f9df2be49b066b9ee48912137445950225af22d6968330fe113",
@@ -277,20 +290,20 @@
     "candidature"
    ],
    "queue_unreadable": [],
-   "age_h": 0.7
+   "age_h": 0.2
   },
   "passes": [
    {
     "repo": "abc",
-    "log": "abc.20261019T003104Z.log",
+    "log": "abc.20261027T164015Z.log",
     "result": "success",
-    "turns": 15,
-    "cost_usd": 0.3345,
+    "turns": 14,
+    "cost_usd": 0.4062,
     "rc": 0,
     "pr": null,
     "commented": true,
     "note": null,
-    "at": "2026-10-19T00:31:04Z"
+    "at": "2026-10-27T16:40:15Z"
    },
    {
     "repo": "abletim",
@@ -546,15 +559,15 @@
    },
    {
     "repo": "media-arts-collective.treasury",
-    "log": "media-arts-collective.treasury.20261018T231227Z.log",
+    "log": "media-arts-collective.treasury.20261027T164016Z.log",
     "result": "success",
-    "turns": 17,
-    "cost_usd": 0.3704,
+    "turns": 16,
+    "cost_usd": 0.4574,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-18T23:12:27Z"
+    "at": "2026-10-27T16:40:16Z"
    },
    {
     "repo": "media-arts-collective.wavebucks",
@@ -570,15 +583,15 @@
    },
    {
     "repo": "musc-2300",
-    "log": "musc-2300.20261026T084846Z.log",
+    "log": "musc-2300.20261027T164021Z.log",
     "result": "success",
-    "turns": 64,
-    "cost_usd": 2.2615,
+    "turns": 8,
+    "cost_usd": 0.1618,
     "rc": 0,
     "pr": null,
     "commented": false,
     "note": null,
-    "at": "2026-10-26T08:48:46Z"
+    "at": "2026-10-27T16:40:21Z"
    },
    {
     "repo": "nine-speakers",
@@ -714,15 +727,15 @@
    },
    {
     "repo": "zach.audio-apply",
-    "log": "zach.audio-apply.20261026T032140Z.log",
+    "log": "zach.audio-apply.20261027T164015Z.log",
     "result": "success",
-    "turns": 29,
-    "cost_usd": 0.791,
+    "turns": 27,
+    "cost_usd": 0.6295,
     "rc": 0,
     "pr": null,
-    "commented": false,
+    "commented": true,
     "note": null,
-    "at": "2026-10-26T03:21:40Z"
+    "at": "2026-10-27T16:40:15Z"
    }
   ],
   "dispatch_token": {
@@ -740,28 +753,28 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 156.3
+   "age_h": 156.6
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 155.8
+   "age_h": 156.1
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 154.7
+   "age_h": 155.0
   },
   {
    "owner": "hf7y-estate",
    "repo": "realisateur",
    "pr": 2090,
    "since": "2026-10-27T04:39:52Z",
-   "age_h": 12.0
+   "age_h": 12.3
   }
  ],
  "verdict": "DOWN",
@@ -776,12 +789,10 @@
   "crt: last pass landed nothing -- no PR and no comment on its issue",
   "etalon: last pass landed nothing -- no PR and no comment on its issue",
   "media-arts-collective.office: last pass landed nothing -- no PR and no comment on its issue",
-  "media-arts-collective.treasury: last pass landed nothing -- no PR and no comment on its issue",
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "scheduler: last pass landed nothing -- no PR and no comment on its issue",
   "senechal: last pass landed nothing -- no PR and no comment on its issue",
-  "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 156.3h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 156.6h"
  ]
 }
