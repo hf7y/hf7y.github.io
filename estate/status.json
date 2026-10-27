@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T15:00:02Z",
+ "generated_at": "2026-10-27T04:40:02Z",
  "host": "dexter",
  "cadence_min": 20,
  "grace_min": 40,
- "valid_until": "2026-10-26T16:00:02Z",
+ "valid_until": "2026-10-27T05:40:02Z",
  "containers": [
   {
    "name": "aedile-tube",
@@ -13,7 +13,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-25T20:50:30Z",
+   "started_at": "2026-10-27T04:20:46Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -25,7 +25,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-26T03:06:30Z",
+   "started_at": "2026-10-27T04:20:23Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -37,19 +37,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-26T03:45:35Z",
-   "finished_at": null,
-   "ports_published": null
-  },
-  {
-   "name": "kind_goodall",
-   "image": "senechal-puller:02459d4c21ab",
-   "project": null,
-   "state": "running",
-   "health": null,
-   "restarts": 0,
-   "exit_code": null,
-   "started_at": "2026-10-26T15:00:01Z",
+   "started_at": "2026-10-27T04:20:59Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -61,7 +49,7 @@
    "health": null,
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-26T14:05:09Z",
+   "started_at": "2026-10-27T04:20:47Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -73,7 +61,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-26T03:45:35Z",
+   "started_at": "2026-10-27T04:20:59Z",
    "finished_at": null,
    "ports_published": null
   },
@@ -85,7 +73,7 @@
    "health": "healthy",
    "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-25T20:52:34Z",
+   "started_at": "2026-10-27T04:20:48Z",
    "finished_at": null,
    "ports_published": true
   },
@@ -93,48 +81,72 @@
    "name": "whisper",
    "image": "ghcr.io/hf7y/whisper:latest",
    "project": "whisper",
-   "state": "restarting",
-   "health": "unhealthy",
-   "restarts": 364,
+   "state": "running",
+   "health": "healthy",
+   "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-26T14:59:48Z",
+   "started_at": "2026-10-27T04:21:00Z",
    "finished_at": null,
-   "ports_published": false
+   "ports_published": true
+  },
+  {
+   "name": "wtul-dexter-promote-promote-1",
+   "image": "ghcr.io/hf7y-estate/wtul-dexter-promote:latest",
+   "project": "wtul-dexter-promote",
+   "state": "exited",
+   "health": null,
+   "restarts": 0,
+   "exit_code": 0,
+   "started_at": "2026-10-27T04:21:01Z",
+   "finished_at": "2026-10-27T04:21:12Z",
+   "ports_published": null
+  },
+  {
+   "name": "wtul-ready-ready-1",
+   "image": "ghcr.io/hf7y-estate/wtul-dexter-promote:latest",
+   "project": "wtul-ready",
+   "state": "exited",
+   "health": null,
+   "restarts": 0,
+   "exit_code": 1,
+   "started_at": "2026-10-27T04:21:02Z",
+   "finished_at": "2026-10-27T04:22:47Z",
+   "ports_published": null
   },
   {
    "name": "zaxon-gateway",
    "image": "zaxon:crt-1d1dda472fba",
    "project": "zaxon",
-   "state": "restarting",
+   "state": "running",
    "health": null,
-   "restarts": 364,
+   "restarts": 0,
    "exit_code": null,
-   "started_at": "2026-10-26T14:59:48Z",
+   "started_at": "2026-10-27T04:21:03Z",
    "finished_at": null,
-   "ports_published": false
+   "ports_published": true
   },
   {
    "name": "zaxon-relay",
    "image": "zaxon:crt-1d1dda472fba",
    "project": "zaxon",
-   "state": "exited",
-   "health": "unhealthy",
-   "restarts": 2,
-   "exit_code": 1,
-   "started_at": "2026-10-26T08:47:23Z",
-   "finished_at": "2026-10-26T08:50:24Z",
+   "state": "running",
+   "health": "healthy",
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T04:21:04Z",
+   "finished_at": null,
    "ports_published": null
   },
   {
    "name": "zaxon-watcher",
    "image": "zaxon:crt-1d1dda472fba",
    "project": "zaxon",
-   "state": "exited",
-   "health": "unhealthy",
-   "restarts": 4,
-   "exit_code": 1,
-   "started_at": "2026-10-26T08:47:23Z",
-   "finished_at": "2026-10-26T08:50:23Z",
+   "state": "running",
+   "health": "healthy",
+   "restarts": 0,
+   "exit_code": null,
+   "started_at": "2026-10-27T04:21:04Z",
+   "finished_at": null,
    "ports_published": null
   }
  ],
@@ -186,8 +198,7 @@
   }
  ],
  "unmanaged": [
-  "container-bibliothecaire-intake-1",
-  "kind_goodall"
+  "container-bibliothecaire-intake-1"
  ],
  "nightly": {
   "armed": true,
@@ -277,7 +288,7 @@
    "queue_unreadable": [
     "abletim"
    ],
-   "age_h": 7.8
+   "age_h": 21.5
   },
   "passes": [
    {
@@ -740,29 +751,34 @@
    "repo": "candidature",
    "pr": 2,
    "since": "2026-10-21T04:24:12Z",
-   "age_h": 130.6
+   "age_h": 144.3
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 5,
    "since": "2026-10-21T04:53:36Z",
-   "age_h": 130.1
+   "age_h": 143.8
   },
   {
    "owner": "hf7y-estate",
    "repo": "candidature",
    "pr": 7,
    "since": "2026-10-21T05:57:53Z",
-   "age_h": 129.0
+   "age_h": 142.7
+  },
+  {
+   "owner": "hf7y-estate",
+   "repo": "realisateur",
+   "pr": 2090,
+   "since": "2026-10-27T04:39:52Z",
+   "age_h": 0.0
   }
  ],
  "verdict": "DOWN",
  "findings": [
-  "whisper: declared in /srv/whisper/compose.yaml and NOT running",
   "wtul-dexter-promote: declared in /srv/wtul-dexter-promote/compose.yaml and NOT running",
   "wtul-ready: declared in /srv/wtul-ready/compose.yaml and NOT running",
-  "zaxon: declared in /srv/zaxon/compose.yaml and NOT running",
   "abletim: the nightly could not read its queue and skipped it",
   "the dispatch credential cannot push `.github/workflows/` -- a pass that edits one commits, fails to push, and has nothing to show for it",
   "apms-2173: last pass landed nothing -- no PR and no comment on its issue",
@@ -773,6 +789,6 @@
   "musc-2300: last pass landed nothing -- no PR and no comment on its issue",
   "nine-speakers: last pass landed nothing -- no PR and no comment on its issue",
   "zach.audio-apply: last pass landed nothing -- no PR and no comment on its issue",
-  "3 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 130.6h"
+  "4 PR(s) held unread for touching a permission/instruction file (#1606, GUARDED) -- oldest held 144.3h"
  ]
 }
