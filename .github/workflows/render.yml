@@ -18,7 +18,7 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
-      - run: python3 bin/render.py site > index.html
+      - run: python3 bin/render.py > index.html
       - name: Commit changed index
         run: |
           set -euo pipefail

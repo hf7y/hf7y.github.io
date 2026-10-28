@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Render hf7y.com's index.html or the hf7y/hf7y profile README from portfolio.json.
+"""Render hf7y.com's index.html from portfolio.json.
 
-usage: render.py site|readme > out
+usage: render.py > index.html
 """
-import html, json, os, re, sys, urllib.request
+import html, json, os, re, sys, urllib.parse, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -23,37 +23,46 @@ def repo(name):
 
 
 def compositions(url):
-    # zach.audio marks each work up as <section typeof=Composition id=..><h2 property=title>..</h2>
-    page = get(url)
-    return [(url + "#" + i, html.unescape(t))
-            for i, t in re.findall(r'typeof=Composition id="([^"]+)">\s*<h2 property=title>(.*?)</h2>', page)]
+    # zach.audio's RDFa is its published contract: <section typeof=Composition id=..> holding
+    # property=title|date|instrumentation and an <a typeof=Score href=..>.
+    works = []
+    for i, body in re.findall(r'<section typeof=Composition id="([^"]+)">(.*?)</section>', get(url), re.S):
+        prop = lambda k: html.unescape(m.group(1).strip()) if (m := re.search(rf"property={k}>(.*?)</", body, re.S)) else ""
+        score = re.search(r'typeof=Score href="([^"]+)"', body)
+        works.append({"url": url + "#" + i, "title": prop("title"), "date": prop("date"),
+                      "for": prop("instrumentation"), "score": score and urllib.parse.urljoin(url, score.group(1))})
+    return works
 
 
-def main(fmt):
+def main():
     p = json.loads((ROOT / "portfolio.json").read_text())
     repos = [(n, *repo(n)) for n in p["repos"]]
     works = compositions(p["music"])
     if not works:
         sys.exit(f"no <section typeof=Composition> found at {p['music']}")
-    if fmt == "readme":
-        out = ["## Code", ""] + [f"- [{n}]({u}) — {d}" for n, u, d in repos]
-        out += ["", "## Music", ""] + [f"- [{t}]({u})" for u, t in works]
-        out += ["", "## Sites", ""] + [f"- <{s}>" for s in p["sites"]]
-        print("\n".join(out))
-        return
+    # The zach.audio idiom: its stylesheets by URL, its header, a date | work table.
     e = html.escape
-    li = lambda href, text, note="": f'    <li><a href="{e(href)}">{e(text)}</a>{" — " + e(note) if note else ""}</li>'
-    out = ['<!doctype html>', '<meta charset="utf-8">',
-           '<meta name="viewport" content="width=device-width,initial-scale=1">',
-           f'<title>{e(p["title"])}</title>', '<main>', f'  <h1>{e(p["title"])}</h1>',
-           '  <h2>Music</h2>', '  <ul>', *[li(u, t) for u, t in works], '  </ul>',
-           '  <h2>Code</h2>', '  <ul>', *[li(u, n, d) for n, u, d in repos], '  </ul>',
-           '  <h2>Sites</h2>', '  <ul>', *[li(s, s.split("//")[1].rstrip("/")) for s in p["sites"]], '  </ul>',
-           '</main>']
+    li = lambda href, text, note="": f'      <li><a href="{e(href)}">{e(text)}</a>{" — " + e(note) if note else ""}</li>'
+    row = lambda w: ("  <tr>\n"
+                     f'    <td>{e(w["date"])}</td>\n'
+                     f'    <td><a href="{e(w["url"])}">{e(w["title"])}</a>' + (f' <i>for</i> {e(w["for"])}' if w["for"] else "") + "</td>\n"
+                     "    <td>" + (f'[<a href="{e(w["score"])}">Score</a>]' if w["score"] else "") + "</td>\n"
+                     "  </tr>")
+    out = ['<!doctype html>', '<html xmlns:mo="http://purl.org/ontology/mo/">', '<head>',
+           '  <meta charset="utf-8">',
+           '  <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+           f'  <title>{e(p["title"])}</title>',
+           '  <link rel=stylesheet href="https://zach.audio/style.css">', '</head>',
+           '<body typeof="mo:MusicArtist">', '  <header>',
+           '    <link rel=stylesheet href="https://zach.audio/header.css">',
+           f'    <h1 property="name"><a href="/">{e(p["title"])}</a></h1>',
+           '    <nav><ul><li><a href="#music">music</a></li> <li><a href="#code">code</a></li> <li><a href="#sites">sites</a></li></ul></nav>',
+           '  </header>',
+           '  <h2 id=music>Music</h2>', '<table>', *map(row, works), '</table>',
+           '  <h2 id=code>Code</h2>', '  <ul>', *[li(u, n, d) for n, u, d in repos], '  </ul>',
+           '  <h2 id=sites>Sites</h2>', '  <ul>', *[li(s, s.split("//")[1].rstrip("/")) for s in p["sites"]], '  </ul>',
+           '</body>', '</html>']
     print("\n".join(out))
 
-
 if __name__ == "__main__":
-    if sys.argv[1:] not in (["site"], ["readme"]):
-        sys.exit(__doc__.strip())
-    main(sys.argv[1])
+    main()
