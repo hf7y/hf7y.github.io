@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Render hf7y.com's index.html or the hf7y/hf7y profile README from portfolio.json.
+"""Render hf7y.com's index.html from portfolio.json.
 
-usage: render.py site|readme > out
+usage: render.py > index.html
 """
 import html, json, os, re, sys, urllib.parse, urllib.request
 from pathlib import Path
@@ -34,18 +34,12 @@ def compositions(url):
     return works
 
 
-def main(fmt):
+def main():
     p = json.loads((ROOT / "portfolio.json").read_text())
     repos = [(n, *repo(n)) for n in p["repos"]]
     works = compositions(p["music"])
     if not works:
         sys.exit(f"no <section typeof=Composition> found at {p['music']}")
-    if fmt == "readme":
-        out = ["## Music", ""] + [f"- [{w['title']}]({w['url']}) ({w['date']})" + (f" — for {w['for']}" if w["for"] else "") for w in works]
-        out += ["", "## Code", ""] + [f"- [{n}]({u}) — {d}" for n, u, d in repos]
-        out += ["", "## Sites", ""] + [f"- <{s}>" for s in p["sites"]]
-        print("\n".join(out))
-        return
     # The zach.audio idiom: its stylesheets by URL, its header, a date | work table.
     e = html.escape
     li = lambda href, text, note="": f'      <li><a href="{e(href)}">{e(text)}</a>{" — " + e(note) if note else ""}</li>'
@@ -71,6 +65,4 @@ def main(fmt):
     print("\n".join(out))
 
 if __name__ == "__main__":
-    if sys.argv[1:] not in (["site"], ["readme"]):
-        sys.exit(__doc__.strip())
-    main(sys.argv[1])
+    main()
