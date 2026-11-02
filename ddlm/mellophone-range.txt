@@ -1,16 +1,16 @@
-F mellophone, written pitch. Comfortable range F#3-C6.
-song	lowest	highest	outside F#3-C6
+F mellophone, written pitch. Range C4-C6.
+song	lowest	highest	outside C4-C6
 ana_dammi_falastini	Eb4	F5	none
 cairn_builder	G4	G5	none
-the_fool	G3	G5	none
-gnossienne	C4	F#6	m14 D6, m14 F#6, m14 D6, m15 D6, m16 D6
-la_llorona	A3	D6	m6 D6
-love_in_outer_space	Bb3	D5	none
+the_fool	G3	G5	m36 A3, m37 A3, m37 G3, m40 A3, m41 A3, m42 G3, m42 A3, m43 A3, m48 A3
+gnossienne	C4	C6	none
+la_llorona	C4	D6	m6 D6
+love_in_outer_space	F4	D5	none
 santa_sangre	C4	A5	none
-vis_hora	C4	C6	none
+vis_hora	G4	C6	none
 zeina	D4	Bb5	none
-get_my_sound	C4	B4	none
+get_my_sound	E4	B4	none
 le_chant_des_partisans	C4	C5	none
-rin_de_angelito	A3	Bb4	none
-tabu	G3	C5	none
-voodoo	A3	D5	none
+rin_de_angelito	F4	Bb4	none
+tabu	Bb4	C6	none
+voodoo	C#4	A5	none
