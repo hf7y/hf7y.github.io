@@ -4,99 +4,67 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Samsara Playback Tonight</title>
+<title>Samsara Playback Checklist</title>
 <style>
-:root{--bg:#fbfaf7;--fg:#1d1c1a;--mute:#6b675f;--rule:#e2ded5;--card:#ffffff;--accent:#8a2b5a;--ok:#2f6b3a;--warn:#9a5a00}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121110;--fg:#ece8e1;--mute:#a39e94;--rule:#2c2a27;--card:#1a1917;--accent:#e08ab4;--ok:#7cc48a;--warn:#e6b25c}}
-:root[data-theme="dark"]{--bg:#121110;--fg:#ece8e1;--mute:#a39e94;--rule:#2c2a27;--card:#1a1917;--accent:#e08ab4;--ok:#7cc48a;--warn:#e6b25c}
+:root{--bg:#fbfaf7;--fg:#1d1c1a;--mute:#6b675f;--rule:#e2ded5;--accent:#8a2b5a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121110;--fg:#ece8e1;--mute:#a39e94;--rule:#2c2a27;--accent:#e08ab4}}
+:root[data-theme="dark"]{--bg:#121110;--fg:#ece8e1;--mute:#a39e94;--rule:#2c2a27;--accent:#e08ab4}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-main{max-width:680px;margin:0 auto;padding:24px 16px 64px}
-h1{font-size:1.6rem;line-height:1.2;margin:0 0 4px}
-h2{font-size:1.15rem;margin:36px 0 8px;padding-top:16px;border-top:1px solid var(--rule)}
-h3{font-size:1rem;margin:20px 0 6px}
-p,li{margin:6px 0}
-ol,ul{padding-left:1.3em}
-.meta{color:var(--mute);font-size:.9rem;margin:0 0 20px}
-.card{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:12px 14px;margin:12px 0}
-.why{border-left:3px solid var(--accent)}
-b.path{color:var(--accent)}
-.src{color:var(--mute);font-size:.82rem}
-.src a{color:var(--mute)}
+main{max-width:620px;margin:0 auto;padding:24px 16px 56px}
+h1{font-size:1.5rem;margin:0}
+.meta{color:var(--mute);margin:2px 0 24px}
+h2{font-size:1.05rem;margin:28px 0 6px}
+ol,ul{padding-left:1.3em;margin:0}
+li{margin:5px 0}
+code{font:.88em ui-monospace,Menlo,monospace;background:var(--rule);padding:1px 4px;border-radius:4px;word-break:break-all}
 a{color:var(--accent)}
-code,kbd{font:.9em ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--rule);padding:1px 5px;border-radius:4px}
-.tag{display:inline-block;font-size:.75rem;font-weight:600;padding:1px 7px;border-radius:99px;border:1px solid currentColor;margin-left:6px;vertical-align:2px}
-.ok{color:var(--ok)}.warn{color:var(--warn)}
-footer{margin-top:40px;color:var(--mute);font-size:.82rem}
-footer ol{padding-left:1.3em}
-footer li{word-break:break-word}
+.s{color:var(--mute);font-size:.8rem;text-decoration:none}
+footer{margin-top:36px;padding-top:12px;border-top:1px solid var(--rule);color:var(--mute);font-size:.8rem}
+footer a{color:var(--mute)}
 </style>
 </head>
 <body>
 <main>
-<h1>Samsara playback tonight</h1>
-<p class="meta">Cavern Cinema, Thu 19 Nov 2026. Doors 6:30, film 7:00. Written 13:40 CT from a laptop feeding a JVC DLA-RS2100 projector over HDMI. Rehearse this on the real Mac, projector and speakers before doors.</p>
+<h1>Samsara playback checklist</h1>
+<p class="meta">Cavern Cinema · doors 6:30 · film 7:00. Run through this on the real Mac, receiver and projector before doors.</p>
 
-<div class="card why">
-<h3 style="margin-top:0">What's wrong</h3>
-<p><b>No sound in VLC: cause not yet known.</b> The HDMI cable is thought to run Mac → AV receiver → projector. The receiver takes the 5.1 sound off and passes the picture on. <span class="tag warn">not confirmed</span> That makes the HDMI device the right sound output. The projector has no audio out of its own <span class="src">[1, p.31]</span>, so the receiver has to be the device that takes the sound. The test tones in step 2 below show whether sound gets from the Mac to the speakers at all. If they play, the problem is in the player or the file.</p>
-<p><b>Picture skips:</b> the Samsara DCP is very heavy, about 233 Mbit/s most of the time, against 150 for the test DCP that plays fine. <span class="src">[2]</span> DCP-o-matic Player <i>“requires a very high-speed CPU to play DCPs in full resolution”</i>. <span class="src">[3]</span> It played fine on the Mac's own screen and skipped on the projector. The frame rate is not the problem: the DCP is 24 fps throughout. <span class="src">[2]</span></p>
-</div>
-
-<h2>Do this first on any path: sound and display</h2>
+<h2>1. Picture</h2>
 <ol>
-<li><b>Sound out over HDMI.</b> Apple menu → System Settings → Sound → Output: pick the HDMI device. It's usually named after the receiver. <span class="src">[4]</span></li>
-<li><b>Set up 5.1 and test each speaker.</b> Open <b>Audio MIDI Setup</b> (Applications → Utilities) and select the HDMI device. If it offers a 6- or 8-channel format, choose it. Then click <b>Configure Speakers</b> → <b>5.1 Surround</b>, click each speaker's <b>Test</b> button, and click <b>Apply</b>. <span class="src">[11] [12]</span>
-<ul><li><b>Tones from the right speakers:</b> the Mac → receiver → speakers chain works.</li>
-<li><b>No tones:</b> check that the receiver is on the Mac's HDMI input and set to play the sound itself, not pass it to the display. The menu names depend on the receiver's model.</li></ul></li>
-<li><b>Projector at 1080p, 24 Hz.</b> System Settings → Displays → select the projector → Resolution <b>1920×1080</b>, Refresh rate <b>24 Hz</b> (48 Hz also works if 24 isn't offered). <span class="src">[5]</span> The projector accepts 1080p and 4K at 24 Hz. <span class="src">[1, p.115]</span> Avoid 2048×1080: the projector needs a menu change (HDMI EDID mode “B”) to accept it. <span class="src">[1, p.115]</span></li>
-<li>Plug in the charger.</li>
+<li>System Settings → Displays → the projector: <b>1920×1080</b>, <b>24 Hz</b>. <a class="s" href="#src">[jvc, apple]</a></li>
 </ol>
 
-<h2><b class="path">Path A</b> · the DCP in DCP-o-matic Player <span class="tag ok">ready now</span></h2>
-<p>Folder on CS DISK: <code>SAMSARA_FTR_F_LO-EN_51_2K_20231118_IOP_OV</code></p>
+<h2>2. Sound</h2>
 <ol>
-<li>Open the DCP in DCP-o-matic Player.</li>
-<li><b>Preferences → Sound:</b> tick <i>Play sound</i> and choose the HDMI device. Its mapping matrix routes the DCP's six channels to the device's outputs. It mixes 5.1 down to stereo only if the device shows just two channels, which is a sign step 2 didn't take. <span class="src">[6]</span></li>
-<li>Press play and watch the <b>Performance</b> area at the bottom right: it counts dropped frames. <span class="src">[3]</span></li>
-<li>If frames drop: <b>View → Decode at half resolution</b>, or <b>Decode at quarter resolution</b> if it still drops. The player suggests exactly this when it drops too many frames. <span class="src">[3] [7]</span> Half resolution is slightly softer and plays smoothly.</li>
-<li><b>View → Full screen</b>, or <b>Dual screen</b> to put the picture on the projector and the controls on the laptop. <span class="src">[7]</span></li>
+<li>System Settings → Sound → Output: the <b>HDMI / receiver</b>. <a class="s" href="#src">[apple]</a></li>
+<li>Audio MIDI Setup → the HDMI device → <b>Configure Speakers</b> → <b>5.1 Surround</b> → press <b>Test</b> on each speaker → <b>Apply</b>. <a class="s" href="#src">[apple]</a><br>No tones means the problem is on the receiver: check that it's on the Mac's HDMI input.</li>
 </ol>
 
-<h2><b class="path">Path B</b> · the studio's ProRes file in QuickTime</h2>
-<p><code>SAMSARA_EN_261114_422_5.1.mov</code>, 89 GB, from the Filemail link the studio sent Chris on 14 Nov (it expires 14 Dec). This needs the full download on the Mac first.</p>
+<h2>3. Play the DCP</h2>
 <ol>
-<li>Open it in <b>QuickTime Player</b>. The M5 chip decodes ProRes in hardware, so it should play without strain. <span class="src">[8]</span></li>
-<li>The sound fix above applies here too.</li>
-<li><b>If you use VLC:</b>
-<ul><li>In <b>Audio → Audio Device</b>, pick the HDMI device. If there are several HDMI entries, try each.</li>
-<li>In <b>Audio → Audio Track</b>, try each track. <span class="src">[9]</span></li>
-<li>If it's still silent, open <b>Window → Messages</b> (in some versions <b>Tools → Messages</b>) and look for audio errors.</li></ul></li>
-<li>If only one channel of sound plays, the file may store each of its six channels as a separate track, and some players play only one track. <span class="src">[10]</span> We haven't seen how this file's sound is laid out.</li>
+<li>DCP-o-matic Player → Preferences → Sound: tick <b>Play sound</b> and pick the HDMI device. <a class="s" href="#src">[dcp-o-matic]</a></li>
+<li>Open <code>CS DISK/SAMSARA_FTR_F_LO-EN_51_2K_20231118_IOP_OV</code> and press play.</li>
+<li>Watch the dropped-frames count at the bottom right. If it climbs: <b>View → Decode at half resolution</b> (or quarter). <a class="s" href="#src">[dcp-o-matic]</a></li>
+<li><b>View → Full screen</b>.</li>
 </ol>
 
-<h2><b class="path">Path C</b> · a lighter re-encoded DCP <span class="tag warn">about 6 pm</span></h2>
-<p>A 100 Mbit/s copy is being made on dexter, in the folder <code>SAMSARA_100M_REENCODE_cs232</code> on CS DISK. It has the same picture with a lighter decode load and burnt-in English subtitles. It should be verified by about 5–6 pm, so it's a late backup only. It plays the same way as Path A. <span class="src">[2]</span></p>
+<h2>If the DCP won't play right</h2>
+<ul>
+<li><b>Studio ProRes file</b> in QuickTime: <a href="https://cinecina.filemail.com/t/kQY2zVTX">download</a> (89 GB, start it early). Sound uses the same steps as section 2.</li>
+<li><b>Lighter DCP</b> on CS DISK from about 5 pm: <code>SAMSARA_100M_REENCODE_cs232</code>. It plays the same way as section 3.</li>
+</ul>
 
 <h2>Pre-show loop</h2>
-<p>90 seconds, made to repeat: <a href="samsara-2026-11-19.mp4">samsara-2026-11-19.mp4</a>. A DCP of the same loop is being built.</p>
+<p><a href="samsara-2026-11-19.mp4">samsara-2026-11-19.mp4</a> (90 s, made to repeat)</p>
 
-<footer>
-<p><b>Sources</b></p>
-<ol>
-<li>JVC DLA-RS2100 operation manual (PDF page numbers): p.31 audio; p.115 input signals and the 2K EDID note.</li>
-<li>Measured on the CS DISK, Thursday: <a href="https://github.com/media-arts-collective/cinema-sanctuary/issues/232">cinema-sanctuary#232</a> (private).</li>
-<li><a href="https://dcpomatic.com/manual/html/ch18.html">DCP-o-matic manual, ch. 18: Playing DCPs</a></li>
-<li><a href="https://support.apple.com/guide/mac-help/change-the-sound-output-settings-mchlp2256/mac">Apple: Change the sound output settings on Mac</a></li>
-<li><a href="https://support.apple.com/en-us/102297">Apple: Change the refresh rate</a> (choose a rate that divides evenly into the frame rate, e.g. 48 Hz for 24 fps)</li>
-<li><a href="https://dcpomatic.com/manual/html/ch11s08.html">DCP-o-matic manual: Preferences → Sound</a></li>
-<li>DCP-o-matic Player 2.16.91 (the version installed on dexter): its View menu has “Decode at full / half / quarter resolution”, “Full screen” and “Dual screen”, and its dropped-frames warning suggests half or quarter resolution. The Mac's version may label these slightly differently.</li>
-<li><a href="https://support.apple.com/en-us/126320">Apple: MacBook Air (13-inch, M5) tech specs</a>: hardware-accelerated ProRes, with dedicated ProRes encode and decode engines</li>
-<li><a href="https://docs.videolan.me/vlc-user/desktop/3.0/en/gettingstarted/desktopoverview/mac/index.html">VLC user docs: Mac OS X</a>; <a href="https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/audio.html">VLC user docs: Audio</a></li>
-<li><a href="https://groups.google.com/g/qlab/c/iHuuqv344jI">QLab group: a ProRes file with separate mono tracks plays only one</a></li>
-<li><a href="https://support.apple.com/guide/audio-midi-setup/set-up-audio-devices-ams59f301fda/mac">Apple: Set up audio devices in Audio MIDI Setup</a></li>
-<li><a href="https://support.apple.com/guide/audio-midi-setup/set-external-speakers-stereo-surround-sound-ams1005/mac">Apple: Set up external speakers for stereo or surround sound</a> (Configure Speakers, 5.1 Surround, Test, Apply)</li>
-</ol>
+<footer id="src">
+Sources:
+<a href="https://support.apple.com/en-us/102297">apple: refresh rate</a> ·
+<a href="https://support.apple.com/guide/mac-help/change-the-sound-output-settings-mchlp2256/mac">apple: sound output</a> ·
+<a href="https://support.apple.com/guide/audio-midi-setup/set-external-speakers-stereo-surround-sound-ams1005/mac">apple: surround speakers</a> ·
+<a href="https://dcpomatic.com/manual/html/ch18.html">dcp-o-matic: playing DCPs</a> ·
+<a href="https://dcpomatic.com/manual/html/ch11s08.html">dcp-o-matic: sound</a> ·
+jvc DLA-RS2100 manual p.115 (accepts 1080p at 24 Hz)
 </footer>
 </main>
 </body>
