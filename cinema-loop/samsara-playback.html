@@ -27,41 +27,43 @@ footer a{color:var(--mute)}
 <body>
 <main>
 <h1>Samsara playback checklist</h1>
-<p class="meta">Cavern Cinema · doors 6:30 · film 7:00. Run through this on the real Mac, receiver and projector before doors.</p>
+<p class="meta">Cavern Cinema · doors 6:30 · film 7:00. Mac → HDMI → receiver → projector. Picture already works; sound over HDMI didn't.</p>
 
-<h2>1. Picture</h2>
+<h2>1. Sound over HDMI</h2>
 <ol>
-<li>System Settings → Displays → the projector: <b>1920×1080</b>, <b>24 Hz</b>. <a class="s" href="#src">[jvc, apple]</a></li>
+<li>System Settings → Sound → Output: pick the <b>HDMI / receiver</b> entry. <a class="s" href="#src">[apple]</a></li>
+<li>Audio MIDI Setup (Applications → Utilities) → the HDMI device → <b>Configure Speakers</b> → <b>5.1 Surround</b> → press <b>Test</b> on each speaker → <b>Apply</b>. <a class="s" href="#src">[apple]</a></li>
+<li>No tones? On the receiver, check that it's on the Mac's HDMI input and that its audio output isn't set to the TV/projector.</li>
 </ol>
 
-<h2>2. Sound</h2>
-<ol>
-<li>System Settings → Sound → Output: the <b>HDMI / receiver</b>. <a class="s" href="#src">[apple]</a></li>
-<li>Audio MIDI Setup → the HDMI device → <b>Configure Speakers</b> → <b>5.1 Surround</b> → press <b>Test</b> on each speaker → <b>Apply</b>. <a class="s" href="#src">[apple]</a><br>No tones means the problem is on the receiver: check that it's on the Mac's HDMI input.</li>
-</ol>
+<h2>2. If HDMI sound still fails: use a cable</h2>
+<ul>
+<li>Run a 3.5 mm headphone-jack cable from the Mac to an analog input on the receiver, then switch the receiver to that input for sound. In System Settings → Sound → Output, pick <b>Headphones</b> or <b>External Headphones</b>.</li>
+<li>A cable adds no noticeable delay. Bluetooth is what can lag, so don't use it.</li>
+<li>This is stereo, not 5.1. DCP-o-matic Player mixes 5.1 down to stereo when the output has two channels. <a class="s" href="#src">[dcp-o-matic]</a></li>
+</ul>
 
 <h2>3. Play the DCP</h2>
 <ol>
-<li>DCP-o-matic Player → Preferences → Sound: tick <b>Play sound</b> and pick the HDMI device. <a class="s" href="#src">[dcp-o-matic]</a></li>
-<li>Open <code>CS DISK/SAMSARA_FTR_F_LO-EN_51_2K_20231118_IOP_OV</code> and press play.</li>
+<li>DCP-o-matic Player → Preferences → Sound: tick <b>Play sound</b> and pick the same output as above. <a class="s" href="#src">[dcp-o-matic]</a></li>
+<li>System Settings → Displays → the projector: <b>1920×1080</b>, <b>24 Hz</b>. <a class="s" href="#src">[jvc, apple]</a></li>
+<li>Open the Samsara DCP folder and press play.</li>
 <li>Watch the dropped-frames count at the bottom right. If it climbs: <b>View → Decode at half resolution</b> (or quarter). <a class="s" href="#src">[dcp-o-matic]</a></li>
 <li><b>View → Full screen</b>.</li>
 </ol>
 
-<h2>If the DCP won't play right</h2>
-<ul>
-<li><b>Studio ProRes file</b> in QuickTime: <a href="https://cinecina.filemail.com/t/kQY2zVTX">download</a> (89 GB, start it early). Sound uses the same steps as section 2.</li>
-<li><b>Lighter DCP</b> on CS DISK from about 5 pm: <code>SAMSARA_100M_REENCODE_cs232</code>. It plays the same way as section 3.</li>
-</ul>
-
 <h2>Pre-show loop</h2>
-<p><a href="samsara-2026-11-19.mp4">samsara-2026-11-19.mp4</a> (90 s, made to repeat)</p>
+<ol>
+<li>Download <a href="samsara-2026-11-19.mp4">samsara-2026-11-19.mp4</a> (8 MB, 90 s).</li>
+<li>Open it in QuickTime Player → <b>View → Loop</b> → play, full screen. <a class="s" href="#src">[apple]</a></li>
+</ol>
 
 <footer id="src">
 Sources:
-<a href="https://support.apple.com/en-us/102297">apple: refresh rate</a> ·
 <a href="https://support.apple.com/guide/mac-help/change-the-sound-output-settings-mchlp2256/mac">apple: sound output</a> ·
 <a href="https://support.apple.com/guide/audio-midi-setup/set-external-speakers-stereo-surround-sound-ams1005/mac">apple: surround speakers</a> ·
+<a href="https://support.apple.com/en-us/102297">apple: refresh rate</a> ·
+<a href="https://support.apple.com/guide/quicktime-player/qtp6cee0761b/mac">apple: QuickTime loop</a> ·
 <a href="https://dcpomatic.com/manual/html/ch18.html">dcp-o-matic: playing DCPs</a> ·
 <a href="https://dcpomatic.com/manual/html/ch11s08.html">dcp-o-matic: sound</a> ·
 jvc DLA-RS2100 manual p.115 (accepts 1080p at 24 Hz)
