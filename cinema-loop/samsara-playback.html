@@ -39,13 +39,16 @@ footer li{word-break:break-word}
 
 <div class="card why">
 <h3 style="margin-top:0">What's wrong</h3>
-<p><b>No sound:</b> the projector has no speakers and no audio out. Its manual says: <i>“Projector has no audio pass through or eARC output.”</i> <span class="src">[1, p.31]</span> When the Mac is plugged into HDMI it can send its sound to the projector, where it goes nowhere. That is the likeliest reason VLC was silent. <span class="tag warn">likely, not yet tested on the Mac</span></p>
+<p><b>No sound in VLC: cause not yet known.</b> The HDMI cable is thought to run Mac → AV receiver → projector. The receiver takes the 5.1 sound off and passes the picture on. <span class="tag warn">not confirmed</span> That makes the HDMI device the right sound output. The projector has no audio out of its own <span class="src">[1, p.31]</span>, so the receiver has to be the device that takes the sound. The test tones in step 2 below show whether sound gets from the Mac to the speakers at all. If they play, the problem is in the player or the file.</p>
 <p><b>Picture skips:</b> the Samsara DCP is very heavy, about 233 Mbit/s most of the time, against 150 for the test DCP that plays fine. <span class="src">[2]</span> DCP-o-matic Player <i>“requires a very high-speed CPU to play DCPs in full resolution”</i>. <span class="src">[3]</span> It played fine on the Mac's own screen and skipped on the projector. The frame rate is not the problem: the DCP is 24 fps throughout. <span class="src">[2]</span></p>
 </div>
 
 <h2>Do this first on any path: sound and display</h2>
 <ol>
-<li><b>Sound out to the room.</b> Apple menu → System Settings → Sound → Output: pick the device that feeds the speakers (headphone jack, USB interface or mixer). Don't pick the projector. <span class="src">[4]</span></li>
+<li><b>Sound out over HDMI.</b> Apple menu → System Settings → Sound → Output: pick the HDMI device. It's usually named after the receiver. <span class="src">[4]</span></li>
+<li><b>Set up 5.1 and test each speaker.</b> Open <b>Audio MIDI Setup</b> (Applications → Utilities) and select the HDMI device. If it offers a 6- or 8-channel format, choose it. Then click <b>Configure Speakers</b> → <b>5.1 Surround</b>, click each speaker's <b>Test</b> button, and click <b>Apply</b>. <span class="src">[11] [12]</span>
+<ul><li><b>Tones from the right speakers:</b> the Mac → receiver → speakers chain works.</li>
+<li><b>No tones:</b> check that the receiver is on the Mac's HDMI input and set to play the sound itself, not pass it to the display. The menu names depend on the receiver's model.</li></ul></li>
 <li><b>Projector at 1080p, 24 Hz.</b> System Settings → Displays → select the projector → Resolution <b>1920×1080</b>, Refresh rate <b>24 Hz</b> (48 Hz also works if 24 isn't offered). <span class="src">[5]</span> The projector accepts 1080p and 4K at 24 Hz. <span class="src">[1, p.115]</span> Avoid 2048×1080: the projector needs a menu change (HDMI EDID mode “B”) to accept it. <span class="src">[1, p.115]</span></li>
 <li>Plug in the charger.</li>
 </ol>
@@ -54,7 +57,7 @@ footer li{word-break:break-word}
 <p>Folder on CS DISK: <code>SAMSARA_FTR_F_LO-EN_51_2K_20231118_IOP_OV</code></p>
 <ol>
 <li>Open the DCP in DCP-o-matic Player.</li>
-<li><b>Preferences → Sound:</b> tick <i>Play sound</i> and choose the room's output device. The player mixes 5.1 down to stereo by itself when the device has only two channels. <span class="src">[6]</span></li>
+<li><b>Preferences → Sound:</b> tick <i>Play sound</i> and choose the HDMI device. Its mapping matrix routes the DCP's six channels to the device's outputs. It mixes 5.1 down to stereo only if the device shows just two channels, which is a sign step 2 didn't take. <span class="src">[6]</span></li>
 <li>Press play and watch the <b>Performance</b> area at the bottom right: it counts dropped frames. <span class="src">[3]</span></li>
 <li>If frames drop: <b>View → Decode at half resolution</b>, or <b>Decode at quarter resolution</b> if it still drops. The player suggests exactly this when it drops too many frames. <span class="src">[3] [7]</span> Half resolution is slightly softer and plays smoothly.</li>
 <li><b>View → Full screen</b>, or <b>Dual screen</b> to put the picture on the projector and the controls on the laptop. <span class="src">[7]</span></li>
@@ -65,7 +68,10 @@ footer li{word-break:break-word}
 <ol>
 <li>Open it in <b>QuickTime Player</b>. The M5 chip decodes ProRes in hardware, so it should play without strain. <span class="src">[8]</span></li>
 <li>The sound fix above applies here too.</li>
-<li><b>If you use VLC:</b> check <b>Audio → Audio Device</b> (the room system, not the projector), then <b>Audio → Audio Track</b> (try each track). <span class="src">[9]</span> For a stereo PA, set the number of audio channels to stereo; the same Audio menu holds that setting, called “Stereo Mode” in newer VLC versions. <span class="src">[9]</span></li>
+<li><b>If you use VLC:</b>
+<ul><li>In <b>Audio → Audio Device</b>, pick the HDMI device. If there are several HDMI entries, try each.</li>
+<li>In <b>Audio → Audio Track</b>, try each track. <span class="src">[9]</span></li>
+<li>If it's still silent, open <b>Window → Messages</b> (in some versions <b>Tools → Messages</b>) and look for audio errors.</li></ul></li>
 <li>If only one channel of sound plays, the file may store each of its six channels as a separate track, and some players play only one track. <span class="src">[10]</span> We haven't seen how this file's sound is laid out.</li>
 </ol>
 
@@ -88,6 +94,8 @@ footer li{word-break:break-word}
 <li><a href="https://support.apple.com/en-us/126320">Apple: MacBook Air (13-inch, M5) tech specs</a>: hardware-accelerated ProRes, with dedicated ProRes encode and decode engines</li>
 <li><a href="https://docs.videolan.me/vlc-user/desktop/3.0/en/gettingstarted/desktopoverview/mac/index.html">VLC user docs: Mac OS X</a>; <a href="https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/audio.html">VLC user docs: Audio</a></li>
 <li><a href="https://groups.google.com/g/qlab/c/iHuuqv344jI">QLab group: a ProRes file with separate mono tracks plays only one</a></li>
+<li><a href="https://support.apple.com/guide/audio-midi-setup/set-up-audio-devices-ams59f301fda/mac">Apple: Set up audio devices in Audio MIDI Setup</a></li>
+<li><a href="https://support.apple.com/guide/audio-midi-setup/set-external-speakers-stereo-surround-sound-ams1005/mac">Apple: Set up external speakers for stereo or surround sound</a> (Configure Speakers, 5.1 Surround, Test, Apply)</li>
 </ol>
 </footer>
 </main>
